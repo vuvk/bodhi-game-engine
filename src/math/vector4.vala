@@ -1,34 +1,33 @@
-public class Vector4f {
-    public double x {get; set;}
-    public double y {get; set;}
-    public double z {get; set;}
-    public double w {get; set;}
+[SimpleType]
+public struct Vector4f {
+    public float x {get; set;}
+    public float y {get; set;}
+    public float z {get; set;}
+    public float w {get; set;}
     
-    public Vector4f.zero() {
-        this(0, 0, 0, 1);
-    }    
-    
-    public Vector4f(double x, double y, double z, double w) {
+    public const Vector4f ZERO = { 0, 0, 0, 0 };
+
+    public Vector4f(float x, float y, float z, float w) {
         set_xyzw(x, y, z, w);
     }
     
     public Vector4f.from_v2f(Vector2f other) {
-        this(other.x, other.y, 0.0, 1.0);
+        this(other.x, other.y, 0.0f, 1.0f);
     }
     
     public Vector4f.from_v3f(Vector3f other) {
-        this(other.x, other.y, other.z, 1.0);
+        this(other.x, other.y, other.z, 1.0f);
     }
     
     public Vector4f.from_v4f(Vector4f other) {
         this(other.x, other.y, other.z, other.w);
     }
     
-    public Vector4f.from_array(double[] components) {
+    public Vector4f.from_array(float[] components) {
         this(components[0], components[1], components[2], components[3]);
     }
     
-    public void set_xyzw(double x, double y, double z, double w) {
+    public void set_xyzw(float x, float y, float z, float w) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -36,62 +35,62 @@ public class Vector4f {
     }   
     
     public Vector4f add_v2f(Vector2f other) {
-        return new Vector4f(x + other.x, y + other.y, z, w);
+        return { x + other.x, y + other.y, z, w };
     }
     
     public Vector4f add_v3f(Vector3f other) {
-        return new Vector4f(x + other.x, y + other.y, z + other.z, w);
+        return { x + other.x, y + other.y, z + other.z, w };
     }
     
     public Vector4f add(Vector4f other) {
-        return new Vector4f(x + other.x, y + other.y, z + other.z, w + other.w);
+        return { x + other.x, y + other.y, z + other.z, w + other.w };
     }
     
     public Vector4f sub_v2f(Vector2f other) {
-        return new Vector4f(x - other.x, y - other.y, z, w);
+        return { x - other.x, y - other.y, z, w };
     }
     
     public Vector4f sub_v3f(Vector3f other) {
-        return new Vector4f(x - other.x, y - other.y, z - other.z, w);
+        return { x - other.x, y - other.y, z - other.z, w };
     }
     
     public Vector4f sub(Vector4f other) {
-        return new Vector4f(x - other.x, y - other.y, z - other.z, w - other.w);
+        return { x - other.x, y - other.y, z - other.z, w - other.w };
     }
     
-    public Vector4f mul(double value) {
-        return new Vector4f(x * value, y * value, z * value, w * value);
+    public Vector4f mul(float value) {
+        return { x * value, y * value, z * value, w * value };
     }
     
-    public Vector4f div(double value) {
-        if (value != 0.0) {
-            value = 1.0 / value;
-            return new Vector4f(x * value, y * value, z * value, w * value);
+    public Vector4f div(float value) {
+        if (value != 0.0f) {
+            value = 1.0f / value;
+            return { x * value, y * value, z * value, w * value };
         } else {
-            return new Vector4f.zero();
+            return ZERO;
         }
     }
     
     public Vector4f neg() {
-        return new Vector4f(-x, -y, -z, -w);
+        return { -x, -y, -z, -w };
     }
     
-    public double dot(Vector4f other) {
+    public float dot(Vector4f other) {
         return x * other.x + 
                y * other.y + 
                z * other.z + 
                w * other.w;
     }
     
-    public double length() {
-        return Math.sqrt(x*x + y*y + z*z + w*w);
+    public float length() {
+        return Math.sqrtf(x*x + y*y + z*z + w*w);
     }
     
-    public double distance(Vector4f other) {
-        return (this.sub(other)).length();
+    public float distance(Vector4f other) {
+        return (sub(other)).length();
     }
     
-    public double[] to_array() {
-        return new double[]{x, y, z, w};
+    public float[] to_array() {
+        return new float[]{x, y, z, w};
     }
 }

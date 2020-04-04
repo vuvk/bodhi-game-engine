@@ -69,8 +69,8 @@ public struct Vector3f {
     }
     
     public Vector3f div(float value) {
-        if (value != 0.0) {
-            value = 1.0 / value;
+        if (value != 0.0f) {
+            value = 1.0f / value;
             return { x * value, y * value, z * value };
         } else {
             return ZERO;
