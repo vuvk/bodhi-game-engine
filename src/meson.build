@@ -2,6 +2,8 @@ sources = files(
     'constants.vala',
     'log_system.vala',
 
+    'color.vala',
+
     'math/vector2.vala',
     'math/vector3.vala',
     'math/vector4.vala',
