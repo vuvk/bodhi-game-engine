@@ -3,6 +3,12 @@ public struct RGBColor {
     public uint8 g;
     public uint8 b;
 
+    public const RGBColor RED   = { 255, 0,   0   };
+    public const RGBColor GREEN = { 0,   255, 0   };
+    public const RGBColor BLUE  = { 0,   0,   255 };
+    public const RGBColor BLACK = { 0,   0,   0   };
+    public const RGBColor WHITE = { 255, 255, 255 };
+
     public RGBColor(uint8 r, uint8 g, uint8 b) {
         this.r = r;
         this.g = g;
@@ -48,6 +54,12 @@ public struct RGBAColor {
     public uint8 g;
     public uint8 b;
     public uint8 a;
+
+    public const RGBAColor RED   = { 255, 0,   0,   255 };
+    public const RGBAColor GREEN = { 0,   255, 0,   255 };
+    public const RGBAColor BLUE  = { 0,   0,   255, 255 };
+    public const RGBAColor BLACK = { 0,   0,   0,   255 };
+    public const RGBAColor WHITE = { 255, 255, 255, 255 };
 
     public RGBAColor(uint8 r, uint8 g, uint8 b, uint8 a) {
         this.r = r;
@@ -98,6 +110,12 @@ public struct RGBColorf {
     public float g;
     public float b;
 
+    public const RGBColorf RED   = { 1, 0, 0 };
+    public const RGBColorf GREEN = { 0, 1, 0 };
+    public const RGBColorf BLUE  = { 0, 0, 1 };
+    public const RGBColorf BLACK = { 0, 0, 0 };
+    public const RGBColorf WHITE = { 1, 1, 1 };
+
     public RGBColorf(float r, float g, float b) {
         this.r = r;
         this.g = g;
@@ -143,6 +161,12 @@ public struct RGBAColorf {
     public float g;
     public float b;
     public float a;
+
+    public const RGBAColorf RED   = { 1, 0, 0, 1 };
+    public const RGBAColorf GREEN = { 0, 1, 0, 1 };
+    public const RGBAColorf BLUE  = { 0, 0, 1, 1 };
+    public const RGBAColorf BLACK = { 0, 0, 0, 1 };
+    public const RGBAColorf WHITE = { 1, 1, 1, 1 };
 
     public RGBAColorf(float r, float g, float b, float a) {
         this.r = r;
