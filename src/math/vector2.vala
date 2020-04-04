@@ -1,21 +1,16 @@
 
 /** vector with 2 integer components */
-public class Vector2i : Object {
+public struct Vector2i {
+    public const Vector2i ZERO = {0, 0};
+    public const Vector2i ONE  = {1, 1};
+
     public int x {get; set;}
     public int y {get; set;}
 
     public Vector2i(int x, int y) {
         set_xy(x, y);
     }
-
-    public Vector2i.zero() {
-        this(0, 0);
-    }
-
-    public Vector2i.one() {
-        this(1, 1);
-    }
-
+    
     public Vector2i.from_v2i(Vector2i other) {
         this(other.x, other.y);
     }
@@ -27,61 +22,56 @@ public class Vector2i : Object {
 }
 
 /** vector with 2 floats components */
-public class Vector2f : Object {
-    public double x {get; set;}
-    public double y {get; set;}
+public struct Vector2f {
+    public const Vector2f ZERO = {0, 0};
+    public const Vector2f ONE  = {1, 1};
 
-    public Vector2f(double x, double y) {
+    public float x {get; set;}
+    public float y {get; set;}
+
+    public Vector2f(float x, float y) {
         set_xy(x, y);
-    }
-
-    public Vector2f.zero() {
-        this(0, 0);
-    }
-
-    public Vector2f.one() {
-        this(1, 1);
     }
 
     public Vector2f.from_v2f(Vector2f other) {
         this(other.x, other.y);
     }
     
-    public Vector2f.from_array(double[] components) {
+    public Vector2f.from_array(float[] components) {
         this(components[0], components[1]);
     }
 
-    public void set_xy(double x, double y) {
+    public void set_xy(float x, float y) {
         this.x = x;
         this.y = y;
     }
 
     public Vector2f add(Vector2f other) {
-        return new Vector2f(x + other.x, y + other.y);
+        return { x + other.x, y + other.y };
     }
     
     public Vector2f sub(Vector2f other) {
-        return new Vector2f(x - other.x, y - other.y);
+        return { x - other.x, y - other.y };
     }
     
-    public Vector2f mul(double value) {
-        return new Vector2f(x * value, y * value);
+    public Vector2f mul(float value) {
+        return { x * value, y * value };
     }
     
-    public Vector2f div(double value) {
-        if (value != 0.0) {
-            value = 1.0 / value;
-            return new Vector2f(x * value, y * value);
+    public Vector2f div(float value) {
+        if (value != 0.0f) {
+            value = 1.0f / value;
+            return { x * value, y * value };
         } else {
-            return new Vector2f.zero();
+            return ZERO;
         }
     }
     
     public Vector2f neg() {
-        return new Vector2f(-x, -y);
+        return { -x, -y };
     }
     
-    public double dot(Vector2f other) {
+    public float dot(Vector2f other) {
         return x * other.x + y * other.y;
     }
     
@@ -89,15 +79,15 @@ public class Vector2f : Object {
         return div(length());
     }
     
-    public double length() {
-        return Math.sqrt(x*x + y*y);
+    public float length() {
+        return Math.sqrtf(x*x + y*y);
     }
     
-    public double distance(Vector2f other) {
+    public float distance(Vector2f other) {
         return (this.sub(other)).length();
     }
 
-    public double[] to_array() {
-        return new double[]{x, y};
+    public float[] to_array() {
+        return new float[]{x, y};
     }
 }
