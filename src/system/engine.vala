@@ -101,6 +101,8 @@ public class Engine : Object {
         /* 3d */
         //_meshesMd2 = DictionaryCreate();
         //_nodesMd2  = ListCreate();
+
+        Scene.init();
     
         return Errors.NO_ERROR;
     }

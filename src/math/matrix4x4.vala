@@ -1,20 +1,23 @@
 public class Matrix4x4 : Object {
-    private float[] data = new float[16];
+    private float[] data;
 
     public Matrix4x4() {
+        data = new float[16];
     }
 
     public Matrix4x4.from_identity() {
+        this();
         identity();
     }
 
     public Matrix4x4.from_array(float[] data) {
-        identity();
+        this.from_identity();
         set_array(data);
     }
 
     public float[] get_array() {
-        return data[0:16];
+        unowned float[] array = data[0:16];
+        return array;
     }
 
     public void set_array(float[] data) {
@@ -53,13 +56,13 @@ public class Matrix4x4 : Object {
 
         float[] temp = new float[4];
         for (int i = 0; i < 4; ++i) {
-            temp[i] = data[i]      * vec.x +
-                      data[4 + i]  * vec.y +
-                      data[8 + i]  * vec.z +
+            temp[i] = data[     i] * vec.x +
+                      data[ 4 + i] * vec.y +
+                      data[ 8 + i] * vec.z +
                       data[12 + i] * vec.w;
         }
 
-        float[] result = temp[0:4];
+        unowned float[] result = temp[0:4];
         if (result[3] != 0.0f && result[3] != 1.0f) {
             float w;
             if (temp[3] != 0.0f) {
@@ -81,7 +84,7 @@ public class Matrix4x4 : Object {
         for (int col = 0; col < 4; ++col) {
                 for (int row = 0; row < 4; ++row) {
                     for (int i = 0; i < 4; ++i) {
-                        tmp.data[col * 4 + row] += data[i * 4 + row] * other.data[col * 4 + i];
+                        tmp.data[col << 2 + row] += data[i << 2 + row] * other.data[col << 2 + i];
                     }
                 }
         }

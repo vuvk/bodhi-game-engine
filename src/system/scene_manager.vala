@@ -3,9 +3,14 @@ using GL;
 
 public class Scene : Object {   
     private static bool is_3d_mode;    
-    public static Matrix4x4 modl = new Matrix4x4();
-    public static Matrix4x4 pers = new Matrix4x4();
+    private static Matrix4x4 modl;
+    private static Matrix4x4 pers;
     private static RendererWindow window;
+
+    public static void init() {
+        modl = new Matrix4x4();
+        pers = new Matrix4x4();
+    }
 
     public static void begin(RGBAColorf clear_color = RGBAColorf.BLACK) {    
         window = RendererWindow.get_instance();
@@ -20,8 +25,7 @@ public class Scene : Object {
         // выставляем перспективу и вьюпорт по размеру окна
         var win_size = window.get_size();
         //gluPerspective(45.0f, (float)windowWidth / windowHeight, 0.1f, 1000.0f);
-        //float[] array = pers.get_array();
-        //glLoadMatrixf(array);
+        glLoadMatrixf(pers.get_array());
         glViewport(0, 0, win_size.x, win_size.y);
     
         // переходим в режим модели
