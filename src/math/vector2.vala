@@ -1,6 +1,5 @@
 
 /** vector with 2 integer components */
-[SimpleType]
 public struct Vector2i {
     public const Vector2i ZERO = {0, 0};
     public const Vector2i ONE  = {1, 1};
@@ -23,7 +22,6 @@ public struct Vector2i {
 }
 
 /** vector with 2 floats components */
-[SimpleType]
 public struct Vector2f {
     public const Vector2f ZERO = {0, 0};
     public const Vector2f ONE  = {1, 1};

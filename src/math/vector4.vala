@@ -1,4 +1,4 @@
-[SimpleType]
+
 public struct Vector4f {
     public float x {get; set;}
     public float y {get; set;}

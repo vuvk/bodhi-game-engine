@@ -119,7 +119,11 @@ public class RendererWindow : Object {
         state = States.NOT_CREATED;
     }
     
-    public void set_size(int32 width, int32 height) {
+    public void set_size(Vector2i size) {
+        set_size_i(size.x, size.y);
+    }
+    
+    public void set_size_i(int32 width, int32 height) {
         sdl_window.set_size(width, height);
         this.width  = width;
         this.height = height;
@@ -143,9 +147,8 @@ public class RendererWindow : Object {
     //void EngineSetRendererWindowResizable(bool isResizable);
     
     //windows gets
-    public void get_size(out int width, out int height) {
-        width  = this.width;
-        height = this.height;
+    public Vector2i get_size() {
+        return { width, height };
     }
     
     public string get_title() {

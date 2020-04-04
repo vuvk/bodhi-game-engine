@@ -99,7 +99,7 @@ public class Renderer : Object {
         int x = 0, 
             y = 0;
         get_max_screen_resolution_i(ref x, ref y);
-        return new Vector2i(x, y);
+        return { x, y };
     }
 
     public void get_max_screen_resolution_i(ref int width, ref int height) {

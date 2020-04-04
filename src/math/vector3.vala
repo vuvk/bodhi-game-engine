@@ -1,18 +1,17 @@
 
 
 /** vector with 3 float components */
-[SimpleType]
 public struct Vector3f {
     public float x {get; set;}
     public float y {get; set;}
     public float z {get; set;}
 
-    public static Vector3f ZERO = { 0, 0, 0 };
-    public static Vector3f ONE  = { 1, 1, 1 };
+    public const Vector3f ZERO = { 0, 0, 0 };
+    public const Vector3f ONE  = { 1, 1, 1 };
 
-    public static Vector3f RIGHT   = { 1, 0, 0 };
-    public static Vector3f UP      = { 0, 1, 0 };
-    public static Vector3f FORWARD = { 0, 0, 1 };
+    public const Vector3f RIGHT   = { 1, 0, 0 };
+    public const Vector3f UP      = { 0, 1, 0 };
+    public const Vector3f FORWARD = { 0, 0, 1 };
     
     public Vector3f(float x, float y, float z) {
         set_xyz(x, y, z);
