@@ -1,6 +1,5 @@
 sources = files(
     'constants.vala',
-    'log_system.vala',
 
     'color.vala',
 
@@ -9,9 +8,11 @@ sources = files(
     'math/vector4.vala',
     'math/matrix4x4.vala',
 
-    'window_system.vala',
-    'render_system.vala',
-    'scene_manager.vala',
-    'engine.vala',
+    'system/log_system.vala',
+    'system/window_system.vala',
+    'system/render_system.vala',
+    'system/scene_manager.vala',
+    'system/engine.vala',
+    
     'test.vala',
 )
