@@ -1,29 +1,25 @@
 
 
 /** vector with 3 float components */
-public class Vector3f {
-    public double x {get; set;}
-    public double y {get; set;}
-    public double z {get; set;}
+[SimpleType]
+public struct Vector3f {
+    public float x {get; set;}
+    public float y {get; set;}
+    public float z {get; set;}
 
-    public static Vector3f RIGHT   = new Vector3f(1, 0, 0);
-    public static Vector3f UP      = new Vector3f(0, 1, 0);
-    public static Vector3f FORWARD = new Vector3f(0, 0, 1);
+    public static Vector3f ZERO = { 0, 0, 0 };
+    public static Vector3f ONE  = { 1, 1, 1 };
+
+    public static Vector3f RIGHT   = { 1, 0, 0 };
+    public static Vector3f UP      = { 0, 1, 0 };
+    public static Vector3f FORWARD = { 0, 0, 1 };
     
-    public Vector3f(double x, double y, double z) {
+    public Vector3f(float x, float y, float z) {
         set_xyz(x, y, z);
     }
     
-    public Vector3f.zero() {
-        this(0, 0, 0);
-    }
-    
-    public Vector3f.one() {
-        this(1, 1, 1);
-    }
-    
     public Vector3f.from_v2f(Vector2f other) {
-        this(other.x, other.y, 0.0);
+        this(other.x, other.y, 0.0f);
     }
     
     public Vector3f.from_v3f(Vector3f other) {
@@ -31,87 +27,87 @@ public class Vector3f {
     }
     
     public Vector3f.from_v4f(Vector4f other) {      
-        double w;
-        if (other.w != 0.0)
-            w = 1.0 / other.w;
+        float w;
+        if (other.w != 0.0f)
+            w = 1.0f / other.w;
         else
-            w = 0.0;
+            w = 0.0f;
 
         x = other.x * w;
         y = other.y * w;
         z = other.z * w;
     }
     
-    public Vector3f.from_array(double[] components) {
+    public Vector3f.from_array(float[] components) {
         this(components[0], components[1], components[2]);
     }
     
-    public void set_xyz(double x, double y, double z) {
+    public void set_xyz(float x, float y, float z) {
         this.x = x;
         this.y = y;
         this.z = z;
     }   
     
     public Vector3f add_v2f(Vector2f other) {
-        return new Vector3f(x + other.x, y + other.y, z);
+        return { x + other.x, y + other.y, z };
     }
     
     public Vector3f add(Vector3f other) {
-        return new Vector3f(x + other.x, y + other.y, z + other.z);
+        return { x + other.x, y + other.y, z + other.z };
     }
     
     public Vector3f sub_v2f(Vector2f other) {
-        return new Vector3f(x - other.x, y - other.y, z);
+        return { x - other.x, y - other.y, z };
     }
     
     public Vector3f sub(Vector3f other) {
-        return new Vector3f(x - other.x, y - other.y, z - other.z);
+        return { x - other.x, y - other.y, z - other.z };
     }
     
-    public Vector3f mul(double value) {
-        return new Vector3f(x * value, y * value, z * value);
+    public Vector3f mul(float value) {
+        return { x * value, y * value, z * value };
     }
     
-    public Vector3f div(double value) {
+    public Vector3f div(float value) {
         if (value != 0.0) {
             value = 1.0 / value;
-            return new Vector3f(x * value, y * value, z * value);
+            return { x * value, y * value, z * value };
         } else {
-            return new Vector3f.zero();
+            return ZERO;
         }
     }
     
     public Vector3f neg() {
-        return new Vector3f(-x, -y, -z);
+        return { -x, -y, -z };
     }
     
-    public double dot(Vector3f other) {
+    public float dot(Vector3f other) {
         return x * other.x + 
                y * other.y + 
                z * other.z;
     }
     
-    public double length() {
-        return Math.sqrt(x*x + y*y + z*z);
+    public float length() {
+        return Math.sqrtf(x*x + y*y + z*z);
     }
     
-    public double distance(Vector3f other) {
+    public float distance(Vector3f other) {
         return (this.sub(other)).length();
     }
     
     public Vector3f cross(Vector3f other) {
-        return new Vector3f(
+        return { 
             y * other.z - z * other.y,
             z * other.x - x * other.z,
             x * other.y - y * other.x
-        );
+        };
     }
 
     public Vector3f normalize() {
         return div(length());
     }
         
-    public double[] to_array() {
-        return new double[]{x, y, z};
+    public float[] to_array() {
+        return new float[]{x, y, z};
     }
 }
