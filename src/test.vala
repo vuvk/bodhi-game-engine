@@ -15,8 +15,12 @@ public class Test : Object {
 
         bool quit = false;
         while (!quit) {
-            window.update();
             Engine.update();
+            
+            Scene.begin(RGBAColorf.WHITE);
+            Scene.end();
+
+            window.set_title("Hello! FPS: " + Engine.get_fps().to_string());
         }
         Engine.stop();
 

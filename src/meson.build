@@ -11,6 +11,7 @@ sources = files(
 
     'window_system.vala',
     'render_system.vala',
+    'scene_manager.vala',
     'engine.vala',
     'test.vala',
 )

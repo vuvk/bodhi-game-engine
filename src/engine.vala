@@ -1,6 +1,6 @@
 using SDL;
 
-public class Engine {
+public class Engine : Object {
     
     /** state of engine */
     public enum States {
@@ -177,6 +177,8 @@ public class Engine {
     public static void update() {
         update_time();
         update_fps();
+
+        window.update();
     }
     
     // timing
