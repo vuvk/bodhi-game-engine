@@ -30,8 +30,8 @@ namespace Bodhi {
         private static uint16 limit_fps;
         private static float framerate;
 
-        private static RendererWindow window;
-        private static Renderer renderer;
+        private static unowned RendererWindow window;
+        private static unowned Renderer renderer;
         private static Scene scene;
     
         /** start Antoshka Engine and initialize all subsystems */
@@ -219,15 +219,15 @@ namespace Bodhi {
             return VERSION;
         }
 
-        public static RendererWindow get_window() {
+        public static unowned RendererWindow get_window() {
             return window;
         }
 
-        public static Renderer get_renderer() {
+        public static unowned Renderer get_renderer() {
             return renderer;
         }
 
-        public static Scene? get_scene() {
+        public static unowned Scene? get_scene() {
             return scene;
         }
     }

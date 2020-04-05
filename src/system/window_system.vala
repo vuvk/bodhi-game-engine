@@ -35,10 +35,10 @@ namespace Bodhi {
             destroy();
         }
         
-        internal static RendererWindow? get_instance(int32 width = DEFAULT_WIDTH, 
-                                                    int32 height = DEFAULT_HEIGHT, 
-                                                    bool resizable = DEFAULT_RESIZABLE, 
-                                                    bool fullscreen_mode = DEFAULT_FULLSCREEN) {
+        internal static unowned RendererWindow? get_instance(int32 width = DEFAULT_WIDTH, 
+                                                             int32 height = DEFAULT_HEIGHT, 
+                                                             bool resizable = DEFAULT_RESIZABLE, 
+                                                             bool fullscreen_mode = DEFAULT_FULLSCREEN) {
             if (INSTANCE == null) {
                 new RendererWindow(width, height, resizable, fullscreen_mode);
             }
@@ -188,7 +188,7 @@ namespace Bodhi {
             return state;
         }
         
-        public Video.Window* get_sdl_class() {
+        public unowned Video.Window get_sdl_class() {
             return sdl_window;
         }
     }

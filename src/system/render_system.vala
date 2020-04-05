@@ -29,7 +29,7 @@ namespace Bodhi {
             destroy();
         }
 
-        internal static Renderer? get_instance() {
+        internal static unowned Renderer? get_instance() {
             if (INSTANCE == null) {
                 new Renderer();
             }
