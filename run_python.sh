@@ -1,6 +1,6 @@
 #!/bin/sh
-cd build
-#GI_TYPELIB_PATH=. LD_LIBRARY_PATH=. gjs
-export LD_LIBRARY_PATH=`pwd`/.libs:$LD_LIBRARY_PATH
-export GI_TYPELIB_PATH=`pwd`
-python
+#cd build
+#GI_TYPELIB_PATH=. LD_LIBRARY_PATH=. python
+export LD_LIBRARY_PATH=`pwd`/build
+export GI_TYPELIB_PATH=`pwd`/build
+python $1
