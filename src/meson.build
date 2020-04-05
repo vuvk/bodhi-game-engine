@@ -14,5 +14,5 @@ sources = files(
     'system/scene_manager.vala',
     'system/engine.vala',
     
-    'test.vala',
+    #'test.vala',
 )
