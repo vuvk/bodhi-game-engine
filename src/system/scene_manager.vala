@@ -17,9 +17,13 @@ namespace Bodhi {
             sdl_window = window.get_sdl_class();
         }
 
-        public void begin(RGBAColorf clear_color = RGBAColorf.BLACK) {    
+        public void begin(RGBAColorf clear_color = RGBAColorf.BLACK) { 
+            beginf(clear_color.r, clear_color.g, clear_color.b, clear_color.a);
+        }
+
+        public void beginf(float r = 0.0f, float g = 0.0f, float b = 0.0f, float a = 0.0f) { 
             // очистка экрана
-            glClearColor(clear_color.r, clear_color.g, clear_color.b, clear_color.a);
+            glClearColor(r, g, b, a);
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
             glMatrixMode(GL_PROJECTION);
