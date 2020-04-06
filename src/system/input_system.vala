@@ -4,7 +4,11 @@ namespace Bodhi {
     public class Input : Object {
 
         public enum Keycode {
-			UNKNOWN, RETURN, ESCAPE, BACKSPACE, TAB, SPACE, EXCLAIM,
+            UNKNOWN   = SDL.Input.Keycode.UNKNOWN, 
+            RETURN    = SDL.Input.Keycode.RETURN, 
+            ESCAPE    = SDL.Input.Keycode.ESCAPE, 
+            BACKSPACE = SDL.Input.Keycode.BACKSPACE, 
+            TAB, SPACE, EXCLAIM,
 			QUOTEDBL, HASH, PERCENT, DOLLAR, AMPERSAND, QUOTE,
 			LEFTPAREN, RIGHTPAREN, ASTERISK, PLUS, COMMA, MINUS,
 			PERIOD, SLASH, SDLK_0, SDLK_1, SDLK_2, SDLK_3, SDLK_4,
@@ -274,7 +278,10 @@ namespace Bodhi {
 
             mouse_wheel_direction = 0;
 
-            Memory.set(&key_pressed, 0, MAX_KEY_TABLE_SIZE * sizeof(bool));
+            //Memory.set(&key_pressed, 0, MAX_KEY_TABLE_SIZE * sizeof(bool));
+            for (int i = 0; i < key_pressed.length; ++i) {
+                key_pressed[i] = false;
+            }
         }
 
         /*-------*/

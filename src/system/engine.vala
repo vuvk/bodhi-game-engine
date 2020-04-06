@@ -191,7 +191,7 @@ namespace Bodhi {
             update_fps();
 
             window.update();
-            //input.update();
+            input.update();
         }
 
         public static bool is_running() {
