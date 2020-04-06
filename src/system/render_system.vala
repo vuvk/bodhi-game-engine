@@ -26,7 +26,13 @@ namespace Bodhi {
         }
         
         ~Renderer() {
-            destroy();
+            if (gl_context != null) {
+                //free(gl_context);
+                gl_context = null;
+            }
+            INSTANCE = null;
+            
+            state = States.NOT_CREATED;
         }
 
         internal static unowned Renderer? get_instance() {
@@ -85,16 +91,6 @@ namespace Bodhi {
             state = States.CREATED;
 
             return 0;
-        }
-
-        public void destroy() {
-            if (gl_context != null) {
-                free(gl_context);
-                INSTANCE = null;
-                gl_context = null;
-            }
-            
-            state = States.NOT_CREATED;
         }
 
         public Vector2i get_max_screen_resolution() {

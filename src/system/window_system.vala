@@ -32,7 +32,19 @@ namespace Bodhi {
         }
         
         ~RendererWindow() {
-            destroy();
+            Renderer render = Renderer.get_instance();
+            if (render != null) {
+                render.dispose();
+            }
+
+            if (sdl_window != null) {
+                sdl_window.destroy();
+                sdl_window = null;
+            }
+
+            INSTANCE = null;
+        
+            state = States.NOT_CREATED;
         }
         
         internal static unowned RendererWindow? get_instance(int32 width = DEFAULT_WIDTH, 
@@ -103,28 +115,12 @@ namespace Bodhi {
         
             return Errors.NO_ERROR;
         }
-
-        public void destroy() {
-            Renderer render = Renderer.get_instance();
-            if (render != null) {
-                render.destroy();
-            }
-
-            if (sdl_window != null) {
-                sdl_window.destroy();
-                sdl_window = null;
-            }
-
-            INSTANCE = null;
-        
-            state = States.NOT_CREATED;
-        }
         
         public void set_size(Vector2i size) {
-            set_size_i(size.x, size.y);
+            set_sizei(size.x, size.y);
         }
         
-        public void set_size_i(int32 width, int32 height) {
+        public void set_sizei(int32 width, int32 height) {
             sdl_window.set_size(width, height);
             this.width  = width;
             this.height = height;
@@ -165,7 +161,7 @@ namespace Bodhi {
         }
         
         // system
-        public void update() {    
+        internal void update() {    
             if (sdl_window != null) {
                 sdl_window.get_size(out width, out height);
         
@@ -188,7 +184,7 @@ namespace Bodhi {
             return state;
         }
         
-        public unowned Video.Window get_sdl_class() {
+        public Video.Window* get_sdl_class() {
             return sdl_window;
         }
     }
