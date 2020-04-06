@@ -45,6 +45,7 @@ bodhi_sources = files(
     'src/system/window_system.vala',
     'src/system/render_system.vala',
     'src/system/scene_manager.vala',
+    'src/system/input_system.vala',
     'src/system/engine.vala',
     
     #'test.vala',

@@ -33,6 +33,7 @@ namespace Bodhi {
         private static unowned RendererWindow window;
         private static unowned Renderer renderer;
         private static Scene scene;
+        private static unowned Input input;
     
         /** start Antoshka Engine and initialize all subsystems */
         public static int start (int wnd_width, int wnd_height, bool resizable, bool fullscreen_mode) {
@@ -106,13 +107,20 @@ namespace Bodhi {
             //_nodesMd2  = ListCreate();
 
             scene = new Scene();
+            input = Input.get_instance();
         
             return Errors.NO_ERROR;
         }
 
         /** stop Antoshka Engine */
         public static void stop() {
-            window.destroy();
+            scene.dispose();
+            scene = null;
+
+            input.dispose();
+            input = null;
+
+            window.dispose();
             window = null;
         
             /* clear resources */
@@ -136,11 +144,8 @@ namespace Bodhi {
             DictionaryDestroy(&_meshesMd2);
             ListDestroy(&_nodesMd2);*/
             
-            SDL.quit();
-        
+            SDL.quit();        
             state = States.NOT_RUNNING;
-            scene.dispose();
-            scene = null;
         
             Log.write_warning("Engine stopped!\n");
         }
@@ -186,12 +191,11 @@ namespace Bodhi {
             update_fps();
 
             window.update();
+            //input.update();
         }
-        
-        // timing
-        public static void set_limit_fps (uint16 limit) {
-            limit_fps = limit;
-            framerate = 1000.0f / limit;
+
+        public static bool is_running() {
+            return state == States.RUNNING;
         }
 
         public static uint16 get_limit_fps() {
@@ -230,6 +234,15 @@ namespace Bodhi {
         public static unowned Scene? get_scene() {
             return scene;
         }
-    }
-    
+
+        public static unowned Input? get_input() {
+            return input;
+        }
+        
+        // timing
+        public static void set_limit_fps (uint16 limit) {
+            limit_fps = limit;
+            framerate = 1000.0f / limit;
+        }
+    }    
 }
