@@ -17,7 +17,7 @@ namespace Bodhi {
             sdl_window = window.get_sdl_class();
         }
 
-        public void begin(RGBAColorf clear_color = RGBAColorf.BLACK) { 
+        public void begin(RGBAColorf clear_color = RGBAColorf.BLACK()) { 
             beginf(clear_color.r, clear_color.g, clear_color.b, clear_color.a);
         }
 

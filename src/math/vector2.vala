@@ -2,8 +2,8 @@ namespace Bodhi {
 
     /** vector with 2 integer components */
     public struct Vector2i {
-        public const Vector2i ZERO = {0, 0};
-        public const Vector2i ONE  = {1, 1};
+        public static Vector2i ZERO() { return {0, 0}; }
+        public static Vector2i ONE()  { return {1, 1}; }
 
         public int x {get; set;}
         public int y {get; set;}
@@ -24,8 +24,8 @@ namespace Bodhi {
 
     /** vector with 2 floats components */
     public struct Vector2f {
-        public const Vector2f ZERO = {0, 0};
-        public const Vector2f ONE  = {1, 1};
+        public static Vector2f ZERO() { return {0, 0}; }
+        public static Vector2f ONE()  { return {1, 1}; }
 
         public float x {get; set;}
         public float y {get; set;}
@@ -64,7 +64,7 @@ namespace Bodhi {
                 value = 1.0f / value;
                 return { x * value, y * value };
             } else {
-                return ZERO;
+                return ZERO();
             }
         }
         

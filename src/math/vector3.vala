@@ -6,12 +6,12 @@ namespace Bodhi {
         public float y {get; set;}
         public float z {get; set;}
 
-        public const Vector3f ZERO = { 0, 0, 0 };
-        public const Vector3f ONE  = { 1, 1, 1 };
+        public static Vector3f ZERO() { return { 0, 0, 0 }; }
+        public static Vector3f ONE()  { return { 1, 1, 1 }; }
 
-        public const Vector3f RIGHT   = { 1, 0, 0 };
-        public const Vector3f UP      = { 0, 1, 0 };
-        public const Vector3f FORWARD = { 0, 0, 1 };
+        public static Vector3f RIGHT()   { return { 1, 0, 0 }; }
+        public static Vector3f UP()      { return { 0, 1, 0 }; }
+        public static Vector3f FORWARD() { return { 0, 0, 1 }; }
         
         public Vector3f(float x, float y, float z) {
             set_xyz(x, y, z);
@@ -72,7 +72,7 @@ namespace Bodhi {
                 value = 1.0f / value;
                 return { x * value, y * value, z * value };
             } else {
-                return ZERO;
+                return ZERO();
             }
         }
         

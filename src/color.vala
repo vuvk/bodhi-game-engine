@@ -4,11 +4,11 @@ namespace Bodhi {
         public uint8 g;
         public uint8 b;
 
-        public const RGBColor RED   = { 255, 0,   0   };
-        public const RGBColor GREEN = { 0,   255, 0   };
-        public const RGBColor BLUE  = { 0,   0,   255 };
-        public const RGBColor BLACK = { 0,   0,   0   };
-        public const RGBColor WHITE = { 255, 255, 255 };
+        public static RGBColor RED()   { return { 255, 0,   0   }; }
+        public static RGBColor GREEN() { return { 0,   255, 0   }; }
+        public static RGBColor BLUE()  { return { 0,   0,   255 }; }
+        public static RGBColor BLACK() { return { 0,   0,   0   }; }
+        public static RGBColor WHITE() { return { 255, 255, 255 }; }
 
         public RGBColor(uint8 r, uint8 g, uint8 b) {
             set_rgb(r, g, b);
@@ -84,11 +84,11 @@ namespace Bodhi {
         public uint8 b;
         public uint8 a;
 
-        public const RGBAColor RED   = { 255, 0,   0,   255 };
-        public const RGBAColor GREEN = { 0,   255, 0,   255 };
-        public const RGBAColor BLUE  = { 0,   0,   255, 255 };
-        public const RGBAColor BLACK = { 0,   0,   0,   255 };
-        public const RGBAColor WHITE = { 255, 255, 255, 255 };
+        public static RGBAColor RED()   { return { 255, 0,   0,   255 }; }
+        public static RGBAColor GREEN() { return { 0,   255, 0,   255 }; }
+        public static RGBAColor BLUE()  { return { 0,   0,   255, 255 }; }
+        public static RGBAColor BLACK() { return { 0,   0,   0,   255 }; }
+        public static RGBAColor WHITE() { return { 255, 255, 255, 255 }; }
 
         public RGBAColor(uint8 r, uint8 g, uint8 b, uint8 a) {
             set_rgba(r, g, b, a);
@@ -175,11 +175,11 @@ namespace Bodhi {
         public float g;
         public float b;
 
-        public const RGBColorf RED   = { 1, 0, 0 };
-        public const RGBColorf GREEN = { 0, 1, 0 };
-        public const RGBColorf BLUE  = { 0, 0, 1 };
-        public const RGBColorf BLACK = { 0, 0, 0 };
-        public const RGBColorf WHITE = { 1, 1, 1 };
+        public static RGBColorf RED()   { return { 1, 0, 0 }; }
+        public static RGBColorf GREEN() { return { 0, 1, 0 }; }
+        public static RGBColorf BLUE()  { return { 0, 0, 1 }; }
+        public static RGBColorf BLACK() { return { 0, 0, 0 }; }
+        public static RGBColorf WHITE() { return { 1, 1, 1 }; }
 
         public RGBColorf(float r, float g, float b) {
             set_rgb(r, g, b);
@@ -255,11 +255,11 @@ namespace Bodhi {
         public float b;
         public float a;
 
-        public const RGBAColorf RED   = { 1, 0, 0, 1 };
-        public const RGBAColorf GREEN = { 0, 1, 0, 1 };
-        public const RGBAColorf BLUE  = { 0, 0, 1, 1 };
-        public const RGBAColorf BLACK = { 0, 0, 0, 1 };
-        public const RGBAColorf WHITE = { 1, 1, 1, 1 };
+        public static RGBAColorf RED()   { return { 1, 0, 0, 1 }; }
+        public static RGBAColorf GREEN() { return { 0, 1, 0, 1 }; }
+        public static RGBAColorf BLUE()  { return { 0, 0, 1, 1 }; }
+        public static RGBAColorf BLACK() { return { 0, 0, 0, 1 }; }
+        public static RGBAColorf WHITE() { return { 1, 1, 1, 1 }; }
 
         public RGBAColorf(float r, float g, float b, float a) {
             set_rgba(r, g, b, a);

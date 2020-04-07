@@ -6,7 +6,7 @@ namespace Bodhi {
         public float z {get; set;}
         public float w {get; set;}
         
-        public const Vector4f ZERO = { 0, 0, 0, 0 };
+        public static Vector4f ZERO() { return { 0, 0, 0, 0 }; }
 
         public Vector4f(float x, float y, float z, float w) {
             set_xyzw(x, y, z, w);
@@ -68,7 +68,7 @@ namespace Bodhi {
                 value = 1.0f / value;
                 return { x * value, y * value, z * value, w * value };
             } else {
-                return ZERO;
+                return ZERO();
             }
         }
         
