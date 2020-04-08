@@ -115,6 +115,12 @@ namespace GLFW {
 		[CCode (cname = "glfwSetWindowSize")]
 		public void set_size (int width, int height);
 
+		[CCode (cname = "glfwGetWindowPos")]
+		public void get_position (out int x, out int y);
+
+		[CCode (cname = "glfwSetWindowPos")]
+		public void set_position (int x, int y);
+
 		[CCode (cname = "glfwGetFramebufferSize")]
 		public void get_framebuffer_size (out int width, out int height);
 
@@ -204,7 +210,7 @@ namespace GLFW {
 			get;
 		}
 
-		public GLFW.VideoMode video_mode {
+		public unowned GLFW.VideoMode? video_mode {
 			[CCode (cname="glfwGetVideoMode")]
 			get;
 		}
@@ -220,7 +226,7 @@ namespace GLFW {
 	public Monitor[]? get_monitors ();
 
 	[CCode (cname = "glfwGetPrimaryMonitor")]
-	public Monitor? get_primary_monitor ();
+	public unowned Monitor get_primary_monitor ();
 
 	[CCode (cname = "GLFWwindowclosefun", has_target = false)]
 	public delegate void WindowCloseFunc (Window window);
@@ -376,16 +382,18 @@ namespace GLFW {
 
 	[CCode (cname = "GLFWvidmode", has_type_id = false)]
 	public struct VideoMode {
-		[CCode (cname = "Width")]
+		[CCode (cname = "width")]
 		public int width;
-		[CCode (cname = "Height")]
+		[CCode (cname = "height")]
 		public int height;
-		[CCode (cname = "RedBits")]
+		[CCode (cname = "redBits")]
 		public int red_bits;
-		[CCode (cname = "GreenBits")]
+		[CCode (cname = "greenBits")]
 		public int green_bits;
-		[CCode (cname = "BlueBits")]
+		[CCode (cname = "blueBits")]
 		public int blue_bits;
+		[CCode (cname = "refreshRate")]
+		public int refresh_rate;
 	}
 
 	[CCode (cname = "glfwInit")]
