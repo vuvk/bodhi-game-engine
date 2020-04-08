@@ -12,13 +12,15 @@ bodhi_dependecies = [
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
     dependency('gio-2.0'),    
-    dependency('gl'),
-    dependency('glew'),
-    dependency('sdl2'),
-    dependency('SDL2_gfx'),
-    dependency('SDL2_ttf'),
-    dependency('SDL2_image'),
-    dependency('SDL2_mixer'),
+    dependency('glesv2'),    
+    dependency('glfw3'),    
+#    dependency('gl'),
+#    dependency('glew'),
+#    dependency('sdl2'),
+#    dependency('SDL2_gfx'),
+#    dependency('SDL2_ttf'),
+#    dependency('SDL2_image'),
+#    dependency('SDL2_mixer'),
 
     m_dep
 ]
@@ -32,6 +34,7 @@ add_project_arguments(['--gir', 'Bodhi-' + PROJECT_VERSION + '.gir'], language: 
 #subdir('src')
 
 bodhi_sources = files(
+
     'src/constants.vala',
 
     'src/color.vala',
@@ -45,10 +48,14 @@ bodhi_sources = files(
     'src/system/window_system.vala',
     'src/system/render_system.vala',
     'src/system/scene_manager.vala',
-    'src/system/input_system.vala',
+#    'src/system/input_system.vala',
     'src/system/engine.vala',
     
     #'test.vala',
+)
+
+bodhi_exec = files(    
+    'test.vala',
 )
 
 bodhi_inc = include_directories('.', './build/')
@@ -56,7 +63,7 @@ bodhi_inc = include_directories('.', './build/')
 libbodhi = library(
     'Bodhi', 
     sources: bodhi_sources, 
-    dependencies: bodhi_dependecies
+    dependencies: bodhi_dependecies,
 )
 
 #bodhi_gir = gnome.generate_gir(
@@ -70,4 +77,4 @@ libbodhi = library(
 #    install: true,
 #)
 
-#executable('app_name', sources: bodhi_sources, dependencies: bodhi_dependecies)
+executable('app_name', sources: bodhi_exec, link_with : libbodhi, dependencies: bodhi_dependecies)

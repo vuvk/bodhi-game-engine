@@ -1,6 +1,6 @@
-using SDL;
-using GLEW;
-using GL;
+//using GLEW;
+//using GL;
+using GLES2;
 
 namespace Bodhi {
 
@@ -12,8 +12,6 @@ namespace Bodhi {
             CREATED
         }
         
-        //static SDL_Renderer* _sdlRenderer;
-        private Video.GL.Context gl_context = null;
         private States state = States.NOT_CREATED;
         private static Renderer INSTANCE = null;
 
@@ -26,10 +24,6 @@ namespace Bodhi {
         }
         
         ~Renderer() {
-            if (gl_context != null) {
-                //free(gl_context);
-                gl_context = null;
-            }
             INSTANCE = null;
             
             state = States.NOT_CREATED;
@@ -63,29 +57,23 @@ namespace Bodhi {
                 return Errors.NO_ERROR;
             }
 
-            /* try to create OpenGL context */
-            gl_context = Video.GL.Context.create(window.get_sdl_class());
-            if (gl_context == null) {
-                Log.write_error("Could not create OpenGL context! Error : " + SDL.get_error() + "\n");
-                return Errors.GL_CONTEXT_NOT_CREATED;
-            }
-
             // сглаживание
-            glHint(GL_POINT_SMOOTH_HINT, GL_NICEST);
-            glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
-            glHint(GL_POLYGON_SMOOTH_HINT, GL_NICEST);
-            glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
-    //      glHint(GL_GENERATE_MIPMAP_HINT, GL_NICEST);
-            glHint(GL_TEXTURE_COMPRESSION_HINT, GL_NICEST);
+            
+            //glHint(GL_POINT_SMOOTH_HINT, GL_NICEST);
+            //glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+            //glHint(GL_POLYGON_SMOOTH_HINT, GL_NICEST);
+            //glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+            glHint(GL_GENERATE_MIPMAP_HINT, GL_NICEST);
+            //glHint(GL_TEXTURE_COMPRESSION_HINT, GL_NICEST);
 
             // тест глубины
-            glClearDepth(1.0f);
+            glClearDepthf(1.0f);
             glDepthFunc(GL_LEQUAL);
             glEnable(GL_DEPTH_TEST);
-            glShadeModel(GL_SMOOTH);
+            //glShadeModel(GL_SMOOTH);
 
             /* initialize GL extensions */
-            glewInit();
+            //glewInit();
 
             /* now render is created */
             state = States.CREATED;
@@ -93,56 +81,72 @@ namespace Bodhi {
             return 0;
         }
 
+        public Vector2i get_screen_resolution() {
+            int w = 0,
+                h = 0;
+            get_screen_resolutioni(out w, out h);
+
+            return { w, h };
+        }
+
+        public void get_screen_resolutioni(out int width, out int height) {
+            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
+            if (monitor == null) {
+                width = height = 0;
+                return;
+            }
+
+            GLFW.VideoMode mode = monitor.video_mode;
+
+            width  = mode.width;
+            height = mode.height;
+        }
+
+        public int get_screen_resolution_width() {
+            return get_screen_resolution().x;
+        }
+
+        public int get_screen_resolution_height() {
+            return get_screen_resolution().y;
+        }
+
         public Vector2i get_max_screen_resolution() {
             int x = 0, 
                 y = 0;
-            get_max_screen_resolution_i(ref x, ref y);
+            get_max_screen_resolutioni(out x, out y);
             return { x, y };
         }
 
-        public void get_max_screen_resolution_i(ref int width, ref int height) {
-            Video.Display display = {};
-
-            int displayModeCount = display.num_modes();
-            if (displayModeCount < 1) {
+        public void get_max_screen_resolutioni(out int width, out int height) {
+            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
+            if (monitor == null) {
+                width = height = 0;
                 return;
             }
 
             int w = 0, h = 0;
-            Video.DisplayMode mode;
-            for (int i = 0; i < displayModeCount; ++i) {
-                if (display.get_mode(i, out mode) != 0) {
-                    Log.write_error("SDL_GetDisplayMode failed: " + SDL.get_error() + "\n");
-                    return;
+            foreach (GLFW.VideoMode mode in monitor.video_modes) {
+                if (mode.width > w) {
+                    w = mode.width;
                 }
 
-                if (mode.w > w) {
-                    w = mode.w;
-                }
-
-                if (mode.h > h) {
-                    h = mode.h;
+                if (mode.height > h) {
+                    h = mode.height;
                 }
             }
 
             width = w;
             height = h;
         }
-    /*
-        public int32 RenderGetMaxScreenResolutionWidth()
-        {
-            int32 width;
-            RenderGetMaxScreenResolutioni(&width, NULL);
-            return width;
+
+        public int get_max_screen_resolution_width() {
+            return get_max_screen_resolution().x;
         }
 
-        public int32 RenderGetMaxScreenResolutionHeight()
-        {
-            int32 height;
-            RenderGetMaxScreenResolutioni(NULL, &height);
-            return height;
+        public int get_max_screen_resolution_height() {
+            return get_max_screen_resolution().y;
         }
-    */
+
         //system
         public States get_state() {
             return state;
@@ -165,15 +169,13 @@ namespace Bodhi {
 
         public int get_depth_buffer_size() {
             int bits = 0;
-            //glGetIntegerv(GL_DEPTH_BITS, &bits);
-            Video.GL.get_attribute(Video.GL.Attributes.DEPTH_SIZE, out bits);
+            glGetIntegerv(GL_DEPTH_BITS, &bits);
             return bits;
         }
 
         public int get_stencil_buffer_size() {
             int bits = 0;
-            //glGetIntegerv(GL_STENCIL_BITS, &bits);
-            Video.GL.get_attribute(Video.GL.Attributes.STENCIL_SIZE, out bits);
+            glGetIntegerv(GL_STENCIL_BITS, &bits);
             return bits;
         }
 
@@ -192,26 +194,18 @@ namespace Bodhi {
         }
 
         public void print_display_modes() {
-            Video.Display display = {};
-
-            int displayModeCount = display.num_modes();
-            if (displayModeCount < 1) {
+            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
+            if (monitor == null) {
                 return;
             }
 
-            Log.write_message("Display modes:\n");
-            Video.DisplayMode mode;
-            for (int i = 0; i < displayModeCount; ++i) {
-                if (display.get_mode(i, out mode) != 0) {
-                    Log.write_error("SDL_GetDisplayMode failed: " + SDL.get_error() + "\n");
-                    return;
-                }
-
+            Log.write_message(@"Display modes for $(monitor.name):\n");
+            foreach (GLFW.VideoMode mode in monitor.video_modes) {
                 Log.write_message(
-                    @"width\t$(mode.w)\t" + 
-                    @"height\t$(mode.h)\t" + 
-                    @"refresh rate\t$(mode.refresh_rate)\n"
-                );        
+                    @"width\t$(mode.width)\t" + 
+                    @"height\t$(mode.height)\t" + 
+                    @"refresh rate\t$(mode.refresh_rate)\n"                    
+                );  
             }
         }
     }

@@ -1,4 +1,5 @@
-using SDL;
+//using SDL;
+using GLFW;
 
 namespace Bodhi {
 
@@ -15,8 +16,8 @@ namespace Bodhi {
         
         private static States state = States.NOT_RUNNING;
         
-        private static uint64 curr_tick;
-        private static uint64 last_tick;
+        private static double curr_tick;
+        private static double last_tick;
         
         // delta of time between last and current frame
         private static float delta_time;
@@ -33,10 +34,13 @@ namespace Bodhi {
         private static unowned RendererWindow window;
         private static unowned Renderer renderer;
         private static Scene scene;
-        private static unowned Input input;
+//        private static unowned Input input;
     
         /** start Antoshka Engine and initialize all subsystems */
-        public static int start (int wnd_width, int wnd_height, bool resizable, bool fullscreen_mode) {
+        public static int start (int wnd_width = RendererWindow.DEFAULT_WIDTH, 
+                                 int wnd_height = RendererWindow.DEFAULT_HEIGHT, 
+                                 bool resizable = RendererWindow.DEFAULT_RESIZABLE, 
+                                 bool fullscreen_mode = RendererWindow.DEFAULT_FULLSCREEN) {
             /* what do you want, if engine is already started? */
             if (state == States.RUNNING) {
                 Log.write_warning("Engine is already started!\n");
@@ -48,8 +52,8 @@ namespace Bodhi {
                                "============================================\n");
         
             /* try to init SDL2 */
-            if (SDL.init_subsystem(SDL.InitFlag.VIDEO) < 0) {
-                Log.write_error("Couldn't init SDL2! Error: " + SDL.get_error() + "\n");
+            if (!GLFW.init()) {
+                Log.write_error("Couldn't init GLES2!\n");
                 return Errors.ENGINE_NOT_CREATED;
             }
         
@@ -78,7 +82,7 @@ namespace Bodhi {
             Log.write_message("Engine started!\n");
         
             /* timing */
-            curr_tick = SDL.Timer.get_ticks();
+            curr_tick = GLFW.get_time();
             last_tick = curr_tick;
         
             delta_time = 0.0f;
@@ -107,7 +111,9 @@ namespace Bodhi {
             //_nodesMd2  = ListCreate();
 
             scene = new Scene();
-            input = Input.get_instance();
+            //input = Input.get_instance();
+
+            window.center();
         
             return Errors.NO_ERROR;
         }
@@ -117,8 +123,11 @@ namespace Bodhi {
             scene.dispose();
             scene = null;
 
-            input.dispose();
-            input = null;
+            /*input.dispose();
+            input = null;*/
+
+            renderer.dispose();
+            renderer = null;
 
             window.dispose();
             window = null;
@@ -143,8 +152,8 @@ namespace Bodhi {
         
             DictionaryDestroy(&_meshesMd2);
             ListDestroy(&_nodesMd2);*/
-            
-            SDL.quit();        
+              
+            GLFW.terminate();     
             state = States.NOT_RUNNING;
         
             Log.write_warning("Engine stopped!\n");
@@ -152,16 +161,16 @@ namespace Bodhi {
         
         private static void update_time() {
             // calculate deltaTime
-            curr_tick = SDL.Timer.get_ticks();
+            curr_tick = GLFW.get_time();
             if (curr_tick > last_tick) {
-                delta_time = (curr_tick - last_tick) * 0.001f;
+                delta_time = (float)(curr_tick - last_tick)/* * 0.001f*/;
                 last_tick  =  curr_tick;
             }
         }
 
         private static void update_fps() {
             // если установлено ограничение FPS
-            if (limit_fps > 0.0f) {
+            /*if (limit_fps > 0.0f) {
                 int delay = (int)Math.floor(framerate - delta_time);
                 if (delay <= 0) {
                     delay = 1;
@@ -170,7 +179,7 @@ namespace Bodhi {
                 SDL.Timer.delay(delay);
             } else {
                 SDL.Timer.delay(1);
-            }
+            }*/
         
             // fps узнаем раз в полсекунды
             if (fps_delay < 0.5f) {
@@ -191,7 +200,7 @@ namespace Bodhi {
             update_fps();
 
             window.update();
-            input.update();
+            //input.update();
         }
 
         public static bool is_running() {
@@ -235,14 +244,16 @@ namespace Bodhi {
             return scene;
         }
 
-        public static unowned Input? get_input() {
+        /*public static unowned Input? get_input() {
             return input;
-        }
+        }*/
         
         // timing
         public static void set_limit_fps (uint16 limit) {
             limit_fps = limit;
             framerate = 1000.0f / limit;
+
+            GLFW.swap_interval((int)framerate);
         }
     }    
 }

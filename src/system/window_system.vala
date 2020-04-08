@@ -1,4 +1,5 @@
-using SDL;
+//using SDL;
+//using GLFW;
 
 namespace Bodhi {
 
@@ -15,15 +16,14 @@ namespace Bodhi {
         public const bool DEFAULT_FULLSCREEN = false;
         
         private static RendererWindow INSTANCE = null;
-        private Video.Window sdl_window;
+        private GLFW.Window glfw_window;
+        private string title = @"$(Engine.get_name()) $(Engine.get_version())";
         private States state = NOT_CREATED;
-        private int32 width;
-        private int32 height;
         private bool fullscreen_mode;
-        private int32 prev_width  = 0;
-        private int32 prev_height = 0;
+        private int prev_width  = 0;
+        private int prev_height = 0;
 
-        private RendererWindow(int32 width, int32 height, bool resizable, bool fullscreen_mode) {
+        private RendererWindow(int width, int height, bool resizable, bool fullscreen_mode) {
             if (create(width, height, resizable, fullscreen_mode) == Errors.NO_ERROR) {
                 INSTANCE = this;
             } else {
@@ -31,24 +31,16 @@ namespace Bodhi {
             }
         }
         
-        ~RendererWindow() {
-            Renderer render = Renderer.get_instance();
-            if (render != null) {
-                render.dispose();
-            }
-
-            if (sdl_window != null) {
-                sdl_window.destroy();
-                sdl_window = null;
-            }
-
+        ~RendererWindow() {            
+            //glfw_window.dispose();
+            glfw_window = null;
             INSTANCE = null;
         
             state = States.NOT_CREATED;
         }
         
-        internal static unowned RendererWindow? get_instance(int32 width = DEFAULT_WIDTH, 
-                                                             int32 height = DEFAULT_HEIGHT, 
+        internal static unowned RendererWindow? get_instance(int width = DEFAULT_WIDTH, 
+                                                             int height = DEFAULT_HEIGHT, 
                                                              bool resizable = DEFAULT_RESIZABLE, 
                                                              bool fullscreen_mode = DEFAULT_FULLSCREEN) {
             if (INSTANCE == null) {
@@ -58,7 +50,7 @@ namespace Bodhi {
             return INSTANCE;
         }
         
-        private int create(int32 width, int32 height, bool resizable, bool fullscreen_mode) {
+        private int create(int width, int height, bool resizable, bool fullscreen_mode) {
             /* what do you want if engine is not started, hmm??*/
             if (Engine.get_state() == Engine.States.NOT_RUNNING) {
                 Log.write_error("I can't create window if engine is not started!\n");
@@ -74,6 +66,7 @@ namespace Bodhi {
             /* set SDL attributes */
             //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
             //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
+            /*
             Video.GL.set_attribute(Video.GL.Attributes.RED_SIZE,           8);
             Video.GL.set_attribute(Video.GL.Attributes.GREEN_SIZE,         8);
             Video.GL.set_attribute(Video.GL.Attributes.BLUE_SIZE,          8);
@@ -86,50 +79,30 @@ namespace Bodhi {
             Video.GL.set_attribute(Video.GL.Attributes.ALPHA_SIZE,   8);
             Video.GL.set_attribute(Video.GL.Attributes.MULTISAMPLEBUFFERS, 1);
             Video.GL.set_attribute(Video.GL.Attributes.MULTISAMPLESAMPLES, 2);
-        
+            */
             /* try to create window */
-            int window_flags = Video.WindowFlags.OPENGL;
-            if (resizable) {
-                window_flags |= Video.WindowFlags.RESIZABLE;
-            }
 
-            sdl_window = new Video.Window(@"$(Engine.get_name()) $(Engine.get_version())",
-                                          Video.Window.POS_CENTERED, Video.Window.POS_CENTERED,
-                                          width, height,
-                                          window_flags);
-            if (sdl_window == null) {
-                Log.write_error("Couldn't create window! Error: " + SDL.get_error() + "\n");
+            unowned GLFW.Monitor? monitor = (fullscreen_mode) ? GLFW.get_primary_monitor() : null;
+
+            /* use GLES */
+            GLFW.WindowHint.CLIENT_API.set(GLFW.ClientAPI.OPENGL_ES);
+            
+            glfw_window = new GLFW.Window(width, height, title, monitor, null);
+            if (glfw_window == null) {
+                Log.write_error("Couldn't create window!\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
-        
-            /* set full screen, if need */
-            if (fullscreen_mode) {
-                sdl_window.set_fullscreen(Video.WindowFlags.FULLSCREEN);
-            }
+            
+            GLFW.WindowHint.RESIZABLE.set_bool(resizable);
         
             /* initialization */
-            this.width  = width;
-            this.height = height;
             this.state  = States.CREATED;
             this.fullscreen_mode = fullscreen_mode;
         
             return Errors.NO_ERROR;
         }
-        
-        public void set_size(Vector2i size) {
-            set_sizei(size.x, size.y);
-        }
-        
-        public void set_sizei(int32 width, int32 height) {
-            sdl_window.set_size(width, height);
-            this.width  = width;
-            this.height = height;
-        }
-        
-        public void set_title(string windowTitle) {
-            sdl_window.title = windowTitle;
-        }
-        
+
+        /*
         public void set_fullscreen(bool fullscreen_mode, bool use_desktop_resolution = true) {
             if (fullscreen_mode) {
                 if (!use_desktop_resolution) {
@@ -142,50 +115,101 @@ namespace Bodhi {
             }
         }
         //void EngineSetRendererWindowResizable(bool isResizable);
-        
+        */
+
         //windows gets
         public Vector2i get_size() {
+            int width = 0,
+                height = 0;
+            get_sizei(out width, out height);
             return { width, height };
+        }
+
+        public void get_sizei(out int width, out int height) {
+            glfw_window.get_size(out width, out height);
         }
         
         public unowned string? get_title() {
-            return sdl_window.title;
+            return title;
         }
         
         public int get_width() {
-            return width;
+            return get_size().x;
         }
         
         public int get_height() {
-            return height;
+            return get_size().y;
+        }
+
+        public Vector2i get_position() {
+            int x = 0,
+                y = 0;
+            get_positioni(out x, out y);
+            return {x, y};
         }
         
-        // system
-        internal void update() {    
-            if (sdl_window != null) {
-                sdl_window.get_size(out width, out height);
-        
-                if ((width  != prev_width) ||
-                    (height != prev_height)) {
-                    // !!!
-                    // Perspectivef_M4x4(_pers, 60.0f, (float)width / height, 0.1f, 1000.0f);
-        
-                    prev_width  = width;
-                    prev_height = height;
-                }
-            } else {
-                width  = 0;
-                height = 0;
-                state  = States.NOT_CREATED;
-            }
+        public void get_positioni(out int x, out int y) {
+            glfw_window.get_position(out x, out y);
         }
         
         public States get_state() {
             return state;
         }
         
-        public Video.Window* get_sdl_class() {
-            return sdl_window;
+        public void set_size(Vector2i size) {
+            set_sizei(size.x, size.y);
+        }
+        
+        public void set_sizei(int width, int height) {
+            glfw_window.set_size(width, height);
+        }
+        
+        public void set_title(string title) {
+            glfw_window.title = title;
+            this.title = title;
+        }
+        
+        public void set_position(Vector2i pos) {
+            set_positioni(pos.x, pos.y);
+        }
+        
+        public void set_positioni(int x, int y) {
+            glfw_window.set_position(x, y);
+        }
+
+        public void center() {
+            Vector2i win_size = get_size();
+            Renderer renderer = Engine.get_renderer();
+            Vector2i screen_size = renderer.get_screen_resolution();
+
+            Vector2i pos = { 
+                (screen_size.x >> 1) - (win_size.x >> 1),
+                (screen_size.y >> 1) - (win_size.y >> 1),
+            };
+
+            set_position(pos);
+        }
+        
+        // system
+        internal void update() {    
+            if (glfw_window != null) {
+                Vector2i size = get_size();
+        
+                if ((size.x != prev_width) ||
+                    (size.y != prev_height)) {
+                    // !!!
+                    // Perspectivef_M4x4(_pers, 60.0f, (float)width / height, 0.1f, 1000.0f);
+        
+                    prev_width  = size.x;
+                    prev_height = size.y;
+                }
+            } else {
+                state  = States.NOT_CREATED;
+            }
+        }
+
+        internal void swap_buffers() {
+            glfw_window.swap_buffers();
         }
     }
 }

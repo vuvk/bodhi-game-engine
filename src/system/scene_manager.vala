@@ -1,5 +1,6 @@
-using SDL;
-using GL;
+//using GL;
+using GLFW;
+using GLES2;
 
 namespace Bodhi {
 
@@ -8,13 +9,11 @@ namespace Bodhi {
         private Matrix4x4 modl;
         private Matrix4x4 pers;
         private RendererWindow window;
-        private Video.Window* sdl_window;
 
         internal Scene() {
             modl = new Matrix4x4();
             pers = new Matrix4x4();
             window = RendererWindow.get_instance();
-            sdl_window = window.get_sdl_class();
         }
 
         public void begin(RGBAColorf clear_color = RGBAColorf.BLACK()) { 
@@ -26,24 +25,25 @@ namespace Bodhi {
             glClearColor(r, g, b, a);
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
-            glMatrixMode(GL_PROJECTION);
-            glLoadIdentity();
+            //glMatrixMode(GL_PROJECTION);
+            //glLoadIdentity();
         
             // выставляем перспективу и вьюпорт по размеру окна
             var win_size = window.get_size();
             //gluPerspective(45.0f, (float)windowWidth / windowHeight, 0.1f, 1000.0f);
-            glLoadMatrixf(pers.get_array());
+            //glLoadMatrixf(pers.get_array());
             glViewport(0, 0, win_size.x, win_size.y);
         
             // переходим в режим модели
-            glMatrixMode(GL_MODELVIEW);
-            glLoadIdentity();
+            //glMatrixMode(GL_MODELVIEW);
+            //glLoadIdentity();
         
             glEnable(GL_DEPTH_TEST);
         }
 
         public void end() {
-            Video.GL.swap_window(sdl_window);
+            window.swap_buffers();
+            GLFW.poll_events();
         }
     }
 }
