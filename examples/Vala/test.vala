@@ -25,6 +25,13 @@ public class Test : Object {
 
             window.set_title("Hello! FPS: " + Engine.get_fps().to_string());
 
+            if (input.is_mouse_scroll_up()) {
+                print("wow! wheel up!\n");
+            }
+            if (input.is_mouse_scroll_down()) {
+                print("wow! wheel down!\n");
+            }
+
             if (input.is_key_press(Input.Keys.ESCAPE)) {
 				print("Bye-bye.\n");
                 Engine.stop();

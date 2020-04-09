@@ -45,12 +45,10 @@ bodhi_sources = files(
     'src/system/scene_manager.vala',
     'src/system/input_system.vala',
     'src/system/engine.vala',
-    
-    #'test.vala',
 )
 
 bodhi_exec = files(    
-    'test.vala',
+    'examples/Vala/test.vala',
 )
 
 bodhi_inc = include_directories('.', './build/')
