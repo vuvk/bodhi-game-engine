@@ -60,13 +60,14 @@ namespace Bodhi {
             unowned GLFW.Monitor? monitor = (fullscreen_mode) ? GLFW.get_primary_monitor() : null;
 
             /* use GLES */
-            GLFW.WindowHint.CLIENT_API.set(GLFW.ClientAPI.OPENGL_ES);
+            GLFW.WindowHint.CLIENT_API.set(GLFW.ClientAPI.OPENGL);
             
             glfw_window = new GLFW.Window(width, height, title, monitor, null);
             if (glfw_window == null) {
                 Log.write_error("Couldn't create window!\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
+            glfw_window.make_context_current();
             
             GLFW.WindowHint.RESIZABLE.set_bool(resizable);
         
@@ -169,7 +170,7 @@ namespace Bodhi {
         }
         
         // system
-        internal void update() {    
+        internal void update() {  
             if (glfw_window != null) {
                 Vector2i size = get_size();
         
