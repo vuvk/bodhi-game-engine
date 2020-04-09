@@ -174,16 +174,17 @@ namespace Bodhi {
 
         private static void update_fps() {
             // если установлено ограничение FPS
-            /*if (limit_fps > 0.0f) {
+            if (limit_fps > 0.0f) {
                 int delay = (int)Math.floor(framerate - delta_time);
                 if (delay <= 0) {
                     delay = 1;
                 }
+                delay *= 1000;
                 // пропускаем разницу
-                SDL.Timer.delay(delay);
+                Thread.usleep(delay);
             } else {
-                SDL.Timer.delay(1);
-            }*/
+                Thread.usleep(1);
+            }
         
             // fps узнаем раз в полсекунды
             if (fps_delay < 0.5f) {
@@ -256,8 +257,6 @@ namespace Bodhi {
         public static void set_limit_fps (uint16 limit) {
             limit_fps = limit;
             framerate = 1000.0f / limit;
-
-            GLFW.swap_interval((int)framerate);
         }
     }    
 }

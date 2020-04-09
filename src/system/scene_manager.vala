@@ -1,5 +1,5 @@
-//using GL;
 using GLFW;
+//using GL;
 using GLES2;
 
 namespace Bodhi {
@@ -10,7 +10,7 @@ namespace Bodhi {
             NOT_CREATED,
             CREATED;
         }
-        
+
         private bool is_3d_mode;    
         private Matrix4x4 modl;
         private Matrix4x4 pers;

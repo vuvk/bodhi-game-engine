@@ -15,7 +15,7 @@ public class Test : Object {
         Scene scene = Engine.get_scene();
         Input input = Engine.get_input();
 
-        Engine.set_limit_fps(30);        
+        Engine.set_limit_fps(10);        
 
         while (Engine.is_running()) {
             Engine.update();

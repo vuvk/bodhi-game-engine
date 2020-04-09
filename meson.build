@@ -13,7 +13,9 @@ bodhi_dependecies = [
     dependency('gobject-2.0'),
     dependency('gio-2.0'),    
     dependency('glesv2'),    
+#   dependency('gl'),   
     dependency('glfw3'),  
+#   dependency('glew'),  
 
     m_dep
 ]

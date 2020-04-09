@@ -132,7 +132,7 @@ namespace Bodhi {
             return state;
         }
 
-        public string get_vendor() {
+        public string get_vendor() {            
             string? vendor = glGetString(GL_VENDOR);
             return (vendor != null) ? vendor : "unknown";
         }
