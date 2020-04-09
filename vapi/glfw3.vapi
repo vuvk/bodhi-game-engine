@@ -339,7 +339,8 @@ namespace GLFW {
 		CONTEXT_ROBUSTNESS,
 		OPENGL_FORWARD_COMPAT,
 		OPENGL_DEBUG_CONTEXT,
-		OPENGL_PROFILE;
+		OPENGL_PROFILE,
+		CURSOR_HIDDEN;
 
 		[CCode (cname="glfwWindowHint")]
 		public void set (int value);

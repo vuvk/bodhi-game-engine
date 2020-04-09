@@ -15,8 +15,8 @@ namespace Bodhi {
         public const bool DEFAULT_RESIZABLE  = false;
         public const bool DEFAULT_FULLSCREEN = false;
         
-        private static RendererWindow INSTANCE = null;
-        private GLFW.Window glfw_window;
+        private static RendererWindow? INSTANCE = null;
+        private GLFW.Window? glfw_window;
         private string title = @"$(Engine.get_name()) $(Engine.get_version())";
         private States state = NOT_CREATED;
         private bool fullscreen_mode;
@@ -32,11 +32,7 @@ namespace Bodhi {
         }
         
         ~RendererWindow() {            
-            //glfw_window.dispose();
-            glfw_window = null;
-            INSTANCE = null;
-        
-            state = States.NOT_CREATED;
+            destroy();
         }
         
         internal static unowned RendererWindow? get_instance(int width = DEFAULT_WIDTH, 
@@ -102,6 +98,16 @@ namespace Bodhi {
             return Errors.NO_ERROR;
         }
 
+        internal void destroy() {
+            /*if (glfw_window != null) {
+                glfw_window = null;
+            }*/
+
+            INSTANCE = null;
+        
+            state = States.NOT_CREATED;
+        }
+
         /*
         public void set_fullscreen(bool fullscreen_mode, bool use_desktop_resolution = true) {
             if (fullscreen_mode) {
@@ -154,6 +160,10 @@ namespace Bodhi {
         
         public States get_state() {
             return state;
+        }
+
+        internal unowned GLFW.Window? get_glfw_window() {
+            return glfw_window;
         }
         
         public void set_size(Vector2i size) {

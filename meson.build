@@ -13,14 +13,7 @@ bodhi_dependecies = [
     dependency('gobject-2.0'),
     dependency('gio-2.0'),    
     dependency('glesv2'),    
-    dependency('glfw3'),    
-#    dependency('gl'),
-#    dependency('glew'),
-#    dependency('sdl2'),
-#    dependency('SDL2_gfx'),
-#    dependency('SDL2_ttf'),
-#    dependency('SDL2_image'),
-#    dependency('SDL2_mixer'),
+    dependency('glfw3'),  
 
     m_dep
 ]
@@ -48,7 +41,7 @@ bodhi_sources = files(
     'src/system/window_system.vala',
     'src/system/render_system.vala',
     'src/system/scene_manager.vala',
-#    'src/system/input_system.vala',
+    'src/system/input_system.vala',
     'src/system/engine.vala',
     
     #'test.vala',

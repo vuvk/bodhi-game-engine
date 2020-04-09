@@ -13,7 +13,7 @@ namespace Bodhi {
         }
         
         private States state = States.NOT_CREATED;
-        private static Renderer INSTANCE = null;
+        private static Renderer? INSTANCE = null;
 
         private Renderer() {
             if (create() == Errors.NO_ERROR) {
@@ -24,9 +24,7 @@ namespace Bodhi {
         }
         
         ~Renderer() {
-            INSTANCE = null;
-            
-            state = States.NOT_CREATED;
+            destroy();
         }
 
         internal static unowned Renderer? get_instance() {
@@ -79,6 +77,11 @@ namespace Bodhi {
             state = States.CREATED;
 
             return 0;
+        }
+
+        internal void destroy() {
+            INSTANCE = null;            
+            state = States.NOT_CREATED;
         }
 
         public Vector2i get_screen_resolution() {

@@ -31,10 +31,10 @@ namespace Bodhi {
         private static uint16 limit_fps;
         private static float framerate;
 
-        private static unowned RendererWindow window;
-        private static unowned Renderer renderer;
-        private static Scene scene;
-//        private static unowned Input input;
+        private static unowned RendererWindow? window;
+        private static unowned Renderer? renderer;
+        private static Scene? scene;
+        private static unowned Input? input;
     
         /** start Antoshka Engine and initialize all subsystems */
         public static int start (int wnd_width = RendererWindow.DEFAULT_WIDTH, 
@@ -79,7 +79,7 @@ namespace Bodhi {
             renderer.print_display_modes();
             renderer.print_info();
         
-            Log.write_message("Engine started!\n");
+            Log.write_message("The Engine was started!\n");
         
             /* timing */
             curr_tick = GLFW.get_time();
@@ -111,7 +111,7 @@ namespace Bodhi {
             //_nodesMd2  = ListCreate();
 
             scene = new Scene();
-            //input = Input.get_instance();
+            input = Input.get_instance();
 
             window.center();
         
@@ -120,17 +120,25 @@ namespace Bodhi {
 
         /** stop Antoshka Engine */
         public static void stop() {
-            scene.dispose();
-            scene = null;
+            if (scene != null) {
+                scene.dispose();
+                scene = null;
+            }
 
-            /*input.dispose();
-            input = null;*/
+            if (input != null) {
+                input.dispose();
+                input = null;
+            }
 
-            renderer.dispose();
-            renderer = null;
+            if (renderer != null) {
+                renderer.dispose();
+                renderer = null;
+            }
 
-            window.dispose();
-            window = null;
+            if (window != null) {
+                window.dispose();
+                window = null;
+            }
         
             /* clear resources */
             /*TexturesDestroyAll();
@@ -156,7 +164,7 @@ namespace Bodhi {
             GLFW.terminate();     
             state = States.NOT_RUNNING;
         
-            Log.write_warning("Engine stopped!\n");
+            Log.write_warning("The Engine was stopped!\n");
         }
         
         private static void update_time() {
@@ -200,7 +208,7 @@ namespace Bodhi {
             update_fps();
 
             window.update();
-            //input.update();
+            input.update();
         }
 
         public static bool is_running() {
@@ -232,11 +240,11 @@ namespace Bodhi {
             return VERSION;
         }
 
-        public static unowned RendererWindow get_window() {
+        public static unowned RendererWindow? get_window() {
             return window;
         }
 
-        public static unowned Renderer get_renderer() {
+        public static unowned Renderer? get_renderer() {
             return renderer;
         }
 
@@ -244,9 +252,9 @@ namespace Bodhi {
             return scene;
         }
 
-        /*public static unowned Input? get_input() {
+        public static unowned Input? get_input() {
             return input;
-        }*/
+        }
         
         // timing
         public static void set_limit_fps (uint16 limit) {

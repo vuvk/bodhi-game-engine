@@ -43,7 +43,6 @@ namespace Bodhi {
 
         public void end() {
             window.swap_buffers();
-            GLFW.poll_events();
         }
     }
 }

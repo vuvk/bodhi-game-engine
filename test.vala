@@ -13,7 +13,7 @@ public class Test : Object {
         window.set_title("Hello!");
 
         Scene scene = Engine.get_scene();
-        //Input input = Engine.get_input();
+        Input input = Engine.get_input();
 
         Engine.set_limit_fps(30);        
 
@@ -25,15 +25,11 @@ public class Test : Object {
 
             window.set_title("Hello! FPS: " + Engine.get_fps().to_string());
 
-            /*if (input.is_key_down()) {
-                print(((int)(input.get_last_keycode())).to_string() + "\n");
-                if (input.is_key_pressed(Input.Keycode.ESCAPE)) {
-                    Engine.stop();
-                }
-            }*/
+            if (input.is_key_press(Input.Keys.ESCAPE)) {
+				print("Bye-bye.\n");
+                Engine.stop();
+            }
         }
-        
-        Engine.stop();
 
         return 0;
     }
