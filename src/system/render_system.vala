@@ -13,26 +13,14 @@ namespace Bodhi {
         }
         
         private States state = States.NOT_CREATED;
-        private static Renderer? INSTANCE = null;
 
-        private Renderer() {
+        internal Renderer() {
             if (create() == Errors.NO_ERROR) {
-                INSTANCE = this;
-            } else {
-                INSTANCE = null;
+                state = States.CREATED;
             }
         }
         
         ~Renderer() {
-            destroy();
-        }
-
-        internal static unowned Renderer? get_instance() {
-            if (INSTANCE == null) {
-                new Renderer();
-            }
-
-            return INSTANCE;
         }
 
         private int create() {
@@ -43,16 +31,10 @@ namespace Bodhi {
             }
 
             /* what do you want if window is not created, hmm??*/
-            RendererWindow window = RendererWindow.get_instance();
+            RendererWindow window = Engine.get_window();
             if (window == null || window.get_state() == RendererWindow.States.NOT_CREATED) {
                 Log.write_error("Could not create OpenGL context, because window not created!\n");
                 return Errors.WINDOW_NOT_CREATED;
-            }
-
-            /* what do you want, if renderer is already created? */
-            if (INSTANCE != null && INSTANCE.state == States.CREATED) {
-                Log.write_warning("Renderer is already created!\n");
-                return Errors.NO_ERROR;
             }
 
             // сглаживание
@@ -76,12 +58,7 @@ namespace Bodhi {
             /* now render is created */
             state = States.CREATED;
 
-            return 0;
-        }
-
-        internal void destroy() {
-            INSTANCE = null;            
-            state = States.NOT_CREATED;
+            return Errors.NO_ERROR;
         }
 
         public Vector2i get_screen_resolution() {

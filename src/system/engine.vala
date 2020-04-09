@@ -31,10 +31,10 @@ namespace Bodhi {
         private static uint16 limit_fps;
         private static float framerate;
 
-        private static unowned RendererWindow? window;
-        private static unowned Renderer? renderer;
+        private static RendererWindow? window;
+        private static Renderer? renderer;
         private static Scene? scene;
-        private static unowned Input? input;
+        private static Input? input;
     
         /** start Antoshka Engine and initialize all subsystems */
         public static int start (int wnd_width = RendererWindow.DEFAULT_WIDTH, 
@@ -61,16 +61,16 @@ namespace Bodhi {
             state = States.RUNNING;
         
             /* try to create window */
-            window = RendererWindow.get_instance(wnd_width, wnd_height, resizable, fullscreen_mode);
-            if (window == null) {
+            window = new RendererWindow(wnd_width, wnd_height, resizable, fullscreen_mode);
+            if (window.get_state() != RendererWindow.States.CREATED) {
                 Log.write_error("Renderer window not created!\n");
                 stop();
                 return Errors.WINDOW_NOT_CREATED;
             }
         
             /* try to create OpenGL context */
-            renderer = Renderer.get_instance(); 
-            if (renderer == null) {
+            renderer = new Renderer(); 
+            if (renderer.get_state() != Renderer.States.CREATED) {
                 Log.write_error("Renderer not created!\n");
                 stop();
                 return Errors.RENDERER_NOT_CREATED;
@@ -111,7 +111,18 @@ namespace Bodhi {
             //_nodesMd2  = ListCreate();
 
             scene = new Scene();
-            input = Input.get_instance();
+            if (scene.get_state() != Scene.States.CREATED) {
+                Log.write_error("Scene not created!\n");
+                stop();
+                return Errors.SCENE_NOT_CREATED;
+            }
+
+            input = new Input();
+            if (input.get_state() != Input.States.CREATED) {
+                Log.write_error("Input system not initialized!\n");
+                stop();
+                return Errors.INPUT_NOT_CREATED;
+            }
 
             window.center();
         
@@ -120,25 +131,10 @@ namespace Bodhi {
 
         /** stop Antoshka Engine */
         public static void stop() {
-            if (scene != null) {
-                scene.dispose();
-                scene = null;
-            }
-
-            if (input != null) {
-                input.dispose();
-                input = null;
-            }
-
-            if (renderer != null) {
-                renderer.dispose();
-                renderer = null;
-            }
-
-            if (window != null) {
-                window.dispose();
-                window = null;
-            }
+            scene = null;
+            input = null;
+            renderer = null;
+            window = null;
         
             /* clear resources */
             /*TexturesDestroyAll();

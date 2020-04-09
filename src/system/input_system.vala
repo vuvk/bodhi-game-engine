@@ -4,6 +4,11 @@ using GLFW;
 namespace Bodhi {
     public class Input : Object {
 
+        public enum States {
+            NOT_CREATED,
+            CREATED;
+        }
+
 		public enum Keys {
             /* The unknown key */
             UNKNOWN           = -1,
@@ -131,35 +136,8 @@ namespace Bodhi {
             RIGHT_ALT         = 346,
             RIGHT_SUPER       = 347,
             MENU              = 348
-		}
-
-        //private SDL.Event event;
-
-        /* keyboard state */
-        /*private const int KEYBOARD_KEY_DOWN = (1 << 0);
-        private const int KEYBOARD_KEY_UP   = (1 << 1);
-        private uint8 keyboard_state = 0;
-        private Keycode  last_keycode  = Keycode.UNKNOWN;
-        private Scancode last_scancode = Scancode.UNKNOWN;
-        private const int MAX_KEY_TABLE_SIZE = 512;*/
-        /* table of pressed keys */
-        /* таблица из нажатых в данный момент кнопок */
-        //private bool[] key_pressed = new bool[MAX_KEY_TABLE_SIZE];
-
-        /* mouse state */
-        //private const uint16 MOUSE_MOVE        = (1 << 0);
-        //private const uint16 MOUSE_BUTTON_UP   = (1 << 1);    /* any button was unpressed */
-        //private const uint16 MOUSE_BUTTON_DOWN = (1 << 2);    /* any button was pressed */
-        //private const uint16 MOUSE_WHEEL       = (1 << 3);
-        //private const uint16 MOUSE_LAST_LEFT   = (1 << 4);    /* last pressed mouse button - left   */
-        //private const uint16 MOUSE_LAST_RIGHT  = (1 << 5);    /* last pressed mouse button - right  */
-        //private const uint16 MOUSE_LAST_MIDDLE = (1 << 6);    /* last pressed mouse button - middle */
-        //private const uint16 MOUSE_HELD_LEFT   = (1 << 7);    /* left button is held down   */
-        //private const uint16 MOUSE_HELD_RIGHT  = (1 << 8);    /* right button is held down  */
-        //private const uint16 MOUSE_HELD_MIDDLE = (1 << 9);    /* middle button is held down */
-        //private Vector2i mouse_position;
-        //private int mouse_wheel_direction = 0;
-        //private uint16 mouse_state = 0;
+        }
+        
         private unowned GLFW.Window? glfw_window;
         private double mouse_pos_x = 0;
         private double mouse_pos_y = 0;
@@ -170,35 +148,20 @@ namespace Bodhi {
         private double prev_mouse_scroll_xoffset = 0; 
         private double prev_mouse_scroll_yoffset = 0;
         private bool show_mouse_cursor = true;
+        private States state = States.NOT_CREATED;
 
-
-        private static Input? INSTANCE = null;
-
-        private Input() {
+        internal Input() {
             if (!Engine.is_running()) {
                 Log.write_error("I can't create input system if engine is not started!\n");
-                INSTANCE = null;
             } else {
-                INSTANCE = this;
                 var window = Engine.get_window();
                 glfw_window = window.get_glfw_window();
+
+                state = States.CREATED;
             }
         }
         
         ~Input() {
-            destroy();
-        }
-
-        internal static unowned Input? get_instance() {
-            if (INSTANCE == null) {
-                new Input();
-            }
-
-            return INSTANCE;
-        }
-
-        internal void destroy() {
-            INSTANCE = null;
         }
 
         /** Update state of input. Use this on every step! */
@@ -211,6 +174,10 @@ namespace Bodhi {
             prev_mouse_scroll_yoffset = mouse_scroll_yoffset;
             glfw_window.get_cursor_pos(out mouse_pos_x, out mouse_pos_y);
             //glfw_window.get_scroll_offset(out mouse_scroll_xoffset, out mouse_scroll_yoffset);
+        }
+
+        public States get_state() {
+            return state;
         }
 
         /*----------*/

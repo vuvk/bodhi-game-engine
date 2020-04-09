@@ -5,15 +5,34 @@ using GLES2;
 namespace Bodhi {
 
     public class Scene : Object {   
+
+        public enum States {
+            NOT_CREATED,
+            CREATED;
+        }
+        
         private bool is_3d_mode;    
         private Matrix4x4 modl;
         private Matrix4x4 pers;
-        private RendererWindow window;
+        private unowned RendererWindow? window;
+        private States state = States.NOT_CREATED;
 
         internal Scene() {
             modl = new Matrix4x4();
             pers = new Matrix4x4();
-            window = RendererWindow.get_instance();
+            if (Engine.is_running()) {
+                window = Engine.get_window();
+                if (window != null) {
+                    state = States.CREATED;
+                }
+            }
+        }
+
+        ~Scene() {            
+        }
+
+        public States get_state() {
+            return state;
         }
 
         public void begin(RGBAColorf clear_color = RGBAColorf.BLACK()) { 

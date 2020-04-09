@@ -15,7 +15,6 @@ namespace Bodhi {
         public const bool DEFAULT_RESIZABLE  = false;
         public const bool DEFAULT_FULLSCREEN = false;
         
-        private static RendererWindow? INSTANCE = null;
         private GLFW.Window? glfw_window;
         private string title = @"$(Engine.get_name()) $(Engine.get_version())";
         private States state = NOT_CREATED;
@@ -23,40 +22,20 @@ namespace Bodhi {
         private int prev_width  = 0;
         private int prev_height = 0;
 
-        private RendererWindow(int width, int height, bool resizable, bool fullscreen_mode) {
+        internal RendererWindow(int width, int height, bool resizable, bool fullscreen_mode) {
             if (create(width, height, resizable, fullscreen_mode) == Errors.NO_ERROR) {
-                INSTANCE = this;
-            } else {
-                INSTANCE = null;
+                state = States.CREATED;
             }
         }
         
-        ~RendererWindow() {            
-            destroy();
-        }
-        
-        internal static unowned RendererWindow? get_instance(int width = DEFAULT_WIDTH, 
-                                                             int height = DEFAULT_HEIGHT, 
-                                                             bool resizable = DEFAULT_RESIZABLE, 
-                                                             bool fullscreen_mode = DEFAULT_FULLSCREEN) {
-            if (INSTANCE == null) {
-                new RendererWindow(width, height, resizable, fullscreen_mode);
-            }
-
-            return INSTANCE;
+        ~RendererWindow() { 
         }
         
         private int create(int width, int height, bool resizable, bool fullscreen_mode) {
             /* what do you want if engine is not started, hmm??*/
-            if (Engine.get_state() == Engine.States.NOT_RUNNING) {
+            if (!Engine.is_running()) {
                 Log.write_error("I can't create window if engine is not started!\n");
                 return Errors.WINDOW_NOT_CREATED;
-            }
-        
-            /* what do you want, if window is already created? */
-            if (INSTANCE != null && INSTANCE.state == States.CREATED) {
-                Log.write_warning("RendererWindow is already created!\n");
-                return Errors.NO_ERROR;
             }
         
             /* set SDL attributes */
@@ -92,20 +71,9 @@ namespace Bodhi {
             GLFW.WindowHint.RESIZABLE.set_bool(resizable);
         
             /* initialization */
-            this.state  = States.CREATED;
             this.fullscreen_mode = fullscreen_mode;
         
             return Errors.NO_ERROR;
-        }
-
-        internal void destroy() {
-            /*if (glfw_window != null) {
-                glfw_window = null;
-            }*/
-
-            INSTANCE = null;
-        
-            state = States.NOT_CREATED;
         }
 
         /*

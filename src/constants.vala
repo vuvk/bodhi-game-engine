@@ -7,7 +7,8 @@ namespace Bodhi {
         ENGINE_NOT_STARTED     = 2,
         WINDOW_NOT_CREATED     = 3,
         RENDERER_NOT_CREATED   = 4,
-        GL_CONTEXT_NOT_CREATED = 5
+        SCENE_NOT_CREATED      = 5,
+        INPUT_NOT_CREATED      = 6
     }
 
     /** maximums */
