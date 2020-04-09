@@ -139,15 +139,19 @@ namespace Bodhi {
         }
         
         private unowned GLFW.Window? glfw_window;
-        private double mouse_pos_x = 0;
-        private double mouse_pos_y = 0;
-        private double prev_mouse_pos_x = 0;
-        private double prev_mouse_pos_y = 0;
-        private double mouse_scroll_xoffset = 0; 
-        private double mouse_scroll_yoffset = 0;
-        private double prev_mouse_scroll_xoffset = 0; 
-        private double prev_mouse_scroll_yoffset = 0;
-        private bool show_mouse_cursor = true;
+        private static double mouse_pos_x = 0;
+        private static double mouse_pos_y = 0;
+        private static double prev_mouse_pos_x = 0;
+        private static double prev_mouse_pos_y = 0;
+
+        private static double mouse_scroll_xoffset = 0; 
+        private static double mouse_scroll_yoffset = 0;
+        private static double prev_mouse_scroll_xoffset = 0; 
+        private static double prev_mouse_scroll_yoffset = 0;
+        private static bool mouse_hor_scrolling  = false;
+        private static bool mouse_vert_scrolling = false;
+
+        private static bool show_mouse_cursor = true;
         private States state = States.NOT_CREATED;
 
         internal Input() {
@@ -156,6 +160,8 @@ namespace Bodhi {
             } else {
                 var window = Engine.get_window();
                 glfw_window = window.get_glfw_window();
+
+                glfw_window.set_scroll_callback(scroll_mouse_callback);
 
                 state = States.CREATED;
             }
@@ -166,14 +172,27 @@ namespace Bodhi {
 
         /** Update state of input. Use this on every step! */
         internal void update() {
-            GLFW.poll_events();
 
             prev_mouse_pos_x = mouse_pos_x;
             prev_mouse_pos_y = mouse_pos_y;
+            
+            mouse_hor_scrolling  = (prev_mouse_scroll_xoffset != mouse_scroll_xoffset);
+            mouse_vert_scrolling = (prev_mouse_scroll_yoffset != mouse_scroll_yoffset);
+
             prev_mouse_scroll_xoffset = mouse_scroll_xoffset;
             prev_mouse_scroll_yoffset = mouse_scroll_yoffset;
+
             glfw_window.get_cursor_pos(out mouse_pos_x, out mouse_pos_y);
             //glfw_window.get_scroll_offset(out mouse_scroll_xoffset, out mouse_scroll_yoffset);
+            
+            GLFW.poll_events();
+
+            if (mouse_hor_scrolling) {
+                prev_mouse_scroll_xoffset = mouse_scroll_xoffset = 0;
+            }
+            if (mouse_vert_scrolling) {
+                prev_mouse_scroll_yoffset = mouse_scroll_yoffset = 0;
+            }
         }
 
         public States get_state() {
@@ -199,6 +218,10 @@ namespace Bodhi {
         /*-------*/
         /* MOUSE */
         /*-------*/
+        private static void scroll_mouse_callback(GLFW.Window window, double xoffset, double yoffset) {
+            mouse_scroll_xoffset = xoffset;
+            mouse_scroll_yoffset = yoffset;
+        }
         /** mouse moving now? */
         public bool is_mouse_move() {
             return (prev_mouse_pos_x != mouse_pos_x) || 
@@ -262,18 +285,31 @@ namespace Bodhi {
             return (float) mouse_pos_y;   
         }
         /** Is mouse wheel? */
-        public bool is_mouse_wheel() {
-            return (prev_mouse_scroll_xoffset != mouse_scroll_xoffset) ||
-                   (prev_mouse_scroll_yoffset != mouse_scroll_yoffset);
+        public bool is_mouse_scroll() {
+            return mouse_hor_scrolling || mouse_vert_scrolling;
+        }
+        /** Is mouse horizontal wheel? */
+        public bool is_mouse_hor_scroll() {
+            return mouse_hor_scrolling;
+        }
+        /** Is mouse vertical wheel? */
+        public bool is_mouse_vert_scroll() {
+            return mouse_vert_scrolling;
         }
         /** get mouse wheel direction */
-        public float get_mouse_wheel_dir() {
+        public float get_mouse_vert_scroll() {
             return (float) mouse_scroll_yoffset;            
         }
-        public bool is_mouse_wheel_up() {
+        public bool is_mouse_scroll_left() {
+            return mouse_scroll_xoffset < 0;  
+        }
+        public bool is_mouse_scroll_right() {
+            return mouse_scroll_yoffset > 0; 
+        }
+        public bool is_mouse_scroll_up() {
             return mouse_scroll_yoffset > 0;  
         }
-        public bool is_mouse_wheel_down() {
+        public bool is_mouse_scroll_down() {
             return mouse_scroll_yoffset < 0; 
         }
 

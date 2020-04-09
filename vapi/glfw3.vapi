@@ -157,8 +157,8 @@ namespace GLFW {
 		[CCode (cname = "glfwSetCursorPos")]
 		public void set_cursor_pos (double xpos, double ypos);
 
-		[CCode (cname = "glfwGetScrollOffset")]
-		public void get_scroll_offset (out double xoffset, out double yoffset);
+		//[CCode (cname = "glfwGetScrollOffset")]
+		//public void get_scroll_offset (out double xoffset, out double yoffset);
 
 		[CCode (cname = "glfwMakeContextCurrent")]
 		public void make_context_current ();
@@ -251,7 +251,7 @@ namespace GLFW {
 	[CCode (cname = "GLFWcursorenterfun", has_target = false)]
 	public delegate void CursorEnterFunc (Window window, bool entered);
 	[CCode (cname = "GLFWscrollfun", has_target = false)]
-	public delegate void ScrollFunc (Window window, int pos);
+	public delegate void ScrollFunc (Window window, double xoffset, double yoffset);
 	[CCode (cname = "GLFWframebuffersizefun", has_target = false)]
 	public delegate void FrameBufferFunc (Window window, int width, int height);
 
