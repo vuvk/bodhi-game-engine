@@ -125,6 +125,8 @@ namespace Bodhi {
             }
 
             window.center();
+
+            PHYSFS.init("./");
         
             return Errors.NO_ERROR;
         }
@@ -135,6 +137,8 @@ namespace Bodhi {
             input = null;
             renderer = null;
             window = null;
+
+            PHYSFS.deinit();
         
             /* clear resources */
             /*TexturesDestroyAll();

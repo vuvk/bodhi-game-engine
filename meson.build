@@ -16,6 +16,7 @@ bodhi_dependencies = [
 #   dependency('gl'),   
     dependency('glfw3'),  
 #   dependency('glew'),  
+    dependency('physfs'),  
 
     m_dep
 ]
@@ -23,6 +24,7 @@ bodhi_dependencies = [
 vapi_dir = meson.current_source_dir() / 'vapi'
 build_dir = meson.current_source_dir() / 'build'
 add_project_arguments(['--vapidir', vapi_dir], language: 'vala')
+add_project_arguments(['--gir', 'Bodhi-' + PROJECT_VERSION + '.gir'], language: 'vala')
 
 
 #subdir('src')

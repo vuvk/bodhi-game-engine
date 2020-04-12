@@ -1,0 +1,1 @@
+copy physfs.pc to /usr/lib/pkgconfig if it doesn't exist
