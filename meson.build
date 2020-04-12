@@ -8,7 +8,7 @@ gnome = import('gnome')
 cc = meson.get_compiler('c') 
 m_dep = cc.find_library('m', required : false) 
 
-bodhi_dependecies = [
+bodhi_dependencies = [
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
     dependency('gio-2.0'),    
@@ -23,7 +23,6 @@ bodhi_dependecies = [
 vapi_dir = meson.current_source_dir() / 'vapi'
 build_dir = meson.current_source_dir() / 'build'
 add_project_arguments(['--vapidir', vapi_dir], language: 'vala')
-add_project_arguments(['--gir', 'Bodhi-' + PROJECT_VERSION + '.gir'], language: 'vala')
 
 
 #subdir('src')
@@ -51,23 +50,27 @@ bodhi_exec = files(
     'examples/Vala/test.vala',
 )
 
-bodhi_inc = include_directories('.', './build/')
-
 libbodhi = library(
     'Bodhi', 
+    vala_header: 'Bodhi.h',
     sources: bodhi_sources, 
-    dependencies: bodhi_dependecies,
+    dependencies: bodhi_dependencies,
 )
+
+libbodhi_dep = declare_dependency(link_with: libbodhi)
+
 
 #bodhi_gir = gnome.generate_gir(
 #    libbodhi,
 #    include_directories: bodhi_inc,
 #    header: meson.current_source_dir() / 'build/bodhi.h',
 #    sources: bodhi_sources, 
-#    dependencies: bodhi_dependecies,
+#    dependencies: bodhi_dependencies,
 #    namespace: 'Bodhi',
 #    nsversion: PROJECT_VERSION,
 #    install: true,
 #)
 
-executable('app_name', sources: bodhi_exec, link_with : libbodhi, dependencies: bodhi_dependecies)
+executable('app_name',
+  sources: bodhi_exec,
+  dependencies: [bodhi_dependencies, libbodhi_dep])
