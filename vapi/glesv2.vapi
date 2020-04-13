@@ -33,67 +33,83 @@ namespace GLES2
     }
      
     [SimpleType]
+    [IntegerType(rank = 2, signed = true)]
     public struct GLchar: char {
     }
-    
+
     [SimpleType]
+    [IntegerType(rank = 6, signed = true)]
     public struct GLenum: int {
     }
     
     [SimpleType]
+    [IntegerType(rank = 3, signed = false)]
     public struct GLboolean: uint8 {
     }
-    
+
     [SimpleType]
+    [IntegerType(rank = 3, signed = false)]
     public struct GLbitfield: uint8 {
     }
     
     [SimpleType]
+    [IntegerType(rank = 2, signed = true)]
     public struct GLbyte: char {
     }
     
     [SimpleType]
+    [IntegerType(rank = 4, signed = true)]
     public struct GLshort: short {
     }
-    
+
     [SimpleType]
+    [IntegerType(rank = 6, signed = true)]
     public struct GLint: int {
     }
     
     [SimpleType]
+    [IntegerType(rank = 6, signed = true)]
     public struct GLsizei: int {
     }
     
     [SimpleType]
+    [IntegerType(rank = 3, signed = false)]
     public struct GLubyte: uchar {
     }
     
     [SimpleType]
+    [IntegerType(rank = 4, signed = false)]
     public struct GLushort: ushort {
     }
-    
+
     [SimpleType]
+    [IntegerType(rank = 6, signed = false)]
     public struct GLuint: uint {
     }
-    
+
     [SimpleType]
+    [FloatingType(rank=1)]
     public struct GLfloat: float {
     }
-    
+
     [SimpleType]
+    [FloatingType(rank=1)]
     public struct GLclampf: float {
     }
-    
+
     [SimpleType]
+    [IntegerType(rank = 6, signed = true)]
     public struct GLfixed: int32 {
     }
 
     /* GL types for handling large vertex buffer objects */
     [SimpleType]
+    [IntegerType(rank = 9, signed = false)]
     public struct GLintptr: size_t {
     }
     
     [SimpleType]
+    [IntegerType(rank = 9, signed = false)]
     public struct GLsizeiptr: size_t {
     }
     
