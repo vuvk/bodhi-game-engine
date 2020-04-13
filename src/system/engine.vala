@@ -35,6 +35,7 @@ namespace Bodhi {
         private static Renderer? renderer;
         private static Scene? scene;
         private static Input? input;
+        private static FileSystem? file_system;
     
         /** start Antoshka Engine and initialize all subsystems */
         public static int start (int wnd_width = RendererWindow.DEFAULT_WIDTH, 
@@ -46,6 +47,15 @@ namespace Bodhi {
                 Log.write_warning("Engine is already started!\n");
                 return Errors.NO_ERROR;
             }
+        
+            /* try to create file system */
+            file_system = new FileSystem();
+            if (!file_system.is_initialized()) {
+                Log.write_error("File System not initialized!\n");
+                stop();
+                return Errors.ENGINE_NOT_STARTED;
+            }
+            file_system.list_directory("/");
         
             Log.write_message( "============================================\n" + 
                               @"$NAME ver. $VERSION\n" + 
@@ -125,20 +135,17 @@ namespace Bodhi {
             }
 
             window.center();
-
-            PHYSFS.init("./");
         
             return Errors.NO_ERROR;
         }
 
         /** stop Antoshka Engine */
         public static void stop() {
+            file_system = null;
             scene = null;
             input = null;
             renderer = null;
             window = null;
-
-            PHYSFS.deinit();
         
             /* clear resources */
             /*TexturesDestroyAll();
@@ -255,6 +262,10 @@ namespace Bodhi {
 
         public static unowned Input? get_input() {
             return input;
+        }
+
+        public static unowned FileSystem? get_file_system() {
+            return file_system;
         }
         
         // timing

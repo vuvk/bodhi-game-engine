@@ -17,7 +17,7 @@ namespace Bodhi {
         
         private GLFW.Window? glfw_window;
         private string title = @"$(Engine.get_name()) $(Engine.get_version())";
-        private States state = NOT_CREATED;
+        private States state = States.NOT_CREATED;
         private bool fullscreen_mode;
         private int prev_width  = 0;
         private int prev_height = 0;
@@ -31,7 +31,7 @@ namespace Bodhi {
         ~RendererWindow() { 
         }
         
-        private int create(int width, int height, bool resizable, bool fullscreen_mode) {
+        private int create(int width, int height, bool resizable = false, bool fullscreen_mode = false) {
             /* what do you want if engine is not started, hmm??*/
             if (!Engine.is_running()) {
                 Log.write_error("I can't create window if engine is not started!\n");
@@ -163,7 +163,7 @@ namespace Bodhi {
 
             Vector2i pos = { 
                 (screen_size.x >> 1) - (win_size.x >> 1),
-                (screen_size.y >> 1) - (win_size.y >> 1),
+                (screen_size.y >> 1) - (win_size.y >> 1)
             };
 
             set_position(pos);

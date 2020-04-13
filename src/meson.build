@@ -9,6 +9,7 @@ sources = files(
     'math/matrix4x4.vala',
 
     'system/log_system.vala',
+    'system/file_system.vala',
     'system/window_system.vala',
     'system/render_system.vala',
     'system/scene_manager.vala',
