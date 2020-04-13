@@ -5,7 +5,7 @@
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="physfs.h")]
 namespace PHYSFS
 {
-    [SimpleType]
+	[CCode (cname = "PHYSFS_File", has_type_id = false)]
     public struct File {
 		void* opaque;  /**< That's all you get. Don't touch. */
 	}
@@ -13,6 +13,7 @@ namespace PHYSFS
 	 * PHYSFS_ArchiveInfo
 	 * Information on various PhysicsFS-supported archives.
 	 */
+	[CCode (cname = "PHYSFS_ArchiveInfo", has_type_id = false)]
 	public struct ArchiveInfo {
 		public string? extension;   /**< Archive file extension: "ZIP", for example. */
 		public string? description; /**< Human-readable archive description. */
@@ -25,6 +26,7 @@ namespace PHYSFS
 	 * PHYSFS_Version
 	 * Information the version of PhysicsFS in use.
 	 */
+	[CCode (cname = "PHYSFS_Version", has_type_id = false)]
 	public struct Version {
 		public uint8 major; /**< major revision */
 		public uint8 minor; /**< minor revision */
@@ -55,8 +57,8 @@ namespace PHYSFS
 	* const PHYSFS_ArchiveInfo **PHYSFS_supportedArchiveTypes()
 	* Get a list of supported archive types.
 	*/
-	[CCode (cname = "PHYSFS_supportedArchiveTypes")]	
-	public unowned ArchiveInfo*[]? supported_archive_types();
+	[CCode (cname = "PHYSFS_supportedArchiveTypes", array_length = false)]	
+	public unowned ArchiveInfo*[] supported_archive_types();
 
 	/**
 	* void PHYSFS_freeList(void* listVar)
@@ -182,7 +184,7 @@ namespace PHYSFS
 	 * char **PHYSFS_enumerateFiles(const char *dir)
 	 * Get a file listing of a search path's directory.
 	 */
-	[CCode (cname = "PHYSFS_enumerateFiles")]
+	[CCode (cname = "PHYSFS_enumerateFiles", array_length = false)]
 	public unowned string?[] enumerate_files(string dir);
 	
 	/**
@@ -584,6 +586,7 @@ namespace PHYSFS
 	* PHYSFS_Allocator
 	* PhysicsFS allocation function pointers.
 	*/
+	[CCode (cname = "PHYSFS_Allocator", has_type_id = false)]
 	public struct Allocator {
 		public Init init_func;       /**< Initialize. Can be NULL. Zero on failure. */
 		public Deinit deinit_func;   /**< Deinitialize your allocator. Can be NULL. */
@@ -716,7 +719,7 @@ namespace PHYSFS
 	* PHYSFS_EnumerateCallback
 	* Possible return values from PHYSFS_EnumerateCallback.
 	*/
-	[CCode (cprefix = "PHYSFS_", cname="int", has_type_id = false)]
+	[CCode (cprefix = "PHYSFS_ENUM_", cname="int", has_type_id = false)]
 	public enum EnumerateCallbackResult {
 		ERROR = -1,   /**< Stop enumerating, report error to app. */
 		STOP = 0,     /**< Stop enumerating, report success to app. */
@@ -754,9 +757,9 @@ namespace PHYSFS
 	* FileType
 	* Possible types of a file.
 	*/
-	[CCode (cname="int", has_type_id = false)]
+	[CCode (cprefix = "PHYSFS_FILETYPE_", cname="int", has_type_id = false)]
 	public enum FileType {
-		REGULAR, /**< a normal File* /
+		REGULAR, /**< a normal File */
 		DIRECTORY, /**< a directory */
 		SYMLINK, /**< a symlink */
 		OTHER /**< something completely different like a device */
@@ -766,6 +769,7 @@ namespace PHYSFS
 	* PHYSFS_Stat
 	* Meta data for a file or directory
 	*/
+	[CCode (cname = "PHYSFS_Stat", has_type_id = false)]
 	public struct Stat {
 		public int64 filesize; /**< size in bytes, -1 for non-files and unknown */
 		public int64 modtime;  /**< last modification time */
@@ -823,6 +827,7 @@ namespace PHYSFS
 	* PHYSFS_Io
 	* An abstract i/o interface.
 	*/
+	[CCode (cname = "PHYSFS_Io", has_type_id = false)]
 	public struct Io {
 		/**
 		* Binary compatibility information.
@@ -902,7 +907,7 @@ namespace PHYSFS
 	* PHYSFS_ErrorCode
 	* Values that represent specific causes of failure.
 	*/
-	[CCode (cprefix = "PHYSFS_", cname="int", has_type_id = false)]
+	[CCode (cprefix = "PHYSFS_ERR_", cname="int", has_type_id = false)]
 	public enum ErrorCode {
 		OK,               /**< Success; no error.                    */
 		OTHER_ERROR,      /**< Error not otherwise covered here.     */
@@ -977,6 +982,7 @@ namespace PHYSFS
 	* PHYSFS_Archiver
 	* Abstract interface to provide support for user-defined archives.
 	*/
+	[CCode (cname = "PHYSFS_Archiver", has_type_id = false)]
 	public struct Archiver {
 		/**
 		* Binary compatibility information.
