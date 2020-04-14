@@ -15,10 +15,11 @@ namespace PHYSFS
 	 */
 	[CCode (cname = "PHYSFS_ArchiveInfo", has_type_id = false)]
 	public struct ArchiveInfo {
-		public string? extension;   /**< Archive file extension: "ZIP", for example. */
-		public string? description; /**< Human-readable archive description. */
-		public string? author;      /**< Person who did support for this archive. */
-		public string? url;         /**< URL related to this archive */
+		public string extension;   /**< Archive file extension: "ZIP", for example. */
+		public string description; /**< Human-readable archive description. */
+		public string author;      /**< Person who did support for this archive. */
+		public string url;         /**< URL related to this archive */
+		[CCode (cname = "supportsSymlinks")]
 		public bool supports_symlinks;    /**< non-zero if archive offers symbolic links. */
 	}
 

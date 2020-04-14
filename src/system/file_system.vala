@@ -16,12 +16,8 @@ namespace Bodhi {
                 base_dir = PHYSFS.get_base_dir();
 
                 Log.write_message("Initialized PhysFS, supported archive formats:\n");
-                unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
-                foreach (PHYSFS.ArchiveInfo* info in infos) {
-                    if (info == null) {
-                        break;
-                    }
-                    Log.write_message("\n  " + info.extension + ": " + info.description + "\n");
+                foreach (string format in get_supported_archives()) {
+                    Log.write_message(format + "\n");
                 }
             } else {
                 Log.write_error("Failed to initialize PhysFS.\n");
@@ -49,6 +45,26 @@ namespace Bodhi {
             return true;
         }
 
+        public string[] get_supported_archives() {
+            string[] lines = new string[0];
+
+            unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
+            
+            for (int i = 0;; ++i) {
+                PHYSFS.ArchiveInfo* info = infos[i];
+                if (info == null) {
+                    break;
+                }
+                
+                lines += info->extension + ": " + 
+                         info->description + " [" +
+                         info->author + " - " +
+                         info->url + "]";
+            }
+
+            return lines;
+        }
+
         public void list_directory(string dir) {
             if (!is_initialized()) {
                 return;
@@ -56,7 +72,12 @@ namespace Bodhi {
 
             unowned string?[] files = PHYSFS.enumerate_files(dir);
             PHYSFS.Stat stat;
-            foreach (string file_path in files) {
+            for (int i = 0; ; ++i) {
+                string? file_path = files[i];
+                if (file_path == null) {
+                    break;
+                }
+
                 string file = dir + file_path;
 
                 if (!PHYSFS.stat(file, out stat)) {
