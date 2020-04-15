@@ -300,7 +300,7 @@ namespace PHYSFS
 	* Seek to a new position within a PhysicsFS filehandle.
 	*/
 	[CCode (cname = "PHYSFS_seek")]
-	public bool seek(File* handle, uint64 pos);
+	public int seek(File* handle, uint64 pos);
 		
 	/**
 	* int64 FileLength(File* handle)
@@ -830,14 +830,14 @@ namespace PHYSFS
 	* Read bytes from a PhysicsFS filehandle
 	*/
 	[CCode (cname = "PHYSFS_readBytes")]
-	public int64 read_bytes(File* handle, out char[] buffer, uint64 len);
+	public int64 read_bytes(File* handle, [CCode (array_length = false)] uint8[] buffer, uint64 len);
 	
 	/**
 	* int64 PHYSFS_writeBytes(File* handle, const void* buffer, uint64 len)
 	* Write data to a PhysicsFS filehandle
 	*/
 	[CCode (cname = "PHYSFS_writeBytes")]
-	public int64 write_bytes(File* handle, uint[] buffer, uint64 len);
+	public int64 write_bytes(File* handle, uint8[] buffer);
 	
 	public delegate int64 IoRead(Io* io, void* buf, uint64 len);
 	public delegate int64 IoWrite(Io *io, void* buffer, uint64 len);
@@ -927,7 +927,7 @@ namespace PHYSFS
 	* Add an archive, contained in a memory buffer, to the search path.
 	*/
 	[CCode (cname = "PHYSFS_mountMemory")]
-	public bool mount_memory(uint8[] buf, uint64 len, MemoryDel? del, string new_dir, string mount_point, bool append_to_path);
+	public bool mount_memory(uint8[] buf, MemoryDel? del, string new_dir, string mount_point, bool append_to_path);
 	
 	/**
 	* int PHYSFS_mountHandle(File* file, const char *new_dir, const char *mountPoint, int appendToPath)
