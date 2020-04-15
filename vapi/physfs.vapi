@@ -1,5 +1,24 @@
 /*
  * PhysicsFS binding for Vala (Plain C Style)
+ *
+ * Copyright 2020 Anton "Vuvk" Shcherbatykh <vuvk69@gmail.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+ * the Software, and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="physfs.h")]
@@ -589,10 +608,15 @@ namespace PHYSFS
 	*/
 	[CCode (cname = "PHYSFS_Allocator", has_type_id = false)]
 	public struct Allocator {
+		[CCode (cname = "init")]
 		public Init init_func;       /**< Initialize. Can be NULL. Zero on failure. */
+		[CCode (cname = "deinit")]
 		public Deinit deinit_func;   /**< Deinitialize your allocator. Can be NULL. */
+		[CCode (cname = "malloc")]
 		public Malloc malloc_func;   /**< Allocate like malloc(). */
+		[CCode (cname = "realloc")]
 		public Realloc realloc_func; /**< Reallocate like realloc(). */
+		[CCode (cname = "free")]
 		public Free free_func; 	     /**< Free memory from Malloc or Realloc. */
 	}
 
@@ -843,41 +867,49 @@ namespace PHYSFS
 		/**
 		* Read more data.
 		*/
+		[CCode (cname = "read")]
 		public IoRead read_func;
 	
 		/**
 		* Write more data.
 		*/
+		[CCode (cname = "write")]
 		public IoWrite write_func;
 	
 		/**
 		* Move i/o position to a given byte offset from start.
 		*/
+		[CCode (cname = "seek")]
 		public IoSeek seek_func;
 	
 		/**
 		* Report current i/o position.
 		*/
+		[CCode (cname = "tell")]
 		public IoTell tell_func;
 	
 		/**
 		* Determine size of the i/o instance's dataset.
 		*/
+		[CCode (cname = "length")]
 		public IoLength length_func;
 	
 		/**
 		* Duplicate this i/o instance.
 		*/
+		[CCode (cname = "duplicate")]
 		public IoDuplicate duplicate_func;
 	
 		/**
 		* Flush resources to media, or wherever.
 		*/
+		[CCode (cname = "flush")]
 		public IoFlush flush_func;
 	
 		/**
 		* Cleanup and deallocate i/o instance.
 		*/
+		[CCode (cname = "destroy")]
 		public IoDestroy destroy_func;
 	}	
 	
@@ -998,46 +1030,55 @@ namespace PHYSFS
 		/**
 		* Open an archive provided by (io).
 		*/
+		[CCode (cname = "openArchive")]
 		public ArchiverOpenArchive open_archive_func;
 	
 		/**
 		* List all files in (dirname).
 		*/
+		[CCode (cname = "enumerate")]
 		public ArchiverEnumerate enumerate_func;
 	
 		/**
 		* Open a file in this archive for reading.
 		*/
+		[CCode (cname = "openRead")]
 		public ArchiverOpenRead open_read_func;
 	
 		/**
 		* Open a file in this archive for writing.
 		*/
+		[CCode (cname = "openWrite")]
 		public ArchiverOpenWrite open_write_func;
 	
 		/**
 		* Open a file in this archive for appending.
 		*/
-		public ArchiverOpenAppend open_appen_func;
+		[CCode (cname = "openAppend")]
+		public ArchiverOpenAppend open_append_func;
 	
 		/**
 		* Delete a file or directory in the archive.
 		*/
+		[CCode (cname = "remove")]
 		public ArchiverRemove remove_func;
 	
 		/**
 		* Create a directory in the archive.
 		*/
+		[CCode (cname = "mkdir")]
 		public ArchiverMkdir mkdir_func;
 	
 		/**
 		* Obtain basic file metadata.
 		*/
+		[CCode (cname = "stat")]
 		public ArchiverStat stat_func;
 	
 		/**
 		* Destruct a previously-opened archive.
 		*/
+		[CCode (cname = "closeArchive")]
 		public ArchiverCloseArchive close_archive_func;
 	}
 	
