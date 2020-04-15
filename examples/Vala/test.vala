@@ -14,6 +14,11 @@ public class Test : Object {
 
         Scene scene = Engine.get_scene();
         Input input = Engine.get_input();
+        FileSystem fs = Engine.get_file_system();
+
+        var file = fs.new_file("test.txt", "w");
+        file.write_string("Hello, pidor!\n");
+        file.close();
 
         Engine.set_limit_fps(10);        
 
