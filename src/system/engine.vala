@@ -55,7 +55,6 @@ namespace Bodhi {
                 stop();
                 return Errors.ENGINE_NOT_STARTED;
             }
-            file_system.list_directory("/");
         
             Log.write_message( "============================================\n" + 
                               @"$NAME ver. $VERSION\n" + 
