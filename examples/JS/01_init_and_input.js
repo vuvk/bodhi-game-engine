@@ -14,7 +14,7 @@ Bodhi.Engine.set_limit_fps(10);
 while (Bodhi.Engine.is_running()) {
     Bodhi.Engine.update();
     
-    SCENE.beginf(0,0,0,1);
+    SCENE.beginf(1,0,1,1);
     SCENE.end();
 
     WINDOW.set_title("Hello! FPS: " + Bodhi.Engine.get_fps());

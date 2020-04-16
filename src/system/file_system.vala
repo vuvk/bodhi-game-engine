@@ -276,9 +276,9 @@ namespace Bodhi {
             }
         
             public bool open(string mode = "r") {
-                if (!is_file()) {
+                /*if (!is_file()) {
                     return false;
-                }
+                }*/
             
                 if (this.handle != null) {
                     close();
