@@ -50,7 +50,7 @@ bodhi_sources = files(
 )
 
 bodhi_exec = files(    
-    'examples/Vala/test.vala',
+    'examples/Vala/02_file_operations.vala',
 )
 
 libbodhi = library(
