@@ -197,7 +197,7 @@ namespace Bodhi {
         /*
         * File class
         */
-        public class File {
+        public class File : Object {
             private PHYSFS.File* handle;
             private string name = "";
 
