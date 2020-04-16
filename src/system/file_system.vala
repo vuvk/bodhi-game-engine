@@ -9,11 +9,11 @@ namespace Bodhi {
         private string base_dir = ".";
         private States state = States.NOT_INITIALIZED;
 
-        internal FileSystem(string? argv0 = "./") {
+        internal FileSystem(string? argv0 = ".") {
             if (PHYSFS.init(argv0)) {
-                base_dir = (argv0 != null) ? argv0 : "./";
+                base_dir = (argv0 != null) ? argv0 : ".";
                 state = States.INITIALIZED;
-                if (!mount(base_dir)) {
+                if (!mount(base_dir) || !set_write_dir(base_dir)) {
                     Log.write_error("Failed to initialize PhysFS. " + get_last_error() + "\n");
                     state = States.NOT_INITIALIZED;
                     return;
@@ -49,7 +49,7 @@ namespace Bodhi {
         }
 
         public string[] get_supported_archives() {
-            string[] lines = new string[0];
+            string[] lines = {};
 
             unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
             
@@ -69,7 +69,7 @@ namespace Bodhi {
         }
 
         public string[] get_supported_archives_types() {
-            string[] types = new string[0];
+            string[] types = {};
 
             unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
             
@@ -86,7 +86,7 @@ namespace Bodhi {
         }
 
         public string[] get_list_directory(string dir) {
-            string[] paths = new string[0];
+            string[] paths = {};
 
             if (is_initialized()) {
                 unowned string?[] files = PHYSFS.enumerate_files(dir);
@@ -173,6 +173,13 @@ namespace Bodhi {
             }
         }
 
+        public bool set_write_dir(string dir) {
+            if (is_initialized()) {
+                return PHYSFS.set_write_dir(dir);
+            }
+            return false;
+        }
+
         /**
          * get file from system
          * @param path - path to file
@@ -196,7 +203,11 @@ namespace Bodhi {
 
             internal File(string path, string mode = "r") {
                 name = path;
-                open(mode);
+
+                if (!open(mode)) {
+                    Log.write_error("Couldn't create file \"" + path + "\"\n");
+                    Log.write_error(PHYSFS.get_last_error() + "\n");
+                }
             }
             
             ~File() {
@@ -265,21 +276,29 @@ namespace Bodhi {
             }
         
             public bool open(string mode = "r") {
-                /*if (is_file()) {
+                if (!is_file()) {
                     return false;
-                }*/
+                }
             
                 if (this.handle != null) {
                     close();
                 }
-            
+                
                 switch (mode) {
-                    case "r": this.handle = PHYSFS.open_read(name); break;
-                    case "w": this.handle = PHYSFS.open_write(name); break;
-                    case "a": this.handle = PHYSFS.open_append(name); break;
+                    case "r": this.handle = PHYSFS.open_read(this.name); break;
+                    case "w": this.handle = PHYSFS.open_write(this.name); break;
+                    case "a": this.handle = PHYSFS.open_append(this.name); break;
                 }
+                flush();
 
                 return this.handle != null;
+            }
+
+            public bool flush() {
+                if (this.handle != null) {
+                    return PHYSFS.flush(this.handle);
+                }
+                return false;
             }
 
             public void close() {
@@ -292,7 +311,7 @@ namespace Bodhi {
             }
 
             public int64 tell() {
-                if (is_file()) {       
+                if (this.handle != null && is_file()) {       
                     return (PHYSFS.tell(this.handle));
                 }
 
@@ -300,7 +319,7 @@ namespace Bodhi {
             }
 
             public int seek(uint64 position) {
-                if (is_file()) {     
+                if (this.handle != null && is_file()) {     
                     return (PHYSFS.seek(this.handle, position));
                 }
 
@@ -308,14 +327,46 @@ namespace Bodhi {
             }
             
             public int64 read(uint8[] buffer, uint64 length) {
-                if (is_file()) {
+                if (this.handle != null && is_file()) {
                     return PHYSFS.read_bytes(handle, buffer, length);
                 }
                 return -1;
             }
 
+            public string read_line() {
+                string line = "";
+                if (this.handle != null && is_file()) {
+                    char[] buffer = { 0 };
+                    while (!eof()) {
+                        if (read((uint8[])buffer, sizeof(char)) > 0) {
+                            if (buffer[0] == '\0' || buffer[0] == '\n') {
+                                break;
+                            }
+                            
+                            if (buffer[0] != '\r') {
+                                line += buffer[0].to_string();
+                            }
+                        }
+                    }
+                }
+
+                return line;
+            }
+
+            public string[] read_lines() {
+                string[] lines = {};
+
+                if (this.handle != null && is_file()) {
+                    while (!eof()) {
+                        lines += read_line();
+                    }
+                }
+
+                return lines;
+            }
+
             public int64 write(uint8[] buffer) {
-                if (is_file()) {
+                if (this.handle != null && is_file()) {
                     return PHYSFS.write_bytes(handle, buffer);
                 }
                 return -1;
@@ -330,9 +381,23 @@ namespace Bodhi {
             }
 
             public int64 write_string(string str) {
-                if (is_file()) {
+                if (this.handle != null && is_file()) {
                     return write(str.data);
                 }
+                return -1;
+            }
+
+            public int64 write_lines(string[] lines) {
+                int64 bytes = 0;
+                if (this.handle != null && is_file()) {
+                    foreach (string line in lines) {
+                        bytes += write_string(line + "\n");
+                    }
+                    if (bytes < 0) {
+                        bytes = -1;
+                    }
+                    return bytes;
+                }                
                 return -1;
             }
 
