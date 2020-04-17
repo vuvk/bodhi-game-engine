@@ -2,91 +2,78 @@ namespace Bodhi {
     
     public class Log : Object {
 
-        private static DataOutputStream output_file_stream;
-        private static string output_file_name = "";
-        private static bool write_to_file = false;
-        private static bool truncate = false;
-        
-        static void write(FileStream output, string message) {
-            if (message.length  > 0) {
-                output.printf(message);
+        private string? output_file_name;
+        private bool write_to_file;
+        private FileSystem.File? output_file;
 
-                if (write_to_file && output_file_stream != null) {
-                    try {
-                        output_file_stream.put_string(message);
-                        output_file_stream.flush();
-                    } catch (Error err) {
-                        stderr.printf("Error Code: " + ((int)err).to_string());
-                    }
-                }
+        internal Log(string? output_file_name = null, bool truncate_file = false) {
+            set_write_to_file(output_file_name, truncate_file);
+        }
+
+        ~Log() {
+            if (output_file != null) {
+                output_file.close();
+                output_file = null;
             }
         }
 
-        public static void write_message(string message) {        
-            write(stdout, message);
+        public string get_output_file_name() {
+            return output_file_name;
         }
 
-        public static void write_error(string message) {
-            write(stderr, "ERROR! " + message);
+        public bool is_write_to_file() {
+            return write_to_file;
         }
 
-        public static void write_warning(string message) {
-            write(stdout, "Warning! " + message);
-        }
+        /**
+         * set writing output to file.
+         * If you want disable writing then set output_file_name to null or ""
+         */
+        public void set_write_to_file(string? output_file_name, bool truncate_file = false) {
+            if (output_file != null) {
+                output_file.close();
+                output_file = null;
+            }
 
-        public static void set_output_file(string fileName) {
-            output_file_name = fileName;
-        }
+            // if output file name is empty then it can't write
+            this.output_file_name = output_file_name;
+            write_to_file = (output_file_name != null && output_file_name != "");
 
-        public static void set_truncate_output_file(bool truncate_file) {
-            truncate = truncate_file;
-        }
+            if (write_to_file) {
+                var fs = Engine.get_file_system();
+                string mode = (truncate_file) ? "w" : "a";
+                output_file = fs.new_file(output_file_name, mode);
 
-        public static void set_writing_to_file(bool writing_to_file) {
-            if (writing_to_file) {
-                if (output_file_name == null || output_file_name.length == 0) {
-                    write_error("Output file not specified!\n");
-                    write_to_file = false;
-                    return;
-                } else {
-                    /* open/create file */
-                    try {
-                        File file = File.new_for_path (output_file_name);
-                        if (truncate && file.query_exists()) {
-                            file.delete();
-                        }
-                        FileOutputStream fos = file.append_to(FileCreateFlags.PRIVATE);
-                        output_file_stream = new DataOutputStream(fos);
-                    } catch (Error err) {
-                        stderr.printf("Error Code: " + ((int)err).to_string());
-                        write_to_file = false;
-                        return;
-                    }
+                if (output_file != null) {
+                    this.output_file_name = output_file_name;
+                    this.write_to_file    = true;
 
                     var now = new DateTime.now_local();
-                    try {
-                        output_file_stream.put_string("\n\n...start logging at " + now.format("%Y-%m-%d %H:%M:%S") + "...\n\n");
-                        output_file_stream.flush();
-                    } catch (Error err) {
-                        stderr.printf("Error Code: " + ((int)err).to_string());
-                    }
-                }
-            } else {
-                if (output_file_stream != null) {
-                    try {
-                        output_file_stream.close();
-                    } catch (Error err) {
-                        stderr.printf("Couldn't close output log. Error Code: " + ((int)err).to_string());
-                    }
-                    output_file_stream = null;
+                    output_file.write_string("\n\n...start logging at " + now.format("%Y-%m-%d %H:%M:%S") + "...\n\n");
+                    output_file.flush();
+                } else {
+                    write_to_file = false;
                 }
             }
+        }
+        
+        public void write(string message) {
+            if (message.length  > 0) {
+                print(message);
 
-            write_to_file = writing_to_file;
+                if (write_to_file && output_file != null) {
+                    output_file.write_string(message);
+                    output_file.flush();
+                }
+            }
         }
 
-        public static bool is_truncate_output_file() {
-            return truncate;
+        public void write_error(string message) {
+            write("ERROR! " + message);
+        }
+
+        public void write_warning(string message) {
+            write("Warning! " + message);
         }
     }
 }

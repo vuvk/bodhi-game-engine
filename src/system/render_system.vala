@@ -25,15 +25,15 @@ namespace Bodhi {
 
         private int create() {
             /* what do you want if engine is not created, hmm??*/
-            if (Engine.get_state() == Engine.States.NOT_RUNNING) {
-                Log.write_error("Could not create OpenGL context, because engine not running!\n");
+            if (!Engine.is_running()) {
+                stderr.printf("Could not create OpenGL context, because engine not running!\n");
                 return Errors.ENGINE_NOT_CREATED;
             }
 
             /* what do you want if window is not created, hmm??*/
             RendererWindow window = Engine.get_window();
             if (window == null || window.get_state() == RendererWindow.States.NOT_CREATED) {
-                Log.write_error("Could not create OpenGL context, because window not created!\n");
+                Engine.get_log().write_error("Could not create OpenGL context, because window not created!\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
 
@@ -164,7 +164,7 @@ namespace Bodhi {
             string version = get_opengl_version();
             string glsl_version = get_shader_version();
             
-            Log.write_message(
+            Engine.get_log().write(
                 "============================================\n" +
                 @"Vendor : $vendor\n" +
                 @"OpenGL version : $version\n" +
@@ -179,9 +179,9 @@ namespace Bodhi {
                 return;
             }
 
-            Log.write_message(@"Display modes for $(monitor.name):\n");
+            Engine.get_log().write(@"Display modes for $(monitor.name):\n");
             foreach (GLFW.VideoMode mode in monitor.video_modes) {
-                Log.write_message(
+                Engine.get_log().write(
                     @"width\t$(mode.width)\t" + 
                     @"height\t$(mode.height)\t" + 
                     @"refresh rate\t$(mode.refresh_rate)\n"                    

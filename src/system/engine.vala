@@ -31,6 +31,7 @@ namespace Bodhi {
         private static uint16 limit_fps;
         private static float framerate;
 
+        private static Log? log;
         private static RendererWindow? window;
         private static Renderer? renderer;
         private static Scene? scene;
@@ -38,31 +39,44 @@ namespace Bodhi {
         private static FileSystem? file_system;
     
         /** start Antoshka Engine and initialize all subsystems */
-        public static int start (int wnd_width = RendererWindow.DEFAULT_WIDTH, 
-                                 int wnd_height = RendererWindow.DEFAULT_HEIGHT, 
-                                 bool resizable = RendererWindow.DEFAULT_RESIZABLE, 
-                                 bool fullscreen_mode = RendererWindow.DEFAULT_FULLSCREEN) {
+        public static int start(int wnd_width = RendererWindow.DEFAULT_WIDTH, 
+                                int wnd_height = RendererWindow.DEFAULT_HEIGHT, 
+                                bool resizable = RendererWindow.DEFAULT_RESIZABLE, 
+                                bool fullscreen_mode = RendererWindow.DEFAULT_FULLSCREEN) {
+            return start_with_log(wnd_width, wnd_height, resizable, fullscreen_mode, null);
+        }
+
+        public static int start_with_log(int wnd_width = RendererWindow.DEFAULT_WIDTH, 
+                                         int wnd_height = RendererWindow.DEFAULT_HEIGHT, 
+                                         bool resizable = RendererWindow.DEFAULT_RESIZABLE, 
+                                         bool fullscreen_mode = RendererWindow.DEFAULT_FULLSCREEN,
+                                         string? log_file_name = null,
+                                         bool truncate_log = false) {
             /* what do you want, if engine is already started? */
             if (state == States.RUNNING) {
-                Log.write_warning("Engine is already started!\n");
+                log.write_warning("Engine is already started!\n");
                 return Errors.NO_ERROR;
             }
         
             /* try to create file system */
             file_system = new FileSystem();
             if (!file_system.is_initialized()) {
-                Log.write_error("File System not initialized!\n");
+                stderr.printf("File System not initialized!\n");
                 stop();
                 return Errors.ENGINE_NOT_STARTED;
             }
+
+            /* try to create log system */
+            log = new Log();
         
-            Log.write_message( "============================================\n" + 
-                              @"$NAME ver. $VERSION\n" + 
-                               "============================================\n");
+            log.write( "============================================\n" + 
+                      @"$NAME ver. $VERSION\n" + 
+                       "============================================\n");
         
-            /* try to init SDL2 */
+            /* try to init GLFW */
             if (!GLFW.init()) {
-                Log.write_error("Couldn't init GLES2!\n");
+                log.write_error("Couldn't init GLES2!\n");
+                stop();
                 return Errors.ENGINE_NOT_CREATED;
             }
         
@@ -72,7 +86,7 @@ namespace Bodhi {
             /* try to create window */
             window = new RendererWindow(wnd_width, wnd_height, resizable, fullscreen_mode);
             if (window.get_state() != RendererWindow.States.CREATED) {
-                Log.write_error("Renderer window not created!\n");
+                log.write_error("Renderer window not created!\n");
                 stop();
                 return Errors.WINDOW_NOT_CREATED;
             }
@@ -80,7 +94,7 @@ namespace Bodhi {
             /* try to create OpenGL context */
             renderer = new Renderer(); 
             if (renderer.get_state() != Renderer.States.CREATED) {
-                Log.write_error("Renderer not created!\n");
+                log.write_error("Renderer not created!\n");
                 stop();
                 return Errors.RENDERER_NOT_CREATED;
             }
@@ -88,7 +102,7 @@ namespace Bodhi {
             renderer.print_display_modes();
             renderer.print_info();
         
-            Log.write_message("The Engine was started!\n");
+            log.write("The Engine was started!\n");
         
             /* timing */
             curr_tick = GLFW.get_time();
@@ -121,14 +135,14 @@ namespace Bodhi {
 
             scene = new Scene();
             if (scene.get_state() != Scene.States.CREATED) {
-                Log.write_error("Scene not created!\n");
+                log.write_error("Scene not created!\n");
                 stop();
                 return Errors.SCENE_NOT_CREATED;
             }
 
             input = new Input();
             if (input.get_state() != Input.States.CREATED) {
-                Log.write_error("Input system not initialized!\n");
+                log.write_error("Input system not initialized!\n");
                 stop();
                 return Errors.INPUT_NOT_CREATED;
             }
@@ -140,7 +154,6 @@ namespace Bodhi {
 
         /** stop Antoshka Engine */
         public static void stop() {
-            file_system = null;
             scene = null;
             input = null;
             renderer = null;
@@ -170,7 +183,13 @@ namespace Bodhi {
             GLFW.terminate();     
             state = States.NOT_RUNNING;
         
-            Log.write_warning("The Engine was stopped!\n");
+            if (log != null) {
+                log.write_warning("The Engine was stopped!\n");
+                log = null;
+            } else {
+                stdout.printf("The Engine was stopped!\n");
+            }
+            file_system = null;
         }
         
         private static void update_time() {
@@ -245,6 +264,10 @@ namespace Bodhi {
 
         public static string get_version() {
             return VERSION;
+        }
+
+        public static unowned Log? get_log() {
+            return log;
         }
 
         public static unowned RendererWindow? get_window() {

@@ -156,7 +156,7 @@ namespace Bodhi {
 
         internal Input() {
             if (!Engine.is_running()) {
-                Log.write_error("I can't create input system if engine is not started!\n");
+                stderr.printf("I can't create input system if engine is not started!\n");
             } else {
                 var window = Engine.get_window();
                 glfw_window = window.get_glfw_window();

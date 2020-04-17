@@ -34,7 +34,7 @@ namespace Bodhi {
         private int create(int width, int height, bool resizable = false, bool fullscreen_mode = false) {
             /* what do you want if engine is not started, hmm??*/
             if (!Engine.is_running()) {
-                Log.write_error("I can't create window if engine is not started!\n");
+                stderr.printf("I can't create window if engine is not started!\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
         
@@ -64,7 +64,7 @@ namespace Bodhi {
             
             glfw_window = new GLFW.Window(width, height, title, monitor, null);
             if (glfw_window == null) {
-                Log.write_error("Couldn't create window!\n");
+                Engine.get_log().write_error("Couldn't create window!\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
             glfw_window.make_context_current();

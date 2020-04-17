@@ -14,17 +14,17 @@ namespace Bodhi {
                 base_dir = (argv0 != null) ? argv0 : ".";
                 state = States.INITIALIZED;
                 if (!mount(base_dir) || !set_write_dir(base_dir)) {
-                    Log.write_error("Failed to initialize PhysFS. " + get_last_error() + "\n");
+                    stderr.printf("Failed to initialize PhysFS. " + get_last_error() + "\n");
                     state = States.NOT_INITIALIZED;
                     return;
                 }
 
-                Log.write_message("Initialized PhysFS, supported archive formats:\n");
+                print("Initialized PhysFS, supported archive formats:\n");
                 foreach (string format in get_supported_archives()) {
-                    Log.write_message(format + "\n");
+                    print(format + "\n");
                 }
             } else {
-                Log.write_error("Failed to initialize PhysFS. " + get_last_error() + "\n");
+                stderr.printf("Failed to initialize PhysFS. " + get_last_error() + "\n");
             }
         }
 
@@ -40,7 +40,7 @@ namespace Bodhi {
             }
         
             if (!PHYSFS.mount(path, mount_point, append_to_path)) {
-                Log.write_error("Failed to add \"" + path + "\"\n");
+                stderr.printf("Failed to add \"" + path + "\"\n");
                 print_last_error();
                 return false;
             }
@@ -169,7 +169,7 @@ namespace Bodhi {
 
         public void print_last_error() {
             if (error_exists()) {
-                Log.write_error(get_last_error() + "\n");
+                stderr.printf(get_last_error() + "\n");
             }
         }
 
@@ -205,8 +205,8 @@ namespace Bodhi {
                 name = path;
 
                 if (!open(mode)) {
-                    Log.write_error("Couldn't create file \"" + path + "\"\n");
-                    Log.write_error(PHYSFS.get_last_error() + "\n");
+                    stderr.printf("Couldn't create file \"" + path + "\"\n");
+                    stderr.printf(PHYSFS.get_last_error() + "\n");
                 }
             }
             
