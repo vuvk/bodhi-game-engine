@@ -19,9 +19,9 @@ namespace Bodhi {
                     return;
                 }
 
-                print("Initialized PhysFS, supported archive formats:\n");
+                stdout.printf("Initialized PhysFS, supported archive formats:\n");
                 foreach (string format in get_supported_archives()) {
-                    print(format + "\n");
+                    stdout.printf(format + "\n");
                 }
             } else {
                 stderr.printf("Failed to initialize PhysFS. " + get_last_error() + "\n");
@@ -29,7 +29,9 @@ namespace Bodhi {
         }
 
         ~FileSystem() {
-            PHYSFS.deinit();
+            if (PHYSFS.is_init() && !PHYSFS.deinit()) {
+                stderr.printf(get_last_error() + "\n");
+            }
         }
 
         // A PhysFS-specific function to mount a new path to the virtual directory
@@ -155,11 +157,11 @@ namespace Bodhi {
             return state;
         }
 
-        public bool error_exists() {
+        public static bool error_exists() {
             return (PHYSFS.get_last_error_code() != PHYSFS.ErrorCode.OK);            
         }
 
-        public string get_last_error() {
+        public static string get_last_error() {
             if (error_exists()) {
                 PHYSFS.ErrorCode error_code = PHYSFS.get_last_error_code();
                 return PHYSFS.get_error_by_code(error_code);
@@ -167,7 +169,7 @@ namespace Bodhi {
             return "";
         }
 
-        public void print_last_error() {
+        public static void print_last_error() {
             if (error_exists()) {
                 stderr.printf(get_last_error() + "\n");
             }
@@ -198,7 +200,7 @@ namespace Bodhi {
         * File class
         */
         public class File : Object {
-            private PHYSFS.File* handle;
+            private unowned PHYSFS.File* handle;
             private string name = "";
 
             internal File(string path, string mode = "r") {
@@ -206,7 +208,7 @@ namespace Bodhi {
 
                 if (!open(mode)) {
                     stderr.printf("Couldn't create file \"" + path + "\"\n");
-                    stderr.printf(PHYSFS.get_last_error() + "\n");
+                    stderr.printf(get_last_error() + "\n");
                 }
             }
             
@@ -303,7 +305,9 @@ namespace Bodhi {
 
             public void close() {
                 if (this.handle != null) {
-                    PHYSFS.close(this.handle);
+                    if (!PHYSFS.close(this.handle)) {
+                        stderr.printf("Error when close file: " + get_last_error() + "\n");
+                    }
                     this.handle = null;
                 }
             
@@ -367,7 +371,11 @@ namespace Bodhi {
 
             public int64 write(uint8[] buffer) {
                 if (this.handle != null && is_file()) {
-                    return PHYSFS.write_bytes(handle, buffer);
+                    int64 writed = PHYSFS.write_bytes(handle, buffer);
+                    if (writed != buffer.length) {
+                        stderr.printf("Error when write data to file! " + get_last_error() + "\n");
+                    }
+                    return writed;
                 }
                 return -1;
             }

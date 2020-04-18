@@ -11,10 +11,6 @@ namespace Bodhi {
         }
 
         ~Log() {
-            if (output_file != null) {
-                output_file.close();
-                output_file = null;
-            }
         }
 
         public string get_output_file_name() {
@@ -59,7 +55,7 @@ namespace Bodhi {
         
         public void write(string message) {
             if (message.length  > 0) {
-                print(message);
+                stdout.printf(message);
 
                 if (write_to_file && output_file != null) {
                     output_file.write_string(message);

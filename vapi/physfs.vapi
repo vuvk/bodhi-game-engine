@@ -26,7 +26,7 @@ namespace PHYSFS
 {
 	[CCode (cname = "PHYSFS_File", has_type_id = false)]
     public struct File {
-		void* opaque;  /**< That's all you get. Don't touch. */
+		private void* opaque;  /**< That's all you get. Don't touch. */
 	}
 	/**
 	 * PHYSFS_ArchiveInfo
@@ -242,21 +242,21 @@ namespace PHYSFS
 	* Open a file for writing.
 	*/
 	[CCode (cname = "PHYSFS_openWrite")]
-	public File* open_write(string filename);
+	public unowned File* open_write(string filename);
 		
 	/**
 	* File* PHYSFS_openAppend(const char *filename)
 	* Open a file for appending.
 	*/
 	[CCode (cname = "PHYSFS_openAppend")]
-	public File* open_append(string filename);
+	public unowned File* open_append(string filename);
 		
 	/**
 	* File* PHYSFS_openRead(const char *filename)
 	* Open a file for reading.
 	*/
 	[CCode (cname = "PHYSFS_openRead")]
-	public File* open_read(string filename);
+	public unowned File* open_read(string filename);
 		
 	/**
 	* int PHYSFS_close(File* handle)

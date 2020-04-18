@@ -16,14 +16,14 @@ public class Test : Object {
         // read first line from file
         file = fs.new_file("test.txt", "r");
         string str = file.read_line();
-        print("Line readed from file - \"" + str + "\"\n");
+        stdout.printf("Line readed from file - \"" + str + "\"\n");
 
         // read all lines from file
         file.seek(0);
         string[] lines = file.read_lines();
-        print("Lines readed from file:\n");
+        stdout.printf("Lines readed from file:\n");
         foreach (string line in lines) {
-            print(line + "\n");
+            stdout.printf(line + "\n");
         }
         file.close();
 

@@ -3,11 +3,15 @@ using Bodhi;
 public class Test : Object {
 
     public static int main (string[] args) {
-        Bodhi.Log.set_output_file("log.log");
-        Bodhi.Log.set_truncate_output_file(true);
-        Bodhi.Log.set_writing_to_file(true);
-
-        Engine.start ();
+        Engine.start();
+        // for enable logging to file you can set it after start engine
+        // or start engine with function "start_with_log"
+        var log = Engine.get_log();
+        log.set_write_to_file("log.log");
+        // test write to log
+        log.write("Hello!\n");
+        log.write_warning("Dangerous!\n");
+        log.write_error("Critical!\n");
 
         RendererWindow window = Engine.get_window();
         window.set_title("Hello!");
@@ -26,14 +30,14 @@ public class Test : Object {
             window.set_title("Hello! FPS: " + Engine.get_fps().to_string());
 
             if (input.is_mouse_scroll_up()) {
-                print("wow! wheel up!\n");
+                log.write("wow! wheel up!\n");
             }
             if (input.is_mouse_scroll_down()) {
-                print("wow! wheel down!\n");
+                log.write("wow! wheel down!\n");
             }
 
             if (input.is_key_press(Input.Keys.ESCAPE)) {
-				print("Bye-bye.\n");
+				log.write("Bye-bye.\n");
                 Engine.stop();
             }
         }

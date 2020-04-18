@@ -31,12 +31,12 @@ namespace Bodhi {
         private static uint16 limit_fps;
         private static float framerate;
 
-        private static Log? log;
         private static RendererWindow? window;
         private static Renderer? renderer;
         private static Scene? scene;
         private static Input? input;
         private static FileSystem? file_system;
+        private static Log? log;
     
         /** start Antoshka Engine and initialize all subsystems */
         public static int start(int wnd_width = RendererWindow.DEFAULT_WIDTH, 
@@ -153,11 +153,19 @@ namespace Bodhi {
         }
 
         /** stop Antoshka Engine */
-        public static void stop() {
-            scene = null;
-            input = null;
+        public static void stop() {        
+            if (log != null) {
+                log.write_warning("The Engine was stopped!\n");
+                log = null;
+            } else {
+                stdout.printf("The Engine was stopped!\n");
+            }
+            file_system = null;
+
+            scene    = null;
+            input    = null;
             renderer = null;
-            window = null;
+            window   = null;
         
             /* clear resources */
             /*TexturesDestroyAll();
@@ -182,14 +190,6 @@ namespace Bodhi {
               
             GLFW.terminate();     
             state = States.NOT_RUNNING;
-        
-            if (log != null) {
-                log.write_warning("The Engine was stopped!\n");
-                log = null;
-            } else {
-                stdout.printf("The Engine was stopped!\n");
-            }
-            file_system = null;
         }
         
         private static void update_time() {
