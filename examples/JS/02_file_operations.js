@@ -1,7 +1,8 @@
 const Bodhi = imports.gi.Bodhi;
 
-Bodhi.Engine.start(1024, 768, true, false);
-var fs = Bodhi.Engine.get_file_system();
+var engine = Bodhi.Engine;
+engine.start(1024, 768, true, false);
+var fs = Bodhi.FileSystem;
 
 // create file and put 5 strings
 var file = fs.new_file("test.txt", "w");
@@ -13,14 +14,14 @@ file.close();
 // read first line from file
 file = fs.new_file("test.txt", "r");
 var str = file.read_line();
-print("Line readed from file - \"" + str + "\"\n");
+print("Line readed from file - \"" + str + "\"");
 
 // read all lines from file
 file.seek(0);
 var lines = file.read_lines();
-print("Lines readed from file:\n");
+print("Lines readed from file:");
 for (var line of lines) {
-    print(line + "\n");
+    print(line);
 }
 file.close();
 
@@ -29,4 +30,4 @@ file = fs.new_file("test.txt", "a");
 file.write_lines(lines);
 file.close();
 
-Bodhi.Engine.stop();
+engine.stop();

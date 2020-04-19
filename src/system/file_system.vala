@@ -317,14 +317,14 @@ namespace Bodhi {
             }
 
             public bool flush() {
-                if (this.handle != null || is_initialized()) {
+                if (this.handle != null && is_initialized()) {
                     return PHYSFS.flush(this.handle);
                 }
                 return false;
             }
 
             public void close() {
-                if (this.handle != null || is_initialized()) {   
+                if (this.handle != null && is_initialized()) {   
                     if (!PHYSFS.close(this.handle)) {
                         stderr.printf("Error when close file: " + get_last_error() + "\n");
                     }

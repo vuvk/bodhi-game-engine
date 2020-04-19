@@ -2,7 +2,7 @@ from gi.repository import Bodhi
 
 engine = Bodhi.Engine
 engine.start(1024, 768, False, False)
-fs = engine.get_file_system()
+fs = Bodhi.FileSystem
 
 # create file and put 5 strings
 file = fs.new_file("test.txt", "w")
@@ -13,14 +13,14 @@ file.close()
 # read first line from file
 file = fs.new_file("test.txt", "r")
 string = file.read_line()
-print("Line readed from file - \"" + string + "\"\n")
+print("Line readed from file - \"" + string + "\"")
 
 # read all lines from file
 file.seek(0)
 lines = file.read_lines()
-print("Lines readed from file:\n")
+print("Lines readed from file:")
 for line in lines :
-    print(line + "\n")
+    print(line)
 file.close()
 
 # append lines to file
