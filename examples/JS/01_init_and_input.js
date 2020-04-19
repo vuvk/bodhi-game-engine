@@ -1,9 +1,14 @@
 const Bodhi = imports.gi.Bodhi;
 
-Bodhi.Log.set_output_file("log.log");
-Bodhi.Log.set_truncate_output_file(false);
-Bodhi.Log.set_writing_to_file(true);
 Bodhi.Engine.start(1024, 768, true, false);
+// for enable logging to file you can set it after start engine
+// or start engine with function "start_with_log"
+const LOG = Bodhi.Engine.get_log();
+LOG.set_write_to_file("log.log", false);
+// test write to log
+LOG.write("Hello!\n");
+LOG.write_warning("Dangerous!\n");
+LOG.write_error("Critical!\n");
 
 const WINDOW = Bodhi.Engine.get_window();
 const SCENE = Bodhi.Engine.get_scene();
@@ -20,14 +25,14 @@ while (Bodhi.Engine.is_running()) {
     WINDOW.set_title("Hello! FPS: " + Bodhi.Engine.get_fps());
 
     if (INPUT.is_mouse_scroll_up()) {
-        print("wow! wheel up!");
+        LOG.write("wow! wheel up!\n");
     }
     if (INPUT.is_mouse_scroll_down()) {
-        print("wow! wheel down!");
+        LOG.write("wow! wheel down!\n");
     }
 
     if (INPUT.is_key_press(Bodhi.InputKeys.ESCAPE)) {
-        print("Bye-bye.");
+        LOG.write("Bye-bye.\n");
         Bodhi.Engine.stop();
     }
 }
