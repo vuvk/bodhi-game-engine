@@ -35,7 +35,6 @@ namespace Bodhi {
         private static Renderer? renderer;
         private static Scene? scene;
         private static Input? input;
-        private static FileSystem? file_system;
         private static Log? log;
     
         /** start Antoshka Engine and initialize all subsystems */
@@ -59,8 +58,7 @@ namespace Bodhi {
             }
         
             /* try to create file system */
-            file_system = new FileSystem();
-            if (!file_system.is_initialized()) {
+            if (!FileSystem.init()) {
                 stderr.printf("File System not initialized!\n");
                 stop();
                 return Errors.ENGINE_NOT_STARTED;
@@ -156,11 +154,11 @@ namespace Bodhi {
         public static void stop() {        
             if (log != null) {
                 log.write_warning("The Engine was stopped!\n");
+                log.set_write_to_file(null);
                 log = null;
             } else {
                 stdout.printf("The Engine was stopped!\n");
             }
-            file_system = null;
 
             scene    = null;
             input    = null;
@@ -189,6 +187,7 @@ namespace Bodhi {
             ListDestroy(&_nodesMd2);*/
               
             GLFW.terminate();     
+            FileSystem.deinit();
             state = States.NOT_RUNNING;
         }
         
@@ -284,10 +283,6 @@ namespace Bodhi {
 
         public static unowned Input? get_input() {
             return input;
-        }
-
-        public static unowned FileSystem? get_file_system() {
-            return file_system;
         }
         
         // timing

@@ -6,37 +6,50 @@ namespace Bodhi {
             INITIALIZED
         }
 
-        private string base_dir = ".";
-        private States state = States.NOT_INITIALIZED;
+        private static string base_dir = ".";
+        private static States state = States.NOT_INITIALIZED;
 
-        internal FileSystem(string? argv0 = ".") {
-            if (PHYSFS.init(argv0)) {
-                base_dir = (argv0 != null) ? argv0 : ".";
-                state = States.INITIALIZED;
-                if (!mount(base_dir) || !set_write_dir(base_dir)) {
+        private FileSystem(){}
+        ~FileSystem(){}
+
+        public static bool init(string? argv0 = ".") {
+            if (!is_initialized()) {
+                if (PHYSFS.init(argv0)) {
+                    base_dir = (argv0 != null) ? argv0 : ".";
+                    state = States.INITIALIZED;
+                    if (!mount(base_dir) || !set_write_dir(base_dir)) {
+                        stderr.printf("Failed to initialize PhysFS. " + get_last_error() + "\n");
+                        state = States.NOT_INITIALIZED;
+                        return false;
+                    }
+    
+                    stdout.printf("Initialized PhysFS, supported archive formats:\n");
+                    foreach (string format in get_supported_archives()) {
+                        stdout.printf(format + "\n");
+                    }
+                } else {
                     stderr.printf("Failed to initialize PhysFS. " + get_last_error() + "\n");
-                    state = States.NOT_INITIALIZED;
-                    return;
+                    return false;
                 }
-
-                stdout.printf("Initialized PhysFS, supported archive formats:\n");
-                foreach (string format in get_supported_archives()) {
-                    stdout.printf(format + "\n");
-                }
-            } else {
-                stderr.printf("Failed to initialize PhysFS. " + get_last_error() + "\n");
             }
+
+            return true;
         }
 
-        ~FileSystem() {
-            if (PHYSFS.is_init() && !PHYSFS.deinit()) {
-                stderr.printf(get_last_error() + "\n");
+        public static bool deinit() {
+            if (is_initialized()) {
+                if (PHYSFS.is_init() && !PHYSFS.deinit()) {
+                    stderr.printf(get_last_error() + "\n");
+                    return false;
+                }
+                state = States.NOT_INITIALIZED;
             }
+            return true;
         }
 
         // A PhysFS-specific function to mount a new path to the virtual directory
         // tree.
-        public bool mount(string path, string mount_point = "", bool append_to_path = true) {
+        public static bool mount(string path, string mount_point = "", bool append_to_path = true) {
             if (!is_initialized()) {
                 return false;
             }
@@ -50,44 +63,48 @@ namespace Bodhi {
             return true;
         }
 
-        public string[] get_supported_archives() {
+        public static string[] get_supported_archives() {
             string[] lines = {};
 
-            unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
-            
-            for (int i = 0;; ++i) {
-                PHYSFS.ArchiveInfo* info = infos[i];
-                if (info == null) {
-                    break;
-                }
+            if (is_initialized()) {
+                unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
                 
-                lines += info->extension + ": " + 
-                         info->description + " [" +
-                         info->author + " - " +
-                         info->url + "]";
+                for (int i = 0;; ++i) {
+                    PHYSFS.ArchiveInfo* info = infos[i];
+                    if (info == null) {
+                        break;
+                    }
+                    
+                    lines += info->extension + ": " + 
+                             info->description + " [" +
+                             info->author + " - " +
+                             info->url + "]";
+                }                
             }
 
             return lines;
         }
 
-        public string[] get_supported_archives_types() {
+        public static string[] get_supported_archives_types() {
             string[] types = {};
 
-            unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
-            
-            for (int i = 0;; ++i) {
-                PHYSFS.ArchiveInfo* info = infos[i];
-                if (info == null) {
-                    break;
-                }
+            if (is_initialized()) {
+                unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
                 
-                types += info->extension;
+                for (int i = 0;; ++i) {
+                    PHYSFS.ArchiveInfo* info = infos[i];
+                    if (info == null) {
+                        break;
+                    }
+                    
+                    types += info->extension;
+                }
             }
 
             return types;
         }
 
-        public string[] get_list_directory(string dir) {
+        public static string[] get_list_directory(string dir) {
             string[] paths = {};
 
             if (is_initialized()) {
@@ -109,12 +126,15 @@ namespace Bodhi {
             return paths;
         }
 
-        public bool path_exists(string path) {
-            return PHYSFS.exists(path);
+        public static bool path_exists(string path) {
+            if (is_initialized()) {
+                return PHYSFS.exists(path);
+            }
+            return false;
         }
 
-        public bool path_is_folder(string path) {
-            if (path_exists(path)) {
+        public static bool path_is_folder(string path) {
+            if (is_initialized() && path_exists(path)) {
                 PHYSFS.Stat stat;
                 if (PHYSFS.stat(path, out stat)) {
                     return stat.filetype == PHYSFS.FileType.DIRECTORY;
@@ -126,8 +146,8 @@ namespace Bodhi {
             return false;
         }
 
-        public bool path_is_file(string path) {
-            if (path_exists(path)) {
+        public static bool path_is_file(string path) {
+            if (is_initialized() && path_exists(path)) {
                 PHYSFS.Stat stat;
                 if (PHYSFS.stat(path, out stat)) {
                     return stat.filetype == PHYSFS.FileType.REGULAR;
@@ -139,26 +159,29 @@ namespace Bodhi {
             return false;
         }
 
-        public void print_list_directory(string dir) {
+        public static void print_list_directory(string dir) {
             foreach (string path in get_list_directory(dir)) {
                 print(path + "\n");
             }
         }
 
-        public unowned string get_base_dir() {
+        public static unowned string get_base_dir() {
             return base_dir;
         }
 
-        public bool is_initialized() {
+        public static bool is_initialized() {
             return state == States.INITIALIZED;
         }
 
-        public States get_state() {
+        public static States get_state() {
             return state;
         }
 
         public static bool error_exists() {
-            return (PHYSFS.get_last_error_code() != PHYSFS.ErrorCode.OK);            
+            if (is_initialized()) {
+                return (PHYSFS.get_last_error_code() != PHYSFS.ErrorCode.OK);  
+            }          
+            return false;
         }
 
         public static string get_last_error() {
@@ -175,7 +198,7 @@ namespace Bodhi {
             }
         }
 
-        public bool set_write_dir(string dir) {
+        public static bool set_write_dir(string dir) {
             if (is_initialized()) {
                 return PHYSFS.set_write_dir(dir);
             }
@@ -187,7 +210,7 @@ namespace Bodhi {
          * @param path - path to file
          * @param mode - mode access. Possible values - "r" read, "w" write, "a" append
          */
-        public File? new_file(string path, string mode = "r") {
+        public static File? new_file(string path, string mode = "r") {
             if (!is_initialized()) {
                 return null;
             }
@@ -215,16 +238,9 @@ namespace Bodhi {
             ~File() {
                 close();
             }
-        
-            public bool exists() {
-                if (handle == null) {
-                    return false;
-                }
-                return PHYSFS.exists(name);
-            }
 
             public bool is_folder() {
-                if (exists()) {
+                if (is_initialized()) {
                     PHYSFS.Stat stat;
                     if (PHYSFS.stat(name, out stat)) {
                         return stat.filetype == PHYSFS.FileType.DIRECTORY;
@@ -235,12 +251,12 @@ namespace Bodhi {
             }
     
             public bool is_file() {
-                //if (exists()) {
+                if (is_initialized()) {
                     PHYSFS.Stat stat;
                     if (PHYSFS.stat(this.name, out stat)) {
                         return stat.filetype == PHYSFS.FileType.REGULAR;
                     }
-                //}
+                }
                 
                 return false;
             }
@@ -278,6 +294,10 @@ namespace Bodhi {
             }
         
             public bool open(string mode = "r") {
+                if (!is_initialized()) {
+                    return false;
+                }
+
                 /*if (!is_file()) {
                     return false;
                 }*/
@@ -297,21 +317,21 @@ namespace Bodhi {
             }
 
             public bool flush() {
-                if (this.handle != null) {
+                if (this.handle != null || is_initialized()) {
                     return PHYSFS.flush(this.handle);
                 }
                 return false;
             }
 
             public void close() {
-                if (this.handle != null) {
+                if (this.handle != null || is_initialized()) {   
                     if (!PHYSFS.close(this.handle)) {
                         stderr.printf("Error when close file: " + get_last_error() + "\n");
                     }
-                    this.handle = null;
                 }
             
                 this.name = "";
+                this.handle = null;
             }
 
             public int64 tell() {

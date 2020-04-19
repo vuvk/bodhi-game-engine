@@ -11,6 +11,7 @@ namespace Bodhi {
         }
 
         ~Log() {
+            set_write_to_file(null);
         }
 
         public string get_output_file_name() {
@@ -26,19 +27,15 @@ namespace Bodhi {
          * If you want disable writing then set output_file_name to null or ""
          */
         public void set_write_to_file(string? output_file_name, bool truncate_file = false) {
-            if (output_file != null) {
-                output_file.close();
-                output_file = null;
-            }
+            output_file = null;
 
             // if output file name is empty then it can't write
-            this.output_file_name = output_file_name;
+            this.output_file_name = null;
             write_to_file = (output_file_name != null && output_file_name != "");
 
             if (write_to_file) {
-                var fs = Engine.get_file_system();
                 string mode = (truncate_file) ? "w" : "a";
-                output_file = fs.new_file(output_file_name, mode);
+                output_file = FileSystem.new_file(output_file_name, mode);
 
                 if (output_file != null) {
                     this.output_file_name = output_file_name;
