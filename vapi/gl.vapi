@@ -2,7744 +2,7744 @@
 
 [CCode (cprefix = "GL", gir_namespace = "GLEW", gir_version = "1.0", lower_case_cprefix = "gl_")]
 namespace GL {
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLsync")]
-	[Compact]
-	public class GLsync {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLDEBUGPROC")]
-	[SimpleType]
-	public struct GLDEBUGPROC : int {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLDEBUGPROCAMD")]
-	[SimpleType]
-	public struct GLDEBUGPROCAMD : int {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLDEBUGPROCARB")]
-	[SimpleType]
-	public struct GLDEBUGPROCARB : int {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLbitfield")]
-	[SimpleType]
-	public struct GLbitfield : uint {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLboolean")]
-	[SimpleType]
-	public struct GLboolean : uint8 {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLbyte")]
-	[SimpleType]
-	public struct GLbyte : int8 {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLchar")]
-	[SimpleType]
-	public struct GLchar : char {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLcharARB")]
-	[SimpleType]
-	public struct GLcharARB : char {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLclampd")]
-	[SimpleType]
-	public struct GLclampd : double {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLclampf")]
-	[SimpleType]
-	public struct GLclampf : float {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLdouble")]
-	[SimpleType]
-	public struct GLdouble : double {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLenum")]
-	[SimpleType]
-	public struct GLenum : uint {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLfixed")]
-	[SimpleType]
-	public struct GLfixed : int {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLfloat")]
-	[SimpleType]
-	public struct GLfloat : float {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLhalfNV")]
-	[SimpleType]
-	public struct GLhalfNV : ushort {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLhandleARB")]
-	[SimpleType]
-	public struct GLhandleARB : uint {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLint")]
-	[SimpleType]
-	public struct GLint : int {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLint64")]
-	[SimpleType]
-	public struct GLint64 : int64 {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLint64EXT")]
-	[SimpleType]
-	public struct GLint64EXT : int64 {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLintptr")]
-	[SimpleType]
-	public struct GLintptr : size_t {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLintptrARB")]
-	[SimpleType]
-	public struct GLintptrARB : size_t {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLshort")]
-	[SimpleType]
-	public struct GLshort : short {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLsizei")]
-	[SimpleType]
-	public struct GLsizei : int {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLsizeiptr")]
-	[SimpleType]
-	public struct GLsizeiptr : size_t {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLsizeiptrARB")]
-	[SimpleType]
-	public struct GLsizeiptrARB : size_t {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLubyte")]
-	[SimpleType]
-	public struct GLubyte : uint8 {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLuint")]
-	[SimpleType]
-	public struct GLuint : uint {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLuint64")]
-	[SimpleType]
-	public struct GLuint64 : uint64 {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLuint64EXT")]
-	[SimpleType]
-	public struct GLuint64EXT : uint64 {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLushort")]
-	[SimpleType]
-	public struct GLushort : ushort {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLvdpauSurfaceNV")]
-	[SimpleType]
-	public struct GLvdpauSurfaceNV : GL.GLintptr {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GLvoid")]
-	[SimpleType]
-	public struct GLvoid {
-	}
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_1PASS_EXT")]
-	public const int GL_1PASS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_1PASS_SGIS")]
-	public const int GL_1PASS_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_2D")]
-	public const int GL_2D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_2PASS_0_EXT")]
-	public const int GL_2PASS_0_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_2PASS_0_SGIS")]
-	public const int GL_2PASS_0_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_2PASS_1_EXT")]
-	public const int GL_2PASS_1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_2PASS_1_SGIS")]
-	public const int GL_2PASS_1_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_2X_BIT_ATI")]
-	public const int GL_2X_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_2_BYTES")]
-	public const int GL_2_BYTES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_3D")]
-	public const int GL_3D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_3DC_XY_AMD")]
-	public const int GL_3DC_XY_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_3DC_X_AMD")]
-	public const int GL_3DC_X_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_3D_COLOR")]
-	public const int GL_3D_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_3D_COLOR_TEXTURE")]
-	public const int GL_3D_COLOR_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_3_BYTES")]
-	public const int GL_3_BYTES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_422_AVERAGE_EXT")]
-	public const int GL_422_AVERAGE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_422_EXT")]
-	public const int GL_422_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_422_REV_AVERAGE_EXT")]
-	public const int GL_422_REV_AVERAGE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_422_REV_EXT")]
-	public const int GL_422_REV_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4D_COLOR_TEXTURE")]
-	public const int GL_4D_COLOR_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_0_EXT")]
-	public const int GL_4PASS_0_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_0_SGIS")]
-	public const int GL_4PASS_0_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_1_EXT")]
-	public const int GL_4PASS_1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_1_SGIS")]
-	public const int GL_4PASS_1_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_2_EXT")]
-	public const int GL_4PASS_2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_2_SGIS")]
-	public const int GL_4PASS_2_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_3_EXT")]
-	public const int GL_4PASS_3_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_3_SGIS")]
-	public const int GL_4PASS_3_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4X_BIT_ATI")]
-	public const int GL_4X_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_4_BYTES")]
-	public const int GL_4_BYTES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_8X_BIT_ATI")]
-	public const int GL_8X_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ABGR_EXT")]
-	public const int GL_ABGR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM")]
-	public const int GL_ACCUM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_ADJACENT_PAIRS_NV")]
-	public const int GL_ACCUM_ADJACENT_PAIRS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_ALPHA_BITS")]
-	public const int GL_ACCUM_ALPHA_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_BLUE_BITS")]
-	public const int GL_ACCUM_BLUE_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_BUFFER_BIT")]
-	public const int GL_ACCUM_BUFFER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_CLEAR_VALUE")]
-	public const int GL_ACCUM_CLEAR_VALUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_GREEN_BITS")]
-	public const int GL_ACCUM_GREEN_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_RED_BITS")]
-	public const int GL_ACCUM_RED_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_ATOMIC_COUNTER_BUFFERS")]
-	public const int GL_ACTIVE_ATOMIC_COUNTER_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_ATTRIBUTES")]
-	public const int GL_ACTIVE_ATTRIBUTES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_ATTRIBUTE_MAX_LENGTH")]
-	public const int GL_ACTIVE_ATTRIBUTE_MAX_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_PROGRAM")]
-	public const int GL_ACTIVE_PROGRAM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_PROGRAM_EXT")]
-	public const int GL_ACTIVE_PROGRAM_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_RESOURCES")]
-	public const int GL_ACTIVE_RESOURCES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_STENCIL_FACE_EXT")]
-	public const int GL_ACTIVE_STENCIL_FACE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINES")]
-	public const int GL_ACTIVE_SUBROUTINES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINE_MAX_LENGTH")]
-	public const int GL_ACTIVE_SUBROUTINE_MAX_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINE_UNIFORMS")]
-	public const int GL_ACTIVE_SUBROUTINE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS")]
-	public const int GL_ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH")]
-	public const int GL_ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_TEXTURE")]
-	public const int GL_ACTIVE_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_TEXTURE_ARB")]
-	public const int GL_ACTIVE_TEXTURE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_UNIFORMS")]
-	public const int GL_ACTIVE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_UNIFORM_BLOCKS")]
-	public const int GL_ACTIVE_UNIFORM_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH")]
-	public const int GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_UNIFORM_MAX_LENGTH")]
-	public const int GL_ACTIVE_UNIFORM_MAX_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_VARIABLES")]
-	public const int GL_ACTIVE_VARIABLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_VARYINGS_NV")]
-	public const int GL_ACTIVE_VARYINGS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_VARYING_MAX_LENGTH_NV")]
-	public const int GL_ACTIVE_VARYING_MAX_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_VERTEX_UNITS_ARB")]
-	public const int GL_ACTIVE_VERTEX_UNITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD")]
-	public const int GL_ADD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD_ATI")]
-	public const int GL_ADD_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD_BLEND_IMG")]
-	public const int GL_ADD_BLEND_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD_SIGNED")]
-	public const int GL_ADD_SIGNED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD_SIGNED_EXT")]
-	public const int GL_ADD_SIGNED_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ADJACENT_PAIRS_NV")]
-	public const int GL_ADJACENT_PAIRS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AFFINE_2D_NV")]
-	public const int GL_AFFINE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AFFINE_3D_NV")]
-	public const int GL_AFFINE_3D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALIASED_LINE_WIDTH_RANGE")]
-	public const int GL_ALIASED_LINE_WIDTH_RANGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALIASED_POINT_SIZE_RANGE")]
-	public const int GL_ALIASED_POINT_SIZE_RANGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_ATTRIB_BITS")]
-	public const int GL_ALL_ATTRIB_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_BARRIER_BITS")]
-	public const int GL_ALL_BARRIER_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_BARRIER_BITS_EXT")]
-	public const int GL_ALL_BARRIER_BITS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_COMPLETED_NV")]
-	public const int GL_ALL_COMPLETED_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_SHADER_BITS")]
-	public const int GL_ALL_SHADER_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_SHADER_BITS_EXT")]
-	public const int GL_ALL_SHADER_BITS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA")]
-	public const int GL_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA12")]
-	public const int GL_ALPHA12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA12_EXT")]
-	public const int GL_ALPHA12_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16")]
-	public const int GL_ALPHA16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16F_ARB")]
-	public const int GL_ALPHA16F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16I_EXT")]
-	public const int GL_ALPHA16I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16UI_EXT")]
-	public const int GL_ALPHA16UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16_EXT")]
-	public const int GL_ALPHA16_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16_SNORM")]
-	public const int GL_ALPHA16_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA32F_ARB")]
-	public const int GL_ALPHA32F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA32I_EXT")]
-	public const int GL_ALPHA32I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA32UI_EXT")]
-	public const int GL_ALPHA32UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA4")]
-	public const int GL_ALPHA4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA4_EXT")]
-	public const int GL_ALPHA4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8")]
-	public const int GL_ALPHA8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8I_EXT")]
-	public const int GL_ALPHA8I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8UI_EXT")]
-	public const int GL_ALPHA8UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8_EXT")]
-	public const int GL_ALPHA8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8_SNORM")]
-	public const int GL_ALPHA8_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_BIAS")]
-	public const int GL_ALPHA_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_BITS")]
-	public const int GL_ALPHA_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_FLOAT16_APPLE")]
-	public const int GL_ALPHA_FLOAT16_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_FLOAT16_ATI")]
-	public const int GL_ALPHA_FLOAT16_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_FLOAT32_APPLE")]
-	public const int GL_ALPHA_FLOAT32_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_FLOAT32_ATI")]
-	public const int GL_ALPHA_FLOAT32_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_INTEGER")]
-	public const int GL_ALPHA_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_INTEGER_EXT")]
-	public const int GL_ALPHA_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_MAX_CLAMP_INGR")]
-	public const int GL_ALPHA_MAX_CLAMP_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_MAX_SGIX")]
-	public const int GL_ALPHA_MAX_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_MIN_CLAMP_INGR")]
-	public const int GL_ALPHA_MIN_CLAMP_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_MIN_SGIX")]
-	public const int GL_ALPHA_MIN_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_SCALE")]
-	public const int GL_ALPHA_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_SNORM")]
-	public const int GL_ALPHA_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST")]
-	public const int GL_ALPHA_TEST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_FUNC")]
-	public const int GL_ALPHA_TEST_FUNC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_FUNC_QCOM")]
-	public const int GL_ALPHA_TEST_FUNC_QCOM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_QCOM")]
-	public const int GL_ALPHA_TEST_QCOM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_REF")]
-	public const int GL_ALPHA_TEST_REF;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_REF_QCOM")]
-	public const int GL_ALPHA_TEST_REF_QCOM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALREADY_SIGNALED")]
-	public const int GL_ALREADY_SIGNALED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALREADY_SIGNALED_APPLE")]
-	public const int GL_ALREADY_SIGNALED_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ALWAYS")]
-	public const int GL_ALWAYS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AMBIENT")]
-	public const int GL_AMBIENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AMBIENT_AND_DIFFUSE")]
-	public const int GL_AMBIENT_AND_DIFFUSE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AND")]
-	public const int GL_AND;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AND_INVERTED")]
-	public const int GL_AND_INVERTED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AND_REVERSE")]
-	public const int GL_AND_REVERSE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ANY_SAMPLES_PASSED")]
-	public const int GL_ANY_SAMPLES_PASSED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ANY_SAMPLES_PASSED_CONSERVATIVE")]
-	public const int GL_ANY_SAMPLES_PASSED_CONSERVATIVE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ANY_SAMPLES_PASSED_CONSERVATIVE_EXT")]
-	public const int GL_ANY_SAMPLES_PASSED_CONSERVATIVE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ANY_SAMPLES_PASSED_EXT")]
-	public const int GL_ANY_SAMPLES_PASSED_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARB_imaging")]
-	public const int GL_ARB_imaging;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARC_TO_NV")]
-	public const int GL_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_BUFFER")]
-	public const int GL_ARRAY_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_BUFFER_ARB")]
-	public const int GL_ARRAY_BUFFER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_BUFFER_BINDING")]
-	public const int GL_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_BUFFER_BINDING_ARB")]
-	public const int GL_ARRAY_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_ELEMENT_LOCK_COUNT_EXT")]
-	public const int GL_ARRAY_ELEMENT_LOCK_COUNT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_ELEMENT_LOCK_FIRST_EXT")]
-	public const int GL_ARRAY_ELEMENT_LOCK_FIRST_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_OBJECT_BUFFER_ATI")]
-	public const int GL_ARRAY_OBJECT_BUFFER_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_OBJECT_OFFSET_ATI")]
-	public const int GL_ARRAY_OBJECT_OFFSET_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_SIZE")]
-	public const int GL_ARRAY_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_STRIDE")]
-	public const int GL_ARRAY_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_DRAW_PIXELS_SGIX")]
-	public const int GL_ASYNC_DRAW_PIXELS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_HISTOGRAM_SGIX")]
-	public const int GL_ASYNC_HISTOGRAM_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_MARKER_SGIX")]
-	public const int GL_ASYNC_MARKER_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_READ_PIXELS_SGIX")]
-	public const int GL_ASYNC_READ_PIXELS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_TEX_IMAGE_SGIX")]
-	public const int GL_ASYNC_TEX_IMAGE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATC_RGBA_EXPLICIT_ALPHA_AMD")]
-	public const int GL_ATC_RGBA_EXPLICIT_ALPHA_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATC_RGBA_INTERPOLATED_ALPHA_AMD")]
-	public const int GL_ATC_RGBA_INTERPOLATED_ALPHA_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATC_RGB_AMD")]
-	public const int GL_ATC_RGB_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BARRIER_BIT")]
-	public const int GL_ATOMIC_COUNTER_BARRIER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BARRIER_BIT_EXT")]
-	public const int GL_ATOMIC_COUNTER_BARRIER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER")]
-	public const int GL_ATOMIC_COUNTER_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTERS")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTER_INDICES")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTER_INDICES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_BINDING")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_DATA_SIZE")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_DATA_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_INDEX")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_SIZE")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_START")]
-	public const int GL_ATOMIC_COUNTER_BUFFER_START;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTACHED_SHADERS")]
-	public const int GL_ATTACHED_SHADERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTENUATION_EXT")]
-	public const int GL_ATTENUATION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_ARRAY_POINTER_NV")]
-	public const int GL_ATTRIB_ARRAY_POINTER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_ARRAY_SIZE_NV")]
-	public const int GL_ATTRIB_ARRAY_SIZE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_ARRAY_STRIDE_NV")]
-	public const int GL_ATTRIB_ARRAY_STRIDE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_ARRAY_TYPE_NV")]
-	public const int GL_ATTRIB_ARRAY_TYPE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_STACK_DEPTH")]
-	public const int GL_ATTRIB_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AUTO_GENERATE_MIPMAP")]
-	public const int GL_AUTO_GENERATE_MIPMAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AUTO_NORMAL")]
-	public const int GL_AUTO_NORMAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX0")]
-	public const int GL_AUX0;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX1")]
-	public const int GL_AUX1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX2")]
-	public const int GL_AUX2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX3")]
-	public const int GL_AUX3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX_BUFFERS")]
-	public const int GL_AUX_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX_DEPTH_STENCIL_APPLE")]
-	public const int GL_AUX_DEPTH_STENCIL_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_AVERAGE_EXT")]
-	public const int GL_AVERAGE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK")]
-	public const int GL_BACK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK_LEFT")]
-	public const int GL_BACK_LEFT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK_PRIMARY_COLOR_NV")]
-	public const int GL_BACK_PRIMARY_COLOR_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK_RIGHT")]
-	public const int GL_BACK_RIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK_SECONDARY_COLOR_NV")]
-	public const int GL_BACK_SECONDARY_COLOR_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BEVEL_NV")]
-	public const int GL_BEVEL_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BGR")]
-	public const int GL_BGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BGRA")]
-	public const int GL_BGRA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BGRA_EXT")]
-	public const int GL_BGRA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BGRA_INTEGER")]
-	public const int GL_BGRA_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BGRA_INTEGER_EXT")]
-	public const int GL_BGRA_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BGR_EXT")]
-	public const int GL_BGR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BGR_INTEGER")]
-	public const int GL_BGR_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BGR_INTEGER_EXT")]
-	public const int GL_BGR_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BIAS_BIT_ATI")]
-	public const int GL_BIAS_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BIAS_BY_NEGATIVE_ONE_HALF_NV")]
-	public const int GL_BIAS_BY_NEGATIVE_ONE_HALF_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BINNING_CONTROL_HINT_QCOM")]
-	public const int GL_BINNING_CONTROL_HINT_QCOM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BITMAP")]
-	public const int GL_BITMAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BITMAP_TOKEN")]
-	public const int GL_BITMAP_TOKEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND")]
-	public const int GL_BLEND;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_COLOR")]
-	public const int GL_BLEND_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_COLOR_EXT")]
-	public const int GL_BLEND_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST")]
-	public const int GL_BLEND_DST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_ALPHA")]
-	public const int GL_BLEND_DST_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_ALPHA_EXT")]
-	public const int GL_BLEND_DST_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_ALPHA_OES")]
-	public const int GL_BLEND_DST_ALPHA_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_RGB")]
-	public const int GL_BLEND_DST_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_RGB_EXT")]
-	public const int GL_BLEND_DST_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_RGB_OES")]
-	public const int GL_BLEND_DST_RGB_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION")]
-	public const int GL_BLEND_EQUATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_ALPHA")]
-	public const int GL_BLEND_EQUATION_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_ALPHA_EXT")]
-	public const int GL_BLEND_EQUATION_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_ALPHA_OES")]
-	public const int GL_BLEND_EQUATION_ALPHA_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_EXT")]
-	public const int GL_BLEND_EQUATION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_OES")]
-	public const int GL_BLEND_EQUATION_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_RGB")]
-	public const int GL_BLEND_EQUATION_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_RGB_EXT")]
-	public const int GL_BLEND_EQUATION_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_RGB_OES")]
-	public const int GL_BLEND_EQUATION_RGB_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC")]
-	public const int GL_BLEND_SRC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_ALPHA")]
-	public const int GL_BLEND_SRC_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_ALPHA_EXT")]
-	public const int GL_BLEND_SRC_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_ALPHA_OES")]
-	public const int GL_BLEND_SRC_ALPHA_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_RGB")]
-	public const int GL_BLEND_SRC_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_RGB_EXT")]
-	public const int GL_BLEND_SRC_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_RGB_OES")]
-	public const int GL_BLEND_SRC_RGB_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLOCK_INDEX")]
-	public const int GL_BLOCK_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE")]
-	public const int GL_BLUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_BIAS")]
-	public const int GL_BLUE_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_BITS")]
-	public const int GL_BLUE_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_BIT_ATI")]
-	public const int GL_BLUE_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_INTEGER")]
-	public const int GL_BLUE_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_INTEGER_EXT")]
-	public const int GL_BLUE_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_MAX_CLAMP_INGR")]
-	public const int GL_BLUE_MAX_CLAMP_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_MIN_CLAMP_INGR")]
-	public const int GL_BLUE_MIN_CLAMP_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_SCALE")]
-	public const int GL_BLUE_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOLD_BIT_NV")]
-	public const int GL_BOLD_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL")]
-	public const int GL_BOOL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_ARB")]
-	public const int GL_BOOL_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC2")]
-	public const int GL_BOOL_VEC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC2_ARB")]
-	public const int GL_BOOL_VEC2_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC3")]
-	public const int GL_BOOL_VEC3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC3_ARB")]
-	public const int GL_BOOL_VEC3_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC4")]
-	public const int GL_BOOL_VEC4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC4_ARB")]
-	public const int GL_BOOL_VEC4_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOUNDING_BOX_NV")]
-	public const int GL_BOUNDING_BOX_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BOUNDING_BOX_OF_BOUNDING_BOXES_NV")]
-	public const int GL_BOUNDING_BOX_OF_BOUNDING_BOXES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER")]
-	public const int GL_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_ACCESS")]
-	public const int GL_BUFFER_ACCESS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_ACCESS_ARB")]
-	public const int GL_BUFFER_ACCESS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_ACCESS_FLAGS")]
-	public const int GL_BUFFER_ACCESS_FLAGS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_ACCESS_OES")]
-	public const int GL_BUFFER_ACCESS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_BINDING")]
-	public const int GL_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_DATA_SIZE")]
-	public const int GL_BUFFER_DATA_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_FLUSHING_UNMAP_APPLE")]
-	public const int GL_BUFFER_FLUSHING_UNMAP_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_GPU_ADDRESS_NV")]
-	public const int GL_BUFFER_GPU_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAPPED")]
-	public const int GL_BUFFER_MAPPED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAPPED_ARB")]
-	public const int GL_BUFFER_MAPPED_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAPPED_OES")]
-	public const int GL_BUFFER_MAPPED_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_LENGTH")]
-	public const int GL_BUFFER_MAP_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_OFFSET")]
-	public const int GL_BUFFER_MAP_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_POINTER")]
-	public const int GL_BUFFER_MAP_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_POINTER_ARB")]
-	public const int GL_BUFFER_MAP_POINTER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_POINTER_OES")]
-	public const int GL_BUFFER_MAP_POINTER_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_OBJECT_APPLE")]
-	public const int GL_BUFFER_OBJECT_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_OBJECT_EXT")]
-	public const int GL_BUFFER_OBJECT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_SERIALIZED_MODIFY_APPLE")]
-	public const int GL_BUFFER_SERIALIZED_MODIFY_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_SIZE")]
-	public const int GL_BUFFER_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_SIZE_ARB")]
-	public const int GL_BUFFER_SIZE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_UPDATE_BARRIER_BIT")]
-	public const int GL_BUFFER_UPDATE_BARRIER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_UPDATE_BARRIER_BIT_EXT")]
-	public const int GL_BUFFER_UPDATE_BARRIER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_USAGE")]
-	public const int GL_BUFFER_USAGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_USAGE_ARB")]
-	public const int GL_BUFFER_USAGE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_VARIABLE")]
-	public const int GL_BUFFER_VARIABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_ENVMAP_ATI")]
-	public const int GL_BUMP_ENVMAP_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_NUM_TEX_UNITS_ATI")]
-	public const int GL_BUMP_NUM_TEX_UNITS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_ROT_MATRIX_ATI")]
-	public const int GL_BUMP_ROT_MATRIX_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_ROT_MATRIX_SIZE_ATI")]
-	public const int GL_BUMP_ROT_MATRIX_SIZE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_TARGET_ATI")]
-	public const int GL_BUMP_TARGET_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_TEX_UNITS_ATI")]
-	public const int GL_BUMP_TEX_UNITS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_BYTE")]
-	public const int GL_BYTE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_C3F_V3F")]
-	public const int GL_C3F_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_C4F_N3F_V3F")]
-	public const int GL_C4F_N3F_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_C4UB_V2F")]
-	public const int GL_C4UB_V2F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_C4UB_V3F")]
-	public const int GL_C4UB_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CALLIGRAPHIC_FRAGMENT_SGIX")]
-	public const int GL_CALLIGRAPHIC_FRAGMENT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CAVEAT_SUPPORT")]
-	public const int GL_CAVEAT_SUPPORT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CCW")]
-	public const int GL_CCW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CIRCULAR_CCW_ARC_TO_NV")]
-	public const int GL_CIRCULAR_CCW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CIRCULAR_CW_ARC_TO_NV")]
-	public const int GL_CIRCULAR_CW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CIRCULAR_TANGENT_ARC_TO_NV")]
-	public const int GL_CIRCULAR_TANGENT_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP")]
-	public const int GL_CLAMP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_FRAGMENT_COLOR")]
-	public const int GL_CLAMP_FRAGMENT_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_FRAGMENT_COLOR_ARB")]
-	public const int GL_CLAMP_FRAGMENT_COLOR_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_READ_COLOR")]
-	public const int GL_CLAMP_READ_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_READ_COLOR_ARB")]
-	public const int GL_CLAMP_READ_COLOR_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_BORDER")]
-	public const int GL_CLAMP_TO_BORDER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_BORDER_ARB")]
-	public const int GL_CLAMP_TO_BORDER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_BORDER_NV")]
-	public const int GL_CLAMP_TO_BORDER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_BORDER_SGIS")]
-	public const int GL_CLAMP_TO_BORDER_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_EDGE")]
-	public const int GL_CLAMP_TO_EDGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_EDGE_SGIS")]
-	public const int GL_CLAMP_TO_EDGE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_VERTEX_COLOR")]
-	public const int GL_CLAMP_VERTEX_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_VERTEX_COLOR_ARB")]
-	public const int GL_CLAMP_VERTEX_COLOR_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLEAR")]
-	public const int GL_CLEAR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLEAR_BUFFER")]
-	public const int GL_CLEAR_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_ACTIVE_TEXTURE")]
-	public const int GL_CLIENT_ACTIVE_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_ACTIVE_TEXTURE_ARB")]
-	public const int GL_CLIENT_ACTIVE_TEXTURE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_ALL_ATTRIB_BITS")]
-	public const int GL_CLIENT_ALL_ATTRIB_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_ATTRIB_STACK_DEPTH")]
-	public const int GL_CLIENT_ATTRIB_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_PIXEL_STORE_BIT")]
-	public const int GL_CLIENT_PIXEL_STORE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_VERTEX_ARRAY_BIT")]
-	public const int GL_CLIENT_VERTEX_ARRAY_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE0")]
-	public const int GL_CLIP_DISTANCE0;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE1")]
-	public const int GL_CLIP_DISTANCE1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE2")]
-	public const int GL_CLIP_DISTANCE2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE3")]
-	public const int GL_CLIP_DISTANCE3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE4")]
-	public const int GL_CLIP_DISTANCE4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE5")]
-	public const int GL_CLIP_DISTANCE5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE6")]
-	public const int GL_CLIP_DISTANCE6;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE7")]
-	public const int GL_CLIP_DISTANCE7;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE_NV")]
-	public const int GL_CLIP_DISTANCE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE0")]
-	public const int GL_CLIP_PLANE0;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE1")]
-	public const int GL_CLIP_PLANE1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE2")]
-	public const int GL_CLIP_PLANE2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE3")]
-	public const int GL_CLIP_PLANE3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE4")]
-	public const int GL_CLIP_PLANE4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE5")]
-	public const int GL_CLIP_PLANE5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CLOSE_PATH_NV")]
-	public const int GL_CLOSE_PATH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CMYKA_EXT")]
-	public const int GL_CMYKA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CMYK_EXT")]
-	public const int GL_CMYK_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CND0_ATI")]
-	public const int GL_CND0_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CND_ATI")]
-	public const int GL_CND_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COEFF")]
-	public const int GL_COEFF;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR")]
-	public const int GL_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ALPHA_PAIRING_ATI")]
-	public const int GL_COLOR_ALPHA_PAIRING_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY")]
-	public const int GL_COLOR_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_ADDRESS_NV")]
-	public const int GL_COLOR_ARRAY_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_BUFFER_BINDING")]
-	public const int GL_COLOR_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_BUFFER_BINDING_ARB")]
-	public const int GL_COLOR_ARRAY_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_COUNT_EXT")]
-	public const int GL_COLOR_ARRAY_COUNT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_EXT")]
-	public const int GL_COLOR_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_LENGTH_NV")]
-	public const int GL_COLOR_ARRAY_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_PARALLEL_POINTERS_INTEL")]
-	public const int GL_COLOR_ARRAY_PARALLEL_POINTERS_INTEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_POINTER")]
-	public const int GL_COLOR_ARRAY_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_POINTER_EXT")]
-	public const int GL_COLOR_ARRAY_POINTER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_SIZE")]
-	public const int GL_COLOR_ARRAY_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_SIZE_EXT")]
-	public const int GL_COLOR_ARRAY_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_STRIDE")]
-	public const int GL_COLOR_ARRAY_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_STRIDE_EXT")]
-	public const int GL_COLOR_ARRAY_STRIDE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_TYPE")]
-	public const int GL_COLOR_ARRAY_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_TYPE_EXT")]
-	public const int GL_COLOR_ARRAY_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT0")]
-	public const int GL_COLOR_ATTACHMENT0;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT0_EXT")]
-	public const int GL_COLOR_ATTACHMENT0_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT0_NV")]
-	public const int GL_COLOR_ATTACHMENT0_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT0_OES")]
-	public const int GL_COLOR_ATTACHMENT0_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT1")]
-	public const int GL_COLOR_ATTACHMENT1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT10")]
-	public const int GL_COLOR_ATTACHMENT10;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT10_EXT")]
-	public const int GL_COLOR_ATTACHMENT10_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT10_NV")]
-	public const int GL_COLOR_ATTACHMENT10_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT11")]
-	public const int GL_COLOR_ATTACHMENT11;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT11_EXT")]
-	public const int GL_COLOR_ATTACHMENT11_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT11_NV")]
-	public const int GL_COLOR_ATTACHMENT11_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT12")]
-	public const int GL_COLOR_ATTACHMENT12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT12_EXT")]
-	public const int GL_COLOR_ATTACHMENT12_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT12_NV")]
-	public const int GL_COLOR_ATTACHMENT12_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT13")]
-	public const int GL_COLOR_ATTACHMENT13;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT13_EXT")]
-	public const int GL_COLOR_ATTACHMENT13_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT13_NV")]
-	public const int GL_COLOR_ATTACHMENT13_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT14")]
-	public const int GL_COLOR_ATTACHMENT14;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT14_EXT")]
-	public const int GL_COLOR_ATTACHMENT14_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT14_NV")]
-	public const int GL_COLOR_ATTACHMENT14_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT15")]
-	public const int GL_COLOR_ATTACHMENT15;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT15_EXT")]
-	public const int GL_COLOR_ATTACHMENT15_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT15_NV")]
-	public const int GL_COLOR_ATTACHMENT15_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT1_EXT")]
-	public const int GL_COLOR_ATTACHMENT1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT1_NV")]
-	public const int GL_COLOR_ATTACHMENT1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT2")]
-	public const int GL_COLOR_ATTACHMENT2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT2_EXT")]
-	public const int GL_COLOR_ATTACHMENT2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT2_NV")]
-	public const int GL_COLOR_ATTACHMENT2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT3")]
-	public const int GL_COLOR_ATTACHMENT3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT3_EXT")]
-	public const int GL_COLOR_ATTACHMENT3_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT3_NV")]
-	public const int GL_COLOR_ATTACHMENT3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT4")]
-	public const int GL_COLOR_ATTACHMENT4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT4_EXT")]
-	public const int GL_COLOR_ATTACHMENT4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT4_NV")]
-	public const int GL_COLOR_ATTACHMENT4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT5")]
-	public const int GL_COLOR_ATTACHMENT5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT5_EXT")]
-	public const int GL_COLOR_ATTACHMENT5_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT5_NV")]
-	public const int GL_COLOR_ATTACHMENT5_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT6")]
-	public const int GL_COLOR_ATTACHMENT6;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT6_EXT")]
-	public const int GL_COLOR_ATTACHMENT6_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT6_NV")]
-	public const int GL_COLOR_ATTACHMENT6_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT7")]
-	public const int GL_COLOR_ATTACHMENT7;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT7_EXT")]
-	public const int GL_COLOR_ATTACHMENT7_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT7_NV")]
-	public const int GL_COLOR_ATTACHMENT7_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT8")]
-	public const int GL_COLOR_ATTACHMENT8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT8_EXT")]
-	public const int GL_COLOR_ATTACHMENT8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT8_NV")]
-	public const int GL_COLOR_ATTACHMENT8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT9")]
-	public const int GL_COLOR_ATTACHMENT9;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT9_EXT")]
-	public const int GL_COLOR_ATTACHMENT9_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT9_NV")]
-	public const int GL_COLOR_ATTACHMENT9_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT_EXT")]
-	public const int GL_COLOR_ATTACHMENT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_BUFFER_BIT")]
-	public const int GL_COLOR_BUFFER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_CLEAR_UNCLAMPED_VALUE_ATI")]
-	public const int GL_COLOR_CLEAR_UNCLAMPED_VALUE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_CLEAR_VALUE")]
-	public const int GL_COLOR_CLEAR_VALUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_COMPONENTS")]
-	public const int GL_COLOR_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ENCODING")]
-	public const int GL_COLOR_ENCODING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_EXT")]
-	public const int GL_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_FLOAT_APPLE")]
-	public const int GL_COLOR_FLOAT_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_INDEX")]
-	public const int GL_COLOR_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_INDEXES")]
-	public const int GL_COLOR_INDEXES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_LOGIC_OP")]
-	public const int GL_COLOR_LOGIC_OP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATERIAL")]
-	public const int GL_COLOR_MATERIAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATERIAL_FACE")]
-	public const int GL_COLOR_MATERIAL_FACE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATERIAL_PARAMETER")]
-	public const int GL_COLOR_MATERIAL_PARAMETER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATRIX")]
-	public const int GL_COLOR_MATRIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATRIX_SGI")]
-	public const int GL_COLOR_MATRIX_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATRIX_STACK_DEPTH")]
-	public const int GL_COLOR_MATRIX_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATRIX_STACK_DEPTH_SGI")]
-	public const int GL_COLOR_MATRIX_STACK_DEPTH_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_RENDERABLE")]
-	public const int GL_COLOR_RENDERABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SAMPLES_NV")]
-	public const int GL_COLOR_SAMPLES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SUM")]
-	public const int GL_COLOR_SUM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SUM_ARB")]
-	public const int GL_COLOR_SUM_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SUM_CLAMP_NV")]
-	public const int GL_COLOR_SUM_CLAMP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SUM_EXT")]
-	public const int GL_COLOR_SUM_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE")]
-	public const int GL_COLOR_TABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_ALPHA_SIZE")]
-	public const int GL_COLOR_TABLE_ALPHA_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_ALPHA_SIZE_SGI")]
-	public const int GL_COLOR_TABLE_ALPHA_SIZE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_BIAS")]
-	public const int GL_COLOR_TABLE_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_BIAS_SGI")]
-	public const int GL_COLOR_TABLE_BIAS_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_BLUE_SIZE")]
-	public const int GL_COLOR_TABLE_BLUE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_BLUE_SIZE_SGI")]
-	public const int GL_COLOR_TABLE_BLUE_SIZE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_FORMAT")]
-	public const int GL_COLOR_TABLE_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_FORMAT_SGI")]
-	public const int GL_COLOR_TABLE_FORMAT_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_GREEN_SIZE")]
-	public const int GL_COLOR_TABLE_GREEN_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_GREEN_SIZE_SGI")]
-	public const int GL_COLOR_TABLE_GREEN_SIZE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_INTENSITY_SIZE")]
-	public const int GL_COLOR_TABLE_INTENSITY_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_INTENSITY_SIZE_SGI")]
-	public const int GL_COLOR_TABLE_INTENSITY_SIZE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_LUMINANCE_SIZE")]
-	public const int GL_COLOR_TABLE_LUMINANCE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_LUMINANCE_SIZE_SGI")]
-	public const int GL_COLOR_TABLE_LUMINANCE_SIZE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_RED_SIZE")]
-	public const int GL_COLOR_TABLE_RED_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_RED_SIZE_SGI")]
-	public const int GL_COLOR_TABLE_RED_SIZE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_SCALE")]
-	public const int GL_COLOR_TABLE_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_SCALE_SGI")]
-	public const int GL_COLOR_TABLE_SCALE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_SGI")]
-	public const int GL_COLOR_TABLE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_WIDTH")]
-	public const int GL_COLOR_TABLE_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_WIDTH_SGI")]
-	public const int GL_COLOR_TABLE_WIDTH_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_WRITEMASK")]
-	public const int GL_COLOR_WRITEMASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE")]
-	public const int GL_COMBINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE4_NV")]
-	public const int GL_COMBINE4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER0_NV")]
-	public const int GL_COMBINER0_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER1_NV")]
-	public const int GL_COMBINER1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER2_NV")]
-	public const int GL_COMBINER2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER3_NV")]
-	public const int GL_COMBINER3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER4_NV")]
-	public const int GL_COMBINER4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER5_NV")]
-	public const int GL_COMBINER5_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER6_NV")]
-	public const int GL_COMBINER6_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER7_NV")]
-	public const int GL_COMBINER7_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_AB_DOT_PRODUCT_NV")]
-	public const int GL_COMBINER_AB_DOT_PRODUCT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_AB_OUTPUT_NV")]
-	public const int GL_COMBINER_AB_OUTPUT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_BIAS_NV")]
-	public const int GL_COMBINER_BIAS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_CD_DOT_PRODUCT_NV")]
-	public const int GL_COMBINER_CD_DOT_PRODUCT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_CD_OUTPUT_NV")]
-	public const int GL_COMBINER_CD_OUTPUT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_COMPONENT_USAGE_NV")]
-	public const int GL_COMBINER_COMPONENT_USAGE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_INPUT_NV")]
-	public const int GL_COMBINER_INPUT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_MAPPING_NV")]
-	public const int GL_COMBINER_MAPPING_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_MUX_SUM_NV")]
-	public const int GL_COMBINER_MUX_SUM_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_SCALE_NV")]
-	public const int GL_COMBINER_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_SUM_OUTPUT_NV")]
-	public const int GL_COMBINER_SUM_OUTPUT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_ALPHA")]
-	public const int GL_COMBINE_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_ALPHA_EXT")]
-	public const int GL_COMBINE_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_EXT")]
-	public const int GL_COMBINE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_RGB")]
-	public const int GL_COMBINE_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_RGB_EXT")]
-	public const int GL_COMBINE_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMMAND_BARRIER_BIT")]
-	public const int GL_COMMAND_BARRIER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMMAND_BARRIER_BIT_EXT")]
-	public const int GL_COMMAND_BARRIER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_REF_DEPTH_TO_TEXTURE_EXT")]
-	public const int GL_COMPARE_REF_DEPTH_TO_TEXTURE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_REF_TO_TEXTURE")]
-	public const int GL_COMPARE_REF_TO_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_REF_TO_TEXTURE_EXT")]
-	public const int GL_COMPARE_REF_TO_TEXTURE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_R_TO_TEXTURE")]
-	public const int GL_COMPARE_R_TO_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_R_TO_TEXTURE_ARB")]
-	public const int GL_COMPARE_R_TO_TEXTURE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPATIBLE_SUBROUTINES")]
-	public const int GL_COMPATIBLE_SUBROUTINES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPILE")]
-	public const int GL_COMPILE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPILE_AND_EXECUTE")]
-	public const int GL_COMPILE_AND_EXECUTE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPILE_STATUS")]
-	public const int GL_COMPILE_STATUS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_ALPHA")]
-	public const int GL_COMPRESSED_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_ALPHA_ARB")]
-	public const int GL_COMPRESSED_ALPHA_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_INTENSITY")]
-	public const int GL_COMPRESSED_INTENSITY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_INTENSITY_ARB")]
-	public const int GL_COMPRESSED_INTENSITY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE")]
-	public const int GL_COMPRESSED_LUMINANCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_ALPHA")]
-	public const int GL_COMPRESSED_LUMINANCE_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_ALPHA_ARB")]
-	public const int GL_COMPRESSED_LUMINANCE_ALPHA_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_ALPHA_LATC2_EXT")]
-	public const int GL_COMPRESSED_LUMINANCE_ALPHA_LATC2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_ARB")]
-	public const int GL_COMPRESSED_LUMINANCE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_LATC1_EXT")]
-	public const int GL_COMPRESSED_LUMINANCE_LATC1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_R11_EAC")]
-	public const int GL_COMPRESSED_R11_EAC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RED")]
-	public const int GL_COMPRESSED_RED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RED_GREEN_RGTC2_EXT")]
-	public const int GL_COMPRESSED_RED_GREEN_RGTC2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RED_RGTC1")]
-	public const int GL_COMPRESSED_RED_RGTC1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RED_RGTC1_EXT")]
-	public const int GL_COMPRESSED_RED_RGTC1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RG")]
-	public const int GL_COMPRESSED_RG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RG11_EAC")]
-	public const int GL_COMPRESSED_RG11_EAC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB")]
-	public const int GL_COMPRESSED_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB8_ETC2")]
-	public const int GL_COMPRESSED_RGB8_ETC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2")]
-	public const int GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA")]
-	public const int GL_COMPRESSED_RGBA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA8_ETC2_EAC")]
-	public const int GL_COMPRESSED_RGBA8_ETC2_EAC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ARB")]
-	public const int GL_COMPRESSED_RGBA_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_10")]
-	public const int GL_COMPRESSED_RGBA_ASTC_10;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_12")]
-	public const int GL_COMPRESSED_RGBA_ASTC_12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_4")]
-	public const int GL_COMPRESSED_RGBA_ASTC_4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_5")]
-	public const int GL_COMPRESSED_RGBA_ASTC_5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_6")]
-	public const int GL_COMPRESSED_RGBA_ASTC_6;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_8")]
-	public const int GL_COMPRESSED_RGBA_ASTC_8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_BPTC_UNORM_ARB")]
-	public const int GL_COMPRESSED_RGBA_BPTC_UNORM_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_FXT1_3DFX")]
-	public const int GL_COMPRESSED_RGBA_FXT1_3DFX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG")]
-	public const int GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_PVRTC_2BPPV2_IMG")]
-	public const int GL_COMPRESSED_RGBA_PVRTC_2BPPV2_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG")]
-	public const int GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_PVRTC_4BPPV2_IMG")]
-	public const int GL_COMPRESSED_RGBA_PVRTC_4BPPV2_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT1_EXT")]
-	public const int GL_COMPRESSED_RGBA_S3TC_DXT1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT3_ANGLE")]
-	public const int GL_COMPRESSED_RGBA_S3TC_DXT3_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT3_EXT")]
-	public const int GL_COMPRESSED_RGBA_S3TC_DXT3_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT5_ANGLE")]
-	public const int GL_COMPRESSED_RGBA_S3TC_DXT5_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT5_EXT")]
-	public const int GL_COMPRESSED_RGBA_S3TC_DXT5_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_ARB")]
-	public const int GL_COMPRESSED_RGB_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT_ARB")]
-	public const int GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_ARB")]
-	public const int GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_FXT1_3DFX")]
-	public const int GL_COMPRESSED_RGB_FXT1_3DFX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG")]
-	public const int GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG")]
-	public const int GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_S3TC_DXT1_EXT")]
-	public const int GL_COMPRESSED_RGB_S3TC_DXT1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RG_RGTC2")]
-	public const int GL_COMPRESSED_RG_RGTC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_LUMINANCE_ALPHA_LATC2_EXT")]
-	public const int GL_COMPRESSED_SIGNED_LUMINANCE_ALPHA_LATC2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_LUMINANCE_LATC1_EXT")]
-	public const int GL_COMPRESSED_SIGNED_LUMINANCE_LATC1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_R11_EAC")]
-	public const int GL_COMPRESSED_SIGNED_R11_EAC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT")]
-	public const int GL_COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RED_RGTC1")]
-	public const int GL_COMPRESSED_SIGNED_RED_RGTC1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RED_RGTC1_EXT")]
-	public const int GL_COMPRESSED_SIGNED_RED_RGTC1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RG11_EAC")]
-	public const int GL_COMPRESSED_SIGNED_RG11_EAC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RG_RGTC2")]
-	public const int GL_COMPRESSED_SIGNED_RG_RGTC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SLUMINANCE")]
-	public const int GL_COMPRESSED_SLUMINANCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SLUMINANCE_ALPHA")]
-	public const int GL_COMPRESSED_SLUMINANCE_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SLUMINANCE_ALPHA_EXT")]
-	public const int GL_COMPRESSED_SLUMINANCE_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SLUMINANCE_EXT")]
-	public const int GL_COMPRESSED_SLUMINANCE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB")]
-	public const int GL_COMPRESSED_SRGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10")]
-	public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12")]
-	public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4")]
-	public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5")]
-	public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6")]
-	public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8")]
-	public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC")]
-	public const int GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ETC2")]
-	public const int GL_COMPRESSED_SRGB8_ETC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2")]
-	public const int GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA")]
-	public const int GL_COMPRESSED_SRGB_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM_ARB")]
-	public const int GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_EXT")]
-	public const int GL_COMPRESSED_SRGB_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT")]
-	public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_NV")]
-	public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT")]
-	public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_NV")]
-	public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT")]
-	public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_NV")]
-	public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_EXT")]
-	public const int GL_COMPRESSED_SRGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_S3TC_DXT1_EXT")]
-	public const int GL_COMPRESSED_SRGB_S3TC_DXT1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_S3TC_DXT1_NV")]
-	public const int GL_COMPRESSED_SRGB_S3TC_DXT1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_TEXTURE_FORMATS")]
-	public const int GL_COMPRESSED_TEXTURE_FORMATS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_TEXTURE_FORMATS_ARB")]
-	public const int GL_COMPRESSED_TEXTURE_FORMATS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_LOCAL_WORK_SIZE")]
-	public const int GL_COMPUTE_LOCAL_WORK_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_PROGRAM_NV")]
-	public const int GL_COMPUTE_PROGRAM_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_PROGRAM_PARAMETER_BUFFER_NV")]
-	public const int GL_COMPUTE_PROGRAM_PARAMETER_BUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_SHADER")]
-	public const int GL_COMPUTE_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_SHADER_BIT")]
-	public const int GL_COMPUTE_SHADER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_SUBROUTINE")]
-	public const int GL_COMPUTE_SUBROUTINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_SUBROUTINE_UNIFORM")]
-	public const int GL_COMPUTE_SUBROUTINE_UNIFORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_TEXTURE")]
-	public const int GL_COMPUTE_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COMP_BIT_ATI")]
-	public const int GL_COMP_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONDITION_SATISFIED")]
-	public const int GL_CONDITION_SATISFIED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONDITION_SATISFIED_APPLE")]
-	public const int GL_CONDITION_SATISFIED_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT")]
-	public const int GL_CONSTANT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_ALPHA")]
-	public const int GL_CONSTANT_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_ALPHA_EXT")]
-	public const int GL_CONSTANT_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_ATTENUATION")]
-	public const int GL_CONSTANT_ATTENUATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_BORDER")]
-	public const int GL_CONSTANT_BORDER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_BORDER_HP")]
-	public const int GL_CONSTANT_BORDER_HP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_COLOR")]
-	public const int GL_CONSTANT_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_COLOR0_NV")]
-	public const int GL_CONSTANT_COLOR0_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_COLOR1_NV")]
-	public const int GL_CONSTANT_COLOR1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_COLOR_EXT")]
-	public const int GL_CONSTANT_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_EXT")]
-	public const int GL_CONSTANT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONST_EYE_NV")]
-	public const int GL_CONST_EYE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_COMPATIBILITY_PROFILE_BIT")]
-	public const int GL_CONTEXT_COMPATIBILITY_PROFILE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_CORE_PROFILE_BIT")]
-	public const int GL_CONTEXT_CORE_PROFILE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_FLAGS")]
-	public const int GL_CONTEXT_FLAGS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_FLAG_DEBUG_BIT")]
-	public const int GL_CONTEXT_FLAG_DEBUG_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_FLAG_FORWARD_COMPATIBLE_BIT")]
-	public const int GL_CONTEXT_FLAG_FORWARD_COMPATIBLE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB")]
-	public const int GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_PROFILE_MASK")]
-	public const int GL_CONTEXT_PROFILE_MASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTINUOUS_AMD")]
-	public const int GL_CONTINUOUS_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVEX_HULL_NV")]
-	public const int GL_CONVEX_HULL_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_1D")]
-	public const int GL_CONVOLUTION_1D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_1D_EXT")]
-	public const int GL_CONVOLUTION_1D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_2D")]
-	public const int GL_CONVOLUTION_2D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_2D_EXT")]
-	public const int GL_CONVOLUTION_2D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_BORDER_COLOR")]
-	public const int GL_CONVOLUTION_BORDER_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_BORDER_COLOR_HP")]
-	public const int GL_CONVOLUTION_BORDER_COLOR_HP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_BORDER_MODE")]
-	public const int GL_CONVOLUTION_BORDER_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_BORDER_MODE_EXT")]
-	public const int GL_CONVOLUTION_BORDER_MODE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FILTER_BIAS")]
-	public const int GL_CONVOLUTION_FILTER_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FILTER_BIAS_EXT")]
-	public const int GL_CONVOLUTION_FILTER_BIAS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FILTER_SCALE")]
-	public const int GL_CONVOLUTION_FILTER_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FILTER_SCALE_EXT")]
-	public const int GL_CONVOLUTION_FILTER_SCALE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FORMAT")]
-	public const int GL_CONVOLUTION_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FORMAT_EXT")]
-	public const int GL_CONVOLUTION_FORMAT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_HEIGHT")]
-	public const int GL_CONVOLUTION_HEIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_HEIGHT_EXT")]
-	public const int GL_CONVOLUTION_HEIGHT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_HINT_SGIX")]
-	public const int GL_CONVOLUTION_HINT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_WIDTH")]
-	public const int GL_CONVOLUTION_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_WIDTH_EXT")]
-	public const int GL_CONVOLUTION_WIDTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_0_ATI")]
-	public const int GL_CON_0_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_10_ATI")]
-	public const int GL_CON_10_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_11_ATI")]
-	public const int GL_CON_11_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_12_ATI")]
-	public const int GL_CON_12_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_13_ATI")]
-	public const int GL_CON_13_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_14_ATI")]
-	public const int GL_CON_14_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_15_ATI")]
-	public const int GL_CON_15_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_16_ATI")]
-	public const int GL_CON_16_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_17_ATI")]
-	public const int GL_CON_17_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_18_ATI")]
-	public const int GL_CON_18_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_19_ATI")]
-	public const int GL_CON_19_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_1_ATI")]
-	public const int GL_CON_1_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_20_ATI")]
-	public const int GL_CON_20_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_21_ATI")]
-	public const int GL_CON_21_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_22_ATI")]
-	public const int GL_CON_22_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_23_ATI")]
-	public const int GL_CON_23_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_24_ATI")]
-	public const int GL_CON_24_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_25_ATI")]
-	public const int GL_CON_25_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_26_ATI")]
-	public const int GL_CON_26_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_27_ATI")]
-	public const int GL_CON_27_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_28_ATI")]
-	public const int GL_CON_28_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_29_ATI")]
-	public const int GL_CON_29_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_2_ATI")]
-	public const int GL_CON_2_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_30_ATI")]
-	public const int GL_CON_30_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_31_ATI")]
-	public const int GL_CON_31_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_3_ATI")]
-	public const int GL_CON_3_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_4_ATI")]
-	public const int GL_CON_4_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_5_ATI")]
-	public const int GL_CON_5_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_6_ATI")]
-	public const int GL_CON_6_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_7_ATI")]
-	public const int GL_CON_7_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_8_ATI")]
-	public const int GL_CON_8_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_9_ATI")]
-	public const int GL_CON_9_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COORD_REPLACE")]
-	public const int GL_COORD_REPLACE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COORD_REPLACE_ARB")]
-	public const int GL_COORD_REPLACE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COORD_REPLACE_NV")]
-	public const int GL_COORD_REPLACE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY")]
-	public const int GL_COPY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY_INVERTED")]
-	public const int GL_COPY_INVERTED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY_PIXEL_TOKEN")]
-	public const int GL_COPY_PIXEL_TOKEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY_READ_BUFFER_BINDING")]
-	public const int GL_COPY_READ_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY_WRITE_BUFFER_BINDING")]
-	public const int GL_COPY_WRITE_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COUNTER_RANGE_AMD")]
-	public const int GL_COUNTER_RANGE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COUNTER_TYPE_AMD")]
-	public const int GL_COUNTER_TYPE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COUNT_DOWN_NV")]
-	public const int GL_COUNT_DOWN_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COUNT_UP_NV")]
-	public const int GL_COUNT_UP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_ALL_FRAGMENTS_NV")]
-	public const int GL_COVERAGE_ALL_FRAGMENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_ATTACHMENT_NV")]
-	public const int GL_COVERAGE_ATTACHMENT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_AUTOMATIC_NV")]
-	public const int GL_COVERAGE_AUTOMATIC_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_BUFFERS_NV")]
-	public const int GL_COVERAGE_BUFFERS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_BUFFER_BIT_NV")]
-	public const int GL_COVERAGE_BUFFER_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_COMPONENT4_NV")]
-	public const int GL_COVERAGE_COMPONENT4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_COMPONENT_NV")]
-	public const int GL_COVERAGE_COMPONENT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_EDGE_FRAGMENTS_NV")]
-	public const int GL_COVERAGE_EDGE_FRAGMENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_SAMPLES_NV")]
-	public const int GL_COVERAGE_SAMPLES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CPU_OPTIMIZED_QCOM")]
-	public const int GL_CPU_OPTIMIZED_QCOM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CUBIC_CURVE_TO_NV")]
-	public const int GL_CUBIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CUBIC_EXT")]
-	public const int GL_CUBIC_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_FACE")]
-	public const int GL_CULL_FACE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_FACE_MODE")]
-	public const int GL_CULL_FACE_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_FRAGMENT_NV")]
-	public const int GL_CULL_FRAGMENT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_MODES_NV")]
-	public const int GL_CULL_MODES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_VERTEX_EXT")]
-	public const int GL_CULL_VERTEX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_VERTEX_EYE_POSITION_EXT")]
-	public const int GL_CULL_VERTEX_EYE_POSITION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_VERTEX_OBJECT_POSITION_EXT")]
-	public const int GL_CULL_VERTEX_OBJECT_POSITION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_ATTRIB_NV")]
-	public const int GL_CURRENT_ATTRIB_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_BIT")]
-	public const int GL_CURRENT_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_COLOR")]
-	public const int GL_CURRENT_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_FOG_COORD")]
-	public const int GL_CURRENT_FOG_COORD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_FOG_COORDINATE")]
-	public const int GL_CURRENT_FOG_COORDINATE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_FOG_COORDINATE_EXT")]
-	public const int GL_CURRENT_FOG_COORDINATE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_INDEX")]
-	public const int GL_CURRENT_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_ARB")]
-	public const int GL_CURRENT_MATRIX_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_INDEX_ARB")]
-	public const int GL_CURRENT_MATRIX_INDEX_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_NV")]
-	public const int GL_CURRENT_MATRIX_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_STACK_DEPTH_ARB")]
-	public const int GL_CURRENT_MATRIX_STACK_DEPTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_STACK_DEPTH_NV")]
-	public const int GL_CURRENT_MATRIX_STACK_DEPTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_NORMAL")]
-	public const int GL_CURRENT_NORMAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_OCCLUSION_QUERY_ID_NV")]
-	public const int GL_CURRENT_OCCLUSION_QUERY_ID_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_PALETTE_MATRIX_ARB")]
-	public const int GL_CURRENT_PALETTE_MATRIX_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_PALETTE_MATRIX_OES")]
-	public const int GL_CURRENT_PALETTE_MATRIX_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_PROGRAM")]
-	public const int GL_CURRENT_PROGRAM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_QUERY")]
-	public const int GL_CURRENT_QUERY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_QUERY_ARB")]
-	public const int GL_CURRENT_QUERY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_QUERY_EXT")]
-	public const int GL_CURRENT_QUERY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_COLOR")]
-	public const int GL_CURRENT_RASTER_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_DISTANCE")]
-	public const int GL_CURRENT_RASTER_DISTANCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_INDEX")]
-	public const int GL_CURRENT_RASTER_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_NORMAL_SGIX")]
-	public const int GL_CURRENT_RASTER_NORMAL_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_POSITION")]
-	public const int GL_CURRENT_RASTER_POSITION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_POSITION_VALID")]
-	public const int GL_CURRENT_RASTER_POSITION_VALID;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_SECONDARY_COLOR")]
-	public const int GL_CURRENT_RASTER_SECONDARY_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_TEXTURE_COORDS")]
-	public const int GL_CURRENT_RASTER_TEXTURE_COORDS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_SECONDARY_COLOR")]
-	public const int GL_CURRENT_SECONDARY_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_SECONDARY_COLOR_EXT")]
-	public const int GL_CURRENT_SECONDARY_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_TEXTURE_COORDS")]
-	public const int GL_CURRENT_TEXTURE_COORDS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_TIME_NV")]
-	public const int GL_CURRENT_TIME_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_VERTEX_ATTRIB")]
-	public const int GL_CURRENT_VERTEX_ATTRIB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_VERTEX_ATTRIB_ARB")]
-	public const int GL_CURRENT_VERTEX_ATTRIB_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_VERTEX_EXT")]
-	public const int GL_CURRENT_VERTEX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_VERTEX_WEIGHT_EXT")]
-	public const int GL_CURRENT_VERTEX_WEIGHT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_WEIGHT_ARB")]
-	public const int GL_CURRENT_WEIGHT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_CW")]
-	public const int GL_CW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DATA_BUFFER_AMD")]
-	public const int GL_DATA_BUFFER_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_ASSERT_MESA")]
-	public const int GL_DEBUG_ASSERT_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CALLBACK_FUNCTION")]
-	public const int GL_DEBUG_CALLBACK_FUNCTION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CALLBACK_FUNCTION_ARB")]
-	public const int GL_DEBUG_CALLBACK_FUNCTION_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CALLBACK_USER_PARAM")]
-	public const int GL_DEBUG_CALLBACK_USER_PARAM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CALLBACK_USER_PARAM_ARB")]
-	public const int GL_DEBUG_CALLBACK_USER_PARAM_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_API_ERROR_AMD")]
-	public const int GL_DEBUG_CATEGORY_API_ERROR_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_APPLICATION_AMD")]
-	public const int GL_DEBUG_CATEGORY_APPLICATION_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_DEPRECATION_AMD")]
-	public const int GL_DEBUG_CATEGORY_DEPRECATION_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_OTHER_AMD")]
-	public const int GL_DEBUG_CATEGORY_OTHER_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_PERFORMANCE_AMD")]
-	public const int GL_DEBUG_CATEGORY_PERFORMANCE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_SHADER_COMPILER_AMD")]
-	public const int GL_DEBUG_CATEGORY_SHADER_COMPILER_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_UNDEFINED_BEHAVIOR_AMD")]
-	public const int GL_DEBUG_CATEGORY_UNDEFINED_BEHAVIOR_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_WINDOW_SYSTEM_AMD")]
-	public const int GL_DEBUG_CATEGORY_WINDOW_SYSTEM_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_GROUP_STACK_DEPTH")]
-	public const int GL_DEBUG_GROUP_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_LOGGED_MESSAGES")]
-	public const int GL_DEBUG_LOGGED_MESSAGES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_LOGGED_MESSAGES_AMD")]
-	public const int GL_DEBUG_LOGGED_MESSAGES_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_LOGGED_MESSAGES_ARB")]
-	public const int GL_DEBUG_LOGGED_MESSAGES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH")]
-	public const int GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH_ARB")]
-	public const int GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_OBJECT_MESA")]
-	public const int GL_DEBUG_OBJECT_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_OUTPUT")]
-	public const int GL_DEBUG_OUTPUT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_OUTPUT_SYNCHRONOUS")]
-	public const int GL_DEBUG_OUTPUT_SYNCHRONOUS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_OUTPUT_SYNCHRONOUS_ARB")]
-	public const int GL_DEBUG_OUTPUT_SYNCHRONOUS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_PRINT_MESA")]
-	public const int GL_DEBUG_PRINT_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_HIGH")]
-	public const int GL_DEBUG_SEVERITY_HIGH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_HIGH_AMD")]
-	public const int GL_DEBUG_SEVERITY_HIGH_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_HIGH_ARB")]
-	public const int GL_DEBUG_SEVERITY_HIGH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_LOW")]
-	public const int GL_DEBUG_SEVERITY_LOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_LOW_AMD")]
-	public const int GL_DEBUG_SEVERITY_LOW_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_LOW_ARB")]
-	public const int GL_DEBUG_SEVERITY_LOW_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_MEDIUM")]
-	public const int GL_DEBUG_SEVERITY_MEDIUM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_MEDIUM_AMD")]
-	public const int GL_DEBUG_SEVERITY_MEDIUM_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_MEDIUM_ARB")]
-	public const int GL_DEBUG_SEVERITY_MEDIUM_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_NOTIFICATION")]
-	public const int GL_DEBUG_SEVERITY_NOTIFICATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_API")]
-	public const int GL_DEBUG_SOURCE_API;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_API_ARB")]
-	public const int GL_DEBUG_SOURCE_API_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_APPLICATION")]
-	public const int GL_DEBUG_SOURCE_APPLICATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_APPLICATION_ARB")]
-	public const int GL_DEBUG_SOURCE_APPLICATION_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_OTHER")]
-	public const int GL_DEBUG_SOURCE_OTHER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_OTHER_ARB")]
-	public const int GL_DEBUG_SOURCE_OTHER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_SHADER_COMPILER")]
-	public const int GL_DEBUG_SOURCE_SHADER_COMPILER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_SHADER_COMPILER_ARB")]
-	public const int GL_DEBUG_SOURCE_SHADER_COMPILER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_THIRD_PARTY")]
-	public const int GL_DEBUG_SOURCE_THIRD_PARTY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_THIRD_PARTY_ARB")]
-	public const int GL_DEBUG_SOURCE_THIRD_PARTY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_WINDOW_SYSTEM")]
-	public const int GL_DEBUG_SOURCE_WINDOW_SYSTEM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_WINDOW_SYSTEM_ARB")]
-	public const int GL_DEBUG_SOURCE_WINDOW_SYSTEM_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR")]
-	public const int GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR_ARB")]
-	public const int GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_ERROR")]
-	public const int GL_DEBUG_TYPE_ERROR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_ERROR_ARB")]
-	public const int GL_DEBUG_TYPE_ERROR_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_MARKER")]
-	public const int GL_DEBUG_TYPE_MARKER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_OTHER")]
-	public const int GL_DEBUG_TYPE_OTHER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_OTHER_ARB")]
-	public const int GL_DEBUG_TYPE_OTHER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PERFORMANCE")]
-	public const int GL_DEBUG_TYPE_PERFORMANCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PERFORMANCE_ARB")]
-	public const int GL_DEBUG_TYPE_PERFORMANCE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_POP_GROUP")]
-	public const int GL_DEBUG_TYPE_POP_GROUP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PORTABILITY")]
-	public const int GL_DEBUG_TYPE_PORTABILITY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PORTABILITY_ARB")]
-	public const int GL_DEBUG_TYPE_PORTABILITY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PUSH_GROUP")]
-	public const int GL_DEBUG_TYPE_PUSH_GROUP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR")]
-	public const int GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR_ARB")]
-	public const int GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DECAL")]
-	public const int GL_DECAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DECODE_EXT")]
-	public const int GL_DECODE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DECR")]
-	public const int GL_DECR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DECR_WRAP")]
-	public const int GL_DECR_WRAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DECR_WRAP_EXT")]
-	public const int GL_DECR_WRAP_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DECR_WRAP_OES")]
-	public const int GL_DECR_WRAP_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEFORMATIONS_MASK_SGIX")]
-	public const int GL_DEFORMATIONS_MASK_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DELETE_STATUS")]
-	public const int GL_DELETE_STATUS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_AR_TEXTURE_2D_NV")]
-	public const int GL_DEPENDENT_AR_TEXTURE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_GB_TEXTURE_2D_NV")]
-	public const int GL_DEPENDENT_GB_TEXTURE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_HILO_TEXTURE_2D_NV")]
-	public const int GL_DEPENDENT_HILO_TEXTURE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_RGB_TEXTURE_3D_NV")]
-	public const int GL_DEPENDENT_RGB_TEXTURE_3D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_RGB_TEXTURE_CUBE_MAP_NV")]
-	public const int GL_DEPENDENT_RGB_TEXTURE_CUBE_MAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH")]
-	public const int GL_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH24_STENCIL8")]
-	public const int GL_DEPTH24_STENCIL8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH24_STENCIL8_EXT")]
-	public const int GL_DEPTH24_STENCIL8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH24_STENCIL8_OES")]
-	public const int GL_DEPTH24_STENCIL8_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH32F_STENCIL8")]
-	public const int GL_DEPTH32F_STENCIL8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH32F_STENCIL8_NV")]
-	public const int GL_DEPTH32F_STENCIL8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_ATTACHMENT")]
-	public const int GL_DEPTH_ATTACHMENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_ATTACHMENT_EXT")]
-	public const int GL_DEPTH_ATTACHMENT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_ATTACHMENT_OES")]
-	public const int GL_DEPTH_ATTACHMENT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BIAS")]
-	public const int GL_DEPTH_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BITS")]
-	public const int GL_DEPTH_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BOUNDS_EXT")]
-	public const int GL_DEPTH_BOUNDS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BOUNDS_TEST_EXT")]
-	public const int GL_DEPTH_BOUNDS_TEST_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BUFFER_BIT")]
-	public const int GL_DEPTH_BUFFER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BUFFER_FLOAT_MODE_NV")]
-	public const int GL_DEPTH_BUFFER_FLOAT_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLAMP")]
-	public const int GL_DEPTH_CLAMP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLAMP_FAR_AMD")]
-	public const int GL_DEPTH_CLAMP_FAR_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLAMP_NEAR_AMD")]
-	public const int GL_DEPTH_CLAMP_NEAR_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLAMP_NV")]
-	public const int GL_DEPTH_CLAMP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLEAR_VALUE")]
-	public const int GL_DEPTH_CLEAR_VALUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT")]
-	public const int GL_DEPTH_COMPONENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16")]
-	public const int GL_DEPTH_COMPONENT16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16_ARB")]
-	public const int GL_DEPTH_COMPONENT16_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16_NONLINEAR_NV")]
-	public const int GL_DEPTH_COMPONENT16_NONLINEAR_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16_OES")]
-	public const int GL_DEPTH_COMPONENT16_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16_SGIX")]
-	public const int GL_DEPTH_COMPONENT16_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT24")]
-	public const int GL_DEPTH_COMPONENT24;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT24_ARB")]
-	public const int GL_DEPTH_COMPONENT24_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT24_OES")]
-	public const int GL_DEPTH_COMPONENT24_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT24_SGIX")]
-	public const int GL_DEPTH_COMPONENT24_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32")]
-	public const int GL_DEPTH_COMPONENT32;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32F")]
-	public const int GL_DEPTH_COMPONENT32F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32F_NV")]
-	public const int GL_DEPTH_COMPONENT32F_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32_ARB")]
-	public const int GL_DEPTH_COMPONENT32_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32_OES")]
-	public const int GL_DEPTH_COMPONENT32_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32_SGIX")]
-	public const int GL_DEPTH_COMPONENT32_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENTS")]
-	public const int GL_DEPTH_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_EXT")]
-	public const int GL_DEPTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_FUNC")]
-	public const int GL_DEPTH_FUNC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_PASS_INSTRUMENT_COUNTERS_SGIX")]
-	public const int GL_DEPTH_PASS_INSTRUMENT_COUNTERS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_PASS_INSTRUMENT_MAX_SGIX")]
-	public const int GL_DEPTH_PASS_INSTRUMENT_MAX_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_PASS_INSTRUMENT_SGIX")]
-	public const int GL_DEPTH_PASS_INSTRUMENT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_RANGE")]
-	public const int GL_DEPTH_RANGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_RENDERABLE")]
-	public const int GL_DEPTH_RENDERABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_SCALE")]
-	public const int GL_DEPTH_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL")]
-	public const int GL_DEPTH_STENCIL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_ATTACHMENT")]
-	public const int GL_DEPTH_STENCIL_ATTACHMENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_EXT")]
-	public const int GL_DEPTH_STENCIL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_MESA")]
-	public const int GL_DEPTH_STENCIL_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_NV")]
-	public const int GL_DEPTH_STENCIL_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_OES")]
-	public const int GL_DEPTH_STENCIL_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_TEXTURE_MODE")]
-	public const int GL_DEPTH_STENCIL_TEXTURE_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_TO_BGRA_NV")]
-	public const int GL_DEPTH_STENCIL_TO_BGRA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_TO_RGBA_NV")]
-	public const int GL_DEPTH_STENCIL_TO_RGBA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_TEST")]
-	public const int GL_DEPTH_TEST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_TEXTURE_MODE")]
-	public const int GL_DEPTH_TEXTURE_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_TEXTURE_MODE_ARB")]
-	public const int GL_DEPTH_TEXTURE_MODE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_WRITEMASK")]
-	public const int GL_DEPTH_WRITEMASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_2D_BINDING_SGIS")]
-	public const int GL_DETAIL_TEXTURE_2D_BINDING_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_2D_SGIS")]
-	public const int GL_DETAIL_TEXTURE_2D_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_FUNC_POINTS_SGIS")]
-	public const int GL_DETAIL_TEXTURE_FUNC_POINTS_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_LEVEL_SGIS")]
-	public const int GL_DETAIL_TEXTURE_LEVEL_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_MODE_SGIS")]
-	public const int GL_DETAIL_TEXTURE_MODE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DIFFUSE")]
-	public const int GL_DIFFUSE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DISCARD_ATI")]
-	public const int GL_DISCARD_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DISCARD_NV")]
-	public const int GL_DISCARD_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DISCRETE_AMD")]
-	public const int GL_DISCRETE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DISPATCH_INDIRECT_BUFFER")]
-	public const int GL_DISPATCH_INDIRECT_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DISPATCH_INDIRECT_BUFFER_BINDING")]
-	public const int GL_DISPATCH_INDIRECT_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DISPLAY_LIST")]
-	public const int GL_DISPLAY_LIST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DISTANCE_ATTENUATION_EXT")]
-	public const int GL_DISTANCE_ATTENUATION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DISTANCE_ATTENUATION_SGIS")]
-	public const int GL_DISTANCE_ATTENUATION_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DITHER")]
-	public const int GL_DITHER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOMAIN")]
-	public const int GL_DOMAIN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DONT_CARE")]
-	public const int GL_DONT_CARE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT2_ADD_ATI")]
-	public const int GL_DOT2_ADD_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_ATI")]
-	public const int GL_DOT3_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGB")]
-	public const int GL_DOT3_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGBA")]
-	public const int GL_DOT3_RGBA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGBA_ARB")]
-	public const int GL_DOT3_RGBA_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGBA_EXT")]
-	public const int GL_DOT3_RGBA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGBA_IMG")]
-	public const int GL_DOT3_RGBA_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGB_ARB")]
-	public const int GL_DOT3_RGB_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGB_EXT")]
-	public const int GL_DOT3_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT4_ATI")]
-	public const int GL_DOT4_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_AFFINE_DEPTH_REPLACE_NV")]
-	public const int GL_DOT_PRODUCT_AFFINE_DEPTH_REPLACE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV")]
-	public const int GL_DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_DEPTH_REPLACE_NV")]
-	public const int GL_DOT_PRODUCT_DEPTH_REPLACE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV")]
-	public const int GL_DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_NV")]
-	public const int GL_DOT_PRODUCT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_PASS_THROUGH_NV")]
-	public const int GL_DOT_PRODUCT_PASS_THROUGH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_REFLECT_CUBE_MAP_NV")]
-	public const int GL_DOT_PRODUCT_REFLECT_CUBE_MAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_1D_NV")]
-	public const int GL_DOT_PRODUCT_TEXTURE_1D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_2D_NV")]
-	public const int GL_DOT_PRODUCT_TEXTURE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_3D_NV")]
-	public const int GL_DOT_PRODUCT_TEXTURE_3D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_CUBE_MAP_NV")]
-	public const int GL_DOT_PRODUCT_TEXTURE_CUBE_MAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_RECTANGLE_NV")]
-	public const int GL_DOT_PRODUCT_TEXTURE_RECTANGLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE")]
-	public const int GL_DOUBLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLEBUFFER")]
-	public const int GL_DOUBLEBUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_EXT")]
-	public const int GL_DOUBLE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT2")]
-	public const int GL_DOUBLE_MAT2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT2_EXT")]
-	public const int GL_DOUBLE_MAT2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT3")]
-	public const int GL_DOUBLE_MAT3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT3_EXT")]
-	public const int GL_DOUBLE_MAT3_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT4")]
-	public const int GL_DOUBLE_MAT4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT4_EXT")]
-	public const int GL_DOUBLE_MAT4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC2")]
-	public const int GL_DOUBLE_VEC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC2_EXT")]
-	public const int GL_DOUBLE_VEC2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC3")]
-	public const int GL_DOUBLE_VEC3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC3_EXT")]
-	public const int GL_DOUBLE_VEC3_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC4")]
-	public const int GL_DOUBLE_VEC4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC4_EXT")]
-	public const int GL_DOUBLE_VEC4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER")]
-	public const int GL_DRAW_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER0")]
-	public const int GL_DRAW_BUFFER0;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER0_ARB")]
-	public const int GL_DRAW_BUFFER0_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER0_ATI")]
-	public const int GL_DRAW_BUFFER0_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER0_NV")]
-	public const int GL_DRAW_BUFFER0_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER1")]
-	public const int GL_DRAW_BUFFER1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER10")]
-	public const int GL_DRAW_BUFFER10;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER10_ARB")]
-	public const int GL_DRAW_BUFFER10_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER10_ATI")]
-	public const int GL_DRAW_BUFFER10_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER10_NV")]
-	public const int GL_DRAW_BUFFER10_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER11")]
-	public const int GL_DRAW_BUFFER11;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER11_ARB")]
-	public const int GL_DRAW_BUFFER11_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER11_ATI")]
-	public const int GL_DRAW_BUFFER11_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER11_NV")]
-	public const int GL_DRAW_BUFFER11_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER12")]
-	public const int GL_DRAW_BUFFER12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER12_ARB")]
-	public const int GL_DRAW_BUFFER12_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER12_ATI")]
-	public const int GL_DRAW_BUFFER12_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER12_NV")]
-	public const int GL_DRAW_BUFFER12_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER13")]
-	public const int GL_DRAW_BUFFER13;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER13_ARB")]
-	public const int GL_DRAW_BUFFER13_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER13_ATI")]
-	public const int GL_DRAW_BUFFER13_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER13_NV")]
-	public const int GL_DRAW_BUFFER13_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER14")]
-	public const int GL_DRAW_BUFFER14;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER14_ARB")]
-	public const int GL_DRAW_BUFFER14_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER14_ATI")]
-	public const int GL_DRAW_BUFFER14_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER14_NV")]
-	public const int GL_DRAW_BUFFER14_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER15")]
-	public const int GL_DRAW_BUFFER15;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER15_ARB")]
-	public const int GL_DRAW_BUFFER15_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER15_ATI")]
-	public const int GL_DRAW_BUFFER15_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER15_NV")]
-	public const int GL_DRAW_BUFFER15_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER1_ARB")]
-	public const int GL_DRAW_BUFFER1_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER1_ATI")]
-	public const int GL_DRAW_BUFFER1_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER1_NV")]
-	public const int GL_DRAW_BUFFER1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER2")]
-	public const int GL_DRAW_BUFFER2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER2_ARB")]
-	public const int GL_DRAW_BUFFER2_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER2_ATI")]
-	public const int GL_DRAW_BUFFER2_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER2_NV")]
-	public const int GL_DRAW_BUFFER2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER3")]
-	public const int GL_DRAW_BUFFER3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER3_ARB")]
-	public const int GL_DRAW_BUFFER3_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER3_ATI")]
-	public const int GL_DRAW_BUFFER3_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER3_NV")]
-	public const int GL_DRAW_BUFFER3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER4")]
-	public const int GL_DRAW_BUFFER4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER4_ARB")]
-	public const int GL_DRAW_BUFFER4_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER4_ATI")]
-	public const int GL_DRAW_BUFFER4_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER4_NV")]
-	public const int GL_DRAW_BUFFER4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER5")]
-	public const int GL_DRAW_BUFFER5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER5_ARB")]
-	public const int GL_DRAW_BUFFER5_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER5_ATI")]
-	public const int GL_DRAW_BUFFER5_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER5_NV")]
-	public const int GL_DRAW_BUFFER5_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER6")]
-	public const int GL_DRAW_BUFFER6;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER6_ARB")]
-	public const int GL_DRAW_BUFFER6_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER6_ATI")]
-	public const int GL_DRAW_BUFFER6_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER6_NV")]
-	public const int GL_DRAW_BUFFER6_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER7")]
-	public const int GL_DRAW_BUFFER7;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER7_ARB")]
-	public const int GL_DRAW_BUFFER7_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER7_ATI")]
-	public const int GL_DRAW_BUFFER7_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER7_NV")]
-	public const int GL_DRAW_BUFFER7_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER8")]
-	public const int GL_DRAW_BUFFER8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER8_ARB")]
-	public const int GL_DRAW_BUFFER8_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER8_ATI")]
-	public const int GL_DRAW_BUFFER8_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER8_NV")]
-	public const int GL_DRAW_BUFFER8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER9")]
-	public const int GL_DRAW_BUFFER9;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER9_ARB")]
-	public const int GL_DRAW_BUFFER9_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER9_ATI")]
-	public const int GL_DRAW_BUFFER9_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER9_NV")]
-	public const int GL_DRAW_BUFFER9_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER_EXT")]
-	public const int GL_DRAW_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER")]
-	public const int GL_DRAW_FRAMEBUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_ANGLE")]
-	public const int GL_DRAW_FRAMEBUFFER_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_BINDING")]
-	public const int GL_DRAW_FRAMEBUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_BINDING_EXT")]
-	public const int GL_DRAW_FRAMEBUFFER_BINDING_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_BINDING_NV")]
-	public const int GL_DRAW_FRAMEBUFFER_BINDING_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_EXT")]
-	public const int GL_DRAW_FRAMEBUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_NV")]
-	public const int GL_DRAW_FRAMEBUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_ADDRESS_NV")]
-	public const int GL_DRAW_INDIRECT_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_BUFFER")]
-	public const int GL_DRAW_INDIRECT_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_BUFFER_BINDING")]
-	public const int GL_DRAW_INDIRECT_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_LENGTH_NV")]
-	public const int GL_DRAW_INDIRECT_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_UNIFIED_NV")]
-	public const int GL_DRAW_INDIRECT_UNIFIED_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_PIXELS_APPLE")]
-	public const int GL_DRAW_PIXELS_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_PIXEL_TOKEN")]
-	public const int GL_DRAW_PIXEL_TOKEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT8_MAG8_INTENSITY8_NV")]
-	public const int GL_DSDT8_MAG8_INTENSITY8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT8_MAG8_NV")]
-	public const int GL_DSDT8_MAG8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT8_NV")]
-	public const int GL_DSDT8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT_MAG_INTENSITY_NV")]
-	public const int GL_DSDT_MAG_INTENSITY_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT_MAG_NV")]
-	public const int GL_DSDT_MAG_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT_MAG_VIB_NV")]
-	public const int GL_DSDT_MAG_VIB_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT_NV")]
-	public const int GL_DSDT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DST_ALPHA")]
-	public const int GL_DST_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DST_COLOR")]
-	public const int GL_DST_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DS_BIAS_NV")]
-	public const int GL_DS_BIAS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DS_SCALE_NV")]
-	public const int GL_DS_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DT_BIAS_NV")]
-	public const int GL_DT_BIAS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DT_SCALE_NV")]
-	public const int GL_DT_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DU8DV8_ATI")]
-	public const int GL_DU8DV8_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_ALPHA12_SGIS")]
-	public const int GL_DUAL_ALPHA12_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_ALPHA16_SGIS")]
-	public const int GL_DUAL_ALPHA16_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_ALPHA4_SGIS")]
-	public const int GL_DUAL_ALPHA4_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_ALPHA8_SGIS")]
-	public const int GL_DUAL_ALPHA8_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_INTENSITY12_SGIS")]
-	public const int GL_DUAL_INTENSITY12_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_INTENSITY16_SGIS")]
-	public const int GL_DUAL_INTENSITY16_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_INTENSITY4_SGIS")]
-	public const int GL_DUAL_INTENSITY4_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_INTENSITY8_SGIS")]
-	public const int GL_DUAL_INTENSITY8_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE12_SGIS")]
-	public const int GL_DUAL_LUMINANCE12_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE16_SGIS")]
-	public const int GL_DUAL_LUMINANCE16_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE4_SGIS")]
-	public const int GL_DUAL_LUMINANCE4_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE8_SGIS")]
-	public const int GL_DUAL_LUMINANCE8_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE_ALPHA4_SGIS")]
-	public const int GL_DUAL_LUMINANCE_ALPHA4_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE_ALPHA8_SGIS")]
-	public const int GL_DUAL_LUMINANCE_ALPHA8_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_TEXTURE_SELECT_SGIS")]
-	public const int GL_DUAL_TEXTURE_SELECT_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUDV_ATI")]
-	public const int GL_DUDV_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUP_FIRST_CUBIC_CURVE_TO_NV")]
-	public const int GL_DUP_FIRST_CUBIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DUP_LAST_CUBIC_CURVE_TO_NV")]
-	public const int GL_DUP_LAST_CUBIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_ATI")]
-	public const int GL_DYNAMIC_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_COPY")]
-	public const int GL_DYNAMIC_COPY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_COPY_ARB")]
-	public const int GL_DYNAMIC_COPY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_DRAW")]
-	public const int GL_DYNAMIC_DRAW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_DRAW_ARB")]
-	public const int GL_DYNAMIC_DRAW_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_READ")]
-	public const int GL_DYNAMIC_READ;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_READ_ARB")]
-	public const int GL_DYNAMIC_READ_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG")]
-	public const int GL_EDGE_FLAG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY")]
-	public const int GL_EDGE_FLAG_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_ADDRESS_NV")]
-	public const int GL_EDGE_FLAG_ARRAY_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_BUFFER_BINDING")]
-	public const int GL_EDGE_FLAG_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_BUFFER_BINDING_ARB")]
-	public const int GL_EDGE_FLAG_ARRAY_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_COUNT_EXT")]
-	public const int GL_EDGE_FLAG_ARRAY_COUNT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_EXT")]
-	public const int GL_EDGE_FLAG_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_LENGTH_NV")]
-	public const int GL_EDGE_FLAG_ARRAY_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_POINTER")]
-	public const int GL_EDGE_FLAG_ARRAY_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_POINTER_EXT")]
-	public const int GL_EDGE_FLAG_ARRAY_POINTER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_STRIDE")]
-	public const int GL_EDGE_FLAG_ARRAY_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_STRIDE_EXT")]
-	public const int GL_EDGE_FLAG_ARRAY_STRIDE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EIGHTH_BIT_ATI")]
-	public const int GL_EIGHTH_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_ADDRESS_NV")]
-	public const int GL_ELEMENT_ARRAY_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_APPLE")]
-	public const int GL_ELEMENT_ARRAY_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_ATI")]
-	public const int GL_ELEMENT_ARRAY_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BARRIER_BIT")]
-	public const int GL_ELEMENT_ARRAY_BARRIER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BARRIER_BIT_EXT")]
-	public const int GL_ELEMENT_ARRAY_BARRIER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BUFFER")]
-	public const int GL_ELEMENT_ARRAY_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BUFFER_ARB")]
-	public const int GL_ELEMENT_ARRAY_BUFFER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BUFFER_BINDING")]
-	public const int GL_ELEMENT_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BUFFER_BINDING_ARB")]
-	public const int GL_ELEMENT_ARRAY_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_LENGTH_NV")]
-	public const int GL_ELEMENT_ARRAY_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_POINTER_APPLE")]
-	public const int GL_ELEMENT_ARRAY_POINTER_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_POINTER_ATI")]
-	public const int GL_ELEMENT_ARRAY_POINTER_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_TYPE_APPLE")]
-	public const int GL_ELEMENT_ARRAY_TYPE_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_TYPE_ATI")]
-	public const int GL_ELEMENT_ARRAY_TYPE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_UNIFIED_NV")]
-	public const int GL_ELEMENT_ARRAY_UNIFIED_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EMBOSS_CONSTANT_NV")]
-	public const int GL_EMBOSS_CONSTANT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EMBOSS_LIGHT_NV")]
-	public const int GL_EMBOSS_LIGHT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EMBOSS_MAP_NV")]
-	public const int GL_EMBOSS_MAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EMISSION")]
-	public const int GL_EMISSION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ENABLE_BIT")]
-	public const int GL_ENABLE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EQUAL")]
-	public const int GL_EQUAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EQUIV")]
-	public const int GL_EQUIV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ETC1_RGB8_OES")]
-	public const int GL_ETC1_RGB8_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ETC1_SRGB8_NV")]
-	public const int GL_ETC1_SRGB8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_2D_NV")]
-	public const int GL_EVAL_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_BIT")]
-	public const int GL_EVAL_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_FRACTIONAL_TESSELLATION_NV")]
-	public const int GL_EVAL_FRACTIONAL_TESSELLATION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_TRIANGULAR_2D_NV")]
-	public const int GL_EVAL_TRIANGULAR_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB0_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB0_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB10_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB10_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB11_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB11_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB12_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB12_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB13_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB13_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB14_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB14_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB15_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB15_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB1_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB2_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB3_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB4_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB5_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB5_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB6_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB6_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB7_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB7_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB8_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB9_NV")]
-	public const int GL_EVAL_VERTEX_ATRRIB9_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXP")]
-	public const int GL_EXP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXP2")]
-	public const int GL_EXP2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXPAND_NEGATE_NV")]
-	public const int GL_EXPAND_NEGATE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXPAND_NORMAL_NV")]
-	public const int GL_EXPAND_NORMAL_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXTENSIONS")]
-	public const int GL_EXTENSIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXTERNAL_VIRTUAL_MEMORY_BUFFER_AMD")]
-	public const int GL_EXTERNAL_VIRTUAL_MEMORY_BUFFER_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_abgr")]
-	public const int GL_EXT_abgr;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_blend_color")]
-	public const int GL_EXT_blend_color;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_blend_logic_op")]
-	public const int GL_EXT_blend_logic_op;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_blend_minmax")]
-	public const int GL_EXT_blend_minmax;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_blend_subtract")]
-	public const int GL_EXT_blend_subtract;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_cmyka")]
-	public const int GL_EXT_cmyka;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_convolution")]
-	public const int GL_EXT_convolution;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_copy_texture")]
-	public const int GL_EXT_copy_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_histogram")]
-	public const int GL_EXT_histogram;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_packed_pixels")]
-	public const int GL_EXT_packed_pixels;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_point_parameters")]
-	public const int GL_EXT_point_parameters;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_polygon_offset")]
-	public const int GL_EXT_polygon_offset;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_rescale_normal")]
-	public const int GL_EXT_rescale_normal;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_shared_texture_palette")]
-	public const int GL_EXT_shared_texture_palette;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_subtexture")]
-	public const int GL_EXT_subtexture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_texture")]
-	public const int GL_EXT_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_texture3D")]
-	public const int GL_EXT_texture3D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_texture_object")]
-	public const int GL_EXT_texture_object;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_vertex_array")]
-	public const int GL_EXT_vertex_array;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_DISTANCE_TO_LINE_SGIS")]
-	public const int GL_EYE_DISTANCE_TO_LINE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_DISTANCE_TO_POINT_SGIS")]
-	public const int GL_EYE_DISTANCE_TO_POINT_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_LINEAR")]
-	public const int GL_EYE_LINEAR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_LINE_SGIS")]
-	public const int GL_EYE_LINE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_PLANE")]
-	public const int GL_EYE_PLANE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_PLANE_ABSOLUTE_NV")]
-	public const int GL_EYE_PLANE_ABSOLUTE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_POINT_SGIS")]
-	public const int GL_EYE_POINT_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_RADIAL_NV")]
-	public const int GL_EYE_RADIAL_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_E_TIMES_F_NV")]
-	public const int GL_E_TIMES_F_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FACTOR_ALPHA_MODULATE_IMG")]
-	public const int GL_FACTOR_ALPHA_MODULATE_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FACTOR_MAX_AMD")]
-	public const int GL_FACTOR_MAX_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FACTOR_MIN_AMD")]
-	public const int GL_FACTOR_MIN_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FAILURE_NV")]
-	public const int GL_FAILURE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FALSE")]
-	public const int GL_FALSE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FASTEST")]
-	public const int GL_FASTEST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FEEDBACK")]
-	public const int GL_FEEDBACK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FEEDBACK_BUFFER_POINTER")]
-	public const int GL_FEEDBACK_BUFFER_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FEEDBACK_BUFFER_SIZE")]
-	public const int GL_FEEDBACK_BUFFER_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FEEDBACK_BUFFER_TYPE")]
-	public const int GL_FEEDBACK_BUFFER_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FENCE_APPLE")]
-	public const int GL_FENCE_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FENCE_CONDITION_NV")]
-	public const int GL_FENCE_CONDITION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FENCE_STATUS_NV")]
-	public const int GL_FENCE_STATUS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIELDS_NV")]
-	public const int GL_FIELDS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIELD_LOWER_NV")]
-	public const int GL_FIELD_LOWER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIELD_UPPER_NV")]
-	public const int GL_FIELD_UPPER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FILE_NAME_NV")]
-	public const int GL_FILE_NAME_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FILL")]
-	public const int GL_FILL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FILTER")]
-	public const int GL_FILTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FILTER4_SGIS")]
-	public const int GL_FILTER4_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIRST_TO_REST_NV")]
-	public const int GL_FIRST_TO_REST_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIRST_VERTEX_CONVENTION")]
-	public const int GL_FIRST_VERTEX_CONVENTION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIRST_VERTEX_CONVENTION_EXT")]
-	public const int GL_FIRST_VERTEX_CONVENTION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIXED")]
-	public const int GL_FIXED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIXED_OES")]
-	public const int GL_FIXED_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIXED_ONLY")]
-	public const int GL_FIXED_ONLY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FIXED_ONLY_ARB")]
-	public const int GL_FIXED_ONLY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLAT")]
-	public const int GL_FLAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT")]
-	public const int GL_FLOAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT16_NV")]
-	public const int GL_FLOAT16_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT16_VEC2_NV")]
-	public const int GL_FLOAT16_VEC2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT16_VEC3_NV")]
-	public const int GL_FLOAT16_VEC3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT16_VEC4_NV")]
-	public const int GL_FLOAT16_VEC4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_32_UNSIGNED_INT_24_8_REV")]
-	public const int GL_FLOAT_32_UNSIGNED_INT_24_8_REV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_32_UNSIGNED_INT_24_8_REV_NV")]
-	public const int GL_FLOAT_32_UNSIGNED_INT_24_8_REV_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_CLEAR_COLOR_VALUE_NV")]
-	public const int GL_FLOAT_CLEAR_COLOR_VALUE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT2")]
-	public const int GL_FLOAT_MAT2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT2_ARB")]
-	public const int GL_FLOAT_MAT2_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT3")]
-	public const int GL_FLOAT_MAT3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT3_ARB")]
-	public const int GL_FLOAT_MAT3_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT4")]
-	public const int GL_FLOAT_MAT4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT4_ARB")]
-	public const int GL_FLOAT_MAT4_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_R16_NV")]
-	public const int GL_FLOAT_R16_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_R32_NV")]
-	public const int GL_FLOAT_R32_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RG16_NV")]
-	public const int GL_FLOAT_RG16_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RG32_NV")]
-	public const int GL_FLOAT_RG32_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGB16_NV")]
-	public const int GL_FLOAT_RGB16_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGB32_NV")]
-	public const int GL_FLOAT_RGB32_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGBA16_NV")]
-	public const int GL_FLOAT_RGBA16_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGBA32_NV")]
-	public const int GL_FLOAT_RGBA32_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGBA_MODE_NV")]
-	public const int GL_FLOAT_RGBA_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGBA_NV")]
-	public const int GL_FLOAT_RGBA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGB_NV")]
-	public const int GL_FLOAT_RGB_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RG_NV")]
-	public const int GL_FLOAT_RG_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_R_NV")]
-	public const int GL_FLOAT_R_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC2")]
-	public const int GL_FLOAT_VEC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC2_ARB")]
-	public const int GL_FLOAT_VEC2_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC3")]
-	public const int GL_FLOAT_VEC3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC3_ARB")]
-	public const int GL_FLOAT_VEC3_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC4")]
-	public const int GL_FLOAT_VEC4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC4_ARB")]
-	public const int GL_FLOAT_VEC4_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG")]
-	public const int GL_FOG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_BIT")]
-	public const int GL_FOG_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COLOR")]
-	public const int GL_FOG_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD")]
-	public const int GL_FOG_COORD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE")]
-	public const int GL_FOG_COORDINATE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY")]
-	public const int GL_FOG_COORDINATE_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING")]
-	public const int GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING_ARB")]
-	public const int GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_EXT")]
-	public const int GL_FOG_COORDINATE_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_POINTER")]
-	public const int GL_FOG_COORDINATE_ARRAY_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_POINTER_EXT")]
-	public const int GL_FOG_COORDINATE_ARRAY_POINTER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_STRIDE")]
-	public const int GL_FOG_COORDINATE_ARRAY_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_STRIDE_EXT")]
-	public const int GL_FOG_COORDINATE_ARRAY_STRIDE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_TYPE")]
-	public const int GL_FOG_COORDINATE_ARRAY_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_TYPE_EXT")]
-	public const int GL_FOG_COORDINATE_ARRAY_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_EXT")]
-	public const int GL_FOG_COORDINATE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_SOURCE")]
-	public const int GL_FOG_COORDINATE_SOURCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_SOURCE_EXT")]
-	public const int GL_FOG_COORDINATE_SOURCE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY")]
-	public const int GL_FOG_COORD_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_ADDRESS_NV")]
-	public const int GL_FOG_COORD_ARRAY_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_BUFFER_BINDING")]
-	public const int GL_FOG_COORD_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_LENGTH_NV")]
-	public const int GL_FOG_COORD_ARRAY_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_POINTER")]
-	public const int GL_FOG_COORD_ARRAY_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_STRIDE")]
-	public const int GL_FOG_COORD_ARRAY_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_TYPE")]
-	public const int GL_FOG_COORD_ARRAY_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_SRC")]
-	public const int GL_FOG_COORD_SRC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_DENSITY")]
-	public const int GL_FOG_DENSITY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_END")]
-	public const int GL_FOG_END;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_FACTOR_TO_ALPHA_SGIX")]
-	public const int GL_FOG_FACTOR_TO_ALPHA_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_FUNC_POINTS_SGIS")]
-	public const int GL_FOG_FUNC_POINTS_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_FUNC_SGIS")]
-	public const int GL_FOG_FUNC_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_GEN_MODE_NV")]
-	public const int GL_FOG_GEN_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_HINT")]
-	public const int GL_FOG_HINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_INDEX")]
-	public const int GL_FOG_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_MODE")]
-	public const int GL_FOG_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_OFFSET_SGIX")]
-	public const int GL_FOG_OFFSET_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_OFFSET_VALUE_SGIX")]
-	public const int GL_FOG_OFFSET_VALUE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_START")]
-	public const int GL_FOG_START;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_ASCENDER_BIT_NV")]
-	public const int GL_FONT_ASCENDER_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_DESCENDER_BIT_NV")]
-	public const int GL_FONT_DESCENDER_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_HAS_KERNING_BIT_NV")]
-	public const int GL_FONT_HAS_KERNING_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_HEIGHT_BIT_NV")]
-	public const int GL_FONT_HEIGHT_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_MAX_ADVANCE_HEIGHT_BIT_NV")]
-	public const int GL_FONT_MAX_ADVANCE_HEIGHT_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_MAX_ADVANCE_WIDTH_BIT_NV")]
-	public const int GL_FONT_MAX_ADVANCE_WIDTH_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_UNDERLINE_POSITION_BIT_NV")]
-	public const int GL_FONT_UNDERLINE_POSITION_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_UNDERLINE_THICKNESS_BIT_NV")]
-	public const int GL_FONT_UNDERLINE_THICKNESS_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_UNITS_PER_EM_BIT_NV")]
-	public const int GL_FONT_UNITS_PER_EM_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_X_MAX_BOUNDS_BIT_NV")]
-	public const int GL_FONT_X_MAX_BOUNDS_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_X_MIN_BOUNDS_BIT_NV")]
-	public const int GL_FONT_X_MIN_BOUNDS_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_Y_MAX_BOUNDS_BIT_NV")]
-	public const int GL_FONT_Y_MAX_BOUNDS_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_Y_MIN_BOUNDS_BIT_NV")]
-	public const int GL_FONT_Y_MIN_BOUNDS_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FORCE_BLUE_TO_ONE_NV")]
-	public const int GL_FORCE_BLUE_TO_ONE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FORMAT_SUBSAMPLE_244_244_OML")]
-	public const int GL_FORMAT_SUBSAMPLE_244_244_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FORMAT_SUBSAMPLE_24_24_OML")]
-	public const int GL_FORMAT_SUBSAMPLE_24_24_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRACTIONAL_EVEN")]
-	public const int GL_FRACTIONAL_EVEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRACTIONAL_ODD")]
-	public const int GL_FRACTIONAL_ODD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENTS_INSTRUMENT_COUNTERS_SGIX")]
-	public const int GL_FRAGMENTS_INSTRUMENT_COUNTERS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENTS_INSTRUMENT_MAX_SGIX")]
-	public const int GL_FRAGMENTS_INSTRUMENT_MAX_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENTS_INSTRUMENT_SGIX")]
-	public const int GL_FRAGMENTS_INSTRUMENT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_ALPHA_MODULATE_IMG")]
-	public const int GL_FRAGMENT_ALPHA_MODULATE_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_COLOR_EXT")]
-	public const int GL_FRAGMENT_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_COLOR_MATERIAL_FACE_SGIX")]
-	public const int GL_FRAGMENT_COLOR_MATERIAL_FACE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_COLOR_MATERIAL_PARAMETER_SGIX")]
-	public const int GL_FRAGMENT_COLOR_MATERIAL_PARAMETER_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_COLOR_MATERIAL_SGIX")]
-	public const int GL_FRAGMENT_COLOR_MATERIAL_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_DEPTH")]
-	public const int GL_FRAGMENT_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_DEPTH_EXT")]
-	public const int GL_FRAGMENT_DEPTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_INTERPOLATION_OFFSET_BITS")]
-	public const int GL_FRAGMENT_INTERPOLATION_OFFSET_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT0_SGIX")]
-	public const int GL_FRAGMENT_LIGHT0_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT1_SGIX")]
-	public const int GL_FRAGMENT_LIGHT1_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT2_SGIX")]
-	public const int GL_FRAGMENT_LIGHT2_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT3_SGIX")]
-	public const int GL_FRAGMENT_LIGHT3_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT4_SGIX")]
-	public const int GL_FRAGMENT_LIGHT4_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT5_SGIX")]
-	public const int GL_FRAGMENT_LIGHT5_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT6_SGIX")]
-	public const int GL_FRAGMENT_LIGHT6_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT7_SGIX")]
-	public const int GL_FRAGMENT_LIGHT7_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHTING_SGIX")]
-	public const int GL_FRAGMENT_LIGHTING_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT_MODEL_AMBIENT_SGIX")]
-	public const int GL_FRAGMENT_LIGHT_MODEL_AMBIENT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT_MODEL_LOCAL_VIEWER_SGIX")]
-	public const int GL_FRAGMENT_LIGHT_MODEL_LOCAL_VIEWER_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT_MODEL_NORMAL_INTERPOLATION_SGIX")]
-	public const int GL_FRAGMENT_LIGHT_MODEL_NORMAL_INTERPOLATION_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT_MODEL_TWO_SIDE_SGIX")]
-	public const int GL_FRAGMENT_LIGHT_MODEL_TWO_SIDE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_MATERIAL_EXT")]
-	public const int GL_FRAGMENT_MATERIAL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_NORMAL_EXT")]
-	public const int GL_FRAGMENT_NORMAL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_ARB")]
-	public const int GL_FRAGMENT_PROGRAM_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_BINDING_NV")]
-	public const int GL_FRAGMENT_PROGRAM_BINDING_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_CALLBACK_DATA_MESA")]
-	public const int GL_FRAGMENT_PROGRAM_CALLBACK_DATA_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_CALLBACK_FUNC_MESA")]
-	public const int GL_FRAGMENT_PROGRAM_CALLBACK_FUNC_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_CALLBACK_MESA")]
-	public const int GL_FRAGMENT_PROGRAM_CALLBACK_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_INTERPOLATION_OFFSET_BITS_NV")]
-	public const int GL_FRAGMENT_PROGRAM_INTERPOLATION_OFFSET_BITS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_NV")]
-	public const int GL_FRAGMENT_PROGRAM_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_PARAMETER_BUFFER_NV")]
-	public const int GL_FRAGMENT_PROGRAM_PARAMETER_BUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_POSITION_MESA")]
-	public const int GL_FRAGMENT_PROGRAM_POSITION_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER")]
-	public const int GL_FRAGMENT_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_ARB")]
-	public const int GL_FRAGMENT_SHADER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_ATI")]
-	public const int GL_FRAGMENT_SHADER_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_BIT")]
-	public const int GL_FRAGMENT_SHADER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_BIT_EXT")]
-	public const int GL_FRAGMENT_SHADER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_DERIVATIVE_HINT")]
-	public const int GL_FRAGMENT_SHADER_DERIVATIVE_HINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_DERIVATIVE_HINT_ARB")]
-	public const int GL_FRAGMENT_SHADER_DERIVATIVE_HINT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_DERIVATIVE_HINT_OES")]
-	public const int GL_FRAGMENT_SHADER_DERIVATIVE_HINT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_DISCARDS_SAMPLES_EXT")]
-	public const int GL_FRAGMENT_SHADER_DISCARDS_SAMPLES_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SUBROUTINE")]
-	public const int GL_FRAGMENT_SUBROUTINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SUBROUTINE_UNIFORM")]
-	public const int GL_FRAGMENT_SUBROUTINE_UNIFORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_TEXTURE")]
-	public const int GL_FRAGMENT_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER")]
-	public const int GL_FRAMEBUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_ANGLE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_LAYERED")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_LAYERED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_LAYERED_ARB")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_LAYERED_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_OES")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_OES")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_OES")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_OES")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_OES")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_SAMPLES_EXT")]
-	public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_SAMPLES_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BARRIER_BIT")]
-	public const int GL_FRAMEBUFFER_BARRIER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BARRIER_BIT_EXT")]
-	public const int GL_FRAMEBUFFER_BARRIER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BINDING")]
-	public const int GL_FRAMEBUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BINDING_ANGLE")]
-	public const int GL_FRAMEBUFFER_BINDING_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BINDING_EXT")]
-	public const int GL_FRAMEBUFFER_BINDING_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BINDING_OES")]
-	public const int GL_FRAMEBUFFER_BINDING_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BLEND")]
-	public const int GL_FRAMEBUFFER_BLEND;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_COMPLETE")]
-	public const int GL_FRAMEBUFFER_COMPLETE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_COMPLETE_EXT")]
-	public const int GL_FRAMEBUFFER_COMPLETE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_COMPLETE_OES")]
-	public const int GL_FRAMEBUFFER_COMPLETE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT")]
-	public const int GL_FRAMEBUFFER_DEFAULT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS")]
-	public const int GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_HEIGHT")]
-	public const int GL_FRAMEBUFFER_DEFAULT_HEIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_LAYERS")]
-	public const int GL_FRAMEBUFFER_DEFAULT_LAYERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_SAMPLES")]
-	public const int GL_FRAMEBUFFER_DEFAULT_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_WIDTH")]
-	public const int GL_FRAMEBUFFER_DEFAULT_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_EXT")]
-	public const int GL_FRAMEBUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_OES")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_OES")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_OES")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_FORMATS_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_FORMATS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_FORMATS_OES")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_FORMATS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_ARB")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_ARB")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_OES")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_ANGLE")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_IMG")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_NV")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_EXT")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_OES")]
-	public const int GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_OES")]
-	public const int GL_FRAMEBUFFER_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_RENDERABLE")]
-	public const int GL_FRAMEBUFFER_RENDERABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_RENDERABLE_LAYERED")]
-	public const int GL_FRAMEBUFFER_RENDERABLE_LAYERED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_SRGB")]
-	public const int GL_FRAMEBUFFER_SRGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_SRGB_CAPABLE_EXT")]
-	public const int GL_FRAMEBUFFER_SRGB_CAPABLE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_SRGB_EXT")]
-	public const int GL_FRAMEBUFFER_SRGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNDEFINED")]
-	public const int GL_FRAMEBUFFER_UNDEFINED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNDEFINED_OES")]
-	public const int GL_FRAMEBUFFER_UNDEFINED_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNSUPPORTED")]
-	public const int GL_FRAMEBUFFER_UNSUPPORTED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNSUPPORTED_EXT")]
-	public const int GL_FRAMEBUFFER_UNSUPPORTED_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNSUPPORTED_OES")]
-	public const int GL_FRAMEBUFFER_UNSUPPORTED_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEZOOM_FACTOR_SGIX")]
-	public const int GL_FRAMEZOOM_FACTOR_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEZOOM_SGIX")]
-	public const int GL_FRAMEZOOM_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAME_NV")]
-	public const int GL_FRAME_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT")]
-	public const int GL_FRONT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT_AND_BACK")]
-	public const int GL_FRONT_AND_BACK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT_FACE")]
-	public const int GL_FRONT_FACE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT_LEFT")]
-	public const int GL_FRONT_LEFT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT_RIGHT")]
-	public const int GL_FRONT_RIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FULL_RANGE_EXT")]
-	public const int GL_FULL_RANGE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FULL_SUPPORT")]
-	public const int GL_FULL_SUPPORT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_ADD")]
-	public const int GL_FUNC_ADD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_ADD_EXT")]
-	public const int GL_FUNC_ADD_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_ADD_OES")]
-	public const int GL_FUNC_ADD_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_REVERSE_SUBTRACT")]
-	public const int GL_FUNC_REVERSE_SUBTRACT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_REVERSE_SUBTRACT_EXT")]
-	public const int GL_FUNC_REVERSE_SUBTRACT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_REVERSE_SUBTRACT_OES")]
-	public const int GL_FUNC_REVERSE_SUBTRACT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_SUBTRACT")]
-	public const int GL_FUNC_SUBTRACT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_SUBTRACT_EXT")]
-	public const int GL_FUNC_SUBTRACT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_SUBTRACT_OES")]
-	public const int GL_FUNC_SUBTRACT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GCCSO_SHADER_BINARY_FJ")]
-	public const int GL_GCCSO_SHADER_BINARY_FJ;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERATE_MIPMAP")]
-	public const int GL_GENERATE_MIPMAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERATE_MIPMAP_HINT")]
-	public const int GL_GENERATE_MIPMAP_HINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERATE_MIPMAP_HINT_SGIS")]
-	public const int GL_GENERATE_MIPMAP_HINT_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERATE_MIPMAP_SGIS")]
-	public const int GL_GENERATE_MIPMAP_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERIC_ATTRIB_NV")]
-	public const int GL_GENERIC_ATTRIB_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_DEFORMATION_BIT_SGIX")]
-	public const int GL_GEOMETRY_DEFORMATION_BIT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_DEFORMATION_SGIX")]
-	public const int GL_GEOMETRY_DEFORMATION_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_INPUT_TYPE")]
-	public const int GL_GEOMETRY_INPUT_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_INPUT_TYPE_ARB")]
-	public const int GL_GEOMETRY_INPUT_TYPE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_INPUT_TYPE_EXT")]
-	public const int GL_GEOMETRY_INPUT_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_OUTPUT_TYPE")]
-	public const int GL_GEOMETRY_OUTPUT_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_OUTPUT_TYPE_ARB")]
-	public const int GL_GEOMETRY_OUTPUT_TYPE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_OUTPUT_TYPE_EXT")]
-	public const int GL_GEOMETRY_OUTPUT_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_PROGRAM_NV")]
-	public const int GL_GEOMETRY_PROGRAM_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_PROGRAM_PARAMETER_BUFFER_NV")]
-	public const int GL_GEOMETRY_PROGRAM_PARAMETER_BUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER")]
-	public const int GL_GEOMETRY_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER_ARB")]
-	public const int GL_GEOMETRY_SHADER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER_BIT")]
-	public const int GL_GEOMETRY_SHADER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER_EXT")]
-	public const int GL_GEOMETRY_SHADER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER_INVOCATIONS")]
-	public const int GL_GEOMETRY_SHADER_INVOCATIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SUBROUTINE")]
-	public const int GL_GEOMETRY_SUBROUTINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SUBROUTINE_UNIFORM")]
-	public const int GL_GEOMETRY_SUBROUTINE_UNIFORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_TEXTURE")]
-	public const int GL_GEOMETRY_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_VERTICES_OUT")]
-	public const int GL_GEOMETRY_VERTICES_OUT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_VERTICES_OUT_ARB")]
-	public const int GL_GEOMETRY_VERTICES_OUT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_VERTICES_OUT_EXT")]
-	public const int GL_GEOMETRY_VERTICES_OUT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GEQUAL")]
-	public const int GL_GEQUAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GET_TEXTURE_IMAGE_FORMAT")]
-	public const int GL_GET_TEXTURE_IMAGE_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GET_TEXTURE_IMAGE_TYPE")]
-	public const int GL_GET_TEXTURE_IMAGE_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLOBAL_ALPHA_FACTOR_SUN")]
-	public const int GL_GLOBAL_ALPHA_FACTOR_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLOBAL_ALPHA_SUN")]
-	public const int GL_GLOBAL_ALPHA_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HAS_KERNING_BIT_NV")]
-	public const int GL_GLYPH_HAS_KERNING_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HEIGHT_BIT_NV")]
-	public const int GL_GLYPH_HEIGHT_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HORIZONTAL_BEARING_ADVANCE_BIT_NV")]
-	public const int GL_GLYPH_HORIZONTAL_BEARING_ADVANCE_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HORIZONTAL_BEARING_X_BIT_NV")]
-	public const int GL_GLYPH_HORIZONTAL_BEARING_X_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HORIZONTAL_BEARING_Y_BIT_NV")]
-	public const int GL_GLYPH_HORIZONTAL_BEARING_Y_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_VERTICAL_BEARING_ADVANCE_BIT_NV")]
-	public const int GL_GLYPH_VERTICAL_BEARING_ADVANCE_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_VERTICAL_BEARING_X_BIT_NV")]
-	public const int GL_GLYPH_VERTICAL_BEARING_X_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_VERTICAL_BEARING_Y_BIT_NV")]
-	public const int GL_GLYPH_VERTICAL_BEARING_Y_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_WIDTH_BIT_NV")]
-	public const int GL_GLYPH_WIDTH_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GPU_ADDRESS_NV")]
-	public const int GL_GPU_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GPU_OPTIMIZED_QCOM")]
-	public const int GL_GPU_OPTIMIZED_QCOM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREATER")]
-	public const int GL_GREATER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN")]
-	public const int GL_GREEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_BIAS")]
-	public const int GL_GREEN_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_BITS")]
-	public const int GL_GREEN_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_BIT_ATI")]
-	public const int GL_GREEN_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_INTEGER")]
-	public const int GL_GREEN_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_INTEGER_EXT")]
-	public const int GL_GREEN_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_MAX_CLAMP_INGR")]
-	public const int GL_GREEN_MAX_CLAMP_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_MIN_CLAMP_INGR")]
-	public const int GL_GREEN_MIN_CLAMP_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_SCALE")]
-	public const int GL_GREEN_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_GUILTY_CONTEXT_RESET_ARB")]
-	public const int GL_GUILTY_CONTEXT_RESET_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_APPLE")]
-	public const int GL_HALF_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_BIAS_NEGATE_NV")]
-	public const int GL_HALF_BIAS_NEGATE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_BIAS_NORMAL_NV")]
-	public const int GL_HALF_BIAS_NORMAL_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_BIT_ATI")]
-	public const int GL_HALF_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_FLOAT")]
-	public const int GL_HALF_FLOAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_FLOAT_ARB")]
-	public const int GL_HALF_FLOAT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_FLOAT_NV")]
-	public const int GL_HALF_FLOAT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_FLOAT_OES")]
-	public const int GL_HALF_FLOAT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HIGH_FLOAT")]
-	public const int GL_HIGH_FLOAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HIGH_INT")]
-	public const int GL_HIGH_INT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HILO16_NV")]
-	public const int GL_HILO16_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HILO8_NV")]
-	public const int GL_HILO8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HILO_NV")]
-	public const int GL_HILO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HINT_BIT")]
-	public const int GL_HINT_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM")]
-	public const int GL_HISTOGRAM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_ALPHA_SIZE")]
-	public const int GL_HISTOGRAM_ALPHA_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_ALPHA_SIZE_EXT")]
-	public const int GL_HISTOGRAM_ALPHA_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_BLUE_SIZE")]
-	public const int GL_HISTOGRAM_BLUE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_BLUE_SIZE_EXT")]
-	public const int GL_HISTOGRAM_BLUE_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_EXT")]
-	public const int GL_HISTOGRAM_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_FORMAT")]
-	public const int GL_HISTOGRAM_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_FORMAT_EXT")]
-	public const int GL_HISTOGRAM_FORMAT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_GREEN_SIZE")]
-	public const int GL_HISTOGRAM_GREEN_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_GREEN_SIZE_EXT")]
-	public const int GL_HISTOGRAM_GREEN_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_LUMINANCE_SIZE")]
-	public const int GL_HISTOGRAM_LUMINANCE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_LUMINANCE_SIZE_EXT")]
-	public const int GL_HISTOGRAM_LUMINANCE_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_RED_SIZE")]
-	public const int GL_HISTOGRAM_RED_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_RED_SIZE_EXT")]
-	public const int GL_HISTOGRAM_RED_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_SINK")]
-	public const int GL_HISTOGRAM_SINK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_SINK_EXT")]
-	public const int GL_HISTOGRAM_SINK_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_WIDTH")]
-	public const int GL_HISTOGRAM_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_WIDTH_EXT")]
-	public const int GL_HISTOGRAM_WIDTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HI_BIAS_NV")]
-	public const int GL_HI_BIAS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HI_SCALE_NV")]
-	public const int GL_HI_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_HORIZONTAL_LINE_TO_NV")]
-	public const int GL_HORIZONTAL_LINE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IDENTITY_NV")]
-	public const int GL_IDENTITY_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IGNORE_BORDER_HP")]
-	public const int GL_IGNORE_BORDER_HP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_1D")]
-	public const int GL_IMAGE_1D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_1D_ARRAY")]
-	public const int GL_IMAGE_1D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_1D_ARRAY_EXT")]
-	public const int GL_IMAGE_1D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_1D_EXT")]
-	public const int GL_IMAGE_1D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D")]
-	public const int GL_IMAGE_2D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_ARRAY")]
-	public const int GL_IMAGE_2D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_ARRAY_EXT")]
-	public const int GL_IMAGE_2D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_EXT")]
-	public const int GL_IMAGE_2D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_MULTISAMPLE")]
-	public const int GL_IMAGE_2D_MULTISAMPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_MULTISAMPLE_ARRAY")]
-	public const int GL_IMAGE_2D_MULTISAMPLE_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_MULTISAMPLE_ARRAY_EXT")]
-	public const int GL_IMAGE_2D_MULTISAMPLE_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_MULTISAMPLE_EXT")]
-	public const int GL_IMAGE_2D_MULTISAMPLE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_RECT")]
-	public const int GL_IMAGE_2D_RECT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_RECT_EXT")]
-	public const int GL_IMAGE_2D_RECT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_3D")]
-	public const int GL_IMAGE_3D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_3D_EXT")]
-	public const int GL_IMAGE_3D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_ACCESS")]
-	public const int GL_IMAGE_BINDING_ACCESS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_ACCESS_EXT")]
-	public const int GL_IMAGE_BINDING_ACCESS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_FORMAT")]
-	public const int GL_IMAGE_BINDING_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_FORMAT_EXT")]
-	public const int GL_IMAGE_BINDING_FORMAT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LAYER")]
-	public const int GL_IMAGE_BINDING_LAYER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LAYERED")]
-	public const int GL_IMAGE_BINDING_LAYERED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LAYERED_EXT")]
-	public const int GL_IMAGE_BINDING_LAYERED_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LAYER_EXT")]
-	public const int GL_IMAGE_BINDING_LAYER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LEVEL")]
-	public const int GL_IMAGE_BINDING_LEVEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LEVEL_EXT")]
-	public const int GL_IMAGE_BINDING_LEVEL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_NAME")]
-	public const int GL_IMAGE_BINDING_NAME;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_NAME_EXT")]
-	public const int GL_IMAGE_BINDING_NAME_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BUFFER")]
-	public const int GL_IMAGE_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BUFFER_EXT")]
-	public const int GL_IMAGE_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_10_10_10_2")]
-	public const int GL_IMAGE_CLASS_10_10_10_2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_11_11_10")]
-	public const int GL_IMAGE_CLASS_11_11_10;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_1_X_16")]
-	public const int GL_IMAGE_CLASS_1_X_16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_1_X_32")]
-	public const int GL_IMAGE_CLASS_1_X_32;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_1_X_8")]
-	public const int GL_IMAGE_CLASS_1_X_8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_2_X_16")]
-	public const int GL_IMAGE_CLASS_2_X_16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_2_X_32")]
-	public const int GL_IMAGE_CLASS_2_X_32;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_2_X_8")]
-	public const int GL_IMAGE_CLASS_2_X_8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_4_X_16")]
-	public const int GL_IMAGE_CLASS_4_X_16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_4_X_32")]
-	public const int GL_IMAGE_CLASS_4_X_32;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_4_X_8")]
-	public const int GL_IMAGE_CLASS_4_X_8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_COMPATIBILITY_CLASS")]
-	public const int GL_IMAGE_COMPATIBILITY_CLASS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CUBE")]
-	public const int GL_IMAGE_CUBE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CUBE_EXT")]
-	public const int GL_IMAGE_CUBE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CUBE_MAP_ARRAY")]
-	public const int GL_IMAGE_CUBE_MAP_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CUBE_MAP_ARRAY_EXT")]
-	public const int GL_IMAGE_CUBE_MAP_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_FORMAT_COMPATIBILITY_BY_CLASS")]
-	public const int GL_IMAGE_FORMAT_COMPATIBILITY_BY_CLASS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_FORMAT_COMPATIBILITY_BY_SIZE")]
-	public const int GL_IMAGE_FORMAT_COMPATIBILITY_BY_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_FORMAT_COMPATIBILITY_TYPE")]
-	public const int GL_IMAGE_FORMAT_COMPATIBILITY_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_PIXEL_FORMAT")]
-	public const int GL_IMAGE_PIXEL_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_PIXEL_TYPE")]
-	public const int GL_IMAGE_PIXEL_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_TEXEL_SIZE")]
-	public const int GL_IMAGE_TEXEL_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMPLEMENTATION_COLOR_READ_FORMAT")]
-	public const int GL_IMPLEMENTATION_COLOR_READ_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES")]
-	public const int GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMPLEMENTATION_COLOR_READ_TYPE")]
-	public const int GL_IMPLEMENTATION_COLOR_READ_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IMPLEMENTATION_COLOR_READ_TYPE_OES")]
-	public const int GL_IMPLEMENTATION_COLOR_READ_TYPE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INCR")]
-	public const int GL_INCR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INCR_WRAP")]
-	public const int GL_INCR_WRAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INCR_WRAP_EXT")]
-	public const int GL_INCR_WRAP_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INCR_WRAP_OES")]
-	public const int GL_INCR_WRAP_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX")]
-	public const int GL_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY")]
-	public const int GL_INDEX_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_ADDRESS_NV")]
-	public const int GL_INDEX_ARRAY_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_BUFFER_BINDING")]
-	public const int GL_INDEX_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_BUFFER_BINDING_ARB")]
-	public const int GL_INDEX_ARRAY_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_COUNT_EXT")]
-	public const int GL_INDEX_ARRAY_COUNT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_EXT")]
-	public const int GL_INDEX_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_LENGTH_NV")]
-	public const int GL_INDEX_ARRAY_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_POINTER")]
-	public const int GL_INDEX_ARRAY_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_POINTER_EXT")]
-	public const int GL_INDEX_ARRAY_POINTER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_STRIDE")]
-	public const int GL_INDEX_ARRAY_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_STRIDE_EXT")]
-	public const int GL_INDEX_ARRAY_STRIDE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_TYPE")]
-	public const int GL_INDEX_ARRAY_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_TYPE_EXT")]
-	public const int GL_INDEX_ARRAY_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_BITS")]
-	public const int GL_INDEX_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_CLEAR_VALUE")]
-	public const int GL_INDEX_CLEAR_VALUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_LOGIC_OP")]
-	public const int GL_INDEX_LOGIC_OP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_MATERIAL_EXT")]
-	public const int GL_INDEX_MATERIAL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_MATERIAL_FACE_EXT")]
-	public const int GL_INDEX_MATERIAL_FACE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_MATERIAL_PARAMETER_EXT")]
-	public const int GL_INDEX_MATERIAL_PARAMETER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_MODE")]
-	public const int GL_INDEX_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_OFFSET")]
-	public const int GL_INDEX_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_SHIFT")]
-	public const int GL_INDEX_SHIFT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_TEST_EXT")]
-	public const int GL_INDEX_TEST_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_TEST_FUNC_EXT")]
-	public const int GL_INDEX_TEST_FUNC_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_TEST_REF_EXT")]
-	public const int GL_INDEX_TEST_REF_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_WRITEMASK")]
-	public const int GL_INDEX_WRITEMASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INFO_LOG_LENGTH")]
-	public const int GL_INFO_LOG_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INNOCENT_CONTEXT_RESET_ARB")]
-	public const int GL_INNOCENT_CONTEXT_RESET_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INSTRUMENT_BUFFER_POINTER_SGIX")]
-	public const int GL_INSTRUMENT_BUFFER_POINTER_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INSTRUMENT_MEASUREMENTS_SGIX")]
-	public const int GL_INSTRUMENT_MEASUREMENTS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT")]
-	public const int GL_INT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT16_NV")]
-	public const int GL_INT16_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT16_VEC2_NV")]
-	public const int GL_INT16_VEC2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT16_VEC3_NV")]
-	public const int GL_INT16_VEC3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT16_VEC4_NV")]
-	public const int GL_INT16_VEC4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT64_NV")]
-	public const int GL_INT64_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT64_VEC2_NV")]
-	public const int GL_INT64_VEC2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT64_VEC3_NV")]
-	public const int GL_INT64_VEC3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT64_VEC4_NV")]
-	public const int GL_INT64_VEC4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT8_NV")]
-	public const int GL_INT8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT8_VEC2_NV")]
-	public const int GL_INT8_VEC2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT8_VEC3_NV")]
-	public const int GL_INT8_VEC3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT8_VEC4_NV")]
-	public const int GL_INT8_VEC4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY")]
-	public const int GL_INTENSITY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY12")]
-	public const int GL_INTENSITY12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY12_EXT")]
-	public const int GL_INTENSITY12_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16")]
-	public const int GL_INTENSITY16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16F_ARB")]
-	public const int GL_INTENSITY16F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16I_EXT")]
-	public const int GL_INTENSITY16I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16UI_EXT")]
-	public const int GL_INTENSITY16UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16_EXT")]
-	public const int GL_INTENSITY16_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16_SNORM")]
-	public const int GL_INTENSITY16_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY32F_ARB")]
-	public const int GL_INTENSITY32F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY32I_EXT")]
-	public const int GL_INTENSITY32I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY32UI_EXT")]
-	public const int GL_INTENSITY32UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY4")]
-	public const int GL_INTENSITY4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY4_EXT")]
-	public const int GL_INTENSITY4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8")]
-	public const int GL_INTENSITY8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8I_EXT")]
-	public const int GL_INTENSITY8I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8UI_EXT")]
-	public const int GL_INTENSITY8UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8_EXT")]
-	public const int GL_INTENSITY8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8_SNORM")]
-	public const int GL_INTENSITY8_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_EXT")]
-	public const int GL_INTENSITY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_FLOAT16_APPLE")]
-	public const int GL_INTENSITY_FLOAT16_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_FLOAT16_ATI")]
-	public const int GL_INTENSITY_FLOAT16_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_FLOAT32_APPLE")]
-	public const int GL_INTENSITY_FLOAT32_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_FLOAT32_ATI")]
-	public const int GL_INTENSITY_FLOAT32_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_SNORM")]
-	public const int GL_INTENSITY_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLACE_OML")]
-	public const int GL_INTERLACE_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLACE_READ_INGR")]
-	public const int GL_INTERLACE_READ_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLACE_READ_OML")]
-	public const int GL_INTERLACE_READ_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLACE_SGIX")]
-	public const int GL_INTERLACE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLEAVED_ATTRIBS")]
-	public const int GL_INTERLEAVED_ATTRIBS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLEAVED_ATTRIBS_EXT")]
-	public const int GL_INTERLEAVED_ATTRIBS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLEAVED_ATTRIBS_NV")]
-	public const int GL_INTERLEAVED_ATTRIBS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_ALPHA_SIZE")]
-	public const int GL_INTERNALFORMAT_ALPHA_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_ALPHA_TYPE")]
-	public const int GL_INTERNALFORMAT_ALPHA_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_BLUE_SIZE")]
-	public const int GL_INTERNALFORMAT_BLUE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_BLUE_TYPE")]
-	public const int GL_INTERNALFORMAT_BLUE_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_DEPTH_SIZE")]
-	public const int GL_INTERNALFORMAT_DEPTH_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_DEPTH_TYPE")]
-	public const int GL_INTERNALFORMAT_DEPTH_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_GREEN_SIZE")]
-	public const int GL_INTERNALFORMAT_GREEN_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_GREEN_TYPE")]
-	public const int GL_INTERNALFORMAT_GREEN_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_PREFERRED")]
-	public const int GL_INTERNALFORMAT_PREFERRED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_RED_SIZE")]
-	public const int GL_INTERNALFORMAT_RED_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_RED_TYPE")]
-	public const int GL_INTERNALFORMAT_RED_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_SHARED_SIZE")]
-	public const int GL_INTERNALFORMAT_SHARED_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_STENCIL_SIZE")]
-	public const int GL_INTERNALFORMAT_STENCIL_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_STENCIL_TYPE")]
-	public const int GL_INTERNALFORMAT_STENCIL_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_SUPPORTED")]
-	public const int GL_INTERNALFORMAT_SUPPORTED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERPOLATE")]
-	public const int GL_INTERPOLATE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERPOLATE_EXT")]
-	public const int GL_INTERPOLATE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_10_10_10_2_OES")]
-	public const int GL_INT_10_10_10_2_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_2_10_10_10_REV")]
-	public const int GL_INT_2_10_10_10_REV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_1D")]
-	public const int GL_INT_IMAGE_1D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_1D_ARRAY")]
-	public const int GL_INT_IMAGE_1D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_1D_ARRAY_EXT")]
-	public const int GL_INT_IMAGE_1D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_1D_EXT")]
-	public const int GL_INT_IMAGE_1D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D")]
-	public const int GL_INT_IMAGE_2D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_ARRAY")]
-	public const int GL_INT_IMAGE_2D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_ARRAY_EXT")]
-	public const int GL_INT_IMAGE_2D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_EXT")]
-	public const int GL_INT_IMAGE_2D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_MULTISAMPLE")]
-	public const int GL_INT_IMAGE_2D_MULTISAMPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY")]
-	public const int GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY_EXT")]
-	public const int GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_MULTISAMPLE_EXT")]
-	public const int GL_INT_IMAGE_2D_MULTISAMPLE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_RECT")]
-	public const int GL_INT_IMAGE_2D_RECT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_RECT_EXT")]
-	public const int GL_INT_IMAGE_2D_RECT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_3D")]
-	public const int GL_INT_IMAGE_3D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_3D_EXT")]
-	public const int GL_INT_IMAGE_3D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_BUFFER")]
-	public const int GL_INT_IMAGE_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_BUFFER_EXT")]
-	public const int GL_INT_IMAGE_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_CUBE")]
-	public const int GL_INT_IMAGE_CUBE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_CUBE_EXT")]
-	public const int GL_INT_IMAGE_CUBE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_CUBE_MAP_ARRAY")]
-	public const int GL_INT_IMAGE_CUBE_MAP_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_CUBE_MAP_ARRAY_EXT")]
-	public const int GL_INT_IMAGE_CUBE_MAP_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_1D")]
-	public const int GL_INT_SAMPLER_1D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_1D_ARRAY")]
-	public const int GL_INT_SAMPLER_1D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_1D_ARRAY_EXT")]
-	public const int GL_INT_SAMPLER_1D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_1D_EXT")]
-	public const int GL_INT_SAMPLER_1D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D")]
-	public const int GL_INT_SAMPLER_2D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_ARRAY")]
-	public const int GL_INT_SAMPLER_2D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_ARRAY_EXT")]
-	public const int GL_INT_SAMPLER_2D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_EXT")]
-	public const int GL_INT_SAMPLER_2D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_MULTISAMPLE")]
-	public const int GL_INT_SAMPLER_2D_MULTISAMPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY")]
-	public const int GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_RECT")]
-	public const int GL_INT_SAMPLER_2D_RECT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_RECT_EXT")]
-	public const int GL_INT_SAMPLER_2D_RECT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_3D")]
-	public const int GL_INT_SAMPLER_3D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_3D_EXT")]
-	public const int GL_INT_SAMPLER_3D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_BUFFER")]
-	public const int GL_INT_SAMPLER_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_BUFFER_AMD")]
-	public const int GL_INT_SAMPLER_BUFFER_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_BUFFER_EXT")]
-	public const int GL_INT_SAMPLER_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_CUBE")]
-	public const int GL_INT_SAMPLER_CUBE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_CUBE_EXT")]
-	public const int GL_INT_SAMPLER_CUBE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_CUBE_MAP_ARRAY")]
-	public const int GL_INT_SAMPLER_CUBE_MAP_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_RENDERBUFFER_NV")]
-	public const int GL_INT_SAMPLER_RENDERBUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC2")]
-	public const int GL_INT_VEC2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC2_ARB")]
-	public const int GL_INT_VEC2_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC3")]
-	public const int GL_INT_VEC3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC3_ARB")]
-	public const int GL_INT_VEC3_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC4")]
-	public const int GL_INT_VEC4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC4_ARB")]
-	public const int GL_INT_VEC4_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_ENUM")]
-	public const int GL_INVALID_ENUM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_FRAMEBUFFER_OPERATION")]
-	public const int GL_INVALID_FRAMEBUFFER_OPERATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_FRAMEBUFFER_OPERATION_EXT")]
-	public const int GL_INVALID_FRAMEBUFFER_OPERATION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_FRAMEBUFFER_OPERATION_OES")]
-	public const int GL_INVALID_FRAMEBUFFER_OPERATION_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_INDEX")]
-	public const int GL_INVALID_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_OPERATION")]
-	public const int GL_INVALID_OPERATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_VALUE")]
-	public const int GL_INVALID_VALUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVARIANT_DATATYPE_EXT")]
-	public const int GL_INVARIANT_DATATYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVARIANT_EXT")]
-	public const int GL_INVARIANT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVARIANT_VALUE_EXT")]
-	public const int GL_INVARIANT_VALUE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVERSE_NV")]
-	public const int GL_INVERSE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVERSE_TRANSPOSE_NV")]
-	public const int GL_INVERSE_TRANSPOSE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVERT")]
-	public const int GL_INVERT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_INVERTED_SCREEN_W_REND")]
-	public const int GL_INVERTED_SCREEN_W_REND;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IR_INSTRUMENT1_SGIX")]
-	public const int GL_IR_INSTRUMENT1_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ISOLINES")]
-	public const int GL_ISOLINES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IS_PER_PATCH")]
-	public const int GL_IS_PER_PATCH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IS_ROW_MAJOR")]
-	public const int GL_IS_ROW_MAJOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ITALIC_BIT_NV")]
-	public const int GL_ITALIC_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IUI_N3F_V2F_EXT")]
-	public const int GL_IUI_N3F_V2F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IUI_N3F_V3F_EXT")]
-	public const int GL_IUI_N3F_V3F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IUI_V2F_EXT")]
-	public const int GL_IUI_V2F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_IUI_V3F_EXT")]
-	public const int GL_IUI_V3F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_KEEP")]
-	public const int GL_KEEP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LARGE_CCW_ARC_TO_NV")]
-	public const int GL_LARGE_CCW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LARGE_CW_ARC_TO_NV")]
-	public const int GL_LARGE_CW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LAST_VERTEX_CONVENTION")]
-	public const int GL_LAST_VERTEX_CONVENTION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LAST_VERTEX_CONVENTION_EXT")]
-	public const int GL_LAST_VERTEX_CONVENTION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LAST_VIDEO_CAPTURE_STATUS_NV")]
-	public const int GL_LAST_VIDEO_CAPTURE_STATUS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYER_NV")]
-	public const int GL_LAYER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYER_PROVOKING_VERTEX")]
-	public const int GL_LAYER_PROVOKING_VERTEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYOUT_DEFAULT_INTEL")]
-	public const int GL_LAYOUT_DEFAULT_INTEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYOUT_LINEAR_CPU_CACHED_INTEL")]
-	public const int GL_LAYOUT_LINEAR_CPU_CACHED_INTEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYOUT_LINEAR_INTEL")]
-	public const int GL_LAYOUT_LINEAR_INTEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LEFT")]
-	public const int GL_LEFT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LEQUAL")]
-	public const int GL_LEQUAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LERP_ATI")]
-	public const int GL_LERP_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LESS")]
-	public const int GL_LESS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT0")]
-	public const int GL_LIGHT0;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT1")]
-	public const int GL_LIGHT1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT2")]
-	public const int GL_LIGHT2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT3")]
-	public const int GL_LIGHT3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT4")]
-	public const int GL_LIGHT4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT5")]
-	public const int GL_LIGHT5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT6")]
-	public const int GL_LIGHT6;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT7")]
-	public const int GL_LIGHT7;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHTING")]
-	public const int GL_LIGHTING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHTING_BIT")]
-	public const int GL_LIGHTING_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_ENV_MODE_SGIX")]
-	public const int GL_LIGHT_ENV_MODE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_AMBIENT")]
-	public const int GL_LIGHT_MODEL_AMBIENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_COLOR_CONTROL")]
-	public const int GL_LIGHT_MODEL_COLOR_CONTROL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_COLOR_CONTROL_EXT")]
-	public const int GL_LIGHT_MODEL_COLOR_CONTROL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_LOCAL_VIEWER")]
-	public const int GL_LIGHT_MODEL_LOCAL_VIEWER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_SPECULAR_VECTOR_APPLE")]
-	public const int GL_LIGHT_MODEL_SPECULAR_VECTOR_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_TWO_SIDE")]
-	public const int GL_LIGHT_MODEL_TWO_SIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE")]
-	public const int GL_LINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR")]
-	public const int GL_LINEAR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_ATTENUATION")]
-	public const int GL_LINEAR_ATTENUATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_CLIPMAP_LINEAR_SGIX")]
-	public const int GL_LINEAR_CLIPMAP_LINEAR_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_CLIPMAP_NEAREST_SGIX")]
-	public const int GL_LINEAR_CLIPMAP_NEAREST_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_DETAIL_ALPHA_SGIS")]
-	public const int GL_LINEAR_DETAIL_ALPHA_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_DETAIL_COLOR_SGIS")]
-	public const int GL_LINEAR_DETAIL_COLOR_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_DETAIL_SGIS")]
-	public const int GL_LINEAR_DETAIL_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_MIPMAP_LINEAR")]
-	public const int GL_LINEAR_MIPMAP_LINEAR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_MIPMAP_NEAREST")]
-	public const int GL_LINEAR_MIPMAP_NEAREST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_SHARPEN_ALPHA_SGIS")]
-	public const int GL_LINEAR_SHARPEN_ALPHA_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_SHARPEN_COLOR_SGIS")]
-	public const int GL_LINEAR_SHARPEN_COLOR_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_SHARPEN_SGIS")]
-	public const int GL_LINEAR_SHARPEN_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINES")]
-	public const int GL_LINES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINES_ADJACENCY")]
-	public const int GL_LINES_ADJACENCY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINES_ADJACENCY_ARB")]
-	public const int GL_LINES_ADJACENCY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINES_ADJACENCY_EXT")]
-	public const int GL_LINES_ADJACENCY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_BIT")]
-	public const int GL_LINE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_LOOP")]
-	public const int GL_LINE_LOOP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_QUALITY_HINT_SGIX")]
-	public const int GL_LINE_QUALITY_HINT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_RESET_TOKEN")]
-	public const int GL_LINE_RESET_TOKEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_SMOOTH")]
-	public const int GL_LINE_SMOOTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_SMOOTH_HINT")]
-	public const int GL_LINE_SMOOTH_HINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STIPPLE")]
-	public const int GL_LINE_STIPPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STIPPLE_PATTERN")]
-	public const int GL_LINE_STIPPLE_PATTERN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STIPPLE_REPEAT")]
-	public const int GL_LINE_STIPPLE_REPEAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STRIP")]
-	public const int GL_LINE_STRIP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STRIP_ADJACENCY")]
-	public const int GL_LINE_STRIP_ADJACENCY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STRIP_ADJACENCY_ARB")]
-	public const int GL_LINE_STRIP_ADJACENCY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STRIP_ADJACENCY_EXT")]
-	public const int GL_LINE_STRIP_ADJACENCY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_TOKEN")]
-	public const int GL_LINE_TOKEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_TO_NV")]
-	public const int GL_LINE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_WIDTH")]
-	public const int GL_LINE_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_WIDTH_GRANULARITY")]
-	public const int GL_LINE_WIDTH_GRANULARITY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_WIDTH_RANGE")]
-	public const int GL_LINE_WIDTH_RANGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LINK_STATUS")]
-	public const int GL_LINK_STATUS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_BASE")]
-	public const int GL_LIST_BASE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_BIT")]
-	public const int GL_LIST_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_INDEX")]
-	public const int GL_LIST_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_MODE")]
-	public const int GL_LIST_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_PRIORITY_SGIX")]
-	public const int GL_LIST_PRIORITY_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOAD")]
-	public const int GL_LOAD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCAL_CONSTANT_DATATYPE_EXT")]
-	public const int GL_LOCAL_CONSTANT_DATATYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCAL_CONSTANT_EXT")]
-	public const int GL_LOCAL_CONSTANT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCAL_CONSTANT_VALUE_EXT")]
-	public const int GL_LOCAL_CONSTANT_VALUE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCAL_EXT")]
-	public const int GL_LOCAL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCATION")]
-	public const int GL_LOCATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCATION_INDEX")]
-	public const int GL_LOCATION_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOGIC_OP")]
-	public const int GL_LOGIC_OP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOGIC_OP_MODE")]
-	public const int GL_LOGIC_OP_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOSE_CONTEXT_ON_RESET_ARB")]
-	public const int GL_LOSE_CONTEXT_ON_RESET_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOWER_LEFT")]
-	public const int GL_LOWER_LEFT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOW_FLOAT")]
-	public const int GL_LOW_FLOAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LOW_INT")]
-	public const int GL_LOW_INT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LO_BIAS_NV")]
-	public const int GL_LO_BIAS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LO_SCALE_NV")]
-	public const int GL_LO_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE")]
-	public const int GL_LUMINANCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12")]
-	public const int GL_LUMINANCE12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_ALPHA12")]
-	public const int GL_LUMINANCE12_ALPHA12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_ALPHA12_EXT")]
-	public const int GL_LUMINANCE12_ALPHA12_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_ALPHA4")]
-	public const int GL_LUMINANCE12_ALPHA4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_ALPHA4_EXT")]
-	public const int GL_LUMINANCE12_ALPHA4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_EXT")]
-	public const int GL_LUMINANCE12_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16")]
-	public const int GL_LUMINANCE16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16F_ARB")]
-	public const int GL_LUMINANCE16F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16I_EXT")]
-	public const int GL_LUMINANCE16I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16UI_EXT")]
-	public const int GL_LUMINANCE16UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_ALPHA16")]
-	public const int GL_LUMINANCE16_ALPHA16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_ALPHA16_EXT")]
-	public const int GL_LUMINANCE16_ALPHA16_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_ALPHA16_SNORM")]
-	public const int GL_LUMINANCE16_ALPHA16_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_EXT")]
-	public const int GL_LUMINANCE16_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_SNORM")]
-	public const int GL_LUMINANCE16_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE32F_ARB")]
-	public const int GL_LUMINANCE32F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE32I_EXT")]
-	public const int GL_LUMINANCE32I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE32UI_EXT")]
-	public const int GL_LUMINANCE32UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE4")]
-	public const int GL_LUMINANCE4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE4_ALPHA4")]
-	public const int GL_LUMINANCE4_ALPHA4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE4_ALPHA4_EXT")]
-	public const int GL_LUMINANCE4_ALPHA4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE4_EXT")]
-	public const int GL_LUMINANCE4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE6_ALPHA2")]
-	public const int GL_LUMINANCE6_ALPHA2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE6_ALPHA2_EXT")]
-	public const int GL_LUMINANCE6_ALPHA2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8")]
-	public const int GL_LUMINANCE8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8I_EXT")]
-	public const int GL_LUMINANCE8I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8UI_EXT")]
-	public const int GL_LUMINANCE8UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_ALPHA8")]
-	public const int GL_LUMINANCE8_ALPHA8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_ALPHA8_EXT")]
-	public const int GL_LUMINANCE8_ALPHA8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_ALPHA8_SNORM")]
-	public const int GL_LUMINANCE8_ALPHA8_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_EXT")]
-	public const int GL_LUMINANCE8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_SNORM")]
-	public const int GL_LUMINANCE8_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA")]
-	public const int GL_LUMINANCE_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA16F_ARB")]
-	public const int GL_LUMINANCE_ALPHA16F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA16I_EXT")]
-	public const int GL_LUMINANCE_ALPHA16I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA16UI_EXT")]
-	public const int GL_LUMINANCE_ALPHA16UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA32F_ARB")]
-	public const int GL_LUMINANCE_ALPHA32F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA32I_EXT")]
-	public const int GL_LUMINANCE_ALPHA32I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA32UI_EXT")]
-	public const int GL_LUMINANCE_ALPHA32UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA8I_EXT")]
-	public const int GL_LUMINANCE_ALPHA8I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA8UI_EXT")]
-	public const int GL_LUMINANCE_ALPHA8UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_FLOAT16_APPLE")]
-	public const int GL_LUMINANCE_ALPHA_FLOAT16_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_FLOAT16_ATI")]
-	public const int GL_LUMINANCE_ALPHA_FLOAT16_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_FLOAT32_APPLE")]
-	public const int GL_LUMINANCE_ALPHA_FLOAT32_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_FLOAT32_ATI")]
-	public const int GL_LUMINANCE_ALPHA_FLOAT32_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_INTEGER_EXT")]
-	public const int GL_LUMINANCE_ALPHA_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_SNORM")]
-	public const int GL_LUMINANCE_ALPHA_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_FLOAT16_APPLE")]
-	public const int GL_LUMINANCE_FLOAT16_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_FLOAT16_ATI")]
-	public const int GL_LUMINANCE_FLOAT16_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_FLOAT32_APPLE")]
-	public const int GL_LUMINANCE_FLOAT32_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_FLOAT32_ATI")]
-	public const int GL_LUMINANCE_FLOAT32_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_INTEGER_EXT")]
-	public const int GL_LUMINANCE_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_SNORM")]
-	public const int GL_LUMINANCE_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAD_ATI")]
-	public const int GL_MAD_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAGNITUDE_BIAS_NV")]
-	public const int GL_MAGNITUDE_BIAS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAGNITUDE_SCALE_NV")]
-	public const int GL_MAGNITUDE_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAJOR_VERSION")]
-	public const int GL_MAJOR_VERSION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MALI_SHADER_BINARY_ARM")]
-	public const int GL_MALI_SHADER_BINARY_ARM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MANUAL_GENERATE_MIPMAP")]
-	public const int GL_MANUAL_GENERATE_MIPMAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_COLOR_4")]
-	public const int GL_MAP1_COLOR_4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_GRID_DOMAIN")]
-	public const int GL_MAP1_GRID_DOMAIN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_GRID_SEGMENTS")]
-	public const int GL_MAP1_GRID_SEGMENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_INDEX")]
-	public const int GL_MAP1_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_NORMAL")]
-	public const int GL_MAP1_NORMAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_TEXTURE_COORD_1")]
-	public const int GL_MAP1_TEXTURE_COORD_1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_TEXTURE_COORD_2")]
-	public const int GL_MAP1_TEXTURE_COORD_2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_TEXTURE_COORD_3")]
-	public const int GL_MAP1_TEXTURE_COORD_3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_TEXTURE_COORD_4")]
-	public const int GL_MAP1_TEXTURE_COORD_4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_3")]
-	public const int GL_MAP1_VERTEX_3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_4")]
-	public const int GL_MAP1_VERTEX_4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB0_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB0_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB10_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB10_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB11_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB11_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB12_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB12_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB13_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB13_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB14_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB14_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB15_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB15_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB1_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB1_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB2_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB2_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB3_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB3_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB4_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB4_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB5_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB5_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB6_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB6_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB7_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB7_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB8_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB8_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB9_4_NV")]
-	public const int GL_MAP1_VERTEX_ATTRIB9_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_COLOR_4")]
-	public const int GL_MAP2_COLOR_4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_GRID_DOMAIN")]
-	public const int GL_MAP2_GRID_DOMAIN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_GRID_SEGMENTS")]
-	public const int GL_MAP2_GRID_SEGMENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_INDEX")]
-	public const int GL_MAP2_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_NORMAL")]
-	public const int GL_MAP2_NORMAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_TEXTURE_COORD_1")]
-	public const int GL_MAP2_TEXTURE_COORD_1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_TEXTURE_COORD_2")]
-	public const int GL_MAP2_TEXTURE_COORD_2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_TEXTURE_COORD_3")]
-	public const int GL_MAP2_TEXTURE_COORD_3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_TEXTURE_COORD_4")]
-	public const int GL_MAP2_TEXTURE_COORD_4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_3")]
-	public const int GL_MAP2_VERTEX_3;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_4")]
-	public const int GL_MAP2_VERTEX_4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB0_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB0_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB10_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB10_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB11_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB11_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB12_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB12_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB13_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB13_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB14_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB14_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB15_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB15_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB1_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB1_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB2_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB2_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB3_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB3_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB4_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB4_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB5_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB5_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB6_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB6_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB7_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB7_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB8_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB8_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB9_4_NV")]
-	public const int GL_MAP2_VERTEX_ATTRIB9_4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_ATTRIB_U_ORDER_NV")]
-	public const int GL_MAP_ATTRIB_U_ORDER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_ATTRIB_V_ORDER_NV")]
-	public const int GL_MAP_ATTRIB_V_ORDER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_COLOR")]
-	public const int GL_MAP_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_FLUSH_EXPLICIT_BIT")]
-	public const int GL_MAP_FLUSH_EXPLICIT_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_FLUSH_EXPLICIT_BIT_EXT")]
-	public const int GL_MAP_FLUSH_EXPLICIT_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_INVALIDATE_BUFFER_BIT")]
-	public const int GL_MAP_INVALIDATE_BUFFER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_INVALIDATE_BUFFER_BIT_EXT")]
-	public const int GL_MAP_INVALIDATE_BUFFER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_INVALIDATE_RANGE_BIT")]
-	public const int GL_MAP_INVALIDATE_RANGE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_INVALIDATE_RANGE_BIT_EXT")]
-	public const int GL_MAP_INVALIDATE_RANGE_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_READ_BIT")]
-	public const int GL_MAP_READ_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_READ_BIT_EXT")]
-	public const int GL_MAP_READ_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_STENCIL")]
-	public const int GL_MAP_STENCIL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_TESSELLATION_NV")]
-	public const int GL_MAP_TESSELLATION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_UNSYNCHRONIZED_BIT")]
-	public const int GL_MAP_UNSYNCHRONIZED_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_UNSYNCHRONIZED_BIT_EXT")]
-	public const int GL_MAP_UNSYNCHRONIZED_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_WRITE_BIT")]
-	public const int GL_MAP_WRITE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_WRITE_BIT_EXT")]
-	public const int GL_MAP_WRITE_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX0_ARB")]
-	public const int GL_MATRIX0_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX0_NV")]
-	public const int GL_MATRIX0_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX10_ARB")]
-	public const int GL_MATRIX10_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX11_ARB")]
-	public const int GL_MATRIX11_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX12_ARB")]
-	public const int GL_MATRIX12_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX13_ARB")]
-	public const int GL_MATRIX13_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX14_ARB")]
-	public const int GL_MATRIX14_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX15_ARB")]
-	public const int GL_MATRIX15_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX16_ARB")]
-	public const int GL_MATRIX16_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX17_ARB")]
-	public const int GL_MATRIX17_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX18_ARB")]
-	public const int GL_MATRIX18_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX19_ARB")]
-	public const int GL_MATRIX19_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX1_ARB")]
-	public const int GL_MATRIX1_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX1_NV")]
-	public const int GL_MATRIX1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX20_ARB")]
-	public const int GL_MATRIX20_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX21_ARB")]
-	public const int GL_MATRIX21_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX22_ARB")]
-	public const int GL_MATRIX22_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX23_ARB")]
-	public const int GL_MATRIX23_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX24_ARB")]
-	public const int GL_MATRIX24_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX25_ARB")]
-	public const int GL_MATRIX25_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX26_ARB")]
-	public const int GL_MATRIX26_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX27_ARB")]
-	public const int GL_MATRIX27_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX28_ARB")]
-	public const int GL_MATRIX28_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX29_ARB")]
-	public const int GL_MATRIX29_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX2_ARB")]
-	public const int GL_MATRIX2_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX2_NV")]
-	public const int GL_MATRIX2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX30_ARB")]
-	public const int GL_MATRIX30_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX31_ARB")]
-	public const int GL_MATRIX31_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX3_ARB")]
-	public const int GL_MATRIX3_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX3_NV")]
-	public const int GL_MATRIX3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX4_ARB")]
-	public const int GL_MATRIX4_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX4_NV")]
-	public const int GL_MATRIX4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX5_ARB")]
-	public const int GL_MATRIX5_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX5_NV")]
-	public const int GL_MATRIX5_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX6_ARB")]
-	public const int GL_MATRIX6_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX6_NV")]
-	public const int GL_MATRIX6_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX7_ARB")]
-	public const int GL_MATRIX7_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX7_NV")]
-	public const int GL_MATRIX7_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX8_ARB")]
-	public const int GL_MATRIX8_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX9_ARB")]
-	public const int GL_MATRIX9_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_EXT")]
-	public const int GL_MATRIX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_ARB")]
-	public const int GL_MATRIX_INDEX_ARRAY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES")]
-	public const int GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_OES")]
-	public const int GL_MATRIX_INDEX_ARRAY_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_POINTER_ARB")]
-	public const int GL_MATRIX_INDEX_ARRAY_POINTER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_POINTER_OES")]
-	public const int GL_MATRIX_INDEX_ARRAY_POINTER_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_SIZE_ARB")]
-	public const int GL_MATRIX_INDEX_ARRAY_SIZE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_SIZE_OES")]
-	public const int GL_MATRIX_INDEX_ARRAY_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_STRIDE_ARB")]
-	public const int GL_MATRIX_INDEX_ARRAY_STRIDE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_STRIDE_OES")]
-	public const int GL_MATRIX_INDEX_ARRAY_STRIDE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_TYPE_ARB")]
-	public const int GL_MATRIX_INDEX_ARRAY_TYPE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_TYPE_OES")]
-	public const int GL_MATRIX_INDEX_ARRAY_TYPE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_MODE")]
-	public const int GL_MATRIX_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_PALETTE_ARB")]
-	public const int GL_MATRIX_PALETTE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_PALETTE_OES")]
-	public const int GL_MATRIX_PALETTE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_STRIDE")]
-	public const int GL_MATRIX_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX")]
-	public const int GL_MAX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_3D_TEXTURE_SIZE")]
-	public const int GL_MAX_3D_TEXTURE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_3D_TEXTURE_SIZE_EXT")]
-	public const int GL_MAX_3D_TEXTURE_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_3D_TEXTURE_SIZE_OES")]
-	public const int GL_MAX_3D_TEXTURE_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_4D_TEXTURE_SIZE_SGIS")]
-	public const int GL_MAX_4D_TEXTURE_SIZE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ACTIVE_LIGHTS_SGIX")]
-	public const int GL_MAX_ACTIVE_LIGHTS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ARRAY_TEXTURE_LAYERS")]
-	public const int GL_MAX_ARRAY_TEXTURE_LAYERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ARRAY_TEXTURE_LAYERS_EXT")]
-	public const int GL_MAX_ARRAY_TEXTURE_LAYERS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ASYNC_DRAW_PIXELS_SGIX")]
-	public const int GL_MAX_ASYNC_DRAW_PIXELS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ASYNC_HISTOGRAM_SGIX")]
-	public const int GL_MAX_ASYNC_HISTOGRAM_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ASYNC_READ_PIXELS_SGIX")]
-	public const int GL_MAX_ASYNC_READ_PIXELS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ASYNC_TEX_IMAGE_SGIX")]
-	public const int GL_MAX_ASYNC_TEX_IMAGE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ATOMIC_COUNTER_BUFFER_BINDINGS")]
-	public const int GL_MAX_ATOMIC_COUNTER_BUFFER_BINDINGS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ATOMIC_COUNTER_BUFFER_SIZE")]
-	public const int GL_MAX_ATOMIC_COUNTER_BUFFER_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ATTRIB_STACK_DEPTH")]
-	public const int GL_MAX_ATTRIB_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_BINDABLE_UNIFORM_SIZE_EXT")]
-	public const int GL_MAX_BINDABLE_UNIFORM_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIENT_ATTRIB_STACK_DEPTH")]
-	public const int GL_MAX_CLIENT_ATTRIB_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIPMAP_DEPTH_SGIX")]
-	public const int GL_MAX_CLIPMAP_DEPTH_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIPMAP_VIRTUAL_DEPTH_SGIX")]
-	public const int GL_MAX_CLIPMAP_VIRTUAL_DEPTH_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIP_DISTANCES")]
-	public const int GL_MAX_CLIP_DISTANCES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIP_PLANES")]
-	public const int GL_MAX_CLIP_PLANES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_ATTACHMENTS")]
-	public const int GL_MAX_COLOR_ATTACHMENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_ATTACHMENTS_EXT")]
-	public const int GL_MAX_COLOR_ATTACHMENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_ATTACHMENTS_NV")]
-	public const int GL_MAX_COLOR_ATTACHMENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_MATRIX_STACK_DEPTH")]
-	public const int GL_MAX_COLOR_MATRIX_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_MATRIX_STACK_DEPTH_SGI")]
-	public const int GL_MAX_COLOR_MATRIX_STACK_DEPTH_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_TEXTURE_SAMPLES")]
-	public const int GL_MAX_COLOR_TEXTURE_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_ATOMIC_COUNTERS")]
-	public const int GL_MAX_COMBINED_ATOMIC_COUNTERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS")]
-	public const int GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_DIMENSIONS")]
-	public const int GL_MAX_COMBINED_DIMENSIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_IMAGE_UNIFORMS")]
-	public const int GL_MAX_COMBINED_IMAGE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS")]
-	public const int GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS_EXT")]
-	public const int GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_SHADER_STORAGE_BLOCKS")]
-	public const int GL_MAX_COMBINED_SHADER_STORAGE_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS")]
-	public const int GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS_ARB")]
-	public const int GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_UNIFORM_BLOCKS")]
-	public const int GL_MAX_COMBINED_UNIFORM_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_ATOMIC_COUNTERS")]
-	public const int GL_MAX_COMPUTE_ATOMIC_COUNTERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS")]
-	public const int GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_IMAGE_UNIFORMS")]
-	public const int GL_MAX_COMPUTE_IMAGE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_LOCAL_INVOCATIONS")]
-	public const int GL_MAX_COMPUTE_LOCAL_INVOCATIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_SHADER_STORAGE_BLOCKS")]
-	public const int GL_MAX_COMPUTE_SHADER_STORAGE_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_SHARED_MEMORY_SIZE")]
-	public const int GL_MAX_COMPUTE_SHARED_MEMORY_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_TEXTURE_IMAGE_UNITS")]
-	public const int GL_MAX_COMPUTE_TEXTURE_IMAGE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_UNIFORM_BLOCKS")]
-	public const int GL_MAX_COMPUTE_UNIFORM_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_COMPUTE_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_WORK_GROUP_COUNT")]
-	public const int GL_MAX_COMPUTE_WORK_GROUP_COUNT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_WORK_GROUP_SIZE")]
-	public const int GL_MAX_COMPUTE_WORK_GROUP_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CONVOLUTION_HEIGHT")]
-	public const int GL_MAX_CONVOLUTION_HEIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CONVOLUTION_HEIGHT_EXT")]
-	public const int GL_MAX_CONVOLUTION_HEIGHT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CONVOLUTION_WIDTH")]
-	public const int GL_MAX_CONVOLUTION_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CONVOLUTION_WIDTH_EXT")]
-	public const int GL_MAX_CONVOLUTION_WIDTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CUBE_MAP_TEXTURE_SIZE")]
-	public const int GL_MAX_CUBE_MAP_TEXTURE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB")]
-	public const int GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CUBE_MAP_TEXTURE_SIZE_EXT")]
-	public const int GL_MAX_CUBE_MAP_TEXTURE_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CUBE_MAP_TEXTURE_SIZE_OES")]
-	public const int GL_MAX_CUBE_MAP_TEXTURE_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_GROUP_STACK_DEPTH")]
-	public const int GL_MAX_DEBUG_GROUP_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_LOGGED_MESSAGES")]
-	public const int GL_MAX_DEBUG_LOGGED_MESSAGES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_LOGGED_MESSAGES_AMD")]
-	public const int GL_MAX_DEBUG_LOGGED_MESSAGES_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_LOGGED_MESSAGES_ARB")]
-	public const int GL_MAX_DEBUG_LOGGED_MESSAGES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_MESSAGE_LENGTH")]
-	public const int GL_MAX_DEBUG_MESSAGE_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_MESSAGE_LENGTH_AMD")]
-	public const int GL_MAX_DEBUG_MESSAGE_LENGTH_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_MESSAGE_LENGTH_ARB")]
-	public const int GL_MAX_DEBUG_MESSAGE_LENGTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEEP_3D_TEXTURE_DEPTH_NV")]
-	public const int GL_MAX_DEEP_3D_TEXTURE_DEPTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEEP_3D_TEXTURE_WIDTH_HEIGHT_NV")]
-	public const int GL_MAX_DEEP_3D_TEXTURE_WIDTH_HEIGHT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEFORMATION_ORDER_SGIX")]
-	public const int GL_MAX_DEFORMATION_ORDER_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEPTH")]
-	public const int GL_MAX_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEPTH_TEXTURE_SAMPLES")]
-	public const int GL_MAX_DEPTH_TEXTURE_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DRAW_BUFFERS")]
-	public const int GL_MAX_DRAW_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DRAW_BUFFERS_ARB")]
-	public const int GL_MAX_DRAW_BUFFERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DRAW_BUFFERS_ATI")]
-	public const int GL_MAX_DRAW_BUFFERS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DRAW_BUFFERS_NV")]
-	public const int GL_MAX_DRAW_BUFFERS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DUAL_SOURCE_DRAW_BUFFERS")]
-	public const int GL_MAX_DUAL_SOURCE_DRAW_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ELEMENTS_INDICES")]
-	public const int GL_MAX_ELEMENTS_INDICES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ELEMENTS_VERTICES")]
-	public const int GL_MAX_ELEMENTS_VERTICES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ELEMENT_INDEX")]
-	public const int GL_MAX_ELEMENT_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_EVAL_ORDER")]
-	public const int GL_MAX_EVAL_ORDER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_EXT")]
-	public const int GL_MAX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FOG_FUNC_POINTS_SGIS")]
-	public const int GL_MAX_FOG_FUNC_POINTS_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_ATOMIC_COUNTERS")]
-	public const int GL_MAX_FRAGMENT_ATOMIC_COUNTERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_ATOMIC_COUNTER_BUFFERS")]
-	public const int GL_MAX_FRAGMENT_ATOMIC_COUNTER_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_BINDABLE_UNIFORMS_EXT")]
-	public const int GL_MAX_FRAGMENT_BINDABLE_UNIFORMS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_IMAGE_UNIFORMS")]
-	public const int GL_MAX_FRAGMENT_IMAGE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_INPUT_COMPONENTS")]
-	public const int GL_MAX_FRAGMENT_INPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_INTERPOLATION_OFFSET")]
-	public const int GL_MAX_FRAGMENT_INTERPOLATION_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_NV")]
-	public const int GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_LIGHTS_SGIX")]
-	public const int GL_MAX_FRAGMENT_LIGHTS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_PROGRAM_LOCAL_PARAMETERS_NV")]
-	public const int GL_MAX_FRAGMENT_PROGRAM_LOCAL_PARAMETERS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_SHADER_STORAGE_BLOCKS")]
-	public const int GL_MAX_FRAGMENT_SHADER_STORAGE_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_UNIFORM_BLOCKS")]
-	public const int GL_MAX_FRAGMENT_UNIFORM_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_FRAGMENT_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB")]
-	public const int GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_UNIFORM_VECTORS")]
-	public const int GL_MAX_FRAGMENT_UNIFORM_VECTORS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEBUFFER_HEIGHT")]
-	public const int GL_MAX_FRAMEBUFFER_HEIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEBUFFER_LAYERS")]
-	public const int GL_MAX_FRAMEBUFFER_LAYERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEBUFFER_SAMPLES")]
-	public const int GL_MAX_FRAMEBUFFER_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEBUFFER_WIDTH")]
-	public const int GL_MAX_FRAMEBUFFER_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEZOOM_FACTOR_SGIX")]
-	public const int GL_MAX_FRAMEZOOM_FACTOR_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GENERAL_COMBINERS_NV")]
-	public const int GL_MAX_GENERAL_COMBINERS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_ATOMIC_COUNTERS")]
-	public const int GL_MAX_GEOMETRY_ATOMIC_COUNTERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS")]
-	public const int GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_BINDABLE_UNIFORMS_EXT")]
-	public const int GL_MAX_GEOMETRY_BINDABLE_UNIFORMS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_IMAGE_UNIFORMS")]
-	public const int GL_MAX_GEOMETRY_IMAGE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_INPUT_COMPONENTS")]
-	public const int GL_MAX_GEOMETRY_INPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_OUTPUT_COMPONENTS")]
-	public const int GL_MAX_GEOMETRY_OUTPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_OUTPUT_VERTICES")]
-	public const int GL_MAX_GEOMETRY_OUTPUT_VERTICES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_OUTPUT_VERTICES_ARB")]
-	public const int GL_MAX_GEOMETRY_OUTPUT_VERTICES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT")]
-	public const int GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_PROGRAM_INVOCATIONS_NV")]
-	public const int GL_MAX_GEOMETRY_PROGRAM_INVOCATIONS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_SHADER_INVOCATIONS")]
-	public const int GL_MAX_GEOMETRY_SHADER_INVOCATIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS")]
-	public const int GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS")]
-	public const int GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_ARB")]
-	public const int GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT")]
-	public const int GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS")]
-	public const int GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_ARB")]
-	public const int GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT")]
-	public const int GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_UNIFORM_BLOCKS")]
-	public const int GL_MAX_GEOMETRY_UNIFORM_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_GEOMETRY_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_ARB")]
-	public const int GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT")]
-	public const int GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_VARYING_COMPONENTS_ARB")]
-	public const int GL_MAX_GEOMETRY_VARYING_COMPONENTS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT")]
-	public const int GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_HEIGHT")]
-	public const int GL_MAX_HEIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_IMAGE_SAMPLES")]
-	public const int GL_MAX_IMAGE_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_IMAGE_SAMPLES_EXT")]
-	public const int GL_MAX_IMAGE_SAMPLES_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_IMAGE_UNITS")]
-	public const int GL_MAX_IMAGE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_IMAGE_UNITS_EXT")]
-	public const int GL_MAX_IMAGE_UNITS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_INTEGER_SAMPLES")]
-	public const int GL_MAX_INTEGER_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_LABEL_LENGTH")]
-	public const int GL_MAX_LABEL_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_LAYERS")]
-	public const int GL_MAX_LAYERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_LIGHTS")]
-	public const int GL_MAX_LIGHTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_LIST_NESTING")]
-	public const int GL_MAX_LIST_NESTING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MAP_TESSELLATION_NV")]
-	public const int GL_MAX_MAP_TESSELLATION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MATRIX_PALETTE_STACK_DEPTH_ARB")]
-	public const int GL_MAX_MATRIX_PALETTE_STACK_DEPTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MODELVIEW_STACK_DEPTH")]
-	public const int GL_MAX_MODELVIEW_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MULTISAMPLE_COVERAGE_MODES_NV")]
-	public const int GL_MAX_MULTISAMPLE_COVERAGE_MODES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MULTIVIEW_BUFFERS_EXT")]
-	public const int GL_MAX_MULTIVIEW_BUFFERS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_NAME_LENGTH")]
-	public const int GL_MAX_NAME_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_NAME_STACK_DEPTH")]
-	public const int GL_MAX_NAME_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_NUM_ACTIVE_VARIABLES")]
-	public const int GL_MAX_NUM_ACTIVE_VARIABLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_NUM_COMPATIBLE_SUBROUTINES")]
-	public const int GL_MAX_NUM_COMPATIBLE_SUBROUTINES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_INSTRUCTIONS_EXT")]
-	public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_INSTRUCTIONS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_INVARIANTS_EXT")]
-	public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_INVARIANTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCALS_EXT")]
-	public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCALS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCAL_CONSTANTS_EXT")]
-	public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCAL_CONSTANTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_VARIANTS_EXT")]
-	public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_VARIANTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PALETTE_MATRICES_ARB")]
-	public const int GL_MAX_PALETTE_MATRICES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PALETTE_MATRICES_OES")]
-	public const int GL_MAX_PALETTE_MATRICES_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PATCH_VERTICES")]
-	public const int GL_MAX_PATCH_VERTICES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PIXEL_MAP_TABLE")]
-	public const int GL_MAX_PIXEL_MAP_TABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT")]
-	public const int GL_MAX_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI")]
-	public const int GL_MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ADDRESS_REGISTERS_ARB")]
-	public const int GL_MAX_PROGRAM_ADDRESS_REGISTERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ALU_INSTRUCTIONS_ARB")]
-	public const int GL_MAX_PROGRAM_ALU_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ATTRIBS_ARB")]
-	public const int GL_MAX_PROGRAM_ATTRIBS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ATTRIB_COMPONENTS_NV")]
-	public const int GL_MAX_PROGRAM_ATTRIB_COMPONENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_CALL_DEPTH_NV")]
-	public const int GL_MAX_PROGRAM_CALL_DEPTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ENV_PARAMETERS_ARB")]
-	public const int GL_MAX_PROGRAM_ENV_PARAMETERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_EXEC_INSTRUCTIONS_NV")]
-	public const int GL_MAX_PROGRAM_EXEC_INSTRUCTIONS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_GENERIC_ATTRIBS_NV")]
-	public const int GL_MAX_PROGRAM_GENERIC_ATTRIBS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_GENERIC_RESULTS_NV")]
-	public const int GL_MAX_PROGRAM_GENERIC_RESULTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_IF_DEPTH_NV")]
-	public const int GL_MAX_PROGRAM_IF_DEPTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_INSTRUCTIONS_ARB")]
-	public const int GL_MAX_PROGRAM_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_LOCAL_PARAMETERS_ARB")]
-	public const int GL_MAX_PROGRAM_LOCAL_PARAMETERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_LOOP_COUNT_NV")]
-	public const int GL_MAX_PROGRAM_LOOP_COUNT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_LOOP_DEPTH_NV")]
-	public const int GL_MAX_PROGRAM_LOOP_DEPTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_MATRICES_ARB")]
-	public const int GL_MAX_PROGRAM_MATRICES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_MATRIX_STACK_DEPTH_ARB")]
-	public const int GL_MAX_PROGRAM_MATRIX_STACK_DEPTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB")]
-	public const int GL_MAX_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB")]
-	public const int GL_MAX_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_ATTRIBS_ARB")]
-	public const int GL_MAX_PROGRAM_NATIVE_ATTRIBS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_INSTRUCTIONS_ARB")]
-	public const int GL_MAX_PROGRAM_NATIVE_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_PARAMETERS_ARB")]
-	public const int GL_MAX_PROGRAM_NATIVE_PARAMETERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_TEMPORARIES_ARB")]
-	public const int GL_MAX_PROGRAM_NATIVE_TEMPORARIES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB")]
-	public const int GL_MAX_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB")]
-	public const int GL_MAX_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_OUTPUT_VERTICES_NV")]
-	public const int GL_MAX_PROGRAM_OUTPUT_VERTICES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_PARAMETERS_ARB")]
-	public const int GL_MAX_PROGRAM_PARAMETERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_PARAMETER_BUFFER_BINDINGS_NV")]
-	public const int GL_MAX_PROGRAM_PARAMETER_BUFFER_BINDINGS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_PARAMETER_BUFFER_SIZE_NV")]
-	public const int GL_MAX_PROGRAM_PARAMETER_BUFFER_SIZE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_PATCH_ATTRIBS_NV")]
-	public const int GL_MAX_PROGRAM_PATCH_ATTRIBS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_RESULT_COMPONENTS_NV")]
-	public const int GL_MAX_PROGRAM_RESULT_COMPONENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_SUBROUTINE_NUM_NV")]
-	public const int GL_MAX_PROGRAM_SUBROUTINE_NUM_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_SUBROUTINE_PARAMETERS_NV")]
-	public const int GL_MAX_PROGRAM_SUBROUTINE_PARAMETERS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEMPORARIES_ARB")]
-	public const int GL_MAX_PROGRAM_TEMPORARIES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXEL_OFFSET")]
-	public const int GL_MAX_PROGRAM_TEXEL_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXEL_OFFSET_NV")]
-	public const int GL_MAX_PROGRAM_TEXEL_OFFSET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS")]
-	public const int GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS_ARB")]
-	public const int GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET")]
-	public const int GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET_NV")]
-	public const int GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEX_INDIRECTIONS_ARB")]
-	public const int GL_MAX_PROGRAM_TEX_INDIRECTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEX_INSTRUCTIONS_ARB")]
-	public const int GL_MAX_PROGRAM_TEX_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TOTAL_OUTPUT_COMPONENTS_NV")]
-	public const int GL_MAX_PROGRAM_TOTAL_OUTPUT_COMPONENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROJECTION_STACK_DEPTH")]
-	public const int GL_MAX_PROJECTION_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RATIONAL_EVAL_ORDER_NV")]
-	public const int GL_MAX_RATIONAL_EVAL_ORDER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RECTANGLE_TEXTURE_SIZE")]
-	public const int GL_MAX_RECTANGLE_TEXTURE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RECTANGLE_TEXTURE_SIZE_ARB")]
-	public const int GL_MAX_RECTANGLE_TEXTURE_SIZE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RECTANGLE_TEXTURE_SIZE_NV")]
-	public const int GL_MAX_RECTANGLE_TEXTURE_SIZE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RENDERBUFFER_SIZE")]
-	public const int GL_MAX_RENDERBUFFER_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RENDERBUFFER_SIZE_EXT")]
-	public const int GL_MAX_RENDERBUFFER_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RENDERBUFFER_SIZE_OES")]
-	public const int GL_MAX_RENDERBUFFER_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES")]
-	public const int GL_MAX_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES_ANGLE")]
-	public const int GL_MAX_SAMPLES_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES_EXT")]
-	public const int GL_MAX_SAMPLES_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES_IMG")]
-	public const int GL_MAX_SAMPLES_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES_NV")]
-	public const int GL_MAX_SAMPLES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLE_MASK_WORDS")]
-	public const int GL_MAX_SAMPLE_MASK_WORDS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLE_MASK_WORDS_NV")]
-	public const int GL_MAX_SAMPLE_MASK_WORDS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SERVER_WAIT_TIMEOUT")]
-	public const int GL_MAX_SERVER_WAIT_TIMEOUT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SERVER_WAIT_TIMEOUT_APPLE")]
-	public const int GL_MAX_SERVER_WAIT_TIMEOUT_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SHADER_BUFFER_ADDRESS_NV")]
-	public const int GL_MAX_SHADER_BUFFER_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SHADER_STORAGE_BLOCK_SIZE")]
-	public const int GL_MAX_SHADER_STORAGE_BLOCK_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS")]
-	public const int GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SHININESS_NV")]
-	public const int GL_MAX_SHININESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SPARSE_3D_TEXTURE_SIZE_AMD")]
-	public const int GL_MAX_SPARSE_3D_TEXTURE_SIZE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SPARSE_ARRAY_TEXTURE_LAYERS")]
-	public const int GL_MAX_SPARSE_ARRAY_TEXTURE_LAYERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SPARSE_TEXTURE_SIZE_AMD")]
-	public const int GL_MAX_SPARSE_TEXTURE_SIZE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SPOT_EXPONENT_NV")]
-	public const int GL_MAX_SPOT_EXPONENT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SUBROUTINES")]
-	public const int GL_MAX_SUBROUTINES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SUBROUTINE_UNIFORM_LOCATIONS")]
-	public const int GL_MAX_SUBROUTINE_UNIFORM_LOCATIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS")]
-	public const int GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS")]
-	public const int GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS")]
-	public const int GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_INPUT_COMPONENTS")]
-	public const int GL_MAX_TESS_CONTROL_INPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS")]
-	public const int GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS")]
-	public const int GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS")]
-	public const int GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS")]
-	public const int GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS")]
-	public const int GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS")]
-	public const int GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS")]
-	public const int GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS")]
-	public const int GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS")]
-	public const int GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS")]
-	public const int GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS")]
-	public const int GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS")]
-	public const int GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS")]
-	public const int GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_GEN_LEVEL")]
-	public const int GL_MAX_TESS_GEN_LEVEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_PATCH_COMPONENTS")]
-	public const int GL_MAX_TESS_PATCH_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_BUFFER_SIZE")]
-	public const int GL_MAX_TEXTURE_BUFFER_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_BUFFER_SIZE_ARB")]
-	public const int GL_MAX_TEXTURE_BUFFER_SIZE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_BUFFER_SIZE_EXT")]
-	public const int GL_MAX_TEXTURE_BUFFER_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_COORDS")]
-	public const int GL_MAX_TEXTURE_COORDS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_COORDS_ARB")]
-	public const int GL_MAX_TEXTURE_COORDS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_COORDS_NV")]
-	public const int GL_MAX_TEXTURE_COORDS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_IMAGE_UNITS")]
-	public const int GL_MAX_TEXTURE_IMAGE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_IMAGE_UNITS_ARB")]
-	public const int GL_MAX_TEXTURE_IMAGE_UNITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_IMAGE_UNITS_NV")]
-	public const int GL_MAX_TEXTURE_IMAGE_UNITS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_LOD_BIAS")]
-	public const int GL_MAX_TEXTURE_LOD_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_LOD_BIAS_EXT")]
-	public const int GL_MAX_TEXTURE_LOD_BIAS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT")]
-	public const int GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_SIZE")]
-	public const int GL_MAX_TEXTURE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_STACK_DEPTH")]
-	public const int GL_MAX_TEXTURE_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_UNITS")]
-	public const int GL_MAX_TEXTURE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_UNITS_ARB")]
-	public const int GL_MAX_TEXTURE_UNITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRACK_MATRICES_NV")]
-	public const int GL_MAX_TRACK_MATRICES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRACK_MATRIX_STACK_DEPTH_NV")]
-	public const int GL_MAX_TRACK_MATRIX_STACK_DEPTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_BUFFERS")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_EXT")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_NV")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_EXT")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_NV")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_EXT")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_NV")]
-	public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_UNIFORM_BLOCK_SIZE")]
-	public const int GL_MAX_UNIFORM_BLOCK_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_UNIFORM_BUFFER_BINDINGS")]
-	public const int GL_MAX_UNIFORM_BUFFER_BINDINGS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_UNIFORM_LOCATIONS")]
-	public const int GL_MAX_UNIFORM_LOCATIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_COMPONENTS")]
-	public const int GL_MAX_VARYING_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_COMPONENTS_EXT")]
-	public const int GL_MAX_VARYING_COMPONENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_FLOATS")]
-	public const int GL_MAX_VARYING_FLOATS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_FLOATS_ARB")]
-	public const int GL_MAX_VARYING_FLOATS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_VECTORS")]
-	public const int GL_MAX_VARYING_VECTORS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ARRAY_RANGE_ELEMENT_NV")]
-	public const int GL_MAX_VERTEX_ARRAY_RANGE_ELEMENT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATOMIC_COUNTERS")]
-	public const int GL_MAX_VERTEX_ATOMIC_COUNTERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS")]
-	public const int GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATTRIBS")]
-	public const int GL_MAX_VERTEX_ATTRIBS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATTRIBS_ARB")]
-	public const int GL_MAX_VERTEX_ATTRIBS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATTRIB_BINDINGS")]
-	public const int GL_MAX_VERTEX_ATTRIB_BINDINGS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATTRIB_RELATIVE_OFFSET")]
-	public const int GL_MAX_VERTEX_ATTRIB_RELATIVE_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_BINDABLE_UNIFORMS_EXT")]
-	public const int GL_MAX_VERTEX_BINDABLE_UNIFORMS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_IMAGE_UNIFORMS")]
-	public const int GL_MAX_VERTEX_IMAGE_UNIFORMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_OUTPUT_COMPONENTS")]
-	public const int GL_MAX_VERTEX_OUTPUT_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_INSTRUCTIONS_EXT")]
-	public const int GL_MAX_VERTEX_SHADER_INSTRUCTIONS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_INVARIANTS_EXT")]
-	public const int GL_MAX_VERTEX_SHADER_INVARIANTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_LOCALS_EXT")]
-	public const int GL_MAX_VERTEX_SHADER_LOCALS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_LOCAL_CONSTANTS_EXT")]
-	public const int GL_MAX_VERTEX_SHADER_LOCAL_CONSTANTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS")]
-	public const int GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_VARIANTS_EXT")]
-	public const int GL_MAX_VERTEX_SHADER_VARIANTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_STREAMS")]
-	public const int GL_MAX_VERTEX_STREAMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_STREAMS_ATI")]
-	public const int GL_MAX_VERTEX_STREAMS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS")]
-	public const int GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS_ARB")]
-	public const int GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNIFORM_BLOCKS")]
-	public const int GL_MAX_VERTEX_UNIFORM_BLOCKS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNIFORM_COMPONENTS")]
-	public const int GL_MAX_VERTEX_UNIFORM_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNIFORM_COMPONENTS_ARB")]
-	public const int GL_MAX_VERTEX_UNIFORM_COMPONENTS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNIFORM_VECTORS")]
-	public const int GL_MAX_VERTEX_UNIFORM_VECTORS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNITS_ARB")]
-	public const int GL_MAX_VERTEX_UNITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNITS_OES")]
-	public const int GL_MAX_VERTEX_UNITS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_VARYING_COMPONENTS_ARB")]
-	public const int GL_MAX_VERTEX_VARYING_COMPONENTS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_VARYING_COMPONENTS_EXT")]
-	public const int GL_MAX_VERTEX_VARYING_COMPONENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VIEWPORTS")]
-	public const int GL_MAX_VIEWPORTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VIEWPORT_DIMS")]
-	public const int GL_MAX_VIEWPORT_DIMS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_WIDTH")]
-	public const int GL_MAX_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MEDIUM_FLOAT")]
-	public const int GL_MEDIUM_FLOAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MEDIUM_INT")]
-	public const int GL_MEDIUM_INT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN")]
-	public const int GL_MIN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX")]
-	public const int GL_MINMAX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_EXT")]
-	public const int GL_MINMAX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_FORMAT")]
-	public const int GL_MINMAX_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_FORMAT_EXT")]
-	public const int GL_MINMAX_FORMAT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_SINK")]
-	public const int GL_MINMAX_SINK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_SINK_EXT")]
-	public const int GL_MINMAX_SINK_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MINOR_VERSION")]
-	public const int GL_MINOR_VERSION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_EXT")]
-	public const int GL_MIN_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_FRAGMENT_INTERPOLATION_OFFSET")]
-	public const int GL_MIN_FRAGMENT_INTERPOLATION_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_NV")]
-	public const int GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_LOD_WARNING_AMD")]
-	public const int GL_MIN_LOD_WARNING_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_MAP_BUFFER_ALIGNMENT")]
-	public const int GL_MIN_MAP_BUFFER_ALIGNMENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_PROGRAM_TEXEL_OFFSET")]
-	public const int GL_MIN_PROGRAM_TEXEL_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_PROGRAM_TEXEL_OFFSET_NV")]
-	public const int GL_MIN_PROGRAM_TEXEL_OFFSET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET")]
-	public const int GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET_NV")]
-	public const int GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_SAMPLE_SHADING_VALUE_ARB")]
-	public const int GL_MIN_SAMPLE_SHADING_VALUE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_SPARSE_LEVEL_AMD")]
-	public const int GL_MIN_SPARSE_LEVEL_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIPMAP")]
-	public const int GL_MIPMAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRRORED_REPEAT")]
-	public const int GL_MIRRORED_REPEAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRRORED_REPEAT_ARB")]
-	public const int GL_MIRRORED_REPEAT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRRORED_REPEAT_IBM")]
-	public const int GL_MIRRORED_REPEAT_IBM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRRORED_REPEAT_OES")]
-	public const int GL_MIRRORED_REPEAT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_ATI")]
-	public const int GL_MIRROR_CLAMP_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_EXT")]
-	public const int GL_MIRROR_CLAMP_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_TO_BORDER_EXT")]
-	public const int GL_MIRROR_CLAMP_TO_BORDER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_TO_EDGE_ATI")]
-	public const int GL_MIRROR_CLAMP_TO_EDGE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_TO_EDGE_EXT")]
-	public const int GL_MIRROR_CLAMP_TO_EDGE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MITER_REVERT_NV")]
-	public const int GL_MITER_REVERT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MITER_TRUNCATE_NV")]
-	public const int GL_MITER_TRUNCATE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW")]
-	public const int GL_MODELVIEW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW0_ARB")]
-	public const int GL_MODELVIEW0_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW10_ARB")]
-	public const int GL_MODELVIEW10_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW11_ARB")]
-	public const int GL_MODELVIEW11_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW12_ARB")]
-	public const int GL_MODELVIEW12_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW13_ARB")]
-	public const int GL_MODELVIEW13_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW14_ARB")]
-	public const int GL_MODELVIEW14_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW15_ARB")]
-	public const int GL_MODELVIEW15_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW16_ARB")]
-	public const int GL_MODELVIEW16_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW17_ARB")]
-	public const int GL_MODELVIEW17_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW18_ARB")]
-	public const int GL_MODELVIEW18_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW19_ARB")]
-	public const int GL_MODELVIEW19_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW1_ARB")]
-	public const int GL_MODELVIEW1_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW1_EXT")]
-	public const int GL_MODELVIEW1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW1_STACK_DEPTH_EXT")]
-	public const int GL_MODELVIEW1_STACK_DEPTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW20_ARB")]
-	public const int GL_MODELVIEW20_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW21_ARB")]
-	public const int GL_MODELVIEW21_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW22_ARB")]
-	public const int GL_MODELVIEW22_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW23_ARB")]
-	public const int GL_MODELVIEW23_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW24_ARB")]
-	public const int GL_MODELVIEW24_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW25_ARB")]
-	public const int GL_MODELVIEW25_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW26_ARB")]
-	public const int GL_MODELVIEW26_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW27_ARB")]
-	public const int GL_MODELVIEW27_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW28_ARB")]
-	public const int GL_MODELVIEW28_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW29_ARB")]
-	public const int GL_MODELVIEW29_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW2_ARB")]
-	public const int GL_MODELVIEW2_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW30_ARB")]
-	public const int GL_MODELVIEW30_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW31_ARB")]
-	public const int GL_MODELVIEW31_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW3_ARB")]
-	public const int GL_MODELVIEW3_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW4_ARB")]
-	public const int GL_MODELVIEW4_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW5_ARB")]
-	public const int GL_MODELVIEW5_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW6_ARB")]
-	public const int GL_MODELVIEW6_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW7_ARB")]
-	public const int GL_MODELVIEW7_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW8_ARB")]
-	public const int GL_MODELVIEW8_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW9_ARB")]
-	public const int GL_MODELVIEW9_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_MATRIX")]
-	public const int GL_MODELVIEW_MATRIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_MATRIX1_EXT")]
-	public const int GL_MODELVIEW_MATRIX1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_MATRIX_FLOAT_AS_INT_BITS_OES")]
-	public const int GL_MODELVIEW_MATRIX_FLOAT_AS_INT_BITS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_PROJECTION_NV")]
-	public const int GL_MODELVIEW_PROJECTION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_STACK_DEPTH")]
-	public const int GL_MODELVIEW_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE")]
-	public const int GL_MODULATE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE_ADD_ATI")]
-	public const int GL_MODULATE_ADD_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE_COLOR_IMG")]
-	public const int GL_MODULATE_COLOR_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE_SIGNED_ADD_ATI")]
-	public const int GL_MODULATE_SIGNED_ADD_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE_SUBTRACT_ATI")]
-	public const int GL_MODULATE_SUBTRACT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MOVE_TO_CONTINUES_NV")]
-	public const int GL_MOVE_TO_CONTINUES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MOVE_TO_NV")]
-	public const int GL_MOVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MOVE_TO_RESETS_NV")]
-	public const int GL_MOVE_TO_RESETS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MOV_ATI")]
-	public const int GL_MOV_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULT")]
-	public const int GL_MULT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE")]
-	public const int GL_MULTISAMPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_3DFX")]
-	public const int GL_MULTISAMPLE_3DFX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_ARB")]
-	public const int GL_MULTISAMPLE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_BIT")]
-	public const int GL_MULTISAMPLE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_BIT_3DFX")]
-	public const int GL_MULTISAMPLE_BIT_3DFX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_BIT_ARB")]
-	public const int GL_MULTISAMPLE_BIT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_BIT_EXT")]
-	public const int GL_MULTISAMPLE_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_COVERAGE_MODES_NV")]
-	public const int GL_MULTISAMPLE_COVERAGE_MODES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_EXT")]
-	public const int GL_MULTISAMPLE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_FILTER_HINT_NV")]
-	public const int GL_MULTISAMPLE_FILTER_HINT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_SGIS")]
-	public const int GL_MULTISAMPLE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTIVIEW_EXT")]
-	public const int GL_MULTIVIEW_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MUL_ATI")]
-	public const int GL_MUL_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_MVP_MATRIX_EXT")]
-	public const int GL_MVP_MATRIX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_N3F_V3F")]
-	public const int GL_N3F_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NAMED_STRING_LENGTH_ARB")]
-	public const int GL_NAMED_STRING_LENGTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NAMED_STRING_TYPE_ARB")]
-	public const int GL_NAMED_STRING_TYPE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NAME_LENGTH")]
-	public const int GL_NAME_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NAME_STACK_DEPTH")]
-	public const int GL_NAME_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NAND")]
-	public const int GL_NAND;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST")]
-	public const int GL_NEAREST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST_CLIPMAP_LINEAR_SGIX")]
-	public const int GL_NEAREST_CLIPMAP_LINEAR_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST_CLIPMAP_NEAREST_SGIX")]
-	public const int GL_NEAREST_CLIPMAP_NEAREST_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST_MIPMAP_LINEAR")]
-	public const int GL_NEAREST_MIPMAP_LINEAR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST_MIPMAP_NEAREST")]
-	public const int GL_NEAREST_MIPMAP_NEAREST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATE_BIT_ATI")]
-	public const int GL_NEGATE_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_ONE_EXT")]
-	public const int GL_NEGATIVE_ONE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_W_EXT")]
-	public const int GL_NEGATIVE_W_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_X_EXT")]
-	public const int GL_NEGATIVE_X_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_Y_EXT")]
-	public const int GL_NEGATIVE_Y_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_Z_EXT")]
-	public const int GL_NEGATIVE_Z_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEVER")]
-	public const int GL_NEVER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEXT_BUFFER_NV")]
-	public const int GL_NEXT_BUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NEXT_VIDEO_CAPTURE_BUFFER_STATUS_NV")]
-	public const int GL_NEXT_VIDEO_CAPTURE_BUFFER_STATUS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NICEST")]
-	public const int GL_NICEST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NONE")]
-	public const int GL_NONE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NOOP")]
-	public const int GL_NOOP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NOR")]
-	public const int GL_NOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMALIZE")]
-	public const int GL_NORMALIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMALIZED_RANGE_EXT")]
-	public const int GL_NORMALIZED_RANGE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY")]
-	public const int GL_NORMAL_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_ADDRESS_NV")]
-	public const int GL_NORMAL_ARRAY_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_BUFFER_BINDING")]
-	public const int GL_NORMAL_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_BUFFER_BINDING_ARB")]
-	public const int GL_NORMAL_ARRAY_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_COUNT_EXT")]
-	public const int GL_NORMAL_ARRAY_COUNT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_EXT")]
-	public const int GL_NORMAL_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_LENGTH_NV")]
-	public const int GL_NORMAL_ARRAY_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_PARALLEL_POINTERS_INTEL")]
-	public const int GL_NORMAL_ARRAY_PARALLEL_POINTERS_INTEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_POINTER")]
-	public const int GL_NORMAL_ARRAY_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_POINTER_EXT")]
-	public const int GL_NORMAL_ARRAY_POINTER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_STRIDE")]
-	public const int GL_NORMAL_ARRAY_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_STRIDE_EXT")]
-	public const int GL_NORMAL_ARRAY_STRIDE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_TYPE")]
-	public const int GL_NORMAL_ARRAY_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_TYPE_EXT")]
-	public const int GL_NORMAL_ARRAY_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_MAP")]
-	public const int GL_NORMAL_MAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_MAP_ARB")]
-	public const int GL_NORMAL_MAP_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_MAP_EXT")]
-	public const int GL_NORMAL_MAP_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_MAP_OES")]
-	public const int GL_NORMAL_MAP_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NOTEQUAL")]
-	public const int GL_NOTEQUAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NO_ERROR")]
-	public const int GL_NO_ERROR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NO_RESET_NOTIFICATION_ARB")]
-	public const int GL_NO_RESET_NOTIFICATION_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_ACTIVE_VARIABLES")]
-	public const int GL_NUM_ACTIVE_VARIABLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_COMPATIBLE_SUBROUTINES")]
-	public const int GL_NUM_COMPATIBLE_SUBROUTINES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_COMPRESSED_TEXTURE_FORMATS")]
-	public const int GL_NUM_COMPRESSED_TEXTURE_FORMATS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB")]
-	public const int GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_EXTENSIONS")]
-	public const int GL_NUM_EXTENSIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_FILL_STREAMS_NV")]
-	public const int GL_NUM_FILL_STREAMS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_FRAGMENT_CONSTANTS_ATI")]
-	public const int GL_NUM_FRAGMENT_CONSTANTS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_FRAGMENT_REGISTERS_ATI")]
-	public const int GL_NUM_FRAGMENT_REGISTERS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_GENERAL_COMBINERS_NV")]
-	public const int GL_NUM_GENERAL_COMBINERS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_INPUT_INTERPOLATOR_COMPONENTS_ATI")]
-	public const int GL_NUM_INPUT_INTERPOLATOR_COMPONENTS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_INSTRUCTIONS_PER_PASS_ATI")]
-	public const int GL_NUM_INSTRUCTIONS_PER_PASS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_INSTRUCTIONS_TOTAL_ATI")]
-	public const int GL_NUM_INSTRUCTIONS_TOTAL_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_LOOPBACK_COMPONENTS_ATI")]
-	public const int GL_NUM_LOOPBACK_COMPONENTS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_PASSES_ATI")]
-	public const int GL_NUM_PASSES_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_PROGRAM_BINARY_FORMATS")]
-	public const int GL_NUM_PROGRAM_BINARY_FORMATS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_PROGRAM_BINARY_FORMATS_OES")]
-	public const int GL_NUM_PROGRAM_BINARY_FORMATS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_SAMPLE_COUNTS")]
-	public const int GL_NUM_SAMPLE_COUNTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_SHADER_BINARY_FORMATS")]
-	public const int GL_NUM_SHADER_BINARY_FORMATS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_SHADING_LANGUAGE_VERSIONS")]
-	public const int GL_NUM_SHADING_LANGUAGE_VERSIONS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_VIDEO_CAPTURE_STREAMS_NV")]
-	public const int GL_NUM_VIDEO_CAPTURE_STREAMS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ACTIVE_ATTRIBUTES_ARB")]
-	public const int GL_OBJECT_ACTIVE_ATTRIBUTES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ACTIVE_ATTRIBUTE_MAX_LENGTH_ARB")]
-	public const int GL_OBJECT_ACTIVE_ATTRIBUTE_MAX_LENGTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ACTIVE_UNIFORMS_ARB")]
-	public const int GL_OBJECT_ACTIVE_UNIFORMS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ACTIVE_UNIFORM_MAX_LENGTH_ARB")]
-	public const int GL_OBJECT_ACTIVE_UNIFORM_MAX_LENGTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ATTACHED_OBJECTS_ARB")]
-	public const int GL_OBJECT_ATTACHED_OBJECTS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_BUFFER_SIZE_ATI")]
-	public const int GL_OBJECT_BUFFER_SIZE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_BUFFER_USAGE_ATI")]
-	public const int GL_OBJECT_BUFFER_USAGE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_COMPILE_STATUS_ARB")]
-	public const int GL_OBJECT_COMPILE_STATUS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_DELETE_STATUS_ARB")]
-	public const int GL_OBJECT_DELETE_STATUS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_DISTANCE_TO_LINE_SGIS")]
-	public const int GL_OBJECT_DISTANCE_TO_LINE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_DISTANCE_TO_POINT_SGIS")]
-	public const int GL_OBJECT_DISTANCE_TO_POINT_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_INFO_LOG_LENGTH_ARB")]
-	public const int GL_OBJECT_INFO_LOG_LENGTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_LINEAR")]
-	public const int GL_OBJECT_LINEAR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_LINE_SGIS")]
-	public const int GL_OBJECT_LINE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_LINK_STATUS_ARB")]
-	public const int GL_OBJECT_LINK_STATUS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_PLANE")]
-	public const int GL_OBJECT_PLANE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_POINT_SGIS")]
-	public const int GL_OBJECT_POINT_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_SHADER_SOURCE_LENGTH_ARB")]
-	public const int GL_OBJECT_SHADER_SOURCE_LENGTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_SUBTYPE_ARB")]
-	public const int GL_OBJECT_SUBTYPE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_TYPE")]
-	public const int GL_OBJECT_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_TYPE_APPLE")]
-	public const int GL_OBJECT_TYPE_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_TYPE_ARB")]
-	public const int GL_OBJECT_TYPE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_VALIDATE_STATUS_ARB")]
-	public const int GL_OBJECT_VALIDATE_STATUS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET")]
-	public const int GL_OFFSET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_HILO_PROJECTIVE_TEXTURE_2D_NV")]
-	public const int GL_OFFSET_HILO_PROJECTIVE_TEXTURE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_HILO_PROJECTIVE_TEXTURE_RECTANGLE_NV")]
-	public const int GL_OFFSET_HILO_PROJECTIVE_TEXTURE_RECTANGLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_HILO_TEXTURE_2D_NV")]
-	public const int GL_OFFSET_HILO_TEXTURE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_HILO_TEXTURE_RECTANGLE_NV")]
-	public const int GL_OFFSET_HILO_TEXTURE_RECTANGLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_PROJECTIVE_TEXTURE_2D_NV")]
-	public const int GL_OFFSET_PROJECTIVE_TEXTURE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_PROJECTIVE_TEXTURE_2D_SCALE_NV")]
-	public const int GL_OFFSET_PROJECTIVE_TEXTURE_2D_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_PROJECTIVE_TEXTURE_RECTANGLE_NV")]
-	public const int GL_OFFSET_PROJECTIVE_TEXTURE_RECTANGLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_PROJECTIVE_TEXTURE_RECTANGLE_SCALE_NV")]
-	public const int GL_OFFSET_PROJECTIVE_TEXTURE_RECTANGLE_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_2D_NV")]
-	public const int GL_OFFSET_TEXTURE_2D_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_BIAS_NV")]
-	public const int GL_OFFSET_TEXTURE_BIAS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_MATRIX_NV")]
-	public const int GL_OFFSET_TEXTURE_MATRIX_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_RECTANGLE_NV")]
-	public const int GL_OFFSET_TEXTURE_RECTANGLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_RECTANGLE_SCALE_NV")]
-	public const int GL_OFFSET_TEXTURE_RECTANGLE_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_SCALE_NV")]
-	public const int GL_OFFSET_TEXTURE_SCALE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE")]
-	public const int GL_ONE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_EXT")]
-	public const int GL_ONE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_CONSTANT_ALPHA")]
-	public const int GL_ONE_MINUS_CONSTANT_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_CONSTANT_ALPHA_EXT")]
-	public const int GL_ONE_MINUS_CONSTANT_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_CONSTANT_COLOR")]
-	public const int GL_ONE_MINUS_CONSTANT_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_CONSTANT_COLOR_EXT")]
-	public const int GL_ONE_MINUS_CONSTANT_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_DST_ALPHA")]
-	public const int GL_ONE_MINUS_DST_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_DST_COLOR")]
-	public const int GL_ONE_MINUS_DST_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_SRC1_ALPHA")]
-	public const int GL_ONE_MINUS_SRC1_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_SRC1_COLOR")]
-	public const int GL_ONE_MINUS_SRC1_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_SRC_ALPHA")]
-	public const int GL_ONE_MINUS_SRC_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_SRC_COLOR")]
-	public const int GL_ONE_MINUS_SRC_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND0_ALPHA")]
-	public const int GL_OPERAND0_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND0_ALPHA_EXT")]
-	public const int GL_OPERAND0_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND0_RGB")]
-	public const int GL_OPERAND0_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND0_RGB_EXT")]
-	public const int GL_OPERAND0_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND1_ALPHA")]
-	public const int GL_OPERAND1_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND1_ALPHA_EXT")]
-	public const int GL_OPERAND1_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND1_RGB")]
-	public const int GL_OPERAND1_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND1_RGB_EXT")]
-	public const int GL_OPERAND1_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND2_ALPHA")]
-	public const int GL_OPERAND2_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND2_ALPHA_EXT")]
-	public const int GL_OPERAND2_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND2_RGB")]
-	public const int GL_OPERAND2_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND2_RGB_EXT")]
-	public const int GL_OPERAND2_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND3_ALPHA_NV")]
-	public const int GL_OPERAND3_ALPHA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND3_RGB_NV")]
-	public const int GL_OPERAND3_RGB_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_ADD_EXT")]
-	public const int GL_OP_ADD_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_CLAMP_EXT")]
-	public const int GL_OP_CLAMP_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_CROSS_PRODUCT_EXT")]
-	public const int GL_OP_CROSS_PRODUCT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_DOT3_EXT")]
-	public const int GL_OP_DOT3_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_DOT4_EXT")]
-	public const int GL_OP_DOT4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_EXP_BASE_2_EXT")]
-	public const int GL_OP_EXP_BASE_2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_FLOOR_EXT")]
-	public const int GL_OP_FLOOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_FRAC_EXT")]
-	public const int GL_OP_FRAC_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_INDEX_EXT")]
-	public const int GL_OP_INDEX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_LOG_BASE_2_EXT")]
-	public const int GL_OP_LOG_BASE_2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MADD_EXT")]
-	public const int GL_OP_MADD_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MAX_EXT")]
-	public const int GL_OP_MAX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MIN_EXT")]
-	public const int GL_OP_MIN_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MOV_EXT")]
-	public const int GL_OP_MOV_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MULTIPLY_MATRIX_EXT")]
-	public const int GL_OP_MULTIPLY_MATRIX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MUL_EXT")]
-	public const int GL_OP_MUL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_NEGATE_EXT")]
-	public const int GL_OP_NEGATE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_POWER_EXT")]
-	public const int GL_OP_POWER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_RECIP_EXT")]
-	public const int GL_OP_RECIP_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_RECIP_SQRT_EXT")]
-	public const int GL_OP_RECIP_SQRT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_ROUND_EXT")]
-	public const int GL_OP_ROUND_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_SET_GE_EXT")]
-	public const int GL_OP_SET_GE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_SET_LT_EXT")]
-	public const int GL_OP_SET_LT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_SUB_EXT")]
-	public const int GL_OP_SUB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OR")]
-	public const int GL_OR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ORDER")]
-	public const int GL_ORDER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OR_INVERTED")]
-	public const int GL_OR_INVERTED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OR_REVERSE")]
-	public const int GL_OR_REVERSE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_COLOR0_EXT")]
-	public const int GL_OUTPUT_COLOR0_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_COLOR1_EXT")]
-	public const int GL_OUTPUT_COLOR1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_FOG_EXT")]
-	public const int GL_OUTPUT_FOG_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD0_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD0_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD10_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD10_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD11_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD11_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD12_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD12_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD13_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD13_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD14_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD14_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD15_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD15_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD16_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD16_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD17_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD17_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD18_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD18_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD19_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD19_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD1_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD20_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD20_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD21_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD21_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD22_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD22_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD23_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD23_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD24_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD24_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD25_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD25_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD26_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD26_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD27_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD27_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD28_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD28_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD29_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD29_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD2_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD30_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD30_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD31_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD31_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD3_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD3_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD4_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD5_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD5_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD6_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD6_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD7_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD7_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD8_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD9_EXT")]
-	public const int GL_OUTPUT_TEXTURE_COORD9_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_VERTEX_EXT")]
-	public const int GL_OUTPUT_VERTEX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_OUT_OF_MEMORY")]
-	public const int GL_OUT_OF_MEMORY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_ALIGNMENT")]
-	public const int GL_PACK_ALIGNMENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_CMYK_HINT_EXT")]
-	public const int GL_PACK_CMYK_HINT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_BLOCK_DEPTH")]
-	public const int GL_PACK_COMPRESSED_BLOCK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_BLOCK_HEIGHT")]
-	public const int GL_PACK_COMPRESSED_BLOCK_HEIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_BLOCK_SIZE")]
-	public const int GL_PACK_COMPRESSED_BLOCK_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_BLOCK_WIDTH")]
-	public const int GL_PACK_COMPRESSED_BLOCK_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_SIZE_SGIX")]
-	public const int GL_PACK_COMPRESSED_SIZE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_IMAGE_DEPTH_SGIS")]
-	public const int GL_PACK_IMAGE_DEPTH_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_IMAGE_HEIGHT")]
-	public const int GL_PACK_IMAGE_HEIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_IMAGE_HEIGHT_EXT")]
-	public const int GL_PACK_IMAGE_HEIGHT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_INVERT_MESA")]
-	public const int GL_PACK_INVERT_MESA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_LSB_FIRST")]
-	public const int GL_PACK_LSB_FIRST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_MAX_COMPRESSED_SIZE_SGIX")]
-	public const int GL_PACK_MAX_COMPRESSED_SIZE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_RESAMPLE_OML")]
-	public const int GL_PACK_RESAMPLE_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_RESAMPLE_SGIX")]
-	public const int GL_PACK_RESAMPLE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_REVERSE_ROW_ORDER_ANGLE")]
-	public const int GL_PACK_REVERSE_ROW_ORDER_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_ROW_BYTES_APPLE")]
-	public const int GL_PACK_ROW_BYTES_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_ROW_LENGTH")]
-	public const int GL_PACK_ROW_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_IMAGES")]
-	public const int GL_PACK_SKIP_IMAGES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_IMAGES_EXT")]
-	public const int GL_PACK_SKIP_IMAGES_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_PIXELS")]
-	public const int GL_PACK_SKIP_PIXELS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_ROWS")]
-	public const int GL_PACK_SKIP_ROWS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_VOLUMES_SGIS")]
-	public const int GL_PACK_SKIP_VOLUMES_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SUBSAMPLE_RATE_SGIX")]
-	public const int GL_PACK_SUBSAMPLE_RATE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SWAP_BYTES")]
-	public const int GL_PACK_SWAP_BYTES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_R5_G6_B5_OES")]
-	public const int GL_PALETTE4_R5_G6_B5_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_RGB5_A1_OES")]
-	public const int GL_PALETTE4_RGB5_A1_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_RGB8_OES")]
-	public const int GL_PALETTE4_RGB8_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_RGBA4_OES")]
-	public const int GL_PALETTE4_RGBA4_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_RGBA8_OES")]
-	public const int GL_PALETTE4_RGBA8_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_R5_G6_B5_OES")]
-	public const int GL_PALETTE8_R5_G6_B5_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_RGB5_A1_OES")]
-	public const int GL_PALETTE8_RGB5_A1_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_RGB8_OES")]
-	public const int GL_PALETTE8_RGB8_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_RGBA4_OES")]
-	public const int GL_PALETTE8_RGBA4_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_RGBA8_OES")]
-	public const int GL_PALETTE8_RGBA8_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PARALLEL_ARRAYS_INTEL")]
-	public const int GL_PARALLEL_ARRAYS_INTEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PARTIAL_SUCCESS_NV")]
-	public const int GL_PARTIAL_SUCCESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PASS_THROUGH_NV")]
-	public const int GL_PASS_THROUGH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PASS_THROUGH_TOKEN")]
-	public const int GL_PASS_THROUGH_TOKEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATCHES")]
-	public const int GL_PATCHES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATCH_DEFAULT_INNER_LEVEL")]
-	public const int GL_PATCH_DEFAULT_INNER_LEVEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATCH_DEFAULT_OUTER_LEVEL")]
-	public const int GL_PATCH_DEFAULT_OUTER_LEVEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATCH_VERTICES")]
-	public const int GL_PATCH_VERTICES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_CLIENT_LENGTH_NV")]
-	public const int GL_PATH_CLIENT_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_COMMAND_COUNT_NV")]
-	public const int GL_PATH_COMMAND_COUNT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_COMPUTED_LENGTH_NV")]
-	public const int GL_PATH_COMPUTED_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_COORD_COUNT_NV")]
-	public const int GL_PATH_COORD_COUNT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_COVER_DEPTH_FUNC_NV")]
-	public const int GL_PATH_COVER_DEPTH_FUNC_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_DASH_ARRAY_COUNT_NV")]
-	public const int GL_PATH_DASH_ARRAY_COUNT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_DASH_CAPS_NV")]
-	public const int GL_PATH_DASH_CAPS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_DASH_OFFSET_NV")]
-	public const int GL_PATH_DASH_OFFSET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_DASH_OFFSET_RESET_NV")]
-	public const int GL_PATH_DASH_OFFSET_RESET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_END_CAPS_NV")]
-	public const int GL_PATH_END_CAPS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_ERROR_POSITION_NV")]
-	public const int GL_PATH_ERROR_POSITION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FILL_BOUNDING_BOX_NV")]
-	public const int GL_PATH_FILL_BOUNDING_BOX_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FILL_COVER_MODE_NV")]
-	public const int GL_PATH_FILL_COVER_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FILL_MASK_NV")]
-	public const int GL_PATH_FILL_MASK_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FILL_MODE_NV")]
-	public const int GL_PATH_FILL_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FOG_GEN_MODE_NV")]
-	public const int GL_PATH_FOG_GEN_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FORMAT_PS_NV")]
-	public const int GL_PATH_FORMAT_PS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FORMAT_SVG_NV")]
-	public const int GL_PATH_FORMAT_SVG_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_GEN_COEFF_NV")]
-	public const int GL_PATH_GEN_COEFF_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_GEN_COLOR_FORMAT_NV")]
-	public const int GL_PATH_GEN_COLOR_FORMAT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_GEN_COMPONENTS_NV")]
-	public const int GL_PATH_GEN_COMPONENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_GEN_MODE_NV")]
-	public const int GL_PATH_GEN_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_INITIAL_DASH_CAP_NV")]
-	public const int GL_PATH_INITIAL_DASH_CAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_INITIAL_END_CAP_NV")]
-	public const int GL_PATH_INITIAL_END_CAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_JOIN_STYLE_NV")]
-	public const int GL_PATH_JOIN_STYLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_MITER_LIMIT_NV")]
-	public const int GL_PATH_MITER_LIMIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_OBJECT_BOUNDING_BOX_NV")]
-	public const int GL_PATH_OBJECT_BOUNDING_BOX_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_DEPTH_OFFSET_FACTOR_NV")]
-	public const int GL_PATH_STENCIL_DEPTH_OFFSET_FACTOR_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_DEPTH_OFFSET_UNITS_NV")]
-	public const int GL_PATH_STENCIL_DEPTH_OFFSET_UNITS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_FUNC_NV")]
-	public const int GL_PATH_STENCIL_FUNC_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_REF_NV")]
-	public const int GL_PATH_STENCIL_REF_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_VALUE_MASK_NV")]
-	public const int GL_PATH_STENCIL_VALUE_MASK_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STROKE_BOUNDING_BOX_NV")]
-	public const int GL_PATH_STROKE_BOUNDING_BOX_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STROKE_COVER_MODE_NV")]
-	public const int GL_PATH_STROKE_COVER_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STROKE_MASK_NV")]
-	public const int GL_PATH_STROKE_MASK_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STROKE_WIDTH_NV")]
-	public const int GL_PATH_STROKE_WIDTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_TERMINAL_DASH_CAP_NV")]
-	public const int GL_PATH_TERMINAL_DASH_CAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_TERMINAL_END_CAP_NV")]
-	public const int GL_PATH_TERMINAL_END_CAP_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PERCENTAGE_AMD")]
-	public const int GL_PERCENTAGE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFMON_GLOBAL_MODE_QCOM")]
-	public const int GL_PERFMON_GLOBAL_MODE_QCOM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFMON_RESULT_AMD")]
-	public const int GL_PERFMON_RESULT_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFMON_RESULT_AVAILABLE_AMD")]
-	public const int GL_PERFMON_RESULT_AVAILABLE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFMON_RESULT_SIZE_AMD")]
-	public const int GL_PERFMON_RESULT_SIZE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFORMANCE_MONITOR_AMD")]
-	public const int GL_PERFORMANCE_MONITOR_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PERSPECTIVE_CORRECTION_HINT")]
-	public const int GL_PERSPECTIVE_CORRECTION_HINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PERTURB_EXT")]
-	public const int GL_PERTURB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PER_STAGE_CONSTANTS_NV")]
-	public const int GL_PER_STAGE_CONSTANTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_BUFFER_BARRIER_BIT")]
-	public const int GL_PIXEL_BUFFER_BARRIER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_BUFFER_BARRIER_BIT_EXT")]
-	public const int GL_PIXEL_BUFFER_BARRIER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_COUNTER_BITS_NV")]
-	public const int GL_PIXEL_COUNTER_BITS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_COUNT_AVAILABLE_NV")]
-	public const int GL_PIXEL_COUNT_AVAILABLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_COUNT_NV")]
-	public const int GL_PIXEL_COUNT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_CUBIC_WEIGHT_EXT")]
-	public const int GL_PIXEL_CUBIC_WEIGHT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_FRAGMENT_ALPHA_SOURCE_SGIS")]
-	public const int GL_PIXEL_FRAGMENT_ALPHA_SOURCE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_FRAGMENT_RGB_SOURCE_SGIS")]
-	public const int GL_PIXEL_FRAGMENT_RGB_SOURCE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_GROUP_COLOR_SGIS")]
-	public const int GL_PIXEL_GROUP_COLOR_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAG_FILTER_EXT")]
-	public const int GL_PIXEL_MAG_FILTER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_A_TO_A")]
-	public const int GL_PIXEL_MAP_A_TO_A;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_A_TO_A_SIZE")]
-	public const int GL_PIXEL_MAP_A_TO_A_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_B_TO_B")]
-	public const int GL_PIXEL_MAP_B_TO_B;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_B_TO_B_SIZE")]
-	public const int GL_PIXEL_MAP_B_TO_B_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_G_TO_G")]
-	public const int GL_PIXEL_MAP_G_TO_G;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_G_TO_G_SIZE")]
-	public const int GL_PIXEL_MAP_G_TO_G_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_A")]
-	public const int GL_PIXEL_MAP_I_TO_A;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_A_SIZE")]
-	public const int GL_PIXEL_MAP_I_TO_A_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_B")]
-	public const int GL_PIXEL_MAP_I_TO_B;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_B_SIZE")]
-	public const int GL_PIXEL_MAP_I_TO_B_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_G")]
-	public const int GL_PIXEL_MAP_I_TO_G;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_G_SIZE")]
-	public const int GL_PIXEL_MAP_I_TO_G_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_I")]
-	public const int GL_PIXEL_MAP_I_TO_I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_I_SIZE")]
-	public const int GL_PIXEL_MAP_I_TO_I_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_R")]
-	public const int GL_PIXEL_MAP_I_TO_R;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_R_SIZE")]
-	public const int GL_PIXEL_MAP_I_TO_R_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_R_TO_R")]
-	public const int GL_PIXEL_MAP_R_TO_R;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_R_TO_R_SIZE")]
-	public const int GL_PIXEL_MAP_R_TO_R_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_S_TO_S")]
-	public const int GL_PIXEL_MAP_S_TO_S;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_S_TO_S_SIZE")]
-	public const int GL_PIXEL_MAP_S_TO_S_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MIN_FILTER_EXT")]
-	public const int GL_PIXEL_MIN_FILTER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MODE_BIT")]
-	public const int GL_PIXEL_MODE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER")]
-	public const int GL_PIXEL_PACK_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_ARB")]
-	public const int GL_PIXEL_PACK_BUFFER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_BINDING")]
-	public const int GL_PIXEL_PACK_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_BINDING_ARB")]
-	public const int GL_PIXEL_PACK_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_BINDING_EXT")]
-	public const int GL_PIXEL_PACK_BUFFER_BINDING_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_EXT")]
-	public const int GL_PIXEL_PACK_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_SUBSAMPLE_2424_SGIX")]
-	public const int GL_PIXEL_SUBSAMPLE_2424_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_SUBSAMPLE_4242_SGIX")]
-	public const int GL_PIXEL_SUBSAMPLE_4242_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_SUBSAMPLE_4444_SGIX")]
-	public const int GL_PIXEL_SUBSAMPLE_4444_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEXTURE_SGIS")]
-	public const int GL_PIXEL_TEXTURE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_ALPHA_LS_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_ALPHA_LS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_ALPHA_MS_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_ALPHA_MS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_ALPHA_NO_REPLACE_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_ALPHA_NO_REPLACE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_ALPHA_REPLACE_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_ALPHA_REPLACE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_MODE_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_MODE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_Q_CEILING_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_Q_CEILING_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_Q_FLOOR_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_Q_FLOOR_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_Q_ROUND_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_Q_ROUND_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_SGIX")]
-	public const int GL_PIXEL_TEX_GEN_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_BEST_ALIGNMENT_SGIX")]
-	public const int GL_PIXEL_TILE_BEST_ALIGNMENT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_CACHE_INCREMENT_SGIX")]
-	public const int GL_PIXEL_TILE_CACHE_INCREMENT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_CACHE_SIZE_SGIX")]
-	public const int GL_PIXEL_TILE_CACHE_SIZE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_GRID_DEPTH_SGIX")]
-	public const int GL_PIXEL_TILE_GRID_DEPTH_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_GRID_HEIGHT_SGIX")]
-	public const int GL_PIXEL_TILE_GRID_HEIGHT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_GRID_WIDTH_SGIX")]
-	public const int GL_PIXEL_TILE_GRID_WIDTH_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_HEIGHT_SGIX")]
-	public const int GL_PIXEL_TILE_HEIGHT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_WIDTH_SGIX")]
-	public const int GL_PIXEL_TILE_WIDTH_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TRANSFORM_2D_EXT")]
-	public const int GL_PIXEL_TRANSFORM_2D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TRANSFORM_2D_MATRIX_EXT")]
-	public const int GL_PIXEL_TRANSFORM_2D_MATRIX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT")]
-	public const int GL_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER")]
-	public const int GL_PIXEL_UNPACK_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_ARB")]
-	public const int GL_PIXEL_UNPACK_BUFFER_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_BINDING")]
-	public const int GL_PIXEL_UNPACK_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_BINDING_ARB")]
-	public const int GL_PIXEL_UNPACK_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_BINDING_EXT")]
-	public const int GL_PIXEL_UNPACK_BUFFER_BINDING_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_EXT")]
-	public const int GL_PIXEL_UNPACK_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_ATI")]
-	public const int GL_PN_TRIANGLES_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_NORMAL_MODE_ATI")]
-	public const int GL_PN_TRIANGLES_NORMAL_MODE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_NORMAL_MODE_LINEAR_ATI")]
-	public const int GL_PN_TRIANGLES_NORMAL_MODE_LINEAR_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATI")]
-	public const int GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_POINT_MODE_ATI")]
-	public const int GL_PN_TRIANGLES_POINT_MODE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATI")]
-	public const int GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_POINT_MODE_LINEAR_ATI")]
-	public const int GL_PN_TRIANGLES_POINT_MODE_LINEAR_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_TESSELATION_LEVEL_ATI")]
-	public const int GL_PN_TRIANGLES_TESSELATION_LEVEL_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT")]
-	public const int GL_POINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINTS")]
-	public const int GL_POINTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_BIT")]
-	public const int GL_POINT_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_DISTANCE_ATTENUATION")]
-	public const int GL_POINT_DISTANCE_ATTENUATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_DISTANCE_ATTENUATION_ARB")]
-	public const int GL_POINT_DISTANCE_ATTENUATION_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_FADE_THRESHOLD_SIZE")]
-	public const int GL_POINT_FADE_THRESHOLD_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_FADE_THRESHOLD_SIZE_ARB")]
-	public const int GL_POINT_FADE_THRESHOLD_SIZE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_FADE_THRESHOLD_SIZE_EXT")]
-	public const int GL_POINT_FADE_THRESHOLD_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_FADE_THRESHOLD_SIZE_SGIS")]
-	public const int GL_POINT_FADE_THRESHOLD_SIZE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE")]
-	public const int GL_POINT_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_BUFFER_BINDING_OES")]
-	public const int GL_POINT_SIZE_ARRAY_BUFFER_BINDING_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_OES")]
-	public const int GL_POINT_SIZE_ARRAY_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_POINTER_OES")]
-	public const int GL_POINT_SIZE_ARRAY_POINTER_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_STRIDE_OES")]
-	public const int GL_POINT_SIZE_ARRAY_STRIDE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_TYPE_OES")]
-	public const int GL_POINT_SIZE_ARRAY_TYPE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_GRANULARITY")]
-	public const int GL_POINT_SIZE_GRANULARITY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MAX")]
-	public const int GL_POINT_SIZE_MAX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MAX_ARB")]
-	public const int GL_POINT_SIZE_MAX_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MAX_EXT")]
-	public const int GL_POINT_SIZE_MAX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MAX_SGIS")]
-	public const int GL_POINT_SIZE_MAX_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MIN")]
-	public const int GL_POINT_SIZE_MIN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MIN_ARB")]
-	public const int GL_POINT_SIZE_MIN_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MIN_EXT")]
-	public const int GL_POINT_SIZE_MIN_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MIN_SGIS")]
-	public const int GL_POINT_SIZE_MIN_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_RANGE")]
-	public const int GL_POINT_SIZE_RANGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SMOOTH")]
-	public const int GL_POINT_SMOOTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SMOOTH_HINT")]
-	public const int GL_POINT_SMOOTH_HINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE")]
-	public const int GL_POINT_SPRITE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE_ARB")]
-	public const int GL_POINT_SPRITE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE_COORD_ORIGIN")]
-	public const int GL_POINT_SPRITE_COORD_ORIGIN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE_NV")]
-	public const int GL_POINT_SPRITE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE_R_MODE_NV")]
-	public const int GL_POINT_SPRITE_R_MODE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_TOKEN")]
-	public const int GL_POINT_TOKEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON")]
-	public const int GL_POLYGON;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_BIT")]
-	public const int GL_POLYGON_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_MODE")]
-	public const int GL_POLYGON_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_BIAS_EXT")]
-	public const int GL_POLYGON_OFFSET_BIAS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_EXT")]
-	public const int GL_POLYGON_OFFSET_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_FACTOR")]
-	public const int GL_POLYGON_OFFSET_FACTOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_FACTOR_EXT")]
-	public const int GL_POLYGON_OFFSET_FACTOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_FILL")]
-	public const int GL_POLYGON_OFFSET_FILL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_LINE")]
-	public const int GL_POLYGON_OFFSET_LINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_POINT")]
-	public const int GL_POLYGON_OFFSET_POINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_UNITS")]
-	public const int GL_POLYGON_OFFSET_UNITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_SMOOTH")]
-	public const int GL_POLYGON_SMOOTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_SMOOTH_HINT")]
-	public const int GL_POLYGON_SMOOTH_HINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_STIPPLE")]
-	public const int GL_POLYGON_STIPPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_STIPPLE_BIT")]
-	public const int GL_POLYGON_STIPPLE_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_TOKEN")]
-	public const int GL_POLYGON_TOKEN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POSITION")]
-	public const int GL_POSITION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_ALPHA_BIAS")]
-	public const int GL_POST_COLOR_MATRIX_ALPHA_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_ALPHA_BIAS_SGI")]
-	public const int GL_POST_COLOR_MATRIX_ALPHA_BIAS_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_ALPHA_SCALE")]
-	public const int GL_POST_COLOR_MATRIX_ALPHA_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_ALPHA_SCALE_SGI")]
-	public const int GL_POST_COLOR_MATRIX_ALPHA_SCALE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_BLUE_BIAS")]
-	public const int GL_POST_COLOR_MATRIX_BLUE_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_BLUE_BIAS_SGI")]
-	public const int GL_POST_COLOR_MATRIX_BLUE_BIAS_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_BLUE_SCALE")]
-	public const int GL_POST_COLOR_MATRIX_BLUE_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_BLUE_SCALE_SGI")]
-	public const int GL_POST_COLOR_MATRIX_BLUE_SCALE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_COLOR_TABLE")]
-	public const int GL_POST_COLOR_MATRIX_COLOR_TABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_COLOR_TABLE_SGI")]
-	public const int GL_POST_COLOR_MATRIX_COLOR_TABLE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_GREEN_BIAS")]
-	public const int GL_POST_COLOR_MATRIX_GREEN_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_GREEN_BIAS_SGI")]
-	public const int GL_POST_COLOR_MATRIX_GREEN_BIAS_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_GREEN_SCALE")]
-	public const int GL_POST_COLOR_MATRIX_GREEN_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_GREEN_SCALE_SGI")]
-	public const int GL_POST_COLOR_MATRIX_GREEN_SCALE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_RED_BIAS")]
-	public const int GL_POST_COLOR_MATRIX_RED_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_RED_BIAS_SGI")]
-	public const int GL_POST_COLOR_MATRIX_RED_BIAS_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_RED_SCALE")]
-	public const int GL_POST_COLOR_MATRIX_RED_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_RED_SCALE_SGI")]
-	public const int GL_POST_COLOR_MATRIX_RED_SCALE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_ALPHA_BIAS")]
-	public const int GL_POST_CONVOLUTION_ALPHA_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_ALPHA_BIAS_EXT")]
-	public const int GL_POST_CONVOLUTION_ALPHA_BIAS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_ALPHA_SCALE")]
-	public const int GL_POST_CONVOLUTION_ALPHA_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_ALPHA_SCALE_EXT")]
-	public const int GL_POST_CONVOLUTION_ALPHA_SCALE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_BLUE_BIAS")]
-	public const int GL_POST_CONVOLUTION_BLUE_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_BLUE_BIAS_EXT")]
-	public const int GL_POST_CONVOLUTION_BLUE_BIAS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_BLUE_SCALE")]
-	public const int GL_POST_CONVOLUTION_BLUE_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_BLUE_SCALE_EXT")]
-	public const int GL_POST_CONVOLUTION_BLUE_SCALE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_COLOR_TABLE")]
-	public const int GL_POST_CONVOLUTION_COLOR_TABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_COLOR_TABLE_SGI")]
-	public const int GL_POST_CONVOLUTION_COLOR_TABLE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_GREEN_BIAS")]
-	public const int GL_POST_CONVOLUTION_GREEN_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_GREEN_BIAS_EXT")]
-	public const int GL_POST_CONVOLUTION_GREEN_BIAS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_GREEN_SCALE")]
-	public const int GL_POST_CONVOLUTION_GREEN_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_GREEN_SCALE_EXT")]
-	public const int GL_POST_CONVOLUTION_GREEN_SCALE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_RED_BIAS")]
-	public const int GL_POST_CONVOLUTION_RED_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_RED_BIAS_EXT")]
-	public const int GL_POST_CONVOLUTION_RED_BIAS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_RED_SCALE")]
-	public const int GL_POST_CONVOLUTION_RED_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_RED_SCALE_EXT")]
-	public const int GL_POST_CONVOLUTION_RED_SCALE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_TEXTURE_FILTER_BIAS_RANGE_SGIX")]
-	public const int GL_POST_TEXTURE_FILTER_BIAS_RANGE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_TEXTURE_FILTER_BIAS_SGIX")]
-	public const int GL_POST_TEXTURE_FILTER_BIAS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_TEXTURE_FILTER_SCALE_RANGE_SGIX")]
-	public const int GL_POST_TEXTURE_FILTER_SCALE_RANGE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_TEXTURE_FILTER_SCALE_SGIX")]
-	public const int GL_POST_TEXTURE_FILTER_SCALE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRESENT_DURATION_NV")]
-	public const int GL_PRESENT_DURATION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRESENT_TIME_NV")]
-	public const int GL_PRESENT_TIME_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRESERVE_ATI")]
-	public const int GL_PRESERVE_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PREVIOUS")]
-	public const int GL_PREVIOUS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PREVIOUS_EXT")]
-	public const int GL_PREVIOUS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PREVIOUS_TEXTURE_INPUT_NV")]
-	public const int GL_PREVIOUS_TEXTURE_INPUT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMARY_COLOR")]
-	public const int GL_PRIMARY_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMARY_COLOR_EXT")]
-	public const int GL_PRIMARY_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMARY_COLOR_NV")]
-	public const int GL_PRIMARY_COLOR_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVES_GENERATED")]
-	public const int GL_PRIMITIVES_GENERATED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVES_GENERATED_EXT")]
-	public const int GL_PRIMITIVES_GENERATED_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVES_GENERATED_NV")]
-	public const int GL_PRIMITIVES_GENERATED_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_ID_NV")]
-	public const int GL_PRIMITIVE_ID_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART")]
-	public const int GL_PRIMITIVE_RESTART;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART_FIXED_INDEX")]
-	public const int GL_PRIMITIVE_RESTART_FIXED_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART_INDEX")]
-	public const int GL_PRIMITIVE_RESTART_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART_INDEX_NV")]
-	public const int GL_PRIMITIVE_RESTART_INDEX_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART_NV")]
-	public const int GL_PRIMITIVE_RESTART_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM")]
-	public const int GL_PROGRAM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ADDRESS_REGISTERS_ARB")]
-	public const int GL_PROGRAM_ADDRESS_REGISTERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ALU_INSTRUCTIONS_ARB")]
-	public const int GL_PROGRAM_ALU_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ATTRIBS_ARB")]
-	public const int GL_PROGRAM_ATTRIBS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ATTRIB_COMPONENTS_NV")]
-	public const int GL_PROGRAM_ATTRIB_COMPONENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_ANGLE")]
-	public const int GL_PROGRAM_BINARY_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_FORMATS")]
-	public const int GL_PROGRAM_BINARY_FORMATS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_FORMATS_OES")]
-	public const int GL_PROGRAM_BINARY_FORMATS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_LENGTH")]
-	public const int GL_PROGRAM_BINARY_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_LENGTH_OES")]
-	public const int GL_PROGRAM_BINARY_LENGTH_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_RETRIEVABLE_HINT")]
-	public const int GL_PROGRAM_BINARY_RETRIEVABLE_HINT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINDING_ARB")]
-	public const int GL_PROGRAM_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ERROR_POSITION_ARB")]
-	public const int GL_PROGRAM_ERROR_POSITION_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ERROR_POSITION_NV")]
-	public const int GL_PROGRAM_ERROR_POSITION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ERROR_STRING_ARB")]
-	public const int GL_PROGRAM_ERROR_STRING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ERROR_STRING_NV")]
-	public const int GL_PROGRAM_ERROR_STRING_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_FORMAT_ARB")]
-	public const int GL_PROGRAM_FORMAT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_FORMAT_ASCII_ARB")]
-	public const int GL_PROGRAM_FORMAT_ASCII_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_INPUT")]
-	public const int GL_PROGRAM_INPUT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_INSTRUCTIONS_ARB")]
-	public const int GL_PROGRAM_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_LENGTH_ARB")]
-	public const int GL_PROGRAM_LENGTH_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_LENGTH_NV")]
-	public const int GL_PROGRAM_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_MATRIX_EXT")]
-	public const int GL_PROGRAM_MATRIX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_MATRIX_STACK_DEPTH_EXT")]
-	public const int GL_PROGRAM_MATRIX_STACK_DEPTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB")]
-	public const int GL_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB")]
-	public const int GL_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_ATTRIBS_ARB")]
-	public const int GL_PROGRAM_NATIVE_ATTRIBS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_INSTRUCTIONS_ARB")]
-	public const int GL_PROGRAM_NATIVE_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_PARAMETERS_ARB")]
-	public const int GL_PROGRAM_NATIVE_PARAMETERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_TEMPORARIES_ARB")]
-	public const int GL_PROGRAM_NATIVE_TEMPORARIES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB")]
-	public const int GL_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB")]
-	public const int GL_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_OBJECT_ARB")]
-	public const int GL_PROGRAM_OBJECT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_OBJECT_EXT")]
-	public const int GL_PROGRAM_OBJECT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_OUTPUT")]
-	public const int GL_PROGRAM_OUTPUT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PARAMETERS_ARB")]
-	public const int GL_PROGRAM_PARAMETERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PARAMETER_NV")]
-	public const int GL_PROGRAM_PARAMETER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PIPELINE")]
-	public const int GL_PROGRAM_PIPELINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PIPELINE_BINDING")]
-	public const int GL_PROGRAM_PIPELINE_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PIPELINE_BINDING_EXT")]
-	public const int GL_PROGRAM_PIPELINE_BINDING_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PIPELINE_OBJECT_EXT")]
-	public const int GL_PROGRAM_PIPELINE_OBJECT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_POINT_SIZE")]
-	public const int GL_PROGRAM_POINT_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_POINT_SIZE_ARB")]
-	public const int GL_PROGRAM_POINT_SIZE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_POINT_SIZE_EXT")]
-	public const int GL_PROGRAM_POINT_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_RESIDENT_NV")]
-	public const int GL_PROGRAM_RESIDENT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_RESULT_COMPONENTS_NV")]
-	public const int GL_PROGRAM_RESULT_COMPONENTS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_SEPARABLE")]
-	public const int GL_PROGRAM_SEPARABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_SEPARABLE_EXT")]
-	public const int GL_PROGRAM_SEPARABLE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_STRING_ARB")]
-	public const int GL_PROGRAM_STRING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_STRING_NV")]
-	public const int GL_PROGRAM_STRING_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_TARGET_NV")]
-	public const int GL_PROGRAM_TARGET_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_TEMPORARIES_ARB")]
-	public const int GL_PROGRAM_TEMPORARIES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_TEX_INDIRECTIONS_ARB")]
-	public const int GL_PROGRAM_TEX_INDIRECTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_TEX_INSTRUCTIONS_ARB")]
-	public const int GL_PROGRAM_TEX_INSTRUCTIONS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_UNDER_NATIVE_LIMITS_ARB")]
-	public const int GL_PROGRAM_UNDER_NATIVE_LIMITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROJECTION")]
-	public const int GL_PROJECTION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROJECTION_MATRIX")]
-	public const int GL_PROJECTION_MATRIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROJECTION_MATRIX_FLOAT_AS_INT_BITS_OES")]
-	public const int GL_PROJECTION_MATRIX_FLOAT_AS_INT_BITS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROJECTION_STACK_DEPTH")]
-	public const int GL_PROJECTION_STACK_DEPTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROVOKING_VERTEX")]
-	public const int GL_PROVOKING_VERTEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROVOKING_VERTEX_EXT")]
-	public const int GL_PROVOKING_VERTEX_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_COLOR_TABLE")]
-	public const int GL_PROXY_COLOR_TABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_COLOR_TABLE_SGI")]
-	public const int GL_PROXY_COLOR_TABLE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_HISTOGRAM")]
-	public const int GL_PROXY_HISTOGRAM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_HISTOGRAM_EXT")]
-	public const int GL_PROXY_HISTOGRAM_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE")]
-	public const int GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE_SGI")]
-	public const int GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_POST_CONVOLUTION_COLOR_TABLE")]
-	public const int GL_PROXY_POST_CONVOLUTION_COLOR_TABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_POST_CONVOLUTION_COLOR_TABLE_SGI")]
-	public const int GL_PROXY_POST_CONVOLUTION_COLOR_TABLE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D")]
-	public const int GL_PROXY_TEXTURE_1D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D_ARRAY")]
-	public const int GL_PROXY_TEXTURE_1D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D_ARRAY_EXT")]
-	public const int GL_PROXY_TEXTURE_1D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D_EXT")]
-	public const int GL_PROXY_TEXTURE_1D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D_STACK_MESAX")]
-	public const int GL_PROXY_TEXTURE_1D_STACK_MESAX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D")]
-	public const int GL_PROXY_TEXTURE_2D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_ARRAY")]
-	public const int GL_PROXY_TEXTURE_2D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_ARRAY_EXT")]
-	public const int GL_PROXY_TEXTURE_2D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_EXT")]
-	public const int GL_PROXY_TEXTURE_2D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_MULTISAMPLE")]
-	public const int GL_PROXY_TEXTURE_2D_MULTISAMPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY")]
-	public const int GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_STACK_MESAX")]
-	public const int GL_PROXY_TEXTURE_2D_STACK_MESAX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_3D")]
-	public const int GL_PROXY_TEXTURE_3D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_3D_EXT")]
-	public const int GL_PROXY_TEXTURE_3D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_4D_SGIS")]
-	public const int GL_PROXY_TEXTURE_4D_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_COLOR_TABLE_SGI")]
-	public const int GL_PROXY_TEXTURE_COLOR_TABLE_SGI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_CUBE_MAP")]
-	public const int GL_PROXY_TEXTURE_CUBE_MAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_CUBE_MAP_ARB")]
-	public const int GL_PROXY_TEXTURE_CUBE_MAP_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_CUBE_MAP_ARRAY")]
-	public const int GL_PROXY_TEXTURE_CUBE_MAP_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_CUBE_MAP_EXT")]
-	public const int GL_PROXY_TEXTURE_CUBE_MAP_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_RECTANGLE")]
-	public const int GL_PROXY_TEXTURE_RECTANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_RECTANGLE_ARB")]
-	public const int GL_PROXY_TEXTURE_RECTANGLE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_RECTANGLE_NV")]
-	public const int GL_PROXY_TEXTURE_RECTANGLE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_PURGEABLE_APPLE")]
-	public const int GL_PURGEABLE_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_Q")]
-	public const int GL_Q;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADRATIC_ATTENUATION")]
-	public const int GL_QUADRATIC_ATTENUATION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADRATIC_CURVE_TO_NV")]
-	public const int GL_QUADRATIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADS")]
-	public const int GL_QUADS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION")]
-	public const int GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION_EXT")]
-	public const int GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_ALPHA4_SGIS")]
-	public const int GL_QUAD_ALPHA4_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_ALPHA8_SGIS")]
-	public const int GL_QUAD_ALPHA8_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_INTENSITY4_SGIS")]
-	public const int GL_QUAD_INTENSITY4_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_INTENSITY8_SGIS")]
-	public const int GL_QUAD_INTENSITY8_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_LUMINANCE4_SGIS")]
-	public const int GL_QUAD_LUMINANCE4_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_LUMINANCE8_SGIS")]
-	public const int GL_QUAD_LUMINANCE8_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_MESH_SUN")]
-	public const int GL_QUAD_MESH_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_STRIP")]
-	public const int GL_QUAD_STRIP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_TEXTURE_SELECT_SGIS")]
-	public const int GL_QUAD_TEXTURE_SELECT_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUARTER_BIT_ATI")]
-	public const int GL_QUARTER_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY")]
-	public const int GL_QUERY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BUFFER_AMD")]
-	public const int GL_QUERY_BUFFER_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BUFFER_BINDING_AMD")]
-	public const int GL_QUERY_BUFFER_BINDING_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BY_REGION_NO_WAIT")]
-	public const int GL_QUERY_BY_REGION_NO_WAIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BY_REGION_NO_WAIT_NV")]
-	public const int GL_QUERY_BY_REGION_NO_WAIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BY_REGION_WAIT")]
-	public const int GL_QUERY_BY_REGION_WAIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BY_REGION_WAIT_NV")]
-	public const int GL_QUERY_BY_REGION_WAIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_COUNTER_BITS")]
-	public const int GL_QUERY_COUNTER_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_COUNTER_BITS_ARB")]
-	public const int GL_QUERY_COUNTER_BITS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_NO_WAIT")]
-	public const int GL_QUERY_NO_WAIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_NO_WAIT_NV")]
-	public const int GL_QUERY_NO_WAIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_OBJECT_AMD")]
-	public const int GL_QUERY_OBJECT_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_OBJECT_EXT")]
-	public const int GL_QUERY_OBJECT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT")]
-	public const int GL_QUERY_RESULT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_ARB")]
-	public const int GL_QUERY_RESULT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_AVAILABLE")]
-	public const int GL_QUERY_RESULT_AVAILABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_AVAILABLE_ARB")]
-	public const int GL_QUERY_RESULT_AVAILABLE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_AVAILABLE_EXT")]
-	public const int GL_QUERY_RESULT_AVAILABLE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_EXT")]
-	public const int GL_QUERY_RESULT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_NO_WAIT_AMD")]
-	public const int GL_QUERY_RESULT_NO_WAIT_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_WAIT")]
-	public const int GL_QUERY_WAIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_WAIT_NV")]
-	public const int GL_QUERY_WAIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R")]
-	public const int GL_R;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R11F_G11F_B10F")]
-	public const int GL_R11F_G11F_B10F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R11F_G11F_B10F_EXT")]
-	public const int GL_R11F_G11F_B10F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R16")]
-	public const int GL_R16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R16F")]
-	public const int GL_R16F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R16F_EXT")]
-	public const int GL_R16F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R16I")]
-	public const int GL_R16I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R16UI")]
-	public const int GL_R16UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R16_SNORM")]
-	public const int GL_R16_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_C3F_V3F_SUN")]
-	public const int GL_R1UI_C3F_V3F_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_C4F_N3F_V3F_SUN")]
-	public const int GL_R1UI_C4F_N3F_V3F_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_C4UB_V3F_SUN")]
-	public const int GL_R1UI_C4UB_V3F_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_N3F_V3F_SUN")]
-	public const int GL_R1UI_N3F_V3F_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_T2F_C4F_N3F_V3F_SUN")]
-	public const int GL_R1UI_T2F_C4F_N3F_V3F_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_T2F_N3F_V3F_SUN")]
-	public const int GL_R1UI_T2F_N3F_V3F_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_T2F_V3F_SUN")]
-	public const int GL_R1UI_T2F_V3F_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_V3F_SUN")]
-	public const int GL_R1UI_V3F_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R32F")]
-	public const int GL_R32F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R32I")]
-	public const int GL_R32I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R32UI")]
-	public const int GL_R32UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R3_G3_B2")]
-	public const int GL_R3_G3_B2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R8")]
-	public const int GL_R8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R8I")]
-	public const int GL_R8I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R8UI")]
-	public const int GL_R8UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R8_EXT")]
-	public const int GL_R8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_R8_SNORM")]
-	public const int GL_R8_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RASTERIZER_DISCARD")]
-	public const int GL_RASTERIZER_DISCARD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RASTERIZER_DISCARD_EXT")]
-	public const int GL_RASTERIZER_DISCARD_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RASTERIZER_DISCARD_NV")]
-	public const int GL_RASTERIZER_DISCARD_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_BUFFER")]
-	public const int GL_READ_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_BUFFER_EXT")]
-	public const int GL_READ_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_BUFFER_NV")]
-	public const int GL_READ_BUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER")]
-	public const int GL_READ_FRAMEBUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_ANGLE")]
-	public const int GL_READ_FRAMEBUFFER_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_BINDING")]
-	public const int GL_READ_FRAMEBUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_BINDING_EXT")]
-	public const int GL_READ_FRAMEBUFFER_BINDING_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_BINDING_NV")]
-	public const int GL_READ_FRAMEBUFFER_BINDING_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_EXT")]
-	public const int GL_READ_FRAMEBUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_NV")]
-	public const int GL_READ_FRAMEBUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_ONLY")]
-	public const int GL_READ_ONLY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_ONLY_ARB")]
-	public const int GL_READ_ONLY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXELS")]
-	public const int GL_READ_PIXELS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXELS_FORMAT")]
-	public const int GL_READ_PIXELS_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXELS_TYPE")]
-	public const int GL_READ_PIXELS_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXEL_DATA_RANGE_LENGTH_NV")]
-	public const int GL_READ_PIXEL_DATA_RANGE_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXEL_DATA_RANGE_NV")]
-	public const int GL_READ_PIXEL_DATA_RANGE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXEL_DATA_RANGE_POINTER_NV")]
-	public const int GL_READ_PIXEL_DATA_RANGE_POINTER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_WRITE")]
-	public const int GL_READ_WRITE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_WRITE_ARB")]
-	public const int GL_READ_WRITE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RECIP_ADD_SIGNED_ALPHA_IMG")]
-	public const int GL_RECIP_ADD_SIGNED_ALPHA_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RECT_NV")]
-	public const int GL_RECT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED")]
-	public const int GL_RED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REDUCE")]
-	public const int GL_REDUCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REDUCE_EXT")]
-	public const int GL_REDUCE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_BIAS")]
-	public const int GL_RED_BIAS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_BITS")]
-	public const int GL_RED_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_BIT_ATI")]
-	public const int GL_RED_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_EXT")]
-	public const int GL_RED_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_INTEGER")]
-	public const int GL_RED_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_INTEGER_EXT")]
-	public const int GL_RED_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_MAX_CLAMP_INGR")]
-	public const int GL_RED_MAX_CLAMP_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_MIN_CLAMP_INGR")]
-	public const int GL_RED_MIN_CLAMP_INGR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_SCALE")]
-	public const int GL_RED_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_SNORM")]
-	public const int GL_RED_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_COMPUTE_SHADER")]
-	public const int GL_REFERENCED_BY_COMPUTE_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_FRAGMENT_SHADER")]
-	public const int GL_REFERENCED_BY_FRAGMENT_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_GEOMETRY_SHADER")]
-	public const int GL_REFERENCED_BY_GEOMETRY_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_TESS_CONTROL_SHADER")]
-	public const int GL_REFERENCED_BY_TESS_CONTROL_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_TESS_EVALUATION_SHADER")]
-	public const int GL_REFERENCED_BY_TESS_EVALUATION_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_VERTEX_SHADER")]
-	public const int GL_REFERENCED_BY_VERTEX_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCE_PLANE_EQUATION_SGIX")]
-	public const int GL_REFERENCE_PLANE_EQUATION_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCE_PLANE_SGIX")]
-	public const int GL_REFERENCE_PLANE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFLECTION_MAP")]
-	public const int GL_REFLECTION_MAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFLECTION_MAP_ARB")]
-	public const int GL_REFLECTION_MAP_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFLECTION_MAP_EXT")]
-	public const int GL_REFLECTION_MAP_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REFLECTION_MAP_OES")]
-	public const int GL_REFLECTION_MAP_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REGISTER_COMBINERS_NV")]
-	public const int GL_REGISTER_COMBINERS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_0_ATI")]
-	public const int GL_REG_0_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_10_ATI")]
-	public const int GL_REG_10_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_11_ATI")]
-	public const int GL_REG_11_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_12_ATI")]
-	public const int GL_REG_12_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_13_ATI")]
-	public const int GL_REG_13_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_14_ATI")]
-	public const int GL_REG_14_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_15_ATI")]
-	public const int GL_REG_15_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_16_ATI")]
-	public const int GL_REG_16_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_17_ATI")]
-	public const int GL_REG_17_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_18_ATI")]
-	public const int GL_REG_18_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_19_ATI")]
-	public const int GL_REG_19_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_1_ATI")]
-	public const int GL_REG_1_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_20_ATI")]
-	public const int GL_REG_20_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_21_ATI")]
-	public const int GL_REG_21_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_22_ATI")]
-	public const int GL_REG_22_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_23_ATI")]
-	public const int GL_REG_23_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_24_ATI")]
-	public const int GL_REG_24_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_25_ATI")]
-	public const int GL_REG_25_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_26_ATI")]
-	public const int GL_REG_26_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_27_ATI")]
-	public const int GL_REG_27_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_28_ATI")]
-	public const int GL_REG_28_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_29_ATI")]
-	public const int GL_REG_29_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_2_ATI")]
-	public const int GL_REG_2_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_30_ATI")]
-	public const int GL_REG_30_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_31_ATI")]
-	public const int GL_REG_31_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_3_ATI")]
-	public const int GL_REG_3_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_4_ATI")]
-	public const int GL_REG_4_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_5_ATI")]
-	public const int GL_REG_5_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_6_ATI")]
-	public const int GL_REG_6_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_7_ATI")]
-	public const int GL_REG_7_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_8_ATI")]
-	public const int GL_REG_8_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_9_ATI")]
-	public const int GL_REG_9_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_ARC_TO_NV")]
-	public const int GL_RELATIVE_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_CUBIC_CURVE_TO_NV")]
-	public const int GL_RELATIVE_CUBIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_HORIZONTAL_LINE_TO_NV")]
-	public const int GL_RELATIVE_HORIZONTAL_LINE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_LARGE_CCW_ARC_TO_NV")]
-	public const int GL_RELATIVE_LARGE_CCW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_LARGE_CW_ARC_TO_NV")]
-	public const int GL_RELATIVE_LARGE_CW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_LINE_TO_NV")]
-	public const int GL_RELATIVE_LINE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_MOVE_TO_NV")]
-	public const int GL_RELATIVE_MOVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_QUADRATIC_CURVE_TO_NV")]
-	public const int GL_RELATIVE_QUADRATIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_SMALL_CCW_ARC_TO_NV")]
-	public const int GL_RELATIVE_SMALL_CCW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_SMALL_CW_ARC_TO_NV")]
-	public const int GL_RELATIVE_SMALL_CW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_SMOOTH_CUBIC_CURVE_TO_NV")]
-	public const int GL_RELATIVE_SMOOTH_CUBIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_SMOOTH_QUADRATIC_CURVE_TO_NV")]
-	public const int GL_RELATIVE_SMOOTH_QUADRATIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_VERTICAL_LINE_TO_NV")]
-	public const int GL_RELATIVE_VERTICAL_LINE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RELEASED_APPLE")]
-	public const int GL_RELEASED_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDER")]
-	public const int GL_RENDER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER")]
-	public const int GL_RENDERBUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_ALPHA_SIZE")]
-	public const int GL_RENDERBUFFER_ALPHA_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_ALPHA_SIZE_EXT")]
-	public const int GL_RENDERBUFFER_ALPHA_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_ALPHA_SIZE_OES")]
-	public const int GL_RENDERBUFFER_ALPHA_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BINDING")]
-	public const int GL_RENDERBUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BINDING_ANGLE")]
-	public const int GL_RENDERBUFFER_BINDING_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BINDING_EXT")]
-	public const int GL_RENDERBUFFER_BINDING_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BINDING_OES")]
-	public const int GL_RENDERBUFFER_BINDING_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BLUE_SIZE")]
-	public const int GL_RENDERBUFFER_BLUE_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BLUE_SIZE_EXT")]
-	public const int GL_RENDERBUFFER_BLUE_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BLUE_SIZE_OES")]
-	public const int GL_RENDERBUFFER_BLUE_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_COLOR_SAMPLES_NV")]
-	public const int GL_RENDERBUFFER_COLOR_SAMPLES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_COVERAGE_SAMPLES_NV")]
-	public const int GL_RENDERBUFFER_COVERAGE_SAMPLES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_DEPTH_SIZE")]
-	public const int GL_RENDERBUFFER_DEPTH_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_DEPTH_SIZE_EXT")]
-	public const int GL_RENDERBUFFER_DEPTH_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_DEPTH_SIZE_OES")]
-	public const int GL_RENDERBUFFER_DEPTH_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_EXT")]
-	public const int GL_RENDERBUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_FREE_MEMORY_ATI")]
-	public const int GL_RENDERBUFFER_FREE_MEMORY_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_GREEN_SIZE")]
-	public const int GL_RENDERBUFFER_GREEN_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_GREEN_SIZE_EXT")]
-	public const int GL_RENDERBUFFER_GREEN_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_GREEN_SIZE_OES")]
-	public const int GL_RENDERBUFFER_GREEN_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_HEIGHT")]
-	public const int GL_RENDERBUFFER_HEIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_HEIGHT_EXT")]
-	public const int GL_RENDERBUFFER_HEIGHT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_HEIGHT_OES")]
-	public const int GL_RENDERBUFFER_HEIGHT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_INTERNAL_FORMAT")]
-	public const int GL_RENDERBUFFER_INTERNAL_FORMAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_INTERNAL_FORMAT_EXT")]
-	public const int GL_RENDERBUFFER_INTERNAL_FORMAT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_INTERNAL_FORMAT_OES")]
-	public const int GL_RENDERBUFFER_INTERNAL_FORMAT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_OES")]
-	public const int GL_RENDERBUFFER_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_RED_SIZE")]
-	public const int GL_RENDERBUFFER_RED_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_RED_SIZE_EXT")]
-	public const int GL_RENDERBUFFER_RED_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_RED_SIZE_OES")]
-	public const int GL_RENDERBUFFER_RED_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES")]
-	public const int GL_RENDERBUFFER_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES_ANGLE")]
-	public const int GL_RENDERBUFFER_SAMPLES_ANGLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES_EXT")]
-	public const int GL_RENDERBUFFER_SAMPLES_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES_IMG")]
-	public const int GL_RENDERBUFFER_SAMPLES_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES_NV")]
-	public const int GL_RENDERBUFFER_SAMPLES_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_STENCIL_SIZE")]
-	public const int GL_RENDERBUFFER_STENCIL_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_STENCIL_SIZE_EXT")]
-	public const int GL_RENDERBUFFER_STENCIL_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_STENCIL_SIZE_OES")]
-	public const int GL_RENDERBUFFER_STENCIL_SIZE_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_WIDTH")]
-	public const int GL_RENDERBUFFER_WIDTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_WIDTH_EXT")]
-	public const int GL_RENDERBUFFER_WIDTH_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_WIDTH_OES")]
-	public const int GL_RENDERBUFFER_WIDTH_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERER")]
-	public const int GL_RENDERER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDER_DIRECT_TO_FRAMEBUFFER_QCOM")]
-	public const int GL_RENDER_DIRECT_TO_FRAMEBUFFER_QCOM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDER_MODE")]
-	public const int GL_RENDER_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPEAT")]
-	public const int GL_REPEAT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE")]
-	public const int GL_REPLACE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_ARRAY_POINTER_SUN")]
-	public const int GL_REPLACEMENT_CODE_ARRAY_POINTER_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_ARRAY_STRIDE_SUN")]
-	public const int GL_REPLACEMENT_CODE_ARRAY_STRIDE_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_ARRAY_SUN")]
-	public const int GL_REPLACEMENT_CODE_ARRAY_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_ARRAY_TYPE_SUN")]
-	public const int GL_REPLACEMENT_CODE_ARRAY_TYPE_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_SUN")]
-	public const int GL_REPLACEMENT_CODE_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE_EXT")]
-	public const int GL_REPLACE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE_MIDDLE_SUN")]
-	public const int GL_REPLACE_MIDDLE_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE_OLDEST_SUN")]
-	public const int GL_REPLACE_OLDEST_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE_VALUE_AMD")]
-	public const int GL_REPLACE_VALUE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLICATE_BORDER")]
-	public const int GL_REPLICATE_BORDER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLICATE_BORDER_HP")]
-	public const int GL_REPLICATE_BORDER_HP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES")]
-	public const int GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_AVERAGE_OML")]
-	public const int GL_RESAMPLE_AVERAGE_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_DECIMATE_OML")]
-	public const int GL_RESAMPLE_DECIMATE_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_DECIMATE_SGIX")]
-	public const int GL_RESAMPLE_DECIMATE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_REPLICATE_OML")]
-	public const int GL_RESAMPLE_REPLICATE_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_REPLICATE_SGIX")]
-	public const int GL_RESAMPLE_REPLICATE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_ZERO_FILL_OML")]
-	public const int GL_RESAMPLE_ZERO_FILL_OML;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_ZERO_FILL_SGIX")]
-	public const int GL_RESAMPLE_ZERO_FILL_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESCALE_NORMAL")]
-	public const int GL_RESCALE_NORMAL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESCALE_NORMAL_EXT")]
-	public const int GL_RESCALE_NORMAL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESET_NOTIFICATION_STRATEGY_ARB")]
-	public const int GL_RESET_NOTIFICATION_STRATEGY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESTART_PATH_NV")]
-	public const int GL_RESTART_PATH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RESTART_SUN")]
-	public const int GL_RESTART_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RETAINED_APPLE")]
-	public const int GL_RETAINED_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RETURN")]
-	public const int GL_RETURN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG")]
-	public const int GL_RG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16")]
-	public const int GL_RG16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16F")]
-	public const int GL_RG16F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16F_EXT")]
-	public const int GL_RG16F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16I")]
-	public const int GL_RG16I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16UI")]
-	public const int GL_RG16UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16_SNORM")]
-	public const int GL_RG16_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG32F")]
-	public const int GL_RG32F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG32I")]
-	public const int GL_RG32I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG32UI")]
-	public const int GL_RG32UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8")]
-	public const int GL_RG8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8I")]
-	public const int GL_RG8I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8UI")]
-	public const int GL_RG8UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8_EXT")]
-	public const int GL_RG8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8_SNORM")]
-	public const int GL_RG8_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB")]
-	public const int GL_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10")]
-	public const int GL_RGB10;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10_A2")]
-	public const int GL_RGB10_A2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10_A2UI")]
-	public const int GL_RGB10_A2UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10_A2_EXT")]
-	public const int GL_RGB10_A2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10_EXT")]
-	public const int GL_RGB10_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB12")]
-	public const int GL_RGB12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB12_EXT")]
-	public const int GL_RGB12_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16")]
-	public const int GL_RGB16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16F")]
-	public const int GL_RGB16F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16F_ARB")]
-	public const int GL_RGB16F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16F_EXT")]
-	public const int GL_RGB16F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16I")]
-	public const int GL_RGB16I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16I_EXT")]
-	public const int GL_RGB16I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16UI")]
-	public const int GL_RGB16UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16UI_EXT")]
-	public const int GL_RGB16UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16_EXT")]
-	public const int GL_RGB16_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16_SNORM")]
-	public const int GL_RGB16_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB2_EXT")]
-	public const int GL_RGB2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32F")]
-	public const int GL_RGB32F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32F_ARB")]
-	public const int GL_RGB32F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32I")]
-	public const int GL_RGB32I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32I_EXT")]
-	public const int GL_RGB32I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32UI")]
-	public const int GL_RGB32UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32UI_EXT")]
-	public const int GL_RGB32UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB4")]
-	public const int GL_RGB4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB4_EXT")]
-	public const int GL_RGB4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB4_S3TC")]
-	public const int GL_RGB4_S3TC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5")]
-	public const int GL_RGB5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB565")]
-	public const int GL_RGB565;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB565_OES")]
-	public const int GL_RGB565_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5_A1")]
-	public const int GL_RGB5_A1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5_A1_EXT")]
-	public const int GL_RGB5_A1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5_A1_OES")]
-	public const int GL_RGB5_A1_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5_EXT")]
-	public const int GL_RGB5_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8")]
-	public const int GL_RGB8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8I")]
-	public const int GL_RGB8I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8I_EXT")]
-	public const int GL_RGB8I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8UI")]
-	public const int GL_RGB8UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8UI_EXT")]
-	public const int GL_RGB8UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8_EXT")]
-	public const int GL_RGB8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8_SNORM")]
-	public const int GL_RGB8_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB9_E5")]
-	public const int GL_RGB9_E5;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB9_E5_EXT")]
-	public const int GL_RGB9_E5_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA")]
-	public const int GL_RGBA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA12")]
-	public const int GL_RGBA12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA12_EXT")]
-	public const int GL_RGBA12_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16")]
-	public const int GL_RGBA16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16F")]
-	public const int GL_RGBA16F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16F_ARB")]
-	public const int GL_RGBA16F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16F_EXT")]
-	public const int GL_RGBA16F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16I")]
-	public const int GL_RGBA16I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16I_EXT")]
-	public const int GL_RGBA16I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16UI")]
-	public const int GL_RGBA16UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16UI_EXT")]
-	public const int GL_RGBA16UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16_EXT")]
-	public const int GL_RGBA16_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16_SNORM")]
-	public const int GL_RGBA16_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA2")]
-	public const int GL_RGBA2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA2_EXT")]
-	public const int GL_RGBA2_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32F")]
-	public const int GL_RGBA32F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32F_ARB")]
-	public const int GL_RGBA32F_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32I")]
-	public const int GL_RGBA32I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32I_EXT")]
-	public const int GL_RGBA32I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32UI")]
-	public const int GL_RGBA32UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32UI_EXT")]
-	public const int GL_RGBA32UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4")]
-	public const int GL_RGBA4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4_DXT5_S3TC")]
-	public const int GL_RGBA4_DXT5_S3TC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4_EXT")]
-	public const int GL_RGBA4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4_OES")]
-	public const int GL_RGBA4_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4_S3TC")]
-	public const int GL_RGBA4_S3TC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8")]
-	public const int GL_RGBA8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8I")]
-	public const int GL_RGBA8I;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8I_EXT")]
-	public const int GL_RGBA8I_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8UI")]
-	public const int GL_RGBA8UI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8UI_EXT")]
-	public const int GL_RGBA8UI_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8_EXT")]
-	public const int GL_RGBA8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8_SNORM")]
-	public const int GL_RGBA8_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_DXT5_S3TC")]
-	public const int GL_RGBA_DXT5_S3TC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT16_APPLE")]
-	public const int GL_RGBA_FLOAT16_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT16_ATI")]
-	public const int GL_RGBA_FLOAT16_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT32_APPLE")]
-	public const int GL_RGBA_FLOAT32_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT32_ATI")]
-	public const int GL_RGBA_FLOAT32_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT_MODE_ARB")]
-	public const int GL_RGBA_FLOAT_MODE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_INTEGER")]
-	public const int GL_RGBA_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_INTEGER_EXT")]
-	public const int GL_RGBA_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_INTEGER_MODE_EXT")]
-	public const int GL_RGBA_INTEGER_MODE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_MODE")]
-	public const int GL_RGBA_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_S3TC")]
-	public const int GL_RGBA_S3TC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_SIGNED_COMPONENTS_EXT")]
-	public const int GL_RGBA_SIGNED_COMPONENTS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_SNORM")]
-	public const int GL_RGBA_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_UNSIGNED_DOT_PRODUCT_MAPPING_NV")]
-	public const int GL_RGBA_UNSIGNED_DOT_PRODUCT_MAPPING_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_422_APPLE")]
-	public const int GL_RGB_422_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_FLOAT16_APPLE")]
-	public const int GL_RGB_FLOAT16_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_FLOAT16_ATI")]
-	public const int GL_RGB_FLOAT16_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_FLOAT32_APPLE")]
-	public const int GL_RGB_FLOAT32_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_FLOAT32_ATI")]
-	public const int GL_RGB_FLOAT32_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_INTEGER")]
-	public const int GL_RGB_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_INTEGER_EXT")]
-	public const int GL_RGB_INTEGER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_S3TC")]
-	public const int GL_RGB_S3TC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_SCALE")]
-	public const int GL_RGB_SCALE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_SCALE_EXT")]
-	public const int GL_RGB_SCALE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_SNORM")]
-	public const int GL_RGB_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG_EXT")]
-	public const int GL_RG_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG_INTEGER")]
-	public const int GL_RG_INTEGER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RG_SNORM")]
-	public const int GL_RG_SNORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_RIGHT")]
-	public const int GL_RIGHT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_ROUND_NV")]
-	public const int GL_ROUND_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_S")]
-	public const int GL_S;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER")]
-	public const int GL_SAMPLER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D")]
-	public const int GL_SAMPLER_1D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARB")]
-	public const int GL_SAMPLER_1D_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARRAY")]
-	public const int GL_SAMPLER_1D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARRAY_EXT")]
-	public const int GL_SAMPLER_1D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARRAY_SHADOW")]
-	public const int GL_SAMPLER_1D_ARRAY_SHADOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARRAY_SHADOW_EXT")]
-	public const int GL_SAMPLER_1D_ARRAY_SHADOW_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_SHADOW")]
-	public const int GL_SAMPLER_1D_SHADOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_SHADOW_ARB")]
-	public const int GL_SAMPLER_1D_SHADOW_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D")]
-	public const int GL_SAMPLER_2D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARB")]
-	public const int GL_SAMPLER_2D_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY")]
-	public const int GL_SAMPLER_2D_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY_EXT")]
-	public const int GL_SAMPLER_2D_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY_SHADOW")]
-	public const int GL_SAMPLER_2D_ARRAY_SHADOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY_SHADOW_EXT")]
-	public const int GL_SAMPLER_2D_ARRAY_SHADOW_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY_SHADOW_NV")]
-	public const int GL_SAMPLER_2D_ARRAY_SHADOW_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_MULTISAMPLE")]
-	public const int GL_SAMPLER_2D_MULTISAMPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_MULTISAMPLE_ARRAY")]
-	public const int GL_SAMPLER_2D_MULTISAMPLE_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_RECT")]
-	public const int GL_SAMPLER_2D_RECT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_RECT_ARB")]
-	public const int GL_SAMPLER_2D_RECT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_RECT_SHADOW")]
-	public const int GL_SAMPLER_2D_RECT_SHADOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_RECT_SHADOW_ARB")]
-	public const int GL_SAMPLER_2D_RECT_SHADOW_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_SHADOW")]
-	public const int GL_SAMPLER_2D_SHADOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_SHADOW_ARB")]
-	public const int GL_SAMPLER_2D_SHADOW_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_SHADOW_EXT")]
-	public const int GL_SAMPLER_2D_SHADOW_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_3D")]
-	public const int GL_SAMPLER_3D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_3D_ARB")]
-	public const int GL_SAMPLER_3D_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_3D_OES")]
-	public const int GL_SAMPLER_3D_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_BINDING")]
-	public const int GL_SAMPLER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_BUFFER")]
-	public const int GL_SAMPLER_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_BUFFER_AMD")]
-	public const int GL_SAMPLER_BUFFER_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_BUFFER_EXT")]
-	public const int GL_SAMPLER_BUFFER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE")]
-	public const int GL_SAMPLER_CUBE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_ARB")]
-	public const int GL_SAMPLER_CUBE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_MAP_ARRAY")]
-	public const int GL_SAMPLER_CUBE_MAP_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW")]
-	public const int GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_SHADOW")]
-	public const int GL_SAMPLER_CUBE_SHADOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_SHADOW_EXT")]
-	public const int GL_SAMPLER_CUBE_SHADOW_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_SHADOW_NV")]
-	public const int GL_SAMPLER_CUBE_SHADOW_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_EXTERNAL_OES")]
-	public const int GL_SAMPLER_EXTERNAL_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_OBJECT_AMD")]
-	public const int GL_SAMPLER_OBJECT_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_RENDERBUFFER_NV")]
-	public const int GL_SAMPLER_RENDERBUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES")]
-	public const int GL_SAMPLES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_3DFX")]
-	public const int GL_SAMPLES_3DFX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_ARB")]
-	public const int GL_SAMPLES_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_EXT")]
-	public const int GL_SAMPLES_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_PASSED")]
-	public const int GL_SAMPLES_PASSED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_PASSED_ARB")]
-	public const int GL_SAMPLES_PASSED_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_SGIS")]
-	public const int GL_SAMPLES_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_COVERAGE")]
-	public const int GL_SAMPLE_ALPHA_TO_COVERAGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_COVERAGE_ARB")]
-	public const int GL_SAMPLE_ALPHA_TO_COVERAGE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_MASK_EXT")]
-	public const int GL_SAMPLE_ALPHA_TO_MASK_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_MASK_SGIS")]
-	public const int GL_SAMPLE_ALPHA_TO_MASK_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_ONE")]
-	public const int GL_SAMPLE_ALPHA_TO_ONE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_ONE_ARB")]
-	public const int GL_SAMPLE_ALPHA_TO_ONE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_ONE_EXT")]
-	public const int GL_SAMPLE_ALPHA_TO_ONE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_ONE_SGIS")]
-	public const int GL_SAMPLE_ALPHA_TO_ONE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS")]
-	public const int GL_SAMPLE_BUFFERS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS_3DFX")]
-	public const int GL_SAMPLE_BUFFERS_3DFX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS_ARB")]
-	public const int GL_SAMPLE_BUFFERS_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS_EXT")]
-	public const int GL_SAMPLE_BUFFERS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS_SGIS")]
-	public const int GL_SAMPLE_BUFFERS_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE")]
-	public const int GL_SAMPLE_COVERAGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_ARB")]
-	public const int GL_SAMPLE_COVERAGE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_INVERT")]
-	public const int GL_SAMPLE_COVERAGE_INVERT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_INVERT_ARB")]
-	public const int GL_SAMPLE_COVERAGE_INVERT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_VALUE")]
-	public const int GL_SAMPLE_COVERAGE_VALUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_VALUE_ARB")]
-	public const int GL_SAMPLE_COVERAGE_VALUE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK")]
-	public const int GL_SAMPLE_MASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_EXT")]
-	public const int GL_SAMPLE_MASK_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_INVERT_EXT")]
-	public const int GL_SAMPLE_MASK_INVERT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_INVERT_SGIS")]
-	public const int GL_SAMPLE_MASK_INVERT_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_NV")]
-	public const int GL_SAMPLE_MASK_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_SGIS")]
-	public const int GL_SAMPLE_MASK_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_VALUE")]
-	public const int GL_SAMPLE_MASK_VALUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_VALUE_EXT")]
-	public const int GL_SAMPLE_MASK_VALUE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_VALUE_NV")]
-	public const int GL_SAMPLE_MASK_VALUE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_VALUE_SGIS")]
-	public const int GL_SAMPLE_MASK_VALUE_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_PATTERN_EXT")]
-	public const int GL_SAMPLE_PATTERN_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_PATTERN_SGIS")]
-	public const int GL_SAMPLE_PATTERN_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_POSITION")]
-	public const int GL_SAMPLE_POSITION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_POSITION_NV")]
-	public const int GL_SAMPLE_POSITION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_SHADING_ARB")]
-	public const int GL_SAMPLE_SHADING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SATURATE_BIT_ATI")]
-	public const int GL_SATURATE_BIT_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALAR_EXT")]
-	public const int GL_SCALAR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALEBIAS_HINT_SGIX")]
-	public const int GL_SCALEBIAS_HINT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALED_RESOLVE_FASTEST_EXT")]
-	public const int GL_SCALED_RESOLVE_FASTEST_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALED_RESOLVE_NICEST_EXT")]
-	public const int GL_SCALED_RESOLVE_NICEST_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALE_BY_FOUR_NV")]
-	public const int GL_SCALE_BY_FOUR_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALE_BY_ONE_HALF_NV")]
-	public const int GL_SCALE_BY_ONE_HALF_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALE_BY_TWO_NV")]
-	public const int GL_SCALE_BY_TWO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCISSOR_BIT")]
-	public const int GL_SCISSOR_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCISSOR_BOX")]
-	public const int GL_SCISSOR_BOX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCISSOR_TEST")]
-	public const int GL_SCISSOR_TEST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SCREEN_COORDINATES_REND")]
-	public const int GL_SCREEN_COORDINATES_REND;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY")]
-	public const int GL_SECONDARY_COLOR_ARRAY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_ADDRESS_NV")]
-	public const int GL_SECONDARY_COLOR_ARRAY_ADDRESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING")]
-	public const int GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING_ARB")]
-	public const int GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_EXT")]
-	public const int GL_SECONDARY_COLOR_ARRAY_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_LENGTH_NV")]
-	public const int GL_SECONDARY_COLOR_ARRAY_LENGTH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_POINTER")]
-	public const int GL_SECONDARY_COLOR_ARRAY_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_POINTER_EXT")]
-	public const int GL_SECONDARY_COLOR_ARRAY_POINTER_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_SIZE")]
-	public const int GL_SECONDARY_COLOR_ARRAY_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_SIZE_EXT")]
-	public const int GL_SECONDARY_COLOR_ARRAY_SIZE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_STRIDE")]
-	public const int GL_SECONDARY_COLOR_ARRAY_STRIDE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_STRIDE_EXT")]
-	public const int GL_SECONDARY_COLOR_ARRAY_STRIDE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_TYPE")]
-	public const int GL_SECONDARY_COLOR_ARRAY_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_TYPE_EXT")]
-	public const int GL_SECONDARY_COLOR_ARRAY_TYPE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_NV")]
-	public const int GL_SECONDARY_COLOR_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_INTERPOLATOR_ATI")]
-	public const int GL_SECONDARY_INTERPOLATOR_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SELECT")]
-	public const int GL_SELECT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SELECTION_BUFFER_POINTER")]
-	public const int GL_SELECTION_BUFFER_POINTER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SELECTION_BUFFER_SIZE")]
-	public const int GL_SELECTION_BUFFER_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARABLE_2D")]
-	public const int GL_SEPARABLE_2D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARABLE_2D_EXT")]
-	public const int GL_SEPARABLE_2D_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_ATTRIBS")]
-	public const int GL_SEPARATE_ATTRIBS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_ATTRIBS_EXT")]
-	public const int GL_SEPARATE_ATTRIBS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_ATTRIBS_NV")]
-	public const int GL_SEPARATE_ATTRIBS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_SPECULAR_COLOR")]
-	public const int GL_SEPARATE_SPECULAR_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_SPECULAR_COLOR_EXT")]
-	public const int GL_SEPARATE_SPECULAR_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SET")]
-	public const int GL_SET;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SET_AMD")]
-	public const int GL_SET_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_detail_texture")]
-	public const int GL_SGIS_detail_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_fog_function")]
-	public const int GL_SGIS_fog_function;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_generate_mipmap")]
-	public const int GL_SGIS_generate_mipmap;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_multisample")]
-	public const int GL_SGIS_multisample;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_pixel_texture")]
-	public const int GL_SGIS_pixel_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_point_line_texgen")]
-	public const int GL_SGIS_point_line_texgen;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_point_parameters")]
-	public const int GL_SGIS_point_parameters;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_sharpen_texture")]
-	public const int GL_SGIS_sharpen_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture4D")]
-	public const int GL_SGIS_texture4D;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_border_clamp")]
-	public const int GL_SGIS_texture_border_clamp;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_edge_clamp")]
-	public const int GL_SGIS_texture_edge_clamp;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_filter4")]
-	public const int GL_SGIS_texture_filter4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_lod")]
-	public const int GL_SGIS_texture_lod;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_select")]
-	public const int GL_SGIS_texture_select;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_async")]
-	public const int GL_SGIX_async;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_async_histogram")]
-	public const int GL_SGIX_async_histogram;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_async_pixel")]
-	public const int GL_SGIX_async_pixel;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_blend_alpha_minmax")]
-	public const int GL_SGIX_blend_alpha_minmax;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_calligraphic_fragment")]
-	public const int GL_SGIX_calligraphic_fragment;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_clipmap")]
-	public const int GL_SGIX_clipmap;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_convolution_accuracy")]
-	public const int GL_SGIX_convolution_accuracy;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_depth_texture")]
-	public const int GL_SGIX_depth_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_flush_raster")]
-	public const int GL_SGIX_flush_raster;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_fog_offset")]
-	public const int GL_SGIX_fog_offset;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_fragment_lighting")]
-	public const int GL_SGIX_fragment_lighting;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_framezoom")]
-	public const int GL_SGIX_framezoom;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_icc_texture")]
-	public const int GL_SGIX_icc_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_impact_pixel_texture")]
-	public const int GL_SGIX_impact_pixel_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_instruments")]
-	public const int GL_SGIX_instruments;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_interlace")]
-	public const int GL_SGIX_interlace;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_ir_instrument1")]
-	public const int GL_SGIX_ir_instrument1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_list_priority")]
-	public const int GL_SGIX_list_priority;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_pixel_texture")]
-	public const int GL_SGIX_pixel_texture;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_pixel_tiles")]
-	public const int GL_SGIX_pixel_tiles;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_polynomial_ffd")]
-	public const int GL_SGIX_polynomial_ffd;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_reference_plane")]
-	public const int GL_SGIX_reference_plane;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_resample")]
-	public const int GL_SGIX_resample;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_scalebias_hint")]
-	public const int GL_SGIX_scalebias_hint;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_shadow")]
-	public const int GL_SGIX_shadow;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_shadow_ambient")]
-	public const int GL_SGIX_shadow_ambient;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_sprite")]
-	public const int GL_SGIX_sprite;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_subsample")]
-	public const int GL_SGIX_subsample;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_tag_sample_buffer")]
-	public const int GL_SGIX_tag_sample_buffer;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_add_env")]
-	public const int GL_SGIX_texture_add_env;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_coordinate_clamp")]
-	public const int GL_SGIX_texture_coordinate_clamp;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_lod_bias")]
-	public const int GL_SGIX_texture_lod_bias;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_multi_buffer")]
-	public const int GL_SGIX_texture_multi_buffer;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_scale_bias")]
-	public const int GL_SGIX_texture_scale_bias;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_vertex_preclip")]
-	public const int GL_SGIX_vertex_preclip;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_ycrcb")]
-	public const int GL_SGIX_ycrcb;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGI_color_matrix")]
-	public const int GL_SGI_color_matrix;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGI_color_table")]
-	public const int GL_SGI_color_table;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGI_texture_color_table")]
-	public const int GL_SGI_texture_color_table;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGX_BINARY_IMG")]
-	public const int GL_SGX_BINARY_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SGX_PROGRAM_BINARY_IMG")]
-	public const int GL_SGX_PROGRAM_BINARY_IMG;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER")]
-	public const int GL_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_BINARY_DMP")]
-	public const int GL_SHADER_BINARY_DMP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_BINARY_FORMATS")]
-	public const int GL_SHADER_BINARY_FORMATS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_BINARY_VIV")]
-	public const int GL_SHADER_BINARY_VIV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_COMPILER")]
-	public const int GL_SHADER_COMPILER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_CONSISTENT_NV")]
-	public const int GL_SHADER_CONSISTENT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_GLOBAL_ACCESS_BARRIER_BIT_NV")]
-	public const int GL_SHADER_GLOBAL_ACCESS_BARRIER_BIT_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_ACCESS_BARRIER_BIT")]
-	public const int GL_SHADER_IMAGE_ACCESS_BARRIER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_ACCESS_BARRIER_BIT_EXT")]
-	public const int GL_SHADER_IMAGE_ACCESS_BARRIER_BIT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_ATOMIC")]
-	public const int GL_SHADER_IMAGE_ATOMIC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_LOAD")]
-	public const int GL_SHADER_IMAGE_LOAD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_STORE")]
-	public const int GL_SHADER_IMAGE_STORE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_INCLUDE_ARB")]
-	public const int GL_SHADER_INCLUDE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_OBJECT_ARB")]
-	public const int GL_SHADER_OBJECT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_OBJECT_EXT")]
-	public const int GL_SHADER_OBJECT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_OPERATION_NV")]
-	public const int GL_SHADER_OPERATION_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_SOURCE_LENGTH")]
-	public const int GL_SHADER_SOURCE_LENGTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BARRIER_BIT")]
-	public const int GL_SHADER_STORAGE_BARRIER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BLOCK")]
-	public const int GL_SHADER_STORAGE_BLOCK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER")]
-	public const int GL_SHADER_STORAGE_BUFFER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER_BINDING")]
-	public const int GL_SHADER_STORAGE_BUFFER_BINDING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT")]
-	public const int GL_SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER_SIZE")]
-	public const int GL_SHADER_STORAGE_BUFFER_SIZE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER_START")]
-	public const int GL_SHADER_STORAGE_BUFFER_START;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_TYPE")]
-	public const int GL_SHADER_TYPE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADE_MODEL")]
-	public const int GL_SHADE_MODEL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADING_LANGUAGE_VERSION")]
-	public const int GL_SHADING_LANGUAGE_VERSION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADING_LANGUAGE_VERSION_ARB")]
-	public const int GL_SHADING_LANGUAGE_VERSION_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADOW_AMBIENT_SGIX")]
-	public const int GL_SHADOW_AMBIENT_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADOW_ATTENUATION_EXT")]
-	public const int GL_SHADOW_ATTENUATION_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHARED_TEXTURE_PALETTE_EXT")]
-	public const int GL_SHARED_TEXTURE_PALETTE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHARPEN_TEXTURE_FUNC_POINTS_SGIS")]
-	public const int GL_SHARPEN_TEXTURE_FUNC_POINTS_SGIS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHININESS")]
-	public const int GL_SHININESS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SHORT")]
-	public const int GL_SHORT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNALED")]
-	public const int GL_SIGNALED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNALED_APPLE")]
-	public const int GL_SIGNALED_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_ALPHA8_NV")]
-	public const int GL_SIGNED_ALPHA8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_ALPHA_NV")]
-	public const int GL_SIGNED_ALPHA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_HILO16_NV")]
-	public const int GL_SIGNED_HILO16_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_HILO8_NV")]
-	public const int GL_SIGNED_HILO8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_HILO_NV")]
-	public const int GL_SIGNED_HILO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_IDENTITY_NV")]
-	public const int GL_SIGNED_IDENTITY_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_INTENSITY8_NV")]
-	public const int GL_SIGNED_INTENSITY8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_INTENSITY_NV")]
-	public const int GL_SIGNED_INTENSITY_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_LUMINANCE8_ALPHA8_NV")]
-	public const int GL_SIGNED_LUMINANCE8_ALPHA8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_LUMINANCE8_NV")]
-	public const int GL_SIGNED_LUMINANCE8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_LUMINANCE_ALPHA_NV")]
-	public const int GL_SIGNED_LUMINANCE_ALPHA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_LUMINANCE_NV")]
-	public const int GL_SIGNED_LUMINANCE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_NORMALIZED")]
-	public const int GL_SIGNED_NORMALIZED;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGB8_NV")]
-	public const int GL_SIGNED_RGB8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGB8_UNSIGNED_ALPHA8_NV")]
-	public const int GL_SIGNED_RGB8_UNSIGNED_ALPHA8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGBA8_NV")]
-	public const int GL_SIGNED_RGBA8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGBA_NV")]
-	public const int GL_SIGNED_RGBA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGB_NV")]
-	public const int GL_SIGNED_RGB_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGB_UNSIGNED_ALPHA_NV")]
-	public const int GL_SIGNED_RGB_UNSIGNED_ALPHA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST")]
-	public const int GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE")]
-	public const int GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST")]
-	public const int GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE")]
-	public const int GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SINGLE_COLOR")]
-	public const int GL_SINGLE_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SINGLE_COLOR_EXT")]
-	public const int GL_SINGLE_COLOR_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_COMPONENTS1_NV")]
-	public const int GL_SKIP_COMPONENTS1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_COMPONENTS2_NV")]
-	public const int GL_SKIP_COMPONENTS2_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_COMPONENTS3_NV")]
-	public const int GL_SKIP_COMPONENTS3_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_COMPONENTS4_NV")]
-	public const int GL_SKIP_COMPONENTS4_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_DECODE_EXT")]
-	public const int GL_SKIP_DECODE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_MISSING_GLYPH_NV")]
-	public const int GL_SKIP_MISSING_GLYPH_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLICE_ACCUM_SUN")]
-	public const int GL_SLICE_ACCUM_SUN;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLIM10U_SGIX")]
-	public const int GL_SLIM10U_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLIM12S_SGIX")]
-	public const int GL_SLIM12S_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLIM8U_SGIX")]
-	public const int GL_SLIM8U_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE")]
-	public const int GL_SLUMINANCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8")]
-	public const int GL_SLUMINANCE8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_ALPHA8")]
-	public const int GL_SLUMINANCE8_ALPHA8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_ALPHA8_EXT")]
-	public const int GL_SLUMINANCE8_ALPHA8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_ALPHA8_NV")]
-	public const int GL_SLUMINANCE8_ALPHA8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_EXT")]
-	public const int GL_SLUMINANCE8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_NV")]
-	public const int GL_SLUMINANCE8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_ALPHA")]
-	public const int GL_SLUMINANCE_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_ALPHA_EXT")]
-	public const int GL_SLUMINANCE_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_ALPHA_NV")]
-	public const int GL_SLUMINANCE_ALPHA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_EXT")]
-	public const int GL_SLUMINANCE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_NV")]
-	public const int GL_SLUMINANCE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMALL_CCW_ARC_TO_NV")]
-	public const int GL_SMALL_CCW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMALL_CW_ARC_TO_NV")]
-	public const int GL_SMALL_CW_ARC_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH")]
-	public const int GL_SMOOTH;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_CUBIC_CURVE_TO_NV")]
-	public const int GL_SMOOTH_CUBIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_LINE_WIDTH_GRANULARITY")]
-	public const int GL_SMOOTH_LINE_WIDTH_GRANULARITY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_LINE_WIDTH_RANGE")]
-	public const int GL_SMOOTH_LINE_WIDTH_RANGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_POINT_SIZE_GRANULARITY")]
-	public const int GL_SMOOTH_POINT_SIZE_GRANULARITY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_POINT_SIZE_RANGE")]
-	public const int GL_SMOOTH_POINT_SIZE_RANGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_QUADRATIC_CURVE_TO_NV")]
-	public const int GL_SMOOTH_QUADRATIC_CURVE_TO_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE0_ALPHA")]
-	public const int GL_SOURCE0_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE0_ALPHA_EXT")]
-	public const int GL_SOURCE0_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE0_RGB")]
-	public const int GL_SOURCE0_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE0_RGB_EXT")]
-	public const int GL_SOURCE0_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE1_ALPHA")]
-	public const int GL_SOURCE1_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE1_ALPHA_EXT")]
-	public const int GL_SOURCE1_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE1_RGB")]
-	public const int GL_SOURCE1_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE1_RGB_EXT")]
-	public const int GL_SOURCE1_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE2_ALPHA")]
-	public const int GL_SOURCE2_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE2_ALPHA_EXT")]
-	public const int GL_SOURCE2_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE2_RGB")]
-	public const int GL_SOURCE2_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE2_RGB_EXT")]
-	public const int GL_SOURCE2_RGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE3_ALPHA_NV")]
-	public const int GL_SOURCE3_ALPHA_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE3_RGB_NV")]
-	public const int GL_SOURCE3_RGB_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPARE0_NV")]
-	public const int GL_SPARE0_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPARE0_PLUS_SECONDARY_COLOR_NV")]
-	public const int GL_SPARE0_PLUS_SECONDARY_COLOR_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPARE1_NV")]
-	public const int GL_SPARE1_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPECULAR")]
-	public const int GL_SPECULAR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPHERE_MAP")]
-	public const int GL_SPHERE_MAP;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPOT_CUTOFF")]
-	public const int GL_SPOT_CUTOFF;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPOT_DIRECTION")]
-	public const int GL_SPOT_DIRECTION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPOT_EXPONENT")]
-	public const int GL_SPOT_EXPONENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_AXIAL_SGIX")]
-	public const int GL_SPRITE_AXIAL_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_AXIS_SGIX")]
-	public const int GL_SPRITE_AXIS_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_EYE_ALIGNED_SGIX")]
-	public const int GL_SPRITE_EYE_ALIGNED_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_MODE_SGIX")]
-	public const int GL_SPRITE_MODE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_OBJECT_ALIGNED_SGIX")]
-	public const int GL_SPRITE_OBJECT_ALIGNED_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_SGIX")]
-	public const int GL_SPRITE_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_TRANSLATION_SGIX")]
-	public const int GL_SPRITE_TRANSLATION_SGIX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SQUARE_NV")]
-	public const int GL_SQUARE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC0_ALPHA")]
-	public const int GL_SRC0_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC0_RGB")]
-	public const int GL_SRC0_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC1_ALPHA")]
-	public const int GL_SRC1_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC1_COLOR")]
-	public const int GL_SRC1_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC1_RGB")]
-	public const int GL_SRC1_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC2_ALPHA")]
-	public const int GL_SRC2_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC2_RGB")]
-	public const int GL_SRC2_RGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC_ALPHA")]
-	public const int GL_SRC_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC_ALPHA_SATURATE")]
-	public const int GL_SRC_ALPHA_SATURATE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC_COLOR")]
-	public const int GL_SRC_COLOR;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB")]
-	public const int GL_SRGB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8")]
-	public const int GL_SRGB8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8_ALPHA8")]
-	public const int GL_SRGB8_ALPHA8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8_ALPHA8_EXT")]
-	public const int GL_SRGB8_ALPHA8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8_EXT")]
-	public const int GL_SRGB8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8_NV")]
-	public const int GL_SRGB8_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_ALPHA")]
-	public const int GL_SRGB_ALPHA;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_ALPHA_EXT")]
-	public const int GL_SRGB_ALPHA_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_DECODE_ARB")]
-	public const int GL_SRGB_DECODE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_EXT")]
-	public const int GL_SRGB_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_READ")]
-	public const int GL_SRGB_READ;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_WRITE")]
-	public const int GL_SRGB_WRITE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STACK_OVERFLOW")]
-	public const int GL_STACK_OVERFLOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STACK_UNDERFLOW")]
-	public const int GL_STACK_UNDERFLOW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STANDARD_FONT_NAME_NV")]
-	public const int GL_STANDARD_FONT_NAME_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STATE_RESTORE")]
-	public const int GL_STATE_RESTORE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_ATI")]
-	public const int GL_STATIC_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_COPY")]
-	public const int GL_STATIC_COPY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_COPY_ARB")]
-	public const int GL_STATIC_COPY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_DRAW")]
-	public const int GL_STATIC_DRAW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_DRAW_ARB")]
-	public const int GL_STATIC_DRAW_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_READ")]
-	public const int GL_STATIC_READ;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_READ_ARB")]
-	public const int GL_STATIC_READ_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL")]
-	public const int GL_STENCIL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_ATTACHMENT")]
-	public const int GL_STENCIL_ATTACHMENT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_ATTACHMENT_EXT")]
-	public const int GL_STENCIL_ATTACHMENT_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_ATTACHMENT_OES")]
-	public const int GL_STENCIL_ATTACHMENT_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_FAIL")]
-	public const int GL_STENCIL_BACK_FAIL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_FAIL_ATI")]
-	public const int GL_STENCIL_BACK_FAIL_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_FUNC")]
-	public const int GL_STENCIL_BACK_FUNC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_FUNC_ATI")]
-	public const int GL_STENCIL_BACK_FUNC_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_OP_VALUE_AMD")]
-	public const int GL_STENCIL_BACK_OP_VALUE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_PASS_DEPTH_FAIL")]
-	public const int GL_STENCIL_BACK_PASS_DEPTH_FAIL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_PASS_DEPTH_FAIL_ATI")]
-	public const int GL_STENCIL_BACK_PASS_DEPTH_FAIL_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_PASS_DEPTH_PASS")]
-	public const int GL_STENCIL_BACK_PASS_DEPTH_PASS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_PASS_DEPTH_PASS_ATI")]
-	public const int GL_STENCIL_BACK_PASS_DEPTH_PASS_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_REF")]
-	public const int GL_STENCIL_BACK_REF;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_VALUE_MASK")]
-	public const int GL_STENCIL_BACK_VALUE_MASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_WRITEMASK")]
-	public const int GL_STENCIL_BACK_WRITEMASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BITS")]
-	public const int GL_STENCIL_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BUFFER_BIT")]
-	public const int GL_STENCIL_BUFFER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_CLEAR_TAG_VALUE_EXT")]
-	public const int GL_STENCIL_CLEAR_TAG_VALUE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_CLEAR_VALUE")]
-	public const int GL_STENCIL_CLEAR_VALUE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_COMPONENTS")]
-	public const int GL_STENCIL_COMPONENTS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_EXT")]
-	public const int GL_STENCIL_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_FAIL")]
-	public const int GL_STENCIL_FAIL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_FUNC")]
-	public const int GL_STENCIL_FUNC;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX")]
-	public const int GL_STENCIL_INDEX;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX1")]
-	public const int GL_STENCIL_INDEX1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX16")]
-	public const int GL_STENCIL_INDEX16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX16_EXT")]
-	public const int GL_STENCIL_INDEX16_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX1_EXT")]
-	public const int GL_STENCIL_INDEX1_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX1_OES")]
-	public const int GL_STENCIL_INDEX1_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX4")]
-	public const int GL_STENCIL_INDEX4;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX4_EXT")]
-	public const int GL_STENCIL_INDEX4_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX4_OES")]
-	public const int GL_STENCIL_INDEX4_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX8")]
-	public const int GL_STENCIL_INDEX8;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX8_EXT")]
-	public const int GL_STENCIL_INDEX8_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX8_OES")]
-	public const int GL_STENCIL_INDEX8_OES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_OP_VALUE_AMD")]
-	public const int GL_STENCIL_OP_VALUE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_PASS_DEPTH_FAIL")]
-	public const int GL_STENCIL_PASS_DEPTH_FAIL;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_PASS_DEPTH_PASS")]
-	public const int GL_STENCIL_PASS_DEPTH_PASS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_REF")]
-	public const int GL_STENCIL_REF;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_RENDERABLE")]
-	public const int GL_STENCIL_RENDERABLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_TAG_BITS_EXT")]
-	public const int GL_STENCIL_TAG_BITS_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_TEST")]
-	public const int GL_STENCIL_TEST;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_TEST_TWO_SIDE_EXT")]
-	public const int GL_STENCIL_TEST_TWO_SIDE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_VALUE_MASK")]
-	public const int GL_STENCIL_VALUE_MASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_WRITEMASK")]
-	public const int GL_STENCIL_WRITEMASK;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STEREO")]
-	public const int GL_STEREO;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STORAGE_CACHED_APPLE")]
-	public const int GL_STORAGE_CACHED_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STORAGE_CLIENT_APPLE")]
-	public const int GL_STORAGE_CLIENT_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STORAGE_PRIVATE_APPLE")]
-	public const int GL_STORAGE_PRIVATE_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STORAGE_SHARED_APPLE")]
-	public const int GL_STORAGE_SHARED_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_COPY")]
-	public const int GL_STREAM_COPY;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_COPY_ARB")]
-	public const int GL_STREAM_COPY_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_DRAW")]
-	public const int GL_STREAM_DRAW;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_DRAW_ARB")]
-	public const int GL_STREAM_DRAW_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_READ")]
-	public const int GL_STREAM_READ;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_READ_ARB")]
-	public const int GL_STREAM_READ_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SUBPIXEL_BITS")]
-	public const int GL_SUBPIXEL_BITS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SUBSAMPLE_DISTANCE_AMD")]
-	public const int GL_SUBSAMPLE_DISTANCE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SUBTRACT")]
-	public const int GL_SUBTRACT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SUBTRACT_ARB")]
-	public const int GL_SUBTRACT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SUB_ATI")]
-	public const int GL_SUB_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SUCCESS_NV")]
-	public const int GL_SUCCESS_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SURFACE_MAPPED_NV")]
-	public const int GL_SURFACE_MAPPED_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SURFACE_REGISTERED_NV")]
-	public const int GL_SURFACE_REGISTERED_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SURFACE_STATE_NV")]
-	public const int GL_SURFACE_STATE_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STQ_ATI")]
-	public const int GL_SWIZZLE_STQ_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STQ_DQ_ATI")]
-	public const int GL_SWIZZLE_STQ_DQ_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STRQ_ATI")]
-	public const int GL_SWIZZLE_STRQ_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STRQ_DQ_ATI")]
-	public const int GL_SWIZZLE_STRQ_DQ_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STR_ATI")]
-	public const int GL_SWIZZLE_STR_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STR_DR_ATI")]
-	public const int GL_SWIZZLE_STR_DR_ATI;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_CL_EVENT_ARB")]
-	public const int GL_SYNC_CL_EVENT_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_CL_EVENT_COMPLETE_ARB")]
-	public const int GL_SYNC_CL_EVENT_COMPLETE_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_CONDITION")]
-	public const int GL_SYNC_CONDITION;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_CONDITION_APPLE")]
-	public const int GL_SYNC_CONDITION_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FENCE")]
-	public const int GL_SYNC_FENCE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FENCE_APPLE")]
-	public const int GL_SYNC_FENCE_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FLAGS")]
-	public const int GL_SYNC_FLAGS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FLAGS_APPLE")]
-	public const int GL_SYNC_FLAGS_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FLUSH_COMMANDS_BIT")]
-	public const int GL_SYNC_FLUSH_COMMANDS_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FLUSH_COMMANDS_BIT_APPLE")]
-	public const int GL_SYNC_FLUSH_COMMANDS_BIT_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_GPU_COMMANDS_COMPLETE")]
-	public const int GL_SYNC_GPU_COMMANDS_COMPLETE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_GPU_COMMANDS_COMPLETE_APPLE")]
-	public const int GL_SYNC_GPU_COMMANDS_COMPLETE_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_OBJECT_APPLE")]
-	public const int GL_SYNC_OBJECT_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_STATUS")]
-	public const int GL_SYNC_STATUS;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_STATUS_APPLE")]
-	public const int GL_SYNC_STATUS_APPLE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_X11_FENCE_EXT")]
-	public const int GL_SYNC_X11_FENCE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_SYSTEM_FONT_NAME_NV")]
-	public const int GL_SYSTEM_FONT_NAME_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T")]
-	public const int GL_T;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_C3F_V3F")]
-	public const int GL_T2F_C3F_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_C4F_N3F_V3F")]
-	public const int GL_T2F_C4F_N3F_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_C4UB_V3F")]
-	public const int GL_T2F_C4UB_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_IUI_N3F_V2F_EXT")]
-	public const int GL_T2F_IUI_N3F_V2F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_IUI_N3F_V3F_EXT")]
-	public const int GL_T2F_IUI_N3F_V3F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_IUI_V2F_EXT")]
-	public const int GL_T2F_IUI_V2F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_IUI_V3F_EXT")]
-	public const int GL_T2F_IUI_V3F_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_N3F_V3F")]
-	public const int GL_T2F_N3F_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_V3F")]
-	public const int GL_T2F_V3F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T4F_C4F_N3F_V4F")]
-	public const int GL_T4F_C4F_N3F_V4F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_T4F_V4F")]
-	public const int GL_T4F_V4F;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TABLE_TOO_LARGE")]
-	public const int GL_TABLE_TOO_LARGE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TABLE_TOO_LARGE_EXT")]
-	public const int GL_TABLE_TOO_LARGE_EXT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESSELLATION_FACTOR_AMD")]
-	public const int GL_TESSELLATION_FACTOR_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESSELLATION_MODE_AMD")]
-	public const int GL_TESSELLATION_MODE_AMD;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_OUTPUT_VERTICES")]
-	public const int GL_TESS_CONTROL_OUTPUT_VERTICES;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_PROGRAM_NV")]
-	public const int GL_TESS_CONTROL_PROGRAM_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_PROGRAM_PARAMETER_BUFFER_NV")]
-	public const int GL_TESS_CONTROL_PROGRAM_PARAMETER_BUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_SHADER")]
-	public const int GL_TESS_CONTROL_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_SHADER_BIT")]
-	public const int GL_TESS_CONTROL_SHADER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_SUBROUTINE")]
-	public const int GL_TESS_CONTROL_SUBROUTINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_SUBROUTINE_UNIFORM")]
-	public const int GL_TESS_CONTROL_SUBROUTINE_UNIFORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_TEXTURE")]
-	public const int GL_TESS_CONTROL_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_PROGRAM_NV")]
-	public const int GL_TESS_EVALUATION_PROGRAM_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_PROGRAM_PARAMETER_BUFFER_NV")]
-	public const int GL_TESS_EVALUATION_PROGRAM_PARAMETER_BUFFER_NV;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_SHADER")]
-	public const int GL_TESS_EVALUATION_SHADER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_SHADER_BIT")]
-	public const int GL_TESS_EVALUATION_SHADER_BIT;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_SUBROUTINE")]
-	public const int GL_TESS_EVALUATION_SUBROUTINE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_SUBROUTINE_UNIFORM")]
-	public const int GL_TESS_EVALUATION_SUBROUTINE_UNIFORM;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_TEXTURE")]
-	public const int GL_TESS_EVALUATION_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_GEN_MODE")]
-	public const int GL_TESS_GEN_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_GEN_POINT_MODE")]
-	public const int GL_TESS_GEN_POINT_MODE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_GEN_SPACING")]
-	public const int GL_TESS_GEN_SPACING;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_GEN_VERTEX_ORDER")]
-	public const int GL_TESS_GEN_VERTEX_ORDER;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE")]
-	public const int GL_TEXTURE;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE0")]
-	public const int GL_TEXTURE0;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE0_ARB")]
-	public const int GL_TEXTURE0_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE1")]
-	public const int GL_TEXTURE1;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE10")]
-	public const int GL_TEXTURE10;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE10_ARB")]
-	public const int GL_TEXTURE10_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE11")]
-	public const int GL_TEXTURE11;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE11_ARB")]
-	public const int GL_TEXTURE11_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE12")]
-	public const int GL_TEXTURE12;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE12_ARB")]
-	public const int GL_TEXTURE12_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE13")]
-	public const int GL_TEXTURE13;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE13_ARB")]
-	public const int GL_TEXTURE13_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE14")]
-	public const int GL_TEXTURE14;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE14_ARB")]
-	public const int GL_TEXTURE14_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE15")]
-	public const int GL_TEXTURE15;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE15_ARB")]
-	public const int GL_TEXTURE15_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE16")]
-	public const int GL_TEXTURE16;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE16_ARB")]
-	public const int GL_TEXTURE16_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE17")]
-	public const int GL_TEXTURE17;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE17_ARB")]
-	public const int GL_TEXTURE17_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE18")]
-	public const int GL_TEXTURE18;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE18_ARB")]
-	public const int GL_TEXTURE18_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE19")]
-	public const int GL_TEXTURE19;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE19_ARB")]
-	public const int GL_TEXTURE19_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE1_ARB")]
-	public const int GL_TEXTURE1_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE2")]
-	public const int GL_TEXTURE2;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE20")]
-	public const int GL_TEXTURE20;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE20_ARB")]
-	public const int GL_TEXTURE20_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE21")]
-	public const int GL_TEXTURE21;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE21_ARB")]
-	public const int GL_TEXTURE21_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE22")]
-	public const int GL_TEXTURE22;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE22_ARB")]
-	public const int GL_TEXTURE22_ARB;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE23")]
-	public const int GL_TEXTURE23;
-	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE23_ARB")]
-	public const int GL_TEXTURE23_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLsync")]
+    [Compact]
+    public class GLsync {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLDEBUGPROC")]
+    [SimpleType]
+    public struct GLDEBUGPROC : int {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLDEBUGPROCAMD")]
+    [SimpleType]
+    public struct GLDEBUGPROCAMD : int {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLDEBUGPROCARB")]
+    [SimpleType]
+    public struct GLDEBUGPROCARB : int {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLbitfield")]
+    [SimpleType]
+    public struct GLbitfield : uint {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLboolean")]
+    [SimpleType]
+    public struct GLboolean : uint8 {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLbyte")]
+    [SimpleType]
+    public struct GLbyte : int8 {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLchar")]
+    [SimpleType]
+    public struct GLchar : char {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLcharARB")]
+    [SimpleType]
+    public struct GLcharARB : char {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLclampd")]
+    [SimpleType]
+    public struct GLclampd : double {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLclampf")]
+    [SimpleType]
+    public struct GLclampf : float {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLdouble")]
+    [SimpleType]
+    public struct GLdouble : double {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLenum")]
+    [SimpleType]
+    public struct GLenum : uint {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLfixed")]
+    [SimpleType]
+    public struct GLfixed : int {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLfloat")]
+    [SimpleType]
+    public struct GLfloat : float {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLhalfNV")]
+    [SimpleType]
+    public struct GLhalfNV : ushort {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLhandleARB")]
+    [SimpleType]
+    public struct GLhandleARB : uint {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLint")]
+    [SimpleType]
+    public struct GLint : int {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLint64")]
+    [SimpleType]
+    public struct GLint64 : int64 {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLint64EXT")]
+    [SimpleType]
+    public struct GLint64EXT : int64 {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLintptr")]
+    [SimpleType]
+    public struct GLintptr : size_t {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLintptrARB")]
+    [SimpleType]
+    public struct GLintptrARB : size_t {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLshort")]
+    [SimpleType]
+    public struct GLshort : short {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLsizei")]
+    [SimpleType]
+    public struct GLsizei : int {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLsizeiptr")]
+    [SimpleType]
+    public struct GLsizeiptr : size_t {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLsizeiptrARB")]
+    [SimpleType]
+    public struct GLsizeiptrARB : size_t {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLubyte")]
+    [SimpleType]
+    public struct GLubyte : uint8 {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLuint")]
+    [SimpleType]
+    public struct GLuint : uint {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLuint64")]
+    [SimpleType]
+    public struct GLuint64 : uint64 {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLuint64EXT")]
+    [SimpleType]
+    public struct GLuint64EXT : uint64 {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLushort")]
+    [SimpleType]
+    public struct GLushort : ushort {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLvdpauSurfaceNV")]
+    [SimpleType]
+    public struct GLvdpauSurfaceNV : GL.GLintptr {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GLvoid")]
+    [SimpleType]
+    public struct GLvoid {
+    }
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_1PASS_EXT")]
+    public const int GL_1PASS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_1PASS_SGIS")]
+    public const int GL_1PASS_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_2D")]
+    public const int GL_2D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_2PASS_0_EXT")]
+    public const int GL_2PASS_0_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_2PASS_0_SGIS")]
+    public const int GL_2PASS_0_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_2PASS_1_EXT")]
+    public const int GL_2PASS_1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_2PASS_1_SGIS")]
+    public const int GL_2PASS_1_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_2X_BIT_ATI")]
+    public const int GL_2X_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_2_BYTES")]
+    public const int GL_2_BYTES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_3D")]
+    public const int GL_3D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_3DC_XY_AMD")]
+    public const int GL_3DC_XY_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_3DC_X_AMD")]
+    public const int GL_3DC_X_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_3D_COLOR")]
+    public const int GL_3D_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_3D_COLOR_TEXTURE")]
+    public const int GL_3D_COLOR_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_3_BYTES")]
+    public const int GL_3_BYTES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_422_AVERAGE_EXT")]
+    public const int GL_422_AVERAGE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_422_EXT")]
+    public const int GL_422_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_422_REV_AVERAGE_EXT")]
+    public const int GL_422_REV_AVERAGE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_422_REV_EXT")]
+    public const int GL_422_REV_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4D_COLOR_TEXTURE")]
+    public const int GL_4D_COLOR_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_0_EXT")]
+    public const int GL_4PASS_0_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_0_SGIS")]
+    public const int GL_4PASS_0_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_1_EXT")]
+    public const int GL_4PASS_1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_1_SGIS")]
+    public const int GL_4PASS_1_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_2_EXT")]
+    public const int GL_4PASS_2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_2_SGIS")]
+    public const int GL_4PASS_2_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_3_EXT")]
+    public const int GL_4PASS_3_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4PASS_3_SGIS")]
+    public const int GL_4PASS_3_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4X_BIT_ATI")]
+    public const int GL_4X_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_4_BYTES")]
+    public const int GL_4_BYTES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_8X_BIT_ATI")]
+    public const int GL_8X_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ABGR_EXT")]
+    public const int GL_ABGR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM")]
+    public const int GL_ACCUM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_ADJACENT_PAIRS_NV")]
+    public const int GL_ACCUM_ADJACENT_PAIRS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_ALPHA_BITS")]
+    public const int GL_ACCUM_ALPHA_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_BLUE_BITS")]
+    public const int GL_ACCUM_BLUE_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_BUFFER_BIT")]
+    public const int GL_ACCUM_BUFFER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_CLEAR_VALUE")]
+    public const int GL_ACCUM_CLEAR_VALUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_GREEN_BITS")]
+    public const int GL_ACCUM_GREEN_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACCUM_RED_BITS")]
+    public const int GL_ACCUM_RED_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_ATOMIC_COUNTER_BUFFERS")]
+    public const int GL_ACTIVE_ATOMIC_COUNTER_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_ATTRIBUTES")]
+    public const int GL_ACTIVE_ATTRIBUTES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_ATTRIBUTE_MAX_LENGTH")]
+    public const int GL_ACTIVE_ATTRIBUTE_MAX_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_PROGRAM")]
+    public const int GL_ACTIVE_PROGRAM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_PROGRAM_EXT")]
+    public const int GL_ACTIVE_PROGRAM_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_RESOURCES")]
+    public const int GL_ACTIVE_RESOURCES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_STENCIL_FACE_EXT")]
+    public const int GL_ACTIVE_STENCIL_FACE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINES")]
+    public const int GL_ACTIVE_SUBROUTINES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINE_MAX_LENGTH")]
+    public const int GL_ACTIVE_SUBROUTINE_MAX_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINE_UNIFORMS")]
+    public const int GL_ACTIVE_SUBROUTINE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS")]
+    public const int GL_ACTIVE_SUBROUTINE_UNIFORM_LOCATIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH")]
+    public const int GL_ACTIVE_SUBROUTINE_UNIFORM_MAX_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_TEXTURE")]
+    public const int GL_ACTIVE_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_TEXTURE_ARB")]
+    public const int GL_ACTIVE_TEXTURE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_UNIFORMS")]
+    public const int GL_ACTIVE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_UNIFORM_BLOCKS")]
+    public const int GL_ACTIVE_UNIFORM_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH")]
+    public const int GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_UNIFORM_MAX_LENGTH")]
+    public const int GL_ACTIVE_UNIFORM_MAX_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_VARIABLES")]
+    public const int GL_ACTIVE_VARIABLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_VARYINGS_NV")]
+    public const int GL_ACTIVE_VARYINGS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_VARYING_MAX_LENGTH_NV")]
+    public const int GL_ACTIVE_VARYING_MAX_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ACTIVE_VERTEX_UNITS_ARB")]
+    public const int GL_ACTIVE_VERTEX_UNITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD")]
+    public const int GL_ADD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD_ATI")]
+    public const int GL_ADD_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD_BLEND_IMG")]
+    public const int GL_ADD_BLEND_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD_SIGNED")]
+    public const int GL_ADD_SIGNED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ADD_SIGNED_EXT")]
+    public const int GL_ADD_SIGNED_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ADJACENT_PAIRS_NV")]
+    public const int GL_ADJACENT_PAIRS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AFFINE_2D_NV")]
+    public const int GL_AFFINE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AFFINE_3D_NV")]
+    public const int GL_AFFINE_3D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALIASED_LINE_WIDTH_RANGE")]
+    public const int GL_ALIASED_LINE_WIDTH_RANGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALIASED_POINT_SIZE_RANGE")]
+    public const int GL_ALIASED_POINT_SIZE_RANGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_ATTRIB_BITS")]
+    public const int GL_ALL_ATTRIB_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_BARRIER_BITS")]
+    public const int GL_ALL_BARRIER_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_BARRIER_BITS_EXT")]
+    public const int GL_ALL_BARRIER_BITS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_COMPLETED_NV")]
+    public const int GL_ALL_COMPLETED_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_SHADER_BITS")]
+    public const int GL_ALL_SHADER_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALL_SHADER_BITS_EXT")]
+    public const int GL_ALL_SHADER_BITS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA")]
+    public const int GL_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA12")]
+    public const int GL_ALPHA12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA12_EXT")]
+    public const int GL_ALPHA12_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16")]
+    public const int GL_ALPHA16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16F_ARB")]
+    public const int GL_ALPHA16F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16I_EXT")]
+    public const int GL_ALPHA16I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16UI_EXT")]
+    public const int GL_ALPHA16UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16_EXT")]
+    public const int GL_ALPHA16_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA16_SNORM")]
+    public const int GL_ALPHA16_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA32F_ARB")]
+    public const int GL_ALPHA32F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA32I_EXT")]
+    public const int GL_ALPHA32I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA32UI_EXT")]
+    public const int GL_ALPHA32UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA4")]
+    public const int GL_ALPHA4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA4_EXT")]
+    public const int GL_ALPHA4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8")]
+    public const int GL_ALPHA8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8I_EXT")]
+    public const int GL_ALPHA8I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8UI_EXT")]
+    public const int GL_ALPHA8UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8_EXT")]
+    public const int GL_ALPHA8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA8_SNORM")]
+    public const int GL_ALPHA8_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_BIAS")]
+    public const int GL_ALPHA_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_BITS")]
+    public const int GL_ALPHA_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_FLOAT16_APPLE")]
+    public const int GL_ALPHA_FLOAT16_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_FLOAT16_ATI")]
+    public const int GL_ALPHA_FLOAT16_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_FLOAT32_APPLE")]
+    public const int GL_ALPHA_FLOAT32_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_FLOAT32_ATI")]
+    public const int GL_ALPHA_FLOAT32_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_INTEGER")]
+    public const int GL_ALPHA_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_INTEGER_EXT")]
+    public const int GL_ALPHA_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_MAX_CLAMP_INGR")]
+    public const int GL_ALPHA_MAX_CLAMP_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_MAX_SGIX")]
+    public const int GL_ALPHA_MAX_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_MIN_CLAMP_INGR")]
+    public const int GL_ALPHA_MIN_CLAMP_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_MIN_SGIX")]
+    public const int GL_ALPHA_MIN_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_SCALE")]
+    public const int GL_ALPHA_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_SNORM")]
+    public const int GL_ALPHA_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST")]
+    public const int GL_ALPHA_TEST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_FUNC")]
+    public const int GL_ALPHA_TEST_FUNC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_FUNC_QCOM")]
+    public const int GL_ALPHA_TEST_FUNC_QCOM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_QCOM")]
+    public const int GL_ALPHA_TEST_QCOM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_REF")]
+    public const int GL_ALPHA_TEST_REF;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALPHA_TEST_REF_QCOM")]
+    public const int GL_ALPHA_TEST_REF_QCOM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALREADY_SIGNALED")]
+    public const int GL_ALREADY_SIGNALED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALREADY_SIGNALED_APPLE")]
+    public const int GL_ALREADY_SIGNALED_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ALWAYS")]
+    public const int GL_ALWAYS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AMBIENT")]
+    public const int GL_AMBIENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AMBIENT_AND_DIFFUSE")]
+    public const int GL_AMBIENT_AND_DIFFUSE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AND")]
+    public const int GL_AND;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AND_INVERTED")]
+    public const int GL_AND_INVERTED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AND_REVERSE")]
+    public const int GL_AND_REVERSE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ANY_SAMPLES_PASSED")]
+    public const int GL_ANY_SAMPLES_PASSED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ANY_SAMPLES_PASSED_CONSERVATIVE")]
+    public const int GL_ANY_SAMPLES_PASSED_CONSERVATIVE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ANY_SAMPLES_PASSED_CONSERVATIVE_EXT")]
+    public const int GL_ANY_SAMPLES_PASSED_CONSERVATIVE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ANY_SAMPLES_PASSED_EXT")]
+    public const int GL_ANY_SAMPLES_PASSED_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARB_imaging")]
+    public const int GL_ARB_imaging;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARC_TO_NV")]
+    public const int GL_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_BUFFER")]
+    public const int GL_ARRAY_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_BUFFER_ARB")]
+    public const int GL_ARRAY_BUFFER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_BUFFER_BINDING")]
+    public const int GL_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_BUFFER_BINDING_ARB")]
+    public const int GL_ARRAY_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_ELEMENT_LOCK_COUNT_EXT")]
+    public const int GL_ARRAY_ELEMENT_LOCK_COUNT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_ELEMENT_LOCK_FIRST_EXT")]
+    public const int GL_ARRAY_ELEMENT_LOCK_FIRST_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_OBJECT_BUFFER_ATI")]
+    public const int GL_ARRAY_OBJECT_BUFFER_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_OBJECT_OFFSET_ATI")]
+    public const int GL_ARRAY_OBJECT_OFFSET_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_SIZE")]
+    public const int GL_ARRAY_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ARRAY_STRIDE")]
+    public const int GL_ARRAY_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_DRAW_PIXELS_SGIX")]
+    public const int GL_ASYNC_DRAW_PIXELS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_HISTOGRAM_SGIX")]
+    public const int GL_ASYNC_HISTOGRAM_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_MARKER_SGIX")]
+    public const int GL_ASYNC_MARKER_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_READ_PIXELS_SGIX")]
+    public const int GL_ASYNC_READ_PIXELS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ASYNC_TEX_IMAGE_SGIX")]
+    public const int GL_ASYNC_TEX_IMAGE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATC_RGBA_EXPLICIT_ALPHA_AMD")]
+    public const int GL_ATC_RGBA_EXPLICIT_ALPHA_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATC_RGBA_INTERPOLATED_ALPHA_AMD")]
+    public const int GL_ATC_RGBA_INTERPOLATED_ALPHA_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATC_RGB_AMD")]
+    public const int GL_ATC_RGB_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BARRIER_BIT")]
+    public const int GL_ATOMIC_COUNTER_BARRIER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BARRIER_BIT_EXT")]
+    public const int GL_ATOMIC_COUNTER_BARRIER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER")]
+    public const int GL_ATOMIC_COUNTER_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTERS")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTER_INDICES")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_ACTIVE_ATOMIC_COUNTER_INDICES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_BINDING")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_DATA_SIZE")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_DATA_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_INDEX")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_COMPUTE_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_FRAGMENT_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_GEOMETRY_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_CONTROL_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_TESS_EVALUATION_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_REFERENCED_BY_VERTEX_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_SIZE")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATOMIC_COUNTER_BUFFER_START")]
+    public const int GL_ATOMIC_COUNTER_BUFFER_START;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTACHED_SHADERS")]
+    public const int GL_ATTACHED_SHADERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTENUATION_EXT")]
+    public const int GL_ATTENUATION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_ARRAY_POINTER_NV")]
+    public const int GL_ATTRIB_ARRAY_POINTER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_ARRAY_SIZE_NV")]
+    public const int GL_ATTRIB_ARRAY_SIZE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_ARRAY_STRIDE_NV")]
+    public const int GL_ATTRIB_ARRAY_STRIDE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_ARRAY_TYPE_NV")]
+    public const int GL_ATTRIB_ARRAY_TYPE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ATTRIB_STACK_DEPTH")]
+    public const int GL_ATTRIB_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AUTO_GENERATE_MIPMAP")]
+    public const int GL_AUTO_GENERATE_MIPMAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AUTO_NORMAL")]
+    public const int GL_AUTO_NORMAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX0")]
+    public const int GL_AUX0;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX1")]
+    public const int GL_AUX1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX2")]
+    public const int GL_AUX2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX3")]
+    public const int GL_AUX3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX_BUFFERS")]
+    public const int GL_AUX_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AUX_DEPTH_STENCIL_APPLE")]
+    public const int GL_AUX_DEPTH_STENCIL_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_AVERAGE_EXT")]
+    public const int GL_AVERAGE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK")]
+    public const int GL_BACK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK_LEFT")]
+    public const int GL_BACK_LEFT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK_PRIMARY_COLOR_NV")]
+    public const int GL_BACK_PRIMARY_COLOR_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK_RIGHT")]
+    public const int GL_BACK_RIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BACK_SECONDARY_COLOR_NV")]
+    public const int GL_BACK_SECONDARY_COLOR_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BEVEL_NV")]
+    public const int GL_BEVEL_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BGR")]
+    public const int GL_BGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BGRA")]
+    public const int GL_BGRA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BGRA_EXT")]
+    public const int GL_BGRA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BGRA_INTEGER")]
+    public const int GL_BGRA_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BGRA_INTEGER_EXT")]
+    public const int GL_BGRA_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BGR_EXT")]
+    public const int GL_BGR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BGR_INTEGER")]
+    public const int GL_BGR_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BGR_INTEGER_EXT")]
+    public const int GL_BGR_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BIAS_BIT_ATI")]
+    public const int GL_BIAS_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BIAS_BY_NEGATIVE_ONE_HALF_NV")]
+    public const int GL_BIAS_BY_NEGATIVE_ONE_HALF_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BINNING_CONTROL_HINT_QCOM")]
+    public const int GL_BINNING_CONTROL_HINT_QCOM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BITMAP")]
+    public const int GL_BITMAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BITMAP_TOKEN")]
+    public const int GL_BITMAP_TOKEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND")]
+    public const int GL_BLEND;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_COLOR")]
+    public const int GL_BLEND_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_COLOR_EXT")]
+    public const int GL_BLEND_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST")]
+    public const int GL_BLEND_DST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_ALPHA")]
+    public const int GL_BLEND_DST_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_ALPHA_EXT")]
+    public const int GL_BLEND_DST_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_ALPHA_OES")]
+    public const int GL_BLEND_DST_ALPHA_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_RGB")]
+    public const int GL_BLEND_DST_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_RGB_EXT")]
+    public const int GL_BLEND_DST_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_DST_RGB_OES")]
+    public const int GL_BLEND_DST_RGB_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION")]
+    public const int GL_BLEND_EQUATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_ALPHA")]
+    public const int GL_BLEND_EQUATION_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_ALPHA_EXT")]
+    public const int GL_BLEND_EQUATION_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_ALPHA_OES")]
+    public const int GL_BLEND_EQUATION_ALPHA_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_EXT")]
+    public const int GL_BLEND_EQUATION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_OES")]
+    public const int GL_BLEND_EQUATION_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_RGB")]
+    public const int GL_BLEND_EQUATION_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_RGB_EXT")]
+    public const int GL_BLEND_EQUATION_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_EQUATION_RGB_OES")]
+    public const int GL_BLEND_EQUATION_RGB_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC")]
+    public const int GL_BLEND_SRC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_ALPHA")]
+    public const int GL_BLEND_SRC_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_ALPHA_EXT")]
+    public const int GL_BLEND_SRC_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_ALPHA_OES")]
+    public const int GL_BLEND_SRC_ALPHA_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_RGB")]
+    public const int GL_BLEND_SRC_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_RGB_EXT")]
+    public const int GL_BLEND_SRC_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLEND_SRC_RGB_OES")]
+    public const int GL_BLEND_SRC_RGB_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLOCK_INDEX")]
+    public const int GL_BLOCK_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE")]
+    public const int GL_BLUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_BIAS")]
+    public const int GL_BLUE_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_BITS")]
+    public const int GL_BLUE_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_BIT_ATI")]
+    public const int GL_BLUE_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_INTEGER")]
+    public const int GL_BLUE_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_INTEGER_EXT")]
+    public const int GL_BLUE_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_MAX_CLAMP_INGR")]
+    public const int GL_BLUE_MAX_CLAMP_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_MIN_CLAMP_INGR")]
+    public const int GL_BLUE_MIN_CLAMP_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BLUE_SCALE")]
+    public const int GL_BLUE_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOLD_BIT_NV")]
+    public const int GL_BOLD_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL")]
+    public const int GL_BOOL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_ARB")]
+    public const int GL_BOOL_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC2")]
+    public const int GL_BOOL_VEC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC2_ARB")]
+    public const int GL_BOOL_VEC2_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC3")]
+    public const int GL_BOOL_VEC3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC3_ARB")]
+    public const int GL_BOOL_VEC3_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC4")]
+    public const int GL_BOOL_VEC4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOOL_VEC4_ARB")]
+    public const int GL_BOOL_VEC4_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOUNDING_BOX_NV")]
+    public const int GL_BOUNDING_BOX_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BOUNDING_BOX_OF_BOUNDING_BOXES_NV")]
+    public const int GL_BOUNDING_BOX_OF_BOUNDING_BOXES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER")]
+    public const int GL_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_ACCESS")]
+    public const int GL_BUFFER_ACCESS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_ACCESS_ARB")]
+    public const int GL_BUFFER_ACCESS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_ACCESS_FLAGS")]
+    public const int GL_BUFFER_ACCESS_FLAGS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_ACCESS_OES")]
+    public const int GL_BUFFER_ACCESS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_BINDING")]
+    public const int GL_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_DATA_SIZE")]
+    public const int GL_BUFFER_DATA_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_FLUSHING_UNMAP_APPLE")]
+    public const int GL_BUFFER_FLUSHING_UNMAP_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_GPU_ADDRESS_NV")]
+    public const int GL_BUFFER_GPU_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAPPED")]
+    public const int GL_BUFFER_MAPPED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAPPED_ARB")]
+    public const int GL_BUFFER_MAPPED_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAPPED_OES")]
+    public const int GL_BUFFER_MAPPED_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_LENGTH")]
+    public const int GL_BUFFER_MAP_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_OFFSET")]
+    public const int GL_BUFFER_MAP_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_POINTER")]
+    public const int GL_BUFFER_MAP_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_POINTER_ARB")]
+    public const int GL_BUFFER_MAP_POINTER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_MAP_POINTER_OES")]
+    public const int GL_BUFFER_MAP_POINTER_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_OBJECT_APPLE")]
+    public const int GL_BUFFER_OBJECT_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_OBJECT_EXT")]
+    public const int GL_BUFFER_OBJECT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_SERIALIZED_MODIFY_APPLE")]
+    public const int GL_BUFFER_SERIALIZED_MODIFY_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_SIZE")]
+    public const int GL_BUFFER_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_SIZE_ARB")]
+    public const int GL_BUFFER_SIZE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_UPDATE_BARRIER_BIT")]
+    public const int GL_BUFFER_UPDATE_BARRIER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_UPDATE_BARRIER_BIT_EXT")]
+    public const int GL_BUFFER_UPDATE_BARRIER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_USAGE")]
+    public const int GL_BUFFER_USAGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_USAGE_ARB")]
+    public const int GL_BUFFER_USAGE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUFFER_VARIABLE")]
+    public const int GL_BUFFER_VARIABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_ENVMAP_ATI")]
+    public const int GL_BUMP_ENVMAP_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_NUM_TEX_UNITS_ATI")]
+    public const int GL_BUMP_NUM_TEX_UNITS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_ROT_MATRIX_ATI")]
+    public const int GL_BUMP_ROT_MATRIX_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_ROT_MATRIX_SIZE_ATI")]
+    public const int GL_BUMP_ROT_MATRIX_SIZE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_TARGET_ATI")]
+    public const int GL_BUMP_TARGET_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BUMP_TEX_UNITS_ATI")]
+    public const int GL_BUMP_TEX_UNITS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_BYTE")]
+    public const int GL_BYTE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_C3F_V3F")]
+    public const int GL_C3F_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_C4F_N3F_V3F")]
+    public const int GL_C4F_N3F_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_C4UB_V2F")]
+    public const int GL_C4UB_V2F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_C4UB_V3F")]
+    public const int GL_C4UB_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CALLIGRAPHIC_FRAGMENT_SGIX")]
+    public const int GL_CALLIGRAPHIC_FRAGMENT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CAVEAT_SUPPORT")]
+    public const int GL_CAVEAT_SUPPORT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CCW")]
+    public const int GL_CCW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CIRCULAR_CCW_ARC_TO_NV")]
+    public const int GL_CIRCULAR_CCW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CIRCULAR_CW_ARC_TO_NV")]
+    public const int GL_CIRCULAR_CW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CIRCULAR_TANGENT_ARC_TO_NV")]
+    public const int GL_CIRCULAR_TANGENT_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP")]
+    public const int GL_CLAMP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_FRAGMENT_COLOR")]
+    public const int GL_CLAMP_FRAGMENT_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_FRAGMENT_COLOR_ARB")]
+    public const int GL_CLAMP_FRAGMENT_COLOR_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_READ_COLOR")]
+    public const int GL_CLAMP_READ_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_READ_COLOR_ARB")]
+    public const int GL_CLAMP_READ_COLOR_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_BORDER")]
+    public const int GL_CLAMP_TO_BORDER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_BORDER_ARB")]
+    public const int GL_CLAMP_TO_BORDER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_BORDER_NV")]
+    public const int GL_CLAMP_TO_BORDER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_BORDER_SGIS")]
+    public const int GL_CLAMP_TO_BORDER_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_EDGE")]
+    public const int GL_CLAMP_TO_EDGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_TO_EDGE_SGIS")]
+    public const int GL_CLAMP_TO_EDGE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_VERTEX_COLOR")]
+    public const int GL_CLAMP_VERTEX_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLAMP_VERTEX_COLOR_ARB")]
+    public const int GL_CLAMP_VERTEX_COLOR_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLEAR")]
+    public const int GL_CLEAR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLEAR_BUFFER")]
+    public const int GL_CLEAR_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_ACTIVE_TEXTURE")]
+    public const int GL_CLIENT_ACTIVE_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_ACTIVE_TEXTURE_ARB")]
+    public const int GL_CLIENT_ACTIVE_TEXTURE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_ALL_ATTRIB_BITS")]
+    public const int GL_CLIENT_ALL_ATTRIB_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_ATTRIB_STACK_DEPTH")]
+    public const int GL_CLIENT_ATTRIB_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_PIXEL_STORE_BIT")]
+    public const int GL_CLIENT_PIXEL_STORE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIENT_VERTEX_ARRAY_BIT")]
+    public const int GL_CLIENT_VERTEX_ARRAY_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE0")]
+    public const int GL_CLIP_DISTANCE0;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE1")]
+    public const int GL_CLIP_DISTANCE1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE2")]
+    public const int GL_CLIP_DISTANCE2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE3")]
+    public const int GL_CLIP_DISTANCE3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE4")]
+    public const int GL_CLIP_DISTANCE4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE5")]
+    public const int GL_CLIP_DISTANCE5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE6")]
+    public const int GL_CLIP_DISTANCE6;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE7")]
+    public const int GL_CLIP_DISTANCE7;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_DISTANCE_NV")]
+    public const int GL_CLIP_DISTANCE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE0")]
+    public const int GL_CLIP_PLANE0;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE1")]
+    public const int GL_CLIP_PLANE1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE2")]
+    public const int GL_CLIP_PLANE2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE3")]
+    public const int GL_CLIP_PLANE3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE4")]
+    public const int GL_CLIP_PLANE4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLIP_PLANE5")]
+    public const int GL_CLIP_PLANE5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CLOSE_PATH_NV")]
+    public const int GL_CLOSE_PATH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CMYKA_EXT")]
+    public const int GL_CMYKA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CMYK_EXT")]
+    public const int GL_CMYK_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CND0_ATI")]
+    public const int GL_CND0_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CND_ATI")]
+    public const int GL_CND_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COEFF")]
+    public const int GL_COEFF;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR")]
+    public const int GL_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ALPHA_PAIRING_ATI")]
+    public const int GL_COLOR_ALPHA_PAIRING_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY")]
+    public const int GL_COLOR_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_ADDRESS_NV")]
+    public const int GL_COLOR_ARRAY_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_BUFFER_BINDING")]
+    public const int GL_COLOR_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_BUFFER_BINDING_ARB")]
+    public const int GL_COLOR_ARRAY_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_COUNT_EXT")]
+    public const int GL_COLOR_ARRAY_COUNT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_EXT")]
+    public const int GL_COLOR_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_LENGTH_NV")]
+    public const int GL_COLOR_ARRAY_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_PARALLEL_POINTERS_INTEL")]
+    public const int GL_COLOR_ARRAY_PARALLEL_POINTERS_INTEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_POINTER")]
+    public const int GL_COLOR_ARRAY_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_POINTER_EXT")]
+    public const int GL_COLOR_ARRAY_POINTER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_SIZE")]
+    public const int GL_COLOR_ARRAY_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_SIZE_EXT")]
+    public const int GL_COLOR_ARRAY_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_STRIDE")]
+    public const int GL_COLOR_ARRAY_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_STRIDE_EXT")]
+    public const int GL_COLOR_ARRAY_STRIDE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_TYPE")]
+    public const int GL_COLOR_ARRAY_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ARRAY_TYPE_EXT")]
+    public const int GL_COLOR_ARRAY_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT0")]
+    public const int GL_COLOR_ATTACHMENT0;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT0_EXT")]
+    public const int GL_COLOR_ATTACHMENT0_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT0_NV")]
+    public const int GL_COLOR_ATTACHMENT0_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT0_OES")]
+    public const int GL_COLOR_ATTACHMENT0_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT1")]
+    public const int GL_COLOR_ATTACHMENT1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT10")]
+    public const int GL_COLOR_ATTACHMENT10;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT10_EXT")]
+    public const int GL_COLOR_ATTACHMENT10_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT10_NV")]
+    public const int GL_COLOR_ATTACHMENT10_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT11")]
+    public const int GL_COLOR_ATTACHMENT11;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT11_EXT")]
+    public const int GL_COLOR_ATTACHMENT11_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT11_NV")]
+    public const int GL_COLOR_ATTACHMENT11_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT12")]
+    public const int GL_COLOR_ATTACHMENT12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT12_EXT")]
+    public const int GL_COLOR_ATTACHMENT12_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT12_NV")]
+    public const int GL_COLOR_ATTACHMENT12_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT13")]
+    public const int GL_COLOR_ATTACHMENT13;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT13_EXT")]
+    public const int GL_COLOR_ATTACHMENT13_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT13_NV")]
+    public const int GL_COLOR_ATTACHMENT13_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT14")]
+    public const int GL_COLOR_ATTACHMENT14;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT14_EXT")]
+    public const int GL_COLOR_ATTACHMENT14_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT14_NV")]
+    public const int GL_COLOR_ATTACHMENT14_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT15")]
+    public const int GL_COLOR_ATTACHMENT15;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT15_EXT")]
+    public const int GL_COLOR_ATTACHMENT15_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT15_NV")]
+    public const int GL_COLOR_ATTACHMENT15_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT1_EXT")]
+    public const int GL_COLOR_ATTACHMENT1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT1_NV")]
+    public const int GL_COLOR_ATTACHMENT1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT2")]
+    public const int GL_COLOR_ATTACHMENT2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT2_EXT")]
+    public const int GL_COLOR_ATTACHMENT2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT2_NV")]
+    public const int GL_COLOR_ATTACHMENT2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT3")]
+    public const int GL_COLOR_ATTACHMENT3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT3_EXT")]
+    public const int GL_COLOR_ATTACHMENT3_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT3_NV")]
+    public const int GL_COLOR_ATTACHMENT3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT4")]
+    public const int GL_COLOR_ATTACHMENT4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT4_EXT")]
+    public const int GL_COLOR_ATTACHMENT4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT4_NV")]
+    public const int GL_COLOR_ATTACHMENT4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT5")]
+    public const int GL_COLOR_ATTACHMENT5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT5_EXT")]
+    public const int GL_COLOR_ATTACHMENT5_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT5_NV")]
+    public const int GL_COLOR_ATTACHMENT5_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT6")]
+    public const int GL_COLOR_ATTACHMENT6;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT6_EXT")]
+    public const int GL_COLOR_ATTACHMENT6_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT6_NV")]
+    public const int GL_COLOR_ATTACHMENT6_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT7")]
+    public const int GL_COLOR_ATTACHMENT7;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT7_EXT")]
+    public const int GL_COLOR_ATTACHMENT7_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT7_NV")]
+    public const int GL_COLOR_ATTACHMENT7_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT8")]
+    public const int GL_COLOR_ATTACHMENT8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT8_EXT")]
+    public const int GL_COLOR_ATTACHMENT8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT8_NV")]
+    public const int GL_COLOR_ATTACHMENT8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT9")]
+    public const int GL_COLOR_ATTACHMENT9;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT9_EXT")]
+    public const int GL_COLOR_ATTACHMENT9_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT9_NV")]
+    public const int GL_COLOR_ATTACHMENT9_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ATTACHMENT_EXT")]
+    public const int GL_COLOR_ATTACHMENT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_BUFFER_BIT")]
+    public const int GL_COLOR_BUFFER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_CLEAR_UNCLAMPED_VALUE_ATI")]
+    public const int GL_COLOR_CLEAR_UNCLAMPED_VALUE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_CLEAR_VALUE")]
+    public const int GL_COLOR_CLEAR_VALUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_COMPONENTS")]
+    public const int GL_COLOR_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_ENCODING")]
+    public const int GL_COLOR_ENCODING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_EXT")]
+    public const int GL_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_FLOAT_APPLE")]
+    public const int GL_COLOR_FLOAT_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_INDEX")]
+    public const int GL_COLOR_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_INDEXES")]
+    public const int GL_COLOR_INDEXES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_LOGIC_OP")]
+    public const int GL_COLOR_LOGIC_OP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATERIAL")]
+    public const int GL_COLOR_MATERIAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATERIAL_FACE")]
+    public const int GL_COLOR_MATERIAL_FACE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATERIAL_PARAMETER")]
+    public const int GL_COLOR_MATERIAL_PARAMETER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATRIX")]
+    public const int GL_COLOR_MATRIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATRIX_SGI")]
+    public const int GL_COLOR_MATRIX_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATRIX_STACK_DEPTH")]
+    public const int GL_COLOR_MATRIX_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_MATRIX_STACK_DEPTH_SGI")]
+    public const int GL_COLOR_MATRIX_STACK_DEPTH_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_RENDERABLE")]
+    public const int GL_COLOR_RENDERABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SAMPLES_NV")]
+    public const int GL_COLOR_SAMPLES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SUM")]
+    public const int GL_COLOR_SUM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SUM_ARB")]
+    public const int GL_COLOR_SUM_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SUM_CLAMP_NV")]
+    public const int GL_COLOR_SUM_CLAMP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_SUM_EXT")]
+    public const int GL_COLOR_SUM_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE")]
+    public const int GL_COLOR_TABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_ALPHA_SIZE")]
+    public const int GL_COLOR_TABLE_ALPHA_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_ALPHA_SIZE_SGI")]
+    public const int GL_COLOR_TABLE_ALPHA_SIZE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_BIAS")]
+    public const int GL_COLOR_TABLE_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_BIAS_SGI")]
+    public const int GL_COLOR_TABLE_BIAS_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_BLUE_SIZE")]
+    public const int GL_COLOR_TABLE_BLUE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_BLUE_SIZE_SGI")]
+    public const int GL_COLOR_TABLE_BLUE_SIZE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_FORMAT")]
+    public const int GL_COLOR_TABLE_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_FORMAT_SGI")]
+    public const int GL_COLOR_TABLE_FORMAT_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_GREEN_SIZE")]
+    public const int GL_COLOR_TABLE_GREEN_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_GREEN_SIZE_SGI")]
+    public const int GL_COLOR_TABLE_GREEN_SIZE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_INTENSITY_SIZE")]
+    public const int GL_COLOR_TABLE_INTENSITY_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_INTENSITY_SIZE_SGI")]
+    public const int GL_COLOR_TABLE_INTENSITY_SIZE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_LUMINANCE_SIZE")]
+    public const int GL_COLOR_TABLE_LUMINANCE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_LUMINANCE_SIZE_SGI")]
+    public const int GL_COLOR_TABLE_LUMINANCE_SIZE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_RED_SIZE")]
+    public const int GL_COLOR_TABLE_RED_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_RED_SIZE_SGI")]
+    public const int GL_COLOR_TABLE_RED_SIZE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_SCALE")]
+    public const int GL_COLOR_TABLE_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_SCALE_SGI")]
+    public const int GL_COLOR_TABLE_SCALE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_SGI")]
+    public const int GL_COLOR_TABLE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_WIDTH")]
+    public const int GL_COLOR_TABLE_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_TABLE_WIDTH_SGI")]
+    public const int GL_COLOR_TABLE_WIDTH_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COLOR_WRITEMASK")]
+    public const int GL_COLOR_WRITEMASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE")]
+    public const int GL_COMBINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE4_NV")]
+    public const int GL_COMBINE4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER0_NV")]
+    public const int GL_COMBINER0_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER1_NV")]
+    public const int GL_COMBINER1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER2_NV")]
+    public const int GL_COMBINER2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER3_NV")]
+    public const int GL_COMBINER3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER4_NV")]
+    public const int GL_COMBINER4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER5_NV")]
+    public const int GL_COMBINER5_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER6_NV")]
+    public const int GL_COMBINER6_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER7_NV")]
+    public const int GL_COMBINER7_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_AB_DOT_PRODUCT_NV")]
+    public const int GL_COMBINER_AB_DOT_PRODUCT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_AB_OUTPUT_NV")]
+    public const int GL_COMBINER_AB_OUTPUT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_BIAS_NV")]
+    public const int GL_COMBINER_BIAS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_CD_DOT_PRODUCT_NV")]
+    public const int GL_COMBINER_CD_DOT_PRODUCT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_CD_OUTPUT_NV")]
+    public const int GL_COMBINER_CD_OUTPUT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_COMPONENT_USAGE_NV")]
+    public const int GL_COMBINER_COMPONENT_USAGE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_INPUT_NV")]
+    public const int GL_COMBINER_INPUT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_MAPPING_NV")]
+    public const int GL_COMBINER_MAPPING_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_MUX_SUM_NV")]
+    public const int GL_COMBINER_MUX_SUM_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_SCALE_NV")]
+    public const int GL_COMBINER_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINER_SUM_OUTPUT_NV")]
+    public const int GL_COMBINER_SUM_OUTPUT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_ALPHA")]
+    public const int GL_COMBINE_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_ALPHA_EXT")]
+    public const int GL_COMBINE_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_EXT")]
+    public const int GL_COMBINE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_RGB")]
+    public const int GL_COMBINE_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMBINE_RGB_EXT")]
+    public const int GL_COMBINE_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMMAND_BARRIER_BIT")]
+    public const int GL_COMMAND_BARRIER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMMAND_BARRIER_BIT_EXT")]
+    public const int GL_COMMAND_BARRIER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_REF_DEPTH_TO_TEXTURE_EXT")]
+    public const int GL_COMPARE_REF_DEPTH_TO_TEXTURE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_REF_TO_TEXTURE")]
+    public const int GL_COMPARE_REF_TO_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_REF_TO_TEXTURE_EXT")]
+    public const int GL_COMPARE_REF_TO_TEXTURE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_R_TO_TEXTURE")]
+    public const int GL_COMPARE_R_TO_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPARE_R_TO_TEXTURE_ARB")]
+    public const int GL_COMPARE_R_TO_TEXTURE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPATIBLE_SUBROUTINES")]
+    public const int GL_COMPATIBLE_SUBROUTINES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPILE")]
+    public const int GL_COMPILE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPILE_AND_EXECUTE")]
+    public const int GL_COMPILE_AND_EXECUTE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPILE_STATUS")]
+    public const int GL_COMPILE_STATUS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_ALPHA")]
+    public const int GL_COMPRESSED_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_ALPHA_ARB")]
+    public const int GL_COMPRESSED_ALPHA_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_INTENSITY")]
+    public const int GL_COMPRESSED_INTENSITY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_INTENSITY_ARB")]
+    public const int GL_COMPRESSED_INTENSITY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE")]
+    public const int GL_COMPRESSED_LUMINANCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_ALPHA")]
+    public const int GL_COMPRESSED_LUMINANCE_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_ALPHA_ARB")]
+    public const int GL_COMPRESSED_LUMINANCE_ALPHA_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_ALPHA_LATC2_EXT")]
+    public const int GL_COMPRESSED_LUMINANCE_ALPHA_LATC2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_ARB")]
+    public const int GL_COMPRESSED_LUMINANCE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_LUMINANCE_LATC1_EXT")]
+    public const int GL_COMPRESSED_LUMINANCE_LATC1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_R11_EAC")]
+    public const int GL_COMPRESSED_R11_EAC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RED")]
+    public const int GL_COMPRESSED_RED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RED_GREEN_RGTC2_EXT")]
+    public const int GL_COMPRESSED_RED_GREEN_RGTC2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RED_RGTC1")]
+    public const int GL_COMPRESSED_RED_RGTC1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RED_RGTC1_EXT")]
+    public const int GL_COMPRESSED_RED_RGTC1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RG")]
+    public const int GL_COMPRESSED_RG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RG11_EAC")]
+    public const int GL_COMPRESSED_RG11_EAC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB")]
+    public const int GL_COMPRESSED_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB8_ETC2")]
+    public const int GL_COMPRESSED_RGB8_ETC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2")]
+    public const int GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA")]
+    public const int GL_COMPRESSED_RGBA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA8_ETC2_EAC")]
+    public const int GL_COMPRESSED_RGBA8_ETC2_EAC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ARB")]
+    public const int GL_COMPRESSED_RGBA_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_10")]
+    public const int GL_COMPRESSED_RGBA_ASTC_10;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_12")]
+    public const int GL_COMPRESSED_RGBA_ASTC_12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_4")]
+    public const int GL_COMPRESSED_RGBA_ASTC_4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_5")]
+    public const int GL_COMPRESSED_RGBA_ASTC_5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_6")]
+    public const int GL_COMPRESSED_RGBA_ASTC_6;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_ASTC_8")]
+    public const int GL_COMPRESSED_RGBA_ASTC_8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_BPTC_UNORM_ARB")]
+    public const int GL_COMPRESSED_RGBA_BPTC_UNORM_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_FXT1_3DFX")]
+    public const int GL_COMPRESSED_RGBA_FXT1_3DFX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG")]
+    public const int GL_COMPRESSED_RGBA_PVRTC_2BPPV1_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_PVRTC_2BPPV2_IMG")]
+    public const int GL_COMPRESSED_RGBA_PVRTC_2BPPV2_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG")]
+    public const int GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_PVRTC_4BPPV2_IMG")]
+    public const int GL_COMPRESSED_RGBA_PVRTC_4BPPV2_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT1_EXT")]
+    public const int GL_COMPRESSED_RGBA_S3TC_DXT1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT3_ANGLE")]
+    public const int GL_COMPRESSED_RGBA_S3TC_DXT3_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT3_EXT")]
+    public const int GL_COMPRESSED_RGBA_S3TC_DXT3_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT5_ANGLE")]
+    public const int GL_COMPRESSED_RGBA_S3TC_DXT5_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGBA_S3TC_DXT5_EXT")]
+    public const int GL_COMPRESSED_RGBA_S3TC_DXT5_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_ARB")]
+    public const int GL_COMPRESSED_RGB_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT_ARB")]
+    public const int GL_COMPRESSED_RGB_BPTC_SIGNED_FLOAT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_ARB")]
+    public const int GL_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_FXT1_3DFX")]
+    public const int GL_COMPRESSED_RGB_FXT1_3DFX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG")]
+    public const int GL_COMPRESSED_RGB_PVRTC_2BPPV1_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG")]
+    public const int GL_COMPRESSED_RGB_PVRTC_4BPPV1_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RGB_S3TC_DXT1_EXT")]
+    public const int GL_COMPRESSED_RGB_S3TC_DXT1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_RG_RGTC2")]
+    public const int GL_COMPRESSED_RG_RGTC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_LUMINANCE_ALPHA_LATC2_EXT")]
+    public const int GL_COMPRESSED_SIGNED_LUMINANCE_ALPHA_LATC2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_LUMINANCE_LATC1_EXT")]
+    public const int GL_COMPRESSED_SIGNED_LUMINANCE_LATC1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_R11_EAC")]
+    public const int GL_COMPRESSED_SIGNED_R11_EAC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT")]
+    public const int GL_COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RED_RGTC1")]
+    public const int GL_COMPRESSED_SIGNED_RED_RGTC1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RED_RGTC1_EXT")]
+    public const int GL_COMPRESSED_SIGNED_RED_RGTC1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RG11_EAC")]
+    public const int GL_COMPRESSED_SIGNED_RG11_EAC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SIGNED_RG_RGTC2")]
+    public const int GL_COMPRESSED_SIGNED_RG_RGTC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SLUMINANCE")]
+    public const int GL_COMPRESSED_SLUMINANCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SLUMINANCE_ALPHA")]
+    public const int GL_COMPRESSED_SLUMINANCE_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SLUMINANCE_ALPHA_EXT")]
+    public const int GL_COMPRESSED_SLUMINANCE_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SLUMINANCE_EXT")]
+    public const int GL_COMPRESSED_SLUMINANCE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB")]
+    public const int GL_COMPRESSED_SRGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10")]
+    public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12")]
+    public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4")]
+    public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5")]
+    public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6")]
+    public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8")]
+    public const int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC")]
+    public const int GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_ETC2")]
+    public const int GL_COMPRESSED_SRGB8_ETC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2")]
+    public const int GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA")]
+    public const int GL_COMPRESSED_SRGB_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM_ARB")]
+    public const int GL_COMPRESSED_SRGB_ALPHA_BPTC_UNORM_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_EXT")]
+    public const int GL_COMPRESSED_SRGB_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT")]
+    public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_NV")]
+    public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT")]
+    public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_NV")]
+    public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT")]
+    public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_NV")]
+    public const int GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_EXT")]
+    public const int GL_COMPRESSED_SRGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_S3TC_DXT1_EXT")]
+    public const int GL_COMPRESSED_SRGB_S3TC_DXT1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_SRGB_S3TC_DXT1_NV")]
+    public const int GL_COMPRESSED_SRGB_S3TC_DXT1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_TEXTURE_FORMATS")]
+    public const int GL_COMPRESSED_TEXTURE_FORMATS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPRESSED_TEXTURE_FORMATS_ARB")]
+    public const int GL_COMPRESSED_TEXTURE_FORMATS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_LOCAL_WORK_SIZE")]
+    public const int GL_COMPUTE_LOCAL_WORK_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_PROGRAM_NV")]
+    public const int GL_COMPUTE_PROGRAM_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_PROGRAM_PARAMETER_BUFFER_NV")]
+    public const int GL_COMPUTE_PROGRAM_PARAMETER_BUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_SHADER")]
+    public const int GL_COMPUTE_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_SHADER_BIT")]
+    public const int GL_COMPUTE_SHADER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_SUBROUTINE")]
+    public const int GL_COMPUTE_SUBROUTINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_SUBROUTINE_UNIFORM")]
+    public const int GL_COMPUTE_SUBROUTINE_UNIFORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMPUTE_TEXTURE")]
+    public const int GL_COMPUTE_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COMP_BIT_ATI")]
+    public const int GL_COMP_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONDITION_SATISFIED")]
+    public const int GL_CONDITION_SATISFIED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONDITION_SATISFIED_APPLE")]
+    public const int GL_CONDITION_SATISFIED_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT")]
+    public const int GL_CONSTANT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_ALPHA")]
+    public const int GL_CONSTANT_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_ALPHA_EXT")]
+    public const int GL_CONSTANT_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_ATTENUATION")]
+    public const int GL_CONSTANT_ATTENUATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_BORDER")]
+    public const int GL_CONSTANT_BORDER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_BORDER_HP")]
+    public const int GL_CONSTANT_BORDER_HP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_COLOR")]
+    public const int GL_CONSTANT_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_COLOR0_NV")]
+    public const int GL_CONSTANT_COLOR0_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_COLOR1_NV")]
+    public const int GL_CONSTANT_COLOR1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_COLOR_EXT")]
+    public const int GL_CONSTANT_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONSTANT_EXT")]
+    public const int GL_CONSTANT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONST_EYE_NV")]
+    public const int GL_CONST_EYE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_COMPATIBILITY_PROFILE_BIT")]
+    public const int GL_CONTEXT_COMPATIBILITY_PROFILE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_CORE_PROFILE_BIT")]
+    public const int GL_CONTEXT_CORE_PROFILE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_FLAGS")]
+    public const int GL_CONTEXT_FLAGS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_FLAG_DEBUG_BIT")]
+    public const int GL_CONTEXT_FLAG_DEBUG_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_FLAG_FORWARD_COMPATIBLE_BIT")]
+    public const int GL_CONTEXT_FLAG_FORWARD_COMPATIBLE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB")]
+    public const int GL_CONTEXT_FLAG_ROBUST_ACCESS_BIT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTEXT_PROFILE_MASK")]
+    public const int GL_CONTEXT_PROFILE_MASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONTINUOUS_AMD")]
+    public const int GL_CONTINUOUS_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVEX_HULL_NV")]
+    public const int GL_CONVEX_HULL_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_1D")]
+    public const int GL_CONVOLUTION_1D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_1D_EXT")]
+    public const int GL_CONVOLUTION_1D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_2D")]
+    public const int GL_CONVOLUTION_2D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_2D_EXT")]
+    public const int GL_CONVOLUTION_2D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_BORDER_COLOR")]
+    public const int GL_CONVOLUTION_BORDER_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_BORDER_COLOR_HP")]
+    public const int GL_CONVOLUTION_BORDER_COLOR_HP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_BORDER_MODE")]
+    public const int GL_CONVOLUTION_BORDER_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_BORDER_MODE_EXT")]
+    public const int GL_CONVOLUTION_BORDER_MODE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FILTER_BIAS")]
+    public const int GL_CONVOLUTION_FILTER_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FILTER_BIAS_EXT")]
+    public const int GL_CONVOLUTION_FILTER_BIAS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FILTER_SCALE")]
+    public const int GL_CONVOLUTION_FILTER_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FILTER_SCALE_EXT")]
+    public const int GL_CONVOLUTION_FILTER_SCALE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FORMAT")]
+    public const int GL_CONVOLUTION_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_FORMAT_EXT")]
+    public const int GL_CONVOLUTION_FORMAT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_HEIGHT")]
+    public const int GL_CONVOLUTION_HEIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_HEIGHT_EXT")]
+    public const int GL_CONVOLUTION_HEIGHT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_HINT_SGIX")]
+    public const int GL_CONVOLUTION_HINT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_WIDTH")]
+    public const int GL_CONVOLUTION_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CONVOLUTION_WIDTH_EXT")]
+    public const int GL_CONVOLUTION_WIDTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_0_ATI")]
+    public const int GL_CON_0_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_10_ATI")]
+    public const int GL_CON_10_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_11_ATI")]
+    public const int GL_CON_11_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_12_ATI")]
+    public const int GL_CON_12_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_13_ATI")]
+    public const int GL_CON_13_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_14_ATI")]
+    public const int GL_CON_14_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_15_ATI")]
+    public const int GL_CON_15_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_16_ATI")]
+    public const int GL_CON_16_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_17_ATI")]
+    public const int GL_CON_17_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_18_ATI")]
+    public const int GL_CON_18_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_19_ATI")]
+    public const int GL_CON_19_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_1_ATI")]
+    public const int GL_CON_1_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_20_ATI")]
+    public const int GL_CON_20_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_21_ATI")]
+    public const int GL_CON_21_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_22_ATI")]
+    public const int GL_CON_22_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_23_ATI")]
+    public const int GL_CON_23_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_24_ATI")]
+    public const int GL_CON_24_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_25_ATI")]
+    public const int GL_CON_25_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_26_ATI")]
+    public const int GL_CON_26_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_27_ATI")]
+    public const int GL_CON_27_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_28_ATI")]
+    public const int GL_CON_28_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_29_ATI")]
+    public const int GL_CON_29_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_2_ATI")]
+    public const int GL_CON_2_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_30_ATI")]
+    public const int GL_CON_30_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_31_ATI")]
+    public const int GL_CON_31_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_3_ATI")]
+    public const int GL_CON_3_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_4_ATI")]
+    public const int GL_CON_4_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_5_ATI")]
+    public const int GL_CON_5_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_6_ATI")]
+    public const int GL_CON_6_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_7_ATI")]
+    public const int GL_CON_7_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_8_ATI")]
+    public const int GL_CON_8_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CON_9_ATI")]
+    public const int GL_CON_9_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COORD_REPLACE")]
+    public const int GL_COORD_REPLACE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COORD_REPLACE_ARB")]
+    public const int GL_COORD_REPLACE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COORD_REPLACE_NV")]
+    public const int GL_COORD_REPLACE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY")]
+    public const int GL_COPY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY_INVERTED")]
+    public const int GL_COPY_INVERTED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY_PIXEL_TOKEN")]
+    public const int GL_COPY_PIXEL_TOKEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY_READ_BUFFER_BINDING")]
+    public const int GL_COPY_READ_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COPY_WRITE_BUFFER_BINDING")]
+    public const int GL_COPY_WRITE_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COUNTER_RANGE_AMD")]
+    public const int GL_COUNTER_RANGE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COUNTER_TYPE_AMD")]
+    public const int GL_COUNTER_TYPE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COUNT_DOWN_NV")]
+    public const int GL_COUNT_DOWN_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COUNT_UP_NV")]
+    public const int GL_COUNT_UP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_ALL_FRAGMENTS_NV")]
+    public const int GL_COVERAGE_ALL_FRAGMENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_ATTACHMENT_NV")]
+    public const int GL_COVERAGE_ATTACHMENT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_AUTOMATIC_NV")]
+    public const int GL_COVERAGE_AUTOMATIC_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_BUFFERS_NV")]
+    public const int GL_COVERAGE_BUFFERS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_BUFFER_BIT_NV")]
+    public const int GL_COVERAGE_BUFFER_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_COMPONENT4_NV")]
+    public const int GL_COVERAGE_COMPONENT4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_COMPONENT_NV")]
+    public const int GL_COVERAGE_COMPONENT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_EDGE_FRAGMENTS_NV")]
+    public const int GL_COVERAGE_EDGE_FRAGMENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_COVERAGE_SAMPLES_NV")]
+    public const int GL_COVERAGE_SAMPLES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CPU_OPTIMIZED_QCOM")]
+    public const int GL_CPU_OPTIMIZED_QCOM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CUBIC_CURVE_TO_NV")]
+    public const int GL_CUBIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CUBIC_EXT")]
+    public const int GL_CUBIC_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_FACE")]
+    public const int GL_CULL_FACE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_FACE_MODE")]
+    public const int GL_CULL_FACE_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_FRAGMENT_NV")]
+    public const int GL_CULL_FRAGMENT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_MODES_NV")]
+    public const int GL_CULL_MODES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_VERTEX_EXT")]
+    public const int GL_CULL_VERTEX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_VERTEX_EYE_POSITION_EXT")]
+    public const int GL_CULL_VERTEX_EYE_POSITION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CULL_VERTEX_OBJECT_POSITION_EXT")]
+    public const int GL_CULL_VERTEX_OBJECT_POSITION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_ATTRIB_NV")]
+    public const int GL_CURRENT_ATTRIB_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_BIT")]
+    public const int GL_CURRENT_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_COLOR")]
+    public const int GL_CURRENT_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_FOG_COORD")]
+    public const int GL_CURRENT_FOG_COORD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_FOG_COORDINATE")]
+    public const int GL_CURRENT_FOG_COORDINATE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_FOG_COORDINATE_EXT")]
+    public const int GL_CURRENT_FOG_COORDINATE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_INDEX")]
+    public const int GL_CURRENT_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_ARB")]
+    public const int GL_CURRENT_MATRIX_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_INDEX_ARB")]
+    public const int GL_CURRENT_MATRIX_INDEX_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_NV")]
+    public const int GL_CURRENT_MATRIX_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_STACK_DEPTH_ARB")]
+    public const int GL_CURRENT_MATRIX_STACK_DEPTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_MATRIX_STACK_DEPTH_NV")]
+    public const int GL_CURRENT_MATRIX_STACK_DEPTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_NORMAL")]
+    public const int GL_CURRENT_NORMAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_OCCLUSION_QUERY_ID_NV")]
+    public const int GL_CURRENT_OCCLUSION_QUERY_ID_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_PALETTE_MATRIX_ARB")]
+    public const int GL_CURRENT_PALETTE_MATRIX_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_PALETTE_MATRIX_OES")]
+    public const int GL_CURRENT_PALETTE_MATRIX_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_PROGRAM")]
+    public const int GL_CURRENT_PROGRAM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_QUERY")]
+    public const int GL_CURRENT_QUERY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_QUERY_ARB")]
+    public const int GL_CURRENT_QUERY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_QUERY_EXT")]
+    public const int GL_CURRENT_QUERY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_COLOR")]
+    public const int GL_CURRENT_RASTER_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_DISTANCE")]
+    public const int GL_CURRENT_RASTER_DISTANCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_INDEX")]
+    public const int GL_CURRENT_RASTER_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_NORMAL_SGIX")]
+    public const int GL_CURRENT_RASTER_NORMAL_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_POSITION")]
+    public const int GL_CURRENT_RASTER_POSITION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_POSITION_VALID")]
+    public const int GL_CURRENT_RASTER_POSITION_VALID;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_SECONDARY_COLOR")]
+    public const int GL_CURRENT_RASTER_SECONDARY_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_RASTER_TEXTURE_COORDS")]
+    public const int GL_CURRENT_RASTER_TEXTURE_COORDS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_SECONDARY_COLOR")]
+    public const int GL_CURRENT_SECONDARY_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_SECONDARY_COLOR_EXT")]
+    public const int GL_CURRENT_SECONDARY_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_TEXTURE_COORDS")]
+    public const int GL_CURRENT_TEXTURE_COORDS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_TIME_NV")]
+    public const int GL_CURRENT_TIME_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_VERTEX_ATTRIB")]
+    public const int GL_CURRENT_VERTEX_ATTRIB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_VERTEX_ATTRIB_ARB")]
+    public const int GL_CURRENT_VERTEX_ATTRIB_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_VERTEX_EXT")]
+    public const int GL_CURRENT_VERTEX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_VERTEX_WEIGHT_EXT")]
+    public const int GL_CURRENT_VERTEX_WEIGHT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CURRENT_WEIGHT_ARB")]
+    public const int GL_CURRENT_WEIGHT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_CW")]
+    public const int GL_CW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DATA_BUFFER_AMD")]
+    public const int GL_DATA_BUFFER_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_ASSERT_MESA")]
+    public const int GL_DEBUG_ASSERT_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CALLBACK_FUNCTION")]
+    public const int GL_DEBUG_CALLBACK_FUNCTION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CALLBACK_FUNCTION_ARB")]
+    public const int GL_DEBUG_CALLBACK_FUNCTION_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CALLBACK_USER_PARAM")]
+    public const int GL_DEBUG_CALLBACK_USER_PARAM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CALLBACK_USER_PARAM_ARB")]
+    public const int GL_DEBUG_CALLBACK_USER_PARAM_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_API_ERROR_AMD")]
+    public const int GL_DEBUG_CATEGORY_API_ERROR_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_APPLICATION_AMD")]
+    public const int GL_DEBUG_CATEGORY_APPLICATION_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_DEPRECATION_AMD")]
+    public const int GL_DEBUG_CATEGORY_DEPRECATION_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_OTHER_AMD")]
+    public const int GL_DEBUG_CATEGORY_OTHER_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_PERFORMANCE_AMD")]
+    public const int GL_DEBUG_CATEGORY_PERFORMANCE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_SHADER_COMPILER_AMD")]
+    public const int GL_DEBUG_CATEGORY_SHADER_COMPILER_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_UNDEFINED_BEHAVIOR_AMD")]
+    public const int GL_DEBUG_CATEGORY_UNDEFINED_BEHAVIOR_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_CATEGORY_WINDOW_SYSTEM_AMD")]
+    public const int GL_DEBUG_CATEGORY_WINDOW_SYSTEM_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_GROUP_STACK_DEPTH")]
+    public const int GL_DEBUG_GROUP_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_LOGGED_MESSAGES")]
+    public const int GL_DEBUG_LOGGED_MESSAGES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_LOGGED_MESSAGES_AMD")]
+    public const int GL_DEBUG_LOGGED_MESSAGES_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_LOGGED_MESSAGES_ARB")]
+    public const int GL_DEBUG_LOGGED_MESSAGES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH")]
+    public const int GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH_ARB")]
+    public const int GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_OBJECT_MESA")]
+    public const int GL_DEBUG_OBJECT_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_OUTPUT")]
+    public const int GL_DEBUG_OUTPUT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_OUTPUT_SYNCHRONOUS")]
+    public const int GL_DEBUG_OUTPUT_SYNCHRONOUS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_OUTPUT_SYNCHRONOUS_ARB")]
+    public const int GL_DEBUG_OUTPUT_SYNCHRONOUS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_PRINT_MESA")]
+    public const int GL_DEBUG_PRINT_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_HIGH")]
+    public const int GL_DEBUG_SEVERITY_HIGH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_HIGH_AMD")]
+    public const int GL_DEBUG_SEVERITY_HIGH_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_HIGH_ARB")]
+    public const int GL_DEBUG_SEVERITY_HIGH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_LOW")]
+    public const int GL_DEBUG_SEVERITY_LOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_LOW_AMD")]
+    public const int GL_DEBUG_SEVERITY_LOW_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_LOW_ARB")]
+    public const int GL_DEBUG_SEVERITY_LOW_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_MEDIUM")]
+    public const int GL_DEBUG_SEVERITY_MEDIUM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_MEDIUM_AMD")]
+    public const int GL_DEBUG_SEVERITY_MEDIUM_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_MEDIUM_ARB")]
+    public const int GL_DEBUG_SEVERITY_MEDIUM_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SEVERITY_NOTIFICATION")]
+    public const int GL_DEBUG_SEVERITY_NOTIFICATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_API")]
+    public const int GL_DEBUG_SOURCE_API;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_API_ARB")]
+    public const int GL_DEBUG_SOURCE_API_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_APPLICATION")]
+    public const int GL_DEBUG_SOURCE_APPLICATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_APPLICATION_ARB")]
+    public const int GL_DEBUG_SOURCE_APPLICATION_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_OTHER")]
+    public const int GL_DEBUG_SOURCE_OTHER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_OTHER_ARB")]
+    public const int GL_DEBUG_SOURCE_OTHER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_SHADER_COMPILER")]
+    public const int GL_DEBUG_SOURCE_SHADER_COMPILER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_SHADER_COMPILER_ARB")]
+    public const int GL_DEBUG_SOURCE_SHADER_COMPILER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_THIRD_PARTY")]
+    public const int GL_DEBUG_SOURCE_THIRD_PARTY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_THIRD_PARTY_ARB")]
+    public const int GL_DEBUG_SOURCE_THIRD_PARTY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_WINDOW_SYSTEM")]
+    public const int GL_DEBUG_SOURCE_WINDOW_SYSTEM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_SOURCE_WINDOW_SYSTEM_ARB")]
+    public const int GL_DEBUG_SOURCE_WINDOW_SYSTEM_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR")]
+    public const int GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR_ARB")]
+    public const int GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_ERROR")]
+    public const int GL_DEBUG_TYPE_ERROR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_ERROR_ARB")]
+    public const int GL_DEBUG_TYPE_ERROR_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_MARKER")]
+    public const int GL_DEBUG_TYPE_MARKER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_OTHER")]
+    public const int GL_DEBUG_TYPE_OTHER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_OTHER_ARB")]
+    public const int GL_DEBUG_TYPE_OTHER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PERFORMANCE")]
+    public const int GL_DEBUG_TYPE_PERFORMANCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PERFORMANCE_ARB")]
+    public const int GL_DEBUG_TYPE_PERFORMANCE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_POP_GROUP")]
+    public const int GL_DEBUG_TYPE_POP_GROUP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PORTABILITY")]
+    public const int GL_DEBUG_TYPE_PORTABILITY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PORTABILITY_ARB")]
+    public const int GL_DEBUG_TYPE_PORTABILITY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_PUSH_GROUP")]
+    public const int GL_DEBUG_TYPE_PUSH_GROUP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR")]
+    public const int GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR_ARB")]
+    public const int GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DECAL")]
+    public const int GL_DECAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DECODE_EXT")]
+    public const int GL_DECODE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DECR")]
+    public const int GL_DECR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DECR_WRAP")]
+    public const int GL_DECR_WRAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DECR_WRAP_EXT")]
+    public const int GL_DECR_WRAP_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DECR_WRAP_OES")]
+    public const int GL_DECR_WRAP_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEFORMATIONS_MASK_SGIX")]
+    public const int GL_DEFORMATIONS_MASK_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DELETE_STATUS")]
+    public const int GL_DELETE_STATUS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_AR_TEXTURE_2D_NV")]
+    public const int GL_DEPENDENT_AR_TEXTURE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_GB_TEXTURE_2D_NV")]
+    public const int GL_DEPENDENT_GB_TEXTURE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_HILO_TEXTURE_2D_NV")]
+    public const int GL_DEPENDENT_HILO_TEXTURE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_RGB_TEXTURE_3D_NV")]
+    public const int GL_DEPENDENT_RGB_TEXTURE_3D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPENDENT_RGB_TEXTURE_CUBE_MAP_NV")]
+    public const int GL_DEPENDENT_RGB_TEXTURE_CUBE_MAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH")]
+    public const int GL_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH24_STENCIL8")]
+    public const int GL_DEPTH24_STENCIL8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH24_STENCIL8_EXT")]
+    public const int GL_DEPTH24_STENCIL8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH24_STENCIL8_OES")]
+    public const int GL_DEPTH24_STENCIL8_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH32F_STENCIL8")]
+    public const int GL_DEPTH32F_STENCIL8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH32F_STENCIL8_NV")]
+    public const int GL_DEPTH32F_STENCIL8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_ATTACHMENT")]
+    public const int GL_DEPTH_ATTACHMENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_ATTACHMENT_EXT")]
+    public const int GL_DEPTH_ATTACHMENT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_ATTACHMENT_OES")]
+    public const int GL_DEPTH_ATTACHMENT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BIAS")]
+    public const int GL_DEPTH_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BITS")]
+    public const int GL_DEPTH_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BOUNDS_EXT")]
+    public const int GL_DEPTH_BOUNDS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BOUNDS_TEST_EXT")]
+    public const int GL_DEPTH_BOUNDS_TEST_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BUFFER_BIT")]
+    public const int GL_DEPTH_BUFFER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_BUFFER_FLOAT_MODE_NV")]
+    public const int GL_DEPTH_BUFFER_FLOAT_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLAMP")]
+    public const int GL_DEPTH_CLAMP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLAMP_FAR_AMD")]
+    public const int GL_DEPTH_CLAMP_FAR_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLAMP_NEAR_AMD")]
+    public const int GL_DEPTH_CLAMP_NEAR_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLAMP_NV")]
+    public const int GL_DEPTH_CLAMP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_CLEAR_VALUE")]
+    public const int GL_DEPTH_CLEAR_VALUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT")]
+    public const int GL_DEPTH_COMPONENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16")]
+    public const int GL_DEPTH_COMPONENT16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16_ARB")]
+    public const int GL_DEPTH_COMPONENT16_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16_NONLINEAR_NV")]
+    public const int GL_DEPTH_COMPONENT16_NONLINEAR_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16_OES")]
+    public const int GL_DEPTH_COMPONENT16_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT16_SGIX")]
+    public const int GL_DEPTH_COMPONENT16_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT24")]
+    public const int GL_DEPTH_COMPONENT24;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT24_ARB")]
+    public const int GL_DEPTH_COMPONENT24_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT24_OES")]
+    public const int GL_DEPTH_COMPONENT24_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT24_SGIX")]
+    public const int GL_DEPTH_COMPONENT24_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32")]
+    public const int GL_DEPTH_COMPONENT32;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32F")]
+    public const int GL_DEPTH_COMPONENT32F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32F_NV")]
+    public const int GL_DEPTH_COMPONENT32F_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32_ARB")]
+    public const int GL_DEPTH_COMPONENT32_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32_OES")]
+    public const int GL_DEPTH_COMPONENT32_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENT32_SGIX")]
+    public const int GL_DEPTH_COMPONENT32_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_COMPONENTS")]
+    public const int GL_DEPTH_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_EXT")]
+    public const int GL_DEPTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_FUNC")]
+    public const int GL_DEPTH_FUNC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_PASS_INSTRUMENT_COUNTERS_SGIX")]
+    public const int GL_DEPTH_PASS_INSTRUMENT_COUNTERS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_PASS_INSTRUMENT_MAX_SGIX")]
+    public const int GL_DEPTH_PASS_INSTRUMENT_MAX_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_PASS_INSTRUMENT_SGIX")]
+    public const int GL_DEPTH_PASS_INSTRUMENT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_RANGE")]
+    public const int GL_DEPTH_RANGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_RENDERABLE")]
+    public const int GL_DEPTH_RENDERABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_SCALE")]
+    public const int GL_DEPTH_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL")]
+    public const int GL_DEPTH_STENCIL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_ATTACHMENT")]
+    public const int GL_DEPTH_STENCIL_ATTACHMENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_EXT")]
+    public const int GL_DEPTH_STENCIL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_MESA")]
+    public const int GL_DEPTH_STENCIL_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_NV")]
+    public const int GL_DEPTH_STENCIL_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_OES")]
+    public const int GL_DEPTH_STENCIL_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_TEXTURE_MODE")]
+    public const int GL_DEPTH_STENCIL_TEXTURE_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_TO_BGRA_NV")]
+    public const int GL_DEPTH_STENCIL_TO_BGRA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_STENCIL_TO_RGBA_NV")]
+    public const int GL_DEPTH_STENCIL_TO_RGBA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_TEST")]
+    public const int GL_DEPTH_TEST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_TEXTURE_MODE")]
+    public const int GL_DEPTH_TEXTURE_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_TEXTURE_MODE_ARB")]
+    public const int GL_DEPTH_TEXTURE_MODE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DEPTH_WRITEMASK")]
+    public const int GL_DEPTH_WRITEMASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_2D_BINDING_SGIS")]
+    public const int GL_DETAIL_TEXTURE_2D_BINDING_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_2D_SGIS")]
+    public const int GL_DETAIL_TEXTURE_2D_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_FUNC_POINTS_SGIS")]
+    public const int GL_DETAIL_TEXTURE_FUNC_POINTS_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_LEVEL_SGIS")]
+    public const int GL_DETAIL_TEXTURE_LEVEL_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DETAIL_TEXTURE_MODE_SGIS")]
+    public const int GL_DETAIL_TEXTURE_MODE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DIFFUSE")]
+    public const int GL_DIFFUSE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DISCARD_ATI")]
+    public const int GL_DISCARD_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DISCARD_NV")]
+    public const int GL_DISCARD_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DISCRETE_AMD")]
+    public const int GL_DISCRETE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DISPATCH_INDIRECT_BUFFER")]
+    public const int GL_DISPATCH_INDIRECT_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DISPATCH_INDIRECT_BUFFER_BINDING")]
+    public const int GL_DISPATCH_INDIRECT_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DISPLAY_LIST")]
+    public const int GL_DISPLAY_LIST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DISTANCE_ATTENUATION_EXT")]
+    public const int GL_DISTANCE_ATTENUATION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DISTANCE_ATTENUATION_SGIS")]
+    public const int GL_DISTANCE_ATTENUATION_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DITHER")]
+    public const int GL_DITHER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOMAIN")]
+    public const int GL_DOMAIN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DONT_CARE")]
+    public const int GL_DONT_CARE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT2_ADD_ATI")]
+    public const int GL_DOT2_ADD_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_ATI")]
+    public const int GL_DOT3_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGB")]
+    public const int GL_DOT3_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGBA")]
+    public const int GL_DOT3_RGBA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGBA_ARB")]
+    public const int GL_DOT3_RGBA_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGBA_EXT")]
+    public const int GL_DOT3_RGBA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGBA_IMG")]
+    public const int GL_DOT3_RGBA_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGB_ARB")]
+    public const int GL_DOT3_RGB_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT3_RGB_EXT")]
+    public const int GL_DOT3_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT4_ATI")]
+    public const int GL_DOT4_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_AFFINE_DEPTH_REPLACE_NV")]
+    public const int GL_DOT_PRODUCT_AFFINE_DEPTH_REPLACE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV")]
+    public const int GL_DOT_PRODUCT_CONST_EYE_REFLECT_CUBE_MAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_DEPTH_REPLACE_NV")]
+    public const int GL_DOT_PRODUCT_DEPTH_REPLACE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV")]
+    public const int GL_DOT_PRODUCT_DIFFUSE_CUBE_MAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_NV")]
+    public const int GL_DOT_PRODUCT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_PASS_THROUGH_NV")]
+    public const int GL_DOT_PRODUCT_PASS_THROUGH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_REFLECT_CUBE_MAP_NV")]
+    public const int GL_DOT_PRODUCT_REFLECT_CUBE_MAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_1D_NV")]
+    public const int GL_DOT_PRODUCT_TEXTURE_1D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_2D_NV")]
+    public const int GL_DOT_PRODUCT_TEXTURE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_3D_NV")]
+    public const int GL_DOT_PRODUCT_TEXTURE_3D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_CUBE_MAP_NV")]
+    public const int GL_DOT_PRODUCT_TEXTURE_CUBE_MAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOT_PRODUCT_TEXTURE_RECTANGLE_NV")]
+    public const int GL_DOT_PRODUCT_TEXTURE_RECTANGLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE")]
+    public const int GL_DOUBLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLEBUFFER")]
+    public const int GL_DOUBLEBUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_EXT")]
+    public const int GL_DOUBLE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT2")]
+    public const int GL_DOUBLE_MAT2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT2_EXT")]
+    public const int GL_DOUBLE_MAT2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT3")]
+    public const int GL_DOUBLE_MAT3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT3_EXT")]
+    public const int GL_DOUBLE_MAT3_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT4")]
+    public const int GL_DOUBLE_MAT4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_MAT4_EXT")]
+    public const int GL_DOUBLE_MAT4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC2")]
+    public const int GL_DOUBLE_VEC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC2_EXT")]
+    public const int GL_DOUBLE_VEC2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC3")]
+    public const int GL_DOUBLE_VEC3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC3_EXT")]
+    public const int GL_DOUBLE_VEC3_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC4")]
+    public const int GL_DOUBLE_VEC4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DOUBLE_VEC4_EXT")]
+    public const int GL_DOUBLE_VEC4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER")]
+    public const int GL_DRAW_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER0")]
+    public const int GL_DRAW_BUFFER0;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER0_ARB")]
+    public const int GL_DRAW_BUFFER0_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER0_ATI")]
+    public const int GL_DRAW_BUFFER0_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER0_NV")]
+    public const int GL_DRAW_BUFFER0_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER1")]
+    public const int GL_DRAW_BUFFER1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER10")]
+    public const int GL_DRAW_BUFFER10;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER10_ARB")]
+    public const int GL_DRAW_BUFFER10_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER10_ATI")]
+    public const int GL_DRAW_BUFFER10_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER10_NV")]
+    public const int GL_DRAW_BUFFER10_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER11")]
+    public const int GL_DRAW_BUFFER11;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER11_ARB")]
+    public const int GL_DRAW_BUFFER11_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER11_ATI")]
+    public const int GL_DRAW_BUFFER11_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER11_NV")]
+    public const int GL_DRAW_BUFFER11_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER12")]
+    public const int GL_DRAW_BUFFER12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER12_ARB")]
+    public const int GL_DRAW_BUFFER12_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER12_ATI")]
+    public const int GL_DRAW_BUFFER12_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER12_NV")]
+    public const int GL_DRAW_BUFFER12_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER13")]
+    public const int GL_DRAW_BUFFER13;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER13_ARB")]
+    public const int GL_DRAW_BUFFER13_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER13_ATI")]
+    public const int GL_DRAW_BUFFER13_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER13_NV")]
+    public const int GL_DRAW_BUFFER13_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER14")]
+    public const int GL_DRAW_BUFFER14;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER14_ARB")]
+    public const int GL_DRAW_BUFFER14_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER14_ATI")]
+    public const int GL_DRAW_BUFFER14_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER14_NV")]
+    public const int GL_DRAW_BUFFER14_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER15")]
+    public const int GL_DRAW_BUFFER15;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER15_ARB")]
+    public const int GL_DRAW_BUFFER15_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER15_ATI")]
+    public const int GL_DRAW_BUFFER15_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER15_NV")]
+    public const int GL_DRAW_BUFFER15_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER1_ARB")]
+    public const int GL_DRAW_BUFFER1_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER1_ATI")]
+    public const int GL_DRAW_BUFFER1_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER1_NV")]
+    public const int GL_DRAW_BUFFER1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER2")]
+    public const int GL_DRAW_BUFFER2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER2_ARB")]
+    public const int GL_DRAW_BUFFER2_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER2_ATI")]
+    public const int GL_DRAW_BUFFER2_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER2_NV")]
+    public const int GL_DRAW_BUFFER2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER3")]
+    public const int GL_DRAW_BUFFER3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER3_ARB")]
+    public const int GL_DRAW_BUFFER3_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER3_ATI")]
+    public const int GL_DRAW_BUFFER3_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER3_NV")]
+    public const int GL_DRAW_BUFFER3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER4")]
+    public const int GL_DRAW_BUFFER4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER4_ARB")]
+    public const int GL_DRAW_BUFFER4_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER4_ATI")]
+    public const int GL_DRAW_BUFFER4_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER4_NV")]
+    public const int GL_DRAW_BUFFER4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER5")]
+    public const int GL_DRAW_BUFFER5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER5_ARB")]
+    public const int GL_DRAW_BUFFER5_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER5_ATI")]
+    public const int GL_DRAW_BUFFER5_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER5_NV")]
+    public const int GL_DRAW_BUFFER5_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER6")]
+    public const int GL_DRAW_BUFFER6;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER6_ARB")]
+    public const int GL_DRAW_BUFFER6_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER6_ATI")]
+    public const int GL_DRAW_BUFFER6_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER6_NV")]
+    public const int GL_DRAW_BUFFER6_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER7")]
+    public const int GL_DRAW_BUFFER7;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER7_ARB")]
+    public const int GL_DRAW_BUFFER7_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER7_ATI")]
+    public const int GL_DRAW_BUFFER7_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER7_NV")]
+    public const int GL_DRAW_BUFFER7_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER8")]
+    public const int GL_DRAW_BUFFER8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER8_ARB")]
+    public const int GL_DRAW_BUFFER8_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER8_ATI")]
+    public const int GL_DRAW_BUFFER8_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER8_NV")]
+    public const int GL_DRAW_BUFFER8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER9")]
+    public const int GL_DRAW_BUFFER9;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER9_ARB")]
+    public const int GL_DRAW_BUFFER9_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER9_ATI")]
+    public const int GL_DRAW_BUFFER9_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER9_NV")]
+    public const int GL_DRAW_BUFFER9_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_BUFFER_EXT")]
+    public const int GL_DRAW_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER")]
+    public const int GL_DRAW_FRAMEBUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_ANGLE")]
+    public const int GL_DRAW_FRAMEBUFFER_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_BINDING")]
+    public const int GL_DRAW_FRAMEBUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_BINDING_EXT")]
+    public const int GL_DRAW_FRAMEBUFFER_BINDING_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_BINDING_NV")]
+    public const int GL_DRAW_FRAMEBUFFER_BINDING_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_EXT")]
+    public const int GL_DRAW_FRAMEBUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_FRAMEBUFFER_NV")]
+    public const int GL_DRAW_FRAMEBUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_ADDRESS_NV")]
+    public const int GL_DRAW_INDIRECT_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_BUFFER")]
+    public const int GL_DRAW_INDIRECT_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_BUFFER_BINDING")]
+    public const int GL_DRAW_INDIRECT_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_LENGTH_NV")]
+    public const int GL_DRAW_INDIRECT_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_INDIRECT_UNIFIED_NV")]
+    public const int GL_DRAW_INDIRECT_UNIFIED_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_PIXELS_APPLE")]
+    public const int GL_DRAW_PIXELS_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DRAW_PIXEL_TOKEN")]
+    public const int GL_DRAW_PIXEL_TOKEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT8_MAG8_INTENSITY8_NV")]
+    public const int GL_DSDT8_MAG8_INTENSITY8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT8_MAG8_NV")]
+    public const int GL_DSDT8_MAG8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT8_NV")]
+    public const int GL_DSDT8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT_MAG_INTENSITY_NV")]
+    public const int GL_DSDT_MAG_INTENSITY_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT_MAG_NV")]
+    public const int GL_DSDT_MAG_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT_MAG_VIB_NV")]
+    public const int GL_DSDT_MAG_VIB_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DSDT_NV")]
+    public const int GL_DSDT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DST_ALPHA")]
+    public const int GL_DST_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DST_COLOR")]
+    public const int GL_DST_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DS_BIAS_NV")]
+    public const int GL_DS_BIAS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DS_SCALE_NV")]
+    public const int GL_DS_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DT_BIAS_NV")]
+    public const int GL_DT_BIAS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DT_SCALE_NV")]
+    public const int GL_DT_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DU8DV8_ATI")]
+    public const int GL_DU8DV8_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_ALPHA12_SGIS")]
+    public const int GL_DUAL_ALPHA12_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_ALPHA16_SGIS")]
+    public const int GL_DUAL_ALPHA16_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_ALPHA4_SGIS")]
+    public const int GL_DUAL_ALPHA4_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_ALPHA8_SGIS")]
+    public const int GL_DUAL_ALPHA8_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_INTENSITY12_SGIS")]
+    public const int GL_DUAL_INTENSITY12_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_INTENSITY16_SGIS")]
+    public const int GL_DUAL_INTENSITY16_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_INTENSITY4_SGIS")]
+    public const int GL_DUAL_INTENSITY4_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_INTENSITY8_SGIS")]
+    public const int GL_DUAL_INTENSITY8_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE12_SGIS")]
+    public const int GL_DUAL_LUMINANCE12_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE16_SGIS")]
+    public const int GL_DUAL_LUMINANCE16_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE4_SGIS")]
+    public const int GL_DUAL_LUMINANCE4_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE8_SGIS")]
+    public const int GL_DUAL_LUMINANCE8_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE_ALPHA4_SGIS")]
+    public const int GL_DUAL_LUMINANCE_ALPHA4_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_LUMINANCE_ALPHA8_SGIS")]
+    public const int GL_DUAL_LUMINANCE_ALPHA8_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUAL_TEXTURE_SELECT_SGIS")]
+    public const int GL_DUAL_TEXTURE_SELECT_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUDV_ATI")]
+    public const int GL_DUDV_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUP_FIRST_CUBIC_CURVE_TO_NV")]
+    public const int GL_DUP_FIRST_CUBIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DUP_LAST_CUBIC_CURVE_TO_NV")]
+    public const int GL_DUP_LAST_CUBIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_ATI")]
+    public const int GL_DYNAMIC_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_COPY")]
+    public const int GL_DYNAMIC_COPY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_COPY_ARB")]
+    public const int GL_DYNAMIC_COPY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_DRAW")]
+    public const int GL_DYNAMIC_DRAW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_DRAW_ARB")]
+    public const int GL_DYNAMIC_DRAW_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_READ")]
+    public const int GL_DYNAMIC_READ;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_DYNAMIC_READ_ARB")]
+    public const int GL_DYNAMIC_READ_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG")]
+    public const int GL_EDGE_FLAG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY")]
+    public const int GL_EDGE_FLAG_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_ADDRESS_NV")]
+    public const int GL_EDGE_FLAG_ARRAY_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_BUFFER_BINDING")]
+    public const int GL_EDGE_FLAG_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_BUFFER_BINDING_ARB")]
+    public const int GL_EDGE_FLAG_ARRAY_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_COUNT_EXT")]
+    public const int GL_EDGE_FLAG_ARRAY_COUNT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_EXT")]
+    public const int GL_EDGE_FLAG_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_LENGTH_NV")]
+    public const int GL_EDGE_FLAG_ARRAY_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_POINTER")]
+    public const int GL_EDGE_FLAG_ARRAY_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_POINTER_EXT")]
+    public const int GL_EDGE_FLAG_ARRAY_POINTER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_STRIDE")]
+    public const int GL_EDGE_FLAG_ARRAY_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EDGE_FLAG_ARRAY_STRIDE_EXT")]
+    public const int GL_EDGE_FLAG_ARRAY_STRIDE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EIGHTH_BIT_ATI")]
+    public const int GL_EIGHTH_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_ADDRESS_NV")]
+    public const int GL_ELEMENT_ARRAY_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_APPLE")]
+    public const int GL_ELEMENT_ARRAY_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_ATI")]
+    public const int GL_ELEMENT_ARRAY_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BARRIER_BIT")]
+    public const int GL_ELEMENT_ARRAY_BARRIER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BARRIER_BIT_EXT")]
+    public const int GL_ELEMENT_ARRAY_BARRIER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BUFFER")]
+    public const int GL_ELEMENT_ARRAY_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BUFFER_ARB")]
+    public const int GL_ELEMENT_ARRAY_BUFFER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BUFFER_BINDING")]
+    public const int GL_ELEMENT_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_BUFFER_BINDING_ARB")]
+    public const int GL_ELEMENT_ARRAY_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_LENGTH_NV")]
+    public const int GL_ELEMENT_ARRAY_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_POINTER_APPLE")]
+    public const int GL_ELEMENT_ARRAY_POINTER_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_POINTER_ATI")]
+    public const int GL_ELEMENT_ARRAY_POINTER_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_TYPE_APPLE")]
+    public const int GL_ELEMENT_ARRAY_TYPE_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_TYPE_ATI")]
+    public const int GL_ELEMENT_ARRAY_TYPE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ELEMENT_ARRAY_UNIFIED_NV")]
+    public const int GL_ELEMENT_ARRAY_UNIFIED_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EMBOSS_CONSTANT_NV")]
+    public const int GL_EMBOSS_CONSTANT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EMBOSS_LIGHT_NV")]
+    public const int GL_EMBOSS_LIGHT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EMBOSS_MAP_NV")]
+    public const int GL_EMBOSS_MAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EMISSION")]
+    public const int GL_EMISSION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ENABLE_BIT")]
+    public const int GL_ENABLE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EQUAL")]
+    public const int GL_EQUAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EQUIV")]
+    public const int GL_EQUIV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ETC1_RGB8_OES")]
+    public const int GL_ETC1_RGB8_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ETC1_SRGB8_NV")]
+    public const int GL_ETC1_SRGB8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_2D_NV")]
+    public const int GL_EVAL_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_BIT")]
+    public const int GL_EVAL_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_FRACTIONAL_TESSELLATION_NV")]
+    public const int GL_EVAL_FRACTIONAL_TESSELLATION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_TRIANGULAR_2D_NV")]
+    public const int GL_EVAL_TRIANGULAR_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB0_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB0_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB10_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB10_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB11_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB11_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB12_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB12_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB13_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB13_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB14_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB14_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB15_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB15_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB1_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB2_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB3_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB4_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB5_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB5_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB6_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB6_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB7_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB7_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB8_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EVAL_VERTEX_ATRRIB9_NV")]
+    public const int GL_EVAL_VERTEX_ATRRIB9_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXP")]
+    public const int GL_EXP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXP2")]
+    public const int GL_EXP2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXPAND_NEGATE_NV")]
+    public const int GL_EXPAND_NEGATE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXPAND_NORMAL_NV")]
+    public const int GL_EXPAND_NORMAL_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXTENSIONS")]
+    public const int GL_EXTENSIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXTERNAL_VIRTUAL_MEMORY_BUFFER_AMD")]
+    public const int GL_EXTERNAL_VIRTUAL_MEMORY_BUFFER_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_abgr")]
+    public const int GL_EXT_abgr;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_blend_color")]
+    public const int GL_EXT_blend_color;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_blend_logic_op")]
+    public const int GL_EXT_blend_logic_op;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_blend_minmax")]
+    public const int GL_EXT_blend_minmax;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_blend_subtract")]
+    public const int GL_EXT_blend_subtract;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_cmyka")]
+    public const int GL_EXT_cmyka;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_convolution")]
+    public const int GL_EXT_convolution;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_copy_texture")]
+    public const int GL_EXT_copy_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_histogram")]
+    public const int GL_EXT_histogram;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_packed_pixels")]
+    public const int GL_EXT_packed_pixels;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_point_parameters")]
+    public const int GL_EXT_point_parameters;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_polygon_offset")]
+    public const int GL_EXT_polygon_offset;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_rescale_normal")]
+    public const int GL_EXT_rescale_normal;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_shared_texture_palette")]
+    public const int GL_EXT_shared_texture_palette;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_subtexture")]
+    public const int GL_EXT_subtexture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_texture")]
+    public const int GL_EXT_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_texture3D")]
+    public const int GL_EXT_texture3D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_texture_object")]
+    public const int GL_EXT_texture_object;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EXT_vertex_array")]
+    public const int GL_EXT_vertex_array;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_DISTANCE_TO_LINE_SGIS")]
+    public const int GL_EYE_DISTANCE_TO_LINE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_DISTANCE_TO_POINT_SGIS")]
+    public const int GL_EYE_DISTANCE_TO_POINT_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_LINEAR")]
+    public const int GL_EYE_LINEAR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_LINE_SGIS")]
+    public const int GL_EYE_LINE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_PLANE")]
+    public const int GL_EYE_PLANE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_PLANE_ABSOLUTE_NV")]
+    public const int GL_EYE_PLANE_ABSOLUTE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_POINT_SGIS")]
+    public const int GL_EYE_POINT_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_EYE_RADIAL_NV")]
+    public const int GL_EYE_RADIAL_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_E_TIMES_F_NV")]
+    public const int GL_E_TIMES_F_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FACTOR_ALPHA_MODULATE_IMG")]
+    public const int GL_FACTOR_ALPHA_MODULATE_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FACTOR_MAX_AMD")]
+    public const int GL_FACTOR_MAX_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FACTOR_MIN_AMD")]
+    public const int GL_FACTOR_MIN_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FAILURE_NV")]
+    public const int GL_FAILURE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FALSE")]
+    public const int GL_FALSE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FASTEST")]
+    public const int GL_FASTEST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FEEDBACK")]
+    public const int GL_FEEDBACK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FEEDBACK_BUFFER_POINTER")]
+    public const int GL_FEEDBACK_BUFFER_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FEEDBACK_BUFFER_SIZE")]
+    public const int GL_FEEDBACK_BUFFER_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FEEDBACK_BUFFER_TYPE")]
+    public const int GL_FEEDBACK_BUFFER_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FENCE_APPLE")]
+    public const int GL_FENCE_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FENCE_CONDITION_NV")]
+    public const int GL_FENCE_CONDITION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FENCE_STATUS_NV")]
+    public const int GL_FENCE_STATUS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIELDS_NV")]
+    public const int GL_FIELDS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIELD_LOWER_NV")]
+    public const int GL_FIELD_LOWER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIELD_UPPER_NV")]
+    public const int GL_FIELD_UPPER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FILE_NAME_NV")]
+    public const int GL_FILE_NAME_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FILL")]
+    public const int GL_FILL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FILTER")]
+    public const int GL_FILTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FILTER4_SGIS")]
+    public const int GL_FILTER4_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIRST_TO_REST_NV")]
+    public const int GL_FIRST_TO_REST_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIRST_VERTEX_CONVENTION")]
+    public const int GL_FIRST_VERTEX_CONVENTION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIRST_VERTEX_CONVENTION_EXT")]
+    public const int GL_FIRST_VERTEX_CONVENTION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIXED")]
+    public const int GL_FIXED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIXED_OES")]
+    public const int GL_FIXED_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIXED_ONLY")]
+    public const int GL_FIXED_ONLY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FIXED_ONLY_ARB")]
+    public const int GL_FIXED_ONLY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLAT")]
+    public const int GL_FLAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT")]
+    public const int GL_FLOAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT16_NV")]
+    public const int GL_FLOAT16_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT16_VEC2_NV")]
+    public const int GL_FLOAT16_VEC2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT16_VEC3_NV")]
+    public const int GL_FLOAT16_VEC3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT16_VEC4_NV")]
+    public const int GL_FLOAT16_VEC4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_32_UNSIGNED_INT_24_8_REV")]
+    public const int GL_FLOAT_32_UNSIGNED_INT_24_8_REV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_32_UNSIGNED_INT_24_8_REV_NV")]
+    public const int GL_FLOAT_32_UNSIGNED_INT_24_8_REV_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_CLEAR_COLOR_VALUE_NV")]
+    public const int GL_FLOAT_CLEAR_COLOR_VALUE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT2")]
+    public const int GL_FLOAT_MAT2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT2_ARB")]
+    public const int GL_FLOAT_MAT2_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT3")]
+    public const int GL_FLOAT_MAT3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT3_ARB")]
+    public const int GL_FLOAT_MAT3_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT4")]
+    public const int GL_FLOAT_MAT4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_MAT4_ARB")]
+    public const int GL_FLOAT_MAT4_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_R16_NV")]
+    public const int GL_FLOAT_R16_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_R32_NV")]
+    public const int GL_FLOAT_R32_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RG16_NV")]
+    public const int GL_FLOAT_RG16_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RG32_NV")]
+    public const int GL_FLOAT_RG32_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGB16_NV")]
+    public const int GL_FLOAT_RGB16_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGB32_NV")]
+    public const int GL_FLOAT_RGB32_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGBA16_NV")]
+    public const int GL_FLOAT_RGBA16_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGBA32_NV")]
+    public const int GL_FLOAT_RGBA32_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGBA_MODE_NV")]
+    public const int GL_FLOAT_RGBA_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGBA_NV")]
+    public const int GL_FLOAT_RGBA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RGB_NV")]
+    public const int GL_FLOAT_RGB_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_RG_NV")]
+    public const int GL_FLOAT_RG_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_R_NV")]
+    public const int GL_FLOAT_R_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC2")]
+    public const int GL_FLOAT_VEC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC2_ARB")]
+    public const int GL_FLOAT_VEC2_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC3")]
+    public const int GL_FLOAT_VEC3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC3_ARB")]
+    public const int GL_FLOAT_VEC3_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC4")]
+    public const int GL_FLOAT_VEC4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FLOAT_VEC4_ARB")]
+    public const int GL_FLOAT_VEC4_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG")]
+    public const int GL_FOG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_BIT")]
+    public const int GL_FOG_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COLOR")]
+    public const int GL_FOG_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD")]
+    public const int GL_FOG_COORD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE")]
+    public const int GL_FOG_COORDINATE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY")]
+    public const int GL_FOG_COORDINATE_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING")]
+    public const int GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING_ARB")]
+    public const int GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_EXT")]
+    public const int GL_FOG_COORDINATE_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_POINTER")]
+    public const int GL_FOG_COORDINATE_ARRAY_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_POINTER_EXT")]
+    public const int GL_FOG_COORDINATE_ARRAY_POINTER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_STRIDE")]
+    public const int GL_FOG_COORDINATE_ARRAY_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_STRIDE_EXT")]
+    public const int GL_FOG_COORDINATE_ARRAY_STRIDE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_TYPE")]
+    public const int GL_FOG_COORDINATE_ARRAY_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_ARRAY_TYPE_EXT")]
+    public const int GL_FOG_COORDINATE_ARRAY_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_EXT")]
+    public const int GL_FOG_COORDINATE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_SOURCE")]
+    public const int GL_FOG_COORDINATE_SOURCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORDINATE_SOURCE_EXT")]
+    public const int GL_FOG_COORDINATE_SOURCE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY")]
+    public const int GL_FOG_COORD_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_ADDRESS_NV")]
+    public const int GL_FOG_COORD_ARRAY_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_BUFFER_BINDING")]
+    public const int GL_FOG_COORD_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_LENGTH_NV")]
+    public const int GL_FOG_COORD_ARRAY_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_POINTER")]
+    public const int GL_FOG_COORD_ARRAY_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_STRIDE")]
+    public const int GL_FOG_COORD_ARRAY_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_ARRAY_TYPE")]
+    public const int GL_FOG_COORD_ARRAY_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_COORD_SRC")]
+    public const int GL_FOG_COORD_SRC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_DENSITY")]
+    public const int GL_FOG_DENSITY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_END")]
+    public const int GL_FOG_END;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_FACTOR_TO_ALPHA_SGIX")]
+    public const int GL_FOG_FACTOR_TO_ALPHA_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_FUNC_POINTS_SGIS")]
+    public const int GL_FOG_FUNC_POINTS_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_FUNC_SGIS")]
+    public const int GL_FOG_FUNC_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_GEN_MODE_NV")]
+    public const int GL_FOG_GEN_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_HINT")]
+    public const int GL_FOG_HINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_INDEX")]
+    public const int GL_FOG_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_MODE")]
+    public const int GL_FOG_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_OFFSET_SGIX")]
+    public const int GL_FOG_OFFSET_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_OFFSET_VALUE_SGIX")]
+    public const int GL_FOG_OFFSET_VALUE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FOG_START")]
+    public const int GL_FOG_START;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_ASCENDER_BIT_NV")]
+    public const int GL_FONT_ASCENDER_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_DESCENDER_BIT_NV")]
+    public const int GL_FONT_DESCENDER_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_HAS_KERNING_BIT_NV")]
+    public const int GL_FONT_HAS_KERNING_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_HEIGHT_BIT_NV")]
+    public const int GL_FONT_HEIGHT_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_MAX_ADVANCE_HEIGHT_BIT_NV")]
+    public const int GL_FONT_MAX_ADVANCE_HEIGHT_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_MAX_ADVANCE_WIDTH_BIT_NV")]
+    public const int GL_FONT_MAX_ADVANCE_WIDTH_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_UNDERLINE_POSITION_BIT_NV")]
+    public const int GL_FONT_UNDERLINE_POSITION_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_UNDERLINE_THICKNESS_BIT_NV")]
+    public const int GL_FONT_UNDERLINE_THICKNESS_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_UNITS_PER_EM_BIT_NV")]
+    public const int GL_FONT_UNITS_PER_EM_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_X_MAX_BOUNDS_BIT_NV")]
+    public const int GL_FONT_X_MAX_BOUNDS_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_X_MIN_BOUNDS_BIT_NV")]
+    public const int GL_FONT_X_MIN_BOUNDS_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_Y_MAX_BOUNDS_BIT_NV")]
+    public const int GL_FONT_Y_MAX_BOUNDS_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FONT_Y_MIN_BOUNDS_BIT_NV")]
+    public const int GL_FONT_Y_MIN_BOUNDS_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FORCE_BLUE_TO_ONE_NV")]
+    public const int GL_FORCE_BLUE_TO_ONE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FORMAT_SUBSAMPLE_244_244_OML")]
+    public const int GL_FORMAT_SUBSAMPLE_244_244_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FORMAT_SUBSAMPLE_24_24_OML")]
+    public const int GL_FORMAT_SUBSAMPLE_24_24_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRACTIONAL_EVEN")]
+    public const int GL_FRACTIONAL_EVEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRACTIONAL_ODD")]
+    public const int GL_FRACTIONAL_ODD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENTS_INSTRUMENT_COUNTERS_SGIX")]
+    public const int GL_FRAGMENTS_INSTRUMENT_COUNTERS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENTS_INSTRUMENT_MAX_SGIX")]
+    public const int GL_FRAGMENTS_INSTRUMENT_MAX_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENTS_INSTRUMENT_SGIX")]
+    public const int GL_FRAGMENTS_INSTRUMENT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_ALPHA_MODULATE_IMG")]
+    public const int GL_FRAGMENT_ALPHA_MODULATE_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_COLOR_EXT")]
+    public const int GL_FRAGMENT_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_COLOR_MATERIAL_FACE_SGIX")]
+    public const int GL_FRAGMENT_COLOR_MATERIAL_FACE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_COLOR_MATERIAL_PARAMETER_SGIX")]
+    public const int GL_FRAGMENT_COLOR_MATERIAL_PARAMETER_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_COLOR_MATERIAL_SGIX")]
+    public const int GL_FRAGMENT_COLOR_MATERIAL_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_DEPTH")]
+    public const int GL_FRAGMENT_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_DEPTH_EXT")]
+    public const int GL_FRAGMENT_DEPTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_INTERPOLATION_OFFSET_BITS")]
+    public const int GL_FRAGMENT_INTERPOLATION_OFFSET_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT0_SGIX")]
+    public const int GL_FRAGMENT_LIGHT0_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT1_SGIX")]
+    public const int GL_FRAGMENT_LIGHT1_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT2_SGIX")]
+    public const int GL_FRAGMENT_LIGHT2_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT3_SGIX")]
+    public const int GL_FRAGMENT_LIGHT3_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT4_SGIX")]
+    public const int GL_FRAGMENT_LIGHT4_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT5_SGIX")]
+    public const int GL_FRAGMENT_LIGHT5_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT6_SGIX")]
+    public const int GL_FRAGMENT_LIGHT6_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT7_SGIX")]
+    public const int GL_FRAGMENT_LIGHT7_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHTING_SGIX")]
+    public const int GL_FRAGMENT_LIGHTING_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT_MODEL_AMBIENT_SGIX")]
+    public const int GL_FRAGMENT_LIGHT_MODEL_AMBIENT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT_MODEL_LOCAL_VIEWER_SGIX")]
+    public const int GL_FRAGMENT_LIGHT_MODEL_LOCAL_VIEWER_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT_MODEL_NORMAL_INTERPOLATION_SGIX")]
+    public const int GL_FRAGMENT_LIGHT_MODEL_NORMAL_INTERPOLATION_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_LIGHT_MODEL_TWO_SIDE_SGIX")]
+    public const int GL_FRAGMENT_LIGHT_MODEL_TWO_SIDE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_MATERIAL_EXT")]
+    public const int GL_FRAGMENT_MATERIAL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_NORMAL_EXT")]
+    public const int GL_FRAGMENT_NORMAL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_ARB")]
+    public const int GL_FRAGMENT_PROGRAM_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_BINDING_NV")]
+    public const int GL_FRAGMENT_PROGRAM_BINDING_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_CALLBACK_DATA_MESA")]
+    public const int GL_FRAGMENT_PROGRAM_CALLBACK_DATA_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_CALLBACK_FUNC_MESA")]
+    public const int GL_FRAGMENT_PROGRAM_CALLBACK_FUNC_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_CALLBACK_MESA")]
+    public const int GL_FRAGMENT_PROGRAM_CALLBACK_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_INTERPOLATION_OFFSET_BITS_NV")]
+    public const int GL_FRAGMENT_PROGRAM_INTERPOLATION_OFFSET_BITS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_NV")]
+    public const int GL_FRAGMENT_PROGRAM_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_PARAMETER_BUFFER_NV")]
+    public const int GL_FRAGMENT_PROGRAM_PARAMETER_BUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_PROGRAM_POSITION_MESA")]
+    public const int GL_FRAGMENT_PROGRAM_POSITION_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER")]
+    public const int GL_FRAGMENT_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_ARB")]
+    public const int GL_FRAGMENT_SHADER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_ATI")]
+    public const int GL_FRAGMENT_SHADER_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_BIT")]
+    public const int GL_FRAGMENT_SHADER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_BIT_EXT")]
+    public const int GL_FRAGMENT_SHADER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_DERIVATIVE_HINT")]
+    public const int GL_FRAGMENT_SHADER_DERIVATIVE_HINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_DERIVATIVE_HINT_ARB")]
+    public const int GL_FRAGMENT_SHADER_DERIVATIVE_HINT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_DERIVATIVE_HINT_OES")]
+    public const int GL_FRAGMENT_SHADER_DERIVATIVE_HINT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SHADER_DISCARDS_SAMPLES_EXT")]
+    public const int GL_FRAGMENT_SHADER_DISCARDS_SAMPLES_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SUBROUTINE")]
+    public const int GL_FRAGMENT_SUBROUTINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_SUBROUTINE_UNIFORM")]
+    public const int GL_FRAGMENT_SUBROUTINE_UNIFORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAGMENT_TEXTURE")]
+    public const int GL_FRAGMENT_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER")]
+    public const int GL_FRAMEBUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_ANGLE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_LAYERED")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_LAYERED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_LAYERED_ARB")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_LAYERED_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_OES")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_OES")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_OES")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_OES")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_OES")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_SAMPLES_EXT")]
+    public const int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_SAMPLES_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BARRIER_BIT")]
+    public const int GL_FRAMEBUFFER_BARRIER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BARRIER_BIT_EXT")]
+    public const int GL_FRAMEBUFFER_BARRIER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BINDING")]
+    public const int GL_FRAMEBUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BINDING_ANGLE")]
+    public const int GL_FRAMEBUFFER_BINDING_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BINDING_EXT")]
+    public const int GL_FRAMEBUFFER_BINDING_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BINDING_OES")]
+    public const int GL_FRAMEBUFFER_BINDING_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_BLEND")]
+    public const int GL_FRAMEBUFFER_BLEND;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_COMPLETE")]
+    public const int GL_FRAMEBUFFER_COMPLETE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_COMPLETE_EXT")]
+    public const int GL_FRAMEBUFFER_COMPLETE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_COMPLETE_OES")]
+    public const int GL_FRAMEBUFFER_COMPLETE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT")]
+    public const int GL_FRAMEBUFFER_DEFAULT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS")]
+    public const int GL_FRAMEBUFFER_DEFAULT_FIXED_SAMPLE_LOCATIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_HEIGHT")]
+    public const int GL_FRAMEBUFFER_DEFAULT_HEIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_LAYERS")]
+    public const int GL_FRAMEBUFFER_DEFAULT_LAYERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_SAMPLES")]
+    public const int GL_FRAMEBUFFER_DEFAULT_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_DEFAULT_WIDTH")]
+    public const int GL_FRAMEBUFFER_DEFAULT_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_EXT")]
+    public const int GL_FRAMEBUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_OES")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_OES")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_OES")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_FORMATS_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_FORMATS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_FORMATS_OES")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_FORMATS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_ARB")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_ARB")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_OES")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_ANGLE")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_IMG")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_NV")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_EXT")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_OES")]
+    public const int GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_OES")]
+    public const int GL_FRAMEBUFFER_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_RENDERABLE")]
+    public const int GL_FRAMEBUFFER_RENDERABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_RENDERABLE_LAYERED")]
+    public const int GL_FRAMEBUFFER_RENDERABLE_LAYERED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_SRGB")]
+    public const int GL_FRAMEBUFFER_SRGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_SRGB_CAPABLE_EXT")]
+    public const int GL_FRAMEBUFFER_SRGB_CAPABLE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_SRGB_EXT")]
+    public const int GL_FRAMEBUFFER_SRGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNDEFINED")]
+    public const int GL_FRAMEBUFFER_UNDEFINED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNDEFINED_OES")]
+    public const int GL_FRAMEBUFFER_UNDEFINED_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNSUPPORTED")]
+    public const int GL_FRAMEBUFFER_UNSUPPORTED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNSUPPORTED_EXT")]
+    public const int GL_FRAMEBUFFER_UNSUPPORTED_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEBUFFER_UNSUPPORTED_OES")]
+    public const int GL_FRAMEBUFFER_UNSUPPORTED_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEZOOM_FACTOR_SGIX")]
+    public const int GL_FRAMEZOOM_FACTOR_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAMEZOOM_SGIX")]
+    public const int GL_FRAMEZOOM_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRAME_NV")]
+    public const int GL_FRAME_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT")]
+    public const int GL_FRONT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT_AND_BACK")]
+    public const int GL_FRONT_AND_BACK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT_FACE")]
+    public const int GL_FRONT_FACE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT_LEFT")]
+    public const int GL_FRONT_LEFT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FRONT_RIGHT")]
+    public const int GL_FRONT_RIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FULL_RANGE_EXT")]
+    public const int GL_FULL_RANGE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FULL_SUPPORT")]
+    public const int GL_FULL_SUPPORT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_ADD")]
+    public const int GL_FUNC_ADD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_ADD_EXT")]
+    public const int GL_FUNC_ADD_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_ADD_OES")]
+    public const int GL_FUNC_ADD_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_REVERSE_SUBTRACT")]
+    public const int GL_FUNC_REVERSE_SUBTRACT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_REVERSE_SUBTRACT_EXT")]
+    public const int GL_FUNC_REVERSE_SUBTRACT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_REVERSE_SUBTRACT_OES")]
+    public const int GL_FUNC_REVERSE_SUBTRACT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_SUBTRACT")]
+    public const int GL_FUNC_SUBTRACT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_SUBTRACT_EXT")]
+    public const int GL_FUNC_SUBTRACT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_FUNC_SUBTRACT_OES")]
+    public const int GL_FUNC_SUBTRACT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GCCSO_SHADER_BINARY_FJ")]
+    public const int GL_GCCSO_SHADER_BINARY_FJ;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERATE_MIPMAP")]
+    public const int GL_GENERATE_MIPMAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERATE_MIPMAP_HINT")]
+    public const int GL_GENERATE_MIPMAP_HINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERATE_MIPMAP_HINT_SGIS")]
+    public const int GL_GENERATE_MIPMAP_HINT_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERATE_MIPMAP_SGIS")]
+    public const int GL_GENERATE_MIPMAP_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GENERIC_ATTRIB_NV")]
+    public const int GL_GENERIC_ATTRIB_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_DEFORMATION_BIT_SGIX")]
+    public const int GL_GEOMETRY_DEFORMATION_BIT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_DEFORMATION_SGIX")]
+    public const int GL_GEOMETRY_DEFORMATION_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_INPUT_TYPE")]
+    public const int GL_GEOMETRY_INPUT_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_INPUT_TYPE_ARB")]
+    public const int GL_GEOMETRY_INPUT_TYPE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_INPUT_TYPE_EXT")]
+    public const int GL_GEOMETRY_INPUT_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_OUTPUT_TYPE")]
+    public const int GL_GEOMETRY_OUTPUT_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_OUTPUT_TYPE_ARB")]
+    public const int GL_GEOMETRY_OUTPUT_TYPE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_OUTPUT_TYPE_EXT")]
+    public const int GL_GEOMETRY_OUTPUT_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_PROGRAM_NV")]
+    public const int GL_GEOMETRY_PROGRAM_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_PROGRAM_PARAMETER_BUFFER_NV")]
+    public const int GL_GEOMETRY_PROGRAM_PARAMETER_BUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER")]
+    public const int GL_GEOMETRY_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER_ARB")]
+    public const int GL_GEOMETRY_SHADER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER_BIT")]
+    public const int GL_GEOMETRY_SHADER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER_EXT")]
+    public const int GL_GEOMETRY_SHADER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SHADER_INVOCATIONS")]
+    public const int GL_GEOMETRY_SHADER_INVOCATIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SUBROUTINE")]
+    public const int GL_GEOMETRY_SUBROUTINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_SUBROUTINE_UNIFORM")]
+    public const int GL_GEOMETRY_SUBROUTINE_UNIFORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_TEXTURE")]
+    public const int GL_GEOMETRY_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_VERTICES_OUT")]
+    public const int GL_GEOMETRY_VERTICES_OUT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_VERTICES_OUT_ARB")]
+    public const int GL_GEOMETRY_VERTICES_OUT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEOMETRY_VERTICES_OUT_EXT")]
+    public const int GL_GEOMETRY_VERTICES_OUT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GEQUAL")]
+    public const int GL_GEQUAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GET_TEXTURE_IMAGE_FORMAT")]
+    public const int GL_GET_TEXTURE_IMAGE_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GET_TEXTURE_IMAGE_TYPE")]
+    public const int GL_GET_TEXTURE_IMAGE_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLOBAL_ALPHA_FACTOR_SUN")]
+    public const int GL_GLOBAL_ALPHA_FACTOR_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLOBAL_ALPHA_SUN")]
+    public const int GL_GLOBAL_ALPHA_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HAS_KERNING_BIT_NV")]
+    public const int GL_GLYPH_HAS_KERNING_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HEIGHT_BIT_NV")]
+    public const int GL_GLYPH_HEIGHT_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HORIZONTAL_BEARING_ADVANCE_BIT_NV")]
+    public const int GL_GLYPH_HORIZONTAL_BEARING_ADVANCE_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HORIZONTAL_BEARING_X_BIT_NV")]
+    public const int GL_GLYPH_HORIZONTAL_BEARING_X_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_HORIZONTAL_BEARING_Y_BIT_NV")]
+    public const int GL_GLYPH_HORIZONTAL_BEARING_Y_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_VERTICAL_BEARING_ADVANCE_BIT_NV")]
+    public const int GL_GLYPH_VERTICAL_BEARING_ADVANCE_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_VERTICAL_BEARING_X_BIT_NV")]
+    public const int GL_GLYPH_VERTICAL_BEARING_X_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_VERTICAL_BEARING_Y_BIT_NV")]
+    public const int GL_GLYPH_VERTICAL_BEARING_Y_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GLYPH_WIDTH_BIT_NV")]
+    public const int GL_GLYPH_WIDTH_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GPU_ADDRESS_NV")]
+    public const int GL_GPU_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GPU_OPTIMIZED_QCOM")]
+    public const int GL_GPU_OPTIMIZED_QCOM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREATER")]
+    public const int GL_GREATER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN")]
+    public const int GL_GREEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_BIAS")]
+    public const int GL_GREEN_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_BITS")]
+    public const int GL_GREEN_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_BIT_ATI")]
+    public const int GL_GREEN_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_INTEGER")]
+    public const int GL_GREEN_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_INTEGER_EXT")]
+    public const int GL_GREEN_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_MAX_CLAMP_INGR")]
+    public const int GL_GREEN_MAX_CLAMP_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_MIN_CLAMP_INGR")]
+    public const int GL_GREEN_MIN_CLAMP_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GREEN_SCALE")]
+    public const int GL_GREEN_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_GUILTY_CONTEXT_RESET_ARB")]
+    public const int GL_GUILTY_CONTEXT_RESET_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_APPLE")]
+    public const int GL_HALF_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_BIAS_NEGATE_NV")]
+    public const int GL_HALF_BIAS_NEGATE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_BIAS_NORMAL_NV")]
+    public const int GL_HALF_BIAS_NORMAL_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_BIT_ATI")]
+    public const int GL_HALF_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_FLOAT")]
+    public const int GL_HALF_FLOAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_FLOAT_ARB")]
+    public const int GL_HALF_FLOAT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_FLOAT_NV")]
+    public const int GL_HALF_FLOAT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HALF_FLOAT_OES")]
+    public const int GL_HALF_FLOAT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HIGH_FLOAT")]
+    public const int GL_HIGH_FLOAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HIGH_INT")]
+    public const int GL_HIGH_INT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HILO16_NV")]
+    public const int GL_HILO16_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HILO8_NV")]
+    public const int GL_HILO8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HILO_NV")]
+    public const int GL_HILO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HINT_BIT")]
+    public const int GL_HINT_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM")]
+    public const int GL_HISTOGRAM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_ALPHA_SIZE")]
+    public const int GL_HISTOGRAM_ALPHA_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_ALPHA_SIZE_EXT")]
+    public const int GL_HISTOGRAM_ALPHA_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_BLUE_SIZE")]
+    public const int GL_HISTOGRAM_BLUE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_BLUE_SIZE_EXT")]
+    public const int GL_HISTOGRAM_BLUE_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_EXT")]
+    public const int GL_HISTOGRAM_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_FORMAT")]
+    public const int GL_HISTOGRAM_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_FORMAT_EXT")]
+    public const int GL_HISTOGRAM_FORMAT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_GREEN_SIZE")]
+    public const int GL_HISTOGRAM_GREEN_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_GREEN_SIZE_EXT")]
+    public const int GL_HISTOGRAM_GREEN_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_LUMINANCE_SIZE")]
+    public const int GL_HISTOGRAM_LUMINANCE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_LUMINANCE_SIZE_EXT")]
+    public const int GL_HISTOGRAM_LUMINANCE_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_RED_SIZE")]
+    public const int GL_HISTOGRAM_RED_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_RED_SIZE_EXT")]
+    public const int GL_HISTOGRAM_RED_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_SINK")]
+    public const int GL_HISTOGRAM_SINK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_SINK_EXT")]
+    public const int GL_HISTOGRAM_SINK_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_WIDTH")]
+    public const int GL_HISTOGRAM_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HISTOGRAM_WIDTH_EXT")]
+    public const int GL_HISTOGRAM_WIDTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HI_BIAS_NV")]
+    public const int GL_HI_BIAS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HI_SCALE_NV")]
+    public const int GL_HI_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_HORIZONTAL_LINE_TO_NV")]
+    public const int GL_HORIZONTAL_LINE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IDENTITY_NV")]
+    public const int GL_IDENTITY_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IGNORE_BORDER_HP")]
+    public const int GL_IGNORE_BORDER_HP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_1D")]
+    public const int GL_IMAGE_1D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_1D_ARRAY")]
+    public const int GL_IMAGE_1D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_1D_ARRAY_EXT")]
+    public const int GL_IMAGE_1D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_1D_EXT")]
+    public const int GL_IMAGE_1D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D")]
+    public const int GL_IMAGE_2D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_ARRAY")]
+    public const int GL_IMAGE_2D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_ARRAY_EXT")]
+    public const int GL_IMAGE_2D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_EXT")]
+    public const int GL_IMAGE_2D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_MULTISAMPLE")]
+    public const int GL_IMAGE_2D_MULTISAMPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_MULTISAMPLE_ARRAY")]
+    public const int GL_IMAGE_2D_MULTISAMPLE_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_MULTISAMPLE_ARRAY_EXT")]
+    public const int GL_IMAGE_2D_MULTISAMPLE_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_MULTISAMPLE_EXT")]
+    public const int GL_IMAGE_2D_MULTISAMPLE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_RECT")]
+    public const int GL_IMAGE_2D_RECT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_2D_RECT_EXT")]
+    public const int GL_IMAGE_2D_RECT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_3D")]
+    public const int GL_IMAGE_3D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_3D_EXT")]
+    public const int GL_IMAGE_3D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_ACCESS")]
+    public const int GL_IMAGE_BINDING_ACCESS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_ACCESS_EXT")]
+    public const int GL_IMAGE_BINDING_ACCESS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_FORMAT")]
+    public const int GL_IMAGE_BINDING_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_FORMAT_EXT")]
+    public const int GL_IMAGE_BINDING_FORMAT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LAYER")]
+    public const int GL_IMAGE_BINDING_LAYER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LAYERED")]
+    public const int GL_IMAGE_BINDING_LAYERED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LAYERED_EXT")]
+    public const int GL_IMAGE_BINDING_LAYERED_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LAYER_EXT")]
+    public const int GL_IMAGE_BINDING_LAYER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LEVEL")]
+    public const int GL_IMAGE_BINDING_LEVEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_LEVEL_EXT")]
+    public const int GL_IMAGE_BINDING_LEVEL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_NAME")]
+    public const int GL_IMAGE_BINDING_NAME;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BINDING_NAME_EXT")]
+    public const int GL_IMAGE_BINDING_NAME_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BUFFER")]
+    public const int GL_IMAGE_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_BUFFER_EXT")]
+    public const int GL_IMAGE_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_10_10_10_2")]
+    public const int GL_IMAGE_CLASS_10_10_10_2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_11_11_10")]
+    public const int GL_IMAGE_CLASS_11_11_10;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_1_X_16")]
+    public const int GL_IMAGE_CLASS_1_X_16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_1_X_32")]
+    public const int GL_IMAGE_CLASS_1_X_32;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_1_X_8")]
+    public const int GL_IMAGE_CLASS_1_X_8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_2_X_16")]
+    public const int GL_IMAGE_CLASS_2_X_16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_2_X_32")]
+    public const int GL_IMAGE_CLASS_2_X_32;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_2_X_8")]
+    public const int GL_IMAGE_CLASS_2_X_8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_4_X_16")]
+    public const int GL_IMAGE_CLASS_4_X_16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_4_X_32")]
+    public const int GL_IMAGE_CLASS_4_X_32;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CLASS_4_X_8")]
+    public const int GL_IMAGE_CLASS_4_X_8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_COMPATIBILITY_CLASS")]
+    public const int GL_IMAGE_COMPATIBILITY_CLASS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CUBE")]
+    public const int GL_IMAGE_CUBE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CUBE_EXT")]
+    public const int GL_IMAGE_CUBE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CUBE_MAP_ARRAY")]
+    public const int GL_IMAGE_CUBE_MAP_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_CUBE_MAP_ARRAY_EXT")]
+    public const int GL_IMAGE_CUBE_MAP_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_FORMAT_COMPATIBILITY_BY_CLASS")]
+    public const int GL_IMAGE_FORMAT_COMPATIBILITY_BY_CLASS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_FORMAT_COMPATIBILITY_BY_SIZE")]
+    public const int GL_IMAGE_FORMAT_COMPATIBILITY_BY_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_FORMAT_COMPATIBILITY_TYPE")]
+    public const int GL_IMAGE_FORMAT_COMPATIBILITY_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_PIXEL_FORMAT")]
+    public const int GL_IMAGE_PIXEL_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_PIXEL_TYPE")]
+    public const int GL_IMAGE_PIXEL_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMAGE_TEXEL_SIZE")]
+    public const int GL_IMAGE_TEXEL_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMPLEMENTATION_COLOR_READ_FORMAT")]
+    public const int GL_IMPLEMENTATION_COLOR_READ_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES")]
+    public const int GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMPLEMENTATION_COLOR_READ_TYPE")]
+    public const int GL_IMPLEMENTATION_COLOR_READ_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IMPLEMENTATION_COLOR_READ_TYPE_OES")]
+    public const int GL_IMPLEMENTATION_COLOR_READ_TYPE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INCR")]
+    public const int GL_INCR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INCR_WRAP")]
+    public const int GL_INCR_WRAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INCR_WRAP_EXT")]
+    public const int GL_INCR_WRAP_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INCR_WRAP_OES")]
+    public const int GL_INCR_WRAP_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX")]
+    public const int GL_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY")]
+    public const int GL_INDEX_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_ADDRESS_NV")]
+    public const int GL_INDEX_ARRAY_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_BUFFER_BINDING")]
+    public const int GL_INDEX_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_BUFFER_BINDING_ARB")]
+    public const int GL_INDEX_ARRAY_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_COUNT_EXT")]
+    public const int GL_INDEX_ARRAY_COUNT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_EXT")]
+    public const int GL_INDEX_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_LENGTH_NV")]
+    public const int GL_INDEX_ARRAY_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_POINTER")]
+    public const int GL_INDEX_ARRAY_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_POINTER_EXT")]
+    public const int GL_INDEX_ARRAY_POINTER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_STRIDE")]
+    public const int GL_INDEX_ARRAY_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_STRIDE_EXT")]
+    public const int GL_INDEX_ARRAY_STRIDE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_TYPE")]
+    public const int GL_INDEX_ARRAY_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_ARRAY_TYPE_EXT")]
+    public const int GL_INDEX_ARRAY_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_BITS")]
+    public const int GL_INDEX_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_CLEAR_VALUE")]
+    public const int GL_INDEX_CLEAR_VALUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_LOGIC_OP")]
+    public const int GL_INDEX_LOGIC_OP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_MATERIAL_EXT")]
+    public const int GL_INDEX_MATERIAL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_MATERIAL_FACE_EXT")]
+    public const int GL_INDEX_MATERIAL_FACE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_MATERIAL_PARAMETER_EXT")]
+    public const int GL_INDEX_MATERIAL_PARAMETER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_MODE")]
+    public const int GL_INDEX_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_OFFSET")]
+    public const int GL_INDEX_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_SHIFT")]
+    public const int GL_INDEX_SHIFT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_TEST_EXT")]
+    public const int GL_INDEX_TEST_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_TEST_FUNC_EXT")]
+    public const int GL_INDEX_TEST_FUNC_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_TEST_REF_EXT")]
+    public const int GL_INDEX_TEST_REF_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INDEX_WRITEMASK")]
+    public const int GL_INDEX_WRITEMASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INFO_LOG_LENGTH")]
+    public const int GL_INFO_LOG_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INNOCENT_CONTEXT_RESET_ARB")]
+    public const int GL_INNOCENT_CONTEXT_RESET_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INSTRUMENT_BUFFER_POINTER_SGIX")]
+    public const int GL_INSTRUMENT_BUFFER_POINTER_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INSTRUMENT_MEASUREMENTS_SGIX")]
+    public const int GL_INSTRUMENT_MEASUREMENTS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT")]
+    public const int GL_INT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT16_NV")]
+    public const int GL_INT16_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT16_VEC2_NV")]
+    public const int GL_INT16_VEC2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT16_VEC3_NV")]
+    public const int GL_INT16_VEC3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT16_VEC4_NV")]
+    public const int GL_INT16_VEC4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT64_NV")]
+    public const int GL_INT64_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT64_VEC2_NV")]
+    public const int GL_INT64_VEC2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT64_VEC3_NV")]
+    public const int GL_INT64_VEC3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT64_VEC4_NV")]
+    public const int GL_INT64_VEC4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT8_NV")]
+    public const int GL_INT8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT8_VEC2_NV")]
+    public const int GL_INT8_VEC2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT8_VEC3_NV")]
+    public const int GL_INT8_VEC3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT8_VEC4_NV")]
+    public const int GL_INT8_VEC4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY")]
+    public const int GL_INTENSITY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY12")]
+    public const int GL_INTENSITY12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY12_EXT")]
+    public const int GL_INTENSITY12_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16")]
+    public const int GL_INTENSITY16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16F_ARB")]
+    public const int GL_INTENSITY16F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16I_EXT")]
+    public const int GL_INTENSITY16I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16UI_EXT")]
+    public const int GL_INTENSITY16UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16_EXT")]
+    public const int GL_INTENSITY16_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY16_SNORM")]
+    public const int GL_INTENSITY16_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY32F_ARB")]
+    public const int GL_INTENSITY32F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY32I_EXT")]
+    public const int GL_INTENSITY32I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY32UI_EXT")]
+    public const int GL_INTENSITY32UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY4")]
+    public const int GL_INTENSITY4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY4_EXT")]
+    public const int GL_INTENSITY4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8")]
+    public const int GL_INTENSITY8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8I_EXT")]
+    public const int GL_INTENSITY8I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8UI_EXT")]
+    public const int GL_INTENSITY8UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8_EXT")]
+    public const int GL_INTENSITY8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY8_SNORM")]
+    public const int GL_INTENSITY8_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_EXT")]
+    public const int GL_INTENSITY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_FLOAT16_APPLE")]
+    public const int GL_INTENSITY_FLOAT16_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_FLOAT16_ATI")]
+    public const int GL_INTENSITY_FLOAT16_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_FLOAT32_APPLE")]
+    public const int GL_INTENSITY_FLOAT32_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_FLOAT32_ATI")]
+    public const int GL_INTENSITY_FLOAT32_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTENSITY_SNORM")]
+    public const int GL_INTENSITY_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLACE_OML")]
+    public const int GL_INTERLACE_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLACE_READ_INGR")]
+    public const int GL_INTERLACE_READ_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLACE_READ_OML")]
+    public const int GL_INTERLACE_READ_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLACE_SGIX")]
+    public const int GL_INTERLACE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLEAVED_ATTRIBS")]
+    public const int GL_INTERLEAVED_ATTRIBS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLEAVED_ATTRIBS_EXT")]
+    public const int GL_INTERLEAVED_ATTRIBS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERLEAVED_ATTRIBS_NV")]
+    public const int GL_INTERLEAVED_ATTRIBS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_ALPHA_SIZE")]
+    public const int GL_INTERNALFORMAT_ALPHA_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_ALPHA_TYPE")]
+    public const int GL_INTERNALFORMAT_ALPHA_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_BLUE_SIZE")]
+    public const int GL_INTERNALFORMAT_BLUE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_BLUE_TYPE")]
+    public const int GL_INTERNALFORMAT_BLUE_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_DEPTH_SIZE")]
+    public const int GL_INTERNALFORMAT_DEPTH_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_DEPTH_TYPE")]
+    public const int GL_INTERNALFORMAT_DEPTH_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_GREEN_SIZE")]
+    public const int GL_INTERNALFORMAT_GREEN_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_GREEN_TYPE")]
+    public const int GL_INTERNALFORMAT_GREEN_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_PREFERRED")]
+    public const int GL_INTERNALFORMAT_PREFERRED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_RED_SIZE")]
+    public const int GL_INTERNALFORMAT_RED_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_RED_TYPE")]
+    public const int GL_INTERNALFORMAT_RED_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_SHARED_SIZE")]
+    public const int GL_INTERNALFORMAT_SHARED_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_STENCIL_SIZE")]
+    public const int GL_INTERNALFORMAT_STENCIL_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_STENCIL_TYPE")]
+    public const int GL_INTERNALFORMAT_STENCIL_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERNALFORMAT_SUPPORTED")]
+    public const int GL_INTERNALFORMAT_SUPPORTED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERPOLATE")]
+    public const int GL_INTERPOLATE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INTERPOLATE_EXT")]
+    public const int GL_INTERPOLATE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_10_10_10_2_OES")]
+    public const int GL_INT_10_10_10_2_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_2_10_10_10_REV")]
+    public const int GL_INT_2_10_10_10_REV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_1D")]
+    public const int GL_INT_IMAGE_1D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_1D_ARRAY")]
+    public const int GL_INT_IMAGE_1D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_1D_ARRAY_EXT")]
+    public const int GL_INT_IMAGE_1D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_1D_EXT")]
+    public const int GL_INT_IMAGE_1D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D")]
+    public const int GL_INT_IMAGE_2D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_ARRAY")]
+    public const int GL_INT_IMAGE_2D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_ARRAY_EXT")]
+    public const int GL_INT_IMAGE_2D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_EXT")]
+    public const int GL_INT_IMAGE_2D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_MULTISAMPLE")]
+    public const int GL_INT_IMAGE_2D_MULTISAMPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY")]
+    public const int GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY_EXT")]
+    public const int GL_INT_IMAGE_2D_MULTISAMPLE_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_MULTISAMPLE_EXT")]
+    public const int GL_INT_IMAGE_2D_MULTISAMPLE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_RECT")]
+    public const int GL_INT_IMAGE_2D_RECT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_2D_RECT_EXT")]
+    public const int GL_INT_IMAGE_2D_RECT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_3D")]
+    public const int GL_INT_IMAGE_3D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_3D_EXT")]
+    public const int GL_INT_IMAGE_3D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_BUFFER")]
+    public const int GL_INT_IMAGE_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_BUFFER_EXT")]
+    public const int GL_INT_IMAGE_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_CUBE")]
+    public const int GL_INT_IMAGE_CUBE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_CUBE_EXT")]
+    public const int GL_INT_IMAGE_CUBE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_CUBE_MAP_ARRAY")]
+    public const int GL_INT_IMAGE_CUBE_MAP_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_IMAGE_CUBE_MAP_ARRAY_EXT")]
+    public const int GL_INT_IMAGE_CUBE_MAP_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_1D")]
+    public const int GL_INT_SAMPLER_1D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_1D_ARRAY")]
+    public const int GL_INT_SAMPLER_1D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_1D_ARRAY_EXT")]
+    public const int GL_INT_SAMPLER_1D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_1D_EXT")]
+    public const int GL_INT_SAMPLER_1D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D")]
+    public const int GL_INT_SAMPLER_2D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_ARRAY")]
+    public const int GL_INT_SAMPLER_2D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_ARRAY_EXT")]
+    public const int GL_INT_SAMPLER_2D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_EXT")]
+    public const int GL_INT_SAMPLER_2D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_MULTISAMPLE")]
+    public const int GL_INT_SAMPLER_2D_MULTISAMPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY")]
+    public const int GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_RECT")]
+    public const int GL_INT_SAMPLER_2D_RECT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_2D_RECT_EXT")]
+    public const int GL_INT_SAMPLER_2D_RECT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_3D")]
+    public const int GL_INT_SAMPLER_3D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_3D_EXT")]
+    public const int GL_INT_SAMPLER_3D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_BUFFER")]
+    public const int GL_INT_SAMPLER_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_BUFFER_AMD")]
+    public const int GL_INT_SAMPLER_BUFFER_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_BUFFER_EXT")]
+    public const int GL_INT_SAMPLER_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_CUBE")]
+    public const int GL_INT_SAMPLER_CUBE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_CUBE_EXT")]
+    public const int GL_INT_SAMPLER_CUBE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_CUBE_MAP_ARRAY")]
+    public const int GL_INT_SAMPLER_CUBE_MAP_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_SAMPLER_RENDERBUFFER_NV")]
+    public const int GL_INT_SAMPLER_RENDERBUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC2")]
+    public const int GL_INT_VEC2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC2_ARB")]
+    public const int GL_INT_VEC2_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC3")]
+    public const int GL_INT_VEC3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC3_ARB")]
+    public const int GL_INT_VEC3_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC4")]
+    public const int GL_INT_VEC4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INT_VEC4_ARB")]
+    public const int GL_INT_VEC4_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_ENUM")]
+    public const int GL_INVALID_ENUM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_FRAMEBUFFER_OPERATION")]
+    public const int GL_INVALID_FRAMEBUFFER_OPERATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_FRAMEBUFFER_OPERATION_EXT")]
+    public const int GL_INVALID_FRAMEBUFFER_OPERATION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_FRAMEBUFFER_OPERATION_OES")]
+    public const int GL_INVALID_FRAMEBUFFER_OPERATION_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_INDEX")]
+    public const int GL_INVALID_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_OPERATION")]
+    public const int GL_INVALID_OPERATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVALID_VALUE")]
+    public const int GL_INVALID_VALUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVARIANT_DATATYPE_EXT")]
+    public const int GL_INVARIANT_DATATYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVARIANT_EXT")]
+    public const int GL_INVARIANT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVARIANT_VALUE_EXT")]
+    public const int GL_INVARIANT_VALUE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVERSE_NV")]
+    public const int GL_INVERSE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVERSE_TRANSPOSE_NV")]
+    public const int GL_INVERSE_TRANSPOSE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVERT")]
+    public const int GL_INVERT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_INVERTED_SCREEN_W_REND")]
+    public const int GL_INVERTED_SCREEN_W_REND;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IR_INSTRUMENT1_SGIX")]
+    public const int GL_IR_INSTRUMENT1_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ISOLINES")]
+    public const int GL_ISOLINES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IS_PER_PATCH")]
+    public const int GL_IS_PER_PATCH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IS_ROW_MAJOR")]
+    public const int GL_IS_ROW_MAJOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ITALIC_BIT_NV")]
+    public const int GL_ITALIC_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IUI_N3F_V2F_EXT")]
+    public const int GL_IUI_N3F_V2F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IUI_N3F_V3F_EXT")]
+    public const int GL_IUI_N3F_V3F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IUI_V2F_EXT")]
+    public const int GL_IUI_V2F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_IUI_V3F_EXT")]
+    public const int GL_IUI_V3F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_KEEP")]
+    public const int GL_KEEP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LARGE_CCW_ARC_TO_NV")]
+    public const int GL_LARGE_CCW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LARGE_CW_ARC_TO_NV")]
+    public const int GL_LARGE_CW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LAST_VERTEX_CONVENTION")]
+    public const int GL_LAST_VERTEX_CONVENTION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LAST_VERTEX_CONVENTION_EXT")]
+    public const int GL_LAST_VERTEX_CONVENTION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LAST_VIDEO_CAPTURE_STATUS_NV")]
+    public const int GL_LAST_VIDEO_CAPTURE_STATUS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYER_NV")]
+    public const int GL_LAYER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYER_PROVOKING_VERTEX")]
+    public const int GL_LAYER_PROVOKING_VERTEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYOUT_DEFAULT_INTEL")]
+    public const int GL_LAYOUT_DEFAULT_INTEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYOUT_LINEAR_CPU_CACHED_INTEL")]
+    public const int GL_LAYOUT_LINEAR_CPU_CACHED_INTEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LAYOUT_LINEAR_INTEL")]
+    public const int GL_LAYOUT_LINEAR_INTEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LEFT")]
+    public const int GL_LEFT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LEQUAL")]
+    public const int GL_LEQUAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LERP_ATI")]
+    public const int GL_LERP_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LESS")]
+    public const int GL_LESS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT0")]
+    public const int GL_LIGHT0;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT1")]
+    public const int GL_LIGHT1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT2")]
+    public const int GL_LIGHT2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT3")]
+    public const int GL_LIGHT3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT4")]
+    public const int GL_LIGHT4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT5")]
+    public const int GL_LIGHT5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT6")]
+    public const int GL_LIGHT6;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT7")]
+    public const int GL_LIGHT7;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHTING")]
+    public const int GL_LIGHTING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHTING_BIT")]
+    public const int GL_LIGHTING_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_ENV_MODE_SGIX")]
+    public const int GL_LIGHT_ENV_MODE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_AMBIENT")]
+    public const int GL_LIGHT_MODEL_AMBIENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_COLOR_CONTROL")]
+    public const int GL_LIGHT_MODEL_COLOR_CONTROL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_COLOR_CONTROL_EXT")]
+    public const int GL_LIGHT_MODEL_COLOR_CONTROL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_LOCAL_VIEWER")]
+    public const int GL_LIGHT_MODEL_LOCAL_VIEWER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_SPECULAR_VECTOR_APPLE")]
+    public const int GL_LIGHT_MODEL_SPECULAR_VECTOR_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIGHT_MODEL_TWO_SIDE")]
+    public const int GL_LIGHT_MODEL_TWO_SIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE")]
+    public const int GL_LINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR")]
+    public const int GL_LINEAR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_ATTENUATION")]
+    public const int GL_LINEAR_ATTENUATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_CLIPMAP_LINEAR_SGIX")]
+    public const int GL_LINEAR_CLIPMAP_LINEAR_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_CLIPMAP_NEAREST_SGIX")]
+    public const int GL_LINEAR_CLIPMAP_NEAREST_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_DETAIL_ALPHA_SGIS")]
+    public const int GL_LINEAR_DETAIL_ALPHA_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_DETAIL_COLOR_SGIS")]
+    public const int GL_LINEAR_DETAIL_COLOR_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_DETAIL_SGIS")]
+    public const int GL_LINEAR_DETAIL_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_MIPMAP_LINEAR")]
+    public const int GL_LINEAR_MIPMAP_LINEAR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_MIPMAP_NEAREST")]
+    public const int GL_LINEAR_MIPMAP_NEAREST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_SHARPEN_ALPHA_SGIS")]
+    public const int GL_LINEAR_SHARPEN_ALPHA_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_SHARPEN_COLOR_SGIS")]
+    public const int GL_LINEAR_SHARPEN_COLOR_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINEAR_SHARPEN_SGIS")]
+    public const int GL_LINEAR_SHARPEN_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINES")]
+    public const int GL_LINES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINES_ADJACENCY")]
+    public const int GL_LINES_ADJACENCY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINES_ADJACENCY_ARB")]
+    public const int GL_LINES_ADJACENCY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINES_ADJACENCY_EXT")]
+    public const int GL_LINES_ADJACENCY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_BIT")]
+    public const int GL_LINE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_LOOP")]
+    public const int GL_LINE_LOOP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_QUALITY_HINT_SGIX")]
+    public const int GL_LINE_QUALITY_HINT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_RESET_TOKEN")]
+    public const int GL_LINE_RESET_TOKEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_SMOOTH")]
+    public const int GL_LINE_SMOOTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_SMOOTH_HINT")]
+    public const int GL_LINE_SMOOTH_HINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STIPPLE")]
+    public const int GL_LINE_STIPPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STIPPLE_PATTERN")]
+    public const int GL_LINE_STIPPLE_PATTERN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STIPPLE_REPEAT")]
+    public const int GL_LINE_STIPPLE_REPEAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STRIP")]
+    public const int GL_LINE_STRIP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STRIP_ADJACENCY")]
+    public const int GL_LINE_STRIP_ADJACENCY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STRIP_ADJACENCY_ARB")]
+    public const int GL_LINE_STRIP_ADJACENCY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_STRIP_ADJACENCY_EXT")]
+    public const int GL_LINE_STRIP_ADJACENCY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_TOKEN")]
+    public const int GL_LINE_TOKEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_TO_NV")]
+    public const int GL_LINE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_WIDTH")]
+    public const int GL_LINE_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_WIDTH_GRANULARITY")]
+    public const int GL_LINE_WIDTH_GRANULARITY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINE_WIDTH_RANGE")]
+    public const int GL_LINE_WIDTH_RANGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LINK_STATUS")]
+    public const int GL_LINK_STATUS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_BASE")]
+    public const int GL_LIST_BASE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_BIT")]
+    public const int GL_LIST_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_INDEX")]
+    public const int GL_LIST_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_MODE")]
+    public const int GL_LIST_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LIST_PRIORITY_SGIX")]
+    public const int GL_LIST_PRIORITY_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOAD")]
+    public const int GL_LOAD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCAL_CONSTANT_DATATYPE_EXT")]
+    public const int GL_LOCAL_CONSTANT_DATATYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCAL_CONSTANT_EXT")]
+    public const int GL_LOCAL_CONSTANT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCAL_CONSTANT_VALUE_EXT")]
+    public const int GL_LOCAL_CONSTANT_VALUE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCAL_EXT")]
+    public const int GL_LOCAL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCATION")]
+    public const int GL_LOCATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOCATION_INDEX")]
+    public const int GL_LOCATION_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOGIC_OP")]
+    public const int GL_LOGIC_OP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOGIC_OP_MODE")]
+    public const int GL_LOGIC_OP_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOSE_CONTEXT_ON_RESET_ARB")]
+    public const int GL_LOSE_CONTEXT_ON_RESET_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOWER_LEFT")]
+    public const int GL_LOWER_LEFT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOW_FLOAT")]
+    public const int GL_LOW_FLOAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LOW_INT")]
+    public const int GL_LOW_INT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LO_BIAS_NV")]
+    public const int GL_LO_BIAS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LO_SCALE_NV")]
+    public const int GL_LO_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE")]
+    public const int GL_LUMINANCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12")]
+    public const int GL_LUMINANCE12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_ALPHA12")]
+    public const int GL_LUMINANCE12_ALPHA12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_ALPHA12_EXT")]
+    public const int GL_LUMINANCE12_ALPHA12_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_ALPHA4")]
+    public const int GL_LUMINANCE12_ALPHA4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_ALPHA4_EXT")]
+    public const int GL_LUMINANCE12_ALPHA4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE12_EXT")]
+    public const int GL_LUMINANCE12_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16")]
+    public const int GL_LUMINANCE16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16F_ARB")]
+    public const int GL_LUMINANCE16F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16I_EXT")]
+    public const int GL_LUMINANCE16I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16UI_EXT")]
+    public const int GL_LUMINANCE16UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_ALPHA16")]
+    public const int GL_LUMINANCE16_ALPHA16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_ALPHA16_EXT")]
+    public const int GL_LUMINANCE16_ALPHA16_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_ALPHA16_SNORM")]
+    public const int GL_LUMINANCE16_ALPHA16_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_EXT")]
+    public const int GL_LUMINANCE16_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE16_SNORM")]
+    public const int GL_LUMINANCE16_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE32F_ARB")]
+    public const int GL_LUMINANCE32F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE32I_EXT")]
+    public const int GL_LUMINANCE32I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE32UI_EXT")]
+    public const int GL_LUMINANCE32UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE4")]
+    public const int GL_LUMINANCE4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE4_ALPHA4")]
+    public const int GL_LUMINANCE4_ALPHA4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE4_ALPHA4_EXT")]
+    public const int GL_LUMINANCE4_ALPHA4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE4_EXT")]
+    public const int GL_LUMINANCE4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE6_ALPHA2")]
+    public const int GL_LUMINANCE6_ALPHA2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE6_ALPHA2_EXT")]
+    public const int GL_LUMINANCE6_ALPHA2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8")]
+    public const int GL_LUMINANCE8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8I_EXT")]
+    public const int GL_LUMINANCE8I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8UI_EXT")]
+    public const int GL_LUMINANCE8UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_ALPHA8")]
+    public const int GL_LUMINANCE8_ALPHA8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_ALPHA8_EXT")]
+    public const int GL_LUMINANCE8_ALPHA8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_ALPHA8_SNORM")]
+    public const int GL_LUMINANCE8_ALPHA8_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_EXT")]
+    public const int GL_LUMINANCE8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE8_SNORM")]
+    public const int GL_LUMINANCE8_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA")]
+    public const int GL_LUMINANCE_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA16F_ARB")]
+    public const int GL_LUMINANCE_ALPHA16F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA16I_EXT")]
+    public const int GL_LUMINANCE_ALPHA16I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA16UI_EXT")]
+    public const int GL_LUMINANCE_ALPHA16UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA32F_ARB")]
+    public const int GL_LUMINANCE_ALPHA32F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA32I_EXT")]
+    public const int GL_LUMINANCE_ALPHA32I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA32UI_EXT")]
+    public const int GL_LUMINANCE_ALPHA32UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA8I_EXT")]
+    public const int GL_LUMINANCE_ALPHA8I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA8UI_EXT")]
+    public const int GL_LUMINANCE_ALPHA8UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_FLOAT16_APPLE")]
+    public const int GL_LUMINANCE_ALPHA_FLOAT16_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_FLOAT16_ATI")]
+    public const int GL_LUMINANCE_ALPHA_FLOAT16_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_FLOAT32_APPLE")]
+    public const int GL_LUMINANCE_ALPHA_FLOAT32_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_FLOAT32_ATI")]
+    public const int GL_LUMINANCE_ALPHA_FLOAT32_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_INTEGER_EXT")]
+    public const int GL_LUMINANCE_ALPHA_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_ALPHA_SNORM")]
+    public const int GL_LUMINANCE_ALPHA_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_FLOAT16_APPLE")]
+    public const int GL_LUMINANCE_FLOAT16_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_FLOAT16_ATI")]
+    public const int GL_LUMINANCE_FLOAT16_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_FLOAT32_APPLE")]
+    public const int GL_LUMINANCE_FLOAT32_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_FLOAT32_ATI")]
+    public const int GL_LUMINANCE_FLOAT32_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_INTEGER_EXT")]
+    public const int GL_LUMINANCE_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_LUMINANCE_SNORM")]
+    public const int GL_LUMINANCE_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAD_ATI")]
+    public const int GL_MAD_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAGNITUDE_BIAS_NV")]
+    public const int GL_MAGNITUDE_BIAS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAGNITUDE_SCALE_NV")]
+    public const int GL_MAGNITUDE_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAJOR_VERSION")]
+    public const int GL_MAJOR_VERSION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MALI_SHADER_BINARY_ARM")]
+    public const int GL_MALI_SHADER_BINARY_ARM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MANUAL_GENERATE_MIPMAP")]
+    public const int GL_MANUAL_GENERATE_MIPMAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_COLOR_4")]
+    public const int GL_MAP1_COLOR_4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_GRID_DOMAIN")]
+    public const int GL_MAP1_GRID_DOMAIN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_GRID_SEGMENTS")]
+    public const int GL_MAP1_GRID_SEGMENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_INDEX")]
+    public const int GL_MAP1_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_NORMAL")]
+    public const int GL_MAP1_NORMAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_TEXTURE_COORD_1")]
+    public const int GL_MAP1_TEXTURE_COORD_1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_TEXTURE_COORD_2")]
+    public const int GL_MAP1_TEXTURE_COORD_2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_TEXTURE_COORD_3")]
+    public const int GL_MAP1_TEXTURE_COORD_3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_TEXTURE_COORD_4")]
+    public const int GL_MAP1_TEXTURE_COORD_4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_3")]
+    public const int GL_MAP1_VERTEX_3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_4")]
+    public const int GL_MAP1_VERTEX_4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB0_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB0_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB10_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB10_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB11_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB11_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB12_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB12_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB13_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB13_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB14_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB14_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB15_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB15_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB1_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB1_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB2_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB2_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB3_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB3_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB4_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB4_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB5_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB5_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB6_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB6_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB7_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB7_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB8_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB8_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP1_VERTEX_ATTRIB9_4_NV")]
+    public const int GL_MAP1_VERTEX_ATTRIB9_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_COLOR_4")]
+    public const int GL_MAP2_COLOR_4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_GRID_DOMAIN")]
+    public const int GL_MAP2_GRID_DOMAIN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_GRID_SEGMENTS")]
+    public const int GL_MAP2_GRID_SEGMENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_INDEX")]
+    public const int GL_MAP2_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_NORMAL")]
+    public const int GL_MAP2_NORMAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_TEXTURE_COORD_1")]
+    public const int GL_MAP2_TEXTURE_COORD_1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_TEXTURE_COORD_2")]
+    public const int GL_MAP2_TEXTURE_COORD_2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_TEXTURE_COORD_3")]
+    public const int GL_MAP2_TEXTURE_COORD_3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_TEXTURE_COORD_4")]
+    public const int GL_MAP2_TEXTURE_COORD_4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_3")]
+    public const int GL_MAP2_VERTEX_3;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_4")]
+    public const int GL_MAP2_VERTEX_4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB0_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB0_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB10_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB10_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB11_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB11_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB12_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB12_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB13_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB13_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB14_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB14_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB15_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB15_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB1_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB1_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB2_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB2_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB3_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB3_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB4_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB4_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB5_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB5_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB6_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB6_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB7_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB7_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB8_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB8_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP2_VERTEX_ATTRIB9_4_NV")]
+    public const int GL_MAP2_VERTEX_ATTRIB9_4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_ATTRIB_U_ORDER_NV")]
+    public const int GL_MAP_ATTRIB_U_ORDER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_ATTRIB_V_ORDER_NV")]
+    public const int GL_MAP_ATTRIB_V_ORDER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_COLOR")]
+    public const int GL_MAP_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_FLUSH_EXPLICIT_BIT")]
+    public const int GL_MAP_FLUSH_EXPLICIT_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_FLUSH_EXPLICIT_BIT_EXT")]
+    public const int GL_MAP_FLUSH_EXPLICIT_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_INVALIDATE_BUFFER_BIT")]
+    public const int GL_MAP_INVALIDATE_BUFFER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_INVALIDATE_BUFFER_BIT_EXT")]
+    public const int GL_MAP_INVALIDATE_BUFFER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_INVALIDATE_RANGE_BIT")]
+    public const int GL_MAP_INVALIDATE_RANGE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_INVALIDATE_RANGE_BIT_EXT")]
+    public const int GL_MAP_INVALIDATE_RANGE_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_READ_BIT")]
+    public const int GL_MAP_READ_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_READ_BIT_EXT")]
+    public const int GL_MAP_READ_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_STENCIL")]
+    public const int GL_MAP_STENCIL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_TESSELLATION_NV")]
+    public const int GL_MAP_TESSELLATION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_UNSYNCHRONIZED_BIT")]
+    public const int GL_MAP_UNSYNCHRONIZED_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_UNSYNCHRONIZED_BIT_EXT")]
+    public const int GL_MAP_UNSYNCHRONIZED_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_WRITE_BIT")]
+    public const int GL_MAP_WRITE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAP_WRITE_BIT_EXT")]
+    public const int GL_MAP_WRITE_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX0_ARB")]
+    public const int GL_MATRIX0_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX0_NV")]
+    public const int GL_MATRIX0_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX10_ARB")]
+    public const int GL_MATRIX10_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX11_ARB")]
+    public const int GL_MATRIX11_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX12_ARB")]
+    public const int GL_MATRIX12_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX13_ARB")]
+    public const int GL_MATRIX13_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX14_ARB")]
+    public const int GL_MATRIX14_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX15_ARB")]
+    public const int GL_MATRIX15_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX16_ARB")]
+    public const int GL_MATRIX16_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX17_ARB")]
+    public const int GL_MATRIX17_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX18_ARB")]
+    public const int GL_MATRIX18_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX19_ARB")]
+    public const int GL_MATRIX19_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX1_ARB")]
+    public const int GL_MATRIX1_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX1_NV")]
+    public const int GL_MATRIX1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX20_ARB")]
+    public const int GL_MATRIX20_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX21_ARB")]
+    public const int GL_MATRIX21_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX22_ARB")]
+    public const int GL_MATRIX22_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX23_ARB")]
+    public const int GL_MATRIX23_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX24_ARB")]
+    public const int GL_MATRIX24_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX25_ARB")]
+    public const int GL_MATRIX25_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX26_ARB")]
+    public const int GL_MATRIX26_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX27_ARB")]
+    public const int GL_MATRIX27_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX28_ARB")]
+    public const int GL_MATRIX28_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX29_ARB")]
+    public const int GL_MATRIX29_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX2_ARB")]
+    public const int GL_MATRIX2_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX2_NV")]
+    public const int GL_MATRIX2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX30_ARB")]
+    public const int GL_MATRIX30_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX31_ARB")]
+    public const int GL_MATRIX31_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX3_ARB")]
+    public const int GL_MATRIX3_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX3_NV")]
+    public const int GL_MATRIX3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX4_ARB")]
+    public const int GL_MATRIX4_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX4_NV")]
+    public const int GL_MATRIX4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX5_ARB")]
+    public const int GL_MATRIX5_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX5_NV")]
+    public const int GL_MATRIX5_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX6_ARB")]
+    public const int GL_MATRIX6_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX6_NV")]
+    public const int GL_MATRIX6_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX7_ARB")]
+    public const int GL_MATRIX7_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX7_NV")]
+    public const int GL_MATRIX7_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX8_ARB")]
+    public const int GL_MATRIX8_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX9_ARB")]
+    public const int GL_MATRIX9_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_EXT")]
+    public const int GL_MATRIX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_ARB")]
+    public const int GL_MATRIX_INDEX_ARRAY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES")]
+    public const int GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_OES")]
+    public const int GL_MATRIX_INDEX_ARRAY_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_POINTER_ARB")]
+    public const int GL_MATRIX_INDEX_ARRAY_POINTER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_POINTER_OES")]
+    public const int GL_MATRIX_INDEX_ARRAY_POINTER_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_SIZE_ARB")]
+    public const int GL_MATRIX_INDEX_ARRAY_SIZE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_SIZE_OES")]
+    public const int GL_MATRIX_INDEX_ARRAY_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_STRIDE_ARB")]
+    public const int GL_MATRIX_INDEX_ARRAY_STRIDE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_STRIDE_OES")]
+    public const int GL_MATRIX_INDEX_ARRAY_STRIDE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_TYPE_ARB")]
+    public const int GL_MATRIX_INDEX_ARRAY_TYPE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_INDEX_ARRAY_TYPE_OES")]
+    public const int GL_MATRIX_INDEX_ARRAY_TYPE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_MODE")]
+    public const int GL_MATRIX_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_PALETTE_ARB")]
+    public const int GL_MATRIX_PALETTE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_PALETTE_OES")]
+    public const int GL_MATRIX_PALETTE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MATRIX_STRIDE")]
+    public const int GL_MATRIX_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX")]
+    public const int GL_MAX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_3D_TEXTURE_SIZE")]
+    public const int GL_MAX_3D_TEXTURE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_3D_TEXTURE_SIZE_EXT")]
+    public const int GL_MAX_3D_TEXTURE_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_3D_TEXTURE_SIZE_OES")]
+    public const int GL_MAX_3D_TEXTURE_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_4D_TEXTURE_SIZE_SGIS")]
+    public const int GL_MAX_4D_TEXTURE_SIZE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ACTIVE_LIGHTS_SGIX")]
+    public const int GL_MAX_ACTIVE_LIGHTS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ARRAY_TEXTURE_LAYERS")]
+    public const int GL_MAX_ARRAY_TEXTURE_LAYERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ARRAY_TEXTURE_LAYERS_EXT")]
+    public const int GL_MAX_ARRAY_TEXTURE_LAYERS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ASYNC_DRAW_PIXELS_SGIX")]
+    public const int GL_MAX_ASYNC_DRAW_PIXELS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ASYNC_HISTOGRAM_SGIX")]
+    public const int GL_MAX_ASYNC_HISTOGRAM_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ASYNC_READ_PIXELS_SGIX")]
+    public const int GL_MAX_ASYNC_READ_PIXELS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ASYNC_TEX_IMAGE_SGIX")]
+    public const int GL_MAX_ASYNC_TEX_IMAGE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ATOMIC_COUNTER_BUFFER_BINDINGS")]
+    public const int GL_MAX_ATOMIC_COUNTER_BUFFER_BINDINGS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ATOMIC_COUNTER_BUFFER_SIZE")]
+    public const int GL_MAX_ATOMIC_COUNTER_BUFFER_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ATTRIB_STACK_DEPTH")]
+    public const int GL_MAX_ATTRIB_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_BINDABLE_UNIFORM_SIZE_EXT")]
+    public const int GL_MAX_BINDABLE_UNIFORM_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIENT_ATTRIB_STACK_DEPTH")]
+    public const int GL_MAX_CLIENT_ATTRIB_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIPMAP_DEPTH_SGIX")]
+    public const int GL_MAX_CLIPMAP_DEPTH_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIPMAP_VIRTUAL_DEPTH_SGIX")]
+    public const int GL_MAX_CLIPMAP_VIRTUAL_DEPTH_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIP_DISTANCES")]
+    public const int GL_MAX_CLIP_DISTANCES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CLIP_PLANES")]
+    public const int GL_MAX_CLIP_PLANES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_ATTACHMENTS")]
+    public const int GL_MAX_COLOR_ATTACHMENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_ATTACHMENTS_EXT")]
+    public const int GL_MAX_COLOR_ATTACHMENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_ATTACHMENTS_NV")]
+    public const int GL_MAX_COLOR_ATTACHMENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_MATRIX_STACK_DEPTH")]
+    public const int GL_MAX_COLOR_MATRIX_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_MATRIX_STACK_DEPTH_SGI")]
+    public const int GL_MAX_COLOR_MATRIX_STACK_DEPTH_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COLOR_TEXTURE_SAMPLES")]
+    public const int GL_MAX_COLOR_TEXTURE_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_ATOMIC_COUNTERS")]
+    public const int GL_MAX_COMBINED_ATOMIC_COUNTERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS")]
+    public const int GL_MAX_COMBINED_ATOMIC_COUNTER_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_COMBINED_COMPUTE_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_DIMENSIONS")]
+    public const int GL_MAX_COMBINED_DIMENSIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_IMAGE_UNIFORMS")]
+    public const int GL_MAX_COMBINED_IMAGE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS")]
+    public const int GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS_EXT")]
+    public const int GL_MAX_COMBINED_IMAGE_UNITS_AND_FRAGMENT_OUTPUTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_SHADER_STORAGE_BLOCKS")]
+    public const int GL_MAX_COMBINED_SHADER_STORAGE_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS")]
+    public const int GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS_ARB")]
+    public const int GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_UNIFORM_BLOCKS")]
+    public const int GL_MAX_COMBINED_UNIFORM_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_ATOMIC_COUNTERS")]
+    public const int GL_MAX_COMPUTE_ATOMIC_COUNTERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS")]
+    public const int GL_MAX_COMPUTE_ATOMIC_COUNTER_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_IMAGE_UNIFORMS")]
+    public const int GL_MAX_COMPUTE_IMAGE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_LOCAL_INVOCATIONS")]
+    public const int GL_MAX_COMPUTE_LOCAL_INVOCATIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_SHADER_STORAGE_BLOCKS")]
+    public const int GL_MAX_COMPUTE_SHADER_STORAGE_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_SHARED_MEMORY_SIZE")]
+    public const int GL_MAX_COMPUTE_SHARED_MEMORY_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_TEXTURE_IMAGE_UNITS")]
+    public const int GL_MAX_COMPUTE_TEXTURE_IMAGE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_UNIFORM_BLOCKS")]
+    public const int GL_MAX_COMPUTE_UNIFORM_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_COMPUTE_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_WORK_GROUP_COUNT")]
+    public const int GL_MAX_COMPUTE_WORK_GROUP_COUNT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_COMPUTE_WORK_GROUP_SIZE")]
+    public const int GL_MAX_COMPUTE_WORK_GROUP_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CONVOLUTION_HEIGHT")]
+    public const int GL_MAX_CONVOLUTION_HEIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CONVOLUTION_HEIGHT_EXT")]
+    public const int GL_MAX_CONVOLUTION_HEIGHT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CONVOLUTION_WIDTH")]
+    public const int GL_MAX_CONVOLUTION_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CONVOLUTION_WIDTH_EXT")]
+    public const int GL_MAX_CONVOLUTION_WIDTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CUBE_MAP_TEXTURE_SIZE")]
+    public const int GL_MAX_CUBE_MAP_TEXTURE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB")]
+    public const int GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CUBE_MAP_TEXTURE_SIZE_EXT")]
+    public const int GL_MAX_CUBE_MAP_TEXTURE_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_CUBE_MAP_TEXTURE_SIZE_OES")]
+    public const int GL_MAX_CUBE_MAP_TEXTURE_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_GROUP_STACK_DEPTH")]
+    public const int GL_MAX_DEBUG_GROUP_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_LOGGED_MESSAGES")]
+    public const int GL_MAX_DEBUG_LOGGED_MESSAGES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_LOGGED_MESSAGES_AMD")]
+    public const int GL_MAX_DEBUG_LOGGED_MESSAGES_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_LOGGED_MESSAGES_ARB")]
+    public const int GL_MAX_DEBUG_LOGGED_MESSAGES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_MESSAGE_LENGTH")]
+    public const int GL_MAX_DEBUG_MESSAGE_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_MESSAGE_LENGTH_AMD")]
+    public const int GL_MAX_DEBUG_MESSAGE_LENGTH_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEBUG_MESSAGE_LENGTH_ARB")]
+    public const int GL_MAX_DEBUG_MESSAGE_LENGTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEEP_3D_TEXTURE_DEPTH_NV")]
+    public const int GL_MAX_DEEP_3D_TEXTURE_DEPTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEEP_3D_TEXTURE_WIDTH_HEIGHT_NV")]
+    public const int GL_MAX_DEEP_3D_TEXTURE_WIDTH_HEIGHT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEFORMATION_ORDER_SGIX")]
+    public const int GL_MAX_DEFORMATION_ORDER_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEPTH")]
+    public const int GL_MAX_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DEPTH_TEXTURE_SAMPLES")]
+    public const int GL_MAX_DEPTH_TEXTURE_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DRAW_BUFFERS")]
+    public const int GL_MAX_DRAW_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DRAW_BUFFERS_ARB")]
+    public const int GL_MAX_DRAW_BUFFERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DRAW_BUFFERS_ATI")]
+    public const int GL_MAX_DRAW_BUFFERS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DRAW_BUFFERS_NV")]
+    public const int GL_MAX_DRAW_BUFFERS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_DUAL_SOURCE_DRAW_BUFFERS")]
+    public const int GL_MAX_DUAL_SOURCE_DRAW_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ELEMENTS_INDICES")]
+    public const int GL_MAX_ELEMENTS_INDICES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ELEMENTS_VERTICES")]
+    public const int GL_MAX_ELEMENTS_VERTICES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_ELEMENT_INDEX")]
+    public const int GL_MAX_ELEMENT_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_EVAL_ORDER")]
+    public const int GL_MAX_EVAL_ORDER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_EXT")]
+    public const int GL_MAX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FOG_FUNC_POINTS_SGIS")]
+    public const int GL_MAX_FOG_FUNC_POINTS_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_ATOMIC_COUNTERS")]
+    public const int GL_MAX_FRAGMENT_ATOMIC_COUNTERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_ATOMIC_COUNTER_BUFFERS")]
+    public const int GL_MAX_FRAGMENT_ATOMIC_COUNTER_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_BINDABLE_UNIFORMS_EXT")]
+    public const int GL_MAX_FRAGMENT_BINDABLE_UNIFORMS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_IMAGE_UNIFORMS")]
+    public const int GL_MAX_FRAGMENT_IMAGE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_INPUT_COMPONENTS")]
+    public const int GL_MAX_FRAGMENT_INPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_INTERPOLATION_OFFSET")]
+    public const int GL_MAX_FRAGMENT_INTERPOLATION_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_NV")]
+    public const int GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_LIGHTS_SGIX")]
+    public const int GL_MAX_FRAGMENT_LIGHTS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_PROGRAM_LOCAL_PARAMETERS_NV")]
+    public const int GL_MAX_FRAGMENT_PROGRAM_LOCAL_PARAMETERS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_SHADER_STORAGE_BLOCKS")]
+    public const int GL_MAX_FRAGMENT_SHADER_STORAGE_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_UNIFORM_BLOCKS")]
+    public const int GL_MAX_FRAGMENT_UNIFORM_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_FRAGMENT_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB")]
+    public const int GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAGMENT_UNIFORM_VECTORS")]
+    public const int GL_MAX_FRAGMENT_UNIFORM_VECTORS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEBUFFER_HEIGHT")]
+    public const int GL_MAX_FRAMEBUFFER_HEIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEBUFFER_LAYERS")]
+    public const int GL_MAX_FRAMEBUFFER_LAYERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEBUFFER_SAMPLES")]
+    public const int GL_MAX_FRAMEBUFFER_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEBUFFER_WIDTH")]
+    public const int GL_MAX_FRAMEBUFFER_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_FRAMEZOOM_FACTOR_SGIX")]
+    public const int GL_MAX_FRAMEZOOM_FACTOR_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GENERAL_COMBINERS_NV")]
+    public const int GL_MAX_GENERAL_COMBINERS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_ATOMIC_COUNTERS")]
+    public const int GL_MAX_GEOMETRY_ATOMIC_COUNTERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS")]
+    public const int GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_BINDABLE_UNIFORMS_EXT")]
+    public const int GL_MAX_GEOMETRY_BINDABLE_UNIFORMS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_IMAGE_UNIFORMS")]
+    public const int GL_MAX_GEOMETRY_IMAGE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_INPUT_COMPONENTS")]
+    public const int GL_MAX_GEOMETRY_INPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_OUTPUT_COMPONENTS")]
+    public const int GL_MAX_GEOMETRY_OUTPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_OUTPUT_VERTICES")]
+    public const int GL_MAX_GEOMETRY_OUTPUT_VERTICES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_OUTPUT_VERTICES_ARB")]
+    public const int GL_MAX_GEOMETRY_OUTPUT_VERTICES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT")]
+    public const int GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_PROGRAM_INVOCATIONS_NV")]
+    public const int GL_MAX_GEOMETRY_PROGRAM_INVOCATIONS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_SHADER_INVOCATIONS")]
+    public const int GL_MAX_GEOMETRY_SHADER_INVOCATIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS")]
+    public const int GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS")]
+    public const int GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_ARB")]
+    public const int GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT")]
+    public const int GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS")]
+    public const int GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_ARB")]
+    public const int GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT")]
+    public const int GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_UNIFORM_BLOCKS")]
+    public const int GL_MAX_GEOMETRY_UNIFORM_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_GEOMETRY_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_ARB")]
+    public const int GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT")]
+    public const int GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_VARYING_COMPONENTS_ARB")]
+    public const int GL_MAX_GEOMETRY_VARYING_COMPONENTS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT")]
+    public const int GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_HEIGHT")]
+    public const int GL_MAX_HEIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_IMAGE_SAMPLES")]
+    public const int GL_MAX_IMAGE_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_IMAGE_SAMPLES_EXT")]
+    public const int GL_MAX_IMAGE_SAMPLES_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_IMAGE_UNITS")]
+    public const int GL_MAX_IMAGE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_IMAGE_UNITS_EXT")]
+    public const int GL_MAX_IMAGE_UNITS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_INTEGER_SAMPLES")]
+    public const int GL_MAX_INTEGER_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_LABEL_LENGTH")]
+    public const int GL_MAX_LABEL_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_LAYERS")]
+    public const int GL_MAX_LAYERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_LIGHTS")]
+    public const int GL_MAX_LIGHTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_LIST_NESTING")]
+    public const int GL_MAX_LIST_NESTING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MAP_TESSELLATION_NV")]
+    public const int GL_MAX_MAP_TESSELLATION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MATRIX_PALETTE_STACK_DEPTH_ARB")]
+    public const int GL_MAX_MATRIX_PALETTE_STACK_DEPTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MODELVIEW_STACK_DEPTH")]
+    public const int GL_MAX_MODELVIEW_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MULTISAMPLE_COVERAGE_MODES_NV")]
+    public const int GL_MAX_MULTISAMPLE_COVERAGE_MODES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_MULTIVIEW_BUFFERS_EXT")]
+    public const int GL_MAX_MULTIVIEW_BUFFERS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_NAME_LENGTH")]
+    public const int GL_MAX_NAME_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_NAME_STACK_DEPTH")]
+    public const int GL_MAX_NAME_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_NUM_ACTIVE_VARIABLES")]
+    public const int GL_MAX_NUM_ACTIVE_VARIABLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_NUM_COMPATIBLE_SUBROUTINES")]
+    public const int GL_MAX_NUM_COMPATIBLE_SUBROUTINES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_INSTRUCTIONS_EXT")]
+    public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_INSTRUCTIONS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_INVARIANTS_EXT")]
+    public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_INVARIANTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCALS_EXT")]
+    public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCALS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCAL_CONSTANTS_EXT")]
+    public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_LOCAL_CONSTANTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_OPTIMIZED_VERTEX_SHADER_VARIANTS_EXT")]
+    public const int GL_MAX_OPTIMIZED_VERTEX_SHADER_VARIANTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PALETTE_MATRICES_ARB")]
+    public const int GL_MAX_PALETTE_MATRICES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PALETTE_MATRICES_OES")]
+    public const int GL_MAX_PALETTE_MATRICES_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PATCH_VERTICES")]
+    public const int GL_MAX_PATCH_VERTICES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PIXEL_MAP_TABLE")]
+    public const int GL_MAX_PIXEL_MAP_TABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT")]
+    public const int GL_MAX_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI")]
+    public const int GL_MAX_PN_TRIANGLES_TESSELATION_LEVEL_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ADDRESS_REGISTERS_ARB")]
+    public const int GL_MAX_PROGRAM_ADDRESS_REGISTERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ALU_INSTRUCTIONS_ARB")]
+    public const int GL_MAX_PROGRAM_ALU_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ATTRIBS_ARB")]
+    public const int GL_MAX_PROGRAM_ATTRIBS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ATTRIB_COMPONENTS_NV")]
+    public const int GL_MAX_PROGRAM_ATTRIB_COMPONENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_CALL_DEPTH_NV")]
+    public const int GL_MAX_PROGRAM_CALL_DEPTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_ENV_PARAMETERS_ARB")]
+    public const int GL_MAX_PROGRAM_ENV_PARAMETERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_EXEC_INSTRUCTIONS_NV")]
+    public const int GL_MAX_PROGRAM_EXEC_INSTRUCTIONS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_GENERIC_ATTRIBS_NV")]
+    public const int GL_MAX_PROGRAM_GENERIC_ATTRIBS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_GENERIC_RESULTS_NV")]
+    public const int GL_MAX_PROGRAM_GENERIC_RESULTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_IF_DEPTH_NV")]
+    public const int GL_MAX_PROGRAM_IF_DEPTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_INSTRUCTIONS_ARB")]
+    public const int GL_MAX_PROGRAM_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_LOCAL_PARAMETERS_ARB")]
+    public const int GL_MAX_PROGRAM_LOCAL_PARAMETERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_LOOP_COUNT_NV")]
+    public const int GL_MAX_PROGRAM_LOOP_COUNT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_LOOP_DEPTH_NV")]
+    public const int GL_MAX_PROGRAM_LOOP_DEPTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_MATRICES_ARB")]
+    public const int GL_MAX_PROGRAM_MATRICES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_MATRIX_STACK_DEPTH_ARB")]
+    public const int GL_MAX_PROGRAM_MATRIX_STACK_DEPTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB")]
+    public const int GL_MAX_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB")]
+    public const int GL_MAX_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_ATTRIBS_ARB")]
+    public const int GL_MAX_PROGRAM_NATIVE_ATTRIBS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_INSTRUCTIONS_ARB")]
+    public const int GL_MAX_PROGRAM_NATIVE_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_PARAMETERS_ARB")]
+    public const int GL_MAX_PROGRAM_NATIVE_PARAMETERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_TEMPORARIES_ARB")]
+    public const int GL_MAX_PROGRAM_NATIVE_TEMPORARIES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB")]
+    public const int GL_MAX_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB")]
+    public const int GL_MAX_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_OUTPUT_VERTICES_NV")]
+    public const int GL_MAX_PROGRAM_OUTPUT_VERTICES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_PARAMETERS_ARB")]
+    public const int GL_MAX_PROGRAM_PARAMETERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_PARAMETER_BUFFER_BINDINGS_NV")]
+    public const int GL_MAX_PROGRAM_PARAMETER_BUFFER_BINDINGS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_PARAMETER_BUFFER_SIZE_NV")]
+    public const int GL_MAX_PROGRAM_PARAMETER_BUFFER_SIZE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_PATCH_ATTRIBS_NV")]
+    public const int GL_MAX_PROGRAM_PATCH_ATTRIBS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_RESULT_COMPONENTS_NV")]
+    public const int GL_MAX_PROGRAM_RESULT_COMPONENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_SUBROUTINE_NUM_NV")]
+    public const int GL_MAX_PROGRAM_SUBROUTINE_NUM_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_SUBROUTINE_PARAMETERS_NV")]
+    public const int GL_MAX_PROGRAM_SUBROUTINE_PARAMETERS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEMPORARIES_ARB")]
+    public const int GL_MAX_PROGRAM_TEMPORARIES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXEL_OFFSET")]
+    public const int GL_MAX_PROGRAM_TEXEL_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXEL_OFFSET_NV")]
+    public const int GL_MAX_PROGRAM_TEXEL_OFFSET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS")]
+    public const int GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS_ARB")]
+    public const int GL_MAX_PROGRAM_TEXTURE_GATHER_COMPONENTS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET")]
+    public const int GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET_NV")]
+    public const int GL_MAX_PROGRAM_TEXTURE_GATHER_OFFSET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEX_INDIRECTIONS_ARB")]
+    public const int GL_MAX_PROGRAM_TEX_INDIRECTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TEX_INSTRUCTIONS_ARB")]
+    public const int GL_MAX_PROGRAM_TEX_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROGRAM_TOTAL_OUTPUT_COMPONENTS_NV")]
+    public const int GL_MAX_PROGRAM_TOTAL_OUTPUT_COMPONENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_PROJECTION_STACK_DEPTH")]
+    public const int GL_MAX_PROJECTION_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RATIONAL_EVAL_ORDER_NV")]
+    public const int GL_MAX_RATIONAL_EVAL_ORDER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RECTANGLE_TEXTURE_SIZE")]
+    public const int GL_MAX_RECTANGLE_TEXTURE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RECTANGLE_TEXTURE_SIZE_ARB")]
+    public const int GL_MAX_RECTANGLE_TEXTURE_SIZE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RECTANGLE_TEXTURE_SIZE_NV")]
+    public const int GL_MAX_RECTANGLE_TEXTURE_SIZE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RENDERBUFFER_SIZE")]
+    public const int GL_MAX_RENDERBUFFER_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RENDERBUFFER_SIZE_EXT")]
+    public const int GL_MAX_RENDERBUFFER_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_RENDERBUFFER_SIZE_OES")]
+    public const int GL_MAX_RENDERBUFFER_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES")]
+    public const int GL_MAX_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES_ANGLE")]
+    public const int GL_MAX_SAMPLES_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES_EXT")]
+    public const int GL_MAX_SAMPLES_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES_IMG")]
+    public const int GL_MAX_SAMPLES_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLES_NV")]
+    public const int GL_MAX_SAMPLES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLE_MASK_WORDS")]
+    public const int GL_MAX_SAMPLE_MASK_WORDS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SAMPLE_MASK_WORDS_NV")]
+    public const int GL_MAX_SAMPLE_MASK_WORDS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SERVER_WAIT_TIMEOUT")]
+    public const int GL_MAX_SERVER_WAIT_TIMEOUT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SERVER_WAIT_TIMEOUT_APPLE")]
+    public const int GL_MAX_SERVER_WAIT_TIMEOUT_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SHADER_BUFFER_ADDRESS_NV")]
+    public const int GL_MAX_SHADER_BUFFER_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SHADER_STORAGE_BLOCK_SIZE")]
+    public const int GL_MAX_SHADER_STORAGE_BLOCK_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS")]
+    public const int GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SHININESS_NV")]
+    public const int GL_MAX_SHININESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SPARSE_3D_TEXTURE_SIZE_AMD")]
+    public const int GL_MAX_SPARSE_3D_TEXTURE_SIZE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SPARSE_ARRAY_TEXTURE_LAYERS")]
+    public const int GL_MAX_SPARSE_ARRAY_TEXTURE_LAYERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SPARSE_TEXTURE_SIZE_AMD")]
+    public const int GL_MAX_SPARSE_TEXTURE_SIZE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SPOT_EXPONENT_NV")]
+    public const int GL_MAX_SPOT_EXPONENT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SUBROUTINES")]
+    public const int GL_MAX_SUBROUTINES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_SUBROUTINE_UNIFORM_LOCATIONS")]
+    public const int GL_MAX_SUBROUTINE_UNIFORM_LOCATIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS")]
+    public const int GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS")]
+    public const int GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS")]
+    public const int GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_INPUT_COMPONENTS")]
+    public const int GL_MAX_TESS_CONTROL_INPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS")]
+    public const int GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS")]
+    public const int GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS")]
+    public const int GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS")]
+    public const int GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS")]
+    public const int GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS")]
+    public const int GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS")]
+    public const int GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS")]
+    public const int GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS")]
+    public const int GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS")]
+    public const int GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS")]
+    public const int GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS")]
+    public const int GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS")]
+    public const int GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_GEN_LEVEL")]
+    public const int GL_MAX_TESS_GEN_LEVEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TESS_PATCH_COMPONENTS")]
+    public const int GL_MAX_TESS_PATCH_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_BUFFER_SIZE")]
+    public const int GL_MAX_TEXTURE_BUFFER_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_BUFFER_SIZE_ARB")]
+    public const int GL_MAX_TEXTURE_BUFFER_SIZE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_BUFFER_SIZE_EXT")]
+    public const int GL_MAX_TEXTURE_BUFFER_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_COORDS")]
+    public const int GL_MAX_TEXTURE_COORDS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_COORDS_ARB")]
+    public const int GL_MAX_TEXTURE_COORDS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_COORDS_NV")]
+    public const int GL_MAX_TEXTURE_COORDS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_IMAGE_UNITS")]
+    public const int GL_MAX_TEXTURE_IMAGE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_IMAGE_UNITS_ARB")]
+    public const int GL_MAX_TEXTURE_IMAGE_UNITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_IMAGE_UNITS_NV")]
+    public const int GL_MAX_TEXTURE_IMAGE_UNITS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_LOD_BIAS")]
+    public const int GL_MAX_TEXTURE_LOD_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_LOD_BIAS_EXT")]
+    public const int GL_MAX_TEXTURE_LOD_BIAS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT")]
+    public const int GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_SIZE")]
+    public const int GL_MAX_TEXTURE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_STACK_DEPTH")]
+    public const int GL_MAX_TEXTURE_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_UNITS")]
+    public const int GL_MAX_TEXTURE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TEXTURE_UNITS_ARB")]
+    public const int GL_MAX_TEXTURE_UNITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRACK_MATRICES_NV")]
+    public const int GL_MAX_TRACK_MATRICES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRACK_MATRIX_STACK_DEPTH_NV")]
+    public const int GL_MAX_TRACK_MATRIX_STACK_DEPTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_BUFFERS")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_EXT")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_NV")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_EXT")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_NV")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_EXT")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_NV")]
+    public const int GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_UNIFORM_BLOCK_SIZE")]
+    public const int GL_MAX_UNIFORM_BLOCK_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_UNIFORM_BUFFER_BINDINGS")]
+    public const int GL_MAX_UNIFORM_BUFFER_BINDINGS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_UNIFORM_LOCATIONS")]
+    public const int GL_MAX_UNIFORM_LOCATIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_COMPONENTS")]
+    public const int GL_MAX_VARYING_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_COMPONENTS_EXT")]
+    public const int GL_MAX_VARYING_COMPONENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_FLOATS")]
+    public const int GL_MAX_VARYING_FLOATS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_FLOATS_ARB")]
+    public const int GL_MAX_VARYING_FLOATS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VARYING_VECTORS")]
+    public const int GL_MAX_VARYING_VECTORS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ARRAY_RANGE_ELEMENT_NV")]
+    public const int GL_MAX_VERTEX_ARRAY_RANGE_ELEMENT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATOMIC_COUNTERS")]
+    public const int GL_MAX_VERTEX_ATOMIC_COUNTERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS")]
+    public const int GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATTRIBS")]
+    public const int GL_MAX_VERTEX_ATTRIBS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATTRIBS_ARB")]
+    public const int GL_MAX_VERTEX_ATTRIBS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATTRIB_BINDINGS")]
+    public const int GL_MAX_VERTEX_ATTRIB_BINDINGS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_ATTRIB_RELATIVE_OFFSET")]
+    public const int GL_MAX_VERTEX_ATTRIB_RELATIVE_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_BINDABLE_UNIFORMS_EXT")]
+    public const int GL_MAX_VERTEX_BINDABLE_UNIFORMS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_IMAGE_UNIFORMS")]
+    public const int GL_MAX_VERTEX_IMAGE_UNIFORMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_OUTPUT_COMPONENTS")]
+    public const int GL_MAX_VERTEX_OUTPUT_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_INSTRUCTIONS_EXT")]
+    public const int GL_MAX_VERTEX_SHADER_INSTRUCTIONS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_INVARIANTS_EXT")]
+    public const int GL_MAX_VERTEX_SHADER_INVARIANTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_LOCALS_EXT")]
+    public const int GL_MAX_VERTEX_SHADER_LOCALS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_LOCAL_CONSTANTS_EXT")]
+    public const int GL_MAX_VERTEX_SHADER_LOCAL_CONSTANTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS")]
+    public const int GL_MAX_VERTEX_SHADER_STORAGE_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_SHADER_VARIANTS_EXT")]
+    public const int GL_MAX_VERTEX_SHADER_VARIANTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_STREAMS")]
+    public const int GL_MAX_VERTEX_STREAMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_STREAMS_ATI")]
+    public const int GL_MAX_VERTEX_STREAMS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS")]
+    public const int GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS_ARB")]
+    public const int GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNIFORM_BLOCKS")]
+    public const int GL_MAX_VERTEX_UNIFORM_BLOCKS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNIFORM_COMPONENTS")]
+    public const int GL_MAX_VERTEX_UNIFORM_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNIFORM_COMPONENTS_ARB")]
+    public const int GL_MAX_VERTEX_UNIFORM_COMPONENTS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNIFORM_VECTORS")]
+    public const int GL_MAX_VERTEX_UNIFORM_VECTORS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNITS_ARB")]
+    public const int GL_MAX_VERTEX_UNITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_UNITS_OES")]
+    public const int GL_MAX_VERTEX_UNITS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_VARYING_COMPONENTS_ARB")]
+    public const int GL_MAX_VERTEX_VARYING_COMPONENTS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VERTEX_VARYING_COMPONENTS_EXT")]
+    public const int GL_MAX_VERTEX_VARYING_COMPONENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VIEWPORTS")]
+    public const int GL_MAX_VIEWPORTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_VIEWPORT_DIMS")]
+    public const int GL_MAX_VIEWPORT_DIMS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MAX_WIDTH")]
+    public const int GL_MAX_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MEDIUM_FLOAT")]
+    public const int GL_MEDIUM_FLOAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MEDIUM_INT")]
+    public const int GL_MEDIUM_INT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN")]
+    public const int GL_MIN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX")]
+    public const int GL_MINMAX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_EXT")]
+    public const int GL_MINMAX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_FORMAT")]
+    public const int GL_MINMAX_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_FORMAT_EXT")]
+    public const int GL_MINMAX_FORMAT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_SINK")]
+    public const int GL_MINMAX_SINK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MINMAX_SINK_EXT")]
+    public const int GL_MINMAX_SINK_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MINOR_VERSION")]
+    public const int GL_MINOR_VERSION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_EXT")]
+    public const int GL_MIN_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_FRAGMENT_INTERPOLATION_OFFSET")]
+    public const int GL_MIN_FRAGMENT_INTERPOLATION_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_NV")]
+    public const int GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_LOD_WARNING_AMD")]
+    public const int GL_MIN_LOD_WARNING_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_MAP_BUFFER_ALIGNMENT")]
+    public const int GL_MIN_MAP_BUFFER_ALIGNMENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_PROGRAM_TEXEL_OFFSET")]
+    public const int GL_MIN_PROGRAM_TEXEL_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_PROGRAM_TEXEL_OFFSET_NV")]
+    public const int GL_MIN_PROGRAM_TEXEL_OFFSET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET")]
+    public const int GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET_NV")]
+    public const int GL_MIN_PROGRAM_TEXTURE_GATHER_OFFSET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_SAMPLE_SHADING_VALUE_ARB")]
+    public const int GL_MIN_SAMPLE_SHADING_VALUE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIN_SPARSE_LEVEL_AMD")]
+    public const int GL_MIN_SPARSE_LEVEL_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIPMAP")]
+    public const int GL_MIPMAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRRORED_REPEAT")]
+    public const int GL_MIRRORED_REPEAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRRORED_REPEAT_ARB")]
+    public const int GL_MIRRORED_REPEAT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRRORED_REPEAT_IBM")]
+    public const int GL_MIRRORED_REPEAT_IBM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRRORED_REPEAT_OES")]
+    public const int GL_MIRRORED_REPEAT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_ATI")]
+    public const int GL_MIRROR_CLAMP_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_EXT")]
+    public const int GL_MIRROR_CLAMP_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_TO_BORDER_EXT")]
+    public const int GL_MIRROR_CLAMP_TO_BORDER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_TO_EDGE_ATI")]
+    public const int GL_MIRROR_CLAMP_TO_EDGE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MIRROR_CLAMP_TO_EDGE_EXT")]
+    public const int GL_MIRROR_CLAMP_TO_EDGE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MITER_REVERT_NV")]
+    public const int GL_MITER_REVERT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MITER_TRUNCATE_NV")]
+    public const int GL_MITER_TRUNCATE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW")]
+    public const int GL_MODELVIEW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW0_ARB")]
+    public const int GL_MODELVIEW0_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW10_ARB")]
+    public const int GL_MODELVIEW10_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW11_ARB")]
+    public const int GL_MODELVIEW11_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW12_ARB")]
+    public const int GL_MODELVIEW12_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW13_ARB")]
+    public const int GL_MODELVIEW13_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW14_ARB")]
+    public const int GL_MODELVIEW14_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW15_ARB")]
+    public const int GL_MODELVIEW15_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW16_ARB")]
+    public const int GL_MODELVIEW16_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW17_ARB")]
+    public const int GL_MODELVIEW17_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW18_ARB")]
+    public const int GL_MODELVIEW18_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW19_ARB")]
+    public const int GL_MODELVIEW19_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW1_ARB")]
+    public const int GL_MODELVIEW1_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW1_EXT")]
+    public const int GL_MODELVIEW1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW1_STACK_DEPTH_EXT")]
+    public const int GL_MODELVIEW1_STACK_DEPTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW20_ARB")]
+    public const int GL_MODELVIEW20_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW21_ARB")]
+    public const int GL_MODELVIEW21_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW22_ARB")]
+    public const int GL_MODELVIEW22_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW23_ARB")]
+    public const int GL_MODELVIEW23_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW24_ARB")]
+    public const int GL_MODELVIEW24_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW25_ARB")]
+    public const int GL_MODELVIEW25_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW26_ARB")]
+    public const int GL_MODELVIEW26_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW27_ARB")]
+    public const int GL_MODELVIEW27_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW28_ARB")]
+    public const int GL_MODELVIEW28_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW29_ARB")]
+    public const int GL_MODELVIEW29_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW2_ARB")]
+    public const int GL_MODELVIEW2_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW30_ARB")]
+    public const int GL_MODELVIEW30_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW31_ARB")]
+    public const int GL_MODELVIEW31_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW3_ARB")]
+    public const int GL_MODELVIEW3_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW4_ARB")]
+    public const int GL_MODELVIEW4_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW5_ARB")]
+    public const int GL_MODELVIEW5_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW6_ARB")]
+    public const int GL_MODELVIEW6_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW7_ARB")]
+    public const int GL_MODELVIEW7_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW8_ARB")]
+    public const int GL_MODELVIEW8_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW9_ARB")]
+    public const int GL_MODELVIEW9_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_MATRIX")]
+    public const int GL_MODELVIEW_MATRIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_MATRIX1_EXT")]
+    public const int GL_MODELVIEW_MATRIX1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_MATRIX_FLOAT_AS_INT_BITS_OES")]
+    public const int GL_MODELVIEW_MATRIX_FLOAT_AS_INT_BITS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_PROJECTION_NV")]
+    public const int GL_MODELVIEW_PROJECTION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODELVIEW_STACK_DEPTH")]
+    public const int GL_MODELVIEW_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE")]
+    public const int GL_MODULATE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE_ADD_ATI")]
+    public const int GL_MODULATE_ADD_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE_COLOR_IMG")]
+    public const int GL_MODULATE_COLOR_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE_SIGNED_ADD_ATI")]
+    public const int GL_MODULATE_SIGNED_ADD_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MODULATE_SUBTRACT_ATI")]
+    public const int GL_MODULATE_SUBTRACT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MOVE_TO_CONTINUES_NV")]
+    public const int GL_MOVE_TO_CONTINUES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MOVE_TO_NV")]
+    public const int GL_MOVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MOVE_TO_RESETS_NV")]
+    public const int GL_MOVE_TO_RESETS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MOV_ATI")]
+    public const int GL_MOV_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULT")]
+    public const int GL_MULT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE")]
+    public const int GL_MULTISAMPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_3DFX")]
+    public const int GL_MULTISAMPLE_3DFX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_ARB")]
+    public const int GL_MULTISAMPLE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_BIT")]
+    public const int GL_MULTISAMPLE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_BIT_3DFX")]
+    public const int GL_MULTISAMPLE_BIT_3DFX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_BIT_ARB")]
+    public const int GL_MULTISAMPLE_BIT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_BIT_EXT")]
+    public const int GL_MULTISAMPLE_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_COVERAGE_MODES_NV")]
+    public const int GL_MULTISAMPLE_COVERAGE_MODES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_EXT")]
+    public const int GL_MULTISAMPLE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_FILTER_HINT_NV")]
+    public const int GL_MULTISAMPLE_FILTER_HINT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTISAMPLE_SGIS")]
+    public const int GL_MULTISAMPLE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MULTIVIEW_EXT")]
+    public const int GL_MULTIVIEW_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MUL_ATI")]
+    public const int GL_MUL_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_MVP_MATRIX_EXT")]
+    public const int GL_MVP_MATRIX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_N3F_V3F")]
+    public const int GL_N3F_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NAMED_STRING_LENGTH_ARB")]
+    public const int GL_NAMED_STRING_LENGTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NAMED_STRING_TYPE_ARB")]
+    public const int GL_NAMED_STRING_TYPE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NAME_LENGTH")]
+    public const int GL_NAME_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NAME_STACK_DEPTH")]
+    public const int GL_NAME_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NAND")]
+    public const int GL_NAND;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST")]
+    public const int GL_NEAREST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST_CLIPMAP_LINEAR_SGIX")]
+    public const int GL_NEAREST_CLIPMAP_LINEAR_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST_CLIPMAP_NEAREST_SGIX")]
+    public const int GL_NEAREST_CLIPMAP_NEAREST_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST_MIPMAP_LINEAR")]
+    public const int GL_NEAREST_MIPMAP_LINEAR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEAREST_MIPMAP_NEAREST")]
+    public const int GL_NEAREST_MIPMAP_NEAREST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATE_BIT_ATI")]
+    public const int GL_NEGATE_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_ONE_EXT")]
+    public const int GL_NEGATIVE_ONE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_W_EXT")]
+    public const int GL_NEGATIVE_W_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_X_EXT")]
+    public const int GL_NEGATIVE_X_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_Y_EXT")]
+    public const int GL_NEGATIVE_Y_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEGATIVE_Z_EXT")]
+    public const int GL_NEGATIVE_Z_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEVER")]
+    public const int GL_NEVER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEXT_BUFFER_NV")]
+    public const int GL_NEXT_BUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NEXT_VIDEO_CAPTURE_BUFFER_STATUS_NV")]
+    public const int GL_NEXT_VIDEO_CAPTURE_BUFFER_STATUS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NICEST")]
+    public const int GL_NICEST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NONE")]
+    public const int GL_NONE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NOOP")]
+    public const int GL_NOOP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NOR")]
+    public const int GL_NOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMALIZE")]
+    public const int GL_NORMALIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMALIZED_RANGE_EXT")]
+    public const int GL_NORMALIZED_RANGE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY")]
+    public const int GL_NORMAL_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_ADDRESS_NV")]
+    public const int GL_NORMAL_ARRAY_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_BUFFER_BINDING")]
+    public const int GL_NORMAL_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_BUFFER_BINDING_ARB")]
+    public const int GL_NORMAL_ARRAY_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_COUNT_EXT")]
+    public const int GL_NORMAL_ARRAY_COUNT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_EXT")]
+    public const int GL_NORMAL_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_LENGTH_NV")]
+    public const int GL_NORMAL_ARRAY_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_PARALLEL_POINTERS_INTEL")]
+    public const int GL_NORMAL_ARRAY_PARALLEL_POINTERS_INTEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_POINTER")]
+    public const int GL_NORMAL_ARRAY_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_POINTER_EXT")]
+    public const int GL_NORMAL_ARRAY_POINTER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_STRIDE")]
+    public const int GL_NORMAL_ARRAY_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_STRIDE_EXT")]
+    public const int GL_NORMAL_ARRAY_STRIDE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_TYPE")]
+    public const int GL_NORMAL_ARRAY_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_ARRAY_TYPE_EXT")]
+    public const int GL_NORMAL_ARRAY_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_MAP")]
+    public const int GL_NORMAL_MAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_MAP_ARB")]
+    public const int GL_NORMAL_MAP_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_MAP_EXT")]
+    public const int GL_NORMAL_MAP_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NORMAL_MAP_OES")]
+    public const int GL_NORMAL_MAP_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NOTEQUAL")]
+    public const int GL_NOTEQUAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NO_ERROR")]
+    public const int GL_NO_ERROR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NO_RESET_NOTIFICATION_ARB")]
+    public const int GL_NO_RESET_NOTIFICATION_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_ACTIVE_VARIABLES")]
+    public const int GL_NUM_ACTIVE_VARIABLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_COMPATIBLE_SUBROUTINES")]
+    public const int GL_NUM_COMPATIBLE_SUBROUTINES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_COMPRESSED_TEXTURE_FORMATS")]
+    public const int GL_NUM_COMPRESSED_TEXTURE_FORMATS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB")]
+    public const int GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_EXTENSIONS")]
+    public const int GL_NUM_EXTENSIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_FILL_STREAMS_NV")]
+    public const int GL_NUM_FILL_STREAMS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_FRAGMENT_CONSTANTS_ATI")]
+    public const int GL_NUM_FRAGMENT_CONSTANTS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_FRAGMENT_REGISTERS_ATI")]
+    public const int GL_NUM_FRAGMENT_REGISTERS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_GENERAL_COMBINERS_NV")]
+    public const int GL_NUM_GENERAL_COMBINERS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_INPUT_INTERPOLATOR_COMPONENTS_ATI")]
+    public const int GL_NUM_INPUT_INTERPOLATOR_COMPONENTS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_INSTRUCTIONS_PER_PASS_ATI")]
+    public const int GL_NUM_INSTRUCTIONS_PER_PASS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_INSTRUCTIONS_TOTAL_ATI")]
+    public const int GL_NUM_INSTRUCTIONS_TOTAL_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_LOOPBACK_COMPONENTS_ATI")]
+    public const int GL_NUM_LOOPBACK_COMPONENTS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_PASSES_ATI")]
+    public const int GL_NUM_PASSES_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_PROGRAM_BINARY_FORMATS")]
+    public const int GL_NUM_PROGRAM_BINARY_FORMATS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_PROGRAM_BINARY_FORMATS_OES")]
+    public const int GL_NUM_PROGRAM_BINARY_FORMATS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_SAMPLE_COUNTS")]
+    public const int GL_NUM_SAMPLE_COUNTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_SHADER_BINARY_FORMATS")]
+    public const int GL_NUM_SHADER_BINARY_FORMATS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_SHADING_LANGUAGE_VERSIONS")]
+    public const int GL_NUM_SHADING_LANGUAGE_VERSIONS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_NUM_VIDEO_CAPTURE_STREAMS_NV")]
+    public const int GL_NUM_VIDEO_CAPTURE_STREAMS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ACTIVE_ATTRIBUTES_ARB")]
+    public const int GL_OBJECT_ACTIVE_ATTRIBUTES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ACTIVE_ATTRIBUTE_MAX_LENGTH_ARB")]
+    public const int GL_OBJECT_ACTIVE_ATTRIBUTE_MAX_LENGTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ACTIVE_UNIFORMS_ARB")]
+    public const int GL_OBJECT_ACTIVE_UNIFORMS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ACTIVE_UNIFORM_MAX_LENGTH_ARB")]
+    public const int GL_OBJECT_ACTIVE_UNIFORM_MAX_LENGTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_ATTACHED_OBJECTS_ARB")]
+    public const int GL_OBJECT_ATTACHED_OBJECTS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_BUFFER_SIZE_ATI")]
+    public const int GL_OBJECT_BUFFER_SIZE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_BUFFER_USAGE_ATI")]
+    public const int GL_OBJECT_BUFFER_USAGE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_COMPILE_STATUS_ARB")]
+    public const int GL_OBJECT_COMPILE_STATUS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_DELETE_STATUS_ARB")]
+    public const int GL_OBJECT_DELETE_STATUS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_DISTANCE_TO_LINE_SGIS")]
+    public const int GL_OBJECT_DISTANCE_TO_LINE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_DISTANCE_TO_POINT_SGIS")]
+    public const int GL_OBJECT_DISTANCE_TO_POINT_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_INFO_LOG_LENGTH_ARB")]
+    public const int GL_OBJECT_INFO_LOG_LENGTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_LINEAR")]
+    public const int GL_OBJECT_LINEAR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_LINE_SGIS")]
+    public const int GL_OBJECT_LINE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_LINK_STATUS_ARB")]
+    public const int GL_OBJECT_LINK_STATUS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_PLANE")]
+    public const int GL_OBJECT_PLANE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_POINT_SGIS")]
+    public const int GL_OBJECT_POINT_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_SHADER_SOURCE_LENGTH_ARB")]
+    public const int GL_OBJECT_SHADER_SOURCE_LENGTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_SUBTYPE_ARB")]
+    public const int GL_OBJECT_SUBTYPE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_TYPE")]
+    public const int GL_OBJECT_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_TYPE_APPLE")]
+    public const int GL_OBJECT_TYPE_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_TYPE_ARB")]
+    public const int GL_OBJECT_TYPE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OBJECT_VALIDATE_STATUS_ARB")]
+    public const int GL_OBJECT_VALIDATE_STATUS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET")]
+    public const int GL_OFFSET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_HILO_PROJECTIVE_TEXTURE_2D_NV")]
+    public const int GL_OFFSET_HILO_PROJECTIVE_TEXTURE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_HILO_PROJECTIVE_TEXTURE_RECTANGLE_NV")]
+    public const int GL_OFFSET_HILO_PROJECTIVE_TEXTURE_RECTANGLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_HILO_TEXTURE_2D_NV")]
+    public const int GL_OFFSET_HILO_TEXTURE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_HILO_TEXTURE_RECTANGLE_NV")]
+    public const int GL_OFFSET_HILO_TEXTURE_RECTANGLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_PROJECTIVE_TEXTURE_2D_NV")]
+    public const int GL_OFFSET_PROJECTIVE_TEXTURE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_PROJECTIVE_TEXTURE_2D_SCALE_NV")]
+    public const int GL_OFFSET_PROJECTIVE_TEXTURE_2D_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_PROJECTIVE_TEXTURE_RECTANGLE_NV")]
+    public const int GL_OFFSET_PROJECTIVE_TEXTURE_RECTANGLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_PROJECTIVE_TEXTURE_RECTANGLE_SCALE_NV")]
+    public const int GL_OFFSET_PROJECTIVE_TEXTURE_RECTANGLE_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_2D_NV")]
+    public const int GL_OFFSET_TEXTURE_2D_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_BIAS_NV")]
+    public const int GL_OFFSET_TEXTURE_BIAS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_MATRIX_NV")]
+    public const int GL_OFFSET_TEXTURE_MATRIX_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_RECTANGLE_NV")]
+    public const int GL_OFFSET_TEXTURE_RECTANGLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_RECTANGLE_SCALE_NV")]
+    public const int GL_OFFSET_TEXTURE_RECTANGLE_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OFFSET_TEXTURE_SCALE_NV")]
+    public const int GL_OFFSET_TEXTURE_SCALE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE")]
+    public const int GL_ONE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_EXT")]
+    public const int GL_ONE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_CONSTANT_ALPHA")]
+    public const int GL_ONE_MINUS_CONSTANT_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_CONSTANT_ALPHA_EXT")]
+    public const int GL_ONE_MINUS_CONSTANT_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_CONSTANT_COLOR")]
+    public const int GL_ONE_MINUS_CONSTANT_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_CONSTANT_COLOR_EXT")]
+    public const int GL_ONE_MINUS_CONSTANT_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_DST_ALPHA")]
+    public const int GL_ONE_MINUS_DST_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_DST_COLOR")]
+    public const int GL_ONE_MINUS_DST_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_SRC1_ALPHA")]
+    public const int GL_ONE_MINUS_SRC1_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_SRC1_COLOR")]
+    public const int GL_ONE_MINUS_SRC1_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_SRC_ALPHA")]
+    public const int GL_ONE_MINUS_SRC_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ONE_MINUS_SRC_COLOR")]
+    public const int GL_ONE_MINUS_SRC_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND0_ALPHA")]
+    public const int GL_OPERAND0_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND0_ALPHA_EXT")]
+    public const int GL_OPERAND0_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND0_RGB")]
+    public const int GL_OPERAND0_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND0_RGB_EXT")]
+    public const int GL_OPERAND0_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND1_ALPHA")]
+    public const int GL_OPERAND1_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND1_ALPHA_EXT")]
+    public const int GL_OPERAND1_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND1_RGB")]
+    public const int GL_OPERAND1_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND1_RGB_EXT")]
+    public const int GL_OPERAND1_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND2_ALPHA")]
+    public const int GL_OPERAND2_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND2_ALPHA_EXT")]
+    public const int GL_OPERAND2_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND2_RGB")]
+    public const int GL_OPERAND2_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND2_RGB_EXT")]
+    public const int GL_OPERAND2_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND3_ALPHA_NV")]
+    public const int GL_OPERAND3_ALPHA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OPERAND3_RGB_NV")]
+    public const int GL_OPERAND3_RGB_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_ADD_EXT")]
+    public const int GL_OP_ADD_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_CLAMP_EXT")]
+    public const int GL_OP_CLAMP_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_CROSS_PRODUCT_EXT")]
+    public const int GL_OP_CROSS_PRODUCT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_DOT3_EXT")]
+    public const int GL_OP_DOT3_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_DOT4_EXT")]
+    public const int GL_OP_DOT4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_EXP_BASE_2_EXT")]
+    public const int GL_OP_EXP_BASE_2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_FLOOR_EXT")]
+    public const int GL_OP_FLOOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_FRAC_EXT")]
+    public const int GL_OP_FRAC_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_INDEX_EXT")]
+    public const int GL_OP_INDEX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_LOG_BASE_2_EXT")]
+    public const int GL_OP_LOG_BASE_2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MADD_EXT")]
+    public const int GL_OP_MADD_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MAX_EXT")]
+    public const int GL_OP_MAX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MIN_EXT")]
+    public const int GL_OP_MIN_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MOV_EXT")]
+    public const int GL_OP_MOV_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MULTIPLY_MATRIX_EXT")]
+    public const int GL_OP_MULTIPLY_MATRIX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_MUL_EXT")]
+    public const int GL_OP_MUL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_NEGATE_EXT")]
+    public const int GL_OP_NEGATE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_POWER_EXT")]
+    public const int GL_OP_POWER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_RECIP_EXT")]
+    public const int GL_OP_RECIP_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_RECIP_SQRT_EXT")]
+    public const int GL_OP_RECIP_SQRT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_ROUND_EXT")]
+    public const int GL_OP_ROUND_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_SET_GE_EXT")]
+    public const int GL_OP_SET_GE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_SET_LT_EXT")]
+    public const int GL_OP_SET_LT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OP_SUB_EXT")]
+    public const int GL_OP_SUB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OR")]
+    public const int GL_OR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ORDER")]
+    public const int GL_ORDER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OR_INVERTED")]
+    public const int GL_OR_INVERTED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OR_REVERSE")]
+    public const int GL_OR_REVERSE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_COLOR0_EXT")]
+    public const int GL_OUTPUT_COLOR0_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_COLOR1_EXT")]
+    public const int GL_OUTPUT_COLOR1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_FOG_EXT")]
+    public const int GL_OUTPUT_FOG_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD0_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD0_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD10_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD10_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD11_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD11_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD12_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD12_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD13_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD13_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD14_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD14_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD15_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD15_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD16_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD16_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD17_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD17_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD18_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD18_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD19_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD19_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD1_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD20_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD20_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD21_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD21_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD22_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD22_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD23_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD23_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD24_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD24_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD25_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD25_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD26_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD26_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD27_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD27_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD28_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD28_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD29_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD29_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD2_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD30_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD30_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD31_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD31_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD3_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD3_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD4_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD5_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD5_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD6_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD6_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD7_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD7_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD8_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_TEXTURE_COORD9_EXT")]
+    public const int GL_OUTPUT_TEXTURE_COORD9_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUTPUT_VERTEX_EXT")]
+    public const int GL_OUTPUT_VERTEX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_OUT_OF_MEMORY")]
+    public const int GL_OUT_OF_MEMORY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_ALIGNMENT")]
+    public const int GL_PACK_ALIGNMENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_CMYK_HINT_EXT")]
+    public const int GL_PACK_CMYK_HINT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_BLOCK_DEPTH")]
+    public const int GL_PACK_COMPRESSED_BLOCK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_BLOCK_HEIGHT")]
+    public const int GL_PACK_COMPRESSED_BLOCK_HEIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_BLOCK_SIZE")]
+    public const int GL_PACK_COMPRESSED_BLOCK_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_BLOCK_WIDTH")]
+    public const int GL_PACK_COMPRESSED_BLOCK_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_COMPRESSED_SIZE_SGIX")]
+    public const int GL_PACK_COMPRESSED_SIZE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_IMAGE_DEPTH_SGIS")]
+    public const int GL_PACK_IMAGE_DEPTH_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_IMAGE_HEIGHT")]
+    public const int GL_PACK_IMAGE_HEIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_IMAGE_HEIGHT_EXT")]
+    public const int GL_PACK_IMAGE_HEIGHT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_INVERT_MESA")]
+    public const int GL_PACK_INVERT_MESA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_LSB_FIRST")]
+    public const int GL_PACK_LSB_FIRST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_MAX_COMPRESSED_SIZE_SGIX")]
+    public const int GL_PACK_MAX_COMPRESSED_SIZE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_RESAMPLE_OML")]
+    public const int GL_PACK_RESAMPLE_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_RESAMPLE_SGIX")]
+    public const int GL_PACK_RESAMPLE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_REVERSE_ROW_ORDER_ANGLE")]
+    public const int GL_PACK_REVERSE_ROW_ORDER_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_ROW_BYTES_APPLE")]
+    public const int GL_PACK_ROW_BYTES_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_ROW_LENGTH")]
+    public const int GL_PACK_ROW_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_IMAGES")]
+    public const int GL_PACK_SKIP_IMAGES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_IMAGES_EXT")]
+    public const int GL_PACK_SKIP_IMAGES_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_PIXELS")]
+    public const int GL_PACK_SKIP_PIXELS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_ROWS")]
+    public const int GL_PACK_SKIP_ROWS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SKIP_VOLUMES_SGIS")]
+    public const int GL_PACK_SKIP_VOLUMES_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SUBSAMPLE_RATE_SGIX")]
+    public const int GL_PACK_SUBSAMPLE_RATE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PACK_SWAP_BYTES")]
+    public const int GL_PACK_SWAP_BYTES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_R5_G6_B5_OES")]
+    public const int GL_PALETTE4_R5_G6_B5_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_RGB5_A1_OES")]
+    public const int GL_PALETTE4_RGB5_A1_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_RGB8_OES")]
+    public const int GL_PALETTE4_RGB8_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_RGBA4_OES")]
+    public const int GL_PALETTE4_RGBA4_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE4_RGBA8_OES")]
+    public const int GL_PALETTE4_RGBA8_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_R5_G6_B5_OES")]
+    public const int GL_PALETTE8_R5_G6_B5_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_RGB5_A1_OES")]
+    public const int GL_PALETTE8_RGB5_A1_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_RGB8_OES")]
+    public const int GL_PALETTE8_RGB8_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_RGBA4_OES")]
+    public const int GL_PALETTE8_RGBA4_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PALETTE8_RGBA8_OES")]
+    public const int GL_PALETTE8_RGBA8_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PARALLEL_ARRAYS_INTEL")]
+    public const int GL_PARALLEL_ARRAYS_INTEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PARTIAL_SUCCESS_NV")]
+    public const int GL_PARTIAL_SUCCESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PASS_THROUGH_NV")]
+    public const int GL_PASS_THROUGH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PASS_THROUGH_TOKEN")]
+    public const int GL_PASS_THROUGH_TOKEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATCHES")]
+    public const int GL_PATCHES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATCH_DEFAULT_INNER_LEVEL")]
+    public const int GL_PATCH_DEFAULT_INNER_LEVEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATCH_DEFAULT_OUTER_LEVEL")]
+    public const int GL_PATCH_DEFAULT_OUTER_LEVEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATCH_VERTICES")]
+    public const int GL_PATCH_VERTICES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_CLIENT_LENGTH_NV")]
+    public const int GL_PATH_CLIENT_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_COMMAND_COUNT_NV")]
+    public const int GL_PATH_COMMAND_COUNT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_COMPUTED_LENGTH_NV")]
+    public const int GL_PATH_COMPUTED_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_COORD_COUNT_NV")]
+    public const int GL_PATH_COORD_COUNT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_COVER_DEPTH_FUNC_NV")]
+    public const int GL_PATH_COVER_DEPTH_FUNC_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_DASH_ARRAY_COUNT_NV")]
+    public const int GL_PATH_DASH_ARRAY_COUNT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_DASH_CAPS_NV")]
+    public const int GL_PATH_DASH_CAPS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_DASH_OFFSET_NV")]
+    public const int GL_PATH_DASH_OFFSET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_DASH_OFFSET_RESET_NV")]
+    public const int GL_PATH_DASH_OFFSET_RESET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_END_CAPS_NV")]
+    public const int GL_PATH_END_CAPS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_ERROR_POSITION_NV")]
+    public const int GL_PATH_ERROR_POSITION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FILL_BOUNDING_BOX_NV")]
+    public const int GL_PATH_FILL_BOUNDING_BOX_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FILL_COVER_MODE_NV")]
+    public const int GL_PATH_FILL_COVER_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FILL_MASK_NV")]
+    public const int GL_PATH_FILL_MASK_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FILL_MODE_NV")]
+    public const int GL_PATH_FILL_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FOG_GEN_MODE_NV")]
+    public const int GL_PATH_FOG_GEN_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FORMAT_PS_NV")]
+    public const int GL_PATH_FORMAT_PS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_FORMAT_SVG_NV")]
+    public const int GL_PATH_FORMAT_SVG_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_GEN_COEFF_NV")]
+    public const int GL_PATH_GEN_COEFF_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_GEN_COLOR_FORMAT_NV")]
+    public const int GL_PATH_GEN_COLOR_FORMAT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_GEN_COMPONENTS_NV")]
+    public const int GL_PATH_GEN_COMPONENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_GEN_MODE_NV")]
+    public const int GL_PATH_GEN_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_INITIAL_DASH_CAP_NV")]
+    public const int GL_PATH_INITIAL_DASH_CAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_INITIAL_END_CAP_NV")]
+    public const int GL_PATH_INITIAL_END_CAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_JOIN_STYLE_NV")]
+    public const int GL_PATH_JOIN_STYLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_MITER_LIMIT_NV")]
+    public const int GL_PATH_MITER_LIMIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_OBJECT_BOUNDING_BOX_NV")]
+    public const int GL_PATH_OBJECT_BOUNDING_BOX_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_DEPTH_OFFSET_FACTOR_NV")]
+    public const int GL_PATH_STENCIL_DEPTH_OFFSET_FACTOR_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_DEPTH_OFFSET_UNITS_NV")]
+    public const int GL_PATH_STENCIL_DEPTH_OFFSET_UNITS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_FUNC_NV")]
+    public const int GL_PATH_STENCIL_FUNC_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_REF_NV")]
+    public const int GL_PATH_STENCIL_REF_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STENCIL_VALUE_MASK_NV")]
+    public const int GL_PATH_STENCIL_VALUE_MASK_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STROKE_BOUNDING_BOX_NV")]
+    public const int GL_PATH_STROKE_BOUNDING_BOX_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STROKE_COVER_MODE_NV")]
+    public const int GL_PATH_STROKE_COVER_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STROKE_MASK_NV")]
+    public const int GL_PATH_STROKE_MASK_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_STROKE_WIDTH_NV")]
+    public const int GL_PATH_STROKE_WIDTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_TERMINAL_DASH_CAP_NV")]
+    public const int GL_PATH_TERMINAL_DASH_CAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PATH_TERMINAL_END_CAP_NV")]
+    public const int GL_PATH_TERMINAL_END_CAP_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PERCENTAGE_AMD")]
+    public const int GL_PERCENTAGE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFMON_GLOBAL_MODE_QCOM")]
+    public const int GL_PERFMON_GLOBAL_MODE_QCOM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFMON_RESULT_AMD")]
+    public const int GL_PERFMON_RESULT_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFMON_RESULT_AVAILABLE_AMD")]
+    public const int GL_PERFMON_RESULT_AVAILABLE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFMON_RESULT_SIZE_AMD")]
+    public const int GL_PERFMON_RESULT_SIZE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PERFORMANCE_MONITOR_AMD")]
+    public const int GL_PERFORMANCE_MONITOR_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PERSPECTIVE_CORRECTION_HINT")]
+    public const int GL_PERSPECTIVE_CORRECTION_HINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PERTURB_EXT")]
+    public const int GL_PERTURB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PER_STAGE_CONSTANTS_NV")]
+    public const int GL_PER_STAGE_CONSTANTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_BUFFER_BARRIER_BIT")]
+    public const int GL_PIXEL_BUFFER_BARRIER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_BUFFER_BARRIER_BIT_EXT")]
+    public const int GL_PIXEL_BUFFER_BARRIER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_COUNTER_BITS_NV")]
+    public const int GL_PIXEL_COUNTER_BITS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_COUNT_AVAILABLE_NV")]
+    public const int GL_PIXEL_COUNT_AVAILABLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_COUNT_NV")]
+    public const int GL_PIXEL_COUNT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_CUBIC_WEIGHT_EXT")]
+    public const int GL_PIXEL_CUBIC_WEIGHT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_FRAGMENT_ALPHA_SOURCE_SGIS")]
+    public const int GL_PIXEL_FRAGMENT_ALPHA_SOURCE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_FRAGMENT_RGB_SOURCE_SGIS")]
+    public const int GL_PIXEL_FRAGMENT_RGB_SOURCE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_GROUP_COLOR_SGIS")]
+    public const int GL_PIXEL_GROUP_COLOR_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAG_FILTER_EXT")]
+    public const int GL_PIXEL_MAG_FILTER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_A_TO_A")]
+    public const int GL_PIXEL_MAP_A_TO_A;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_A_TO_A_SIZE")]
+    public const int GL_PIXEL_MAP_A_TO_A_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_B_TO_B")]
+    public const int GL_PIXEL_MAP_B_TO_B;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_B_TO_B_SIZE")]
+    public const int GL_PIXEL_MAP_B_TO_B_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_G_TO_G")]
+    public const int GL_PIXEL_MAP_G_TO_G;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_G_TO_G_SIZE")]
+    public const int GL_PIXEL_MAP_G_TO_G_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_A")]
+    public const int GL_PIXEL_MAP_I_TO_A;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_A_SIZE")]
+    public const int GL_PIXEL_MAP_I_TO_A_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_B")]
+    public const int GL_PIXEL_MAP_I_TO_B;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_B_SIZE")]
+    public const int GL_PIXEL_MAP_I_TO_B_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_G")]
+    public const int GL_PIXEL_MAP_I_TO_G;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_G_SIZE")]
+    public const int GL_PIXEL_MAP_I_TO_G_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_I")]
+    public const int GL_PIXEL_MAP_I_TO_I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_I_SIZE")]
+    public const int GL_PIXEL_MAP_I_TO_I_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_R")]
+    public const int GL_PIXEL_MAP_I_TO_R;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_I_TO_R_SIZE")]
+    public const int GL_PIXEL_MAP_I_TO_R_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_R_TO_R")]
+    public const int GL_PIXEL_MAP_R_TO_R;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_R_TO_R_SIZE")]
+    public const int GL_PIXEL_MAP_R_TO_R_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_S_TO_S")]
+    public const int GL_PIXEL_MAP_S_TO_S;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MAP_S_TO_S_SIZE")]
+    public const int GL_PIXEL_MAP_S_TO_S_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MIN_FILTER_EXT")]
+    public const int GL_PIXEL_MIN_FILTER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_MODE_BIT")]
+    public const int GL_PIXEL_MODE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER")]
+    public const int GL_PIXEL_PACK_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_ARB")]
+    public const int GL_PIXEL_PACK_BUFFER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_BINDING")]
+    public const int GL_PIXEL_PACK_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_BINDING_ARB")]
+    public const int GL_PIXEL_PACK_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_BINDING_EXT")]
+    public const int GL_PIXEL_PACK_BUFFER_BINDING_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_PACK_BUFFER_EXT")]
+    public const int GL_PIXEL_PACK_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_SUBSAMPLE_2424_SGIX")]
+    public const int GL_PIXEL_SUBSAMPLE_2424_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_SUBSAMPLE_4242_SGIX")]
+    public const int GL_PIXEL_SUBSAMPLE_4242_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_SUBSAMPLE_4444_SGIX")]
+    public const int GL_PIXEL_SUBSAMPLE_4444_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEXTURE_SGIS")]
+    public const int GL_PIXEL_TEXTURE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_ALPHA_LS_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_ALPHA_LS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_ALPHA_MS_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_ALPHA_MS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_ALPHA_NO_REPLACE_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_ALPHA_NO_REPLACE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_ALPHA_REPLACE_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_ALPHA_REPLACE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_MODE_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_MODE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_Q_CEILING_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_Q_CEILING_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_Q_FLOOR_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_Q_FLOOR_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_Q_ROUND_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_Q_ROUND_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TEX_GEN_SGIX")]
+    public const int GL_PIXEL_TEX_GEN_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_BEST_ALIGNMENT_SGIX")]
+    public const int GL_PIXEL_TILE_BEST_ALIGNMENT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_CACHE_INCREMENT_SGIX")]
+    public const int GL_PIXEL_TILE_CACHE_INCREMENT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_CACHE_SIZE_SGIX")]
+    public const int GL_PIXEL_TILE_CACHE_SIZE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_GRID_DEPTH_SGIX")]
+    public const int GL_PIXEL_TILE_GRID_DEPTH_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_GRID_HEIGHT_SGIX")]
+    public const int GL_PIXEL_TILE_GRID_HEIGHT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_GRID_WIDTH_SGIX")]
+    public const int GL_PIXEL_TILE_GRID_WIDTH_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_HEIGHT_SGIX")]
+    public const int GL_PIXEL_TILE_HEIGHT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TILE_WIDTH_SGIX")]
+    public const int GL_PIXEL_TILE_WIDTH_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TRANSFORM_2D_EXT")]
+    public const int GL_PIXEL_TRANSFORM_2D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TRANSFORM_2D_MATRIX_EXT")]
+    public const int GL_PIXEL_TRANSFORM_2D_MATRIX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT")]
+    public const int GL_PIXEL_TRANSFORM_2D_STACK_DEPTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER")]
+    public const int GL_PIXEL_UNPACK_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_ARB")]
+    public const int GL_PIXEL_UNPACK_BUFFER_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_BINDING")]
+    public const int GL_PIXEL_UNPACK_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_BINDING_ARB")]
+    public const int GL_PIXEL_UNPACK_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_BINDING_EXT")]
+    public const int GL_PIXEL_UNPACK_BUFFER_BINDING_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PIXEL_UNPACK_BUFFER_EXT")]
+    public const int GL_PIXEL_UNPACK_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_ATI")]
+    public const int GL_PN_TRIANGLES_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_NORMAL_MODE_ATI")]
+    public const int GL_PN_TRIANGLES_NORMAL_MODE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_NORMAL_MODE_LINEAR_ATI")]
+    public const int GL_PN_TRIANGLES_NORMAL_MODE_LINEAR_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATI")]
+    public const int GL_PN_TRIANGLES_NORMAL_MODE_QUADRATIC_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_POINT_MODE_ATI")]
+    public const int GL_PN_TRIANGLES_POINT_MODE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATI")]
+    public const int GL_PN_TRIANGLES_POINT_MODE_CUBIC_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_POINT_MODE_LINEAR_ATI")]
+    public const int GL_PN_TRIANGLES_POINT_MODE_LINEAR_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PN_TRIANGLES_TESSELATION_LEVEL_ATI")]
+    public const int GL_PN_TRIANGLES_TESSELATION_LEVEL_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT")]
+    public const int GL_POINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINTS")]
+    public const int GL_POINTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_BIT")]
+    public const int GL_POINT_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_DISTANCE_ATTENUATION")]
+    public const int GL_POINT_DISTANCE_ATTENUATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_DISTANCE_ATTENUATION_ARB")]
+    public const int GL_POINT_DISTANCE_ATTENUATION_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_FADE_THRESHOLD_SIZE")]
+    public const int GL_POINT_FADE_THRESHOLD_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_FADE_THRESHOLD_SIZE_ARB")]
+    public const int GL_POINT_FADE_THRESHOLD_SIZE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_FADE_THRESHOLD_SIZE_EXT")]
+    public const int GL_POINT_FADE_THRESHOLD_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_FADE_THRESHOLD_SIZE_SGIS")]
+    public const int GL_POINT_FADE_THRESHOLD_SIZE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE")]
+    public const int GL_POINT_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_BUFFER_BINDING_OES")]
+    public const int GL_POINT_SIZE_ARRAY_BUFFER_BINDING_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_OES")]
+    public const int GL_POINT_SIZE_ARRAY_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_POINTER_OES")]
+    public const int GL_POINT_SIZE_ARRAY_POINTER_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_STRIDE_OES")]
+    public const int GL_POINT_SIZE_ARRAY_STRIDE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_ARRAY_TYPE_OES")]
+    public const int GL_POINT_SIZE_ARRAY_TYPE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_GRANULARITY")]
+    public const int GL_POINT_SIZE_GRANULARITY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MAX")]
+    public const int GL_POINT_SIZE_MAX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MAX_ARB")]
+    public const int GL_POINT_SIZE_MAX_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MAX_EXT")]
+    public const int GL_POINT_SIZE_MAX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MAX_SGIS")]
+    public const int GL_POINT_SIZE_MAX_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MIN")]
+    public const int GL_POINT_SIZE_MIN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MIN_ARB")]
+    public const int GL_POINT_SIZE_MIN_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MIN_EXT")]
+    public const int GL_POINT_SIZE_MIN_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_MIN_SGIS")]
+    public const int GL_POINT_SIZE_MIN_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SIZE_RANGE")]
+    public const int GL_POINT_SIZE_RANGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SMOOTH")]
+    public const int GL_POINT_SMOOTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SMOOTH_HINT")]
+    public const int GL_POINT_SMOOTH_HINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE")]
+    public const int GL_POINT_SPRITE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE_ARB")]
+    public const int GL_POINT_SPRITE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE_COORD_ORIGIN")]
+    public const int GL_POINT_SPRITE_COORD_ORIGIN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE_NV")]
+    public const int GL_POINT_SPRITE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_SPRITE_R_MODE_NV")]
+    public const int GL_POINT_SPRITE_R_MODE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POINT_TOKEN")]
+    public const int GL_POINT_TOKEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON")]
+    public const int GL_POLYGON;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_BIT")]
+    public const int GL_POLYGON_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_MODE")]
+    public const int GL_POLYGON_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_BIAS_EXT")]
+    public const int GL_POLYGON_OFFSET_BIAS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_EXT")]
+    public const int GL_POLYGON_OFFSET_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_FACTOR")]
+    public const int GL_POLYGON_OFFSET_FACTOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_FACTOR_EXT")]
+    public const int GL_POLYGON_OFFSET_FACTOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_FILL")]
+    public const int GL_POLYGON_OFFSET_FILL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_LINE")]
+    public const int GL_POLYGON_OFFSET_LINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_POINT")]
+    public const int GL_POLYGON_OFFSET_POINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_OFFSET_UNITS")]
+    public const int GL_POLYGON_OFFSET_UNITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_SMOOTH")]
+    public const int GL_POLYGON_SMOOTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_SMOOTH_HINT")]
+    public const int GL_POLYGON_SMOOTH_HINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_STIPPLE")]
+    public const int GL_POLYGON_STIPPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_STIPPLE_BIT")]
+    public const int GL_POLYGON_STIPPLE_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POLYGON_TOKEN")]
+    public const int GL_POLYGON_TOKEN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POSITION")]
+    public const int GL_POSITION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_ALPHA_BIAS")]
+    public const int GL_POST_COLOR_MATRIX_ALPHA_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_ALPHA_BIAS_SGI")]
+    public const int GL_POST_COLOR_MATRIX_ALPHA_BIAS_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_ALPHA_SCALE")]
+    public const int GL_POST_COLOR_MATRIX_ALPHA_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_ALPHA_SCALE_SGI")]
+    public const int GL_POST_COLOR_MATRIX_ALPHA_SCALE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_BLUE_BIAS")]
+    public const int GL_POST_COLOR_MATRIX_BLUE_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_BLUE_BIAS_SGI")]
+    public const int GL_POST_COLOR_MATRIX_BLUE_BIAS_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_BLUE_SCALE")]
+    public const int GL_POST_COLOR_MATRIX_BLUE_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_BLUE_SCALE_SGI")]
+    public const int GL_POST_COLOR_MATRIX_BLUE_SCALE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_COLOR_TABLE")]
+    public const int GL_POST_COLOR_MATRIX_COLOR_TABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_COLOR_TABLE_SGI")]
+    public const int GL_POST_COLOR_MATRIX_COLOR_TABLE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_GREEN_BIAS")]
+    public const int GL_POST_COLOR_MATRIX_GREEN_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_GREEN_BIAS_SGI")]
+    public const int GL_POST_COLOR_MATRIX_GREEN_BIAS_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_GREEN_SCALE")]
+    public const int GL_POST_COLOR_MATRIX_GREEN_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_GREEN_SCALE_SGI")]
+    public const int GL_POST_COLOR_MATRIX_GREEN_SCALE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_RED_BIAS")]
+    public const int GL_POST_COLOR_MATRIX_RED_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_RED_BIAS_SGI")]
+    public const int GL_POST_COLOR_MATRIX_RED_BIAS_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_RED_SCALE")]
+    public const int GL_POST_COLOR_MATRIX_RED_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_COLOR_MATRIX_RED_SCALE_SGI")]
+    public const int GL_POST_COLOR_MATRIX_RED_SCALE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_ALPHA_BIAS")]
+    public const int GL_POST_CONVOLUTION_ALPHA_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_ALPHA_BIAS_EXT")]
+    public const int GL_POST_CONVOLUTION_ALPHA_BIAS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_ALPHA_SCALE")]
+    public const int GL_POST_CONVOLUTION_ALPHA_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_ALPHA_SCALE_EXT")]
+    public const int GL_POST_CONVOLUTION_ALPHA_SCALE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_BLUE_BIAS")]
+    public const int GL_POST_CONVOLUTION_BLUE_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_BLUE_BIAS_EXT")]
+    public const int GL_POST_CONVOLUTION_BLUE_BIAS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_BLUE_SCALE")]
+    public const int GL_POST_CONVOLUTION_BLUE_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_BLUE_SCALE_EXT")]
+    public const int GL_POST_CONVOLUTION_BLUE_SCALE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_COLOR_TABLE")]
+    public const int GL_POST_CONVOLUTION_COLOR_TABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_COLOR_TABLE_SGI")]
+    public const int GL_POST_CONVOLUTION_COLOR_TABLE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_GREEN_BIAS")]
+    public const int GL_POST_CONVOLUTION_GREEN_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_GREEN_BIAS_EXT")]
+    public const int GL_POST_CONVOLUTION_GREEN_BIAS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_GREEN_SCALE")]
+    public const int GL_POST_CONVOLUTION_GREEN_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_GREEN_SCALE_EXT")]
+    public const int GL_POST_CONVOLUTION_GREEN_SCALE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_RED_BIAS")]
+    public const int GL_POST_CONVOLUTION_RED_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_RED_BIAS_EXT")]
+    public const int GL_POST_CONVOLUTION_RED_BIAS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_RED_SCALE")]
+    public const int GL_POST_CONVOLUTION_RED_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_CONVOLUTION_RED_SCALE_EXT")]
+    public const int GL_POST_CONVOLUTION_RED_SCALE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_TEXTURE_FILTER_BIAS_RANGE_SGIX")]
+    public const int GL_POST_TEXTURE_FILTER_BIAS_RANGE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_TEXTURE_FILTER_BIAS_SGIX")]
+    public const int GL_POST_TEXTURE_FILTER_BIAS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_TEXTURE_FILTER_SCALE_RANGE_SGIX")]
+    public const int GL_POST_TEXTURE_FILTER_SCALE_RANGE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_POST_TEXTURE_FILTER_SCALE_SGIX")]
+    public const int GL_POST_TEXTURE_FILTER_SCALE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRESENT_DURATION_NV")]
+    public const int GL_PRESENT_DURATION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRESENT_TIME_NV")]
+    public const int GL_PRESENT_TIME_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRESERVE_ATI")]
+    public const int GL_PRESERVE_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PREVIOUS")]
+    public const int GL_PREVIOUS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PREVIOUS_EXT")]
+    public const int GL_PREVIOUS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PREVIOUS_TEXTURE_INPUT_NV")]
+    public const int GL_PREVIOUS_TEXTURE_INPUT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMARY_COLOR")]
+    public const int GL_PRIMARY_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMARY_COLOR_EXT")]
+    public const int GL_PRIMARY_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMARY_COLOR_NV")]
+    public const int GL_PRIMARY_COLOR_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVES_GENERATED")]
+    public const int GL_PRIMITIVES_GENERATED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVES_GENERATED_EXT")]
+    public const int GL_PRIMITIVES_GENERATED_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVES_GENERATED_NV")]
+    public const int GL_PRIMITIVES_GENERATED_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_ID_NV")]
+    public const int GL_PRIMITIVE_ID_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART")]
+    public const int GL_PRIMITIVE_RESTART;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART_FIXED_INDEX")]
+    public const int GL_PRIMITIVE_RESTART_FIXED_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART_INDEX")]
+    public const int GL_PRIMITIVE_RESTART_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART_INDEX_NV")]
+    public const int GL_PRIMITIVE_RESTART_INDEX_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PRIMITIVE_RESTART_NV")]
+    public const int GL_PRIMITIVE_RESTART_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM")]
+    public const int GL_PROGRAM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ADDRESS_REGISTERS_ARB")]
+    public const int GL_PROGRAM_ADDRESS_REGISTERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ALU_INSTRUCTIONS_ARB")]
+    public const int GL_PROGRAM_ALU_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ATTRIBS_ARB")]
+    public const int GL_PROGRAM_ATTRIBS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ATTRIB_COMPONENTS_NV")]
+    public const int GL_PROGRAM_ATTRIB_COMPONENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_ANGLE")]
+    public const int GL_PROGRAM_BINARY_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_FORMATS")]
+    public const int GL_PROGRAM_BINARY_FORMATS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_FORMATS_OES")]
+    public const int GL_PROGRAM_BINARY_FORMATS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_LENGTH")]
+    public const int GL_PROGRAM_BINARY_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_LENGTH_OES")]
+    public const int GL_PROGRAM_BINARY_LENGTH_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINARY_RETRIEVABLE_HINT")]
+    public const int GL_PROGRAM_BINARY_RETRIEVABLE_HINT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_BINDING_ARB")]
+    public const int GL_PROGRAM_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ERROR_POSITION_ARB")]
+    public const int GL_PROGRAM_ERROR_POSITION_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ERROR_POSITION_NV")]
+    public const int GL_PROGRAM_ERROR_POSITION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ERROR_STRING_ARB")]
+    public const int GL_PROGRAM_ERROR_STRING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_ERROR_STRING_NV")]
+    public const int GL_PROGRAM_ERROR_STRING_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_FORMAT_ARB")]
+    public const int GL_PROGRAM_FORMAT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_FORMAT_ASCII_ARB")]
+    public const int GL_PROGRAM_FORMAT_ASCII_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_INPUT")]
+    public const int GL_PROGRAM_INPUT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_INSTRUCTIONS_ARB")]
+    public const int GL_PROGRAM_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_LENGTH_ARB")]
+    public const int GL_PROGRAM_LENGTH_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_LENGTH_NV")]
+    public const int GL_PROGRAM_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_MATRIX_EXT")]
+    public const int GL_PROGRAM_MATRIX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_MATRIX_STACK_DEPTH_EXT")]
+    public const int GL_PROGRAM_MATRIX_STACK_DEPTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB")]
+    public const int GL_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB")]
+    public const int GL_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_ATTRIBS_ARB")]
+    public const int GL_PROGRAM_NATIVE_ATTRIBS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_INSTRUCTIONS_ARB")]
+    public const int GL_PROGRAM_NATIVE_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_PARAMETERS_ARB")]
+    public const int GL_PROGRAM_NATIVE_PARAMETERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_TEMPORARIES_ARB")]
+    public const int GL_PROGRAM_NATIVE_TEMPORARIES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB")]
+    public const int GL_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB")]
+    public const int GL_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_OBJECT_ARB")]
+    public const int GL_PROGRAM_OBJECT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_OBJECT_EXT")]
+    public const int GL_PROGRAM_OBJECT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_OUTPUT")]
+    public const int GL_PROGRAM_OUTPUT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PARAMETERS_ARB")]
+    public const int GL_PROGRAM_PARAMETERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PARAMETER_NV")]
+    public const int GL_PROGRAM_PARAMETER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PIPELINE")]
+    public const int GL_PROGRAM_PIPELINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PIPELINE_BINDING")]
+    public const int GL_PROGRAM_PIPELINE_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PIPELINE_BINDING_EXT")]
+    public const int GL_PROGRAM_PIPELINE_BINDING_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_PIPELINE_OBJECT_EXT")]
+    public const int GL_PROGRAM_PIPELINE_OBJECT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_POINT_SIZE")]
+    public const int GL_PROGRAM_POINT_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_POINT_SIZE_ARB")]
+    public const int GL_PROGRAM_POINT_SIZE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_POINT_SIZE_EXT")]
+    public const int GL_PROGRAM_POINT_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_RESIDENT_NV")]
+    public const int GL_PROGRAM_RESIDENT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_RESULT_COMPONENTS_NV")]
+    public const int GL_PROGRAM_RESULT_COMPONENTS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_SEPARABLE")]
+    public const int GL_PROGRAM_SEPARABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_SEPARABLE_EXT")]
+    public const int GL_PROGRAM_SEPARABLE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_STRING_ARB")]
+    public const int GL_PROGRAM_STRING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_STRING_NV")]
+    public const int GL_PROGRAM_STRING_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_TARGET_NV")]
+    public const int GL_PROGRAM_TARGET_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_TEMPORARIES_ARB")]
+    public const int GL_PROGRAM_TEMPORARIES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_TEX_INDIRECTIONS_ARB")]
+    public const int GL_PROGRAM_TEX_INDIRECTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_TEX_INSTRUCTIONS_ARB")]
+    public const int GL_PROGRAM_TEX_INSTRUCTIONS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROGRAM_UNDER_NATIVE_LIMITS_ARB")]
+    public const int GL_PROGRAM_UNDER_NATIVE_LIMITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROJECTION")]
+    public const int GL_PROJECTION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROJECTION_MATRIX")]
+    public const int GL_PROJECTION_MATRIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROJECTION_MATRIX_FLOAT_AS_INT_BITS_OES")]
+    public const int GL_PROJECTION_MATRIX_FLOAT_AS_INT_BITS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROJECTION_STACK_DEPTH")]
+    public const int GL_PROJECTION_STACK_DEPTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROVOKING_VERTEX")]
+    public const int GL_PROVOKING_VERTEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROVOKING_VERTEX_EXT")]
+    public const int GL_PROVOKING_VERTEX_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_COLOR_TABLE")]
+    public const int GL_PROXY_COLOR_TABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_COLOR_TABLE_SGI")]
+    public const int GL_PROXY_COLOR_TABLE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_HISTOGRAM")]
+    public const int GL_PROXY_HISTOGRAM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_HISTOGRAM_EXT")]
+    public const int GL_PROXY_HISTOGRAM_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE")]
+    public const int GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE_SGI")]
+    public const int GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_POST_CONVOLUTION_COLOR_TABLE")]
+    public const int GL_PROXY_POST_CONVOLUTION_COLOR_TABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_POST_CONVOLUTION_COLOR_TABLE_SGI")]
+    public const int GL_PROXY_POST_CONVOLUTION_COLOR_TABLE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D")]
+    public const int GL_PROXY_TEXTURE_1D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D_ARRAY")]
+    public const int GL_PROXY_TEXTURE_1D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D_ARRAY_EXT")]
+    public const int GL_PROXY_TEXTURE_1D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D_EXT")]
+    public const int GL_PROXY_TEXTURE_1D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_1D_STACK_MESAX")]
+    public const int GL_PROXY_TEXTURE_1D_STACK_MESAX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D")]
+    public const int GL_PROXY_TEXTURE_2D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_ARRAY")]
+    public const int GL_PROXY_TEXTURE_2D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_ARRAY_EXT")]
+    public const int GL_PROXY_TEXTURE_2D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_EXT")]
+    public const int GL_PROXY_TEXTURE_2D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_MULTISAMPLE")]
+    public const int GL_PROXY_TEXTURE_2D_MULTISAMPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY")]
+    public const int GL_PROXY_TEXTURE_2D_MULTISAMPLE_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_2D_STACK_MESAX")]
+    public const int GL_PROXY_TEXTURE_2D_STACK_MESAX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_3D")]
+    public const int GL_PROXY_TEXTURE_3D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_3D_EXT")]
+    public const int GL_PROXY_TEXTURE_3D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_4D_SGIS")]
+    public const int GL_PROXY_TEXTURE_4D_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_COLOR_TABLE_SGI")]
+    public const int GL_PROXY_TEXTURE_COLOR_TABLE_SGI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_CUBE_MAP")]
+    public const int GL_PROXY_TEXTURE_CUBE_MAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_CUBE_MAP_ARB")]
+    public const int GL_PROXY_TEXTURE_CUBE_MAP_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_CUBE_MAP_ARRAY")]
+    public const int GL_PROXY_TEXTURE_CUBE_MAP_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_CUBE_MAP_EXT")]
+    public const int GL_PROXY_TEXTURE_CUBE_MAP_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_RECTANGLE")]
+    public const int GL_PROXY_TEXTURE_RECTANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_RECTANGLE_ARB")]
+    public const int GL_PROXY_TEXTURE_RECTANGLE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PROXY_TEXTURE_RECTANGLE_NV")]
+    public const int GL_PROXY_TEXTURE_RECTANGLE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_PURGEABLE_APPLE")]
+    public const int GL_PURGEABLE_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_Q")]
+    public const int GL_Q;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADRATIC_ATTENUATION")]
+    public const int GL_QUADRATIC_ATTENUATION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADRATIC_CURVE_TO_NV")]
+    public const int GL_QUADRATIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADS")]
+    public const int GL_QUADS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION")]
+    public const int GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION_EXT")]
+    public const int GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_ALPHA4_SGIS")]
+    public const int GL_QUAD_ALPHA4_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_ALPHA8_SGIS")]
+    public const int GL_QUAD_ALPHA8_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_INTENSITY4_SGIS")]
+    public const int GL_QUAD_INTENSITY4_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_INTENSITY8_SGIS")]
+    public const int GL_QUAD_INTENSITY8_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_LUMINANCE4_SGIS")]
+    public const int GL_QUAD_LUMINANCE4_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_LUMINANCE8_SGIS")]
+    public const int GL_QUAD_LUMINANCE8_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_MESH_SUN")]
+    public const int GL_QUAD_MESH_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_STRIP")]
+    public const int GL_QUAD_STRIP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUAD_TEXTURE_SELECT_SGIS")]
+    public const int GL_QUAD_TEXTURE_SELECT_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUARTER_BIT_ATI")]
+    public const int GL_QUARTER_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY")]
+    public const int GL_QUERY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BUFFER_AMD")]
+    public const int GL_QUERY_BUFFER_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BUFFER_BINDING_AMD")]
+    public const int GL_QUERY_BUFFER_BINDING_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BY_REGION_NO_WAIT")]
+    public const int GL_QUERY_BY_REGION_NO_WAIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BY_REGION_NO_WAIT_NV")]
+    public const int GL_QUERY_BY_REGION_NO_WAIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BY_REGION_WAIT")]
+    public const int GL_QUERY_BY_REGION_WAIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_BY_REGION_WAIT_NV")]
+    public const int GL_QUERY_BY_REGION_WAIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_COUNTER_BITS")]
+    public const int GL_QUERY_COUNTER_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_COUNTER_BITS_ARB")]
+    public const int GL_QUERY_COUNTER_BITS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_NO_WAIT")]
+    public const int GL_QUERY_NO_WAIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_NO_WAIT_NV")]
+    public const int GL_QUERY_NO_WAIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_OBJECT_AMD")]
+    public const int GL_QUERY_OBJECT_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_OBJECT_EXT")]
+    public const int GL_QUERY_OBJECT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT")]
+    public const int GL_QUERY_RESULT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_ARB")]
+    public const int GL_QUERY_RESULT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_AVAILABLE")]
+    public const int GL_QUERY_RESULT_AVAILABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_AVAILABLE_ARB")]
+    public const int GL_QUERY_RESULT_AVAILABLE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_AVAILABLE_EXT")]
+    public const int GL_QUERY_RESULT_AVAILABLE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_EXT")]
+    public const int GL_QUERY_RESULT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_RESULT_NO_WAIT_AMD")]
+    public const int GL_QUERY_RESULT_NO_WAIT_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_WAIT")]
+    public const int GL_QUERY_WAIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_QUERY_WAIT_NV")]
+    public const int GL_QUERY_WAIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R")]
+    public const int GL_R;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R11F_G11F_B10F")]
+    public const int GL_R11F_G11F_B10F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R11F_G11F_B10F_EXT")]
+    public const int GL_R11F_G11F_B10F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R16")]
+    public const int GL_R16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R16F")]
+    public const int GL_R16F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R16F_EXT")]
+    public const int GL_R16F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R16I")]
+    public const int GL_R16I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R16UI")]
+    public const int GL_R16UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R16_SNORM")]
+    public const int GL_R16_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_C3F_V3F_SUN")]
+    public const int GL_R1UI_C3F_V3F_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_C4F_N3F_V3F_SUN")]
+    public const int GL_R1UI_C4F_N3F_V3F_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_C4UB_V3F_SUN")]
+    public const int GL_R1UI_C4UB_V3F_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_N3F_V3F_SUN")]
+    public const int GL_R1UI_N3F_V3F_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_T2F_C4F_N3F_V3F_SUN")]
+    public const int GL_R1UI_T2F_C4F_N3F_V3F_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_T2F_N3F_V3F_SUN")]
+    public const int GL_R1UI_T2F_N3F_V3F_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_T2F_V3F_SUN")]
+    public const int GL_R1UI_T2F_V3F_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R1UI_V3F_SUN")]
+    public const int GL_R1UI_V3F_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R32F")]
+    public const int GL_R32F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R32I")]
+    public const int GL_R32I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R32UI")]
+    public const int GL_R32UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R3_G3_B2")]
+    public const int GL_R3_G3_B2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R8")]
+    public const int GL_R8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R8I")]
+    public const int GL_R8I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R8UI")]
+    public const int GL_R8UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R8_EXT")]
+    public const int GL_R8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_R8_SNORM")]
+    public const int GL_R8_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RASTERIZER_DISCARD")]
+    public const int GL_RASTERIZER_DISCARD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RASTERIZER_DISCARD_EXT")]
+    public const int GL_RASTERIZER_DISCARD_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RASTERIZER_DISCARD_NV")]
+    public const int GL_RASTERIZER_DISCARD_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_BUFFER")]
+    public const int GL_READ_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_BUFFER_EXT")]
+    public const int GL_READ_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_BUFFER_NV")]
+    public const int GL_READ_BUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER")]
+    public const int GL_READ_FRAMEBUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_ANGLE")]
+    public const int GL_READ_FRAMEBUFFER_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_BINDING")]
+    public const int GL_READ_FRAMEBUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_BINDING_EXT")]
+    public const int GL_READ_FRAMEBUFFER_BINDING_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_BINDING_NV")]
+    public const int GL_READ_FRAMEBUFFER_BINDING_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_EXT")]
+    public const int GL_READ_FRAMEBUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_FRAMEBUFFER_NV")]
+    public const int GL_READ_FRAMEBUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_ONLY")]
+    public const int GL_READ_ONLY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_ONLY_ARB")]
+    public const int GL_READ_ONLY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXELS")]
+    public const int GL_READ_PIXELS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXELS_FORMAT")]
+    public const int GL_READ_PIXELS_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXELS_TYPE")]
+    public const int GL_READ_PIXELS_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXEL_DATA_RANGE_LENGTH_NV")]
+    public const int GL_READ_PIXEL_DATA_RANGE_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXEL_DATA_RANGE_NV")]
+    public const int GL_READ_PIXEL_DATA_RANGE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_PIXEL_DATA_RANGE_POINTER_NV")]
+    public const int GL_READ_PIXEL_DATA_RANGE_POINTER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_WRITE")]
+    public const int GL_READ_WRITE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_READ_WRITE_ARB")]
+    public const int GL_READ_WRITE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RECIP_ADD_SIGNED_ALPHA_IMG")]
+    public const int GL_RECIP_ADD_SIGNED_ALPHA_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RECT_NV")]
+    public const int GL_RECT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED")]
+    public const int GL_RED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REDUCE")]
+    public const int GL_REDUCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REDUCE_EXT")]
+    public const int GL_REDUCE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_BIAS")]
+    public const int GL_RED_BIAS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_BITS")]
+    public const int GL_RED_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_BIT_ATI")]
+    public const int GL_RED_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_EXT")]
+    public const int GL_RED_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_INTEGER")]
+    public const int GL_RED_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_INTEGER_EXT")]
+    public const int GL_RED_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_MAX_CLAMP_INGR")]
+    public const int GL_RED_MAX_CLAMP_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_MIN_CLAMP_INGR")]
+    public const int GL_RED_MIN_CLAMP_INGR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_SCALE")]
+    public const int GL_RED_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RED_SNORM")]
+    public const int GL_RED_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_COMPUTE_SHADER")]
+    public const int GL_REFERENCED_BY_COMPUTE_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_FRAGMENT_SHADER")]
+    public const int GL_REFERENCED_BY_FRAGMENT_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_GEOMETRY_SHADER")]
+    public const int GL_REFERENCED_BY_GEOMETRY_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_TESS_CONTROL_SHADER")]
+    public const int GL_REFERENCED_BY_TESS_CONTROL_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_TESS_EVALUATION_SHADER")]
+    public const int GL_REFERENCED_BY_TESS_EVALUATION_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCED_BY_VERTEX_SHADER")]
+    public const int GL_REFERENCED_BY_VERTEX_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCE_PLANE_EQUATION_SGIX")]
+    public const int GL_REFERENCE_PLANE_EQUATION_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFERENCE_PLANE_SGIX")]
+    public const int GL_REFERENCE_PLANE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFLECTION_MAP")]
+    public const int GL_REFLECTION_MAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFLECTION_MAP_ARB")]
+    public const int GL_REFLECTION_MAP_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFLECTION_MAP_EXT")]
+    public const int GL_REFLECTION_MAP_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REFLECTION_MAP_OES")]
+    public const int GL_REFLECTION_MAP_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REGISTER_COMBINERS_NV")]
+    public const int GL_REGISTER_COMBINERS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_0_ATI")]
+    public const int GL_REG_0_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_10_ATI")]
+    public const int GL_REG_10_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_11_ATI")]
+    public const int GL_REG_11_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_12_ATI")]
+    public const int GL_REG_12_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_13_ATI")]
+    public const int GL_REG_13_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_14_ATI")]
+    public const int GL_REG_14_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_15_ATI")]
+    public const int GL_REG_15_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_16_ATI")]
+    public const int GL_REG_16_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_17_ATI")]
+    public const int GL_REG_17_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_18_ATI")]
+    public const int GL_REG_18_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_19_ATI")]
+    public const int GL_REG_19_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_1_ATI")]
+    public const int GL_REG_1_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_20_ATI")]
+    public const int GL_REG_20_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_21_ATI")]
+    public const int GL_REG_21_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_22_ATI")]
+    public const int GL_REG_22_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_23_ATI")]
+    public const int GL_REG_23_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_24_ATI")]
+    public const int GL_REG_24_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_25_ATI")]
+    public const int GL_REG_25_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_26_ATI")]
+    public const int GL_REG_26_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_27_ATI")]
+    public const int GL_REG_27_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_28_ATI")]
+    public const int GL_REG_28_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_29_ATI")]
+    public const int GL_REG_29_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_2_ATI")]
+    public const int GL_REG_2_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_30_ATI")]
+    public const int GL_REG_30_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_31_ATI")]
+    public const int GL_REG_31_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_3_ATI")]
+    public const int GL_REG_3_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_4_ATI")]
+    public const int GL_REG_4_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_5_ATI")]
+    public const int GL_REG_5_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_6_ATI")]
+    public const int GL_REG_6_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_7_ATI")]
+    public const int GL_REG_7_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_8_ATI")]
+    public const int GL_REG_8_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REG_9_ATI")]
+    public const int GL_REG_9_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_ARC_TO_NV")]
+    public const int GL_RELATIVE_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_CUBIC_CURVE_TO_NV")]
+    public const int GL_RELATIVE_CUBIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_HORIZONTAL_LINE_TO_NV")]
+    public const int GL_RELATIVE_HORIZONTAL_LINE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_LARGE_CCW_ARC_TO_NV")]
+    public const int GL_RELATIVE_LARGE_CCW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_LARGE_CW_ARC_TO_NV")]
+    public const int GL_RELATIVE_LARGE_CW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_LINE_TO_NV")]
+    public const int GL_RELATIVE_LINE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_MOVE_TO_NV")]
+    public const int GL_RELATIVE_MOVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_QUADRATIC_CURVE_TO_NV")]
+    public const int GL_RELATIVE_QUADRATIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_SMALL_CCW_ARC_TO_NV")]
+    public const int GL_RELATIVE_SMALL_CCW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_SMALL_CW_ARC_TO_NV")]
+    public const int GL_RELATIVE_SMALL_CW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_SMOOTH_CUBIC_CURVE_TO_NV")]
+    public const int GL_RELATIVE_SMOOTH_CUBIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_SMOOTH_QUADRATIC_CURVE_TO_NV")]
+    public const int GL_RELATIVE_SMOOTH_QUADRATIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELATIVE_VERTICAL_LINE_TO_NV")]
+    public const int GL_RELATIVE_VERTICAL_LINE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RELEASED_APPLE")]
+    public const int GL_RELEASED_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDER")]
+    public const int GL_RENDER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER")]
+    public const int GL_RENDERBUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_ALPHA_SIZE")]
+    public const int GL_RENDERBUFFER_ALPHA_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_ALPHA_SIZE_EXT")]
+    public const int GL_RENDERBUFFER_ALPHA_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_ALPHA_SIZE_OES")]
+    public const int GL_RENDERBUFFER_ALPHA_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BINDING")]
+    public const int GL_RENDERBUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BINDING_ANGLE")]
+    public const int GL_RENDERBUFFER_BINDING_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BINDING_EXT")]
+    public const int GL_RENDERBUFFER_BINDING_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BINDING_OES")]
+    public const int GL_RENDERBUFFER_BINDING_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BLUE_SIZE")]
+    public const int GL_RENDERBUFFER_BLUE_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BLUE_SIZE_EXT")]
+    public const int GL_RENDERBUFFER_BLUE_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_BLUE_SIZE_OES")]
+    public const int GL_RENDERBUFFER_BLUE_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_COLOR_SAMPLES_NV")]
+    public const int GL_RENDERBUFFER_COLOR_SAMPLES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_COVERAGE_SAMPLES_NV")]
+    public const int GL_RENDERBUFFER_COVERAGE_SAMPLES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_DEPTH_SIZE")]
+    public const int GL_RENDERBUFFER_DEPTH_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_DEPTH_SIZE_EXT")]
+    public const int GL_RENDERBUFFER_DEPTH_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_DEPTH_SIZE_OES")]
+    public const int GL_RENDERBUFFER_DEPTH_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_EXT")]
+    public const int GL_RENDERBUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_FREE_MEMORY_ATI")]
+    public const int GL_RENDERBUFFER_FREE_MEMORY_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_GREEN_SIZE")]
+    public const int GL_RENDERBUFFER_GREEN_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_GREEN_SIZE_EXT")]
+    public const int GL_RENDERBUFFER_GREEN_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_GREEN_SIZE_OES")]
+    public const int GL_RENDERBUFFER_GREEN_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_HEIGHT")]
+    public const int GL_RENDERBUFFER_HEIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_HEIGHT_EXT")]
+    public const int GL_RENDERBUFFER_HEIGHT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_HEIGHT_OES")]
+    public const int GL_RENDERBUFFER_HEIGHT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_INTERNAL_FORMAT")]
+    public const int GL_RENDERBUFFER_INTERNAL_FORMAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_INTERNAL_FORMAT_EXT")]
+    public const int GL_RENDERBUFFER_INTERNAL_FORMAT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_INTERNAL_FORMAT_OES")]
+    public const int GL_RENDERBUFFER_INTERNAL_FORMAT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_OES")]
+    public const int GL_RENDERBUFFER_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_RED_SIZE")]
+    public const int GL_RENDERBUFFER_RED_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_RED_SIZE_EXT")]
+    public const int GL_RENDERBUFFER_RED_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_RED_SIZE_OES")]
+    public const int GL_RENDERBUFFER_RED_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES")]
+    public const int GL_RENDERBUFFER_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES_ANGLE")]
+    public const int GL_RENDERBUFFER_SAMPLES_ANGLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES_EXT")]
+    public const int GL_RENDERBUFFER_SAMPLES_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES_IMG")]
+    public const int GL_RENDERBUFFER_SAMPLES_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_SAMPLES_NV")]
+    public const int GL_RENDERBUFFER_SAMPLES_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_STENCIL_SIZE")]
+    public const int GL_RENDERBUFFER_STENCIL_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_STENCIL_SIZE_EXT")]
+    public const int GL_RENDERBUFFER_STENCIL_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_STENCIL_SIZE_OES")]
+    public const int GL_RENDERBUFFER_STENCIL_SIZE_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_WIDTH")]
+    public const int GL_RENDERBUFFER_WIDTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_WIDTH_EXT")]
+    public const int GL_RENDERBUFFER_WIDTH_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERBUFFER_WIDTH_OES")]
+    public const int GL_RENDERBUFFER_WIDTH_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDERER")]
+    public const int GL_RENDERER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDER_DIRECT_TO_FRAMEBUFFER_QCOM")]
+    public const int GL_RENDER_DIRECT_TO_FRAMEBUFFER_QCOM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RENDER_MODE")]
+    public const int GL_RENDER_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPEAT")]
+    public const int GL_REPEAT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE")]
+    public const int GL_REPLACE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_ARRAY_POINTER_SUN")]
+    public const int GL_REPLACEMENT_CODE_ARRAY_POINTER_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_ARRAY_STRIDE_SUN")]
+    public const int GL_REPLACEMENT_CODE_ARRAY_STRIDE_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_ARRAY_SUN")]
+    public const int GL_REPLACEMENT_CODE_ARRAY_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_ARRAY_TYPE_SUN")]
+    public const int GL_REPLACEMENT_CODE_ARRAY_TYPE_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACEMENT_CODE_SUN")]
+    public const int GL_REPLACEMENT_CODE_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE_EXT")]
+    public const int GL_REPLACE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE_MIDDLE_SUN")]
+    public const int GL_REPLACE_MIDDLE_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE_OLDEST_SUN")]
+    public const int GL_REPLACE_OLDEST_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLACE_VALUE_AMD")]
+    public const int GL_REPLACE_VALUE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLICATE_BORDER")]
+    public const int GL_REPLICATE_BORDER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REPLICATE_BORDER_HP")]
+    public const int GL_REPLICATE_BORDER_HP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES")]
+    public const int GL_REQUIRED_TEXTURE_IMAGE_UNITS_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_AVERAGE_OML")]
+    public const int GL_RESAMPLE_AVERAGE_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_DECIMATE_OML")]
+    public const int GL_RESAMPLE_DECIMATE_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_DECIMATE_SGIX")]
+    public const int GL_RESAMPLE_DECIMATE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_REPLICATE_OML")]
+    public const int GL_RESAMPLE_REPLICATE_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_REPLICATE_SGIX")]
+    public const int GL_RESAMPLE_REPLICATE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_ZERO_FILL_OML")]
+    public const int GL_RESAMPLE_ZERO_FILL_OML;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESAMPLE_ZERO_FILL_SGIX")]
+    public const int GL_RESAMPLE_ZERO_FILL_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESCALE_NORMAL")]
+    public const int GL_RESCALE_NORMAL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESCALE_NORMAL_EXT")]
+    public const int GL_RESCALE_NORMAL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESET_NOTIFICATION_STRATEGY_ARB")]
+    public const int GL_RESET_NOTIFICATION_STRATEGY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESTART_PATH_NV")]
+    public const int GL_RESTART_PATH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RESTART_SUN")]
+    public const int GL_RESTART_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RETAINED_APPLE")]
+    public const int GL_RETAINED_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RETURN")]
+    public const int GL_RETURN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG")]
+    public const int GL_RG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16")]
+    public const int GL_RG16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16F")]
+    public const int GL_RG16F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16F_EXT")]
+    public const int GL_RG16F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16I")]
+    public const int GL_RG16I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16UI")]
+    public const int GL_RG16UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG16_SNORM")]
+    public const int GL_RG16_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG32F")]
+    public const int GL_RG32F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG32I")]
+    public const int GL_RG32I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG32UI")]
+    public const int GL_RG32UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8")]
+    public const int GL_RG8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8I")]
+    public const int GL_RG8I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8UI")]
+    public const int GL_RG8UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8_EXT")]
+    public const int GL_RG8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG8_SNORM")]
+    public const int GL_RG8_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB")]
+    public const int GL_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10")]
+    public const int GL_RGB10;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10_A2")]
+    public const int GL_RGB10_A2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10_A2UI")]
+    public const int GL_RGB10_A2UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10_A2_EXT")]
+    public const int GL_RGB10_A2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB10_EXT")]
+    public const int GL_RGB10_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB12")]
+    public const int GL_RGB12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB12_EXT")]
+    public const int GL_RGB12_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16")]
+    public const int GL_RGB16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16F")]
+    public const int GL_RGB16F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16F_ARB")]
+    public const int GL_RGB16F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16F_EXT")]
+    public const int GL_RGB16F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16I")]
+    public const int GL_RGB16I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16I_EXT")]
+    public const int GL_RGB16I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16UI")]
+    public const int GL_RGB16UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16UI_EXT")]
+    public const int GL_RGB16UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16_EXT")]
+    public const int GL_RGB16_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB16_SNORM")]
+    public const int GL_RGB16_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB2_EXT")]
+    public const int GL_RGB2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32F")]
+    public const int GL_RGB32F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32F_ARB")]
+    public const int GL_RGB32F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32I")]
+    public const int GL_RGB32I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32I_EXT")]
+    public const int GL_RGB32I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32UI")]
+    public const int GL_RGB32UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB32UI_EXT")]
+    public const int GL_RGB32UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB4")]
+    public const int GL_RGB4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB4_EXT")]
+    public const int GL_RGB4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB4_S3TC")]
+    public const int GL_RGB4_S3TC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5")]
+    public const int GL_RGB5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB565")]
+    public const int GL_RGB565;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB565_OES")]
+    public const int GL_RGB565_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5_A1")]
+    public const int GL_RGB5_A1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5_A1_EXT")]
+    public const int GL_RGB5_A1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5_A1_OES")]
+    public const int GL_RGB5_A1_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB5_EXT")]
+    public const int GL_RGB5_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8")]
+    public const int GL_RGB8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8I")]
+    public const int GL_RGB8I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8I_EXT")]
+    public const int GL_RGB8I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8UI")]
+    public const int GL_RGB8UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8UI_EXT")]
+    public const int GL_RGB8UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8_EXT")]
+    public const int GL_RGB8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB8_SNORM")]
+    public const int GL_RGB8_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB9_E5")]
+    public const int GL_RGB9_E5;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB9_E5_EXT")]
+    public const int GL_RGB9_E5_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA")]
+    public const int GL_RGBA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA12")]
+    public const int GL_RGBA12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA12_EXT")]
+    public const int GL_RGBA12_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16")]
+    public const int GL_RGBA16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16F")]
+    public const int GL_RGBA16F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16F_ARB")]
+    public const int GL_RGBA16F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16F_EXT")]
+    public const int GL_RGBA16F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16I")]
+    public const int GL_RGBA16I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16I_EXT")]
+    public const int GL_RGBA16I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16UI")]
+    public const int GL_RGBA16UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16UI_EXT")]
+    public const int GL_RGBA16UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16_EXT")]
+    public const int GL_RGBA16_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA16_SNORM")]
+    public const int GL_RGBA16_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA2")]
+    public const int GL_RGBA2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA2_EXT")]
+    public const int GL_RGBA2_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32F")]
+    public const int GL_RGBA32F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32F_ARB")]
+    public const int GL_RGBA32F_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32I")]
+    public const int GL_RGBA32I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32I_EXT")]
+    public const int GL_RGBA32I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32UI")]
+    public const int GL_RGBA32UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA32UI_EXT")]
+    public const int GL_RGBA32UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4")]
+    public const int GL_RGBA4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4_DXT5_S3TC")]
+    public const int GL_RGBA4_DXT5_S3TC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4_EXT")]
+    public const int GL_RGBA4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4_OES")]
+    public const int GL_RGBA4_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA4_S3TC")]
+    public const int GL_RGBA4_S3TC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8")]
+    public const int GL_RGBA8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8I")]
+    public const int GL_RGBA8I;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8I_EXT")]
+    public const int GL_RGBA8I_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8UI")]
+    public const int GL_RGBA8UI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8UI_EXT")]
+    public const int GL_RGBA8UI_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8_EXT")]
+    public const int GL_RGBA8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA8_SNORM")]
+    public const int GL_RGBA8_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_DXT5_S3TC")]
+    public const int GL_RGBA_DXT5_S3TC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT16_APPLE")]
+    public const int GL_RGBA_FLOAT16_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT16_ATI")]
+    public const int GL_RGBA_FLOAT16_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT32_APPLE")]
+    public const int GL_RGBA_FLOAT32_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT32_ATI")]
+    public const int GL_RGBA_FLOAT32_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_FLOAT_MODE_ARB")]
+    public const int GL_RGBA_FLOAT_MODE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_INTEGER")]
+    public const int GL_RGBA_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_INTEGER_EXT")]
+    public const int GL_RGBA_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_INTEGER_MODE_EXT")]
+    public const int GL_RGBA_INTEGER_MODE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_MODE")]
+    public const int GL_RGBA_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_S3TC")]
+    public const int GL_RGBA_S3TC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_SIGNED_COMPONENTS_EXT")]
+    public const int GL_RGBA_SIGNED_COMPONENTS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_SNORM")]
+    public const int GL_RGBA_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGBA_UNSIGNED_DOT_PRODUCT_MAPPING_NV")]
+    public const int GL_RGBA_UNSIGNED_DOT_PRODUCT_MAPPING_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_422_APPLE")]
+    public const int GL_RGB_422_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_FLOAT16_APPLE")]
+    public const int GL_RGB_FLOAT16_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_FLOAT16_ATI")]
+    public const int GL_RGB_FLOAT16_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_FLOAT32_APPLE")]
+    public const int GL_RGB_FLOAT32_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_FLOAT32_ATI")]
+    public const int GL_RGB_FLOAT32_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_INTEGER")]
+    public const int GL_RGB_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_INTEGER_EXT")]
+    public const int GL_RGB_INTEGER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_S3TC")]
+    public const int GL_RGB_S3TC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_SCALE")]
+    public const int GL_RGB_SCALE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_SCALE_EXT")]
+    public const int GL_RGB_SCALE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RGB_SNORM")]
+    public const int GL_RGB_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG_EXT")]
+    public const int GL_RG_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG_INTEGER")]
+    public const int GL_RG_INTEGER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RG_SNORM")]
+    public const int GL_RG_SNORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_RIGHT")]
+    public const int GL_RIGHT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_ROUND_NV")]
+    public const int GL_ROUND_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_S")]
+    public const int GL_S;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER")]
+    public const int GL_SAMPLER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D")]
+    public const int GL_SAMPLER_1D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARB")]
+    public const int GL_SAMPLER_1D_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARRAY")]
+    public const int GL_SAMPLER_1D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARRAY_EXT")]
+    public const int GL_SAMPLER_1D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARRAY_SHADOW")]
+    public const int GL_SAMPLER_1D_ARRAY_SHADOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_ARRAY_SHADOW_EXT")]
+    public const int GL_SAMPLER_1D_ARRAY_SHADOW_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_SHADOW")]
+    public const int GL_SAMPLER_1D_SHADOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_1D_SHADOW_ARB")]
+    public const int GL_SAMPLER_1D_SHADOW_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D")]
+    public const int GL_SAMPLER_2D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARB")]
+    public const int GL_SAMPLER_2D_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY")]
+    public const int GL_SAMPLER_2D_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY_EXT")]
+    public const int GL_SAMPLER_2D_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY_SHADOW")]
+    public const int GL_SAMPLER_2D_ARRAY_SHADOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY_SHADOW_EXT")]
+    public const int GL_SAMPLER_2D_ARRAY_SHADOW_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_ARRAY_SHADOW_NV")]
+    public const int GL_SAMPLER_2D_ARRAY_SHADOW_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_MULTISAMPLE")]
+    public const int GL_SAMPLER_2D_MULTISAMPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_MULTISAMPLE_ARRAY")]
+    public const int GL_SAMPLER_2D_MULTISAMPLE_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_RECT")]
+    public const int GL_SAMPLER_2D_RECT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_RECT_ARB")]
+    public const int GL_SAMPLER_2D_RECT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_RECT_SHADOW")]
+    public const int GL_SAMPLER_2D_RECT_SHADOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_RECT_SHADOW_ARB")]
+    public const int GL_SAMPLER_2D_RECT_SHADOW_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_SHADOW")]
+    public const int GL_SAMPLER_2D_SHADOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_SHADOW_ARB")]
+    public const int GL_SAMPLER_2D_SHADOW_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_2D_SHADOW_EXT")]
+    public const int GL_SAMPLER_2D_SHADOW_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_3D")]
+    public const int GL_SAMPLER_3D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_3D_ARB")]
+    public const int GL_SAMPLER_3D_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_3D_OES")]
+    public const int GL_SAMPLER_3D_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_BINDING")]
+    public const int GL_SAMPLER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_BUFFER")]
+    public const int GL_SAMPLER_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_BUFFER_AMD")]
+    public const int GL_SAMPLER_BUFFER_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_BUFFER_EXT")]
+    public const int GL_SAMPLER_BUFFER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE")]
+    public const int GL_SAMPLER_CUBE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_ARB")]
+    public const int GL_SAMPLER_CUBE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_MAP_ARRAY")]
+    public const int GL_SAMPLER_CUBE_MAP_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW")]
+    public const int GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_SHADOW")]
+    public const int GL_SAMPLER_CUBE_SHADOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_SHADOW_EXT")]
+    public const int GL_SAMPLER_CUBE_SHADOW_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_CUBE_SHADOW_NV")]
+    public const int GL_SAMPLER_CUBE_SHADOW_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_EXTERNAL_OES")]
+    public const int GL_SAMPLER_EXTERNAL_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_OBJECT_AMD")]
+    public const int GL_SAMPLER_OBJECT_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLER_RENDERBUFFER_NV")]
+    public const int GL_SAMPLER_RENDERBUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES")]
+    public const int GL_SAMPLES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_3DFX")]
+    public const int GL_SAMPLES_3DFX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_ARB")]
+    public const int GL_SAMPLES_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_EXT")]
+    public const int GL_SAMPLES_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_PASSED")]
+    public const int GL_SAMPLES_PASSED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_PASSED_ARB")]
+    public const int GL_SAMPLES_PASSED_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLES_SGIS")]
+    public const int GL_SAMPLES_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_COVERAGE")]
+    public const int GL_SAMPLE_ALPHA_TO_COVERAGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_COVERAGE_ARB")]
+    public const int GL_SAMPLE_ALPHA_TO_COVERAGE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_MASK_EXT")]
+    public const int GL_SAMPLE_ALPHA_TO_MASK_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_MASK_SGIS")]
+    public const int GL_SAMPLE_ALPHA_TO_MASK_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_ONE")]
+    public const int GL_SAMPLE_ALPHA_TO_ONE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_ONE_ARB")]
+    public const int GL_SAMPLE_ALPHA_TO_ONE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_ONE_EXT")]
+    public const int GL_SAMPLE_ALPHA_TO_ONE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_ALPHA_TO_ONE_SGIS")]
+    public const int GL_SAMPLE_ALPHA_TO_ONE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS")]
+    public const int GL_SAMPLE_BUFFERS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS_3DFX")]
+    public const int GL_SAMPLE_BUFFERS_3DFX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS_ARB")]
+    public const int GL_SAMPLE_BUFFERS_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS_EXT")]
+    public const int GL_SAMPLE_BUFFERS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_BUFFERS_SGIS")]
+    public const int GL_SAMPLE_BUFFERS_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE")]
+    public const int GL_SAMPLE_COVERAGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_ARB")]
+    public const int GL_SAMPLE_COVERAGE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_INVERT")]
+    public const int GL_SAMPLE_COVERAGE_INVERT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_INVERT_ARB")]
+    public const int GL_SAMPLE_COVERAGE_INVERT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_VALUE")]
+    public const int GL_SAMPLE_COVERAGE_VALUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_COVERAGE_VALUE_ARB")]
+    public const int GL_SAMPLE_COVERAGE_VALUE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK")]
+    public const int GL_SAMPLE_MASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_EXT")]
+    public const int GL_SAMPLE_MASK_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_INVERT_EXT")]
+    public const int GL_SAMPLE_MASK_INVERT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_INVERT_SGIS")]
+    public const int GL_SAMPLE_MASK_INVERT_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_NV")]
+    public const int GL_SAMPLE_MASK_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_SGIS")]
+    public const int GL_SAMPLE_MASK_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_VALUE")]
+    public const int GL_SAMPLE_MASK_VALUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_VALUE_EXT")]
+    public const int GL_SAMPLE_MASK_VALUE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_VALUE_NV")]
+    public const int GL_SAMPLE_MASK_VALUE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_MASK_VALUE_SGIS")]
+    public const int GL_SAMPLE_MASK_VALUE_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_PATTERN_EXT")]
+    public const int GL_SAMPLE_PATTERN_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_PATTERN_SGIS")]
+    public const int GL_SAMPLE_PATTERN_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_POSITION")]
+    public const int GL_SAMPLE_POSITION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_POSITION_NV")]
+    public const int GL_SAMPLE_POSITION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SAMPLE_SHADING_ARB")]
+    public const int GL_SAMPLE_SHADING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SATURATE_BIT_ATI")]
+    public const int GL_SATURATE_BIT_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALAR_EXT")]
+    public const int GL_SCALAR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALEBIAS_HINT_SGIX")]
+    public const int GL_SCALEBIAS_HINT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALED_RESOLVE_FASTEST_EXT")]
+    public const int GL_SCALED_RESOLVE_FASTEST_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALED_RESOLVE_NICEST_EXT")]
+    public const int GL_SCALED_RESOLVE_NICEST_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALE_BY_FOUR_NV")]
+    public const int GL_SCALE_BY_FOUR_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALE_BY_ONE_HALF_NV")]
+    public const int GL_SCALE_BY_ONE_HALF_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCALE_BY_TWO_NV")]
+    public const int GL_SCALE_BY_TWO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCISSOR_BIT")]
+    public const int GL_SCISSOR_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCISSOR_BOX")]
+    public const int GL_SCISSOR_BOX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCISSOR_TEST")]
+    public const int GL_SCISSOR_TEST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SCREEN_COORDINATES_REND")]
+    public const int GL_SCREEN_COORDINATES_REND;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY")]
+    public const int GL_SECONDARY_COLOR_ARRAY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_ADDRESS_NV")]
+    public const int GL_SECONDARY_COLOR_ARRAY_ADDRESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING")]
+    public const int GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING_ARB")]
+    public const int GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_EXT")]
+    public const int GL_SECONDARY_COLOR_ARRAY_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_LENGTH_NV")]
+    public const int GL_SECONDARY_COLOR_ARRAY_LENGTH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_POINTER")]
+    public const int GL_SECONDARY_COLOR_ARRAY_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_POINTER_EXT")]
+    public const int GL_SECONDARY_COLOR_ARRAY_POINTER_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_SIZE")]
+    public const int GL_SECONDARY_COLOR_ARRAY_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_SIZE_EXT")]
+    public const int GL_SECONDARY_COLOR_ARRAY_SIZE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_STRIDE")]
+    public const int GL_SECONDARY_COLOR_ARRAY_STRIDE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_STRIDE_EXT")]
+    public const int GL_SECONDARY_COLOR_ARRAY_STRIDE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_TYPE")]
+    public const int GL_SECONDARY_COLOR_ARRAY_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_ARRAY_TYPE_EXT")]
+    public const int GL_SECONDARY_COLOR_ARRAY_TYPE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_COLOR_NV")]
+    public const int GL_SECONDARY_COLOR_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SECONDARY_INTERPOLATOR_ATI")]
+    public const int GL_SECONDARY_INTERPOLATOR_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SELECT")]
+    public const int GL_SELECT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SELECTION_BUFFER_POINTER")]
+    public const int GL_SELECTION_BUFFER_POINTER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SELECTION_BUFFER_SIZE")]
+    public const int GL_SELECTION_BUFFER_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARABLE_2D")]
+    public const int GL_SEPARABLE_2D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARABLE_2D_EXT")]
+    public const int GL_SEPARABLE_2D_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_ATTRIBS")]
+    public const int GL_SEPARATE_ATTRIBS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_ATTRIBS_EXT")]
+    public const int GL_SEPARATE_ATTRIBS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_ATTRIBS_NV")]
+    public const int GL_SEPARATE_ATTRIBS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_SPECULAR_COLOR")]
+    public const int GL_SEPARATE_SPECULAR_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SEPARATE_SPECULAR_COLOR_EXT")]
+    public const int GL_SEPARATE_SPECULAR_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SET")]
+    public const int GL_SET;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SET_AMD")]
+    public const int GL_SET_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_detail_texture")]
+    public const int GL_SGIS_detail_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_fog_function")]
+    public const int GL_SGIS_fog_function;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_generate_mipmap")]
+    public const int GL_SGIS_generate_mipmap;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_multisample")]
+    public const int GL_SGIS_multisample;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_pixel_texture")]
+    public const int GL_SGIS_pixel_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_point_line_texgen")]
+    public const int GL_SGIS_point_line_texgen;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_point_parameters")]
+    public const int GL_SGIS_point_parameters;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_sharpen_texture")]
+    public const int GL_SGIS_sharpen_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture4D")]
+    public const int GL_SGIS_texture4D;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_border_clamp")]
+    public const int GL_SGIS_texture_border_clamp;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_edge_clamp")]
+    public const int GL_SGIS_texture_edge_clamp;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_filter4")]
+    public const int GL_SGIS_texture_filter4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_lod")]
+    public const int GL_SGIS_texture_lod;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIS_texture_select")]
+    public const int GL_SGIS_texture_select;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_async")]
+    public const int GL_SGIX_async;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_async_histogram")]
+    public const int GL_SGIX_async_histogram;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_async_pixel")]
+    public const int GL_SGIX_async_pixel;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_blend_alpha_minmax")]
+    public const int GL_SGIX_blend_alpha_minmax;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_calligraphic_fragment")]
+    public const int GL_SGIX_calligraphic_fragment;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_clipmap")]
+    public const int GL_SGIX_clipmap;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_convolution_accuracy")]
+    public const int GL_SGIX_convolution_accuracy;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_depth_texture")]
+    public const int GL_SGIX_depth_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_flush_raster")]
+    public const int GL_SGIX_flush_raster;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_fog_offset")]
+    public const int GL_SGIX_fog_offset;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_fragment_lighting")]
+    public const int GL_SGIX_fragment_lighting;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_framezoom")]
+    public const int GL_SGIX_framezoom;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_icc_texture")]
+    public const int GL_SGIX_icc_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_impact_pixel_texture")]
+    public const int GL_SGIX_impact_pixel_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_instruments")]
+    public const int GL_SGIX_instruments;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_interlace")]
+    public const int GL_SGIX_interlace;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_ir_instrument1")]
+    public const int GL_SGIX_ir_instrument1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_list_priority")]
+    public const int GL_SGIX_list_priority;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_pixel_texture")]
+    public const int GL_SGIX_pixel_texture;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_pixel_tiles")]
+    public const int GL_SGIX_pixel_tiles;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_polynomial_ffd")]
+    public const int GL_SGIX_polynomial_ffd;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_reference_plane")]
+    public const int GL_SGIX_reference_plane;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_resample")]
+    public const int GL_SGIX_resample;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_scalebias_hint")]
+    public const int GL_SGIX_scalebias_hint;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_shadow")]
+    public const int GL_SGIX_shadow;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_shadow_ambient")]
+    public const int GL_SGIX_shadow_ambient;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_sprite")]
+    public const int GL_SGIX_sprite;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_subsample")]
+    public const int GL_SGIX_subsample;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_tag_sample_buffer")]
+    public const int GL_SGIX_tag_sample_buffer;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_add_env")]
+    public const int GL_SGIX_texture_add_env;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_coordinate_clamp")]
+    public const int GL_SGIX_texture_coordinate_clamp;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_lod_bias")]
+    public const int GL_SGIX_texture_lod_bias;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_multi_buffer")]
+    public const int GL_SGIX_texture_multi_buffer;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_texture_scale_bias")]
+    public const int GL_SGIX_texture_scale_bias;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_vertex_preclip")]
+    public const int GL_SGIX_vertex_preclip;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGIX_ycrcb")]
+    public const int GL_SGIX_ycrcb;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGI_color_matrix")]
+    public const int GL_SGI_color_matrix;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGI_color_table")]
+    public const int GL_SGI_color_table;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGI_texture_color_table")]
+    public const int GL_SGI_texture_color_table;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGX_BINARY_IMG")]
+    public const int GL_SGX_BINARY_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SGX_PROGRAM_BINARY_IMG")]
+    public const int GL_SGX_PROGRAM_BINARY_IMG;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER")]
+    public const int GL_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_BINARY_DMP")]
+    public const int GL_SHADER_BINARY_DMP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_BINARY_FORMATS")]
+    public const int GL_SHADER_BINARY_FORMATS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_BINARY_VIV")]
+    public const int GL_SHADER_BINARY_VIV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_COMPILER")]
+    public const int GL_SHADER_COMPILER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_CONSISTENT_NV")]
+    public const int GL_SHADER_CONSISTENT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_GLOBAL_ACCESS_BARRIER_BIT_NV")]
+    public const int GL_SHADER_GLOBAL_ACCESS_BARRIER_BIT_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_ACCESS_BARRIER_BIT")]
+    public const int GL_SHADER_IMAGE_ACCESS_BARRIER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_ACCESS_BARRIER_BIT_EXT")]
+    public const int GL_SHADER_IMAGE_ACCESS_BARRIER_BIT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_ATOMIC")]
+    public const int GL_SHADER_IMAGE_ATOMIC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_LOAD")]
+    public const int GL_SHADER_IMAGE_LOAD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_IMAGE_STORE")]
+    public const int GL_SHADER_IMAGE_STORE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_INCLUDE_ARB")]
+    public const int GL_SHADER_INCLUDE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_OBJECT_ARB")]
+    public const int GL_SHADER_OBJECT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_OBJECT_EXT")]
+    public const int GL_SHADER_OBJECT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_OPERATION_NV")]
+    public const int GL_SHADER_OPERATION_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_SOURCE_LENGTH")]
+    public const int GL_SHADER_SOURCE_LENGTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BARRIER_BIT")]
+    public const int GL_SHADER_STORAGE_BARRIER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BLOCK")]
+    public const int GL_SHADER_STORAGE_BLOCK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER")]
+    public const int GL_SHADER_STORAGE_BUFFER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER_BINDING")]
+    public const int GL_SHADER_STORAGE_BUFFER_BINDING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT")]
+    public const int GL_SHADER_STORAGE_BUFFER_OFFSET_ALIGNMENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER_SIZE")]
+    public const int GL_SHADER_STORAGE_BUFFER_SIZE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_STORAGE_BUFFER_START")]
+    public const int GL_SHADER_STORAGE_BUFFER_START;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADER_TYPE")]
+    public const int GL_SHADER_TYPE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADE_MODEL")]
+    public const int GL_SHADE_MODEL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADING_LANGUAGE_VERSION")]
+    public const int GL_SHADING_LANGUAGE_VERSION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADING_LANGUAGE_VERSION_ARB")]
+    public const int GL_SHADING_LANGUAGE_VERSION_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADOW_AMBIENT_SGIX")]
+    public const int GL_SHADOW_AMBIENT_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHADOW_ATTENUATION_EXT")]
+    public const int GL_SHADOW_ATTENUATION_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHARED_TEXTURE_PALETTE_EXT")]
+    public const int GL_SHARED_TEXTURE_PALETTE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHARPEN_TEXTURE_FUNC_POINTS_SGIS")]
+    public const int GL_SHARPEN_TEXTURE_FUNC_POINTS_SGIS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHININESS")]
+    public const int GL_SHININESS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SHORT")]
+    public const int GL_SHORT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNALED")]
+    public const int GL_SIGNALED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNALED_APPLE")]
+    public const int GL_SIGNALED_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_ALPHA8_NV")]
+    public const int GL_SIGNED_ALPHA8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_ALPHA_NV")]
+    public const int GL_SIGNED_ALPHA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_HILO16_NV")]
+    public const int GL_SIGNED_HILO16_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_HILO8_NV")]
+    public const int GL_SIGNED_HILO8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_HILO_NV")]
+    public const int GL_SIGNED_HILO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_IDENTITY_NV")]
+    public const int GL_SIGNED_IDENTITY_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_INTENSITY8_NV")]
+    public const int GL_SIGNED_INTENSITY8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_INTENSITY_NV")]
+    public const int GL_SIGNED_INTENSITY_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_LUMINANCE8_ALPHA8_NV")]
+    public const int GL_SIGNED_LUMINANCE8_ALPHA8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_LUMINANCE8_NV")]
+    public const int GL_SIGNED_LUMINANCE8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_LUMINANCE_ALPHA_NV")]
+    public const int GL_SIGNED_LUMINANCE_ALPHA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_LUMINANCE_NV")]
+    public const int GL_SIGNED_LUMINANCE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_NORMALIZED")]
+    public const int GL_SIGNED_NORMALIZED;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGB8_NV")]
+    public const int GL_SIGNED_RGB8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGB8_UNSIGNED_ALPHA8_NV")]
+    public const int GL_SIGNED_RGB8_UNSIGNED_ALPHA8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGBA8_NV")]
+    public const int GL_SIGNED_RGBA8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGBA_NV")]
+    public const int GL_SIGNED_RGBA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGB_NV")]
+    public const int GL_SIGNED_RGB_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIGNED_RGB_UNSIGNED_ALPHA_NV")]
+    public const int GL_SIGNED_RGB_UNSIGNED_ALPHA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST")]
+    public const int GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_TEST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE")]
+    public const int GL_SIMULTANEOUS_TEXTURE_AND_DEPTH_WRITE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST")]
+    public const int GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_TEST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE")]
+    public const int GL_SIMULTANEOUS_TEXTURE_AND_STENCIL_WRITE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SINGLE_COLOR")]
+    public const int GL_SINGLE_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SINGLE_COLOR_EXT")]
+    public const int GL_SINGLE_COLOR_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_COMPONENTS1_NV")]
+    public const int GL_SKIP_COMPONENTS1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_COMPONENTS2_NV")]
+    public const int GL_SKIP_COMPONENTS2_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_COMPONENTS3_NV")]
+    public const int GL_SKIP_COMPONENTS3_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_COMPONENTS4_NV")]
+    public const int GL_SKIP_COMPONENTS4_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_DECODE_EXT")]
+    public const int GL_SKIP_DECODE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SKIP_MISSING_GLYPH_NV")]
+    public const int GL_SKIP_MISSING_GLYPH_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLICE_ACCUM_SUN")]
+    public const int GL_SLICE_ACCUM_SUN;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLIM10U_SGIX")]
+    public const int GL_SLIM10U_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLIM12S_SGIX")]
+    public const int GL_SLIM12S_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLIM8U_SGIX")]
+    public const int GL_SLIM8U_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE")]
+    public const int GL_SLUMINANCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8")]
+    public const int GL_SLUMINANCE8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_ALPHA8")]
+    public const int GL_SLUMINANCE8_ALPHA8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_ALPHA8_EXT")]
+    public const int GL_SLUMINANCE8_ALPHA8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_ALPHA8_NV")]
+    public const int GL_SLUMINANCE8_ALPHA8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_EXT")]
+    public const int GL_SLUMINANCE8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE8_NV")]
+    public const int GL_SLUMINANCE8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_ALPHA")]
+    public const int GL_SLUMINANCE_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_ALPHA_EXT")]
+    public const int GL_SLUMINANCE_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_ALPHA_NV")]
+    public const int GL_SLUMINANCE_ALPHA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_EXT")]
+    public const int GL_SLUMINANCE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SLUMINANCE_NV")]
+    public const int GL_SLUMINANCE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMALL_CCW_ARC_TO_NV")]
+    public const int GL_SMALL_CCW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMALL_CW_ARC_TO_NV")]
+    public const int GL_SMALL_CW_ARC_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH")]
+    public const int GL_SMOOTH;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_CUBIC_CURVE_TO_NV")]
+    public const int GL_SMOOTH_CUBIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_LINE_WIDTH_GRANULARITY")]
+    public const int GL_SMOOTH_LINE_WIDTH_GRANULARITY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_LINE_WIDTH_RANGE")]
+    public const int GL_SMOOTH_LINE_WIDTH_RANGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_POINT_SIZE_GRANULARITY")]
+    public const int GL_SMOOTH_POINT_SIZE_GRANULARITY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_POINT_SIZE_RANGE")]
+    public const int GL_SMOOTH_POINT_SIZE_RANGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SMOOTH_QUADRATIC_CURVE_TO_NV")]
+    public const int GL_SMOOTH_QUADRATIC_CURVE_TO_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE0_ALPHA")]
+    public const int GL_SOURCE0_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE0_ALPHA_EXT")]
+    public const int GL_SOURCE0_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE0_RGB")]
+    public const int GL_SOURCE0_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE0_RGB_EXT")]
+    public const int GL_SOURCE0_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE1_ALPHA")]
+    public const int GL_SOURCE1_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE1_ALPHA_EXT")]
+    public const int GL_SOURCE1_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE1_RGB")]
+    public const int GL_SOURCE1_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE1_RGB_EXT")]
+    public const int GL_SOURCE1_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE2_ALPHA")]
+    public const int GL_SOURCE2_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE2_ALPHA_EXT")]
+    public const int GL_SOURCE2_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE2_RGB")]
+    public const int GL_SOURCE2_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE2_RGB_EXT")]
+    public const int GL_SOURCE2_RGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE3_ALPHA_NV")]
+    public const int GL_SOURCE3_ALPHA_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SOURCE3_RGB_NV")]
+    public const int GL_SOURCE3_RGB_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPARE0_NV")]
+    public const int GL_SPARE0_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPARE0_PLUS_SECONDARY_COLOR_NV")]
+    public const int GL_SPARE0_PLUS_SECONDARY_COLOR_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPARE1_NV")]
+    public const int GL_SPARE1_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPECULAR")]
+    public const int GL_SPECULAR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPHERE_MAP")]
+    public const int GL_SPHERE_MAP;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPOT_CUTOFF")]
+    public const int GL_SPOT_CUTOFF;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPOT_DIRECTION")]
+    public const int GL_SPOT_DIRECTION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPOT_EXPONENT")]
+    public const int GL_SPOT_EXPONENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_AXIAL_SGIX")]
+    public const int GL_SPRITE_AXIAL_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_AXIS_SGIX")]
+    public const int GL_SPRITE_AXIS_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_EYE_ALIGNED_SGIX")]
+    public const int GL_SPRITE_EYE_ALIGNED_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_MODE_SGIX")]
+    public const int GL_SPRITE_MODE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_OBJECT_ALIGNED_SGIX")]
+    public const int GL_SPRITE_OBJECT_ALIGNED_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_SGIX")]
+    public const int GL_SPRITE_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SPRITE_TRANSLATION_SGIX")]
+    public const int GL_SPRITE_TRANSLATION_SGIX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SQUARE_NV")]
+    public const int GL_SQUARE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC0_ALPHA")]
+    public const int GL_SRC0_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC0_RGB")]
+    public const int GL_SRC0_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC1_ALPHA")]
+    public const int GL_SRC1_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC1_COLOR")]
+    public const int GL_SRC1_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC1_RGB")]
+    public const int GL_SRC1_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC2_ALPHA")]
+    public const int GL_SRC2_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC2_RGB")]
+    public const int GL_SRC2_RGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC_ALPHA")]
+    public const int GL_SRC_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC_ALPHA_SATURATE")]
+    public const int GL_SRC_ALPHA_SATURATE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRC_COLOR")]
+    public const int GL_SRC_COLOR;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB")]
+    public const int GL_SRGB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8")]
+    public const int GL_SRGB8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8_ALPHA8")]
+    public const int GL_SRGB8_ALPHA8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8_ALPHA8_EXT")]
+    public const int GL_SRGB8_ALPHA8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8_EXT")]
+    public const int GL_SRGB8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB8_NV")]
+    public const int GL_SRGB8_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_ALPHA")]
+    public const int GL_SRGB_ALPHA;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_ALPHA_EXT")]
+    public const int GL_SRGB_ALPHA_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_DECODE_ARB")]
+    public const int GL_SRGB_DECODE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_EXT")]
+    public const int GL_SRGB_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_READ")]
+    public const int GL_SRGB_READ;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SRGB_WRITE")]
+    public const int GL_SRGB_WRITE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STACK_OVERFLOW")]
+    public const int GL_STACK_OVERFLOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STACK_UNDERFLOW")]
+    public const int GL_STACK_UNDERFLOW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STANDARD_FONT_NAME_NV")]
+    public const int GL_STANDARD_FONT_NAME_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STATE_RESTORE")]
+    public const int GL_STATE_RESTORE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_ATI")]
+    public const int GL_STATIC_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_COPY")]
+    public const int GL_STATIC_COPY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_COPY_ARB")]
+    public const int GL_STATIC_COPY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_DRAW")]
+    public const int GL_STATIC_DRAW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_DRAW_ARB")]
+    public const int GL_STATIC_DRAW_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_READ")]
+    public const int GL_STATIC_READ;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STATIC_READ_ARB")]
+    public const int GL_STATIC_READ_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL")]
+    public const int GL_STENCIL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_ATTACHMENT")]
+    public const int GL_STENCIL_ATTACHMENT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_ATTACHMENT_EXT")]
+    public const int GL_STENCIL_ATTACHMENT_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_ATTACHMENT_OES")]
+    public const int GL_STENCIL_ATTACHMENT_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_FAIL")]
+    public const int GL_STENCIL_BACK_FAIL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_FAIL_ATI")]
+    public const int GL_STENCIL_BACK_FAIL_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_FUNC")]
+    public const int GL_STENCIL_BACK_FUNC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_FUNC_ATI")]
+    public const int GL_STENCIL_BACK_FUNC_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_OP_VALUE_AMD")]
+    public const int GL_STENCIL_BACK_OP_VALUE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_PASS_DEPTH_FAIL")]
+    public const int GL_STENCIL_BACK_PASS_DEPTH_FAIL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_PASS_DEPTH_FAIL_ATI")]
+    public const int GL_STENCIL_BACK_PASS_DEPTH_FAIL_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_PASS_DEPTH_PASS")]
+    public const int GL_STENCIL_BACK_PASS_DEPTH_PASS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_PASS_DEPTH_PASS_ATI")]
+    public const int GL_STENCIL_BACK_PASS_DEPTH_PASS_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_REF")]
+    public const int GL_STENCIL_BACK_REF;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_VALUE_MASK")]
+    public const int GL_STENCIL_BACK_VALUE_MASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BACK_WRITEMASK")]
+    public const int GL_STENCIL_BACK_WRITEMASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BITS")]
+    public const int GL_STENCIL_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_BUFFER_BIT")]
+    public const int GL_STENCIL_BUFFER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_CLEAR_TAG_VALUE_EXT")]
+    public const int GL_STENCIL_CLEAR_TAG_VALUE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_CLEAR_VALUE")]
+    public const int GL_STENCIL_CLEAR_VALUE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_COMPONENTS")]
+    public const int GL_STENCIL_COMPONENTS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_EXT")]
+    public const int GL_STENCIL_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_FAIL")]
+    public const int GL_STENCIL_FAIL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_FUNC")]
+    public const int GL_STENCIL_FUNC;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX")]
+    public const int GL_STENCIL_INDEX;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX1")]
+    public const int GL_STENCIL_INDEX1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX16")]
+    public const int GL_STENCIL_INDEX16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX16_EXT")]
+    public const int GL_STENCIL_INDEX16_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX1_EXT")]
+    public const int GL_STENCIL_INDEX1_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX1_OES")]
+    public const int GL_STENCIL_INDEX1_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX4")]
+    public const int GL_STENCIL_INDEX4;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX4_EXT")]
+    public const int GL_STENCIL_INDEX4_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX4_OES")]
+    public const int GL_STENCIL_INDEX4_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX8")]
+    public const int GL_STENCIL_INDEX8;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX8_EXT")]
+    public const int GL_STENCIL_INDEX8_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_INDEX8_OES")]
+    public const int GL_STENCIL_INDEX8_OES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_OP_VALUE_AMD")]
+    public const int GL_STENCIL_OP_VALUE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_PASS_DEPTH_FAIL")]
+    public const int GL_STENCIL_PASS_DEPTH_FAIL;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_PASS_DEPTH_PASS")]
+    public const int GL_STENCIL_PASS_DEPTH_PASS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_REF")]
+    public const int GL_STENCIL_REF;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_RENDERABLE")]
+    public const int GL_STENCIL_RENDERABLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_TAG_BITS_EXT")]
+    public const int GL_STENCIL_TAG_BITS_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_TEST")]
+    public const int GL_STENCIL_TEST;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_TEST_TWO_SIDE_EXT")]
+    public const int GL_STENCIL_TEST_TWO_SIDE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_VALUE_MASK")]
+    public const int GL_STENCIL_VALUE_MASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STENCIL_WRITEMASK")]
+    public const int GL_STENCIL_WRITEMASK;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STEREO")]
+    public const int GL_STEREO;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STORAGE_CACHED_APPLE")]
+    public const int GL_STORAGE_CACHED_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STORAGE_CLIENT_APPLE")]
+    public const int GL_STORAGE_CLIENT_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STORAGE_PRIVATE_APPLE")]
+    public const int GL_STORAGE_PRIVATE_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STORAGE_SHARED_APPLE")]
+    public const int GL_STORAGE_SHARED_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_COPY")]
+    public const int GL_STREAM_COPY;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_COPY_ARB")]
+    public const int GL_STREAM_COPY_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_DRAW")]
+    public const int GL_STREAM_DRAW;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_DRAW_ARB")]
+    public const int GL_STREAM_DRAW_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_READ")]
+    public const int GL_STREAM_READ;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_STREAM_READ_ARB")]
+    public const int GL_STREAM_READ_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SUBPIXEL_BITS")]
+    public const int GL_SUBPIXEL_BITS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SUBSAMPLE_DISTANCE_AMD")]
+    public const int GL_SUBSAMPLE_DISTANCE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SUBTRACT")]
+    public const int GL_SUBTRACT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SUBTRACT_ARB")]
+    public const int GL_SUBTRACT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SUB_ATI")]
+    public const int GL_SUB_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SUCCESS_NV")]
+    public const int GL_SUCCESS_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SURFACE_MAPPED_NV")]
+    public const int GL_SURFACE_MAPPED_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SURFACE_REGISTERED_NV")]
+    public const int GL_SURFACE_REGISTERED_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SURFACE_STATE_NV")]
+    public const int GL_SURFACE_STATE_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STQ_ATI")]
+    public const int GL_SWIZZLE_STQ_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STQ_DQ_ATI")]
+    public const int GL_SWIZZLE_STQ_DQ_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STRQ_ATI")]
+    public const int GL_SWIZZLE_STRQ_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STRQ_DQ_ATI")]
+    public const int GL_SWIZZLE_STRQ_DQ_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STR_ATI")]
+    public const int GL_SWIZZLE_STR_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SWIZZLE_STR_DR_ATI")]
+    public const int GL_SWIZZLE_STR_DR_ATI;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_CL_EVENT_ARB")]
+    public const int GL_SYNC_CL_EVENT_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_CL_EVENT_COMPLETE_ARB")]
+    public const int GL_SYNC_CL_EVENT_COMPLETE_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_CONDITION")]
+    public const int GL_SYNC_CONDITION;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_CONDITION_APPLE")]
+    public const int GL_SYNC_CONDITION_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FENCE")]
+    public const int GL_SYNC_FENCE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FENCE_APPLE")]
+    public const int GL_SYNC_FENCE_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FLAGS")]
+    public const int GL_SYNC_FLAGS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FLAGS_APPLE")]
+    public const int GL_SYNC_FLAGS_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FLUSH_COMMANDS_BIT")]
+    public const int GL_SYNC_FLUSH_COMMANDS_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_FLUSH_COMMANDS_BIT_APPLE")]
+    public const int GL_SYNC_FLUSH_COMMANDS_BIT_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_GPU_COMMANDS_COMPLETE")]
+    public const int GL_SYNC_GPU_COMMANDS_COMPLETE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_GPU_COMMANDS_COMPLETE_APPLE")]
+    public const int GL_SYNC_GPU_COMMANDS_COMPLETE_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_OBJECT_APPLE")]
+    public const int GL_SYNC_OBJECT_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_STATUS")]
+    public const int GL_SYNC_STATUS;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_STATUS_APPLE")]
+    public const int GL_SYNC_STATUS_APPLE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYNC_X11_FENCE_EXT")]
+    public const int GL_SYNC_X11_FENCE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_SYSTEM_FONT_NAME_NV")]
+    public const int GL_SYSTEM_FONT_NAME_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T")]
+    public const int GL_T;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_C3F_V3F")]
+    public const int GL_T2F_C3F_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_C4F_N3F_V3F")]
+    public const int GL_T2F_C4F_N3F_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_C4UB_V3F")]
+    public const int GL_T2F_C4UB_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_IUI_N3F_V2F_EXT")]
+    public const int GL_T2F_IUI_N3F_V2F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_IUI_N3F_V3F_EXT")]
+    public const int GL_T2F_IUI_N3F_V3F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_IUI_V2F_EXT")]
+    public const int GL_T2F_IUI_V2F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_IUI_V3F_EXT")]
+    public const int GL_T2F_IUI_V3F_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_N3F_V3F")]
+    public const int GL_T2F_N3F_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T2F_V3F")]
+    public const int GL_T2F_V3F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T4F_C4F_N3F_V4F")]
+    public const int GL_T4F_C4F_N3F_V4F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_T4F_V4F")]
+    public const int GL_T4F_V4F;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TABLE_TOO_LARGE")]
+    public const int GL_TABLE_TOO_LARGE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TABLE_TOO_LARGE_EXT")]
+    public const int GL_TABLE_TOO_LARGE_EXT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESSELLATION_FACTOR_AMD")]
+    public const int GL_TESSELLATION_FACTOR_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESSELLATION_MODE_AMD")]
+    public const int GL_TESSELLATION_MODE_AMD;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_OUTPUT_VERTICES")]
+    public const int GL_TESS_CONTROL_OUTPUT_VERTICES;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_PROGRAM_NV")]
+    public const int GL_TESS_CONTROL_PROGRAM_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_PROGRAM_PARAMETER_BUFFER_NV")]
+    public const int GL_TESS_CONTROL_PROGRAM_PARAMETER_BUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_SHADER")]
+    public const int GL_TESS_CONTROL_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_SHADER_BIT")]
+    public const int GL_TESS_CONTROL_SHADER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_SUBROUTINE")]
+    public const int GL_TESS_CONTROL_SUBROUTINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_SUBROUTINE_UNIFORM")]
+    public const int GL_TESS_CONTROL_SUBROUTINE_UNIFORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_CONTROL_TEXTURE")]
+    public const int GL_TESS_CONTROL_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_PROGRAM_NV")]
+    public const int GL_TESS_EVALUATION_PROGRAM_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_PROGRAM_PARAMETER_BUFFER_NV")]
+    public const int GL_TESS_EVALUATION_PROGRAM_PARAMETER_BUFFER_NV;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_SHADER")]
+    public const int GL_TESS_EVALUATION_SHADER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_SHADER_BIT")]
+    public const int GL_TESS_EVALUATION_SHADER_BIT;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_SUBROUTINE")]
+    public const int GL_TESS_EVALUATION_SUBROUTINE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_SUBROUTINE_UNIFORM")]
+    public const int GL_TESS_EVALUATION_SUBROUTINE_UNIFORM;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_EVALUATION_TEXTURE")]
+    public const int GL_TESS_EVALUATION_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_GEN_MODE")]
+    public const int GL_TESS_GEN_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_GEN_POINT_MODE")]
+    public const int GL_TESS_GEN_POINT_MODE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_GEN_SPACING")]
+    public const int GL_TESS_GEN_SPACING;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TESS_GEN_VERTEX_ORDER")]
+    public const int GL_TESS_GEN_VERTEX_ORDER;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE")]
+    public const int GL_TEXTURE;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE0")]
+    public const int GL_TEXTURE0;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE0_ARB")]
+    public const int GL_TEXTURE0_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE1")]
+    public const int GL_TEXTURE1;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE10")]
+    public const int GL_TEXTURE10;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE10_ARB")]
+    public const int GL_TEXTURE10_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE11")]
+    public const int GL_TEXTURE11;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE11_ARB")]
+    public const int GL_TEXTURE11_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE12")]
+    public const int GL_TEXTURE12;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE12_ARB")]
+    public const int GL_TEXTURE12_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE13")]
+    public const int GL_TEXTURE13;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE13_ARB")]
+    public const int GL_TEXTURE13_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE14")]
+    public const int GL_TEXTURE14;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE14_ARB")]
+    public const int GL_TEXTURE14_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE15")]
+    public const int GL_TEXTURE15;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE15_ARB")]
+    public const int GL_TEXTURE15_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE16")]
+    public const int GL_TEXTURE16;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE16_ARB")]
+    public const int GL_TEXTURE16_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE17")]
+    public const int GL_TEXTURE17;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE17_ARB")]
+    public const int GL_TEXTURE17_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE18")]
+    public const int GL_TEXTURE18;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE18_ARB")]
+    public const int GL_TEXTURE18_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE19")]
+    public const int GL_TEXTURE19;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE19_ARB")]
+    public const int GL_TEXTURE19_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE1_ARB")]
+    public const int GL_TEXTURE1_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE2")]
+    public const int GL_TEXTURE2;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE20")]
+    public const int GL_TEXTURE20;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE20_ARB")]
+    public const int GL_TEXTURE20_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE21")]
+    public const int GL_TEXTURE21;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE21_ARB")]
+    public const int GL_TEXTURE21_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE22")]
+    public const int GL_TEXTURE22;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE22_ARB")]
+    public const int GL_TEXTURE22_ARB;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE23")]
+    public const int GL_TEXTURE23;
+    [CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE23_ARB")]
+    public const int GL_TEXTURE23_ARB;
 	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE24")]
 	public const int GL_TEXTURE24;
 	[CCode (cheader_filename = "GL/glew.h", cname = "GL_TEXTURE24_ARB")]

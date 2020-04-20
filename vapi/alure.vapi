@@ -24,49 +24,49 @@
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="AL/alure.h")]
 namespace Alure
 {
-	[CCode (cname = "alureGetVersion")]
+    [CCode (cname = "alureGetVersion")]
     public void get_version(out uint major, out uint minor);
-	[CCode (cname = "alureGetErrorString")]
+    [CCode (cname = "alureGetErrorString")]
     public unowned string? get_error_string();
 
-	[CCode (cname = "alureGetDeviceNames")]
+    [CCode (cname = "alureGetDeviceNames")]
     public unowned string?[] get_device_names(bool all, out int count);
-	[CCode (cname = "alureFreeDeviceNames")]
+    [CCode (cname = "alureFreeDeviceNames")]
     public void free_device_names([CCode (array_length = false)]string?[] names);
 
-	[CCode (cname = "alureInitDevice")]
+    [CCode (cname = "alureInitDevice")]
     public bool init_device(string? name, [CCode (array_length = false)]int[]? attribs);
-	[CCode (cname = "alureShutdownDevice")]
+    [CCode (cname = "alureShutdownDevice")]
     public bool shutdown_device();
 
-	[CCode (cname = "alureGetSampleFormat")]
+    [CCode (cname = "alureGetSampleFormat")]
     public int get_sample_format(uint channels, uint bits, uint floatbits);
 
-	[CCode (cname = "alureSleep")]
+    [CCode (cname = "alureSleep")]
     public bool sleep(float duration);
 
-	[CCode (cname = "alureStreamSizeIsMicroSec")]
+    [CCode (cname = "alureStreamSizeIsMicroSec")]
     public bool stream_size_is_microsec(bool useus);
 
-	[CCode (cname = "alureCreateBufferFromFile")]
+    [CCode (cname = "alureCreateBufferFromFile")]
     public uint create_buffer_from_file(string fname);
-	[CCode (cname = "alureCreateBufferFromMemory")]
+    [CCode (cname = "alureCreateBufferFromMemory")]
     public uint create_buffer_from_memory(uint8[] data);
-	[CCode (cname = "alureBufferDataFromFile")]
+    [CCode (cname = "alureBufferDataFromFile")]
     public bool buffer_data_from_file(string fname, uint buffer);
-	[CCode (cname = "alureBufferDataFromMemory")]
+    [CCode (cname = "alureBufferDataFromMemory")]
     public bool buffer_data_from_memory(uint8[] fdata, uint buffer);
 
     public delegate uint CallbackCreateStream(void* userdata, uint8[] data, uint bytes);
 
-	[CCode (cname = "alureStream")]
-	[Compact]
-	public class Stream {
-		[CCode (cname = "alureCreateStreamFromFile")]
-		public Stream.from_file(string fname, int chunk_length, int num_bufs, uint[] bufs);
+    [CCode (cname = "alureStream")]
+    [Compact]
+    public class Stream {
+        [CCode (cname = "alureCreateStreamFromFile")]
+        public Stream.from_file(string fname, int chunk_length, int num_bufs, uint[] bufs);
         
         [CCode (cname = "alureCreateStreamFromMemory")]
-		public Stream.from_memory(uint8[] data, int chunk_length, int num_bufs, uint[] bufs);
+        public Stream.from_memory(uint8[] data, int chunk_length, int num_bufs, uint[] bufs);
     
         [CCode (cname = "alureCreateStreamFromStaticMemory")]
         public Stream.from_static_memory(uint8[] data, int chunk_length, int num_bufs, uint[] bufs);
@@ -98,23 +98,23 @@ namespace Alure
         public bool destroy(int num_bufs, uint[] bufs);    
     }
     
-	[CCode (cname = "alureUpdate")]
+    [CCode (cname = "alureUpdate")]
     public void update();
-	[CCode (cname = "alureUpdateInterval")]
+    [CCode (cname = "alureUpdateInterval")]
     public bool update_interval(float interval);
 
     public delegate void Callback(void* userdata, uint source);
 
-	[CCode (cname = "alurePlaySourceStream")]
+    [CCode (cname = "alurePlaySourceStream")]
     public bool play_source_stream(uint source, Stream stream, int num_bufs, int loopcount,
                                    Callback eos_callback, void* userdata);
     [CCode (cname = "alurePlaySource")]
     public bool play_source(uint source, Callback callback, void* userdata);
     [CCode (cname = "alureStopSource")]
     public bool stop_source(uint source, bool run_callback);
-	[CCode (cname = "alurePauseSource")]
+    [CCode (cname = "alurePauseSource")]
     public bool pause_source(uint source);
-	[CCode (cname = "alureResumeSource")]
+    [CCode (cname = "alureResumeSource")]
     public bool resume_source(uint source);
 
     public delegate void* OpenFile(string name);
@@ -124,7 +124,7 @@ namespace Alure
     public delegate bool Rewind(void* instance);
     public delegate void Close(void* instance);
 
-	[CCode (cname = "alureInstallDecodeCallbacks")]
+    [CCode (cname = "alureInstallDecodeCallbacks")]
     public bool install_decode_callbacks(
         int index,
         OpenFile open_file,
