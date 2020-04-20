@@ -17,6 +17,7 @@ bodhi_dependencies = [
     dependency('glfw3'),  
 #   dependency('glew'),  
     dependency('physfs'),  
+    dependency('alure'),  
 
     m_dep
 ]
