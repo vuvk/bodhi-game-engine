@@ -17,6 +17,7 @@ bodhi_dependencies = [
     dependency('glfw3'),  
 #   dependency('glew'),  
     dependency('physfs'),  
+    dependency('openal'),  
     dependency('alure'),  
 
     m_dep
@@ -51,7 +52,7 @@ bodhi_sources = files(
 )
 
 bodhi_exec = files(    
-    'examples/Vala/02_file_operations.vala',
+    'examples/Vala/03_sound_and_music.vala',
 )
 
 libbodhi = library(

@@ -22,14 +22,14 @@
  */
 
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="AL/alure.h")]
-namespace Alure
+namespace Alure 
 {
     [CCode (cname = "alureGetVersion")]
     public void get_version(out uint major, out uint minor);
     [CCode (cname = "alureGetErrorString")]
     public unowned string? get_error_string();
 
-    [CCode (cname = "alureGetDeviceNames")]
+    [CCode (cname = "alureGetDeviceNames", array_length = false)]
     public unowned string?[] get_device_names(bool all, out int count);
     [CCode (cname = "alureFreeDeviceNames")]
     public void free_device_names([CCode (array_length = false)]string?[] names);
