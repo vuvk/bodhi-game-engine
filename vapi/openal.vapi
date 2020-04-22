@@ -78,15 +78,15 @@ namespace AL
         
     /** "no distance model" or "no buffer" */
     [CCode (cname="AL_NONE")]
-    public const int NONE;
+    public const ALenum NONE;
     
     /** Boolean False. */
     [CCode (cname="AL_FALSE")]
-    public const int FALSE;
+    public const ALenum FALSE;
     
     /** Boolean True. */
     [CCode (cname="AL_TRUE")]
-    public const int TRUE;
+    public const ALenum TRUE;
 
     /**
     * Relative source.
@@ -97,7 +97,7 @@ namespace AL
     * Specifies if the Source has relative coordinates.
     */
     [CCode (cname="AL_SOURCE_RELATIVE")]
-    public const int SOURCE_RELATIVE;
+    public const ALenum SOURCE_RELATIVE;
 
     /**
     * Inner cone angle, in degrees.
@@ -108,7 +108,7 @@ namespace AL
     * The angle covered by the inner cone, where the source will not attenuate.
     */
     [CCode (cname="AL_CONE_INNER_ANGLE")]
-    public const int CONE_INNER_ANGLE;
+    public const ALenum CONE_INNER_ANGLE;
 
     /**
     * Outer cone angle, in degrees.
@@ -119,7 +119,7 @@ namespace AL
     * attenuated.
     */
     [CCode (cname="AL_CONE_OUTER_ANGLE")]
-    public const int CONE_OUTER_ANGLE;
+    public const ALenum CONE_OUTER_ANGLE;
 
     /**
     * Source pitch.
@@ -130,7 +130,7 @@ namespace AL
     * A multiplier for the frequency (sample rate) of the source's buffer.
     */
     [CCode (cname="AL_PITCH")]
-    public const int PITCH;
+    public const ALenum PITCH;
 
     /**
     * Source or listener position.
@@ -147,7 +147,7 @@ namespace AL
     * coordinate.
     */
     [CCode (cname="AL_POSITION")]
-    public const int POSITION;
+    public const ALenum POSITION;
 
     /**
     * Source direction.
@@ -158,7 +158,7 @@ namespace AL
     * A zero-length vector specifies an omni-directional source (cone is ignored).
     */
     [CCode (cname="AL_DIRECTION")]
-    public const int DIRECTION;
+    public const ALenum DIRECTION;
 
     /**
     * Source or listener velocity.
@@ -168,7 +168,7 @@ namespace AL
     * Specifies the current velocity in local space.
     */
     [CCode (cname="AL_VELOCITY")]
-    public const int VELOCITY;
+    public const ALenum VELOCITY;
 
     /**
     * Source looping.
@@ -179,7 +179,7 @@ namespace AL
     * Specifies whether source is looping.
     */
     [CCode (cname="AL_LOOPING")]
-    public const int LOOPING;
+    public const ALenum LOOPING;
 
     /**
     * Source buffer.
@@ -189,7 +189,7 @@ namespace AL
     * Specifies the buffer to provide sound samples.
     */
     [CCode (cname="AL_BUFFER")]
-    public const int BUFFER;
+    public const ALenum BUFFER;
 
     /**
     * Source or listener gain.
@@ -204,7 +204,7 @@ namespace AL
     * silent.
     */
     [CCode (cname="AL_GAIN")]
-    public const int GAIN;
+    public const ALenum GAIN;
 
     /**
     * Minimum source gain.
@@ -215,7 +215,7 @@ namespace AL
     * applied (if applicable).
     */
     [CCode (cname="AL_MIN_GAIN")]
-    public const int MIN_GAIN;
+    public const ALenum MIN_GAIN;
 
     /**
     * Maximum source gain.
@@ -226,7 +226,7 @@ namespace AL
     * applied (if applicable).
     */
     [CCode (cname="AL_MAX_GAIN")]
-    public const int MAX_GAIN;
+    public const ALenum MAX_GAIN;
 
     /**
     * Listener orientation.
@@ -239,7 +239,7 @@ namespace AL
     * Both vectors are in local space.
     */
     [CCode (cname="AL_ORIENTATION")]
-    public const int ORIENTATION;
+    public const ALenum ORIENTATION;
 
     /**
     * Source state (query only).
@@ -247,17 +247,16 @@ namespace AL
     * Range: [AL_INITIAL, AL_PLAYING, AL_PAUSED, AL_STOPPED]
     */
     [CCode (cname="AL_SOURCE_STATE")]
-    public const int SOURCE_STATE;
+    public const ALenum SOURCE_STATE;
 
     /** Source state value. */
-    [CCode (cname="AL_INITIAL")]
-    public const int INITIAL;
-    [CCode (cname="AL_PLAYING")]
-    public const int PLAYING;
-    [CCode (cname="AL_PAUSED")]
-    public const int PAUSED;
-    [CCode (cname="AL_STOPPED")]
-    public const int STOPPED;
+    [CCode (cname = "ALint", cprefix = "AL_", has_type_id = false)]
+    public enum SourceState {
+        INITIAL,
+        PLAYING,
+        PAUSED,
+        STOPPED
+    }
 
     /**
     * Source Buffer Queue size (query only).
@@ -267,7 +266,7 @@ namespace AL
     * removed with alSourceUnqueueBuffers.
     */
     [CCode (cname="AL_BUFFERS_QUEUED")]
-    public const int BUFFERS_QUEUED;
+    public const ALenum BUFFERS_QUEUED;
 
     /**
     * Source Buffer Queue processed count (query only).
@@ -280,7 +279,7 @@ namespace AL
     * play again for when the source loops.
     */
     [CCode (cname="AL_BUFFERS_PROCESSED")]
-    public const int BUFFERS_PROCESSED;
+    public const ALenum BUFFERS_PROCESSED;
 
     /**
     * Source reference distance.
@@ -293,7 +292,7 @@ namespace AL
     * At 0.0, no distance attenuation ever occurs on non-linear attenuation models.
     */
     [CCode (cname="AL_REFERENCE_DISTANCE")]
-    public const int REFERENCE_DISTANCE;
+    public const ALenum REFERENCE_DISTANCE;
 
     /**
     * Source rolloff factor.
@@ -306,7 +305,7 @@ namespace AL
     * At 0.0, no distance attenuation ever occurs.
     */
     [CCode (cname="AL_ROLLOFF_FACTOR")]
-    public const int ROLLOFF_FACTOR;
+    public const ALenum ROLLOFF_FACTOR;
 
     /**
     * Outer cone gain.
@@ -318,7 +317,7 @@ namespace AL
     * outer cone.
     */
     [CCode (cname="AL_CONE_OUTER_GAIN")]
-    public const int CONE_OUTER_GAIN;
+    public const ALenum CONE_OUTER_GAIN;
 
     /**
     * Source maximum distance.
@@ -331,17 +330,17 @@ namespace AL
     * distance models with a default rolloff factor.
     */
     [CCode (cname="AL_MAX_DISTANCE")]
-    public const int MAX_DISTANCE;
+    public const ALenum MAX_DISTANCE;
 
-    /** Source buffer position, in seconds */
-    [CCode (cname="AL_SEC_OFFSET")]
-    public const int SEC_OFFSET;
-    /** Source buffer position, in sample frames */
-    [CCode (cname="AL_SAMPLE_OFFSET")]
-    public const int SAMPLE_OFFSET;
-    /** Source buffer position, in bytes */
-    [CCode (cname="AL_BYTE_OFFSET")]
-    public const int BYTE_OFFSET;
+    [CCode (cname = "ALenum", cprefix = "AL_", has_type_id = false)]
+    public enum SourceBufferPosition {
+        /** Source buffer position, in seconds */
+        SEC_OFFSET,
+        /** Source buffer position, in sample frames */
+        SAMPLE_OFFSET,
+        /** Source buffer position, in bytes */
+        BYTE_OFFSET
+    }
 
     /**
     * Source type (query only).
@@ -357,87 +356,78 @@ namespace AL
     * AL_BUFFER.
     */
     [CCode (cname="AL_SOURCE_TYPE")]
-    public const int SOURCE_TYPE;
+    public const ALenum SOURCE_TYPE;
 
     /** Source type value. */
-    [CCode (cname="AL_STATIC")]
-    public const int STATIC;
-    [CCode (cname="AL_STREAMING")]
-    public const int STREAMING;
-    [CCode (cname="AL_UNDETERMINED")]
-    public const int UNDETERMINED;
+    [CCode (cname = "ALint", cprefix = "AL_", has_type_id = false)]
+    public enum SourceType {
+        STATIC,
+        STREAMING,
+        UNDETERMINED
+    }
 
     /** Buffer format specifier. */
-    [CCode (cname="AL_FORMAT_MONO8")]
-    public const int FORMAT_MONO8;
-    [CCode (cname="AL_FORMAT_MONO16")]
-    public const int FORMAT_MONO16;
-    [CCode (cname="AL_FORMAT_STEREO8")]
-    public const int FORMAT_STEREO8;
-    [CCode (cname="AL_FORMAT_STEREO16")]
-    public const int FORMAT_STEREO16;
+    [CCode (cname = "ALenum", cprefix = "AL_FORMAT_", has_type_id = false)]
+    public enum BufferFormat {
+        MONO8,
+        MONO16,
+        STEREO8,
+        STEREO16
+    }
 
     /** Buffer frequency (query only). */
     [CCode (cname="AL_FREQUENCY")]
-    public const int FREQUENCY;
+    public const ALenum FREQUENCY;
     /** Buffer bits per sample (query only). */
     [CCode (cname="AL_BITS")]
-    public const int BITS;
+    public const ALenum BITS;
     /** Buffer channel count (query only). */
     [CCode (cname="AL_CHANNELS")]
-    public const int CHANNELS;
+    public const ALenum CHANNELS;
     /** Buffer data size (query only). */
     [CCode (cname="AL_SIZE")]
-    public const int SIZE;
+    public const ALenum SIZE;
 
     /**
     * Buffer state.
     *
     * Not for public use.
     */
-    [CCode (cname="AL_UNUSED")]
-    public const int UNUSED;
-    [CCode (cname="AL_PENDING")]
-    public const int PENDING;
-    [CCode (cname="AL_PROCESSED")]
-    public const int PROCESSED;
+    [CCode (cname = "ALenum", cprefix = "AL_", has_type_id = false)]
+    public enum BufferState {
+        UNUSED,
+        PENDING,
+        PROCESSED
+    }
 
-    /** No error. */
-    [CCode (cname="AL_NO_ERROR")]
-    public const int NO_ERROR;
-
-    /** Invalid name paramater passed to AL call. */
-    [CCode (cname="AL_INVALID_NAME")]
-    public const int INVALID_NAME;
-
-    /** Invalid enum parameter passed to AL call. */
-    [CCode (cname="AL_INVALID_ENUM")]
-    public const int INVALID_ENUM;
-
-    /** Invalid value parameter passed to AL call. */
-    [CCode (cname="AL_INVALID_VALUE")]
-    public const int INVALID_VALUE;
-
-    /** Illegal AL call. */
-    [CCode (cname="AL_INVALID_OPERATION")]
-    public const int INVALID_OPERATION;
-
-    /** Not enough memory. */
-    [CCode (cname="AL_OUT_OF_MEMORY")]
-    public const int OUT_OF_MEMORY;
+    [CCode (cname = "ALenum", cprefix = "AL_", has_type_id = false)]
+    public enum Error {
+        /** No error. */
+        NO_ERROR,
+        /** Invalid name paramater passed to AL call. */
+        INVALID_NAME,
+        /** Invalid enum parameter passed to AL call. */
+        INVALID_ENUM,
+        /** Invalid value parameter passed to AL call. */
+        INVALID_VALUE,    
+        /** Illegal AL call. */
+        INVALID_OPERATION
+        /** Not enough memory. */,
+        OUT_OF_MEMORY
+    }
 
     /** Context string: Vendor ID. */
     [CCode (cname="AL_VENDOR")]
-    public const int VENDOR;
+    public const ALenum VENDOR;
     /** Context string: Version. */
     [CCode (cname="AL_VERSION")]
-    public const int VERSION;
+    public const ALenum VERSION;
     /** Context string: Renderer ID. */
     [CCode (cname="AL_RENDERER")]
-    public const int RENDERER;
+    public const ALenum RENDERER;
     /** Context string: Space-separated extension list. */
     [CCode (cname="AL_EXTENSIONS")]
-    public const int EXTENSIONS;
+    public const ALenum EXTENSIONS;
 
     /**
     * Doppler scale.
@@ -448,7 +438,7 @@ namespace AL
     * Scale for source and listener velocities.
     */
     [CCode (cname="AL_DOPPLER_FACTOR")]
-    public const int DOPPLER_FACTOR;
+    public const ALenum DOPPLER_FACTOR;
 
     /**
     * Doppler velocity (deprecated).
@@ -456,7 +446,7 @@ namespace AL
     * A multiplier applied to the Speed of Sound.
     */
     [CCode (cname="AL_DOPPLER_VELOCITY")]
-    public const int DOPPLER_VELOCITY;
+    public const ALenum DOPPLER_VELOCITY;
 
     /**
     * Speed of Sound, in units per second.
@@ -468,7 +458,7 @@ namespace AL
     * doppler effect.
     */
     [CCode (cname="AL_SPEED_OF_SOUND")]
-    public const int SPEED_OF_SOUND;
+    public const ALenum SPEED_OF_SOUND;
 
     /**
     * Distance attenuation model.
@@ -489,22 +479,18 @@ namespace AL
     * distance calculated is clamped between the reference and max distances.
     */
     [CCode (cname="AL_DISTANCE_MODEL")]
-    public const int DISTANCE_MODEL;
+    public const ALenum DISTANCE_MODEL;
 
     /** Distance model value. */
-    [CCode (cname="AL_INVERSE_DISTANCE")]
-    public const int INVERSE_DISTANCE;
-    [CCode (cname="AL_INVERSE_DISTANCE_CLAMPED")]
-    public const int INVERSE_DISTANCE_CLAMPED;
-    [CCode (cname="AL_LINEAR_DISTANCE")]
-    public const int LINEAR_DISTANCE;
-    [CCode (cname="AL_LINEAR_DISTANCE_CLAMPED")]
-    public const int LINEAR_DISTANCE_CLAMPED;
-    [CCode (cname="AL_EXPONENT_DISTANCE")]
-    public const int EXPONENT_DISTANCE;
-    [CCode (cname="AL_EXPONENT_DISTANCE_CLAMPED")]
-    public const int EXPONENT_DISTANCE_CLAMPED;
-
+    [CCode (cname = "ALint", cprefix = "AL_", has_type_id = false)]
+    public enum DistanceModel {
+        INVERSE_DISTANCE,
+        INVERSE_DISTANCE_CLAMPED,
+        LINEAR_DISTANCE,
+        LINEAR_DISTANCE_CLAMPED,
+        EXPONENT_DISTANCE,
+        EXPONENT_DISTANCE_CLAMPED
+    }
 
     [CCode (cname="alDopplerFactor")]
     public void doppler_factor(ALfloat value);
@@ -513,7 +499,7 @@ namespace AL
     [CCode (cname="alSpeedOfSound")]
     public void speed_of_sound(ALfloat value);
     [CCode (cname="alDistanceModel")]
-    public void distance_model(ALenum distanceModel);
+    public void distance_model(DistanceModel distanceModel);
 
     /** Renderer State management. */
     [CCode (cname="alEnable")]
@@ -565,6 +551,7 @@ namespace AL
     public ALenum get_enum_value(string ename);
 
     [Compact]
+    [CCode (has_type_id = false)]
     public class Listener {
         /** Set Listener parameters */
         [CCode (cname="alListenerf")]
@@ -596,6 +583,7 @@ namespace AL
     }
 
     [SimpleType]
+    [CCode (has_type_id = false)]
     public struct Source : ALuint { 
         /** Set Source parameters. */
         [CCode (cname="alSourcef")]
@@ -670,6 +658,7 @@ namespace AL
     public ALboolean is_source(Source source);
 
     [SimpleType]
+    [CCode (has_type_id = false)]
     public struct Buffer : ALuint { 
         /** Specifies the data to be copied into a buffer */
         [CCode (cname="alBufferData")]
@@ -718,4 +707,5 @@ namespace AL
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="AL/alc.h")]
 namespace ALC
 {
+
 }
