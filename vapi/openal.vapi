@@ -707,5 +707,247 @@ namespace AL
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="AL/alc.h")]
 namespace ALC
 {
+    /** 8-bit boolean */
+    [CCode (cname="ALCboolean")]
+    public struct ALCboolean : int8 {}
 
+    /** character */
+    [CCode (cname="ALCchar")]
+    public struct ALCchar : char {}
+
+    /** signed 8-bit 2's complement integer */
+    [CCode (cname="ALCbyte")]
+    public struct ALCbyte : int8 {}
+
+    /** unsigned 8-bit integer */
+    [CCode (cname="ALCubyte")]
+    public struct ALCubyte : uint8 {}
+
+    /** signed 16-bit 2's complement integer */
+    [CCode (cname="ALCshort")]
+    public struct ALCshort : int16 {}
+
+    /** unsigned 16-bit integer */
+    [CCode (cname="ALCushort")]
+    public struct ALCushort : uint16 {}
+
+    /** signed 32-bit 2's complement integer */
+    [CCode (cname="ALCint")]
+    public struct ALCint : int32 {}
+
+    /** unsigned 32-bit integer */
+    [CCode (cname="ALCuint")]
+    public struct ALCuint : uint32 {}
+
+    /** non-negative 32-bit binary integer size */
+    [CCode (cname="ALCsizei")]
+    public struct ALCsizei : int32 {}
+
+    /** enumerated 32-bit value */
+    [CCode (cname="ALCenum")]
+    public struct ALCenum : int32 {}
+
+    /** 32-bit IEEE754 floating-point */
+    [CCode (cname="ALCfloat")]
+    public struct ALCfloat : float {}
+
+    /** 64-bit IEEE754 floating-point */
+    [CCode (cname="ALCdouble")]
+    public struct ALCdouble : double {}
+
+    /** void type (for opaque pointers only) */
+    [CCode (cname="ALCvoid")]
+    public struct ALCvoid {}
+
+    /** Boolean False. */
+    [CCode (cname="ALC_FALSE")]
+    public const ALCenum FALSE;
+
+    /** Boolean True. */
+    [CCode (cname="ALC_TRUE")]
+    public const ALCenum TRUE;
+
+    /** Context attribute: <int> Hz. */
+    [CCode (cname="ALC_FREQUENCY")]
+    public const ALCenum FREQUENCY;
+
+    /** Context attribute: <int> Hz. */
+    [CCode (cname="ALC_REFRESH")]
+    public const ALCenum REFRESH;
+
+    /** Context attribute: AL_TRUE or AL_FALSE. */
+    [CCode (cname="ALC_SYNC")]
+    public const ALCenum SYNC;
+
+    /** Context attribute: <int> requested Mono (3D) Sources. */
+    [CCode (cname="ALC_MONO_SOURCES")]
+    public const ALCenum MONO_SOURCES;
+
+    /** Context attribute: <int> requested Stereo Sources. */
+    [CCode (cname="ALC_STEREO_SOURCES")]
+    public const ALCenum STEREO_SOURCES;
+
+    [CCode (cname = "ALCenum", cprefix = "ALC_", has_type_id = false)]
+    public enum Error {
+        /** No error. */
+        NO_ERROR,
+        /** Invalid device handle. */
+        INVALID_DEVICE,
+        /** Invalid context handle. */
+        INVALID_CONTEXT,
+        /** Invalid enum parameter passed to an ALC call. */
+        INVALID_ENUM,
+        /** Invalid value parameter passed to an ALC call. */
+        INVALID_VALUE,
+        /** Out of memory. */
+        OUT_OF_MEMORY
+    }
+
+    /** Runtime ALC version. */
+    [CCode (cname="ALC_MAJOR_VERSION")]
+    public const ALCenum MAJOR_VERSION;
+    [CCode (cname="ALC_MINOR_VERSION")]
+    public const ALCenum MINOR_VERSION;
+
+    /** Context attribute list properties. */
+    [CCode (cname="ALC_ATTRIBUTES_SIZE")]
+    public const ALCenum ATTRIBUTES_SIZE;
+    [CCode (cname="ALC_ALL_ATTRIBUTES")]
+    public const ALCenum ALL_ATTRIBUTES;
+
+    /** String for the default device specifier. */
+    [CCode (cname="ALC_DEFAULT_DEVICE_SPECIFIER")]
+    public const ALCenum DEFAULT_DEVICE_SPECIFIER;
+
+    /**
+    * String for the given device's specifier.
+    *
+    * If device handle is NULL, it is instead a null-char separated list of
+    * strings of known device specifiers (list ends with an empty string).
+    */
+    [CCode (cname="ALC_DEVICE_SPECIFIER")]
+    public const ALCenum DEVICE_SPECIFIER;
+    /** String for space-separated list of ALC extensions. */
+    [CCode (cname="ALC_EXTENSIONS")]
+    public const ALCenum EXTENSIONS;
+
+    /** Capture extension */
+    [CCode (cname="ALC_EXT_CAPTURE")]
+    public const ALCenum EXT_CAPTURE;
+
+    /**
+    * String for the given capture device's specifier.
+    *
+    * If device handle is NULL, it is instead a null-char separated list of
+    * strings of known capture device specifiers (list ends with an empty string).
+    */
+    [CCode (cname="ALC_CAPTURE_DEVICE_SPECIFIER")]
+    public const ALCenum CAPTURE_DEVICE_SPECIFIER;
+    /** String for the default capture device specifier. */
+    [CCode (cname="ALC_CAPTURE_DEFAULT_DEVICE_SPECIFIER")]
+    public const ALCenum CAPTURE_DEFAULT_DEVICE_SPECIFIER;
+    /** Number of sample frames available for capture. */
+    [CCode (cname="ALC_CAPTURE_SAMPLES")]
+    public const ALCenum CAPTURE_SAMPLES;
+
+    /** Enumerate All extension */
+    [CCode (cname="ALC_ENUMERATE_ALL_EXT")]
+    public const ALCenum ENUMERATE_ALL_EXT;
+    /** String for the default extended device specifier. */
+    [CCode (cname="ALC_DEFAULT_ALL_DEVICES_SPECIFIER")]
+    public const ALCenum DEFAULT_ALL_DEVICES_SPECIFIER;
+
+    /**
+    * String for the given extended device's specifier.
+    *
+    * If device handle is NULL, it is instead a null-char separated list of
+    * strings of known extended device specifiers (list ends with an empty string).
+    */
+    [CCode (cname="ALC_ALL_DEVICES_SPECIFIER")]
+    public const ALCenum ALL_DEVICES_SPECIFIER;
+
+
+    /** Context management. */
+    [Compact]
+    [CCode (has_type_id = false, free_function="alcDestroyContext")]
+    public class Context {
+        [CCode (cname="alcCreateContext")]
+        public Context (Device device, [CCode (array_length = false)] ALCint[] attrlist);
+
+        [CCode (cname="alcMakeContextCurrent")]
+        public bool make_current();
+
+        [CCode (cname="alcProcessContext")]
+        public void process();
+
+        [CCode (cname="alcSuspendContext")]
+        public void suspend();
+
+        [CCode (cname="alcDestroyContext")]
+        public void destroy();
+
+        [CCode (cname="alcGetCurrentContext")]
+        public Context get_current_context();
+
+        [CCode (cname="alcGetContextsDevice")]
+        public Device get_contexts_device();
+    }
+
+    /** Device management. */
+    [Compact]
+    [CCode (has_type_id = false, free_function="alcCloseDevice")]
+    public class Device {
+        [CCode (cname="alcOpenDevice")]
+        public Device (string devicename);
+
+        /**
+        * Extension support.
+        *
+        * Query for the presence of an extension, and obtain any appropriate
+        * function pointers and enum values.
+        */
+        [CCode (cname="alcIsExtensionPresent")]
+        public bool is_extension_present(string extname);
+        [CCode (cname="alcGetProcAddress")]
+        public void* get_proc_address(string funcname);
+        [CCode (cname="alcGetEnumValue")]
+        public ALCenum get_enum_value(string enumname);
+
+        /** Query function. */
+        [CCode (cname="alcGetString")]
+        public unowned string? get_string(ALCenum param);
+        [CCode (cname="alcGetIntegerv")]
+        public void get_integerv(ALCenum param, ALCsizei size, [CCode (array_length = false)] ALCint[] values);
+
+        /**
+        * Error support.
+        *
+        * Obtain the most recent Device error.
+        */
+        [CCode (cname="alcGetError")]
+        public Error get_error();
+
+        [CCode (cname="alcCloseDevice")]
+        public bool destroy();
+    }
+
+    [Compact]
+    [CCode (has_type_id = false, free_function="alcCaptureCloseDevice")]
+    public class CaptureDevice : Device {
+        /** Capture function. */
+        [CCode (cname="alcCaptureOpenDevice")]
+        public CaptureDevice(string devicename, ALCuint frequency, ALCenum format, ALCsizei buffersize);
+        
+        [CCode (cname="alcCaptureCloseDevice")]
+        public bool destroy();
+
+        [CCode (cname="alcCaptureStart")]
+        public void start();
+
+        [CCode (cname="alcCaptureStop")]
+        public void stop();
+
+        [CCode (cname="alcCaptureSamples")]
+        public void samples([CCode (array_length = false)] uint8[] buffer, ALCsizei samples);
+    }
 }
