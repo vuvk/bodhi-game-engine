@@ -507,7 +507,7 @@ namespace AL
     [CCode (cname="alDisable")]
     public void disable(ALenum capability);
     [CCode (cname="alIsEnabled")]
-    public ALboolean is_enabled(ALenum capability);
+    public bool is_enabled(ALenum capability);
 
     /** State retrieval. */
     [CCode (cname="alGetString")]
@@ -521,7 +521,7 @@ namespace AL
     [CCode (cname="alGetDoublev")]
     public void get_doublev(ALenum param, [CCode (array_length = false)]ALdouble[] values);
     [CCode (cname="alGetBoolean")]
-    public ALboolean get_boolean(ALenum param);
+    public bool get_boolean(ALenum param);
     [CCode (cname="alGetInteger")]
     public ALint get_integer(ALenum param);
     [CCode (cname="alGetFloat")]
@@ -544,7 +544,7 @@ namespace AL
     * pointers and enum values.
     */
     [CCode (cname="alIsExtensionPresent")]
-    public ALboolean is_extension_present(string extname);
+    public bool is_extension_present(string extname);
     [CCode (cname="alGetProcAddress")]
     public void* get_proc_address(string fname);
     [CCode (cname="alGetEnumValue")]
@@ -655,7 +655,7 @@ namespace AL
     public void delete_sources(ALsizei n, [CCode (array_length = false)]Source[] sources);
     /** Verify a handle is a valid Source. */
     [CCode (cname="alIsSource")]
-    public ALboolean is_source(Source source);
+    public bool is_source(ALuint source);
 
     [SimpleType]
     [CCode (has_type_id = false)]
@@ -701,7 +701,7 @@ namespace AL
     public void delete_buffers(ALsizei n, [CCode (array_length = false)]Buffer[] buffers);
     /** Verify a handle is a valid Buffer */
     [CCode (cname="alIsBuffer")]
-    public ALboolean is_buffer(Buffer buffer);
+    public bool is_buffer(ALuint buffer);
 }
 
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="AL/alc.h")]
