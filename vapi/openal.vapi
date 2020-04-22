@@ -564,35 +564,38 @@ namespace AL
     [CCode (cname="alGetEnumValue")]
     public ALenum get_enum_value(string ename);
 
-    /** Set Listener parameters */
-    [CCode (cname="alListenerf")]
-    public void listenerf(ALenum param, ALfloat value);
-    [CCode (cname="alListener3f")]
-    public void listener3f(ALenum param, ALfloat value1, ALfloat value2, ALfloat value3);
-    [CCode (cname="alListenerfv")]
-    public void listenerfv(ALenum param, [CCode (array_length = false)]ALfloat[] values);
-    [CCode (cname="alListeneri")]
-    public void listeneri(ALenum param, ALint value);
-    [CCode (cname="alListener3i")]
-    public void listener3i(ALenum param, ALint value1, ALint value2, ALint value3);
-    [CCode (cname="alListeneriv")]
-    public void listeneriv(ALenum param, [CCode (array_length = false)]ALint[] values);
+    [Compact]
+    public class Listener {
+        /** Set Listener parameters */
+        [CCode (cname="alListenerf")]
+        public static void set_paramf(ALenum param, ALfloat value);
+        [CCode (cname="alListener3f")]
+        public static void set_param3f(ALenum param, ALfloat value1, ALfloat value2, ALfloat value3);
+        [CCode (cname="alListenerfv")]
+        public static void set_paramfv(ALenum param, [CCode (array_length = false)]ALfloat[] values);
+        [CCode (cname="alListeneri")]
+        public static void set_parami(ALenum param, ALint value);
+        [CCode (cname="alListener3i")]
+        public static void set_param3i(ALenum param, ALint value1, ALint value2, ALint value3);
+        [CCode (cname="alListeneriv")]
+        public static void set_paramiv(ALenum param, [CCode (array_length = false)]ALint[] values);
+    
+        /** Get Listener parameters */
+        [CCode (cname="alGetListenerf")]
+        public static void get_paramf(ALenum param, out ALfloat value);
+        [CCode (cname="alGetListener3f")]
+        public static void get_param3f(ALenum param, out ALfloat value1, out ALfloat value2, out ALfloat value3);
+        [CCode (cname="alGetListenerfv")]
+        public static void get_paramfv(ALenum param, [CCode (array_length = false)]ALfloat[] values);
+        [CCode (cname="alGetListeneri")]
+        public static void get_parami(ALenum param, out ALint value);
+        [CCode (cname="alGetListener3i")]
+        public static void get_param3i(ALenum param, out ALint value1, out ALint value2, out ALint value3);
+        [CCode (cname="alGetListeneriv")]
+        public static void get_paramiv(ALenum param, [CCode (array_length = false)]ALint[] values);    
+    }
 
-    /** Get Listener parameters */
-    [CCode (cname="alGetListenerf")]
-    public void get_listenerf(ALenum param, out ALfloat value);
-    [CCode (cname="alGetListener3f")]
-    public void get_listener3f(ALenum param, out ALfloat value1, out ALfloat value2, out ALfloat value3);
-    [CCode (cname="alGetListenerfv")]
-    public void get_listenerfv(ALenum param, [CCode (array_length = false)]ALfloat[] values);
-    [CCode (cname="alGetListeneri")]
-    public void get_listeneri(ALenum param, out ALint value);
-    [CCode (cname="alGetListener3i")]
-    public void get_listener3i(ALenum param, out ALint value1, out ALint value2, out ALint value3);
-    [CCode (cname="alGetListeneriv")]
-    public void get_listeneriv(ALenum param, [CCode (array_length = false)]ALint[] values);
-
-
+    [SimpleType]
     public struct Source : ALuint { 
         /** Set Source parameters. */
         [CCode (cname="alSourcef")]
@@ -649,8 +652,10 @@ namespace AL
         public void pause();
 
         /** Queue buffers onto a source */
+        [CCode (cname="alSourceQueueBuffers")]
         public void queue_buffers(ALsizei nb, [CCode (array_length = false)]ALuint[] buffers);
         /** Unqueue processed buffers from a source */
+        [CCode (cname="alSourceUnqueueBuffers")]
         public void unqueue_buffers(ALsizei nb, [CCode (array_length = false)]ALuint[] buffers);
     }
 
@@ -664,6 +669,7 @@ namespace AL
     [CCode (cname="alIsSource")]
     public ALboolean is_source(Source source);
 
+    [SimpleType]
     public struct Buffer : ALuint { 
         /** Specifies the data to be copied into a buffer */
         [CCode (cname="alBufferData")]
