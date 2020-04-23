@@ -11,7 +11,7 @@ m_dep = cc.find_library('m', required : false)
 bodhi_dependencies = [
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
-    dependency('gio-2.0'),    
+#   dependency('gio-2.0'),    
     dependency('glesv2'),    
 #   dependency('gl'),   
     dependency('glfw3'),  

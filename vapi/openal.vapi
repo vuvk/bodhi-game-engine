@@ -583,7 +583,7 @@ namespace AL
     }
 
     [SimpleType]
-    [CCode (has_type_id = false)]
+    [CCode (cname="ALuint", has_type_id = false)]
     public struct Source : ALuint { 
         /** Set Source parameters. */
         [CCode (cname="alSourcef")]
@@ -650,15 +650,21 @@ namespace AL
     /** Create Source objects. */
     [CCode (cname="alGenSources")]
     public void gen_sources(ALsizei n, [CCode (array_length = false)]Source[] sources);
+    /** Create Source object. */
+    [CCode (cname="alGenSources")]
+    public void gen_source(ALsizei n, out Source source);
     /** Delete Source objects. */
     [CCode (cname="alDeleteSources")]
     public void delete_sources(ALsizei n, [CCode (array_length = false)]Source[] sources);
+    /** Delete Source object. */
+    [CCode (cname="alDeleteSources")]
+    public void delete_source(ALsizei n, out Source source);
     /** Verify a handle is a valid Source. */
     [CCode (cname="alIsSource")]
     public bool is_source(ALuint source);
 
     [SimpleType]
-    [CCode (has_type_id = false)]
+    [CCode (cname="ALuint", has_type_id = false)]
     public struct Buffer : ALuint { 
         /** Specifies the data to be copied into a buffer */
         [CCode (cname="alBufferData")]
@@ -696,9 +702,15 @@ namespace AL
     /** Create Buffer objects */
     [CCode (cname="alGenBuffers")]
     public void gen_buffers(ALsizei n, [CCode (array_length = false)]Buffer[] buffers);
+    /** Create Buffer object */
+    [CCode (cname="alGenBuffers")]
+    public void gen_buffer(ALsizei n, out Buffer buffer);
     /** Delete Buffer objects */
     [CCode (cname="alDeleteBuffers")]
     public void delete_buffers(ALsizei n, [CCode (array_length = false)]Buffer[] buffers);
+    /** Delete Buffer object */
+    [CCode (cname="alDeleteBuffers")]
+    public void delete_buffer(ALsizei n, out Buffer buffer);
     /** Verify a handle is a valid Buffer */
     [CCode (cname="alIsBuffer")]
     public bool is_buffer(ALuint buffer);
