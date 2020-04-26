@@ -22,7 +22,7 @@ namespace Bodhi {
                         state = States.NOT_INITIALIZED;
                         return false;
                     }
-    
+
                     stdout.printf("Initialized PhysFS, supported archive formats:\n");
                     foreach (string format in get_supported_archives()) {
                         stdout.printf(format + "\n");
@@ -53,7 +53,7 @@ namespace Bodhi {
             if (!is_initialized()) {
                 return false;
             }
-        
+
             if (!PHYSFS.mount(path, mount_point, append_to_path)) {
                 stderr.printf("Failed to add \"" + path + "\"\n");
                 print_last_error();
@@ -68,18 +68,18 @@ namespace Bodhi {
 
             if (is_initialized()) {
                 unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
-                
+
                 for (int i = 0;; ++i) {
                     PHYSFS.ArchiveInfo* info = infos[i];
                     if (info == null) {
                         break;
                     }
-                    
-                    lines += info->extension + ": " + 
+
+                    lines += info->extension + ": " +
                              info->description + " [" +
                              info->author + " - " +
                              info->url + "]";
-                }                
+                }
             }
 
             return lines;
@@ -90,13 +90,13 @@ namespace Bodhi {
 
             if (is_initialized()) {
                 unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
-                
+
                 for (int i = 0;; ++i) {
                     PHYSFS.ArchiveInfo* info = infos[i];
                     if (info == null) {
                         break;
                     }
-                    
+
                     types += info->extension;
                 }
             }
@@ -109,9 +109,9 @@ namespace Bodhi {
 
             if (is_initialized()) {
                 unowned string?[] files = PHYSFS.enumerate_files(dir);
-                for (int i = 0; files[i] != null; ++i) {                
+                for (int i = 0; files[i] != null; ++i) {
                     string file = dir + files[i];
-    
+
                     if (path_is_folder(file)) {
                         foreach (string path in get_list_directory(file + "/")) {
                             paths += path;
@@ -155,7 +155,7 @@ namespace Bodhi {
                     print_last_error();
                 }
             }
-            
+
             return false;
         }
 
@@ -179,8 +179,8 @@ namespace Bodhi {
 
         public static bool error_exists() {
             if (is_initialized()) {
-                return (PHYSFS.get_last_error_code() != PHYSFS.ErrorCode.OK);  
-            }          
+                return (PHYSFS.get_last_error_code() != PHYSFS.ErrorCode.OK);
+            }
             return false;
         }
 
@@ -223,7 +223,7 @@ namespace Bodhi {
         * File class
         */
         public class File : Object {
-            private unowned PHYSFS.File* handle;
+            private PHYSFS.File handle;
             private string name = "";
 
             internal File(string path, string mode = "r") {
@@ -234,7 +234,7 @@ namespace Bodhi {
                     stderr.printf(get_last_error() + "\n");
                 }
             }
-            
+
             ~File() {
                 close();
             }
@@ -246,10 +246,10 @@ namespace Bodhi {
                         return stat.filetype == PHYSFS.FileType.DIRECTORY;
                     }
                 }
-    
+
                 return false;
             }
-    
+
             public bool is_file() {
                 if (is_initialized()) {
                     PHYSFS.Stat stat;
@@ -257,7 +257,7 @@ namespace Bodhi {
                         return stat.filetype == PHYSFS.FileType.REGULAR;
                     }
                 }
-                
+
                 return false;
             }
 
@@ -265,7 +265,7 @@ namespace Bodhi {
                 if (!is_file()) {
                     return "";
                 }
-                
+
                 long pos = name.last_index_of(".");
                 string ext = name.substring(pos, name.length - pos);
 
@@ -277,8 +277,8 @@ namespace Bodhi {
             }
 
             public int64 size() {
-                if (is_file()) {        
-                    return (PHYSFS.file_length(this.handle));
+                if (is_file()) {
+                    return handle.length();
                 }
 
                 return -1;
@@ -289,10 +289,10 @@ namespace Bodhi {
                     buffer.resize((int)size());
                     return read(buffer, buffer.length);
                 }
-            
+
                 return -1;
             }
-        
+
             public bool open(string mode = "r") {
                 if (!is_initialized()) {
                     return false;
@@ -301,15 +301,15 @@ namespace Bodhi {
                 /*if (!is_file()) {
                     return false;
                 }*/
-            
+
                 if (this.handle != null) {
                     close();
                 }
-                
+
                 switch (mode) {
-                    case "r": this.handle = PHYSFS.open_read(this.name); break;
-                    case "w": this.handle = PHYSFS.open_write(this.name); break;
-                    case "a": this.handle = PHYSFS.open_append(this.name); break;
+                    case "r": handle = new PHYSFS.File.open_read  (this.name); break;
+                    case "w": handle = new PHYSFS.File.open_write (this.name); break;
+                    case "a": handle = new PHYSFS.File.open_append(this.name); break;
                 }
                 flush();
 
@@ -318,41 +318,41 @@ namespace Bodhi {
 
             public bool flush() {
                 if (this.handle != null && is_initialized()) {
-                    return PHYSFS.flush(this.handle);
+                    return handle.flush();
                 }
                 return false;
             }
 
             public void close() {
-                if (this.handle != null && is_initialized()) {   
-                    if (!PHYSFS.close(this.handle)) {
+                /*if (this.handle != null && is_initialized()) {
+                    if (!handle.close()) {
                         stderr.printf("Error when close file: " + get_last_error() + "\n");
                     }
-                }
-            
+                }*/
+
                 this.name = "";
                 this.handle = null;
             }
 
             public int64 tell() {
-                if (this.handle != null && is_file()) {       
-                    return (PHYSFS.tell(this.handle));
+                if (this.handle != null && is_file()) {
+                    return handle.tell();
                 }
 
                 return -1;
             }
 
             public int seek(uint64 position) {
-                if (this.handle != null && is_file()) {     
-                    return (PHYSFS.seek(this.handle, position));
+                if (this.handle != null && is_file()) {
+                    return handle.seek(position);
                 }
 
                 return -1;
             }
-            
+
             public int64 read(uint8[] buffer, uint64 length) {
                 if (this.handle != null && is_file()) {
-                    return PHYSFS.read_bytes(handle, buffer, length);
+                    return handle.read_bytes(buffer, length);
                 }
                 return -1;
             }
@@ -366,7 +366,7 @@ namespace Bodhi {
                             if (buffer[0] == '\0' || buffer[0] == '\n') {
                                 break;
                             }
-                            
+
                             if (buffer[0] != '\r') {
                                 line += buffer[0].to_string();
                             }
@@ -391,7 +391,7 @@ namespace Bodhi {
 
             public int64 write(uint8[] buffer) {
                 if (this.handle != null && is_file()) {
-                    int64 writed = PHYSFS.write_bytes(handle, buffer);
+                    int64 writed = handle.write_bytes(buffer);
                     if (writed != buffer.length) {
                         stderr.printf("Error when write data to file! " + get_last_error() + "\n");
                     }
@@ -425,13 +425,13 @@ namespace Bodhi {
                         bytes = -1;
                     }
                     return bytes;
-                }                
+                }
                 return -1;
             }
 
             public bool eof() {
                 if (this.handle != null && is_file()) {
-                    return (PHYSFS.eof(this.handle));
+                    return handle.eof();
                 }
                 return true;
             }
