@@ -5,20 +5,20 @@ PROJECT_VERSION='0.1'
 gnome = import('gnome')
 
 # need math?
-cc = meson.get_compiler('c') 
-m_dep = cc.find_library('m', required : false) 
+cc = meson.get_compiler('c')
+m_dep = cc.find_library('m', required : false)
 
 bodhi_dependencies = [
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
-#   dependency('gio-2.0'),    
-    dependency('glesv2'),    
-#   dependency('gl'),   
-    dependency('glfw3'),  
-#   dependency('glew'),  
-    dependency('physfs'),  
-    dependency('openal'),  
-    dependency('alure'),  
+#   dependency('gio-2.0'),
+    dependency('glesv2'),
+#   dependency('gl'),
+    dependency('glfw3'),
+#   dependency('glew'),
+    dependency('physfs'),
+    dependency('openal'),
+    dependency('alure'),
 
     m_dep
 ]
@@ -51,14 +51,10 @@ bodhi_sources = files(
     'src/system/engine.vala',
 )
 
-bodhi_exec = files(    
-    'examples/Vala/03_sound_and_music.vala',
-)
-
 libbodhi = library(
-    'Bodhi', 
+    'Bodhi',
     vala_header: 'Bodhi.h',
-    sources: bodhi_sources, 
+    sources: bodhi_sources,
     dependencies: bodhi_dependencies,
 )
 
@@ -69,13 +65,21 @@ libbodhi_dep = declare_dependency(link_with: libbodhi)
 #    libbodhi,
 #    include_directories: bodhi_inc,
 #    header: meson.current_source_dir() / 'build/bodhi.h',
-#    sources: bodhi_sources, 
+#    sources: bodhi_sources,
 #    dependencies: bodhi_dependencies,
 #    namespace: 'Bodhi',
 #    nsversion: PROJECT_VERSION,
 #    install: true,
 #)
 
-executable('app_name',
-  sources: bodhi_exec,
+executable('01_init_and_input',
+  sources: 'examples/Vala/01_init_and_input.vala',
+  dependencies: [bodhi_dependencies, libbodhi_dep])
+
+executable('02_file_operations',
+  sources: 'examples/Vala/02_file_operations.vala',
+  dependencies: [bodhi_dependencies, libbodhi_dep])
+
+executable('03_sound_and_music',
+  sources: 'examples/Vala/03_sound_and_music.vala',
   dependencies: [bodhi_dependencies, libbodhi_dep])
