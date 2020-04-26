@@ -25,7 +25,7 @@ using AL;
 using ALC;
 
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="AL/alure.h")]
-namespace Alure 
+namespace Alure
 {
     [CCode (cname = "alureGetVersion")]
     public void get_version(out ALuint major, out ALuint minor);
@@ -60,6 +60,7 @@ namespace Alure
     [CCode (cname = "alureBufferDataFromMemory")]
     public bool buffer_data_from_memory(ALubyte[] fdata, ALuint buffer);
 
+    [CCode (has_target = false)]
     public delegate ALuint CallbackCreateStream(void* userdata, [CCode (array_length = false)] ALubyte[] data, ALuint bytes);
 
     [Compact]
@@ -67,17 +68,17 @@ namespace Alure
     public class Stream {
         [CCode (cname = "alureCreateStreamFromFile")]
         public Stream.from_file(string fname, ALsizei chunk_length, ALsizei num_bufs = 0, [CCode (array_length = false)] ALuint[]? bufs = null);
-        
+
         [CCode (cname = "alureCreateStreamFromMemory")]
         public Stream.from_memory(ALubyte[] data, ALsizei chunk_length, ALsizei num_bufs = 0, [CCode (array_length = false)] ALuint[]? bufs = null);
-    
+
         [CCode (cname = "alureCreateStreamFromStaticMemory")]
         public Stream.from_static_memory(ALubyte[] data, ALsizei chunk_length, ALsizei num_bufs = 0, [CCode (array_length = false)] ALuint[]? bufs = null);
-        
+
         [CCode (cname = "alureCreateStreamFromCallback")]
         public Stream.from_callback(CallbackCreateStream callback,
                                     ALenum format, ALuint samplerate,
-                                    ALsizei chunk_length, ALsizei num_bufs = 0, 
+                                    ALsizei chunk_length, ALsizei num_bufs = 0,
                                     [CCode (array_length = false)] ALuint[]? bufs = null);
 
         [CCode (cname = "alureGetStreamLength")]
@@ -88,21 +89,21 @@ namespace Alure
 
         [CCode (cname = "alureBufferDataFromStream")]
         public ALsizei buffer_data(ALsizei num_bufs, [CCode (array_length = false)]ALuint[] bufs);
-        
+
         [CCode (cname = "alureRewindStream")]
         public bool rewind();
-        
+
         [CCode (cname = "alureSetStreamOrder")]
         public bool set_order(ALuint order);
-        
+
         [CCode (cname = "alureSetStreamPatchset")]
         public bool set_patchset(string patchset);
-        
+
         /** you must destroy stream manually! */
         [CCode (cname = "alureDestroyStream")]
-        public bool destroy(ALsizei num_bufs = 0, [CCode (array_length = false)] ALuint[]? bufs = null);    
+        public bool destroy(ALsizei num_bufs = 0, [CCode (array_length = false)] ALuint[]? bufs = null);
     }
-    
+
     [CCode (cname = "alureUpdate")]
     public void update();
     [CCode (cname = "alureUpdateInterval")]
@@ -121,36 +122,53 @@ namespace Alure
     [CCode (cname = "alureResumeSource")]
     public bool resume_source(ALuint source);
 
-    public delegate void*  OpenFile(string name);
-    public delegate void*  OpenMem(ALubyte[] buffer);
-    public delegate bool   GetFormat(void* instance, out ALenum format, out ALuint samplerate, out ALuint blocksize);
-    public delegate ALuint Decode(void* instance, [CCode (array_length = false)]ALubyte[] data, ALuint bytes);
-    public delegate bool   Rewind(void* instance);
-    public delegate void   Close(void* instance);
+    [CCode (has_target = false)]
+    public delegate void*  OpenFileCallback(string name);
+    [CCode (has_target = false)]
+    public delegate void*  OpenMemCallback(ALubyte[] buffer);
+    [CCode (has_target = false)]
+    public delegate bool   GetFormatCallback(void* instance, out ALenum format, out ALuint samplerate, out ALuint blocksize);
+    [CCode (has_target = false)]
+    public delegate ALuint DecodeCallback(void* instance, [CCode (array_length = false)]ALubyte[] data, ALuint bytes);
+    [CCode (has_target = false)]
+    public delegate bool   RewindCallback(void* instance);
+    [CCode (has_target = false)]
+    public delegate void   CloseCallback(void* instance);
 
     [CCode (cname = "alureInstallDecodeCallbacks")]
     public bool install_decode_callbacks(
         int index,
-        OpenFile open_file,
-        OpenMem open_mem,
-        GetFormat get_format,
-        Decode decode,
-        Rewind rewind,
-        Close close
+        OpenFileCallback  open_file,
+        OpenMemCallback   open_mem,
+        GetFormatCallback get_format,
+        DecodeCallback    decode,
+        RewindCallback    rewind,
+        CloseCallback     close
     );
-    
-    public delegate void* Open(string filename, ALuint mode);
-    public delegate ALsizei Read(void* handle, [CCode (array_length = false)] ALubyte[] buf, ALuint bytes);
-    public delegate ALsizei Write(void* handle, [CCode (array_length = false)] ALubyte[] buf, ALuint bytes);
-    public delegate int64 Seek(void* handle, int64 offset, int whence);
+
+    [CCode (cname = "int")]
+    public enum Seek {
+        SET = 0,
+        CUR = -1,
+        END = -2
+    }
+
+    [CCode (has_target = false)]
+    public delegate void*   OpenCallback(string filename, ALuint mode = 0);
+    [CCode (has_target = false)]
+    public delegate ALsizei ReadCallback(void* handle, [CCode (array_length = false)] ALubyte[] buf, ALuint bytes);
+    [CCode (has_target = false)]
+    public delegate ALsizei WriteCallback(void* handle, [CCode (array_length = false)] ALubyte[] buf, ALuint bytes);
+    [CCode (has_target = false)]
+    public delegate int64   SeekCallback(void* handle, int64 offset, int whence);
 
     [CCode (cname = "alureSetIOCallbacks")]
     public bool set_io_callbacks(
-        Open open,
-        Close close,
-        Read read,
-        Write write,
-        Seek seek
+        OpenCallback  open,
+        CloseCallback close,
+        ReadCallback  read,
+        WriteCallback write,
+        SeekCallback  seek
     );
 
     [CCode (cname = "alureGetProcAddress")]
