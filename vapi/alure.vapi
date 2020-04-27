@@ -109,12 +109,13 @@ namespace Alure
     [CCode (cname = "alureUpdateInterval")]
     public bool update_interval(ALfloat interval);
 
+    [CCode (has_target = false)]
     public delegate void Callback(void* userdata, ALuint source);
 
     [CCode (cname = "alurePlaySourceStream")]
-    public bool play_source_stream(ALuint source, Stream stream, ALsizei num_bufs, ALsizei loopcount, Callback eos_callback);
+    public bool play_source_stream(ALuint source, Stream stream, ALsizei num_bufs, ALsizei loopcount, Callback eos_callback, void* userdata = null);
     [CCode (cname = "alurePlaySource")]
-    public bool play_source(ALuint source, Callback callback);
+    public bool play_source(ALuint source, Callback callback, void* userdata = null);
     [CCode (cname = "alureStopSource")]
     public bool stop_source(ALuint source, bool run_callback);
     [CCode (cname = "alurePauseSource")]
