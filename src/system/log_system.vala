@@ -1,16 +1,26 @@
 namespace Bodhi {
-    
-    public class Log : Object {
+
+    public class Log : SubSystem {
 
         private string? output_file_name;
         private bool write_to_file;
         private FileSystem.File? output_file;
 
         internal Log(string? output_file_name = null, bool truncate_file = false) {
-            set_write_to_file(output_file_name, truncate_file);
+            base();
+            subsystem_name = "Log System";
         }
 
         ~Log() {
+            deinit();
+        }
+
+        protected override Errors init() {
+            return Errors.NO_ERROR;
+        }
+
+        internal override void deinit() {
+            base.deinit();
             set_write_to_file(null);
         }
 
@@ -49,7 +59,7 @@ namespace Bodhi {
                 }
             }
         }
-        
+
         public void write(string message) {
             if (message.length  > 0) {
                 stdout.printf(message);

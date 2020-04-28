@@ -2,13 +2,14 @@
 namespace Bodhi {
     /** ERROR CODES */
     public enum Errors {
-        NO_ERROR               = 0,
-        ENGINE_NOT_CREATED     = 1,
-        ENGINE_NOT_STARTED     = 2,
-        WINDOW_NOT_CREATED     = 3,
-        RENDERER_NOT_CREATED   = 4,
-        SCENE_NOT_CREATED      = 5,
-        INPUT_NOT_CREATED      = 6
+        NO_ERROR,
+        ENGINE_NOT_CREATED,
+        ENGINE_NOT_STARTED,
+        WINDOW_NOT_CREATED,
+        RENDERER_NOT_CREATED,
+        SCENE_NOT_CREATED,
+        INPUT_NOT_CREATED,
+        AUDIO_NOT_CREATED
     }
 
     /** maximums */

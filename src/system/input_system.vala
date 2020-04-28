@@ -2,17 +2,12 @@
 using GLFW;
 
 namespace Bodhi {
-    public class Input : Object {
+    public class Input : SubSystem {
 
-        public enum States {
-            NOT_CREATED,
-            CREATED;
-        }
-
-		public enum Keys {
+        public enum Keys {
             /* The unknown key */
             UNKNOWN           = -1,
-             
+
             /* Printable keys */
             SPACE             = 32,
             APOSTROPHE        = 39,  /* ' */
@@ -64,7 +59,7 @@ namespace Bodhi {
             GRAVE_ACCENT      = 96,  /* ` */
             WORLD_1           = 161, /* non-US #1 */
             WORLD_2           = 162, /* non-US #2 */
-             
+
             /* Function keys */
             ESCAPE            = 256,
             ENTER             = 257,
@@ -137,37 +132,43 @@ namespace Bodhi {
             RIGHT_SUPER       = 347,
             MENU              = 348
         }
-        
+
         private unowned GLFW.Window? glfw_window;
         private static double mouse_pos_x = 0;
         private static double mouse_pos_y = 0;
         private static double prev_mouse_pos_x = 0;
         private static double prev_mouse_pos_y = 0;
 
-        private static double mouse_scroll_xoffset = 0; 
+        private static double mouse_scroll_xoffset = 0;
         private static double mouse_scroll_yoffset = 0;
-        private static double prev_mouse_scroll_xoffset = 0; 
+        private static double prev_mouse_scroll_xoffset = 0;
         private static double prev_mouse_scroll_yoffset = 0;
         private static bool mouse_hor_scrolling  = false;
         private static bool mouse_vert_scrolling = false;
 
         private static bool show_mouse_cursor = true;
-        private States state = States.NOT_CREATED;
 
         internal Input() {
+            base();
+            subsystem_name = "Input System";
+        }
+
+        ~Input() {
+            deinit();
+        }
+
+        protected override Errors init() {
             if (!Engine.is_running()) {
                 stderr.printf("I can't create input system if engine is not started!\n");
+                return Errors.ENGINE_NOT_STARTED;
             } else {
                 var window = Engine.get_window();
-                glfw_window = window.get_glfw_window();
 
+                glfw_window = window.get_glfw_window();
                 glfw_window.set_scroll_callback(scroll_mouse_callback);
 
-                state = States.CREATED;
+                return Errors.NO_ERROR;
             }
-        }
-        
-        ~Input() {
         }
 
         /** Update state of input. Use this on every step! */
@@ -175,7 +176,7 @@ namespace Bodhi {
 
             prev_mouse_pos_x = mouse_pos_x;
             prev_mouse_pos_y = mouse_pos_y;
-            
+
             mouse_hor_scrolling  = (prev_mouse_scroll_xoffset != mouse_scroll_xoffset);
             mouse_vert_scrolling = (prev_mouse_scroll_yoffset != mouse_scroll_yoffset);
 
@@ -184,7 +185,7 @@ namespace Bodhi {
 
             glfw_window.get_cursor_pos(out mouse_pos_x, out mouse_pos_y);
             //glfw_window.get_scroll_offset(out mouse_scroll_xoffset, out mouse_scroll_yoffset);
-            
+
             GLFW.poll_events();
 
             if (mouse_hor_scrolling) {
@@ -193,10 +194,6 @@ namespace Bodhi {
             if (mouse_vert_scrolling) {
                 prev_mouse_scroll_yoffset = mouse_scroll_yoffset = 0;
             }
-        }
-
-        public States get_state() {
-            return state;
         }
 
         /*----------*/
@@ -208,11 +205,11 @@ namespace Bodhi {
         }
         /** Is any key up? */
         public bool is_key_release(Keys key) {
-            return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.RELEASE;        
+            return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.RELEASE;
         }
         /** Is this key pressed? */
         public bool is_key_repeat(Keys key) {
-            return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.REPEAT;            
+            return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.REPEAT;
         }
 
         /*-------*/
@@ -224,46 +221,46 @@ namespace Bodhi {
         }
         /** mouse moving now? */
         public bool is_mouse_move() {
-            return (prev_mouse_pos_x != mouse_pos_x) || 
+            return (prev_mouse_pos_x != mouse_pos_x) ||
                    (prev_mouse_pos_y != mouse_pos_y);
         }
         /** Is left mouse button down? */
         public bool is_mouse_left_press() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.PRESS;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.PRESS;
         }
         /** Is left mouse button up? */
         public bool is_mouse_left_release() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.RELEASE;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.RELEASE;
         }
         /** Is left mouse button pressed? */
         public bool is_mouse_left_repeat() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.REPEAT;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.REPEAT;
         }
 
         /** Is right mouse button down? */
         public bool is_mouse_right_press() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.PRESS;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.PRESS;
         }
         /** Is right mouse button up? */
         public bool is_mouse_right_release() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.RELEASE;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.RELEASE;
         }
         /** Is right mouse button pressed? */
         public bool is_mouse_right_repeat() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.REPEAT;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.REPEAT;
         }
 
         /** Is middle mouse button down? */
         public bool is_mouse_middle_press() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.PRESS;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.PRESS;
         }
         /** Is middle mouse button up? */
         public bool is_mouse_middle_release() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.RELEASE;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.RELEASE;
         }
         /** Is middle mouse button pressed? */
         public bool is_mouse_middle_repeat() {
-            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.REPEAT;   
+            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.REPEAT;
         }
 
         /** get cursor showing */
@@ -279,10 +276,10 @@ namespace Bodhi {
             y = (float) mouse_pos_y;
         }
         public float get_mouse_pos_x() {
-            return (float) mouse_pos_x;            
+            return (float) mouse_pos_x;
         }
         public float get_mouse_pos_y() {
-            return (float) mouse_pos_y;   
+            return (float) mouse_pos_y;
         }
         /** Is mouse wheel? */
         public bool is_mouse_scroll() {
@@ -298,19 +295,19 @@ namespace Bodhi {
         }
         /** get mouse wheel direction */
         public float get_mouse_vert_scroll() {
-            return (float) mouse_scroll_yoffset;            
+            return (float) mouse_scroll_yoffset;
         }
         public bool is_mouse_scroll_left() {
-            return mouse_scroll_xoffset < 0;  
+            return mouse_scroll_xoffset < 0;
         }
         public bool is_mouse_scroll_right() {
-            return mouse_scroll_yoffset > 0; 
+            return mouse_scroll_yoffset > 0;
         }
         public bool is_mouse_scroll_up() {
-            return mouse_scroll_yoffset > 0;  
+            return mouse_scroll_yoffset > 0;
         }
         public bool is_mouse_scroll_down() {
-            return mouse_scroll_yoffset < 0; 
+            return mouse_scroll_yoffset < 0;
         }
 
         /** set cursor showing */
@@ -329,7 +326,7 @@ namespace Bodhi {
             set_mouse_posf(x, (float)mouse_pos_y);
         }
         public void set_mouse_pos_y(float y) {
-            set_mouse_posf((float)mouse_pos_x, y);            
+            set_mouse_posf((float)mouse_pos_x, y);
         }
     }
 }

@@ -42,12 +42,14 @@ bodhi_sources = files(
     'src/math/vector4.vala',
     'src/math/matrix4x4.vala',
 
-    'src/system/log_system.vala',
+    'src/system/subsystem.vala',
     'src/system/file_system.vala',
+    'src/system/log_system.vala',
     'src/system/window_system.vala',
     'src/system/render_system.vala',
     'src/system/scene_manager.vala',
     'src/system/input_system.vala',
+    'src/system/audio_system.vala',
     'src/system/engine.vala',
 )
 

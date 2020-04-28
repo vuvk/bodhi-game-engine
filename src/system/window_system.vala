@@ -3,41 +3,46 @@
 
 namespace Bodhi {
 
-    public class RendererWindow : Object {   
-
-        public enum States {
-            NOT_CREATED,
-            CREATED
-        }
+    public class RendererWindow : SubSystem {
 
         public const int DEFAULT_WIDTH  = 1024;
         public const int DEFAULT_HEIGHT = 768;
         public const bool DEFAULT_RESIZABLE  = false;
         public const bool DEFAULT_FULLSCREEN = false;
-        
+
         private GLFW.Window? glfw_window;
         private string title = @"$(Engine.get_name()) $(Engine.get_version())";
-        private States state = States.NOT_CREATED;
+        private int width  = 0;
+        private int height = 0;
+        private bool resizable;
         private bool fullscreen_mode;
         private int prev_width  = 0;
         private int prev_height = 0;
 
         internal RendererWindow(int width, int height, bool resizable, bool fullscreen_mode) {
-            if (create(width, height, resizable, fullscreen_mode) == Errors.NO_ERROR) {
-                state = States.CREATED;
+            this.width  = this.prev_width  = width;
+            this.height = this.prev_height = height;
+            this.resizable = resizable;
+            this.fullscreen_mode = fullscreen_mode;
+
+            if (init() == Errors.NO_ERROR) {
+                state = States.INITIALIZED;
             }
+
+            subsystem_name = "Renderer Window";
         }
-        
-        ~RendererWindow() { 
+
+        ~RendererWindow() {
+            deinit();
         }
-        
-        private int create(int width, int height, bool resizable = false, bool fullscreen_mode = false) {
+
+        protected override Errors init() {
             /* what do you want if engine is not started, hmm??*/
             if (!Engine.is_running()) {
                 stderr.printf("I can't create window if engine is not started!\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
-        
+
             /* set SDL attributes */
             //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
             //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
@@ -61,19 +66,16 @@ namespace Bodhi {
 
             /* use GLES */
             GLFW.WindowHint.CLIENT_API.set(GLFW.ClientAPI.OPENGL);
-            
+
             glfw_window = new GLFW.Window(width, height, title, monitor, null);
             if (glfw_window == null) {
                 Engine.get_log().write_error("Couldn't create window!\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
             glfw_window.make_context_current();
-            
+
             GLFW.WindowHint.RESIZABLE.set_bool(resizable);
-        
-            /* initialization */
-            this.fullscreen_mode = fullscreen_mode;
-        
+
             return Errors.NO_ERROR;
         }
 
@@ -103,15 +105,15 @@ namespace Bodhi {
         public void get_sizei(out int width, out int height) {
             glfw_window.get_size(out width, out height);
         }
-        
+
         public unowned string? get_title() {
             return title;
         }
-        
+
         public int get_width() {
             return get_size().x;
         }
-        
+
         public int get_height() {
             return get_size().y;
         }
@@ -122,36 +124,32 @@ namespace Bodhi {
             get_positioni(out x, out y);
             return {x, y};
         }
-        
+
         public void get_positioni(out int x, out int y) {
             glfw_window.get_position(out x, out y);
-        }
-        
-        public States get_state() {
-            return state;
         }
 
         internal unowned GLFW.Window? get_glfw_window() {
             return glfw_window;
         }
-        
+
         public void set_size(Vector2i size) {
             set_sizei(size.x, size.y);
         }
-        
+
         public void set_sizei(int width, int height) {
             glfw_window.set_size(width, height);
         }
-        
+
         public void set_title(string title) {
             glfw_window.title = title;
             this.title = title;
         }
-        
+
         public void set_position(Vector2i pos) {
             set_positioni(pos.x, pos.y);
         }
-        
+
         public void set_positioni(int x, int y) {
             glfw_window.set_position(x, y);
         }
@@ -161,29 +159,29 @@ namespace Bodhi {
             Renderer renderer = Engine.get_renderer();
             Vector2i screen_size = renderer.get_screen_resolution();
 
-            Vector2i pos = { 
+            Vector2i pos = {
                 (screen_size.x >> 1) - (win_size.x >> 1),
                 (screen_size.y >> 1) - (win_size.y >> 1)
             };
 
             set_position(pos);
         }
-        
+
         // system
-        internal void update() {  
+        internal void update() {
             if (glfw_window != null) {
                 Vector2i size = get_size();
-        
+
                 if ((size.x != prev_width) ||
                     (size.y != prev_height)) {
                     // !!!
                     // Perspectivef_M4x4(_pers, 60.0f, (float)width / height, 0.1f, 1000.0f);
-        
+
                     prev_width  = size.x;
                     prev_height = size.y;
                 }
             } else {
-                state  = States.NOT_CREATED;
+                deinit();
             }
         }
 

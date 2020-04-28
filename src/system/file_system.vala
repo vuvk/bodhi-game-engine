@@ -12,7 +12,7 @@ namespace Bodhi {
         private FileSystem(){}
         ~FileSystem(){}
 
-        public static bool init(string? argv0 = ".") {
+        internal static bool init(string? argv0 = ".") {
             if (!is_initialized()) {
                 if (PHYSFS.init(argv0)) {
                     base_dir = (argv0 != null) ? argv0 : ".";
@@ -36,12 +36,13 @@ namespace Bodhi {
             return true;
         }
 
-        public static bool deinit() {
+        internal static bool deinit() {
             if (is_initialized()) {
                 if (PHYSFS.is_init() && !PHYSFS.deinit()) {
                     stderr.printf(get_last_error() + "\n");
                     return false;
                 }
+                Engine.get_log().write_warning("FileSystem shutdowned!\n");
                 state = States.NOT_INITIALIZED;
             }
             return true;

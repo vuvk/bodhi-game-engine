@@ -6,22 +6,10 @@ public class Test : Object {
         Engine.start();
 
         var window = Engine.get_window();
-        window.set_title("OpenAL test");   
+        window.set_title("OpenAL test");
         var scene = Engine.get_scene();
         var input = Engine.get_input();
-
-        if (Alure.init_device(null, null)) {
-            print("Wow! Alure was initialized!\n");
-
-            uint major, minor;
-            Alure.get_version(out major, out minor);
-            print(@"errors? $(Alure.get_error_string())\n");
-            print(@"version of Alure is $major.$minor\n");
-
-            if (!Alure.shutdown_device()) {
-                print("Oh, shit. Wasted!\n");
-            }
-        }
+        var audio = Engine.get_audio();
 
         while (Engine.is_running()) {
             Engine.update();
@@ -37,4 +25,3 @@ public class Test : Object {
         return 0;
     }
 }
-

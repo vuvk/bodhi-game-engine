@@ -4,7 +4,7 @@ using GLFW;
 namespace Bodhi {
 
     public class Engine : Object {
-        
+
         /** state of engine */
         public enum States {
             NOT_RUNNING,
@@ -13,12 +13,12 @@ namespace Bodhi {
 
         private const string NAME    = "bodhi Game Engine";
         private const string VERSION = "0.1";
-        
+
         private static States state = States.NOT_RUNNING;
-        
+
         private static double curr_tick;
         private static double last_tick;
-        
+
         // delta of time between last and current frame
         private static float delta_time;
         // frames per seconds
@@ -36,62 +36,63 @@ namespace Bodhi {
         private static Scene? scene;
         private static Input? input;
         private static Log? log;
-    
+        private static Audio? audio;
+
         /** start Antoshka Engine and initialize all subsystems */
-        public static int start(int wnd_width = RendererWindow.DEFAULT_WIDTH, 
-                                int wnd_height = RendererWindow.DEFAULT_HEIGHT, 
-                                bool resizable = RendererWindow.DEFAULT_RESIZABLE, 
+        public static int start(int wnd_width = RendererWindow.DEFAULT_WIDTH,
+                                int wnd_height = RendererWindow.DEFAULT_HEIGHT,
+                                bool resizable = RendererWindow.DEFAULT_RESIZABLE,
                                 bool fullscreen_mode = RendererWindow.DEFAULT_FULLSCREEN) {
             return start_with_log(wnd_width, wnd_height, resizable, fullscreen_mode, null);
         }
 
-        public static int start_with_log(int wnd_width = RendererWindow.DEFAULT_WIDTH, 
-                                         int wnd_height = RendererWindow.DEFAULT_HEIGHT, 
-                                         bool resizable = RendererWindow.DEFAULT_RESIZABLE, 
+        public static int start_with_log(int wnd_width = RendererWindow.DEFAULT_WIDTH,
+                                         int wnd_height = RendererWindow.DEFAULT_HEIGHT,
+                                         bool resizable = RendererWindow.DEFAULT_RESIZABLE,
                                          bool fullscreen_mode = RendererWindow.DEFAULT_FULLSCREEN,
                                          string? log_file_name = null,
                                          bool truncate_log = false) {
             /* what do you want, if engine is already started? */
-            if (state == States.RUNNING) {
+            if (is_running()) {
                 log.write_warning("Engine is already started!\n");
                 return Errors.NO_ERROR;
             }
-        
-            /* try to create file system */
+
+            /* try create file system */
             if (!FileSystem.init()) {
                 stderr.printf("File System not initialized!\n");
                 stop();
                 return Errors.ENGINE_NOT_STARTED;
             }
 
-            /* try to create log system */
+            /* try create log system */
             log = new Log();
-        
-            log.write( "============================================\n" + 
-                      @"$NAME ver. $VERSION\n" + 
+
+            log.write( "============================================\n" +
+                      @"$NAME ver. $VERSION\n" +
                        "============================================\n");
-        
-            /* try to init GLFW */
+
+            /* try init GLFW */
             if (!GLFW.init()) {
                 log.write_error("Couldn't init GLES2!\n");
                 stop();
                 return Errors.ENGINE_NOT_CREATED;
             }
-        
+
             /* now engine is running */
             state = States.RUNNING;
-        
-            /* try to create window */
+
+            /* try create window */
             window = new RendererWindow(wnd_width, wnd_height, resizable, fullscreen_mode);
-            if (window.get_state() != RendererWindow.States.CREATED) {
+            if (!window.is_initialized()) {
                 log.write_error("Renderer window not created!\n");
                 stop();
                 return Errors.WINDOW_NOT_CREATED;
             }
-        
-            /* try to create OpenGL context */
-            renderer = new Renderer(); 
-            if (renderer.get_state() != Renderer.States.CREATED) {
+
+            /* try create OpenGL context */
+            renderer = new Renderer();
+            if (!renderer.is_initialized()) {
                 log.write_error("Renderer not created!\n");
                 stop();
                 return Errors.RENDERER_NOT_CREATED;
@@ -99,25 +100,32 @@ namespace Bodhi {
             /* show info about system */
             renderer.print_display_modes();
             renderer.print_info();
-        
+
+            /* try initialize audio system */
+            audio = new Audio();
+            if (!audio.is_initialized()) {
+                log.write_error("Audio system not initialized!\n");
+                audio = null;
+            }
+
             log.write("The Engine was started!\n");
-        
+
             /* timing */
             curr_tick = GLFW.get_time();
             last_tick = curr_tick;
-        
+
             delta_time = 0.0f;
             fps = 0;
             fps_delay = 0.0f;
             limit_fps = 0;
             framerate = 0.0f;
-        
+
             /* initialize input system */
             //InputClearTableOfPressedKeys();
-        
+
             /* initialize resource manager */
             //RM_Init();
-        
+
             /* initialize containers */
             /* resources */
             //_textures  = DictionaryCreate();
@@ -132,39 +140,43 @@ namespace Bodhi {
             //_nodesMd2  = ListCreate();
 
             scene = new Scene();
-            if (scene.get_state() != Scene.States.CREATED) {
+            if (!scene.is_initialized()) {
                 log.write_error("Scene not created!\n");
                 stop();
                 return Errors.SCENE_NOT_CREATED;
             }
 
             input = new Input();
-            if (input.get_state() != Input.States.CREATED) {
+            if (!input.is_initialized()) {
                 log.write_error("Input system not initialized!\n");
                 stop();
                 return Errors.INPUT_NOT_CREATED;
             }
 
             window.center();
-        
+
             return Errors.NO_ERROR;
         }
 
         /** stop Antoshka Engine */
-        public static void stop() {        
-            if (log != null) {
-                log.write_warning("The Engine was stopped!\n");
-                log.set_write_to_file(null);
-                log = null;
-            } else {
-                stdout.printf("The Engine was stopped!\n");
-            }
+        public static void stop() {
+            audio.deinit();
+            scene.deinit();
+            input.deinit();
+            renderer.deinit();
+            window.deinit();
 
+            audio    = null;
             scene    = null;
             input    = null;
             renderer = null;
             window   = null;
-        
+
+            log.write_warning("The Engine was stopped!\n");
+            log.deinit();
+            // ? крашится с этим при выходе
+            //log = null;
+
             /* clear resources */
             /*TexturesDestroyAll();
             MaterialsDestroyAll();
@@ -174,7 +186,7 @@ namespace Bodhi {
             Nodes2DDestroyAll();
             MeshesMd2DestroyAll();
             NodesMd2DestroyAll();*/
-        
+
             /* delete containers */
             /*DictionaryDestroy(&_textures);
             DictionaryDestroy(&_materials);
@@ -182,15 +194,15 @@ namespace Bodhi {
             DictionaryDestroy(&_fonts);
             DictionaryDestroy(&_texts);
             ListDestroy(&_nodes2d);
-        
+
             DictionaryDestroy(&_meshesMd2);
             ListDestroy(&_nodesMd2);*/
-              
-            GLFW.terminate();     
+
+            GLFW.terminate();
             FileSystem.deinit();
             state = States.NOT_RUNNING;
         }
-        
+
         private static void update_time() {
             // calculate deltaTime
             curr_tick = GLFW.get_time();
@@ -213,7 +225,7 @@ namespace Bodhi {
             } else {
                 Thread.usleep(1);
             }
-        
+
             // fps узнаем раз в полсекунды
             if (fps_delay < 0.5f) {
                 // считаем количество кадров
@@ -251,12 +263,12 @@ namespace Bodhi {
         public static float get_delta_time() {
             return delta_time;
         }
-        
+
         // system
         public static States get_state() {
             return state;
         }
-        
+
         public static string get_name() {
             return NAME;
         }
@@ -284,11 +296,15 @@ namespace Bodhi {
         public static unowned Input? get_input() {
             return input;
         }
-        
+
+        public static unowned Audio? get_audio() {
+            return audio;
+        }
+
         // timing
         public static void set_limit_fps (uint16 limit) {
             limit_fps = limit;
             framerate = 1000.0f / limit;
         }
-    }    
+    }
 }
