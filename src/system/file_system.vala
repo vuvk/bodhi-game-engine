@@ -253,6 +253,10 @@ namespace Bodhi {
 
             public bool is_file() {
                 if (is_initialized()) {
+                    if (handle == null) {
+                        return false;
+                    }
+
                     PHYSFS.Stat stat;
                     if (PHYSFS.stat(this.name, out stat)) {
                         return stat.filetype == PHYSFS.FileType.REGULAR;
@@ -318,25 +322,19 @@ namespace Bodhi {
             }
 
             public bool flush() {
-                if (this.handle != null && is_initialized()) {
+                if (is_file()) {
                     return handle.flush();
                 }
                 return false;
             }
 
             public void close() {
-                /*if (this.handle != null && is_initialized()) {
-                    if (!handle.close()) {
-                        stderr.printf("Error when close file: " + get_last_error() + "\n");
-                    }
-                }*/
-
                 this.name = "";
                 this.handle = null;
             }
 
             public int64 tell() {
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     return handle.tell();
                 }
 
@@ -344,7 +342,7 @@ namespace Bodhi {
             }
 
             public int seek(uint64 position) {
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     return handle.seek(position);
                 }
 
@@ -352,7 +350,7 @@ namespace Bodhi {
             }
 
             public int64 read(uint8[] buffer, uint64 length) {
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     return handle.read_bytes(buffer, length);
                 }
                 return -1;
@@ -360,7 +358,7 @@ namespace Bodhi {
 
             public string read_line() {
                 string line = "";
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     char[] buffer = { 0 };
                     while (!eof()) {
                         if (read((uint8[])buffer, sizeof(char)) > 0) {
@@ -381,7 +379,7 @@ namespace Bodhi {
             public string[] read_lines() {
                 string[] lines = {};
 
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     while (!eof()) {
                         lines += read_line();
                     }
@@ -391,7 +389,7 @@ namespace Bodhi {
             }
 
             public int64 write(uint8[] buffer) {
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     int64 writed = handle.write_bytes(buffer);
                     if (writed != buffer.length) {
                         stderr.printf("Error when write data to file! " + get_last_error() + "\n");
@@ -410,7 +408,7 @@ namespace Bodhi {
             }
 
             public int64 write_string(string str) {
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     return write(str.data);
                 }
                 return -1;
@@ -418,7 +416,7 @@ namespace Bodhi {
 
             public int64 write_lines(string[] lines) {
                 int64 bytes = 0;
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     foreach (string line in lines) {
                         bytes += write_string(line + "\n");
                     }
@@ -431,7 +429,7 @@ namespace Bodhi {
             }
 
             public bool eof() {
-                if (this.handle != null && is_file()) {
+                if (is_file()) {
                     return handle.eof();
                 }
                 return true;
