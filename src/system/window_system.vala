@@ -103,6 +103,10 @@ namespace Bodhi {
         }
 
         public void get_sizei(out int width, out int height) {
+            if (!is_initialized()) {
+                return;
+            }
+
             glfw_window.get_size(out width, out height);
         }
 
@@ -126,10 +130,18 @@ namespace Bodhi {
         }
 
         public void get_positioni(out int x, out int y) {
+            if (!is_initialized()) {
+                return;
+            }
+
             glfw_window.get_position(out x, out y);
         }
 
         internal unowned GLFW.Window? get_glfw_window() {
+            if (!is_initialized()) {
+                return null;
+            }
+
             return glfw_window;
         }
 
@@ -138,10 +150,18 @@ namespace Bodhi {
         }
 
         public void set_sizei(int width, int height) {
+            if (!is_initialized()) {
+                return;
+            }
+
             glfw_window.set_size(width, height);
         }
 
         public void set_title(string title) {
+            if (!is_initialized()) {
+                return;
+            }
+
             glfw_window.title = title;
             this.title = title;
         }
@@ -151,10 +171,18 @@ namespace Bodhi {
         }
 
         public void set_positioni(int x, int y) {
+            if (!is_initialized()) {
+                return;
+            }
+
             glfw_window.set_position(x, y);
         }
 
         public void center() {
+            if (!is_initialized()) {
+                return;
+            }
+
             Vector2i win_size = get_size();
             Renderer renderer = Engine.get_renderer();
             Vector2i screen_size = renderer.get_screen_resolution();
@@ -169,6 +197,10 @@ namespace Bodhi {
 
         // system
         internal void update() {
+            if (!is_initialized()) {
+                return;
+            }
+
             if (glfw_window != null) {
                 Vector2i size = get_size();
 
@@ -186,6 +218,10 @@ namespace Bodhi {
         }
 
         internal void swap_buffers() {
+            if (!is_initialized()) {
+                return;
+            }
+
             glfw_window.swap_buffers();
         }
     }
