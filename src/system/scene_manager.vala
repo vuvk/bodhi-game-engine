@@ -39,6 +39,10 @@ namespace Bodhi {
         }
 
         public void beginf(float r = 0.0f, float g = 0.0f, float b = 0.0f, float a = 0.0f) {
+            if (!is_initialized()) {
+                return;
+            }
+
             // очистка экрана
             glClearColor(r, g, b, a);
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -60,7 +64,24 @@ namespace Bodhi {
         }
 
         public void end() {
+            if (!is_initialized()) {
+                return;
+            }
+
             window.swap_buffers();
+        }
+
+        // synonyms
+        public void begin_draw(RGBAColorf clear_color = RGBAColorf.BLACK()) {
+            begin(clear_color);
+        }
+
+        public void begin_drawf(float r = 0.0f, float g = 0.0f, float b = 0.0f, float a = 0.0f) {
+            beginf(r, g, b, a);
+        }
+
+        public void end_draw() {
+            end();
         }
     }
 }
