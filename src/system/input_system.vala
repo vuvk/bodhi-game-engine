@@ -173,6 +173,9 @@ namespace Bodhi {
 
         /** Update state of input. Use this on every step! */
         internal void update() {
+            if (!is_initialized()) {
+                return;
+            }
 
             prev_mouse_pos_x = mouse_pos_x;
             prev_mouse_pos_y = mouse_pos_y;
@@ -201,14 +204,28 @@ namespace Bodhi {
         /*----------*/
         /** Is any key down? */
         public bool is_key_press(Keys key) {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.PRESS;
         }
+
         /** Is any key up? */
         public bool is_key_release(Keys key) {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.RELEASE;
         }
+
         /** Is this key pressed? */
         public bool is_key_repeat(Keys key) {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.REPEAT;
         }
 
@@ -219,112 +236,216 @@ namespace Bodhi {
             mouse_scroll_xoffset = xoffset;
             mouse_scroll_yoffset = yoffset;
         }
+
         /** mouse moving now? */
         public bool is_mouse_move() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return (prev_mouse_pos_x != mouse_pos_x) ||
                    (prev_mouse_pos_y != mouse_pos_y);
         }
+
         /** Is left mouse button down? */
         public bool is_mouse_left_press() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.PRESS;
         }
+
         /** Is left mouse button up? */
         public bool is_mouse_left_release() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.RELEASE;
         }
+
         /** Is left mouse button pressed? */
         public bool is_mouse_left_repeat() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.REPEAT;
         }
 
         /** Is right mouse button down? */
         public bool is_mouse_right_press() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.PRESS;
         }
+
         /** Is right mouse button up? */
         public bool is_mouse_right_release() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.RELEASE;
         }
+
         /** Is right mouse button pressed? */
         public bool is_mouse_right_repeat() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.REPEAT;
         }
 
         /** Is middle mouse button down? */
         public bool is_mouse_middle_press() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.PRESS;
         }
+
         /** Is middle mouse button up? */
         public bool is_mouse_middle_release() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.RELEASE;
         }
+
         /** Is middle mouse button pressed? */
         public bool is_mouse_middle_repeat() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.REPEAT;
         }
 
         /** get cursor showing */
         public bool is_mouse_cursor_showing() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return show_mouse_cursor;
         }
+
         /** get mouse position */
         public Vector2f get_mouse_pos() {
             return { (float) mouse_pos_x, (float) mouse_pos_y };
         }
+
         public void get_mouse_posf(out float x, out float y) {
             x = (float) mouse_pos_x;
             y = (float) mouse_pos_y;
         }
+
         public float get_mouse_pos_x() {
             return (float) mouse_pos_x;
         }
+
         public float get_mouse_pos_y() {
             return (float) mouse_pos_y;
         }
+
         /** Is mouse wheel? */
         public bool is_mouse_scroll() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return mouse_hor_scrolling || mouse_vert_scrolling;
         }
+
         /** Is mouse horizontal wheel? */
         public bool is_mouse_hor_scroll() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return mouse_hor_scrolling;
         }
+
         /** Is mouse vertical wheel? */
         public bool is_mouse_vert_scroll() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return mouse_vert_scrolling;
         }
+
         /** get mouse wheel direction */
         public float get_mouse_vert_scroll() {
             return (float) mouse_scroll_yoffset;
         }
+
         public bool is_mouse_scroll_left() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return mouse_scroll_xoffset < 0;
         }
+
         public bool is_mouse_scroll_right() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return mouse_scroll_yoffset > 0;
         }
+
         public bool is_mouse_scroll_up() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return mouse_scroll_yoffset > 0;
         }
+
         public bool is_mouse_scroll_down() {
+            if (!is_initialized()) {
+                return false;
+            }
+
             return mouse_scroll_yoffset < 0;
         }
 
         /** set cursor showing */
         public void set_mouse_cursor_showing(bool show) {
+            if (!is_initialized()) {
+                return;
+            }
+
             show_mouse_cursor = show;
             GLFW.WindowHint.CURSOR_HIDDEN.set_bool(show);
         }
+
         /** set mouse position */
         public void set_mouse_pos(Vector2f pos) {
             set_mouse_posf(pos.x, pos.y);
         }
+
         public void set_mouse_posf(float x, float y) {
+            if (!is_initialized()) {
+                return;
+            }
+
             glfw_window.set_cursor_pos(x, y);
         }
+
         public void set_mouse_pos_x(float x) {
             set_mouse_posf(x, (float)mouse_pos_y);
         }
+
         public void set_mouse_pos_y(float y) {
             set_mouse_posf((float)mouse_pos_x, y);
         }
