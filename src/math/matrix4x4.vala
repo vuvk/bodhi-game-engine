@@ -21,12 +21,21 @@ namespace Bodhi {
             return array;
         }
 
+        public string to_string() {
+            string str = "[ ";
+            foreach (float val in data) {
+                str += val.to_string() + " ";
+            }
+            str += "]";
+            return str;
+        }
+
         public void set_array(float[] data) {
             if (data.length >= 16) {
                 this.data = data[0:16];
             }
         }
-        
+
         public void identity() {
             data[1]  = data[2]  = data[3]  = data[4]  =
             data[6]  = data[7]  = data[8]  = data[9]  =
@@ -34,19 +43,19 @@ namespace Bodhi {
 
             data[0] = data[5] = data[10] = data[15] = 1.0f;
         }
-        
+
         public Matrix4x4 cpy() {
-            return new Matrix4x4.from_array(data);     
+            return new Matrix4x4.from_array(data);
         }
 
         public Matrix4x4 mul(float scalar) {
             Matrix4x4 tmp = this.cpy();
             for (int i = 0; i < data.length; ++i) {
-                tmp.data[i] *= scalar;            
+                tmp.data[i] *= scalar;
             }
             return tmp;
         }
-        
+
         public Vector4f mul_v4f(Vector4f vec) {
         /*
             | a b c d |   | x |     | a*x + b*y + c*z + d*w |
@@ -58,9 +67,9 @@ namespace Bodhi {
             float[] temp = new float[4];
             for (int i = 0; i < 4; ++i) {
                 temp[i] = data[     i] * vec.x +
-                        data[ 4 + i] * vec.y +
-                        data[ 8 + i] * vec.z +
-                        data[12 + i] * vec.w;
+                          data[ 4 + i] * vec.y +
+                          data[ 8 + i] * vec.z +
+                          data[12 + i] * vec.w;
             }
 
             unowned float[] result = temp[0:4];
@@ -79,7 +88,7 @@ namespace Bodhi {
 
             return Vector4f.from_array(result);
         }
-        
+
         public Matrix4x4 mul_mtx(Matrix4x4 other) {
             Matrix4x4 tmp = new Matrix4x4();
             for (int col = 0; col < 4; ++col) {
