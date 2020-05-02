@@ -73,7 +73,7 @@ namespace Bodhi {
 
 
         public class Listener {
-            private static Audio audio = Engine.get_audio();
+            private static weak Audio audio = Engine.get_audio();
 
             private float[] position    = new float[3];
             private float[] orientation = new float[6];
