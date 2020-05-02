@@ -17,7 +17,7 @@ log:write_warning("Dangerous!\n")
 log:write_error("Critical!\n")
 
 window = engine.get_window()
-window.set_title(window, "Hello!")
+window:set_title("Hello!")
 
 scene = engine.get_scene()
 input = engine.get_input()
@@ -32,11 +32,11 @@ while (engine.is_running()) do
 
     window:set_title("Hello! FPS: " .. tostring(engine:get_fps()))
 
-    if (input:is_mouse_scroll_up(input)) then
+    if (input:is_mouse_scroll_up()) then
         log:write("wow! wheel up!\n")
     end
 
-    if (input:is_mouse_scroll_down(input)) then
+    if (input:is_mouse_scroll_down()) then
         log:write("wow! wheel down!\n")
     end
 
