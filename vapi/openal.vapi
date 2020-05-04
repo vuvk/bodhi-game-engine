@@ -22,68 +22,68 @@
  */
 
 [CCode (cprefix = "", lower_case_cprefix = "", cheader_filename="AL/al.h")]
-namespace AL 
+namespace AL
 {
     // 8-bit boolean
     [CCode (cname="ALboolean")]
     public struct ALboolean : int8 { }
-    
+
     // character
     [CCode (cname="ALchar")]
     public struct ALchar : char { }
-    
+
     // signed 8-bit 2's complement integer
     [CCode (cname="ALbyte")]
     public struct ALbyte : int8 { }
-    
+
     // unsigned 8-bit integer
     [CCode (cname="ALubyte")]
     public struct ALubyte : uint8 { }
-    
+
     // signed 16-bit 2's complement integer
     [CCode (cname="ALshort")]
     public struct ALshort : int16 { }
-    
+
     // unsigned 16-bit integer
     [CCode (cname="ALushort")]
     public struct ALushort : uint16 { }
-    
+
     // signed 32-bit 2's complement integer
     [CCode (cname="ALint")]
     public struct ALint : int32 { }
-    
+
     // unsigned 32-bit integer
     [CCode (cname="ALuint")]
     public struct ALuint : uint32 { }
-    
+
     // non-negative 32-bit binary integer size
     [CCode (cname="ALsizei")]
     public struct ALsizei : int32 { }
-    
+
     // enumerated 32-bit value
     [CCode (cname="ALenum")]
     public struct ALenum : int32 { }
-    
+
     // 32-bit IEEE754 floating-point
     [CCode (cname="ALfloat")]
     public struct ALfloat : float { }
-    
+
     // 64-bit IEEE754 floating-point
     [CCode (cname="ALdouble")]
     public struct ALdouble : double { }
-    
+
     // void type (for opaque pointers only)
     [CCode (cname="ALvoid")]
     public struct ALvoid { }
-        
+
     /** "no distance model" or "no buffer" */
     [CCode (cname="AL_NONE")]
     public const ALenum NONE;
-    
+
     /** Boolean False. */
     [CCode (cname="AL_FALSE")]
     public const ALenum FALSE;
-    
+
     /** Boolean True. */
     [CCode (cname="AL_TRUE")]
     public const ALenum TRUE;
@@ -409,7 +409,7 @@ namespace AL
         /** Invalid enum parameter passed to AL call. */
         INVALID_ENUM,
         /** Invalid value parameter passed to AL call. */
-        INVALID_VALUE,    
+        INVALID_VALUE,
         /** Illegal AL call. */
         INVALID_OPERATION
         /** Not enough memory. */,
@@ -535,7 +535,7 @@ namespace AL
     * Obtain the first error generated in the AL context since the last check.
     */
     [CCode (cname="alGetError")]
-    public ALenum get_error();
+    public Error get_error();
 
     /**
     * Extension support.
@@ -566,7 +566,7 @@ namespace AL
         public static void set_param3i(ALenum param, ALint value1, ALint value2, ALint value3);
         [CCode (cname="alListeneriv")]
         public static void set_paramiv(ALenum param, [CCode (array_length = false)]ALint[] values);
-    
+
         /** Get Listener parameters */
         [CCode (cname="alGetListenerf")]
         public static void get_paramf(ALenum param, out ALfloat value);
@@ -579,12 +579,12 @@ namespace AL
         [CCode (cname="alGetListener3i")]
         public static void get_param3i(ALenum param, out ALint value1, out ALint value2, out ALint value3);
         [CCode (cname="alGetListeneriv")]
-        public static void get_paramiv(ALenum param, [CCode (array_length = false)]ALint[] values);    
+        public static void get_paramiv(ALenum param, [CCode (array_length = false)]ALint[] values);
     }
 
     [SimpleType]
     [CCode (cname="ALuint", has_type_id = false)]
-    public struct Source : ALuint { 
+    public struct Source : ALuint {
         /** Set Source parameters. */
         [CCode (cname="alSourcef")]
         public void set_paramf(ALenum param, ALfloat value);
@@ -614,29 +614,29 @@ namespace AL
         public void get_paramiv(ALenum param, [CCode (array_length = false)]ALint[]values);
 
         /** Play, replay, or resume (if paused) a list of Sources */
-        [CCode (cname="sourcePlayv")]
+        [CCode (cname="alSourcePlayv")]
         public static void playv(ALsizei n, [CCode (array_length = false)]Source[] sources);
         /** Stop a list of Sources */
-        [CCode (cname="sourceStopv")]
+        [CCode (cname="alSourceStopv")]
         public static void stopv(ALsizei n, [CCode (array_length = false)]Source[] sources);
         /** Rewind a list of Sources */
-        [CCode (cname="sourceRewindv")]
+        [CCode (cname="alSourceRewindv")]
         public static void rewindv(ALsizei n, [CCode (array_length = false)]Source[] sources);
         /** Pause a list of Sources */
-        [CCode (cname="sourcePausev")]
+        [CCode (cname="alSourcePausev")]
         public static void pausev(ALsizei n, [CCode (array_length = false)]Source[] sources);
 
         /** Play, replay, or resume a Source */
-        [CCode (cname="sourcePlay")]
+        [CCode (cname="alSourcePlay")]
         public void play();
         /** Stop a Source */
-        [CCode (cname="sourceStop")]
+        [CCode (cname="alSourceStop")]
         public void stop();
         /** Rewind a Source (set playback postiton to beginning) */
-        [CCode (cname="sourceRewind")]
+        [CCode (cname="alSourceRewind")]
         public void rewind();
         /** Pause a Source */
-        [CCode (cname="sourcePause")]
+        [CCode (cname="alSourcePause")]
         public void pause();
 
         /** Queue buffers onto a source */
@@ -658,18 +658,18 @@ namespace AL
     public void delete_sources(ALsizei n, [CCode (array_length = false)]Source[] sources);
     /** Delete Source object. */
     [CCode (cname="alDeleteSources")]
-    public void delete_source(ALsizei n, out Source source);
+    public void delete_source(ALsizei n, ref Source source);
     /** Verify a handle is a valid Source. */
     [CCode (cname="alIsSource")]
     public bool is_source(ALuint source);
 
     [SimpleType]
     [CCode (cname="ALuint", has_type_id = false)]
-    public struct Buffer : ALuint { 
+    public struct Buffer : ALuint {
         /** Specifies the data to be copied into a buffer */
         [CCode (cname="alBufferData")]
         public void set_data(ALenum format, [CCode (array_length = false)]uint8[] data, ALsizei size, ALsizei freq);
-    
+
         /** Set Buffer parameters, */
         [CCode (cname="alBufferf")]
         public void set_paramf(ALenum param, ALfloat value);
@@ -683,7 +683,7 @@ namespace AL
         public void set_param3i(ALenum param, ALint value1, ALint value2, ALint value3);
         [CCode (cname="alBufferiv")]
         public void set_paramiv(ALenum param, [CCode (array_length = false)]ALint[] values);
-    
+
         /** Get Buffer parameters. */
         [CCode (cname="alGetBufferf")]
         public void get_paramf(ALenum param, out ALfloat value);
@@ -710,7 +710,7 @@ namespace AL
     public void delete_buffers(ALsizei n, [CCode (array_length = false)]Buffer[] buffers);
     /** Delete Buffer object */
     [CCode (cname="alDeleteBuffers")]
-    public void delete_buffer(ALsizei n, out Buffer buffer);
+    public void delete_buffer(ALsizei n, ref Buffer buffer);
     /** Verify a handle is a valid Buffer */
     [CCode (cname="alIsBuffer")]
     public bool is_buffer(ALuint buffer);
@@ -881,10 +881,10 @@ namespace ALC
 
     /** Context management. */
     [Compact]
-    [CCode (has_type_id = false, free_function="alcDestroyContext")]
+    [CCode (cname="ALCcontext", has_type_id = false, free_function="alcDestroyContext")]
     public class Context {
         [CCode (cname="alcCreateContext")]
-        public Context (Device device, [CCode (array_length = false)] ALCint[] attrlist);
+        public Context (Device device, [CCode (array_length = false)] ALCint[]? attrlist);
 
         [CCode (cname="alcMakeContextCurrent")]
         public bool make_current();
@@ -898,19 +898,19 @@ namespace ALC
         [CCode (cname="alcDestroyContext")]
         public void destroy();
 
-        [CCode (cname="alcGetCurrentContext")]
-        public Context get_current_context();
-
         [CCode (cname="alcGetContextsDevice")]
         public Device get_contexts_device();
     }
 
+    [CCode (cname="alcGetCurrentContext")]
+    public static Context get_current_context();
+
     /** Device management. */
     [Compact]
-    [CCode (has_type_id = false, free_function="alcCloseDevice")]
+    [CCode (cname="ALCdevice", has_type_id = false, free_function="alcCloseDevice")]
     public class Device {
         [CCode (cname="alcOpenDevice")]
-        public Device (string devicename);
+        public Device (string? devicename);
 
         /**
         * Extension support.
@@ -944,12 +944,12 @@ namespace ALC
     }
 
     [Compact]
-    [CCode (has_type_id = false, free_function="alcCaptureCloseDevice")]
+    [CCode (cname="ALCdevice", has_type_id = false, free_function="alcCaptureCloseDevice")]
     public class CaptureDevice : Device {
         /** Capture function. */
         [CCode (cname="alcCaptureOpenDevice")]
         public CaptureDevice(string devicename, ALCuint frequency, ALCenum format, ALCsizei buffersize);
-        
+
         [CCode (cname="alcCaptureCloseDevice")]
         public bool destroy();
 
