@@ -11,6 +11,7 @@ m_dep = cc.find_library('m', required : false)
 bodhi_dependencies = [
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
+    dependency('gee-0.8'),
 #   dependency('gio-2.0'),
     dependency('glesv2'),
 #   dependency('gl'),
@@ -51,6 +52,7 @@ bodhi_sources = files(
     'src/system/scene_manager.vala',
     'src/system/input_system.vala',
     'src/system/audio_system.vala',
+    'src/system/audio_buffer.vala',
     'src/system/audio_listener.vala',
     'src/system/engine.vala',
 )

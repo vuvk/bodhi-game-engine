@@ -82,6 +82,13 @@ namespace Bodhi {
             /* now engine is running */
             state = States.RUNNING;
 
+            /* try initialize audio system */
+            audio = new Audio();
+            if (!audio.is_initialized()) {
+                log.write_error("Audio system not initialized!\n");
+                audio = null;
+            }
+
             /* try create window */
             window = new RendererWindow(wnd_width, wnd_height, resizable, fullscreen_mode);
             if (!window.is_initialized()) {
@@ -100,13 +107,6 @@ namespace Bodhi {
             /* show info about system */
             renderer.print_display_modes();
             renderer.print_info();
-
-            /* try initialize audio system */
-            audio = new Audio();
-            if (!audio.is_initialized()) {
-                log.write_error("Audio system not initialized!\n");
-                audio = null;
-            }
 
             log.write("The Engine was started!\n");
 
