@@ -642,9 +642,13 @@ namespace AL
         /** Queue buffers onto a source */
         [CCode (cname="alSourceQueueBuffers")]
         public void queue_buffers(ALsizei nb, [CCode (array_length = false)]ALuint[] buffers);
+        [CCode (cname="alSourceQueueBuffers")]
+        public void queue_buffer(ALsizei nb, ref ALuint buffer);
         /** Unqueue processed buffers from a source */
         [CCode (cname="alSourceUnqueueBuffers")]
         public void unqueue_buffers(ALsizei nb, [CCode (array_length = false)]ALuint[] buffers);
+        [CCode (cname="alSourceUnqueueBuffers")]
+        public void unqueue_buffer(ALsizei nb, ref ALuint buffer);
     }
 
     /** Create Source objects. */
