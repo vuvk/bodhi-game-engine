@@ -4,7 +4,7 @@ namespace Bodhi {
 
         private string? output_file_name;
         private bool write_to_file;
-        private FileSystem.File? output_file;
+        private Bodhi.File? output_file;
 
         internal Log(string? output_file_name = null, bool truncate_file = false) {
             base();
