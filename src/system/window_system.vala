@@ -26,7 +26,7 @@ namespace Bodhi {
             this.fullscreen_mode = fullscreen_mode;
 
             if (init() == Errors.NO_ERROR) {
-                state = States.INITIALIZED;
+                state = State.INITIALIZED;
             }
 
             subsystem_name = "Renderer Window";

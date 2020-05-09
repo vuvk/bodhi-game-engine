@@ -52,7 +52,8 @@ bodhi_sources = files(
     'src/system/scene_manager.vala',
     'src/system/input_system.vala',
     'src/system/audio_system.vala',
-    'src/system/audio_buffer.vala',
+    'src/system/audio_file.vala',
+    'src/system/audio_source.vala',
     'src/system/audio_listener.vala',
     'src/system/engine.vala',
 )

@@ -244,6 +244,7 @@ namespace Bodhi {
             update_time();
             update_fps();
 
+            audio.update();
             window.update();
             input.update();
         }
