@@ -19,7 +19,7 @@ bodhi_dependencies = [
 #   dependency('glew'),
     dependency('physfs'),
     dependency('openal'),
-    dependency('alure'),
+    dependency('sndfile'),
 
     m_dep
 ]
