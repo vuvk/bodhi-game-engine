@@ -12,6 +12,7 @@ namespace Bodhi {
         /* Handle for the audio file */
         private Sndfile.File sndfile;
         private Sndfile.Info sfinfo;
+        private int audio_data_size = -1;
 
         /* The format of the output stream (sample rate is in sfinfo) */
         private AL.BufferFormat format;
@@ -65,6 +66,8 @@ namespace Bodhi {
                     return;
             }
 
+            audio_data_size = (int)((sfinfo.frames * sfinfo.channels) * sizeof(short));
+
             if (precached) {
                 /* Decode the whole audio file to a buffer. */
                 short[] membuf = new short[sfinfo.frames * sfinfo.channels];
@@ -74,13 +77,12 @@ namespace Bodhi {
                     Engine.get_log().write_error("Failed to read samples in $filename: ($num_frames)\n");
                     return;
                 }
-                int num_bytes = (int)((num_frames * sfinfo.channels) * sizeof(short));
 
                 /* Buffer the audio data into a new buffer object, then free the data and
                 * close the file.
                 */
                 AL.gen_buffer(1, out buffer);
-                buffer.set_data(format, (uint8[])membuf, num_bytes, sfinfo.samplerate);
+                buffer.set_data(format, (uint8[])membuf, audio_data_size, sfinfo.samplerate);
 
                 /* Check if an error occured, and clean up if so. */
                 var audio = Engine.get_audio();
@@ -106,9 +108,12 @@ namespace Bodhi {
             }
 
             filename = "";
+            buffer = -1;
+            sndfile = null;
+            audio_data_size = -1;
+
             precached = false;
             loaded = false;
-            sndfile = null;
         }
 
         public bool is_loaded() {
@@ -127,5 +132,15 @@ namespace Bodhi {
             return filename;
         }
 
+        internal AL.BufferFormat get_format() {
+            return format;
+        }
+
+        public int get_audio_data_size() {
+            if (is_loaded()) {
+                return audio_data_size;
+            }
+            return -1;
+        }
     }
 }
