@@ -30,19 +30,54 @@ public class Test : Object {
         audio_source.play();
         log.write("Now test playing precached audio file\n");
 
+        float delay = 0;
+
         while (Engine.is_running()) {
             Engine.update();
 
-            if (audio_source.is_stopped()) {
-                switch (step) {
-                    case 0 :
+
+            switch (step) {
+                case 0 :
+                    if (audio_source.is_stopped()) {
                         // step 2 - play streaming sound
                         audio_source.set_audio_file(audio_file_streaming);
                         audio_source.play();
                         ++step;
                         log.write("Now test playing streamed audio file\n");
-                        break;
                     }
+                    break;
+
+                case 1 :
+                    if (audio_source.is_stopped()) {
+                        // step 3 - play streaming sound and pause
+                        audio_source.play();
+                        ++step;
+                        log.write("Now test playing streamed audio file with pause\n");
+                    }
+                    break;
+
+                case 2 :
+                    // step 4 - pause
+                    if (delay < 1.0f) {
+                        delay += Engine.get_delta_time();
+                    } else {
+                        audio_source.pause();
+                        ++step;
+                        delay = 0.0f;
+                        log.write("Audio source paused\n");
+                    }
+                    break;
+
+                case 3 :
+                    // step 5 - resume
+                    if (delay < 1.0f) {
+                        delay += Engine.get_delta_time();
+                    } else {
+                        audio_source.play();
+                        ++step;
+                        log.write("Audio source resumed\n");
+                    }
+                    break;
             }
 
             scene.begin(RGBAColorf.GREEN());
