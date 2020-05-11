@@ -46,6 +46,13 @@ namespace Bodhi {
             return false;
         }
 
+        public bool is_eof() {
+            if (is_file()) {
+                return handle.eof();
+            }
+            return true;
+        }
+
         public string get_ext(bool to_lower = false) {
             if (!is_file()) {
                 return "";
@@ -61,7 +68,7 @@ namespace Bodhi {
             return ext;
         }
 
-        public int64 size() {
+        public int64 get_size() {
             if (is_file()) {
                 return handle.length();
             }
@@ -71,7 +78,7 @@ namespace Bodhi {
 
         public int64 read_full(uint8[] buffer) {
             if (is_file()) {
-                buffer.resize((int)size());
+                buffer.resize((int)get_size());
                 return read(buffer, buffer.length);
             }
 
@@ -140,7 +147,7 @@ namespace Bodhi {
             string line = "";
             if (is_file()) {
                 char[] buffer = { 0 };
-                while (!eof()) {
+                while (!is_eof()) {
                     if (read((uint8[])buffer, sizeof(char)) > 0) {
                         if (buffer[0] == '\0' || buffer[0] == '\n') {
                             break;
@@ -160,7 +167,7 @@ namespace Bodhi {
             string[] lines = {};
 
             if (is_file()) {
-                while (!eof()) {
+                while (!is_eof()) {
                     lines += read_line();
                 }
             }
@@ -169,9 +176,13 @@ namespace Bodhi {
         }
 
         public int64 write(uint8[] buffer) {
+            return write_bytes(buffer, buffer.length);
+        }
+
+        public int64 write_bytes(uint8[] buffer, int64 count) {
             if (is_file()) {
-                int64 writed = handle.write_bytes(buffer);
-                if (writed != buffer.length) {
+                int64 writed = handle.write(buffer, 1, (uint32)count);
+                if (writed != count) {
                     stderr.printf("Error when write data to file! " + FileSystem.get_last_error() + "\n");
                 }
                 return writed;
@@ -206,13 +217,6 @@ namespace Bodhi {
                 return bytes;
             }
             return -1;
-        }
-
-        public bool eof() {
-            if (is_file()) {
-                return handle.eof();
-            }
-            return true;
         }
     }
 }
