@@ -1,8 +1,62 @@
+using Sndfile;
 using Gee;
 
 namespace Bodhi {
 
     public class AudioFile : Object {
+
+        private static count_t get_filelen_callback(void* userdata) {
+            Bodhi.File file = (Bodhi.File)userdata;
+            return (count_t)file.get_size();
+        }
+
+        private static count_t seek_callback(count_t offset, int whence, void* userdata) {
+            Bodhi.File file = (Bodhi.File)userdata;
+            switch (whence) {
+                case Sndfile.SEEK_SET:
+                    break;
+
+                case Sndfile.SEEK_END:
+                    offset = (count_t)file.get_size() - offset;
+                    break;
+
+                case Sndfile.SEEK_CUR:
+                    offset = (count_t)file.tell() + offset;
+                    break;
+            }
+
+            /* return -1 if error */
+            if (file.seek(offset) == 0)
+                return -1;
+
+            /* return new pos */
+            return offset;
+        }
+
+        private static count_t read_callback(void* ptr, count_t count, void* userdata) {
+            Bodhi.File file = (Bodhi.File)userdata;
+            return (count_t)file.read((uint8[])ptr, count);
+        }
+
+        private static count_t write_callback(void* ptr, count_t count, void* userdata) {
+            Bodhi.File file = (Bodhi.File)userdata;
+            return (count_t)file.write_bytes((uint8[])ptr, count);
+        }
+
+        private static count_t tell_callback(void* userdata) {
+            Bodhi.File file = (Bodhi.File)userdata;
+            return (count_t)file.tell();
+        }
+
+        internal VirtualIO get_io() {
+            return {
+                get_filelen_callback,
+                seek_callback,
+                read_callback,
+                write_callback,
+                tell_callback
+            };
+        }
 
         internal static ArrayList<AudioFile> LIB = new ArrayList<AudioFile>();
 
