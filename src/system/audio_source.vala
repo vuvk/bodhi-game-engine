@@ -46,7 +46,7 @@ namespace Bodhi {
 
                 /* Open the audio file and check that it's usable. */
                 string filename = audio_file.get_filename();
-                sndfile = new Sndfile.File(filename, Sndfile.Mode.READ, ref sfinfo);
+                sndfile = new Sndfile.File.virtual(audio_file.get_io(), Sndfile.Mode.READ, ref sfinfo, FileSystem.new_file(filename));
                 if (sndfile == null) {
                     Engine.get_log().write_error(@"Could not open audio in $filename: $(Sndfile.File.strerror(null))\n");
                     return;
@@ -83,7 +83,7 @@ namespace Bodhi {
 
             /* Prebuffers some audio from the file, and starts playing the source */
             internal bool prepare() {
-                sndfile.seek(0, 0);
+                sndfile.seek(0, Sndfile.SEEK_SET);
 
                 /* Fill the buffer queue */
                 for (int i = 0; i < NUM_BUFFERS; ++i) {

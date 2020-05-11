@@ -100,7 +100,7 @@ namespace Bodhi {
             }
 */
             /* Open the audio file and check that it's usable. */
-            sndfile = new Sndfile.File(filename, Sndfile.Mode.READ, ref sfinfo);
+            sndfile = new Sndfile.File.virtual(get_io(), Sndfile.Mode.READ, ref sfinfo, FileSystem.new_file(filename));
             if (sndfile == null) {
                 Engine.get_log().write_error(@"Could not open audio in $filename: $(Sndfile.File.strerror(sndfile))\n");
                 return;
