@@ -6,7 +6,7 @@ public class Test : Object {
     public static int main (string[] args) {
         int step = 0;
 
-        Engine.start();
+        Engine.start(512, 384);
 
         var log = Engine.get_log();
         var window = Engine.get_window();
@@ -36,6 +36,7 @@ public class Test : Object {
             if (audio_source.is_stopped()) {
                 switch (step) {
                     case 0 :
+                        // step 2 - play streaming sound
                         audio_source.set_audio_file(audio_file_streaming);
                         audio_source.play();
                         ++step;

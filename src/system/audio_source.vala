@@ -225,11 +225,31 @@ namespace Bodhi {
             return state == State.PLAYING;
         }
 
+        public bool is_paused() {
+            return state == State.PAUSED;
+        }
+
         public bool is_stopped() {
             return state == State.STOPPED;
         }
 
         public void play() {
+            if (AL.is_source(source)) {
+                rewind();
+                source.play();
+                state = State.PLAYING;
+            }
+        }
+
+        public void pause() {
+            if (AL.is_source(source)) {
+                source.pause();
+                state = State.PAUSED;
+            }
+        }
+
+        public void rewind() {
+            stop();
             if (AL.is_source(source)) {
                 source.rewind();
 
@@ -245,20 +265,16 @@ namespace Bodhi {
 
                     if (Engine.get_audio().error_exists()) {
                         Engine.get_log().write_error("Error starting playback\n");
-                        return;
                     }
                 }
-
-                source.play();
-                state = State.PLAYING;
             }
         }
 
         public void stop() {
             if (AL.is_source(source)) {
                 source.stop();
+                state = State.STOPPED;
             }
-            state = State.STOPPED;
         }
 
         internal void update() {
