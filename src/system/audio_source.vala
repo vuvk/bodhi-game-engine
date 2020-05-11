@@ -215,6 +215,38 @@ namespace Bodhi {
             streaming = false;
         }
 
+        public void set_position(float[] position) {
+            if (position.length > 2) {
+                set_positionf(position[0], position[1], position[2]);
+            }
+        }
+
+        public void set_positionv(Vector3f position) {
+            set_positionf(position.x, position.y, position.z);
+        }
+
+        public void set_positionf(float x, float y, float z) {
+            source.set_param3f(AL.POSITION, x, y, z);
+        }
+
+        public float[] get_position() {
+            float[] position = new float[3];
+            source.get_paramfv(AL.POSITION, position);
+            return position;
+        }
+
+        public Vector3f get_positionv() {
+            return Vector3f.from_array(get_position());
+        }
+
+        public void get_positionf(out float x, out float y, out float z) {
+            float[] position = get_position();
+
+            x = position[0];
+            y = position[1];
+            z = position[2];
+        }
+
         internal AudioFile? get_audio_file() {
             return audio_file;
         }
