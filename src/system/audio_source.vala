@@ -83,6 +83,8 @@ namespace Bodhi {
 
             /* Prebuffers some audio from the file, and starts playing the source */
             internal bool prepare() {
+                sndfile.seek(0, 0);
+
                 /* Fill the buffer queue */
                 for (int i = 0; i < NUM_BUFFERS; ++i) {
                     /* Get some data to give it to the buffer */
@@ -235,7 +237,9 @@ namespace Bodhi {
 
         public void play() {
             if (AL.is_source(source)) {
-                rewind();
+                if (!is_paused()) {
+                    rewind();
+                }
                 source.play();
                 state = State.PLAYING;
             }
@@ -291,7 +295,7 @@ namespace Bodhi {
                         state = State.STOPPED; break;
                 }
 
-                if (streaming) {
+                if (streaming && is_playing()) {
                     audio_stream.update(source);
                 }
 
