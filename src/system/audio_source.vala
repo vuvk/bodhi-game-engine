@@ -172,6 +172,7 @@ namespace Bodhi {
         private AudioFile? audio_file;
         private AudioStream? audio_stream;
         private bool streaming = false;
+        private bool looping = false;
         private State state = State.STOPPED;
 
         internal AudioSource() {
@@ -267,11 +268,15 @@ namespace Bodhi {
             return state == State.STOPPED;
         }
 
-        public void play() {
+        public bool is_looping() {
+            return looping;
+        }
+        public void play(bool looping = false) {
             if (AL.is_source(source)) {
                 if (!is_paused()) {
                     rewind();
                 }
+                this.looping = looping;
                 source.play();
                 state = State.PLAYING;
             }
@@ -309,6 +314,7 @@ namespace Bodhi {
         public void stop() {
             if (AL.is_source(source)) {
                 source.stop();
+                looping = false;
                 state = State.STOPPED;
             }
         }
@@ -334,6 +340,10 @@ namespace Bodhi {
                 /* Get the source offset. */
                 source.get_paramf(AL.SourceBufferPosition.SEC_OFFSET,  out offset);
                 source.get_paramf(AL.SourceBufferPosition.BYTE_OFFSET, out bytes_offset);
+
+                if (is_stopped() && is_looping()) {
+                    play(true);
+                }
             }
         }
     }

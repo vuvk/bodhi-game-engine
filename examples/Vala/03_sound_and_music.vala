@@ -74,6 +74,12 @@ public class Test : Object {
                         log.write("Audio source resumed\n");
                     }
                     break;
+
+                case 4 :
+                    if (audio_source.is_stopped()) {
+                        audio_source.play(true);
+                    }
+                    break;
             }
 
             scene.begin(RGBAColorf.GREEN());
