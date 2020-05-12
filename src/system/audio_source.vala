@@ -230,6 +230,14 @@ namespace Bodhi {
             source.set_param3f(AL.POSITION, x, y, z);
         }
 
+        public void set_relative(bool relative) {
+            source.set_parami(AL.SOURCE_RELATIVE, relative ? AL.TRUE : AL.FALSE);
+        }
+
+        public void set_pitch(float pitch) {
+            source.set_paramf(AL.PITCH, pitch.clamp(0.5f, 2.0f));
+        }
+
         public float[] get_position() {
             float[] position = new float[3];
             source.get_paramfv(AL.POSITION, position);
@@ -271,6 +279,25 @@ namespace Bodhi {
         public bool is_looping() {
             return looping;
         }
+
+        public bool is_relative() {
+            if (AL.is_source(source)) {
+                int relative;
+                source.get_parami(AL.SOURCE_RELATIVE, out relative);
+                return relative == AL.TRUE;
+            }
+            return false;
+        }
+
+        public float get_pitch() {
+            if (AL.is_source(source)) {
+                float pitch;
+                source.get_paramf(AL.PITCH, out pitch);
+                return pitch;
+            }
+            return 0.0f;
+        }
+
         public void play(bool looping = false) {
             if (AL.is_source(source)) {
                 if (!is_paused()) {
