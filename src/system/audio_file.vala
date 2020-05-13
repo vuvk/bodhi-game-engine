@@ -81,9 +81,11 @@ namespace Bodhi {
         ~AudioFile() {
             unload();
 
-            foreach (AudioSource source in AudioSource.LIB) {
-                if (source.get_audio_file() == this) {
-                    source.unset_audio_file();
+            if (AudioSource.LIB != null) {
+                foreach (AudioSource source in AudioSource.LIB) {
+                    if (source.get_audio_file() == this) {
+                        source.unset_audio_file();
+                    }
                 }
             }
 

@@ -64,8 +64,10 @@ namespace Bodhi {
         }
 
         internal void update() {
-            foreach (AudioSource source in AudioSource.LIB) {
-                source.update();
+            if (AudioSource.LIB != null) {
+                foreach (AudioSource source in AudioSource.LIB) {
+                    source.update();
+                }
             }
         }
 
