@@ -42,6 +42,7 @@ bodhi_sources = files(
     'src/math/vector3.vala',
     'src/math/vector4.vala',
     'src/math/matrix4x4.vala',
+    'src/math/math_util.vala',
 
     'src/system/subsystem.vala',
     'src/system/file_system.vala',
