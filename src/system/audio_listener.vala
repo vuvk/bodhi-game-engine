@@ -1,6 +1,6 @@
 namespace Bodhi {
 
-    public class AudioListener {
+    public class AudioListener : Object {
         private static weak Audio audio = Engine.get_audio();
 
         private float[] position    = new float[3];

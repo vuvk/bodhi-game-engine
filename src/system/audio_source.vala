@@ -2,7 +2,7 @@ using Gee;
 
 namespace Bodhi {
 
-    public class AudioSource {
+    public class AudioSource : Object {
 
         public enum State {
             INITIAL,
