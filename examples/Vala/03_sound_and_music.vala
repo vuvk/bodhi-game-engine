@@ -2,9 +2,11 @@ using Bodhi;
 
 public class Test : Object {
 
-
     public static int main (string[] args) {
         int step = 0;
+        Vector3f source_position = { 0, 0, -1 };
+        float angle = 0.0f;
+        const float RADIUS = 1.5f;
 
         Engine.start(512, 384);
 
@@ -76,9 +78,26 @@ public class Test : Object {
                     break;
 
                 case 4 :
+                    // step 6 - test stereo effect and looping sound
                     if (audio_source.is_stopped()) {
+                        audio_source.set_positionv(source_position);
+                        audio_source.set_relative(true);
+                        ++step;
+                        log.write("Now test 3d sound\n");
                         audio_source.play(true);
                     }
+                    break;
+
+                case 5 :
+                    // update source position
+                    angle += 30 * Engine.get_delta_time();
+                    if (angle > 360.0f) {
+                        angle -= 360.0f;
+                    }
+                    float rad = MathUtil.deg_to_rad(angle);
+                    source_position.x =  RADIUS * Math.cosf(rad);
+                    source_position.z = -RADIUS * Math.sinf(rad);
+                    audio_source.set_positionv(source_position);
                     break;
             }
 
