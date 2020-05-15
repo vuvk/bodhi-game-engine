@@ -180,7 +180,7 @@ namespace Bodhi {
             return precached;
         }
 
-        internal AL.Buffer get_buffer() {
+        internal AL.Buffer get_al_buffer() {
             return buffer;
         }
 
@@ -188,7 +188,7 @@ namespace Bodhi {
             return filename;
         }
 
-        internal AL.BufferFormat get_format() {
+        internal AL.BufferFormat get_al_format() {
             return format;
         }
 

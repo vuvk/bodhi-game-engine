@@ -52,7 +52,7 @@ namespace Bodhi {
                     return;
                 }
 
-                format = audio_file.get_format();
+                format = audio_file.get_al_format();
 
                 membuf = new short[BUFFER_SAMPLES * sfinfo.channels];
             }
@@ -194,7 +194,7 @@ namespace Bodhi {
                 audio_file = file;
 
                 if (file.is_precached()) {
-                    source.set_parami(AL.BUFFER, (AL.ALint)audio_file.get_buffer());
+                    source.set_parami(AL.BUFFER, (AL.ALint)audio_file.get_al_buffer());
                 } else {
                     audio_stream = new AudioStream(audio_file);
                     streaming = true;

@@ -44,18 +44,23 @@ bodhi_sources = files(
     'src/math/matrix4x4.vala',
     'src/math/math_util.vala',
 
-    'src/system/subsystem.vala',
-    'src/system/file_system.vala',
-    'src/system/file.vala',
-    'src/system/log_system.vala',
-    'src/system/window_system.vala',
-    'src/system/render_system.vala',
-    'src/system/scene_manager.vala',
-    'src/system/input_system.vala',
-    'src/system/audio_system.vala',
-    'src/system/audio_file.vala',
-    'src/system/audio_source.vala',
-    'src/system/audio_listener.vala',
+    'src/system/subsystem/subsystem.vala',
+
+    'src/system/subsystem/file_system/file_system.vala',
+    'src/system/subsystem/file_system/file.vala',
+
+    'src/system/subsystem/audio_system/audio_system.vala',
+    'src/system/subsystem/audio_system/audio_file.vala',
+    'src/system/subsystem/audio_system/audio_source.vala',
+    'src/system/subsystem/audio_system/audio_listener.vala',
+
+    'src/system/subsystem/rendering/window_system.vala',
+    'src/system/subsystem/rendering/render_system.vala',
+    'src/system/subsystem/rendering/scene_manager.vala',
+
+    'src/system/subsystem/log_system.vala',
+    'src/system/subsystem/input_system.vala',
+
     'src/system/engine.vala',
 )
 
