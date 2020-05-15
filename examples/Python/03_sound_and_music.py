@@ -14,8 +14,8 @@ input = engine.get_input()
 audio = engine.get_audio()
 
 step = 0
-source_position = Bodhi.Vector3f()
-source_position.set_xyz(0, 0, -1)
+pos_x = 0
+pos_z = -1
 angle = 0.0
 RADIUS = 1.5
 
@@ -76,7 +76,7 @@ while engine.is_running() :
     elif step == 4 :
         # step 6 - test stereo effect and looping sound
         if audio_source.is_stopped() :
-            audio_source.set_positionv(source_position)
+            audio_source.set_positionf(pos_x, 0, pos_z)
             audio_source.set_relative(True)
             step += 1
             log.write("Now test 3d sound\n")
@@ -88,9 +88,9 @@ while engine.is_running() :
         if angle > 360.0 :
             angle -= 360.0
         rad = math.radians(angle)
-        source_position.x =  RADIUS * math.cos(rad)
-        source_position.z = -RADIUS * math.sin(rad)
-        audio_source.set_positionf(source_position.get_x(), source_position.get_y(), source_position.get_z())
+        pos_x =  RADIUS * math.cos(rad)
+        pos_z = -RADIUS * math.sin(rad)
+        audio_source.set_positionf(pos_x, 0, pos_z)
 
     if (input.is_key_press(Bodhi.InputKeys.ESCAPE)) :
         log.write("Bye-bye.\n")
