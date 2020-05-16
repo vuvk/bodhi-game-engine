@@ -10,7 +10,6 @@ namespace Bodhi {
         public const bool DEFAULT_RESIZABLE  = false;
         public const bool DEFAULT_FULLSCREEN = false;
 
-        private GLFW.Window? glfw_window;
         private string title = @"$(Engine.get_name()) $(Engine.get_version())";
         private int width  = 0;
         private int height = 0;
@@ -62,19 +61,13 @@ namespace Bodhi {
             */
             /* try to create window */
 
-            unowned GLFW.Monitor? monitor = (fullscreen_mode) ? GLFW.get_primary_monitor() : null;
+            GLUT.glutInitWindowSize(width, height);
+            GLUT.glutInitWindowPosition(100, 100);
+            GLUT.glutCreateWindow(title);
 
-            /* use GLES */
-            GLFW.WindowHint.CLIENT_API.set(GLFW.ClientAPI.OPENGL);
-
-            glfw_window = new GLFW.Window(width, height, title, monitor, null);
-            if (glfw_window == null) {
-                Engine.get_log().write_error("Couldn't create window!\n");
-                return Errors.WINDOW_NOT_CREATED;
+            if (fullscreen_mode) {
+                GLUT.glutFullScreen();
             }
-            glfw_window.make_context_current();
-
-            GLFW.WindowHint.RESIZABLE.set_bool(resizable);
 
             return Errors.NO_ERROR;
         }
@@ -96,7 +89,7 @@ namespace Bodhi {
 
         //windows gets
         public Vector2i get_size() {
-            int width = 0,
+            int width  = 0,
                 height = 0;
             get_sizei(out width, out height);
             return { width, height };
@@ -107,7 +100,8 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.get_size(out width, out height);
+            width  = GLUT.glutGet(GLUT.GLUT_WINDOW_WIDTH );
+            height = GLUT.glutGet(GLUT.GLUT_WINDOW_HEIGHT);
         }
 
         public unowned string? get_title() {
@@ -134,15 +128,8 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.get_position(out x, out y);
-        }
-
-        internal unowned GLFW.Window? get_glfw_window() {
-            if (!is_initialized()) {
-                return null;
-            }
-
-            return glfw_window;
+            x = GLUT.glutGet(GLUT.GLUT_WINDOW_X);
+            y = GLUT.glutGet(GLUT.GLUT_WINDOW_Y);
         }
 
         public void set_size(Vector2i size) {
@@ -154,7 +141,7 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.set_size(width, height);
+            GLUT.glutReshapeWindow(width, height);
         }
 
         public void set_title(string title) {
@@ -162,8 +149,8 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.title = title;
             this.title = title;
+            GLUT.glutSetWindowTitle(title);
         }
 
         public void set_position(Vector2i pos) {
@@ -175,7 +162,7 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.set_position(x, y);
+            GLUT.glutPositionWindow(x, y);
         }
 
         public void center() {
@@ -201,19 +188,19 @@ namespace Bodhi {
                 return;
             }
 
-            if (glfw_window != null) {
-                Vector2i size = get_size();
+            Vector2i size = get_size();
 
-                if ((size.x != prev_width) ||
-                    (size.y != prev_height)) {
-                    // !!!
-                    // Perspectivef_M4x4(_pers, 60.0f, (float)width / height, 0.1f, 1000.0f);
+            if ((size.x != prev_width) ||
+                (size.y != prev_height)) {
+                // !!!
+                // Perspectivef_M4x4(_pers, 60.0f, (float)width / height, 0.1f, 1000.0f);
 
+                if (resizable) {
                     prev_width  = size.x;
                     prev_height = size.y;
+                } else {
+                    set_size(prev_width, prev_height);
                 }
-            } else {
-                deinit();
             }
         }
 
@@ -222,7 +209,7 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.swap_buffers();
+            GLUT.glutSwapBuffers();
         }
     }
 }

@@ -58,16 +58,8 @@ namespace Bodhi {
         }
 
         public void get_screen_resolutioni(out int width, out int height) {
-            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
-            if (monitor == null) {
-                width = height = 0;
-                return;
-            }
-
-            GLFW.VideoMode mode = monitor.video_mode;
-
-            width  = mode.width;
-            height = mode.height;
+            width  = GLUT.glutGet(GLUT.GLUT_SCREEN_WIDTH );
+            height = GLUT.glutGet(GLUT.GLUT_SCREEN_HEIGHT);
         }
 
         public int get_screen_resolution_width() {
@@ -76,43 +68,6 @@ namespace Bodhi {
 
         public int get_screen_resolution_height() {
             return get_screen_resolution().y;
-        }
-
-        public Vector2i get_max_screen_resolution() {
-            int x = 0,
-                y = 0;
-            get_max_screen_resolutioni(out x, out y);
-            return { x, y };
-        }
-
-        public void get_max_screen_resolutioni(out int width, out int height) {
-            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
-            if (monitor == null) {
-                width = height = 0;
-                return;
-            }
-
-            int w = 0, h = 0;
-            foreach (GLFW.VideoMode mode in monitor.video_modes) {
-                if (mode.width > w) {
-                    w = mode.width;
-                }
-
-                if (mode.height > h) {
-                    h = mode.height;
-                }
-            }
-
-            width = w;
-            height = h;
-        }
-
-        public int get_max_screen_resolution_width() {
-            return get_max_screen_resolution().x;
-        }
-
-        public int get_max_screen_resolution_height() {
-            return get_max_screen_resolution().y;
         }
 
         public string get_vendor() {
@@ -158,22 +113,6 @@ namespace Bodhi {
                 @"GLSL version : $glsl_version\n" +
                 "============================================\n"
             );
-        }
-
-        public void print_display_modes() {
-            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
-            if (monitor == null) {
-                return;
-            }
-
-            Engine.get_log().write(@"Display modes for $(monitor.name):\n");
-            foreach (GLFW.VideoMode mode in monitor.video_modes) {
-                Engine.get_log().write(
-                    @"width\t$(mode.width)\t" +
-                    @"height\t$(mode.height)\t" +
-                    @"refresh rate\t$(mode.refresh_rate)\n"
-                );
-            }
         }
     }
 }

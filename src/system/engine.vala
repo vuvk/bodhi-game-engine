@@ -1,5 +1,3 @@
-//using SDL;
-using GLFW;
 
 namespace Bodhi {
 
@@ -72,12 +70,16 @@ namespace Bodhi {
                       @"$NAME ver. $VERSION\n" +
                        "============================================\n");
 
-            /* try init GLFW */
-            if (!GLFW.init()) {
+            /* try init GLUT */
+            /*if (!GLUT.glutInit()) {
                 log.write_error("Couldn't init GLES2!\n");
                 stop();
                 return Errors.ENGINE_NOT_CREATED;
-            }
+            }*/
+            string[] args = new string[1];
+            args[0] = FileSystem.get_base_dir();
+            GLUT.glutInit (ref args.length, args);
+            GLUT.glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 
             /* now engine is running */
             state = States.RUNNING;

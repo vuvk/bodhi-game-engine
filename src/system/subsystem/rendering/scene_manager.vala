@@ -1,4 +1,3 @@
-using GLFW;
 //using GL;
 using GLES2;
 

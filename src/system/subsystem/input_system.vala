@@ -1,5 +1,3 @@
-//using SDL;
-using GLFW;
 
 namespace Bodhi {
     public class Input : SubSystem {
@@ -133,7 +131,6 @@ namespace Bodhi {
             MENU              = 348
         }
 
-        private unowned GLFW.Window? glfw_window;
         private static double mouse_pos_x = 0;
         private static double mouse_pos_y = 0;
         private static double prev_mouse_pos_x = 0;
