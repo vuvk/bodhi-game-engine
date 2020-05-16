@@ -22,6 +22,8 @@
  *  Matias De la Puente <mfpuente.ar@gmail.com>
  */
 
+using GLES2;
+
 [CCode (lower_case_cprefix ="", cheader_filename="GL/freeglut.h")]
 namespace GLUT
 {
@@ -32,239 +34,239 @@ namespace GLUT
     /*
     * GLUT API macro definitions -- the special key codes:
     */
-    public const GL.GLenum GLUT_KEY_F1;
-    public const GL.GLenum GLUT_KEY_F2;
-    public const GL.GLenum GLUT_KEY_F3;
-    public const GL.GLenum GLUT_KEY_F4;
-    public const GL.GLenum GLUT_KEY_F5;
-    public const GL.GLenum GLUT_KEY_F6;
-    public const GL.GLenum GLUT_KEY_F7;
-    public const GL.GLenum GLUT_KEY_F8;
-    public const GL.GLenum GLUT_KEY_F9;
-    public const GL.GLenum GLUT_KEY_F10;
-    public const GL.GLenum GLUT_KEY_F11;
-    public const GL.GLenum GLUT_KEY_F12;
-    public const GL.GLenum GLUT_KEY_LEFT;
-    public const GL.GLenum GLUT_KEY_UP;
-    public const GL.GLenum GLUT_KEY_RIGHT;
-    public const GL.GLenum GLUT_KEY_DOWN;
-    public const GL.GLenum GLUT_KEY_PAGE_UP;
-    public const GL.GLenum GLUT_KEY_PAGE_DOWN;
-    public const GL.GLenum GLUT_KEY_HOME;
-    public const GL.GLenum GLUT_KEY_END;
-    public const GL.GLenum GLUT_KEY_INSERT;
+    public const GLenum GLUT_KEY_F1;
+    public const GLenum GLUT_KEY_F2;
+    public const GLenum GLUT_KEY_F3;
+    public const GLenum GLUT_KEY_F4;
+    public const GLenum GLUT_KEY_F5;
+    public const GLenum GLUT_KEY_F6;
+    public const GLenum GLUT_KEY_F7;
+    public const GLenum GLUT_KEY_F8;
+    public const GLenum GLUT_KEY_F9;
+    public const GLenum GLUT_KEY_F10;
+    public const GLenum GLUT_KEY_F11;
+    public const GLenum GLUT_KEY_F12;
+    public const GLenum GLUT_KEY_LEFT;
+    public const GLenum GLUT_KEY_UP;
+    public const GLenum GLUT_KEY_RIGHT;
+    public const GLenum GLUT_KEY_DOWN;
+    public const GLenum GLUT_KEY_PAGE_UP;
+    public const GLenum GLUT_KEY_PAGE_DOWN;
+    public const GLenum GLUT_KEY_HOME;
+    public const GLenum GLUT_KEY_END;
+    public const GLenum GLUT_KEY_INSERT;
 
 
     /*
      * GLUT API macro definitions -- mouse state definitions
      */
-    public const GL.GLenum GLUT_LEFT_BUTTON;
-    public const GL.GLenum GLUT_MIDDLE_BUTTON;
-    public const GL.GLenum GLUT_RIGHT_BUTTON;
-    public const GL.GLenum GLUT_DOWN;
-    public const GL.GLenum GLUT_UP;
-    public const GL.GLenum GLUT_LEFT;
-    public const GL.GLenum GLUT_ENTERED;
+    public const GLenum GLUT_LEFT_BUTTON;
+    public const GLenum GLUT_MIDDLE_BUTTON;
+    public const GLenum GLUT_RIGHT_BUTTON;
+    public const GLenum GLUT_DOWN;
+    public const GLenum GLUT_UP;
+    public const GLenum GLUT_LEFT;
+    public const GLenum GLUT_ENTERED;
 
     /*
      * GLUT API macro definitions -- the display mode definitions
      */
-    public const GL.GLenum GLUT_RGB;
-    public const GL.GLenum GLUT_RGBA;
-    public const GL.GLenum GLUT_INDEX;
-    public const GL.GLenum GLUT_SINGLE;
-    public const GL.GLenum GLUT_DOUBLE;
-    public const GL.GLenum GLUT_ACCUM;
-    public const GL.GLenum GLUT_ALPHA;
-    public const GL.GLenum GLUT_DEPTH;
-    public const GL.GLenum GLUT_STENCIL;
-    public const GL.GLenum GLUT_MULTISAMPLE;
-    public const GL.GLenum GLUT_STEREO;
-    public const GL.GLenum GLUT_LUMINANCE;
+    public const GLenum GLUT_RGB;
+    public const GLenum GLUT_RGBA;
+    public const GLenum GLUT_INDEX;
+    public const GLenum GLUT_SINGLE;
+    public const GLenum GLUT_DOUBLE;
+    public const GLenum GLUT_ACCUM;
+    public const GLenum GLUT_ALPHA;
+    public const GLenum GLUT_DEPTH;
+    public const GLenum GLUT_STENCIL;
+    public const GLenum GLUT_MULTISAMPLE;
+    public const GLenum GLUT_STEREO;
+    public const GLenum GLUT_LUMINANCE;
 
     /*
      * GLUT API macro definitions -- windows and menu related definitions
      */
-    public const GL.GLenum GLUT_MENU_NOT_IN_USE;
-    public const GL.GLenum GLUT_MENU_IN_USE;
-    public const GL.GLenum GLUT_NOT_VISIBLE;
-    public const GL.GLenum GLUT_VISIBLE;
-    public const GL.GLenum GLUT_HIDDEN;
-    public const GL.GLenum GLUT_FULLY_RETAINED;
-    public const GL.GLenum GLUT_PARTIALLY_RETAINED;
-    public const GL.GLenum GLUT_FULLY_COVERED;
+    public const GLenum GLUT_MENU_NOT_IN_USE;
+    public const GLenum GLUT_MENU_IN_USE;
+    public const GLenum GLUT_NOT_VISIBLE;
+    public const GLenum GLUT_VISIBLE;
+    public const GLenum GLUT_HIDDEN;
+    public const GLenum GLUT_FULLY_RETAINED;
+    public const GLenum GLUT_PARTIALLY_RETAINED;
+    public const GLenum GLUT_FULLY_COVERED;
 
     /*
      * GLUT API macro definitions -- fonts definitions
      *
      * Steve Baker suggested to make it binary compatible with GLUT:
     */
-    public const GL.GLvoid GLUT_STROKE_ROMAN;
-    public const GL.GLvoid GLUT_STROKE_MONO_ROMAN;
-    public const GL.GLvoid GLUT_BITMAP_9_BY_15;
-    public const GL.GLvoid GLUT_BITMAP_8_BY_13;
-    public const GL.GLvoid GLUT_BITMAP_TIMES_ROMAN_10;
-    public const GL.GLvoid GLUT_BITMAP_TIMES_ROMAN_24;
-    public const GL.GLvoid GLUT_BITMAP_HELVETICA_10;
-    public const GL.GLvoid GLUT_BITMAP_HELVETICA_12;
-    public const GL.GLvoid GLUT_BITMAP_HELVETICA_18;
+    public const GLvoid GLUT_STROKE_ROMAN;
+    public const GLvoid GLUT_STROKE_MONO_ROMAN;
+    public const GLvoid GLUT_BITMAP_9_BY_15;
+    public const GLvoid GLUT_BITMAP_8_BY_13;
+    public const GLvoid GLUT_BITMAP_TIMES_ROMAN_10;
+    public const GLvoid GLUT_BITMAP_TIMES_ROMAN_24;
+    public const GLvoid GLUT_BITMAP_HELVETICA_10;
+    public const GLvoid GLUT_BITMAP_HELVETICA_12;
+    public const GLvoid GLUT_BITMAP_HELVETICA_18;
 
     /*
      * GLUT API macro definitions -- the glutGet parameters
      */
-    public const GL.GLenum GLUT_WINDOW_X;
-    public const GL.GLenum GLUT_WINDOW_Y;
-    public const GL.GLenum GLUT_WINDOW_WIDTH;
-    public const GL.GLenum GLUT_WINDOW_HEIGHT;
-    public const GL.GLenum GLUT_WINDOW_BUFFER_SIZE;
-    public const GL.GLenum GLUT_WINDOW_STENCIL_SIZE;
-    public const GL.GLenum GLUT_WINDOW_DEPTH_SIZE;
-    public const GL.GLenum GLUT_WINDOW_RED_SIZE;
-    public const GL.GLenum GLUT_WINDOW_GREEN_SIZE;
-    public const GL.GLenum GLUT_WINDOW_BLUE_SIZE;
-    public const GL.GLenum GLUT_WINDOW_ALPHA_SIZE;
-    public const GL.GLenum GLUT_WINDOW_ACCUM_RED_SIZE;
-    public const GL.GLenum GLUT_WINDOW_ACCUM_GREEN_SIZE;
-    public const GL.GLenum GLUT_WINDOW_ACCUM_BLUE_SIZE;
-    public const GL.GLenum GLUT_WINDOW_ACCUM_ALPHA_SIZE;
-    public const GL.GLenum GLUT_WINDOW_DOUBLEBUFFER;
-    public const GL.GLenum GLUT_WINDOW_RGBA;
-    public const GL.GLenum GLUT_WINDOW_PARENT;
-    public const GL.GLenum GLUT_WINDOW_NUM_CHILDREN;
-    public const GL.GLenum GLUT_WINDOW_COLORMAP_SIZE;
-    public const GL.GLenum GLUT_WINDOW_NUM_SAMPLES;
-    public const GL.GLenum GLUT_WINDOW_STEREO;
-    public const GL.GLenum GLUT_WINDOW_CURSOR;
+    public const GLenum GLUT_WINDOW_X;
+    public const GLenum GLUT_WINDOW_Y;
+    public const GLenum GLUT_WINDOW_WIDTH;
+    public const GLenum GLUT_WINDOW_HEIGHT;
+    public const GLenum GLUT_WINDOW_BUFFER_SIZE;
+    public const GLenum GLUT_WINDOW_STENCIL_SIZE;
+    public const GLenum GLUT_WINDOW_DEPTH_SIZE;
+    public const GLenum GLUT_WINDOW_RED_SIZE;
+    public const GLenum GLUT_WINDOW_GREEN_SIZE;
+    public const GLenum GLUT_WINDOW_BLUE_SIZE;
+    public const GLenum GLUT_WINDOW_ALPHA_SIZE;
+    public const GLenum GLUT_WINDOW_ACCUM_RED_SIZE;
+    public const GLenum GLUT_WINDOW_ACCUM_GREEN_SIZE;
+    public const GLenum GLUT_WINDOW_ACCUM_BLUE_SIZE;
+    public const GLenum GLUT_WINDOW_ACCUM_ALPHA_SIZE;
+    public const GLenum GLUT_WINDOW_DOUBLEBUFFER;
+    public const GLenum GLUT_WINDOW_RGBA;
+    public const GLenum GLUT_WINDOW_PARENT;
+    public const GLenum GLUT_WINDOW_NUM_CHILDREN;
+    public const GLenum GLUT_WINDOW_COLORMAP_SIZE;
+    public const GLenum GLUT_WINDOW_NUM_SAMPLES;
+    public const GLenum GLUT_WINDOW_STEREO;
+    public const GLenum GLUT_WINDOW_CURSOR;
 
-    public const GL.GLenum GLUT_SCREEN_WIDTH;
-    public const GL.GLenum GLUT_SCREEN_HEIGHT;
-    public const GL.GLenum GLUT_SCREEN_WIDTH_MM;
-    public const GL.GLenum GLUT_SCREEN_HEIGHT_MM;
-    public const GL.GLenum GLUT_MENU_NUM_ITEMS;
-    public const GL.GLenum GLUT_DISPLAY_MODE_POSSIBLE;
-    public const GL.GLenum GLUT_INIT_WINDOW_X;
-    public const GL.GLenum GLUT_INIT_WINDOW_Y;
-    public const GL.GLenum GLUT_INIT_WINDOW_WIDTH;
-    public const GL.GLenum GLUT_INIT_WINDOW_HEIGHT;
-    public const GL.GLenum GLUT_INIT_DISPLAY_MODE;
-    public const GL.GLenum GLUT_ELAPSED_TIME;
-    public const GL.GLenum GLUT_WINDOW_FORMAT_ID;
-    public const GL.GLenum GLUT_INIT_STATE;
+    public const GLenum GLUT_SCREEN_WIDTH;
+    public const GLenum GLUT_SCREEN_HEIGHT;
+    public const GLenum GLUT_SCREEN_WIDTH_MM;
+    public const GLenum GLUT_SCREEN_HEIGHT_MM;
+    public const GLenum GLUT_MENU_NUM_ITEMS;
+    public const GLenum GLUT_DISPLAY_MODE_POSSIBLE;
+    public const GLenum GLUT_INIT_WINDOW_X;
+    public const GLenum GLUT_INIT_WINDOW_Y;
+    public const GLenum GLUT_INIT_WINDOW_WIDTH;
+    public const GLenum GLUT_INIT_WINDOW_HEIGHT;
+    public const GLenum GLUT_INIT_DISPLAY_MODE;
+    public const GLenum GLUT_ELAPSED_TIME;
+    public const GLenum GLUT_WINDOW_FORMAT_ID;
+    public const GLenum GLUT_INIT_STATE;
 
     /*
      * GLUT API macro definitions -- the glutDeviceGet parameters
      */
-    public const GL.GLenum GLUT_HAS_KEYBOARD;
-    public const GL.GLenum GLUT_HAS_MOUSE;
-    public const GL.GLenum GLUT_HAS_SPACEBALL;
-    public const GL.GLenum GLUT_HAS_DIAL_AND_BUTTON_BOX;
-    public const GL.GLenum GLUT_HAS_TABLET;
-    public const GL.GLenum GLUT_NUM_MOUSE_BUTTONS;
-    public const GL.GLenum GLUT_NUM_SPACEBALL_BUTTONS;
-    public const GL.GLenum GLUT_NUM_BUTTON_BOX_BUTTONS;
-    public const GL.GLenum GLUT_NUM_DIALS;
-    public const GL.GLenum GLUT_NUM_TABLET_BUTTONS;
-    public const GL.GLenum GLUT_DEVICE_IGNORE_KEY_REPEAT;
-    public const GL.GLenum GLUT_DEVICE_KEY_REPEAT;
-    public const GL.GLenum GLUT_HAS_JOYSTICK;
-    public const GL.GLenum GLUT_OWNS_JOYSTICK;
-    public const GL.GLenum GLUT_JOYSTICK_BUTTONS;
-    public const GL.GLenum GLUT_JOYSTICK_AXES;
-    public const GL.GLenum GLUT_JOYSTICK_POLL_RATE;
+    public const GLenum GLUT_HAS_KEYBOARD;
+    public const GLenum GLUT_HAS_MOUSE;
+    public const GLenum GLUT_HAS_SPACEBALL;
+    public const GLenum GLUT_HAS_DIAL_AND_BUTTON_BOX;
+    public const GLenum GLUT_HAS_TABLET;
+    public const GLenum GLUT_NUM_MOUSE_BUTTONS;
+    public const GLenum GLUT_NUM_SPACEBALL_BUTTONS;
+    public const GLenum GLUT_NUM_BUTTON_BOX_BUTTONS;
+    public const GLenum GLUT_NUM_DIALS;
+    public const GLenum GLUT_NUM_TABLET_BUTTONS;
+    public const GLenum GLUT_DEVICE_IGNORE_KEY_REPEAT;
+    public const GLenum GLUT_DEVICE_KEY_REPEAT;
+    public const GLenum GLUT_HAS_JOYSTICK;
+    public const GLenum GLUT_OWNS_JOYSTICK;
+    public const GLenum GLUT_JOYSTICK_BUTTONS;
+    public const GLenum GLUT_JOYSTICK_AXES;
+    public const GLenum GLUT_JOYSTICK_POLL_RATE;
 
     /*
      * GLUT API macro definitions -- the glutLayerGet parameters
      */
-    public const GL.GLenum GLUT_OVERLAY_POSSIBLE;
-    public const GL.GLenum GLUT_LAYER_IN_USE;
-    public const GL.GLenum GLUT_HAS_OVERLAY;
-    public const GL.GLenum GLUT_TRANSPARENT_INDEX;
-    public const GL.GLenum GLUT_NORMAL_DAMAGED;
-    public const GL.GLenum GLUT_OVERLAY_DAMAGED;
+    public const GLenum GLUT_OVERLAY_POSSIBLE;
+    public const GLenum GLUT_LAYER_IN_USE;
+    public const GLenum GLUT_HAS_OVERLAY;
+    public const GLenum GLUT_TRANSPARENT_INDEX;
+    public const GLenum GLUT_NORMAL_DAMAGED;
+    public const GLenum GLUT_OVERLAY_DAMAGED;
 
     /*
      * GLUT API macro definitions -- the glutVideoResizeGet parameters
      */
-    public const GL.GLenum GLUT_VIDEO_RESIZE_POSSIBLE;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_IN_USE;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_X_DELTA;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_Y_DELTA;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_WIDTH_DELTA;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_HEIGHT_DELTA;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_X;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_Y;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_WIDTH;
-    public const GL.GLenum GLUT_VIDEO_RESIZE_HEIGHT;
+    public const GLenum GLUT_VIDEO_RESIZE_POSSIBLE;
+    public const GLenum GLUT_VIDEO_RESIZE_IN_USE;
+    public const GLenum GLUT_VIDEO_RESIZE_X_DELTA;
+    public const GLenum GLUT_VIDEO_RESIZE_Y_DELTA;
+    public const GLenum GLUT_VIDEO_RESIZE_WIDTH_DELTA;
+    public const GLenum GLUT_VIDEO_RESIZE_HEIGHT_DELTA;
+    public const GLenum GLUT_VIDEO_RESIZE_X;
+    public const GLenum GLUT_VIDEO_RESIZE_Y;
+    public const GLenum GLUT_VIDEO_RESIZE_WIDTH;
+    public const GLenum GLUT_VIDEO_RESIZE_HEIGHT;
 
     /*
      * GLUT API macro definitions -- the glutUseLayer parameters
      */
-    public const GL.GLenum GLUT_NORMAL;
-    public const GL.GLenum GLUT_OVERLAY;
+    public const GLenum GLUT_NORMAL;
+    public const GLenum GLUT_OVERLAY;
 
     /*
      * GLUT API macro definitions -- the glutGetModifiers parameters
      */
-    public const GL.GLenum GLUT_ACTIVE_SHIFT;
-    public const GL.GLenum GLUT_ACTIVE_CTRL;
-    public const GL.GLenum GLUT_ACTIVE_ALT;
+    public const GLenum GLUT_ACTIVE_SHIFT;
+    public const GLenum GLUT_ACTIVE_CTRL;
+    public const GLenum GLUT_ACTIVE_ALT;
 
     /*
      * GLUT API macro definitions -- the glutSetCursor parameters
      */
-    public const GL.GLenum GLUT_CURSOR_RIGHT_ARROW;
-    public const GL.GLenum GLUT_CURSOR_LEFT_ARROW;
-    public const GL.GLenum GLUT_CURSOR_INFO;
-    public const GL.GLenum GLUT_CURSOR_DESTROY;
-    public const GL.GLenum GLUT_CURSOR_HELP;
-    public const GL.GLenum GLUT_CURSOR_CYCLE;
-    public const GL.GLenum GLUT_CURSOR_SPRAY;
-    public const GL.GLenum GLUT_CURSOR_WAIT;
-    public const GL.GLenum GLUT_CURSOR_TEXT;
-    public const GL.GLenum GLUT_CURSOR_CROSSHAIR;
-    public const GL.GLenum GLUT_CURSOR_UP_DOWN;
-    public const GL.GLenum GLUT_CURSOR_LEFT_RIGHT;
-    public const GL.GLenum GLUT_CURSOR_TOP_SIDE;
-    public const GL.GLenum GLUT_CURSOR_BOTTOM_SIDE;
-    public const GL.GLenum GLUT_CURSOR_LEFT_SIDE;
-    public const GL.GLenum GLUT_CURSOR_RIGHT_SIDE;
-    public const GL.GLenum GLUT_CURSOR_TOP_LEFT_CORNER;
-    public const GL.GLenum GLUT_CURSOR_TOP_RIGHT_CORNER;
-    public const GL.GLenum GLUT_CURSOR_BOTTOM_RIGHT_CORNER;
-    public const GL.GLenum GLUT_CURSOR_BOTTOM_LEFT_CORNER;
-    public const GL.GLenum GLUT_CURSOR_INHERIT;
-    public const GL.GLenum GLUT_CURSOR_NONE;
-    public const GL.GLenum GLUT_CURSOR_FULL_CROSSHAIR;
+    public const GLenum GLUT_CURSOR_RIGHT_ARROW;
+    public const GLenum GLUT_CURSOR_LEFT_ARROW;
+    public const GLenum GLUT_CURSOR_INFO;
+    public const GLenum GLUT_CURSOR_DESTROY;
+    public const GLenum GLUT_CURSOR_HELP;
+    public const GLenum GLUT_CURSOR_CYCLE;
+    public const GLenum GLUT_CURSOR_SPRAY;
+    public const GLenum GLUT_CURSOR_WAIT;
+    public const GLenum GLUT_CURSOR_TEXT;
+    public const GLenum GLUT_CURSOR_CROSSHAIR;
+    public const GLenum GLUT_CURSOR_UP_DOWN;
+    public const GLenum GLUT_CURSOR_LEFT_RIGHT;
+    public const GLenum GLUT_CURSOR_TOP_SIDE;
+    public const GLenum GLUT_CURSOR_BOTTOM_SIDE;
+    public const GLenum GLUT_CURSOR_LEFT_SIDE;
+    public const GLenum GLUT_CURSOR_RIGHT_SIDE;
+    public const GLenum GLUT_CURSOR_TOP_LEFT_CORNER;
+    public const GLenum GLUT_CURSOR_TOP_RIGHT_CORNER;
+    public const GLenum GLUT_CURSOR_BOTTOM_RIGHT_CORNER;
+    public const GLenum GLUT_CURSOR_BOTTOM_LEFT_CORNER;
+    public const GLenum GLUT_CURSOR_INHERIT;
+    public const GLenum GLUT_CURSOR_NONE;
+    public const GLenum GLUT_CURSOR_FULL_CROSSHAIR;
 
     /*
      * GLUT API macro definitions -- RGB color component specification definitions
      */
-    public const GL.GLenum GLUT_RED;
-    public const GL.GLenum GLUT_GREEN;
-    public const GL.GLenum GLUT_BLUE;
+    public const GLenum GLUT_RED;
+    public const GLenum GLUT_GREEN;
+    public const GLenum GLUT_BLUE;
 
     /*
      * GLUT API macro definitions -- additional keyboard and joystick definitions
      */
-    public const GL.GLenum GLUT_KEY_REPEAT_OFF;
-    public const GL.GLenum GLUT_KEY_REPEAT_ON;
-    public const GL.GLenum GLUT_KEY_REPEAT_DEFAULT;
+    public const GLenum GLUT_KEY_REPEAT_OFF;
+    public const GLenum GLUT_KEY_REPEAT_ON;
+    public const GLenum GLUT_KEY_REPEAT_DEFAULT;
 
-    public const GL.GLenum GLUT_JOYSTICK_BUTTON_A;
-    public const GL.GLenum GLUT_JOYSTICK_BUTTON_B;
-    public const GL.GLenum GLUT_JOYSTICK_BUTTON_C;
-    public const GL.GLenum GLUT_JOYSTICK_BUTTON_D;
+    public const GLenum GLUT_JOYSTICK_BUTTON_A;
+    public const GLenum GLUT_JOYSTICK_BUTTON_B;
+    public const GLenum GLUT_JOYSTICK_BUTTON_C;
+    public const GLenum GLUT_JOYSTICK_BUTTON_D;
 
     /*
      * GLUT API macro definitions -- game mode definitions
      */
-    public const GL.GLenum GLUT_GAME_MODE_ACTIVE;
-    public const GL.GLenum GLUT_GAME_MODE_POSSIBLE;
-    public const GL.GLenum GLUT_GAME_MODE_WIDTH;
-    public const GL.GLenum GLUT_GAME_MODE_HEIGHT;
-    public const GL.GLenum GLUT_GAME_MODE_PIXEL_DEPTH;
-    public const GL.GLenum GLUT_GAME_MODE_REFRESH_RATE;
-    public const GL.GLenum GLUT_GAME_MODE_DISPLAY_CHANGED;
+    public const GLenum GLUT_GAME_MODE_ACTIVE;
+    public const GLenum GLUT_GAME_MODE_POSSIBLE;
+    public const GLenum GLUT_GAME_MODE_WIDTH;
+    public const GLenum GLUT_GAME_MODE_HEIGHT;
+    public const GLenum GLUT_GAME_MODE_PIXEL_DEPTH;
+    public const GLenum GLUT_GAME_MODE_REFRESH_RATE;
+    public const GLenum GLUT_GAME_MODE_DISPLAY_CHANGED;
 
     /*
      * Initialization functions, see fglut_init.c
@@ -319,7 +321,7 @@ namespace GLUT
      */
     public static void glutEstablishOverlay ();
     public static void glutRemoveOverlay ();
-    public static void glutUseLayer (GL.GLenum layer);
+    public static void glutUseLayer (GLenum layer);
     public static void glutPostOverlayRedisplay ();
     public static void glutPostWindowOverlayRedisplay (int window);
     public static void glutShowOverlay ();
@@ -430,10 +432,10 @@ namespace GLUT
     /*
      * State setting and retrieval functions, see freeglut_state.c
      */
-    public static int glutGet (GL.GLenum query);
-    public static int glutDeviceGet (GL.GLenum query);
+    public static int glutGet (GLenum query);
+    public static int glutDeviceGet (GLenum query);
     public static int glutGetModifiers ();
-    public static int glutLayerGet (GL.GLenum query);
+    public static int glutLayerGet (GLenum query);
 
     /*
      * Font stuff, see freeglut_font.c
@@ -450,15 +452,15 @@ namespace GLUT
     /*
      * Geometry functions, see freeglut_geometry.c
      */
-    public static void glutWireCube (GL.GLdouble size);
-    public static void glutSolidCube (GL.GLdouble size);
-    public static void glutWireSphere (GL.GLdouble radius, GL.GLint slices, GL.GLint stacks);
-    public static void glutSolidSphere (GL.GLdouble radius, GL.GLint slices, GL.GLint stacks);
-    public static void glutWireCone (GL.GLdouble base, GL.GLdouble height, GL.GLint slices, GL.GLint stacks);
-    public static void glutSolidCone (GL.GLdouble base, GL.GLdouble height, GL.GLint slices, GL.GLint stacks);
+    public static void glutWireCube (GLdouble size);
+    public static void glutSolidCube (GLdouble size);
+    public static void glutWireSphere (GLdouble radius, GLint slices, GLint stacks);
+    public static void glutSolidSphere (GLdouble radius, GLint slices, GLint stacks);
+    public static void glutWireCone (GLdouble base, GLdouble height, GLint slices, GLint stacks);
+    public static void glutSolidCone (GLdouble base, GLdouble height, GLint slices, GLint stacks);
 
-    public static void glutWireTorus (GL.GLdouble innerRadius, GL.GLdouble outerRadius, GL.GLint sides, GL.GLint rings);
-    public static void glutSolidTorus (GL.GLdouble innerRadius, GL.GLdouble outerRadius, GL.GLint sides, GL.GLint rings);
+    public static void glutWireTorus (GLdouble innerRadius, GLdouble outerRadius, GLint sides, GLint rings);
+    public static void glutSolidTorus (GLdouble innerRadius, GLdouble outerRadius, GLint sides, GLint rings);
     public static void glutWireDodecahedron ();
     public static void glutSolidDodecahedron ();
     public static void glutWireOctahedron ();
@@ -471,8 +473,8 @@ namespace GLUT
     /*
      * Teapot rendering functions, found in freeglut_teapot.c
      */
-    public static void glutWireTeapot (GL.GLdouble size);
-    public static void glutSolidTeapot (GL.GLdouble size);
+    public static void glutWireTeapot (GLdouble size);
+    public static void glutSolidTeapot (GLdouble size);
 
     /*
      * Game mode functions, see freeglut_gamemode.c
@@ -480,12 +482,12 @@ namespace GLUT
     public static void glutGameModeString (string _string);
     public static int  glutEnterGameMode ();
     public static void glutLeaveGameMode ();
-    public static int  glutGameModeGet (GL.GLenum query);
+    public static int  glutGameModeGet (GLenum query);
 
     /*
      * Video resize functions, see freeglut_videoresize.c
      */
-    public static int  glutVideoResizeGet (GL.GLenum query);
+    public static int  glutVideoResizeGet (GLenum query);
     public static void glutSetupVideoResizing ();
     public static void glutStopVideoResizing ();
     public static void glutVideoResize (int x, int y, int width, int height);
@@ -494,8 +496,8 @@ namespace GLUT
     /*
      * Colormap functions, see freeglut_misc.c
      */
-    public static void    glutSetColor (int color, GL.GLfloat red, GL.GLfloat green, GL.GLfloat blue);
-    public static GL.GLfloat glutGetColor (int color, int component);
+    public static void    glutSetColor (int color, GLfloat red, GLfloat green, GLfloat blue);
+    public static GLfloat glutGetColor (int color, int component);
     public static void    glutCopyColormap (int window);
 
     /*
@@ -518,46 +520,46 @@ namespace GLUT
     /*
      * GLUT API Extension macro definitions -- behaviour when the user clicks on an "x" to close a window
      */
-    public const GL.GLenum GLUT_ACTION_EXIT;
-    public const GL.GLenum GLUT_ACTION_GLUTMAINLOOP_RETURNS;
-    public const GL.GLenum GLUT_ACTION_CONTINUE_EXECUTION;
+    public const GLenum GLUT_ACTION_EXIT;
+    public const GLenum GLUT_ACTION_GLUTMAINLOOP_RETURNS;
+    public const GLenum GLUT_ACTION_CONTINUE_EXECUTION;
 
     /*
      * Create a new rendering context when the user opens a new window?
      */
-    public const GL.GLenum GLUT_CREATE_NEW_CONTEXT;
-    public const GL.GLenum GLUT_USE_CURRENT_CONTEXT;
+    public const GLenum GLUT_CREATE_NEW_CONTEXT;
+    public const GLenum GLUT_USE_CURRENT_CONTEXT;
 
     /*
      * Direct/Indirect rendering context options (has meaning only in Unix/X11)
      */
-    public const GL.GLenum GLUT_FORCE_INDIRECT_CONTEXT;
-    public const GL.GLenum GLUT_ALLOW_DIRECT_CONTEXT;
-    public const GL.GLenum GLUT_TRY_DIRECT_CONTEXT;
-    public const GL.GLenum GLUT_FORCE_DIRECT_CONTEXT;
+    public const GLenum GLUT_FORCE_INDIRECT_CONTEXT;
+    public const GLenum GLUT_ALLOW_DIRECT_CONTEXT;
+    public const GLenum GLUT_TRY_DIRECT_CONTEXT;
+    public const GLenum GLUT_FORCE_DIRECT_CONTEXT;
 
     /*
      * GLUT API Extension macro definitions -- the glutGet parameters
      */
-    public const GL.GLenum GLUT_ACTION_ON_WINDOW_CLOSE;
+    public const GLenum GLUT_ACTION_ON_WINDOW_CLOSE;
 
-    public const GL.GLenum GLUT_WINDOW_BORDER_WIDTH;
-    public const GL.GLenum GLUT_WINDOW_HEADER_HEIGHT;
+    public const GLenum GLUT_WINDOW_BORDER_WIDTH;
+    public const GLenum GLUT_WINDOW_HEADER_HEIGHT;
 
-    public const GL.GLenum GLUT_VERSION;
+    public const GLenum GLUT_VERSION;
 
-    public const GL.GLenum GLUT_RENDERING_CONTEXT;
-    public const GL.GLenum GLUT_DIRECT_RENDERING;
+    public const GLenum GLUT_RENDERING_CONTEXT;
+    public const GLenum GLUT_DIRECT_RENDERING;
 
     /*
      * New tokens for glutInitDisplayMode.
      * Only one GLUT_AUXn bit may be used at a time.
      * Value 0x0400 is defined in OpenGLUT.
      */
-    public const GL.GLenum GLUT_AUX1;
-    public const GL.GLenum GLUT_AUX2;
-    public const GL.GLenum GLUT_AUX3;
-    public const GL.GLenum GLUT_AUX4;
+    public const GLenum GLUT_AUX1;
+    public const GLenum GLUT_AUX2;
+    public const GLenum GLUT_AUX3;
+    public const GLenum GLUT_AUX4;
 
     /*
      * Process loop function, see freeglut_main.c
@@ -586,7 +588,7 @@ namespace GLUT
      * State setting and retrieval functions, see freeglut_state.c
      */
 
-    public static void glutSetOption (GL.GLenum option_flag, int value);
+    public static void glutSetOption (GLenum option_flag, int value);
     /* A.Donev: User-data manipulation */
     public static void* glutGetWindowData ();
     public static void glutSetWindowData (void* data);
@@ -597,7 +599,7 @@ namespace GLUT
      * Font stuff, see freeglut_font.c
      */
     public static int glutBitmapHeight (void* font);
-    public static GL.GLfloat glutStrokeHeight (void* font);
+    public static GLfloat glutStrokeHeight (void* font);
 // public static void glutBitmapString (void* font, const unsigned char *string);
 // public static void glutStrokeString (void* font, const unsigned char *string);
 
@@ -608,8 +610,8 @@ namespace GLUT
     public static void glutSolidRhombicDodecahedron ();
 // public static void glutWireSierpinskiSponge (int num_levels, GLdouble offset[3], GLdouble scale);
 // public static void glutSolidSierpinskiSponge (int num_levels, GLdouble offset[3], GLdouble scale);
-    public static void glutWireCylinder (GL.GLdouble radius, GL.GLdouble height, GL.GLint slices, GL.GLint stacks);
-    public static void glutSolidCylinder (GL.GLdouble radius, GL.GLdouble height, GL.GLint slices, GL.GLint stacks);
+    public static void glutWireCylinder (GLdouble radius, GLdouble height, GLint slices, GLint stacks);
+    public static void glutSolidCylinder (GLdouble radius, GLdouble height, GLint slices, GLint stacks);
 
     /*
      * Extension functions, see freeglut_ext.c

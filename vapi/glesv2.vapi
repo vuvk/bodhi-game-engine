@@ -27,11 +27,11 @@ namespace GLES2
     /*-------------------------------------------------------------------------
      * Data type definitions
      *-----------------------------------------------------------------------*/
-     
+
     [SimpleType]
     public struct GLvoid {
     }
-     
+
     [SimpleType]
     [IntegerType(rank = 2, signed = true)]
     public struct GLchar: char {
@@ -41,7 +41,7 @@ namespace GLES2
     [IntegerType(rank = 6, signed = true)]
     public struct GLenum: int {
     }
-    
+
     [SimpleType]
     [IntegerType(rank = 3, signed = false)]
     public struct GLboolean: uint8 {
@@ -51,12 +51,12 @@ namespace GLES2
     [IntegerType(rank = 3, signed = false)]
     public struct GLbitfield: uint8 {
     }
-    
+
     [SimpleType]
     [IntegerType(rank = 2, signed = true)]
     public struct GLbyte: char {
     }
-    
+
     [SimpleType]
     [IntegerType(rank = 4, signed = true)]
     public struct GLshort: short {
@@ -66,17 +66,17 @@ namespace GLES2
     [IntegerType(rank = 6, signed = true)]
     public struct GLint: int {
     }
-    
+
     [SimpleType]
     [IntegerType(rank = 6, signed = true)]
     public struct GLsizei: int {
     }
-    
+
     [SimpleType]
     [IntegerType(rank = 3, signed = false)]
     public struct GLubyte: uchar {
     }
-    
+
     [SimpleType]
     [IntegerType(rank = 4, signed = false)]
     public struct GLushort: ushort {
@@ -98,6 +98,11 @@ namespace GLES2
     }
 
     [SimpleType]
+    [FloatingType(rank=2)]
+    public struct GLdouble : double {
+    }
+
+    [SimpleType]
     [IntegerType(rank = 6, signed = true)]
     public struct GLfixed: int32 {
     }
@@ -107,15 +112,15 @@ namespace GLES2
     [IntegerType(rank = 9, signed = false)]
     public struct GLintptr: size_t {
     }
-    
+
     [SimpleType]
     [IntegerType(rank = 9, signed = false)]
     public struct GLsizeiptr: size_t {
     }
-    
+
     public const GLboolean GL_FALSE;
     public const GLboolean GL_TRUE;
-    
+
     /* ClearBufferMask */
     public const GLbitfield GL_DEPTH_BUFFER_BIT;
     public const GLbitfield GL_STENCIL_BUFFER_BIT;
@@ -536,7 +541,7 @@ namespace GLES2
     public const GLenum GL_MAX_RENDERBUFFER_SIZE;
 
     public const GLenum GL_INVALID_FRAMEBUFFER_OPERATION;
-    
+
     /*-------------------------------------------------------------------------
      * GL core functions.
      *-----------------------------------------------------------------------*/
