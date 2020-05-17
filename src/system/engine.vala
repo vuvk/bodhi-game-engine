@@ -14,8 +14,8 @@ namespace Bodhi {
 
         private static States state = States.NOT_RUNNING;
 
-        private static double curr_tick;
-        private static double last_tick;
+        private static int64 curr_tick;
+        private static int64 last_tick;
 
         // delta of time between last and current frame
         private static float delta_time;
@@ -79,7 +79,7 @@ namespace Bodhi {
             string[] args = new string[1];
             args[0] = FileSystem.get_base_dir();
             GLUT.glutInit (ref args.length, args);
-            GLUT.glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+            GLUT.glutInitDisplayMode (GLUT.GLUT_DOUBLE | GLUT.GLUT_RGB | GLUT.GLUT_DEPTH);
 
             /* now engine is running */
             state = States.RUNNING;
@@ -107,13 +107,12 @@ namespace Bodhi {
                 return Errors.RENDERER_NOT_CREATED;
             }
             /* show info about system */
-            renderer.print_display_modes();
             renderer.print_info();
 
             log.write("The Engine was started!\n");
 
             /* timing */
-            curr_tick = GLFW.get_time();
+            curr_tick = new DateTime.now_local().to_unix();
             last_tick = curr_tick;
 
             delta_time = 0.0f;
@@ -200,16 +199,16 @@ namespace Bodhi {
             DictionaryDestroy(&_meshesMd2);
             ListDestroy(&_nodesMd2);*/
 
-            GLFW.terminate();
+            GLUT.glutDestroyWindow(GLUT.glutGetWindow());
             FileSystem.deinit();
             state = States.NOT_RUNNING;
         }
 
         private static void update_time() {
             // calculate deltaTime
-            curr_tick = GLFW.get_time();
+            curr_tick = new DateTime.now_local().to_unix();
             if (curr_tick > last_tick) {
-                delta_time = (float)(curr_tick - last_tick)/* * 0.001f*/;
+                delta_time = (curr_tick - last_tick) * 0.001f;
                 last_tick  =  curr_tick;
             }
         }
@@ -245,6 +244,9 @@ namespace Bodhi {
         public static void update() {
             update_time();
             update_fps();
+
+            //GLUT.glutMainLoopEvent();
+            //GLUT.glutLeaveMainLoop();
 
             audio.update();
             window.update();

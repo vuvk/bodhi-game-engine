@@ -161,8 +161,8 @@ namespace Bodhi {
             } else {
                 var window = Engine.get_window();
 
-                glfw_window = window.get_glfw_window();
-                glfw_window.set_scroll_callback(scroll_mouse_callback);
+                /*glfw_window = window.get_glfw_window();
+                glfw_window.set_scroll_callback(scroll_mouse_callback);*/
 
                 return Errors.NO_ERROR;
             }
@@ -183,10 +183,10 @@ namespace Bodhi {
             prev_mouse_scroll_xoffset = mouse_scroll_xoffset;
             prev_mouse_scroll_yoffset = mouse_scroll_yoffset;
 
-            glfw_window.get_cursor_pos(out mouse_pos_x, out mouse_pos_y);
+            //glfw_window.get_cursor_pos(out mouse_pos_x, out mouse_pos_y);
             //glfw_window.get_scroll_offset(out mouse_scroll_xoffset, out mouse_scroll_yoffset);
 
-            GLFW.poll_events();
+            //GLFW.poll_events();
 
             if (mouse_hor_scrolling) {
                 prev_mouse_scroll_xoffset = mouse_scroll_xoffset = 0;
@@ -205,7 +205,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.PRESS;
+            return false;
+            //return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.PRESS;
         }
 
         /** Is any key up? */
@@ -214,7 +215,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.RELEASE;
+            return false;
+            //return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.RELEASE;
         }
 
         /** Is this key pressed? */
@@ -223,16 +225,17 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.REPEAT;
+            return false;
+            //return glfw_window.get_key((GLFW.Key)key) == GLFW.ButtonState.REPEAT;
         }
 
         /*-------*/
         /* MOUSE */
         /*-------*/
-        private static void scroll_mouse_callback(GLFW.Window window, double xoffset, double yoffset) {
+        /*private static void scroll_mouse_callback(GLFW.Window window, double xoffset, double yoffset) {
             mouse_scroll_xoffset = xoffset;
             mouse_scroll_yoffset = yoffset;
-        }
+        }*/
 
         /** mouse moving now? */
         public bool is_mouse_move() {
@@ -250,7 +253,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.PRESS;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.PRESS;
         }
 
         /** Is left mouse button up? */
@@ -259,7 +263,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.RELEASE;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.RELEASE;
         }
 
         /** Is left mouse button pressed? */
@@ -268,7 +273,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.REPEAT;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.LEFT) == GLFW.ButtonState.REPEAT;
         }
 
         /** Is right mouse button down? */
@@ -277,7 +283,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.PRESS;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.PRESS;
         }
 
         /** Is right mouse button up? */
@@ -286,7 +293,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.RELEASE;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.RELEASE;
         }
 
         /** Is right mouse button pressed? */
@@ -295,7 +303,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.REPEAT;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.RIGHT) == GLFW.ButtonState.REPEAT;
         }
 
         /** Is middle mouse button down? */
@@ -304,7 +313,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.PRESS;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.PRESS;
         }
 
         /** Is middle mouse button up? */
@@ -313,7 +323,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.RELEASE;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.RELEASE;
         }
 
         /** Is middle mouse button pressed? */
@@ -322,7 +333,8 @@ namespace Bodhi {
                 return false;
             }
 
-            return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.REPEAT;
+            return false;
+            //return glfw_window.get_mouse_button(GLFW.MouseButton.MIDDLE) == GLFW.ButtonState.REPEAT;
         }
 
         /** get cursor showing */
@@ -423,7 +435,7 @@ namespace Bodhi {
             }
 
             show_mouse_cursor = show;
-            GLFW.WindowHint.CURSOR_HIDDEN.set_bool(show);
+            //GLFW.WindowHint.CURSOR_HIDDEN.set_bool(show);
         }
 
         /** set mouse position */
@@ -436,7 +448,8 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.set_cursor_pos(x, y);
+            return;
+            //glfw_window.set_cursor_pos(x, y);
         }
 
         public void set_mouse_pos_x(float x) {

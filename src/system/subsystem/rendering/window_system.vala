@@ -62,8 +62,7 @@ namespace Bodhi {
             /* try to create window */
 
             GLUT.glutInitWindowSize(width, height);
-            GLUT.glutInitWindowPosition(100, 100);
-            GLUT.glutCreateWindow(title);
+            GLUT.glutCreateWindow("");
 
             if (fullscreen_mode) {
                 GLUT.glutFullScreen();
@@ -199,7 +198,7 @@ namespace Bodhi {
                     prev_width  = size.x;
                     prev_height = size.y;
                 } else {
-                    set_size(prev_width, prev_height);
+                    set_sizei(prev_width, prev_height);
                 }
             }
         }
