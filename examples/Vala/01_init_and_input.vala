@@ -13,11 +13,11 @@ public class Test : Object {
         log.write_warning("Dangerous!\n");
         log.write_error("Critical!\n");
 
-        RendererWindow window = Engine.get_window();
+        var window = Engine.get_window();
         window.set_title("Hello!");
 
-        Scene scene = Engine.get_scene();
-        Input input = Engine.get_input();
+        var scene = Engine.get_scene();
+        var input = Engine.get_input();
 
         Engine.set_limit_fps(10);        
 

@@ -92,6 +92,6 @@ while engine.is_running() :
         pos_z = -RADIUS * math.sin(rad)
         audio_source.set_positionf(pos_x, 0, pos_z)
 
-    if (input.is_key_press(Bodhi.InputKeys.ESCAPE)) :
+    if (input.is_key_press(Bodhi.InputKeycode.ESCAPE)) :
         log.write("Bye-bye.\n")
         engine.stop()

@@ -32,15 +32,15 @@ while (engine.is_running()) do
 
     window:set_title("Hello! FPS: " .. tostring(engine:get_fps()))
 
-    if (input:is_mouse_scroll_up()) then
+    if (input:is_mouse_wheel_up()) then
         log:write("wow! wheel up!\n")
     end
 
-    if (input:is_mouse_scroll_down()) then
+    if (input:is_mouse_wheel_down()) then
         log:write("wow! wheel down!\n")
     end
 
-    if (input:is_key_press(Bodhi.InputKeys.ESCAPE)) then
+    if (input:is_key_press(Bodhi.InputKeycode.ESCAPE)) then
         log:write("Bye-bye.\n")
         engine.stop()
     end

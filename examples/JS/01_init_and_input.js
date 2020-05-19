@@ -24,14 +24,14 @@ while (Bodhi.Engine.is_running()) {
 
     WINDOW.set_title("Hello! FPS: " + Bodhi.Engine.get_fps());
 
-    if (INPUT.is_mouse_scroll_up()) {
+    if (INPUT.is_mouse_wheel_up()) {
         LOG.write("wow! wheel up!\n");
     }
-    if (INPUT.is_mouse_scroll_down()) {
+    if (INPUT.is_mouse_wheel_down()) {
         LOG.write("wow! wheel down!\n");
     }
 
-    if (INPUT.is_key_press(Bodhi.InputKeys.ESCAPE)) {
+    if (INPUT.is_key_press(Bodhi.InputKeycode.ESCAPE)) {
         LOG.write("Bye-bye.\n");
         Bodhi.Engine.stop();
     }
