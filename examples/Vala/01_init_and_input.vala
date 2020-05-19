@@ -29,14 +29,14 @@ public class Test : Object {
 
             window.set_title("Hello! FPS: " + Engine.get_fps().to_string());
 
-            if (input.is_mouse_scroll_up()) {
+            if (input.is_mouse_wheel_up()) {
                 log.write("wow! wheel up!\n");
             }
-            if (input.is_mouse_scroll_down()) {
+            if (input.is_mouse_wheel_down()) {
                 log.write("wow! wheel down!\n");
             }
 
-            if (input.is_key_press(Input.Keys.ESCAPE)) {
+            if (input.is_key_press(Input.Keycode.ESCAPE)) {
 				log.write("Bye-bye.\n");
                 Engine.stop();
             }

@@ -10,7 +10,7 @@ namespace Bodhi {
         public const bool DEFAULT_RESIZABLE  = false;
         public const bool DEFAULT_FULLSCREEN = false;
 
-        private GLFW.Window? glfw_window;
+        private SDL.Video.Window? sdl_window;
         private string title = @"$(Engine.get_name()) $(Engine.get_version())";
         private int width  = 0;
         private int height = 0;
@@ -44,55 +44,60 @@ namespace Bodhi {
             }
 
             /* set SDL attributes */
-            //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-            //SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
-            /*
-            Video.GL.set_attribute(Video.GL.Attributes.RED_SIZE,           8);
-            Video.GL.set_attribute(Video.GL.Attributes.GREEN_SIZE,         8);
-            Video.GL.set_attribute(Video.GL.Attributes.BLUE_SIZE,          8);
-            Video.GL.set_attribute(Video.GL.Attributes.DOUBLEBUFFER,       1);
-            Video.GL.set_attribute(Video.GL.Attributes.DEPTH_SIZE,         24);
-            Video.GL.set_attribute(Video.GL.Attributes.BUFFER_SIZE,        32);
-            Video.GL.set_attribute(Video.GL.Attributes.ACCUM_RED_SIZE,     8);
-            Video.GL.set_attribute(Video.GL.Attributes.ACCUM_GREEN_SIZE,   8);
-            Video.GL.set_attribute(Video.GL.Attributes.BLUE_SIZE,    8);
-            Video.GL.set_attribute(Video.GL.Attributes.ALPHA_SIZE,   8);
-            Video.GL.set_attribute(Video.GL.Attributes.MULTISAMPLEBUFFERS, 1);
-            Video.GL.set_attribute(Video.GL.Attributes.MULTISAMPLESAMPLES, 2);
-            */
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.CONTEXT_MAJOR_VERSION, 2);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.CONTEXT_MINOR_VERSION, 1);
+            //SDL.Video.GL.set_attribute(Video.GL.Attributes.CONTEXT_EGL, 1);
+            
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.RED_SIZE,           8);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.GREEN_SIZE,         8);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.BLUE_SIZE,          8);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.DOUBLEBUFFER,       1);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.DEPTH_SIZE,         24);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.BUFFER_SIZE,        32);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.ACCUM_RED_SIZE,     8);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.ACCUM_GREEN_SIZE,   8);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.BLUE_SIZE,    	   8);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.ALPHA_SIZE,         8);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.MULTISAMPLEBUFFERS, 1);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.MULTISAMPLESAMPLES, 2);
+            
             /* try to create window */
+            int window_flags = SDL.Video.WindowFlags.OPENGL;
+            if (resizable) {
+                window_flags |= SDL.Video.WindowFlags.RESIZABLE;
+            }
 
-            unowned GLFW.Monitor? monitor = (fullscreen_mode) ? GLFW.get_primary_monitor() : null;
-
-            /* use GLES */
-            GLFW.WindowHint.CLIENT_API.set(GLFW.ClientAPI.OPENGL);
-
-            glfw_window = new GLFW.Window(width, height, title, monitor, null);
-            if (glfw_window == null) {
-                Engine.get_log().write_error("Couldn't create window!\n");
+            sdl_window = new SDL.Video.Window(@"$(Engine.get_name()) $(Engine.get_version())",
+											  SDL.Video.Window.POS_CENTERED, SDL.Video.Window.POS_CENTERED,
+											  width, height,
+											  window_flags);
+            if (sdl_window == null) {
+                Engine.get_log().write_error("Couldn't create window! Error: " + SDL.get_error() + "\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
-            glfw_window.make_context_current();
-
-            GLFW.WindowHint.RESIZABLE.set_bool(resizable);
+        
+            /* set full screen, if need */
+            if (fullscreen_mode) {
+                sdl_window.set_fullscreen(SDL.Video.WindowFlags.FULLSCREEN);
+            }
 
             return Errors.NO_ERROR;
         }
 
-        /*
+        
         public void set_fullscreen(bool fullscreen_mode, bool use_desktop_resolution = true) {
             if (fullscreen_mode) {
                 if (!use_desktop_resolution) {
-                    sdl_window.set_fullscreen(Video.WindowFlags.FULLSCREEN);
+                    sdl_window.set_fullscreen(SDL.Video.WindowFlags.FULLSCREEN);
                 } else {
-                    sdl_window.set_fullscreen(Video.WindowFlags.FULLSCREEN_DESKTOP);
+                    sdl_window.set_fullscreen(SDL.Video.WindowFlags.FULLSCREEN_DESKTOP);
                 }
             } else {
                 sdl_window.set_fullscreen(0);
             }
         }
         //void EngineSetRendererWindowResizable(bool isResizable);
-        */
+        
 
         //windows gets
         public Vector2i get_size() {
@@ -107,7 +112,7 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.get_size(out width, out height);
+            sdl_window.get_size(out width, out height);
         }
 
         public unowned string? get_title() {
@@ -134,15 +139,15 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.get_position(out x, out y);
+            sdl_window.get_position(out x, out y);
         }
 
-        internal unowned GLFW.Window? get_glfw_window() {
+        internal unowned SDL.Video.Window? get_sdl_window() {
             if (!is_initialized()) {
                 return null;
             }
 
-            return glfw_window;
+            return sdl_window;
         }
 
         public void set_size(Vector2i size) {
@@ -154,7 +159,7 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.set_size(width, height);
+            sdl_window.set_size(width, height);
         }
 
         public void set_title(string title) {
@@ -162,7 +167,7 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.title = title;
+            sdl_window.title = title;
             this.title = title;
         }
 
@@ -175,7 +180,7 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.set_position(x, y);
+            sdl_window.set_position(x, y);
         }
 
         public void center() {
@@ -201,16 +206,16 @@ namespace Bodhi {
                 return;
             }
 
-            if (glfw_window != null) {
-                Vector2i size = get_size();
+            if (sdl_window != null) {
+                sdl_window.get_size(out width, out height);
 
-                if ((size.x != prev_width) ||
-                    (size.y != prev_height)) {
+                if ((width  != prev_width) ||
+                    (height != prev_height)) {
                     // !!!
                     // Perspectivef_M4x4(_pers, 60.0f, (float)width / height, 0.1f, 1000.0f);
 
-                    prev_width  = size.x;
-                    prev_height = size.y;
+                    prev_width  = width;
+                    prev_height = height;
                 }
             } else {
                 deinit();
@@ -222,7 +227,7 @@ namespace Bodhi {
                 return;
             }
 
-            glfw_window.swap_buffers();
+			SDL.Video.GL.swap_window(sdl_window);
         }
     }
 }

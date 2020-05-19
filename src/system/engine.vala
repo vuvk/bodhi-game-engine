@@ -1,5 +1,5 @@
 //using SDL;
-using GLFW;
+//using GLFW;
 
 namespace Bodhi {
 
@@ -16,8 +16,8 @@ namespace Bodhi {
 
         private static States state = States.NOT_RUNNING;
 
-        private static double curr_tick;
-        private static double last_tick;
+        private static uint64 curr_tick;
+        private static uint64 last_tick;
 
         // delta of time between last and current frame
         private static float delta_time;
@@ -73,9 +73,8 @@ namespace Bodhi {
                        "============================================\n");
 
             /* try init GLFW */
-            if (!GLFW.init()) {
-                log.write_error("Couldn't init GLES2!\n");
-                stop();
+            if (SDL.init_subsystem(SDL.InitFlag.VIDEO) < 0) {
+                log.write_error("Couldn't init SDL2! Error: " + SDL.get_error() + "\n");
                 return Errors.ENGINE_NOT_CREATED;
             }
 
@@ -111,7 +110,7 @@ namespace Bodhi {
             log.write("The Engine was started!\n");
 
             /* timing */
-            curr_tick = GLFW.get_time();
+            curr_tick = SDL.Timer.get_ticks();
             last_tick = curr_tick;
 
             delta_time = 0.0f;
@@ -198,16 +197,16 @@ namespace Bodhi {
             DictionaryDestroy(&_meshesMd2);
             ListDestroy(&_nodesMd2);*/
 
-            GLFW.terminate();
+            SDL.quit();   
             FileSystem.deinit();
             state = States.NOT_RUNNING;
         }
 
         private static void update_time() {
             // calculate deltaTime
-            curr_tick = GLFW.get_time();
+            curr_tick = SDL.Timer.get_ticks();
             if (curr_tick > last_tick) {
-                delta_time = (float)(curr_tick - last_tick)/* * 0.001f*/;
+                delta_time = (curr_tick - last_tick) * 0.001f;
                 last_tick  =  curr_tick;
             }
         }

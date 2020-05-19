@@ -5,6 +5,8 @@ using GLES2;
 namespace Bodhi {
 
     public class Renderer : SubSystem {
+		
+        private SDL.Video.GL.Context? gl_context;
 
         internal Renderer() {
             base();
@@ -27,6 +29,13 @@ namespace Bodhi {
             if (window == null || !window.is_initialized()) {
                 Engine.get_log().write_error("Could not create OpenGL context, because window not created!\n");
                 return Errors.WINDOW_NOT_CREATED;
+            }
+
+            /* try to create OpenGL context */
+            gl_context = SDL.Video.GL.Context.create(window.get_sdl_window());
+            if (gl_context == null) {
+                Engine.get_log().write_error("Could not create OpenGL context! Error : " + SDL.get_error() + "\n");
+                return Errors.RENDERER_NOT_CREATED;
             }
 
             // сглаживание
@@ -57,17 +66,13 @@ namespace Bodhi {
             return { w, h };
         }
 
-        public void get_screen_resolutioni(out int width, out int height) {
-            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
-            if (monitor == null) {
-                width = height = 0;
-                return;
-            }
+        public void get_screen_resolutioni(out int width, out int height) {   
+            SDL.Video.DisplayMode mode;         
+            SDL.Video.Display display = {};
+            display.get_current_mode(out mode);
 
-            GLFW.VideoMode mode = monitor.video_mode;
-
-            width  = mode.width;
-            height = mode.height;
+            width  = mode.w;
+            height = mode.h;
         }
 
         public int get_screen_resolution_width() {
@@ -86,20 +91,27 @@ namespace Bodhi {
         }
 
         public void get_max_screen_resolutioni(out int width, out int height) {
-            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
-            if (monitor == null) {
-                width = height = 0;
+            SDL.Video.Display display = {};
+
+            int displayModeCount = display.num_modes();
+            if (displayModeCount < 1) {
                 return;
             }
 
             int w = 0, h = 0;
-            foreach (GLFW.VideoMode mode in monitor.video_modes) {
-                if (mode.width > w) {
-                    w = mode.width;
+            SDL.Video.DisplayMode mode;
+            for (int i = 0; i < displayModeCount; ++i) {
+                if (display.get_mode(i, out mode) != 0) {
+                    Engine.get_log().write_error("SDL_GetDisplayMode failed: " + SDL.get_error() + "\n");
+                    return;
                 }
 
-                if (mode.height > h) {
-                    h = mode.height;
+                if (mode.w > w) {
+                    w = mode.w;
+                }
+
+                if (mode.h > h) {
+                    h = mode.h;
                 }
             }
 
@@ -161,18 +173,26 @@ namespace Bodhi {
         }
 
         public void print_display_modes() {
-            unowned GLFW.Monitor? monitor = GLFW.get_primary_monitor();
-            if (monitor == null) {
+            SDL.Video.Display display = {};
+
+            int displayModeCount = display.num_modes();
+            if (displayModeCount < 1) {
                 return;
             }
 
-            Engine.get_log().write(@"Display modes for $(monitor.name):\n");
-            foreach (GLFW.VideoMode mode in monitor.video_modes) {
+            Engine.get_log().write("Display modes:\n");
+            SDL.Video.DisplayMode mode;
+            for (int i = 0; i < displayModeCount; ++i) {
+                if (display.get_mode(i, out mode) != 0) {
+                    Engine.get_log().write_error("SDL_GetDisplayMode failed: " + SDL.get_error() + "\n");
+                    return;
+                }
+
                 Engine.get_log().write(
-                    @"width\t$(mode.width)\t" +
-                    @"height\t$(mode.height)\t" +
+                    @"width\t$(mode.w)\t" + 
+                    @"height\t$(mode.h)\t" + 
                     @"refresh rate\t$(mode.refresh_rate)\n"
-                );
+                );        
             }
         }
     }

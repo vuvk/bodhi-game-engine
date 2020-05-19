@@ -104,7 +104,7 @@ public class Test : Object {
             scene.begin(RGBAColorf.GREEN());
             scene.end();
 
-            if (input.is_key_press(Input.Keys.ESCAPE)) {
+            if (input.is_key_press(Input.Keycode.ESCAPE)) {
                 Engine.stop();
             }
         }
