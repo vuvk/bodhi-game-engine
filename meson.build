@@ -1,8 +1,17 @@
-project('shared lib', 'vala', 'c')
+project('bodhi', 'vala', 'c', version: '0.1')
 
-PROJECT_VERSION='0.1'
+PROJECT_NAME = meson.project_name ()
+PROJECT_VERSION = meson.project_version ()
+VERSIONED_PROJECT_NAME = PROJECT_NAME+'-'+PROJECT_VERSION
+CAMEL_CASE_NAME = 'Bodhi'
+VERSIONED_CAMEL_CASE_NAME = CAMEL_CASE_NAME +'-'+ PROJECT_VERSION
 
-gnome = import('gnome')
+GIR_NAME = VERSIONED_CAMEL_CASE_NAME+'.gir'
+TYPELIB_NAME = VERSIONED_CAMEL_CASE_NAME+'.typelib'
+VAPI_NAME = VERSIONED_PROJECT_NAME+'.vapi'
+
+VAPI_DIR = meson.current_source_dir() / 'vapi'
+BUILD_DIR = meson.current_build_dir()
 
 # need math?
 cc = meson.get_compiler('c')
@@ -25,10 +34,6 @@ bodhi_dependencies = [
     m_dep
 ]
 
-vapi_dir = meson.current_source_dir() / 'vapi'
-build_dir = meson.current_source_dir() / 'build'
-add_project_arguments(['--vapidir', vapi_dir], language: 'vala')
-add_project_arguments(['--gir', 'Bodhi-' + PROJECT_VERSION + '.gir'], language: 'vala')
 
 
 #subdir('src')
@@ -65,26 +70,40 @@ bodhi_sources = files(
     'src/system/engine.vala',
 )
 
-libbodhi = library(
-    'Bodhi',
-    vala_header: 'Bodhi.h',
-    sources: bodhi_sources,
-    dependencies: bodhi_dependencies,
+add_project_arguments(['--vapidir', VAPI_DIR], language: 'vala')
+
+# Compile lib with GIR file
+libbodhi = shared_library(
+	VERSIONED_PROJECT_NAME, 
+	bodhi_sources,
+	vala_header: PROJECT_NAME+'.h',
+	vala_vapi: VAPI_NAME,
+	vala_gir: GIR_NAME,
+	dependencies: bodhi_dependencies,
+	install: true,
+	install_dir: [true, true, true, true]
 )
 
+# Compile typelib from GIR file
+g_ir_compiler = find_program('g-ir-compiler')
+custom_target(
+	'Bodhi-typelib', command: [
+		g_ir_compiler,
+		'--shared-library', 'lib'+PROJECT_NAME+'-@0@.so'.format (PROJECT_VERSION),
+		  '--output', '@OUTPUT@',
+		join_paths(BUILD_DIR, GIR_NAME)
+	],
+	
+	output: TYPELIB_NAME,
+	depends: libbodhi,
+	install: true,
+	install_dir: get_option('libdir') / 'girepository-1.0'
+)
+
+
+#examples in Vala
+
 libbodhi_dep = declare_dependency(link_with: libbodhi)
-
-
-#bodhi_gir = gnome.generate_gir(
-#    libbodhi,
-#    include_directories: bodhi_inc,
-#    header: meson.current_source_dir() / 'build/bodhi.h',
-#    sources: bodhi_sources,
-#    dependencies: bodhi_dependencies,
-#    namespace: 'Bodhi',
-#    nsversion: PROJECT_VERSION,
-#    install: true,
-#)
 
 executable('01_init_and_input',
   sources: 'examples/Vala/01_init_and_input.vala',
