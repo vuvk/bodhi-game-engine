@@ -19,7 +19,7 @@ public class Test : Object {
         var scene = Engine.get_scene();
         var input = Engine.get_input();
 
-        Engine.set_limit_fps(10);        
+        Engine.set_limit_fps(10);      
 
         while (Engine.is_running()) {
             Engine.update();
@@ -36,10 +36,17 @@ public class Test : Object {
                 log.write("wow! wheel down!\n");
             }
 
-            if (input.is_key_press(Input.Keycode.ESCAPE)) {
-				log.write("Bye-bye.\n");
-                Engine.stop();
-            }
+			if (input.is_key_down()) {
+
+				if (input.is_key_press(Input.Keycode.ONE)) {
+					log.write("Wow.\n");
+				}
+
+				if (input.is_key_press(Input.Keycode.ESCAPE)) {
+					log.write("Bye-bye.\n");
+					Engine.stop();
+				}
+			}
         }
 
         return 0;
