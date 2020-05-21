@@ -74,30 +74,30 @@ add_project_arguments(['--vapidir', VAPI_DIR], language: 'vala')
 
 # Compile lib with GIR file
 libbodhi = shared_library(
-	VERSIONED_PROJECT_NAME, 
-	bodhi_sources,
-	vala_header: PROJECT_NAME+'.h',
-	vala_vapi: VAPI_NAME,
-	vala_gir: GIR_NAME,
-	dependencies: bodhi_dependencies,
-	install: true,
-	install_dir: [true, true, true, true]
+    VERSIONED_PROJECT_NAME,
+    bodhi_sources,
+    vala_header: PROJECT_NAME+'.h',
+    vala_vapi: VAPI_NAME,
+    vala_gir: GIR_NAME,
+    dependencies: bodhi_dependencies,
+    install: true,
+    install_dir: [true, true, true, true]
 )
 
 # Compile typelib from GIR file
 g_ir_compiler = find_program('g-ir-compiler')
 custom_target(
-	'Bodhi-typelib', command: [
-		g_ir_compiler,
-		'--shared-library', 'lib'+PROJECT_NAME+'-@0@.so'.format (PROJECT_VERSION),
-		  '--output', '@OUTPUT@',
-		join_paths(BUILD_DIR, GIR_NAME)
-	],
-	
-	output: TYPELIB_NAME,
-	depends: libbodhi,
-	install: true,
-	install_dir: get_option('libdir') / 'girepository-1.0'
+    'Bodhi-typelib', command: [
+        g_ir_compiler,
+        '--shared-library', 'lib'+PROJECT_NAME+'-@0@.so'.format (PROJECT_VERSION),
+          '--output', '@OUTPUT@',
+        join_paths(BUILD_DIR, GIR_NAME)
+    ],
+
+    output: TYPELIB_NAME,
+    depends: libbodhi,
+    install: true,
+    install_dir: get_option('libdir') / 'girepository-1.0'
 )
 
 

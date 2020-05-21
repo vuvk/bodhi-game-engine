@@ -197,7 +197,7 @@ namespace Bodhi {
             DictionaryDestroy(&_meshesMd2);
             ListDestroy(&_nodesMd2);*/
 
-            SDL.quit();   
+            SDL.quit();
             FileSystem.deinit();
             state = States.NOT_RUNNING;
         }

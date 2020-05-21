@@ -47,7 +47,7 @@ namespace Bodhi {
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.CONTEXT_MAJOR_VERSION, 2);
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.CONTEXT_MINOR_VERSION, 1);
             //SDL.Video.GL.set_attribute(Video.GL.Attributes.CONTEXT_EGL, 1);
-            
+
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.RED_SIZE,           8);
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.GREEN_SIZE,         8);
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.BLUE_SIZE,          8);
@@ -56,11 +56,11 @@ namespace Bodhi {
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.BUFFER_SIZE,        32);
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.ACCUM_RED_SIZE,     8);
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.ACCUM_GREEN_SIZE,   8);
-            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.BLUE_SIZE,    	   8);
+            SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.BLUE_SIZE,          8);
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.ALPHA_SIZE,         8);
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.MULTISAMPLEBUFFERS, 1);
             SDL.Video.GL.set_attribute(SDL.Video.GL.Attributes.MULTISAMPLESAMPLES, 2);
-            
+
             /* try to create window */
             int window_flags = SDL.Video.WindowFlags.OPENGL;
             if (resizable) {
@@ -68,14 +68,14 @@ namespace Bodhi {
             }
 
             sdl_window = new SDL.Video.Window(@"$(Engine.get_name()) $(Engine.get_version())",
-											  SDL.Video.Window.POS_CENTERED, SDL.Video.Window.POS_CENTERED,
-											  width, height,
-											  window_flags);
+                                              SDL.Video.Window.POS_CENTERED, SDL.Video.Window.POS_CENTERED,
+                                              width, height,
+                                              window_flags);
             if (sdl_window == null) {
                 Engine.get_log().write_error("Couldn't create window! Error: " + SDL.get_error() + "\n");
                 return Errors.WINDOW_NOT_CREATED;
             }
-        
+
             /* set full screen, if need */
             if (fullscreen_mode) {
                 sdl_window.set_fullscreen(SDL.Video.WindowFlags.FULLSCREEN);
@@ -84,7 +84,7 @@ namespace Bodhi {
             return Errors.NO_ERROR;
         }
 
-        
+
         public void set_fullscreen(bool fullscreen_mode, bool use_desktop_resolution = true) {
             if (fullscreen_mode) {
                 if (!use_desktop_resolution) {
@@ -97,7 +97,7 @@ namespace Bodhi {
             }
         }
         //void EngineSetRendererWindowResizable(bool isResizable);
-        
+
 
         //windows gets
         public Vector2i get_size() {
@@ -227,7 +227,7 @@ namespace Bodhi {
                 return;
             }
 
-			SDL.Video.GL.swap_window(sdl_window);
+            SDL.Video.GL.swap_window(sdl_window);
         }
     }
 }

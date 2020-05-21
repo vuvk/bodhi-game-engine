@@ -5,7 +5,7 @@ using GLES2;
 namespace Bodhi {
 
     public class Renderer : SubSystem {
-		
+
         private SDL.Video.GL.Context? gl_context;
 
         internal Renderer() {
@@ -66,8 +66,8 @@ namespace Bodhi {
             return { w, h };
         }
 
-        public void get_screen_resolutioni(out int width, out int height) {   
-            SDL.Video.DisplayMode mode;         
+        public void get_screen_resolutioni(out int width, out int height) {
+            SDL.Video.DisplayMode mode;
             SDL.Video.Display display = {};
             display.get_current_mode(out mode);
 
@@ -189,10 +189,10 @@ namespace Bodhi {
                 }
 
                 Engine.get_log().write(
-                    @"width\t$(mode.w)\t" + 
-                    @"height\t$(mode.h)\t" + 
+                    @"width\t$(mode.w)\t" +
+                    @"height\t$(mode.h)\t" +
                     @"refresh rate\t$(mode.refresh_rate)\n"
-                );        
+                );
             }
         }
     }
