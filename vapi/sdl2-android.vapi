@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-Copyright (c) 2013-2016
+Copyright (c) <2016> <SDL2.0 vapi>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@ namespace SDL {
 	///
 	/// Android
 	///
-	[CCode (cheader = "SDL2/SDL_system.h")]
+	[CCode (cheader_filename = "SDL2/SDL_system.h")]
 	[Compact]
 	public class Android  {
 		[CCode (cname = "SDL_AndroidGetJNIEnv")]
