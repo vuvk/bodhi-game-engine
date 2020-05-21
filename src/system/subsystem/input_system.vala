@@ -483,7 +483,7 @@ namespace Bodhi {
             if (!is_initialized()) {
                 return false;
             }
-            return key_pressed[SDL.Input.Keyboard.scancode_fromkey((SDL.Input.Keycode)keycode)];   
+            return key_pressed[SDL.Input.Scancode.from_keycode((SDL.Input.Keycode)keycode)];   
         }
 
         /** Is any key up? */
