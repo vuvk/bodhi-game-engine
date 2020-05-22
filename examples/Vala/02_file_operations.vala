@@ -4,16 +4,17 @@ public class Test : Object {
 
     public static int main (string[] args) {
         Engine.start ();
+        var rm = Engine.get_resource_manager();
 
         // create file and put 5 strings
-        var file = FileSystem.new_file("test.txt", "w");
+        var file = rm.new_file("test.txt", "w");
         for (int i = 0; i < 5; ++i) {
             file.write_string("Hello, user" + i.to_string() + "!\n");
         }
         file.close();
 
         // read first line from file
-        file = FileSystem.new_file("test.txt", "r");
+        file = rm.new_file("test.txt", "r");
         string str = file.read_line();
         stdout.printf("Line readed from file - \"" + str + "\"\n");
 
@@ -27,7 +28,7 @@ public class Test : Object {
         file.close();
 
         // append lines to file
-        file = FileSystem.new_file("test.txt", "a");
+        file = rm.new_file("test.txt", "a");
         file.write_lines(lines);
         file.close();
 

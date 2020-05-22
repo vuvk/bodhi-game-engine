@@ -16,11 +16,12 @@ public class Test : Object {
         var scene = Engine.get_scene();
         var input = Engine.get_input();
         var audio = Engine.get_audio();
+        var rm    = Engine.get_resource_manager();
 
         FileSystem.mount("../examples/assets.7z");
 
-        var audio_file_precaching = audio.open_audio_file("vase3.wav", true );
-        var audio_file_streaming  = audio.open_audio_file("vase3.wav", false);
+        var audio_file_precaching = rm.open_audio_file("vase3.wav", true );
+        var audio_file_streaming  = rm.open_audio_file("vase3.wav", false);
 
         var audio_source = audio.new_audio_source();
 

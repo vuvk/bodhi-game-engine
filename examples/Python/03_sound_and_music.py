@@ -12,6 +12,7 @@ log = engine.get_log()
 scene = engine.get_scene()
 input = engine.get_input()
 audio = engine.get_audio()
+rm    = engine.get_resource_manager()
 
 step = 0
 pos_x = 0
@@ -21,8 +22,8 @@ RADIUS = 1.5
 
 fs.mount("examples/assets.7z", "", True)
 
-audio_file_precaching = audio.open_audio_file("vase3.wav", True )
-audio_file_streaming  = audio.open_audio_file("vase3.wav", False)
+audio_file_precaching = rm.open_audio_file("vase3.wav", True )
+audio_file_streaming  = rm.open_audio_file("vase3.wav", False)
 
 audio_source = audio.new_audio_source()
 
