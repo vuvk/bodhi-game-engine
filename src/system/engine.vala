@@ -37,6 +37,7 @@ namespace Bodhi {
         private static Input? input;
         private static Log? log;
         private static Audio? audio;
+        private static ResourceManager? resource_manager;
 
         /** start Antoshka Engine and initialize all subsystems */
         public static int start(int wnd_width = RendererWindow.DEFAULT_WIDTH,
@@ -86,6 +87,13 @@ namespace Bodhi {
             if (!audio.is_initialized()) {
                 log.write_error("Audio system not initialized!\n");
                 audio = null;
+            }
+
+            /* try create Resource Manager */
+            resource_manager = new ResourceManager();
+            if (!resource_manager.is_initialized()) {
+                log.write_error("Resource Manager not initialized!\n");
+                resource_manager = null;
             }
 
             /* try create window */
@@ -160,12 +168,14 @@ namespace Bodhi {
         /** stop Antoshka Engine */
         public static void stop() {
             audio.deinit();
+            resource_manager.deinit();
             scene.deinit();
             input.deinit();
             renderer.deinit();
             window.deinit();
 
             audio    = null;
+            resource_manager = null;
             scene    = null;
             input    = null;
             renderer = null;
@@ -299,6 +309,10 @@ namespace Bodhi {
 
         public static unowned Audio? get_audio() {
             return audio;
+        }
+
+        public static unowned ResourceManager? get_resource_manager() {
+            return resource_manager;
         }
 
         // timing

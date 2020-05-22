@@ -94,16 +94,11 @@ namespace Bodhi {
 
         public void load(string filename, bool precached = false) {
             unload();
-/*
-            Bodhi.File? file = Bodhi.FileSystem.new_file(filename);
-            if (file == null) {
-                Engine.get_log().write_error(@"Couldn't load file:\"$filename\"");
-                return;
-            }
-*/
+
             /* Open the audio file and check that it's usable. */
-            sndfile = new Sndfile.File.virtual(get_io(), Sndfile.Mode.READ, ref sfinfo, FileSystem.new_file(filename));
-            if (sndfile == null) {
+            var file = Engine.get_resource_manager().new_file(filename);
+            sndfile = new Sndfile.File.virtual(get_io(), Sndfile.Mode.READ, ref sfinfo, file);
+            if (file == null || sndfile == null) {
                 Engine.get_log().write_error(@"Could not open audio in $filename: $(Sndfile.File.strerror(sndfile))\n");
                 return;
             }

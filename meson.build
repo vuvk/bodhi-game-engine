@@ -50,13 +50,15 @@ bodhi_sources = files(
     'src/math/matrix4x4.vala',
     'src/math/math_util.vala',
 
+    'src/resources/file.vala',
+    'src/resources/audio_file.vala',
+    'src/resources/resource_manager.vala',
+
     'src/system/subsystem/subsystem.vala',
 
     'src/system/subsystem/file_system/file_system.vala',
-    'src/system/subsystem/file_system/file.vala',
 
     'src/system/subsystem/audio_system/audio_system.vala',
-    'src/system/subsystem/audio_system/audio_file.vala',
     'src/system/subsystem/audio_system/audio_source.vala',
     'src/system/subsystem/audio_system/audio_listener.vala',
 

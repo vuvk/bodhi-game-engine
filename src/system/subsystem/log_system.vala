@@ -44,8 +44,9 @@ namespace Bodhi {
             write_to_file = (output_file_name != null && output_file_name != "");
 
             if (write_to_file) {
+                var rm = Engine.get_resource_manager();
                 string mode = (truncate_file) ? "w" : "a";
-                output_file = FileSystem.new_file(output_file_name, mode);
+                output_file = rm.new_file(output_file_name, mode);
 
                 if (output_file != null) {
                     this.output_file_name = output_file_name;

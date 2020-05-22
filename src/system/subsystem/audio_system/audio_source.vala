@@ -40,14 +40,13 @@ namespace Bodhi {
                     return;
                 }
 
-                size_t frame_size;
-
                 close_file();
 
                 /* Open the audio file and check that it's usable. */
                 string filename = audio_file.get_filename();
-                sndfile = new Sndfile.File.virtual(audio_file.get_io(), Sndfile.Mode.READ, ref sfinfo, FileSystem.new_file(filename));
-                if (sndfile == null) {
+                var file = Engine.get_resource_manager().new_file(filename);
+                sndfile = new Sndfile.File.virtual(audio_file.get_io(), Sndfile.Mode.READ, ref sfinfo, file);
+                if (file == null || sndfile == null) {
                     Engine.get_log().write_error(@"Could not open audio in $filename: $(Sndfile.File.strerror(null))\n");
                     return;
                 }
@@ -69,10 +68,6 @@ namespace Bodhi {
 
             internal AL.Buffer[] get_buffers() {
                 return buffers;
-            }
-
-            internal short[] get_membuf() {
-                return membuf;
             }
 
             /* Closes the audio file stream */

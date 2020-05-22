@@ -116,13 +116,6 @@ namespace Bodhi {
             return listener;
         }
 
-        public AudioFile? open_audio_file(string filename, bool precached = false) {
-            if (is_initialized()) {
-                return new AudioFile(filename, precached);
-            }
-            return null;
-        }
-
         public AudioSource? new_audio_source() {
             if (is_initialized()) {
                 return new AudioSource();

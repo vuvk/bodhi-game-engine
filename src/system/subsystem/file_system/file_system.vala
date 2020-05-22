@@ -205,18 +205,5 @@ namespace Bodhi {
             }
             return false;
         }
-
-        /**
-         * get file from system
-         * @param path - path to file
-         * @param mode - mode access. Possible values - "r" read, "w" write, "a" append
-         */
-        public static File? new_file(string path, string mode = "r") {
-            if (!is_initialized()) {
-                return null;
-            }
-
-            return new File(path, mode);
-        }
     }
 }
