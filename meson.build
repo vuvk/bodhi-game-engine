@@ -27,6 +27,7 @@ bodhi_dependencies = [
 #   dependency('glfw3'),
 #   dependency('glew'),
     dependency('sdl2'),
+    dependency('SDL2_image'),
     dependency('physfs'),
     dependency('openal'),
     dependency('sndfile'),
@@ -52,6 +53,7 @@ bodhi_sources = files(
 
     'src/resources/file.vala',
     'src/resources/audio_file.vala',
+    'src/resources/surface.vala',
     'src/resources/resource_manager.vala',
 
     'src/system/subsystem/subsystem.vala',

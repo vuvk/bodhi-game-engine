@@ -9,7 +9,8 @@ namespace Bodhi {
         RENDERER_NOT_CREATED,
         SCENE_NOT_CREATED,
         INPUT_NOT_CREATED,
-        AUDIO_NOT_CREATED
+        AUDIO_NOT_CREATED,
+        IMAGE_LOADER_NOT_CREATED
     }
 
     /** maximums */

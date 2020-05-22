@@ -53,6 +53,14 @@ namespace Bodhi {
             return true;
         }
 
+        public unowned string get_filename() {
+            if (is_file()) {
+                return name;
+            }
+
+            return "";
+        }
+
         public string get_ext(bool to_lower = false) {
             if (!is_file()) {
                 return "";

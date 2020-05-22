@@ -24,6 +24,11 @@ namespace Bodhi {
                 return Errors.ENGINE_NOT_CREATED;
             }
 
+            int flags = SDLImage.InitFlags.JPG | SDLImage.InitFlags.PNG;
+            if (!SDLImage.init(flags)) {
+                return Errors.IMAGE_LOADER_NOT_CREATED;
+            }
+
             return Errors.NO_ERROR;
         }
 
