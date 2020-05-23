@@ -22,8 +22,8 @@ RADIUS = 1.5
 
 fs.mount("examples/assets.7z", "", True)
 
-audio_file_precaching = rm.open_audio_file("vase3.wav", True )
-audio_file_streaming  = rm.open_audio_file("vase3.wav", False)
+audio_file_precaching = rm.open_audio_file_from_path("vase3.wav", True )
+audio_file_streaming  = rm.open_audio_file_from_path("vase3.wav", False)
 
 audio_source = audio.new_audio_source()
 

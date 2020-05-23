@@ -20,8 +20,8 @@ public class Test : Object {
 
         FileSystem.mount("../examples/assets.7z");
 
-        var audio_file_precaching = rm.open_audio_file("vase3.wav", true );
-        var audio_file_streaming  = rm.open_audio_file("vase3.wav", false);
+        var audio_file_precaching = rm.open_audio_file_from_path("vase3.wav", true );
+        var audio_file_streaming  = rm.open_audio_file_from_path("vase3.wav", false);
 
         var audio_source = audio.new_audio_source();
 

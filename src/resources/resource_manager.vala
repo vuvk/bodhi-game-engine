@@ -25,7 +25,7 @@ namespace Bodhi {
             }
 
             int flags = SDLImage.InitFlags.JPG | SDLImage.InitFlags.PNG;
-            if (SDLImage.init(flags) & flags == 0) {
+            if ((SDLImage.init(flags) & flags) == 0) {
                 Engine.get_log().write_error("Could not initialize image loader!");
             }
 
@@ -33,9 +33,13 @@ namespace Bodhi {
         }
 
 
-        public AudioFile? open_audio_file(string filename, bool precached = false) {
+        public AudioFile? open_audio_file_from_path(string filename, bool precached = false) {
+            return open_audio_file(new_file(filename, "r"), precached);
+        }
+
+        public AudioFile? open_audio_file(Bodhi.File file, bool precached = false) {
             if (is_initialized()) {
-                return new AudioFile(filename, precached);
+                return new Bodhi.AudioFile(file, precached);
             }
             return null;
         }
@@ -47,7 +51,26 @@ namespace Bodhi {
          */
         public File? new_file(string path, string mode = "r") {
             if (is_initialized()) {
-                return new File(path, mode);
+                return new Bodhi.File(path, mode);
+            }
+            return null;
+        }
+
+        /**
+         * load surface from image file
+         * @param path - path to file
+         */
+        public Surface? new_surface_from_path(string path) {
+            return new_surface(new_file(path, "r"));
+        }
+
+        /**
+         * load surface from image file
+         * @param file - Bodhi.File
+         */
+        public Surface? new_surface(Bodhi.File file) {
+            if (is_initialized()) {
+                return new Bodhi.Surface(file);
             }
             return null;
         }

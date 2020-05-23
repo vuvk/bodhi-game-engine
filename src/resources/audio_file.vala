@@ -73,9 +73,9 @@ namespace Bodhi {
         private bool precached = false;
         private bool loaded = false;
 
-        internal AudioFile(string filename, bool precached = false) {
+        internal AudioFile(Bodhi.File file, bool precached = false) {
             LIB.add(this);
-            load(filename, precached);
+            load(file, precached);
         }
 
         ~AudioFile() {
@@ -92,14 +92,14 @@ namespace Bodhi {
             LIB.remove(this);
         }
 
-        public void load(string filename, bool precached = false) {
+        public void load(Bodhi.File file, bool precached = false) {
             unload();
 
             /* Open the audio file and check that it's usable. */
             sndfile = new Sndfile.File.virtual(get_io(),
                                                Sndfile.Mode.READ,
                                                ref sfinfo,
-                                               Engine.get_resource_manager().new_file(filename));
+                                               file);
             if (sndfile == null) {
                 Engine.get_log().write_error(@"Could not open audio in $filename: $(Sndfile.File.strerror(sndfile))\n");
                 return;
@@ -148,7 +148,7 @@ namespace Bodhi {
                 }
             }
 
-            this.filename = filename;
+            this.filename = file.get_filename();
             this.precached = precached;
             this.loaded = true;
         }
