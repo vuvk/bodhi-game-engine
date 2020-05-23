@@ -96,9 +96,11 @@ namespace Bodhi {
             unload();
 
             /* Open the audio file and check that it's usable. */
-            var file = Engine.get_resource_manager().new_file(filename);
-            sndfile = new Sndfile.File.virtual(get_io(), Sndfile.Mode.READ, ref sfinfo, file);
-            if (file == null || sndfile == null) {
+            sndfile = new Sndfile.File.virtual(get_io(),
+                                               Sndfile.Mode.READ,
+                                               ref sfinfo,
+                                               Engine.get_resource_manager().new_file(filename));
+            if (sndfile == null) {
                 Engine.get_log().write_error(@"Could not open audio in $filename: $(Sndfile.File.strerror(sndfile))\n");
                 return;
             }
