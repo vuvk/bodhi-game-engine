@@ -25,8 +25,8 @@ namespace Bodhi {
             }
 
             int flags = SDLImage.InitFlags.JPG | SDLImage.InitFlags.PNG;
-            if (!SDLImage.init(flags)) {
-                return Errors.IMAGE_LOADER_NOT_CREATED;
+            if (SDLImage.init(flags) & flags == 0) {
+                Engine.get_log().write_error("Could not initialize image loader!");
             }
 
             return Errors.NO_ERROR;

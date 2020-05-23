@@ -44,7 +44,7 @@ namespace SDLImage {
     public static unowned SDL.Version linked ();
 
     [CCode (cname = "IMG_Init")]
-    public static bool init (int flags);
+    public static int init (int flags);
 
     [CCode (cname = "IMG_Quit")]
     public static void quit ();
