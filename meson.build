@@ -94,7 +94,7 @@ custom_target(
     'Bodhi-typelib', command: [
         g_ir_compiler,
         '--shared-library', 'lib'+PROJECT_NAME+'-@0@.so'.format (PROJECT_VERSION),
-          '--output', '@OUTPUT@',
+        '--output', '@OUTPUT@',
         join_paths(BUILD_DIR, GIR_NAME)
     ],
 

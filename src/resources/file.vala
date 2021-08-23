@@ -1,3 +1,10 @@
+// modules: physfs glib-2.0
+// sources: src/system/engine.vala
+// sources: src/system/subsystem/file_system/file_system.vala
+// vapidirs: vapi
+
+using PHYSFS;
+
 namespace Bodhi {
 
     /*
@@ -84,7 +91,7 @@ namespace Bodhi {
             return -1;
         }
 
-        public int64 read_full(uint8[] buffer) {
+        public int64 read_full(owned uint8[] buffer) {
             if (is_file()) {
                 buffer.resize((int)get_size());
                 return read(buffer, buffer.length);
@@ -138,7 +145,7 @@ namespace Bodhi {
 
         public int seek(uint64 position) {
             if (is_file()) {
-                return handle.seek(position);
+                return handle.seek((PHYSFS.Uint64)position);
             }
 
             return -1;
@@ -146,7 +153,7 @@ namespace Bodhi {
 
         public int64 read(uint8[] buffer, uint64 length) {
             if (is_file()) {
-                return handle.read_bytes(buffer, length);
+                return handle.read_bytes(buffer, (PHYSFS.Uint64)length);
             }
             return -1;
         }

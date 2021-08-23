@@ -91,7 +91,7 @@ namespace Bodhi {
                     }
 
                     slen *= (int) (sfinfo.channels * sizeof(short));
-                    buffers[i].set_data(format, (uint8[])membuf, (AL.ALsizei)slen, sfinfo.samplerate);
+                    buffers[i].set_data(format, (uint8[])membuf, (AL.Sizei) slen, sfinfo.samplerate);
                 }
 
                 var audio = Engine.get_audio();
@@ -105,11 +105,11 @@ namespace Bodhi {
 
             internal bool update(AL.Source source) {
                 AL.SourceState state;
-                AL.ALint processed;
+                AL.Int processed;
                 var audio = Engine.get_audio();
 
                 /* Get relevant source info */
-                AL.ALint param;
+                AL.Int param;
                 source.get_parami(AL.SOURCE_STATE, out param);
                 state = (AL.SourceState)param;
                 source.get_parami(AL.BUFFERS_PROCESSED, out processed);
@@ -129,7 +129,7 @@ namespace Bodhi {
                     slen = sndfile.readf_short(membuf, BUFFER_SAMPLES);
                     if (slen > 0) {
                         slen *= (int) (sfinfo.channels * sizeof(short));
-                        bufid.set_data(format, (uint8[])membuf, (AL.ALsizei)slen, sfinfo.samplerate);
+                        bufid.set_data(format, (uint8[])membuf, (AL.Sizei)slen, sfinfo.samplerate);
                         source.queue_buffer(1, ref bufid);
                     }
 
@@ -141,7 +141,7 @@ namespace Bodhi {
 
                 /* Make sure the source hasn't underrun */
                 if (state != AL.SourceState.PLAYING && state != AL.SourceState.PAUSED) {
-                    AL.ALint queued;
+                    AL.Int queued;
 
                     /* If no buffers are queued, playback is finished */
                     source.get_parami(AL.BUFFERS_QUEUED, out queued);
@@ -164,8 +164,8 @@ namespace Bodhi {
         internal static ArrayList<AudioSource> LIB = new ArrayList<AudioSource>();
 
         private AL.Source source;
-        private AL.ALfloat offset;
-        private AL.ALfloat bytes_offset;
+        private AL.Float offset;
+        private AL.Float bytes_offset;
         private AudioFile? audio_file;
         private AudioStream? audio_stream;
         private bool streaming = false;
@@ -191,7 +191,7 @@ namespace Bodhi {
                 audio_file = file;
 
                 if (file.is_precached()) {
-                    source.set_parami(AL.BUFFER, (AL.ALint)audio_file.get_al_buffer());
+                    source.set_parami(AL.BUFFER, (AL.Int)audio_file.get_al_buffer());
                 } else {
                     audio_stream = new AudioStream(audio_file);
                     streaming = true;
@@ -346,7 +346,7 @@ namespace Bodhi {
         internal void update() {
             if (AL.is_source(source)) {
                 // get current state
-                AL.ALint param;
+                AL.Int param;
                 source.get_parami(AL.SOURCE_STATE, out param);
                 switch ((AL.SourceState)param) {
                     case AL.SourceState.INITIAL : state = State.INITIAL; break;

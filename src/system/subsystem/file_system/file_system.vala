@@ -68,18 +68,18 @@ namespace Bodhi {
             string[] lines = {};
 
             if (is_initialized()) {
-                unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
+                unowned PHYSFS.ArchiveInfo?[] infos = PHYSFS.supported_archive_types();
 
                 for (int i = 0;; ++i) {
-                    PHYSFS.ArchiveInfo* info = infos[i];
+                    PHYSFS.ArchiveInfo? info = infos[i];
                     if (info == null) {
                         break;
                     }
 
-                    lines += info->extension + ": " +
-                             info->description + " [" +
-                             info->author + " - " +
-                             info->url + "]";
+                    lines += info.extension + ": " +
+                             info.description + " [" +
+                             info.author + " - " +
+                             info.url + "]";
                 }
             }
 
@@ -90,15 +90,15 @@ namespace Bodhi {
             string[] types = {};
 
             if (is_initialized()) {
-                unowned PHYSFS.ArchiveInfo*[] infos = PHYSFS.supported_archive_types();
+                unowned PHYSFS.ArchiveInfo?[] infos = PHYSFS.supported_archive_types();
 
                 for (int i = 0;; ++i) {
-                    PHYSFS.ArchiveInfo* info = infos[i];
+                    PHYSFS.ArchiveInfo? info = infos[i];
                     if (info == null) {
                         break;
                     }
 
-                    types += info->extension;
+                    types += info.extension;
                 }
             }
 

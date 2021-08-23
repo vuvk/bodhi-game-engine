@@ -1,3 +1,9 @@
+// modules: sndfile gee-0.8 openal physfs
+// sources: src/resources/file.vala
+// sources: src/
+// sources: src/system/subsystem/audio_system/audio_source.vala
+// vapidirs: vapi
+
 using Sndfile;
 using Gee;
 
