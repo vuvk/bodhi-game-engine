@@ -32,6 +32,12 @@ namespace Bodhi {
             return Errors.NO_ERROR;
         }
 
+        public bool mount(string path, string mount_point = "", bool append_to_path = true) {
+            if (!is_initialized()) {
+                return false;
+            }
+            return FileSystem.mount(path, mount_point, append_to_path);
+        }
 
         public AudioFile? open_audio_file_from_path(string filename, bool precached = false) {
             return open_audio_file(new_file(filename, "r"), precached);
